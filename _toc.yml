@@ -1,0 +1,32 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+format: jb-book
+root: home
+parts:
+- caption: Preamble
+  chapters:
+  - file: Preamble/who-for
+  - file: Preamble/Python-basics
+  - file: Preamble/Markdown-basics
+- caption: Introduction
+  numbered: true
+  chapters:
+  - file: Chapter_1/birth-of-modern-physics
+  - file: Chapter_2/special-theory-of-relativity
+  - file: Chapter_3/experimental-quantum-physics
+  - file: Chapter_4/structure-of-the-atom
+- caption: Development of Quantum Mechanics
+  numbered: true
+  chapters: 
+  - file: Chapter_5/quantum-mechanics
+  - file: Chapter_6/hydrogen-atom
+  - file: Chapter_7/atomic-physics
+  - file: Chapter_8/statistical-physics
+- caption: Applications of Modern Physics
+  numbered: true
+  chapters:
+  - file: Chapter_9/molecules-and-lasers
+  - file: Chapter_10/semiconductors
+  - file: Chapter_11/nuclear-physics
+  - file: Chapter_12/particle-physics

@@ -46,6 +46,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3. Experimental Quantum Physics" href="../Chapter_3/experimental-quantum-physics.html" />
@@ -358,12 +360,130 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#need-for-ether">
+   2.1. Need for Ether
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#michelson-morley-experiment">
+   2.2. Michelson-Morley Experiment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#michelson-s-interferometer">
+     2.2.1. Michelson’s Interferometer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collaboration-with-morley">
+     2.2.2. Collaboration with Morley
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#einstein-s-postulates">
+   2.3. Einstein’s Postulates
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lorentz-transformations">
+   2.4. Lorentz Transformations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-dilation-and-length-contraction">
+   2.5. Time Dilation and Length Contraction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addition-of-velocities">
+   2.6. Addition of Velocities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experimental-verification">
+   2.7. Experimental Verification
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#muon-decay">
+     2.7.1. Muon Decay
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#atomic-clock-measurement">
+     2.7.2. Atomic Clock Measurement
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#velocity-addition">
+     2.7.3. Velocity Addition
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#twin-paradox">
+   2.8. Twin Paradox
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spacetime">
+   2.9. Spacetime
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#doppler-effect">
+   2.10. Doppler Effect
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relativistic-momentum">
+   2.11. Relativistic Momentum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relativistic-energy">
+   2.12. Relativistic Energy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computations-in-modern-physics">
+   2.13. Computations in Modern Physics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electromagnetism-and-relativity">
+   2.14. Electromagnetism and Relativity
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -375,6 +495,113 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#need-for-ether">
+   2.1. Need for Ether
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#michelson-morley-experiment">
+   2.2. Michelson-Morley Experiment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#michelson-s-interferometer">
+     2.2.1. Michelson’s Interferometer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collaboration-with-morley">
+     2.2.2. Collaboration with Morley
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#einstein-s-postulates">
+   2.3. Einstein’s Postulates
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lorentz-transformations">
+   2.4. Lorentz Transformations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-dilation-and-length-contraction">
+   2.5. Time Dilation and Length Contraction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#addition-of-velocities">
+   2.6. Addition of Velocities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experimental-verification">
+   2.7. Experimental Verification
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#muon-decay">
+     2.7.1. Muon Decay
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#atomic-clock-measurement">
+     2.7.2. Atomic Clock Measurement
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#velocity-addition">
+     2.7.3. Velocity Addition
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#twin-paradox">
+   2.8. Twin Paradox
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spacetime">
+   2.9. Spacetime
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#doppler-effect">
+   2.10. Doppler Effect
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relativistic-momentum">
+   2.11. Relativistic Momentum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#relativistic-energy">
+   2.12. Relativistic Energy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computations-in-modern-physics">
+   2.13. Computations in Modern Physics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#electromagnetism-and-relativity">
+   2.14. Electromagnetism and Relativity
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -384,7 +611,560 @@ title="Print to PDF"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="special-theory-of-relativity">
 <h1><span class="section-number">2. </span>Special Theory of Relativity<a class="headerlink" href="#special-theory-of-relativity" title="Permalink to this headline">#</a></h1>
-<p>Under Construction</p>
+<p>Albert Einstein presented his special theory of relativity in 1905, which tells us how we should measure the relative motion of bodies at high speed.  Most objects are moving fast enough and thus, the <strong>Newtonian principle of relativity</strong> (or <em>Galilean invariance</em>) is an acceptable approximation.  Newton’s laws of motion must be measured <em>relative</em> to some reference frame, where an <strong>inertial frame</strong> is present if Newton’s laws are valid in that frame.</p>
+<p>A body moves in a straight line with constant velocity if it is not subject to a net external force (i.e., Newton’s first law), where the coordinate system attached to that body defines an inertial frame.  A reference frame moving at a uniform velocity relative to the first system also obeys Newton’s laws.  Newton showed that it was not possible to determine absolute motion in space by any experiment, where he used relative motion.</p>
+<p><strong>Consider two inertial reference frames that are moving relative to each other along their <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x^\prime\)</span> axes with a uniform velocity <span class="math notranslate nohighlight">\(v\)</span>, as shown in Figure  <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>.</strong></p>
+<div class="figure align-default" id="reference-frame-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/6/64/Frames_of_reference_in_relative_motion.svg"><img alt="reference frame" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Frames_of_reference_in_relative_motion.svg" width="600px" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">The standard configuration of two frames of reference, the primed system in motion relative to the unprimed system only along the <span class="math notranslate nohighlight">\(x\)</span>-axis and with speed <span class="math notranslate nohighlight">\(v\)</span>. Image Credit: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Frames_of_reference_in_relative_motion.svg">Wikipedia</a>; Krea.</span><a class="headerlink" href="#reference-frame-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The motion of the the primed coordinates can be written in terms of the unprimed coordinates as</p>
+<div class="math notranslate nohighlight" id="equation-galilean-trans">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-galilean-trans" title="Permalink to this equation">#</a></span>\[\begin{split}x^\prime &amp;= x - vt, \\
+y^\prime &amp;= y, \\
+z^\prime &amp;= z. \end{split}\]</div>
+<p>Newton considered the concepts of time and space as completely separable, where space is relative and time is absolute (i.e., <span class="math notranslate nohighlight">\(t=t^\prime\)</span>).  Equation <a class="reference internal" href="#equation-galilean-trans">(2.1)</a> is known as the <strong>Galilean transformation</strong>, where the inverse transformation can be determined algebraically, (e.g., <span class="math notranslate nohighlight">\(x = x^\prime + vt\)</span>).  Newton’s laws of motion are invariant (i.e., have the same form) under a Galilean transformation.</p>
+<div class="section" id="need-for-ether">
+<h2><span class="section-number">2.1. </span>Need for Ether<a class="headerlink" href="#need-for-ether" title="Permalink to this headline">#</a></h2>
+<p>Thomas Young performed his famous experiments on the interference of light in 1802.  <a class="reference external" href="https://www.britannica.com/biography/Augustin-Jean-Fresnel">Augustin Fresnel</a> showed a detailed understanding of interference, diffraction, and polarization a decade later.  These discoveries showed that light could behave like a wave and how waves interact with each other.  But, classical physicists “knew” that all waves needed a medium to travel, where they proposed the <em>luminiferous aether</em> (i.e., ether) as that medium.  The ether had to have a low density that planets could pass through it with no apparent changes in their orbits.  Its elasticity must be strong enough to support incredibly high wave speeds too.</p>
+<p>Maxwell shoed that the speed of light in different media depends only on the electric and magnetic properties of matter.  In vacuum, the speed of light depends on the permeability <span class="math notranslate nohighlight">\(\mu_o\)</span> and permittivity <span class="math notranslate nohighlight">\(\epsilon_o\)</span> of free space.  The properties of the ether must be consistent with electromagnetic theory, which required only a sensitive enough experiment.  There was a <em>general consensus</em> for the concept of ether by 1880.  Maxwell’s equation were elegant enough to make testable predictions, including matters concerning the ether.</p>
+<p><strong>Suppose we flash a light in a moving system <span class="math notranslate nohighlight">\(K^\prime\)</span> and an observer in system <span class="math notranslate nohighlight">\(K^\prime\)</span> measures the speed of light as <span class="math notranslate nohighlight">\(c\)</span></strong>.  We can find the speed measured in system <span class="math notranslate nohighlight">\(K\)</span> through the addition of velocities, <span class="math notranslate nohighlight">\(c \pm v\)</span>, where <span class="math notranslate nohighlight">\(v\)</span> is the relative speed of the two systems.  Maxwell’s equations don’t differentiate between the two systems, and it was unclear which frame should be taken as the reference.  In the late 19th century, physicists proposed that the preferred inertial reference frame was the one with the ether and the speed of light in that frame was <span class="math notranslate nohighlight">\(c\)</span>.  No experiment at the time was able to discern the effect due to the relative speed <span class="math notranslate nohighlight">\(v\)</span> (i.e., <span class="math notranslate nohighlight">\(c\pm v \approx c\)</span>).</p>
+</div>
+<div class="section" id="michelson-morley-experiment">
+<h2><span class="section-number">2.2. </span>Michelson-Morley Experiment<a class="headerlink" href="#michelson-morley-experiment" title="Permalink to this headline">#</a></h2>
+<div class="section" id="michelson-s-interferometer">
+<h3><span class="section-number">2.2.1. </span>Michelson’s Interferometer<a class="headerlink" href="#michelson-s-interferometer" title="Permalink to this headline">#</a></h3>
+<p>The Earth orbits the Sun at <span class="math notranslate nohighlight">\(\sim 30\ {\rm km/s}\)</span> (or <span class="math notranslate nohighlight">\(\sim 10^{-4}c\)</span>), so an obvious experiment is to try to find the effects of the Earth’s motion through the ether.  Albert Michelson built an extremely precise device called an <em>interferometer</em>, which measures the phase difference between two light waves.  Michelson used his <a class="reference external" href="https://en.wikipedia.org/wiki/Michelson_interferometer">interferometer</a> to detect the difference in the speed of light passing through the ether in different directions. Figure <a class="reference internal" href="#interferometer-fig"><span class="std std-numref">2.2</span></a> shows the basic setup for the Michelson interferometer.</p>
+<div class="figure align-default" id="interferometer-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/b3f8bf8d0a6f21076baaa28ff720a36774658498"><img alt="interferometer" src="https://openstax.org/apps/archive/20220325.143432/resources/b3f8bf8d0a6f21076baaa28ff720a36774658498" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.2 </span><span class="caption-text">(a) The Michelson interferometer. The extended light source is a ground-glass plate that diffuses the light from a laser. (b) A planar view of the interferometer. Image Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/3-5-the-michelson-interferometer">OpenStax University Physics: Vol 3</a>.</span><a class="headerlink" href="#interferometer-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Initially, it is assumed that one of the interferometer arms (<span class="math notranslate nohighlight">\(d_1\)</span> or <span class="math notranslate nohighlight">\(d_2\)</span>) is parallel to Earth’s motion through the ether.  Light leaves the source and passes through the glass plate <span class="math notranslate nohighlight">\(M\)</span>.  Part of the light will eventually go to the mirror <span class="math notranslate nohighlight">\(M_1\)</span> and part of the light will travel to <span class="math notranslate nohighlight">\(M_2\)</span>. The back of <span class="math notranslate nohighlight">\(M\)</span> is partially silvered and part of the light is reflected.  The light is reflected at the mirrors (<span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span>) and comes back to the partially silvered mirror <span class="math notranslate nohighlight">\(M\)</span>, where part of the light from each path passes on to observer/detector. The compensator is added at <span class="math notranslate nohighlight">\(C\)</span> to make sure both light paths pass through equal thicknesses of glass.  Figure <a class="reference internal" href="#interferometer-anim-fig"><span class="std std-numref">2.3</span></a> shows the paths the light can take.</p>
+<div class="figure align-default" id="interferometer-anim-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/b/bd/Michelson%C5%AFv_interferometr.gif"><img alt="interferometer-path" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Michelson%C5%AFv_interferometr.gif" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.3 </span><span class="caption-text">The Michelson interferometer animated path. Image Credit: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Michelson%C5%AFv_interferometr.gif">Wikipedia</a>.</span><a class="headerlink" href="#interferometer-anim-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Using sodium as a bright light source (<em>don’t use a laser if you’re the observer</em>) interference fringes can be found.  The fringe pattern should shift if the apparatus is rotated through <span class="math notranslate nohighlight">\(90^\circ\)</span>, such that the path <span class="math notranslate nohighlight">\(d_1\)</span> becomes parallel to Earth’s motion and the path <span class="math notranslate nohighlight">\(d_2\)</span> is perpendicular.  The observed interference pattern consists of light and dark bands that correspond to constructive and destructive interference (Figure <a class="reference internal" href="#fringes-fig"><span class="std std-numref">2.4</span></a>).</p>
+<div class="figure align-default" id="fringes-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/cbf0b91f98821d54c258f1bffb6480e334819cc1"><img alt="interferometer" src="https://openstax.org/apps/archive/20220325.143432/resources/cbf0b91f98821d54c258f1bffb6480e334819cc1" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Fringes produces with a Michelson interferometer. Image Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/3-5-the-michelson-interferometer">OpenStax University Physics: Vol 3</a>.</span><a class="headerlink" href="#fringes-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>For constructive interference, the difference between the two path lengths is given by an integer <span class="math notranslate nohighlight">\(n\)</span> number of wavelengths <span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(2(d_1-d_2) = n\lambda\)</span>.  The expected shift in the interference pattern can be calculated by the time difference between the two paths.  When light travels to the right along path <span class="math notranslate nohighlight">\(d_2\)</span>, the velocity of light according to the Galilean transformation is <span class="math notranslate nohighlight">\(c+v\)</span> because the ether carries the light along with it.  On the return journey, the velocity is <span class="math notranslate nohighlight">\(c-v\)</span> because the light is now traveling <em>against</em> the path of the ether.  The total time for the round trip is</p>
+<div class="math notranslate nohighlight">
+\[ t_2 = \frac{d_2}{c+v} + \frac{d_2}{c-v} = \frac{2cd_2}{c^2 - v^2} = \frac{2d_2}{c}\left(\frac{1}{1-v^2/c^2} \right). \]</div>
+<p>For the other path, the light is moving across the current of the ether.  It must move upriver to compensate for when the current carries the light downstream.  This makes a triangle, where the ether’s velocity is <span class="math notranslate nohighlight">\(c\)</span> and the light has a velocity <span class="math notranslate nohighlight">\(v\)</span> that is diagonal to <span class="math notranslate nohighlight">\(c\)</span>.  The velocity that accounts for the current of the ether is <span class="math notranslate nohighlight">\(\sqrt{c^2 -v^2}\)</span> instead of <span class="math notranslate nohighlight">\(c^2-v^2\)</span>.  From the equation for <span class="math notranslate nohighlight">\(t_2\)</span>, we can deduce that the round trip time is</p>
+<div class="math notranslate nohighlight">
+\[ t_1 = \frac{2d_1}{\sqrt{c^2-v^2}} = \frac{2d_1}{c}\frac{1}{\sqrt{1-v^2/c^2}}. \]</div>
+<p>The time difference between the two journeys <span class="math notranslate nohighlight">\(\Delta t\)</span> is</p>
+<div class="math notranslate nohighlight" id="equation-time-diff-1">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-time-diff-1" title="Permalink to this equation">#</a></span>\[\Delta t = t_1 - t_2 = \frac{2}{c}\left(\frac{d_2}{\sqrt{1-v^2/c^2}} - \frac{d_1}{1-v^2/c^2}  \right).\]</div>
+<p>If we rotate the apparatus by <span class="math notranslate nohighlight">\(90^\circ\)</span> so that the ether passes along <span class="math notranslate nohighlight">\(d_1\)</span>.  The time difference <span class="math notranslate nohighlight">\(\Delta t^\prime\)</span> is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d41d613e-182c-4520-9557-861ce17f818b">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-d41d613e-182c-4520-9557-861ce17f818b" title="Permalink to this equation">#</a></span>\[\begin{align}
+\Delta t^\prime  = \frac{2}{c}\left(\frac{d_2}{1-v^2/c^2} - \frac{d_1}{\sqrt{1-v^2/c^2}}  \right).
+\end{align}\]</div>
+<p>Michelson looked for a shift in the interference pattern and found the time difference as</p>
+<div class="math notranslate nohighlight">
+\[ \Delta t^\prime - \Delta t = \frac{2}{c}\left( \frac{d_1 + d_2}{1-v^2/c^2} - \frac{d_1 + d_2}{\sqrt{1-v^2/c^2}}\right ). \]</div>
+<p>Since <span class="math notranslate nohighlight">\(v \ll c\)</span>, we can use the <a class="reference external" href="https://en.wikipedia.org/wiki/Binomial_theorem">binomial expansion</a> to expand the terms involving <span class="math notranslate nohighlight">\(v^2/c^2\)</span> as <span class="math notranslate nohighlight">\(x\)</span>, where high order terms in <span class="math notranslate nohighlight">\(x\)</span> are negligible.  The time difference becomes</p>
+<div class="math notranslate nohighlight" id="equation-time-diff">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-time-diff" title="Permalink to this equation">#</a></span>\[\Delta t^\prime - \Delta t = \frac{2}{c}\left(d_1 + d_2\right) \left[\left(1 + \left(\frac{v}{c}\right)^2 + \cdots \right) - \left(1 + \frac{1}{2}\left(\frac{v}{c}\right)^2 + \cdots \right) \right] \approx \frac{v^2}{c^3}\left(d_1 + d_2 \right).\]</div>
+<p>To measure the time difference in Eqn. <a class="reference internal" href="#equation-time-diff">(2.4)</a> Michelson used 30 km/s for the Earth’s orbital speed and his apparatus had <span class="math notranslate nohighlight">\(1.2\ {\rm m}\)</span> arms (<span class="math notranslate nohighlight">\(d_1=d_2\)</span>).  The predicted time difference is only <span class="math notranslate nohighlight">\(8 \times 10^{17}\ {\rm s}\)</span>.  For a visible wavelength (<span class="math notranslate nohighlight">\(600\ {\rm nm}\)</span>), the period of one wavelength amounts to <span class="math notranslate nohighlight">\(T = 1/f = \lambda/c = 2 \times 10^{-15}\ {\rm s}\)</span>.  The predicted time difference represents 0.04 fringes in the interference pattern.  Michelson reasoned that a shift of at least 0.02 fringes was detectable, but found no shift.  Michelson concluded that the hypothesis of the stationary ether must be incorrect.</p>
+</div>
+<div class="section" id="collaboration-with-morley">
+<h3><span class="section-number">2.2.2. </span>Collaboration with Morley<a class="headerlink" href="#collaboration-with-morley" title="Permalink to this headline">#</a></h3>
+<p>Michelson’s experimental result was so surprising that he was asked by several well-known physicists to repeat it.  Together with Edward Morley, Michelson put together a more sophisticated experiment with more mirrors, some of which were adjustable.  The new experiment had an optical path length of <span class="math notranslate nohighlight">\(11\ {\rm m}\)</span> from eight round trips.  It was mounted on soapstone that floated on mercury to eliminate vibrations.  Michelson and Morley believed they could detect a fringe shift as small as 0.005 and expected the ether to produce a shift of 0.4.  In 1887, they reported a <em>null result</em> (i.e., no effect).  The ether does not seem to exist.</p>
+<p>The inability to detect the ether was a serious blow to reconciling the invariant form of Maxwell’s equations.  Lorentz and FitzGerald suggested (apparently independently) that the Michelson-Morley experiment could be understood if length is contracted by the factor <span class="math notranslate nohighlight">\(\gamma^{-1} = \sqrt{1 - v^2/c^2}\)</span> in the direction of motion, where <span class="math notranslate nohighlight">\(v\)</span> is the speed.  In this situation, the length <span class="math notranslate nohighlight">\(d_2\)</span> will be contracted by the <span class="math notranslate nohighlight">\(\gamma^{-1}\)</span> factor, whereas the length <span class="math notranslate nohighlight">\(d_1\)</span> will not.  Applying the factor to Eqn. <a class="reference internal" href="#equation-time-diff-1">(2.2)</a> results in making <span class="math notranslate nohighlight">\(\Delta t = 0\)</span> as determined experimentally by Michelson.  The contraction postulate became known as the <em>Lorentz-FitzGerald</em> contraction and was not proven from first principles using Maxwell’s equations.  Einstein presented his explanation later, and the true significance of the postulate was understood.</p>
+</div>
+</div>
+<div class="section" id="einstein-s-postulates">
+<h2><span class="section-number">2.3. </span>Einstein’s Postulates<a class="headerlink" href="#einstein-s-postulates" title="Permalink to this headline">#</a></h2>
+<p>The Michelson-Morley experiment exposed the idea of a preferred inertial system of Maxwell’s equation as false.  However, a problem remained where the Galilean transformation was invalid for Maxwell’s equations, but worked for the laws of mechanics.  Einstein looked at the problem in a more formal manner and believed that Maxwell’s equations must be valid in all <em>inertial</em> frames.  As a result, he developed two postulates, which are</p>
+<ol class="simple">
+<li><p><strong>The principle of relativity</strong>: The laws of physics are the same in all inertial systems.  There is no way to detect absolute motion and no preferred inertial system exists.</p></li>
+<li><p><strong>The constancy of the speed of light</strong>: Observers in all inertial systems measure the same value for the speed of light <em>in a vacuum</em>.</p></li>
+</ol>
+<p>The first postulate indicates that the laws of physics are the same in all coordinate systems moving with uniform relative motion to each other.  Einstein showed that postulate 2 actually follows from postulate 1.  Einstein used these postulates to re-evaluate the Newton’s principle of relativity and expanded it to include all laws of physics, including those of electromagnetism.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We can now modify our previous definition of inertial frames of reference to be those frames of reference in which <em>all the laws of physics</em> are valid.</p>
+</div>
+<p>To make things clearer, Einstein used <a class="reference external" href="https://en.wikipedia.org/wiki/Einstein%27s_thought_experiments">thought experiments</a> to work out how relativity would work in real life.  Recall the problem at the end of <a class="reference external" href="https://saturnaxis.github.io/ModernAstro/Chapter_2/special-theory-of-relativity.html#need-for-ether">Sect. 2.1</a>, we had assumed that events occurring in system <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> could be easily synchronized so that <span class="math notranslate nohighlight">\(t = t^\prime\)</span>.  Einstein realized that each system must have its own observers with their own clocks and metersticks.</p>
+<p><strong>Consider two observers measuring the time interval between two flashes of light from flash lamps that are a distance apart</strong> (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>).</p>
+<div class="figure align-default" id="simultaneity-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/7c2fdb6db443e45f189370005ba99a9dac24fa4c"><img alt="simultaneity" src="https://openstax.org/apps/archive/20220325.143432/resources/7c2fdb6db443e45f189370005ba99a9dac24fa4c" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.5 </span><span class="caption-text">(a) Two pulses of light are emitted simultaneously relative to observer B. (c) The pulses reach observer B’s position simultaneously. (b) Because of A’s motion, she sees the pulse from the right first and concludes the bulbs did not flash simultaneously. Both conclusions are correct. Image Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/5-2-relativity-of-simultaneity">OpenStax University Physics: Vol 3</a>.</span><a class="headerlink" href="#simultaneity-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>An observer A is seated midway on a rail car with two flash lamps at opposite sides equidistant from her. A pulse of light is emitted from each flash lamp and moves toward observer A, (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>a). The rail car is moving rapidly to the right. An observer B standing on the platform is facing the rail car as it passes and observes both flashes of light reach him simultaneously, (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>c). He measures the distances from where he saw the pulses originate, finds them equal, and concludes that the pulses were emitted simultaneously.</p>
+<p>Because of Observer A’s motion, the pulse from the right of the railcar reaches her before the pulse from the left (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>b). She also measures the distances from within her frame of reference, finds them equal, and concludes that the pulses were not emitted simultaneously.  We conclude that</p>
+<blockquote class="epigraph">
+<div><p>Two events that are simultaneous in one reference frame are not necessarily simultaneous in another reference frame moving with respect to the first frame.</p>
+</div></blockquote>
+<p>Time comparison can be accomplished by sending light signals from one observer to another, but the information travels with a finite speed (i.e., the speed of light).  It is best if each system has its own observer with synchronized clocks.  We can determine the time of an event occurring far away from us by having a colleague at the event, with a clock fixed at rest, measure the time of a particular event, and send us the results.</p>
+<p>A more rigorous transformation called the <strong>Lorentz transformation</strong> makes the laws of physics invariant between inertial frames of reference.  At <span class="math notranslate nohighlight">\(t=t^\prime=0\)</span>, the origins of two coordinate systems are coincident and the system <span class="math notranslate nohighlight">\(K^\prime\)</span> is traveling along the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x^\prime\)</span> axes.  For this special case the Lorentz transformation equations are</p>
+<div class="math notranslate nohighlight" id="equation-lorentz-trans">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-lorentz-trans" title="Permalink to this equation">#</a></span>\[\begin{split}x^\prime &amp;= \frac{x-vt}{\sqrt{1-v^2/c^2}} \\
+y^\prime &amp;= y \\
+z^\prime &amp;= z \\
+t^\prime &amp;= \frac{t-\left(vx/c^2 \right)}{\sqrt{1-v^2/c^2}}\end{split}\]</div>
+<p>We commonly use the following substitutions,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-45ea2f1a-d064-4538-853f-eebd2c4895bc">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-45ea2f1a-d064-4538-853f-eebd2c4895bc" title="Permalink to this equation">#</a></span>\[\begin{align}
+\beta &amp;= \frac{v}{c} \\
+&amp; \text{and} \\
+\gamma &amp;= \frac{1}{\sqrt{1-v^2/c^2}},
+\end{align}\]</div>
+<p>to write Eqn. <a class="reference internal" href="#equation-lorentz-trans">(2.5)</a> in a more compact form.</p>
+</div>
+<div class="section" id="lorentz-transformations">
+<h2><span class="section-number">2.4. </span>Lorentz Transformations<a class="headerlink" href="#lorentz-transformations" title="Permalink to this headline">#</a></h2>
+<p>Ultimately, we want to know which transformation is necessary so that all inertial frames of reference are valid for the laws of physics (i.e., both Newton’s mechanics and Maxwell’s equations).</p>
+<p><strong>Consider two inertial reference frames (<span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span>) that are moving relative to each other along their <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x^\prime\)</span> axes with a uniform velocity <span class="math notranslate nohighlight">\(v\)</span>, as shown in Figure  <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>.</strong>  A flash lamp goes off at <span class="math notranslate nohighlight">\(t=t^\prime=0\)</span>, where  the speed of light will be <span class="math notranslate nohighlight">\(c\)</span> in both systems according to postulate 2.  The wavefronts observed in both systems must be spherical and described by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-199a4a53-b16c-4f6b-bc76-2b5977a5ab4a">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-199a4a53-b16c-4f6b-bc76-2b5977a5ab4a" title="Permalink to this equation">#</a></span>\[\begin{align}
+x^2 + y^2 + z^2 &amp;= c^2 t^2, \\
+x^{\prime 2} + y^{\prime 2} + z^{\prime 2} &amp;= c^2 t^{\prime 2}.
+\end{align}\]</div>
+<p>These equations are inconsistent with a Galilean transformation because a wavefront can be spherical in only one system when the second is moving at a relative speed <span class="math notranslate nohighlight">\(v\)</span>.  The Lorentz transformation <em>requires</em> both systems to have a spherical wavefront centered on each system’s origin.</p>
+<p>Another clear break with Newtonian physics is that each system must have its own clock and metersticks.  Since the systems move only along their <span class="math notranslate nohighlight">\(x\)</span> axes, observers in both systems agree by direct observation that <span class="math notranslate nohighlight">\(y^\prime = y\)</span> and <span class="math notranslate nohighlight">\(z^\prime = z\)</span>.  The Galilean transformation <span class="math notranslate nohighlight">\(x^\prime = x - vt\)</span> is incorrect, where we need a linear transformation that maps each event in system <span class="math notranslate nohighlight">\(K\)</span> to a unique (i.e., only one) event in <span class="math notranslate nohighlight">\(K^\prime\)</span>.  The simplest <em>linear</em> transformations are</p>
+<div class="math notranslate nohighlight" id="equation-x-trans">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-x-trans" title="Permalink to this equation">#</a></span>\[x^\prime = \gamma\left(x-vt\right),
+x = \gamma^\prime\left(x^\prime + vt^\prime \right).\]</div>
+<p>The transformation is linear because <span class="math notranslate nohighlight">\(gamma\)</span> does not depend on <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(t\)</span> and must be close to 1 to reduce back to Newtonian physics.  From postulate 1, we demand that <span class="math notranslate nohighlight">\(\gamma =\gamma^\prime\)</span>.</p>
+<p>According to postulate 2, the speed of light is <span class="math notranslate nohighlight">\(c\)</span> in both systems.  Therefore the wavefront of the light pulse in each system is described by <span class="math notranslate nohighlight">\(x=ct\)</span> and <span class="math notranslate nohighlight">\(x^\prime = ct^\prime\)</span>.  Direct substitution produces the following</p>
+<div class="math notranslate nohighlight" id="equation-x-trans-sub">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-x-trans-sub" title="Permalink to this equation">#</a></span>\[ct^\prime = \gamma\left(ct-vt\right),
+ct = \gamma\left(ct^\prime + vt^\prime \right).\]</div>
+<p>From these equations, we want to determine <span class="math notranslate nohighlight">\(\gamma\)</span> and solve for <span class="math notranslate nohighlight">\(t^\prime\)</span> in terms of un-primed coordinates.</p>
+<p>To solve for <span class="math notranslate nohighlight">\(\gamma\)</span>, we transform the above equations into</p>
+<div class="amsmath math notranslate nohighlight" id="equation-effdeec1-1c7e-4eda-ace5-db46f1c3787e">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-effdeec1-1c7e-4eda-ace5-db46f1c3787e" title="Permalink to this equation">#</a></span>\[\begin{align}
+t^\prime &amp;= \gamma t\left(1-\frac{v}{c}\right), \\
+t &amp;= \gamma t^\prime \left(1+\frac{v}{c}\right),
+\end{align}\]</div>
+<p>and through direct substitution, we get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-052de585-c100-4691-a925-e0916224d314">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-052de585-c100-4691-a925-e0916224d314" title="Permalink to this equation">#</a></span>\[\begin{align}
+t^\prime &amp;= \gamma t^\prime \left(1-\frac{v}{c}\right) \left(1+\frac{v}{c}\right).
+\end{align}\]</div>
+<p>Eliminating <span class="math notranslate nohighlight">\(t^\prime\)</span> and solving for <span class="math notranslate nohighlight">\(\gamma\)</span> produces</p>
+<div class="math notranslate nohighlight" id="equation-gamma-lorentz">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-gamma-lorentz" title="Permalink to this equation">#</a></span>\[\gamma = \frac{1}{\sqrt{1-v^2/c^2}}.\]</div>
+<p>Now we can solve for <span class="math notranslate nohighlight">\(t^\prime\)</span> in un-primed coordinates directly by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-448a3353-ef24-4427-a3a2-9a4a96afa1c9">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-448a3353-ef24-4427-a3a2-9a4a96afa1c9" title="Permalink to this equation">#</a></span>\[\begin{align}
+t^\prime = \frac{t\left(1-v/c\right)}{\sqrt{1-v^2/c^2}},
+\end{align}\]</div>
+<p>and using the substitution <span class="math notranslate nohighlight">\(t = x/c\)</span> in the <span class="math notranslate nohighlight">\(vt/c\)</span> term to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0fdf5593-8650-4f69-abf6-037789e30e93">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-0fdf5593-8650-4f69-abf6-037789e30e93" title="Permalink to this equation">#</a></span>\[\begin{align}
+t^\prime = \frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
+\end{align}\]</div>
+<p>Now we have a the complete Lorentz transformations or Eqn. <a class="reference internal" href="#equation-lorentz-trans">(2.5)</a>.  The inverse transformation equation are obtained by replacing <span class="math notranslate nohighlight">\(v\)</span> by <span class="math notranslate nohighlight">\(-v\)</span> and by exchanging the primed and unprimed quantities (i.e., <span class="math notranslate nohighlight">\(x\rightarrow x^\prime\)</span>).</p>
+<p>Notice that the Lorentz transformation is approximately the Galilean transformation for <span class="math notranslate nohighlight">\(v\ll c\)</span> and become significantly more different as <span class="math notranslate nohighlight">\(v / c \rightarrow 1\)</span>.  The python code below produces a figure that illustrates how the relativistic factor <span class="math notranslate nohighlight">\(\gamma\)</span> changes with <span class="math notranslate nohighlight">\(v / c\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.001</span><span class="p">)</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">beta</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span><span class="n">gamma</span><span class="p">,</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$v/c$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Relativistic factor $\gamma$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/special-theory-of-relativity_5_0.png" src="../_images/special-theory-of-relativity_5_0.png" />
+</div>
+</div>
+<p>The implications of the Lorentz transformation are that</p>
+<ul class="simple">
+<li><p>a single event in one system is described uniquely by an event in another inertial system.</p></li>
+<li><p>space and time are <em>not separate</em>.  To express the position of <span class="math notranslate nohighlight">\(x\)</span> in system <span class="math notranslate nohighlight">\(K^\prime\)</span>, we must use both <span class="math notranslate nohighlight">\(x^\prime\)</span> and <span class="math notranslate nohighlight">\(t^\prime\)</span>.</p></li>
+<li><p>the relativistic factor does not allow for <span class="math notranslate nohighlight">\(v&gt;c\)</span> (i.e., otherwise it would become imaginary).</p></li>
+</ul>
+</div>
+<div class="section" id="time-dilation-and-length-contraction">
+<h2><span class="section-number">2.5. </span>Time Dilation and Length Contraction<a class="headerlink" href="#time-dilation-and-length-contraction" title="Permalink to this headline">#</a></h2>
+<p>The Lorentz transformations affect both the time and apparent length for observers in different inertial frames.</p>
+<p><strong>Consider two reference frames, where <span class="math notranslate nohighlight">\(K\)</span> is fixed (at rest) and <span class="math notranslate nohighlight">\(K^\prime\)</span> is moving along the <span class="math notranslate nohighlight">\(x\)</span> axis with a velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</strong>  A lamp is lit in the fixed frame <span class="math notranslate nohighlight">\(K\)</span>, when the clock in <span class="math notranslate nohighlight">\(K\)</span> reads a time <span class="math notranslate nohighlight">\(t_1\)</span>.  The lamp is extinguished when the the clock in <span class="math notranslate nohighlight">\(K\)</span> reads a time <span class="math notranslate nohighlight">\(t_2\)</span>.  Therefore, the total time for which the lamp is lit is <span class="math notranslate nohighlight">\(T_o = t_2 - t_1\)</span>, or the <strong>proper time</strong>.  The proper time is the time difference between two events occurring at teh same position in a system as measured by a clock at rest in the system.</p>
+<p>The time determined by on observer in the moving frame <span class="math notranslate nohighlight">\(K\)</span> will be different.  Assuming all the clocks have been synchronized, the time measured by the observer in <span class="math notranslate nohighlight">\(K^\prime\)</span> is <span class="math notranslate nohighlight">\(t_2^\prime - t_1^\prime\)</span>, or</p>
+<div class="math notranslate nohighlight">
+\[ T^\prime = t_2^\prime - t_1^\prime = \frac{(t_2-t_1) - (v/c^2)(x_2-x_1)}{\sqrt{1-v^2/c^2}}. \]</div>
+<p>In the fixed frame <span class="math notranslate nohighlight">\(K\)</span>, the clock is fixed (in space) at <span class="math notranslate nohighlight">\(x_1\)</span> and so <span class="math notranslate nohighlight">\(x_2-x_1 = 0\)</span>.  Then, the observed time in the moving frame <span class="math notranslate nohighlight">\(K^\prime\)</span> is</p>
+<div class="math notranslate nohighlight" id="equation-time-dilation">
+<span class="eqno">(2.15)<a class="headerlink" href="#equation-time-dilation" title="Permalink to this equation">#</a></span>\[T^\prime = \frac{T_o}{\sqrt{1-v^2/c^2}} = \gamma T_o,\]</div>
+<p>which means that the observer in the moving frame measures a <em>longer</em> duration for the lamp than the observer in the fixed frame.  This effect is known as <strong>time dilation</strong> and is a direct result of Einstein’s two postulates.  The time dilation result is often interpreted by saying that <em>moving clocks run slow</em> by the factor <span class="math notranslate nohighlight">\(\gamma^{-1}\)</span>.</p>
+<p><strong>It is the year 2150 and the UN Space Federation has <em>finally</em> perfected the storage of antiprotons for use as a fuel in a spaceship.  Preparations are underway for a manned spacecraft to visit a planet orbiting <a class="reference external" href="https://en.wikipedia.org/wiki/Proxima_Centauri">Proxima Centauri</a>, which is 4.25 lightyears away.  Due to strict regulations, only 16 years of provisions are available for the crew.  How fast must the spacecraft travel if the provisions are to last?</strong> Neglect the time required to accelerate the spaceship, turnaround and visit the planets at Proxima Centauri, and to decelerate the spaceship upon return. They are negligible compared with the actual travel time.</p>
+<blockquote>
+<div><p>The total trip time is limited to 16 years as constrained by the provisions and it appears unlikely that the crew would find a <a class="reference external" href="https://en.wikipedia.org/wiki/Buc-ee%27s">Buc-ee’s</a> along the way to restock their provisions.  From Earth, we realize that the spacecraft will be moving at a high relative <span class="math notranslate nohighlight">\(v\)</span> speed.  According to the clock in the Earth frame of reference (i.e., fixed frame <span class="math notranslate nohighlight">\(K\)</span>), the trip will take a time <span class="math notranslate nohighlight">\(T = 2L/v\)</span>, where <span class="math notranslate nohighlight">\(L\)</span> is the distance to Proxima Centauri.</p>
+<p>The total trip time of 16 years is measured relative to the spaceship’s moving frame of reference <span class="math notranslate nohighlight">\(K^\prime\)</span>, which will be designated as its proper time <span class="math notranslate nohighlight">\(T_o^\prime\)</span>.  The relationship from Eqn. <a class="reference internal" href="#equation-time-dilation">(2.15)</a> has the measured time in the <span class="math notranslate nohighlight">\(K\)</span> frame, but we have a measurement in the <span class="math notranslate nohighlight">\(K^\prime\)</span> frame.  We need the inverse transformation, which is obtained simply by exchanging the prime and unprimed quantities (i.e., <span class="math notranslate nohighlight">\(T = \gamma T_o^\prime\)</span>).  The replacement of <span class="math notranslate nohighlight">\(v\)</span> to <span class="math notranslate nohighlight">\(-v\)</span> is subsumed in the <span class="math notranslate nohighlight">\(T_o^\prime\)</span>, for which we already have the value.  As a result, we have</p>
+<div class="math notranslate nohighlight">
+\[ T = \frac{2L}{v} = \frac{T_o^\prime}{\sqrt{1-v^2/c^2}} = \gamma T_o^\prime. \]</div>
+<p>Now we just need to solve the above equation for required speed <span class="math notranslate nohighlight">\(v\)</span> to get (<em>verify the steps in between</em>)</p>
+<div class="math notranslate nohighlight">
+\[ v = \left(\frac{4L^2c^2}{T_o^{\prime 2}c^2 + 4L^2}\right)^{1/2}. \]</div>
+<p>The required speed is <span class="math notranslate nohighlight">\(1.41 \times 10^8\ {\rm m/s}\)</span> or <span class="math notranslate nohighlight">\(0.469c\)</span>, which is <em>really</em> fast.  The mission duration <span class="math notranslate nohighlight">\(T\)</span> measured on Earth can now be determined as 18.1 years.  Notice that the spaceship crew will age only 16 years, whereas their friends on Earth will age 18.1 years.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span><span class="p">,</span> <span class="n">light_year</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">yr_in_sec</span> <span class="o">=</span> <span class="mi">3600</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mf">365.25</span> <span class="c1">#1 Earth-year in sec</span>
+<span class="n">ly</span> <span class="o">=</span> <span class="n">c</span><span class="o">*</span><span class="n">yr_in_sec</span> <span class="c1">#lightyear is the distance light travels in one year</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The lightyear can be derived as </span><span class="si">%1.2e</span><span class="s2"> m or imported from a library as </span><span class="si">%1.2e</span><span class="s2"> m.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ly</span><span class="p">,</span><span class="n">light_year</span><span class="p">))</span>
+
+<span class="n">L</span> <span class="o">=</span> <span class="mf">4.25</span><span class="o">*</span><span class="n">light_year</span> <span class="c1">#distance to Proxima Centauri converted into meters</span>
+<span class="n">To_prime</span> <span class="o">=</span> <span class="mi">16</span><span class="o">*</span><span class="n">yr_in_sec</span> <span class="c1">#Mission duration of 16 years converted into seconds</span>
+
+<span class="n">v_req</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mi">4</span><span class="o">*</span><span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">To_prime</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The required speed is </span><span class="si">%1.2e</span><span class="s2"> m/s or </span><span class="si">%1.3f</span><span class="s2"> c.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v_req</span><span class="p">,</span><span class="n">v_req</span><span class="o">/</span><span class="n">c</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The lightyear can be derived as 9.46e+15 m or imported from a library as 9.46e+15 m.
+
+The required speed is 1.41e+08 m/s or 0.469 c.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s consider what happens to the length of objects in relativity.  <strong>Consider an observer in each system <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span>, where each observer has a meterstick at rest.</strong>  Each meterstick measures a length <span class="math notranslate nohighlight">\(L_o = x_r - x_l\)</span> or <span class="math notranslate nohighlight">\(L_o^\prime = x_r^\prime - x_l^\prime\)</span> in the respective <span class="math notranslate nohighlight">\(K\)</span> or <span class="math notranslate nohighlight">\(K^\prime\)</span> frame, where the subscripts <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(l\)</span> refer to the left and right sides of the meterstick, respectively.  The length measured at rest in either frame is called the <strong>proper length</strong>.</p>
+<p>Let <span class="math notranslate nohighlight">\(K^\prime\)</span> denote a frame that is moving along the <span class="math notranslate nohighlight">\(x\)</span> axis with a speed <span class="math notranslate nohighlight">\(v\)</span>.  An observer in the <span class="math notranslate nohighlight">\(K\)</span> frame has to measure the position of both ends of the stick, simultaneously (i.e., <span class="math notranslate nohighlight">\(t=t_r=t_l\)</span>).  Using the Lorentz transformation for <span class="math notranslate nohighlight">\(x^\prime\)</span> given in Eqn. <a class="reference internal" href="#equation-lorentz-trans">(2.5)</a>, we can the length measured in the <span class="math notranslate nohighlight">\(K^\prime\)</span> frame as</p>
+<div class="math notranslate nohighlight">
+\[ L_o^\prime = x_r^\prime - x_l^\prime = \frac{(x_r-x_l)-v(t_r-t_l)}{\sqrt{1-v^2/c^2}} \]</div>
+<p>Similar to the Eqn. <a class="reference internal" href="#equation-time-dilation">(2.15)</a>, we insist that <span class="math notranslate nohighlight">\(t_r-t_l=0\)</span>, and substitute the length <span class="math notranslate nohighlight">\(L= x_r-x_l\)</span>, which is the length of the meterstick that is moving in the <span class="math notranslate nohighlight">\(K^\prime\)</span> frame measured by the observer in the <span class="math notranslate nohighlight">\(K\)</span> frame, to get</p>
+<div class="math notranslate nohighlight">
+\[ L_o^\prime = \frac{L}{\sqrt{1-v^2/c^2}} = \gamma L.\]</div>
+<p>At rest, <span class="math notranslate nohighlight">\(L_o^\prime = L_o\)</span> and</p>
+<div class="math notranslate nohighlight" id="equation-length-contract">
+<span class="eqno">(2.16)<a class="headerlink" href="#equation-length-contract" title="Permalink to this equation">#</a></span>\[L = \frac{L_o}{\gamma} = L_o \sqrt{1-v^2/c^2}.\]</div>
+<p>For <span class="math notranslate nohighlight">\(v \ll c\)</span>, <span class="math notranslate nohighlight">\(L~L_o\)</span> and the above expression reduces to the result from Newtonian relativity.  At high speed <span class="math notranslate nohighlight">\(v\lesssim c\)</span> and <span class="math notranslate nohighlight">\(L&lt;L_o\)</span>, and the meterstick appears to shrink for the observer in the <span class="math notranslate nohighlight">\(K\)</span> frame.  This effect is known as <strong>length</strong> or <strong>space contraction</strong>.  It is also sometimes called the <em>Lorentz-FitzGerald contraction</em> because it was suggested prior to special relativity as a means to solve the electrodynamics problem.  Similar to time dilation, we can find the inverse transformation by switching the primed and unprimed quantities and change <span class="math notranslate nohighlight">\(v\)</span> to <span class="math notranslate nohighlight">\(-v\)</span>.  Observers in both systems will say that the other moving stick is <em>shorter</em>.</p>
+<p><strong>Consider the previous example, but through a measurement of the distance between Earth and Proxima Centauri.  How will the crew measure the distance that they travel to get to Proxima Centauri?</strong></p>
+<blockquote>
+<div><p>From the perspective of the crew, they are at rest and Proxima Centauri is approaching them.  The observers on Earth will measure the distance as <span class="math notranslate nohighlight">\(L_o = 4.25\)</span> lightyears and the time to reach Proxima Centauri is 8 years.  Thus, the crew will measure a distance <span class="math notranslate nohighlight">\(L = vt\)</span>, or</p>
+<div class="math notranslate nohighlight">
+\[ v = \frac{L}{t} = \frac{L_o}{\gamma t} = \frac{L_o \sqrt{1-v^2/c^2}}{t}. \]</div>
+<p>Like in the previous example for time dilation, we need to solve the above equation for the required speed <span class="math notranslate nohighlight">\(v\)</span> to get (<em>verify the steps in between</em>)</p>
+<div class="math notranslate nohighlight">
+\[ v = \left( \frac{c^2L_o^2}{c^2t^2 + L_o^2} \right)^{1/2}. \]</div>
+<p>The speed is the same as we found in the previous example, which shows the effects of time dilation and length contraction give identical results.  The spaceship crew measures a contracted length for the distance to Proxima Centauri as <span class="math notranslate nohighlight">\(3.25\ {\rm ly}\)</span>.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span><span class="p">,</span> <span class="n">light_year</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">yr_in_sec</span> <span class="o">=</span> <span class="mi">3600</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mf">365.25</span> <span class="c1">#1 Earth-year in sec</span>
+
+<span class="n">L_o</span> <span class="o">=</span> <span class="mf">4.25</span><span class="o">*</span><span class="n">light_year</span> <span class="c1">#distance to Proxima Centauri converted into meters</span>
+<span class="n">t</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">yr_in_sec</span> <span class="c1">#time to reach Proxima Centauri of 8 years converted into seconds</span>
+
+<span class="n">v_req</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">L_o</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">L_o</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The required speed is </span><span class="si">%1.2e</span><span class="s2"> m/s or </span><span class="si">%1.3f</span><span class="s2"> c.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v_req</span><span class="p">,</span><span class="n">v_req</span><span class="o">/</span><span class="n">c</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The distance to Proxima Centauri according to the crew is </span><span class="si">%1.2f</span><span class="s2"> ly.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v_req</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">light_year</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The required speed is 1.41e+08 m/s or 0.469 c.
+
+The distance to Proxima Centauri according to the crew is 3.75 ly.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="addition-of-velocities">
+<h2><span class="section-number">2.6. </span>Addition of Velocities<a class="headerlink" href="#addition-of-velocities" title="Permalink to this headline">#</a></h2>
+<p>A spaceship in the far future will use light to navigate outer space and identify potential hazards to avoid (i.e., asteroids instead of icebergs).  From Einstein’s postulate 2, the light propagates at a speed <span class="math notranslate nohighlight">\(c\)</span> in vacuum, but what happens if the spaceship is moving with a relative speed <span class="math notranslate nohighlight">\(v^\prime\)</span>.  From Newtonian physics, we would apply the Galilean transformation and simply add the velocities, <span class="math notranslate nohighlight">\(v = v^\prime + c\)</span>, where <span class="math notranslate nohighlight">\(v\)</span> is the speed measured by an observer in the rest frame.  This is a problem because <span class="math notranslate nohighlight">\(v &gt; c\)</span>!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We reserve the letter <span class="math notranslate nohighlight">\(v\)</span> to express the velocity of the coordinate systems with respect to each other.  The letter <span class="math notranslate nohighlight">\(u\)</span> is used to denote the velocity of objects as measured in various coordinate systems.</p>
+</div>
+<p>To measure the speed correctly, we start with the <em>inverse</em> Lorentz transformations in Eqn. <a class="reference internal" href="#equation-lorentz-trans">(2.5)</a>.  From calculus, the <span class="math notranslate nohighlight">\(x\)</span>-velocity <span class="math notranslate nohighlight">\(u_x\)</span> is the differential change in the position  <span class="math notranslate nohighlight">\(x\)</span> with respect to a differential change in time <span class="math notranslate nohighlight">\(t\)</span> (i.e., <span class="math notranslate nohighlight">\(u_x = dx/dt\)</span>).  Taking the differentials of Eqn. <a class="reference internal" href="#equation-lorentz-trans">(2.5)</a> (in the compact form) produces</p>
+<div class="math notranslate nohighlight" id="equation-lorentz-diff">
+<span class="eqno">(2.17)<a class="headerlink" href="#equation-lorentz-diff" title="Permalink to this equation">#</a></span>\[\begin{split}dx &amp;= \gamma\left(dx^\prime+vdt^\prime\right) \\
+dy &amp;= dy^\prime \\
+dz &amp;= dz^\prime \\
+dt &amp;= \gamma \left[dt+\left(v/c^2 \right)dx\right]\end{split}\]</div>
+<p>To define the velocities (<span class="math notranslate nohighlight">\(u_x^\prime,\ u_y^\prime,\ \text{and}\ u_z^\prime\)</span>), we simply divide each cartesian differential by <span class="math notranslate nohighlight">\(dt^\prime\)</span> to get</p>
+<div class="math notranslate nohighlight" id="equation-lorentz-vel">
+<span class="eqno">(2.18)<a class="headerlink" href="#equation-lorentz-vel" title="Permalink to this equation">#</a></span>\[\begin{split}u_x &amp;= \frac{u_x^\prime+v}{1+\left(v/c^2\right)u_x^\prime}\\
+u_y &amp;= \frac{u_y^\prime}{\gamma\left[1+\left(v/c^2\right)u_x^\prime\right]}\\
+u_z &amp;= \frac{u_z^\prime}{\gamma\left[1+\left(v/c^2\right)u_x^\prime\right]}\\\end{split}\]</div>
+<p>Equations <a class="reference internal" href="#equation-lorentz-vel">(2.18)</a> are known as the <strong>Lorentz velocity transformations</strong>.  Notice that although the relative motion of the systems <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> are along the <span class="math notranslate nohighlight">\(x\)</span> direction that the velocities in the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions are affected as well.  The inverse transformations for <span class="math notranslate nohighlight">\(u_x^\prime\)</span>, <span class="math notranslate nohighlight">\(u_y^\prime\)</span>, and <span class="math notranslate nohighlight">\(u_z^\prime\)</span> can be determined by switching the primed and unprimed variables and changing <span class="math notranslate nohighlight">\(v\)</span> to <span class="math notranslate nohighlight">\(-v\)</span>.</p>
+<p><strong>A commander of a spaceship is holding target practice for junior officers by shooting protons of speed <span class="math notranslate nohighlight">\(u_y^\prime = 0.99c\)</span> off to the side at small asteroids as the spaceship passes them at a speed <span class="math notranslate nohighlight">\(v = 0.6c\)</span>.  What speed <span class="math notranslate nohighlight">\(u\)</span> will an observer at rest measure for the protons?</strong></p>
+<blockquote>
+<div><p>The proton’s velocities in the <span class="math notranslate nohighlight">\(K^\prime\)</span> system are <span class="math notranslate nohighlight">\(u_x^\prime = u_z^\prime = 0\)</span> and <span class="math notranslate nohighlight">\(u_y^\prime = 0.99c\)</span>.  The speed of the spaceship in the <span class="math notranslate nohighlight">\(K^\prime\)</span> system is <span class="math notranslate nohighlight">\(v=0.6c\)</span>, since <span class="math notranslate nohighlight">\(K^\prime\)</span> denotes the moving frame.  Then we can use Eqns. <a class="reference internal" href="#equation-lorentz-vel">(2.18)</a> to determine the speeds <span class="math notranslate nohighlight">\(u_x\)</span>, <span class="math notranslate nohighlight">\(u_y\)</span>, and <span class="math notranslate nohighlight">\(u_z\)</span>.  First, we must determine the value for <span class="math notranslate nohighlight">\(\gamma\)</span>, which is</p>
+<div class="math notranslate nohighlight">
+\[ \gamma = \frac{1}{\sqrt{1-(0.6c)^2/c^2}} = \frac{1}{\sqrt{1-0.36}} = \frac{1}{0.8} = 1.25. \]</div>
+<p>Next we determine each of the components using Eqns. <a class="reference internal" href="#equation-lorentz-vel">(2.18)</a> by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+u_x &amp;= \frac{ 0.6c}{1+(0.6c\cdot 0c)/c^2} = 0.6 c\\
+u_y &amp;= \frac{ 0.99c}{(1.25)(1+(0.6c\cdot 0c)/c^2)} = \frac{0.99}{1.25} c = 0.792 c\\
+u_z &amp; = \frac{ 0}{(1.25)(1+(0.6c\cdot 0c)/c^2)} = 0 
+\end{align*}\]</div>
+<p>The speed <span class="math notranslate nohighlight">\(u\)</span> determined by an observer at rest is <span class="math notranslate nohighlight">\(\sqrt{u_x^2+u_y^2+u_z^2} = \sqrt{(0.6c)^2+(0.792c)^2} \approx 0.994c\)</span>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="experimental-verification">
+<h2><span class="section-number">2.7. </span>Experimental Verification<a class="headerlink" href="#experimental-verification" title="Permalink to this headline">#</a></h2>
+<div class="section" id="muon-decay">
+<h3><span class="section-number">2.7.1. </span>Muon Decay<a class="headerlink" href="#muon-decay" title="Permalink to this headline">#</a></h3>
+<p>High-energy particles called <em>cosmic rays</em> enter Earth’s atmosphere from space and interact with particles in the upper atmosphere,which create additional particles in a <em>cosmic shower</em>.  Many of the particles created are <span class="math notranslate nohighlight">\(\pi\)</span>-mesons (i.e., <a class="reference external" href="https://en.wikipedia.org/wiki/Pion">pions</a>), which decay into other unstable particles called <a class="reference external" href="https://en.wikipedia.org/wiki/Muon">muons</a>.  Muons decay according to the radioactive decay law</p>
+<div class="math notranslate nohighlight">
+\[ N(t) = N_oe^{-\lambda t}, \]</div>
+<p>which depends on the initial number of muons <span class="math notranslate nohighlight">\(N_o\)</span>, and the decay constant <span class="math notranslate nohighlight">\(\lambda\)</span>.  The decay constant can be written in terms of the half-life <span class="math notranslate nohighlight">\(\tau_{1/2}\)</span>, or the time period for which half of the muons decay to the other particles (i.e., <span class="math notranslate nohighlight">\(\lambda = \ln 2/\tau_{1/2}\)</span>).  The half-life of muons (<span class="math notranslate nohighlight">\(\tau_{1/2} = 1.52\ \mu{\rm s}\)</span>) is long enough that many muons survive the trip through the atmosphere to the Earth’s surface.</p>
+<p><strong>Imagine an experiment using a muon detector on top of a mountain (2 km above sea level), where we count the number of muons traveling at a speed near <span class="math notranslate nohighlight">\(v=0.98c\)</span>.</strong>  Suppose we count 1000 muons over a time period <span class="math notranslate nohighlight">\(t_o\)</span>.  Then, we move our detector to sea level and count approximately 540 muons over the same time period.  We ignore any other interactions that may remove muons.</p>
+<p>Muons traveling at <span class="math notranslate nohighlight">\(0.98c\)</span> would cover the 2 km path in only <span class="math notranslate nohighlight">\(6.81\ \mu{\rm s}\)</span> (i.e., <span class="math notranslate nohighlight">\(t=d/v\)</span>), and according to our radioactive decay law, only 45 muons should survive the trip (see <em>python code below</em>).  there is obviously something wrong with the classical calculation, because we counted about <span class="math notranslate nohighlight">\(12\times\)</span> more muons surviving compared to the predicted amount.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">v_mu</span> <span class="o">=</span> <span class="mf">0.98</span><span class="o">*</span><span class="n">c</span> <span class="c1">#speed of the muons in m/s</span>
+<span class="n">d_mnt</span> <span class="o">=</span> <span class="mi">2000</span> <span class="c1">#height of the mountain in m</span>
+<span class="n">mu_halflife</span> <span class="o">=</span> <span class="mf">1.52e-6</span> <span class="c1">#half-life of muons in sec</span>
+<span class="n">No_mu</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1">#Number of muons at the top of the mountain</span>
+
+<span class="k">def</span> <span class="nf">decay</span><span class="p">(</span><span class="n">N_o</span><span class="p">,</span><span class="n">t_half</span><span class="p">,</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">lamb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">t_half</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">N_o</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">lamb</span><span class="o">*</span><span class="n">t</span><span class="p">),</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">t_mu</span> <span class="o">=</span> <span class="n">d_mnt</span><span class="o">/</span><span class="n">v_mu</span>
+<span class="n">N_mu</span> <span class="o">=</span> <span class="n">decay</span><span class="p">(</span><span class="n">No_mu</span><span class="p">,</span><span class="n">mu_halflife</span><span class="p">,</span><span class="n">t_mu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The time for the muons to reach sea level is </span><span class="si">%1.2e</span><span class="s2"> s.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">t_mu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of muons expected to be counted at sea level is </span><span class="si">%i</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">N_mu</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The time for the muons to reach sea level is 6.81e-06 s.
+
+The number of muons expected to be counted at sea level is 45.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Since the muons are moving near the speed of light relative to us on Earth, the effects of time dilation will be dramatic.  In the muon rest frame the time period <span class="math notranslate nohighlight">\(T_o\)</span> for the muons to travel 2 km (on a clock fixed with respect to the mountain) is <span class="math notranslate nohighlight">\(1.35\ \mu{\rm s}\)</span> using Eqn. <a class="reference internal" href="#equation-time-dilation">(2.15)</a> and the number of muons expected to be counted at sea level is 539, which is in agreement with observations (see <em>python code below</em>).  An experiment similar to this was performed in 1941 on the top of Mount Washington in New Hampshire (<a class="reference external" href="http://spiff.rit.edu/classes/phys314/lectures/muon/rossi.pdf">Rossi &amp; Hall 1941</a>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gamma_mu</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">v_mu</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">t_mu_rel</span> <span class="o">=</span> <span class="n">t_mu</span><span class="o">/</span><span class="n">gamma_mu</span> <span class="c1">#T_o = T^\prime/gamma using Eqn. 2.15</span>
+<span class="n">N_mu_rel</span> <span class="o">=</span> <span class="n">decay</span><span class="p">(</span><span class="n">No_mu</span><span class="p">,</span><span class="n">mu_halflife</span><span class="p">,</span><span class="n">t_mu_rel</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The relativistic time for the muons to reach sea level is </span><span class="si">%1.2e</span><span class="s2"> s.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">t_mu_rel</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of muons expected to be counted at sea level is </span><span class="si">%i</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">N_mu_rel</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The relativistic time for the muons to reach sea level is 1.35e-06 s.
+
+The number of muons expected to be counted at sea level is 539.
+</pre></div>
+</div>
+</div>
+</div>
+<p>It is useful to examine the muon decay problem from the perspective of an observer traveling <em>with the muon</em>.  The observer would not measure the distance traveled from the top of the mountain to sea level as 2 km.  Rather this observer would say that the distance is <em>contracted</em> and is only 400 m, where the travel time to sea level is <span class="math notranslate nohighlight">\(1.35\ \mu{\rm s}\)</span> according to a clock at rest with the muon (see <em>python code below</em>).  Using the radioactive decay law, an observer traveling with the muons would still predict 539 muons to survive.  We obtain using space contraction the identical result that was determined through time dilation.  This shows both in agreement with the experiment and thus, confirms the special theory of relativity.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">L_mu</span> <span class="o">=</span> <span class="n">d_mnt</span><span class="o">/</span><span class="n">gamma_mu</span> <span class="c1">#height of mountain from muon&#39;s moving frame</span>
+<span class="n">t_mu</span> <span class="o">=</span> <span class="n">L_mu</span><span class="o">/</span><span class="n">v_mu</span>
+<span class="n">N_mu</span> <span class="o">=</span> <span class="n">decay</span><span class="p">(</span><span class="n">No_mu</span><span class="p">,</span><span class="n">mu_halflife</span><span class="p">,</span><span class="n">t_mu</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The contracted length observed in the muon&#39;s moving frame is </span><span class="si">%i</span><span class="s2"> m.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">L_mu</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The time for the muons to reach sea level is </span><span class="si">%1.2e</span><span class="s2"> s.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">t_mu</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of muons expected to be counted at sea level is </span><span class="si">%i</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">N_mu</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The contracted length observed in the muon&#39;s moving frame is 400 m.
+
+The time for the muons to reach sea level is 1.35e-06 s.
+
+The number of muons expected to be counted at sea level is 539.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="atomic-clock-measurement">
+<h3><span class="section-number">2.7.2. </span>Atomic Clock Measurement<a class="headerlink" href="#atomic-clock-measurement" title="Permalink to this headline">#</a></h3>
+<p>An <a class="reference external" href="https://en.wikipedia.org/wiki/Atomic_clock">atomic clock</a> makes an extremely accurate measurement of time using a well-defined transition in the <span class="math notranslate nohighlight">\(^{133}{\rm Cs}\)</span> atom (<span class="math notranslate nohighlight">\(f = 9.192631770 \times 10^9\ {\rm Hz}\)</span>).  In 1971, <a class="reference external" href="https://en.wikipedia.org/wiki/Joseph_C._Hafele">Joseph Hafele</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Richard_E._Keating">Richard Keating</a> used four cesium atomic clocks to test the time dilation effect.  The flew the atomic clocks (eastward and westward) on regularly scheduled commercial airplanes around the world and compared the time with a reference atomic time scale <em>at rest</em> at the <a class="reference external" href="https://en.wikipedia.org/wiki/United_States_Naval_Observatory">U.S. Naval Observatory</a>.</p>
+<p>The trip eastward took 65.4 hours with 41.2 flight hours, whereas the westward trip (taken a week later) took 80.3 hours with 48.6 flight hours.  The comparison with the special theory of relativity is complicated by the rotation of the Earth (i.e., Coriolis effect) and by a gravitational effect from the general theory of relativity.  <a class="reference internal" href="#atomic-clock"><span class="std std-numref">Table 2.1</span></a> shows the predictions and measurements report by Hafele &amp; Keating.</p>
+<table class="table" id="atomic-clock">
+<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">Actual relativistic predictions and experimental observations for the time differences (Hefele &amp; Keating <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1972Sci...177..168H/abstract">1972a</a>; <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1972Sci...177..166H/abstract">1972b</a>).</span><a class="headerlink" href="#atomic-clock" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Travel</p></th>
+<th class="head"><p>Predicted (<span class="math notranslate nohighlight">\({\rm ns}\)</span>)</p></th>
+<th class="head"><p>Observed (<span class="math notranslate nohighlight">\({\rm ns}\)</span>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Eastward</p></td>
+<td><p><span class="math notranslate nohighlight">\(-40 \pm 23\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-59 \pm 10\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Westward</p></td>
+<td><p><span class="math notranslate nohighlight">\(275 \pm 21\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(273 \pm 7\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>A negative time indicates that the time on the moving clock is <em>less</em> than the reference clock.  The moving clocks lost time (i.e., ran slower) during the eastward trip, but gained time (i.e., ran faster) during the westward trip.  The special theory of relativity is verified with the experimental uncertainties.</p>
+<p><strong>In 1985, <a class="reference external" href="https://en.wikipedia.org/wiki/Space_Shuttle_Challenger">Challenger</a> flew a cesium clock and compared its time with a fixed clock left on Earth.  The shuttle orbited at approximately 330 km above Earth’s surface.</strong></p>
+<p><strong>(a) Calculate the expected time lost per second for the moving clock and compare with the measured result of <span class="math notranslate nohighlight">\(-295.02 \pm 0.29\ {\rm ps/s}\)</span>, which includes a predicted effect due to general relativity of <span class="math notranslate nohighlight">\(35.0 \pm 0.06\ {\rm ps/s}\)</span>.</strong></p>
+<blockquote>
+<div><p>This is a straightforward application of the time dilation effect after making some simplifying assumptions.  These are necessary because the space shuttle is moving in a noninertial system (orbiting around Earth).  We assume that the space shuttle travels in a straight line with respect to Earth and the two events in the calculations are the shuttle passing the launch and landing points. We are not including the effects of general relativity.</p>
+<p>We can calculate the orbital speed of the shuttle with respect to Earth’s surface (ignoring Earth’s rotation), which allows us to determine the relativistic factor <span class="math notranslate nohighlight">\(\gamma\)</span>.  The shuttle’s velocity <span class="math notranslate nohighlight">\(v\)</span> is much less than the speed of light <span class="math notranslate nohighlight">\(c\)</span> and thus, we expect that <span class="math notranslate nohighlight">\(\gamma \approx 1\)</span>.  However, we must not round because that would remove the <em>small</em> effect that we are trying to determine.</p>
+<p>We let <span class="math notranslate nohighlight">\(T\)</span> be the time measured by the clock fixed on Earth, and then we determine the the proper time <span class="math notranslate nohighlight">\(T_o^\prime\)</span> measured by the clock in the space shuttle (Eqn. <a class="reference internal" href="#equation-time-dilation">(2.15)</a>).  The time difference is</p>
+<div class="math notranslate nohighlight">
+\[ \Delta T = T-T_o^\prime = T-\frac{T}{\gamma} = T\left(1-\frac{1}{\gamma}\right). \]</div>
+<p>The time lost per second is the ratio of the time difference with the time measured by the clock fixed on Earth.  This gives,</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\Delta T}{T} = \frac{\gamma-1}{\gamma} = 3.3092 \times 10^{-10} = 330.92\ {\rm ps/s}.\]</div>
+<p>In this case <span class="math notranslate nohighlight">\(\Delta T\)</span> is positive, which indicates that the space shuttle clock lost this fraction of time.  The moving clock lost <span class="math notranslate nohighlight">\(330.92\ {\rm ps}\)</span> for each second of motion.  The total measured result was a loss of <span class="math notranslate nohighlight">\(295.02 \pm 0.29\ {\rm ps/s}\)</span>, but we must add the general relativity prediction to the measured value to obtain the result due only to special relativity.  The measured special relativity result is <span class="math notranslate nohighlight">\(330.02\ {\rm ps/s}\)</span>, which differs from our estimate by only <span class="math notranslate nohighlight">\(0.27\%\)</span>!</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span><span class="p">,</span> <span class="n">c</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">M_Earth</span> <span class="o">=</span> <span class="mf">5.9722e24</span> <span class="c1">#mass of the Earth in kg</span>
+<span class="n">R_Earth</span> <span class="o">=</span> <span class="mf">6371e3</span> <span class="c1">#radius of the Earth in m</span>
+<span class="n">h_shuttle</span> <span class="o">=</span> <span class="mf">330e3</span> <span class="c1">#height of shuttle above the surface</span>
+<span class="n">v_shuttle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">M_Earth</span><span class="o">/</span><span class="p">(</span><span class="n">R_Earth</span><span class="o">+</span><span class="n">h_shuttle</span><span class="p">))</span> <span class="c1">#speed of shuttle relative to Earth&#39;s surface (ignoring Earth&#39;s rotation)</span>
+
+<span class="n">gamma_shuttle</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.</span><span class="o">-</span><span class="n">v_shuttle</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">dT_T</span> <span class="o">=</span> <span class="p">(</span><span class="n">gamma_shuttle</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">gamma_shuttle</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The time difference per second on the space shuttle is </span><span class="si">%1.4e</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">dT_T</span><span class="p">)</span>
+
+<span class="n">dT_T_meas</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.9502e-10</span> <span class="c1">#measured result with the GR effect</span>
+<span class="n">dT_T_GR</span> <span class="o">=</span> <span class="mf">3.5e-11</span> <span class="c1">#predicted effect due to GR</span>
+<span class="n">dT_T_meas_noGR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">dT_T_meas</span> <span class="o">-</span> <span class="n">dT_T_GR</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The measured time difference per second on the space shuttle due to special relativity alone is </span><span class="si">%1.4e</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">dT_T_meas_noGR</span><span class="p">)</span>
+
+<span class="n">pct_err</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">dT_T_meas_noGR</span><span class="o">-</span><span class="n">dT_T</span><span class="p">)</span><span class="o">/</span><span class="n">dT_T_meas_noGR</span><span class="p">)</span><span class="o">*</span><span class="mf">100.</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The percent error of our estimate is only </span><span class="si">%1.2f</span><span class="s2"> percent.&quot;</span> <span class="o">%</span> <span class="n">pct_err</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The time difference per second on the space shuttle is 3.3092e-10.
+
+The measured time difference per second on the space shuttle due to special relativity alone is 3.3002e-10.
+
+The percent error of our estimate is only 0.27 percent.
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>(b) How much time would the clock lose due to special relativity alone during the entire shuttle flight that lasted 7 days?</strong></p>
+<blockquote>
+<div><p>The total time of the seven-day mission was <span class="math notranslate nohighlight">\(6.048 \times 10^5\ {\rm s}\)</span> and the total time difference between the clock is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\Delta T}{T} \times t_{mission} = (3.3092 \times 10^{-10}) \times (6.048 \times 10^5\ \text{s}) = 2 \times 10^{-4}\ {\rm s} = 0.2\ {\rm ms},\]</div>
+<p>which is easily detected by cesium clocks.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mission_dur</span> <span class="o">=</span> <span class="mf">7.</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">3600</span> <span class="c1">#mission duration in sec</span>
+<span class="n">tlost_mission</span> <span class="o">=</span> <span class="n">mission_dur</span><span class="o">*</span><span class="n">dT_T</span> <span class="c1">#total time lost</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The time lost over the 7 day mission was </span><span class="si">%1.1e</span><span class="s2"> s.&quot;</span> <span class="o">%</span> <span class="n">tlost_mission</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The time lost over the 7 day mission was 2.0e-04 s.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="velocity-addition">
+<h3><span class="section-number">2.7.3. </span>Velocity Addition<a class="headerlink" href="#velocity-addition" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1964PhL....12..260A/abstract">Alväger et al. (1964)</a> used a beam of almost 10 Gev protons to strike a target to produce neutral pions (<span class="math notranslate nohighlight">\(\pi^0\)</span>) having energies of more than 6 GeV at the CERN nuclear and particle physics research facility on the border of Switzerland and France.  The neutral pions have a very short half-life, quickly decay into two <span class="math notranslate nohighlight">\(\gamma\)</span> rays, and are moving very fast (<span class="math notranslate nohighlight">\(\beta \approx 0.99975c\)</span>).  In the rest frame of the neutral pions, the two <span class="math notranslate nohighlight">\(\gamma\)</span> rays exit the reaction in opposite directions.  The experimenters measured the velocity of the <span class="math notranslate nohighlight">\(\gamma\)</span> rays going close (<span class="math notranslate nohighlight">\(6^\circ\)</span>) to the forward direction (<span class="math notranslate nohighlight">\(0^\circ\)</span>) in the laboratory. The Galilean addition velocities would require the velocity of the <span class="math notranslate nohighlight">\(\gamma\)</span> rays to be: <span class="math notranslate nohighlight">\(u = 0.99975c + c = 1.99975c\)</span> (i.e., the velocity of the <span class="math notranslate nohighlight">\(\pi^0\)</span> added to the <span class="math notranslate nohighlight">\(\gamma\)</span> moving at <span class="math notranslate nohighlight">\(c\)</span>).</p>
+<p>The velocity of the <span class="math notranslate nohighlight">\(\pi^0\)</span> rest frame with respect to the laboratory is <span class="math notranslate nohighlight">\(v=0.99975c\)</span> and the velocity <span class="math notranslate nohighlight">\(u_x^\prime=c\)</span> describes the velocity of the <span class="math notranslate nohighlight">\(\gamma\)</span> rays in the rest frame of the <span class="math notranslate nohighlight">\(\pi^0\)</span>.  Equation <a class="reference internal" href="#equation-lorentz-vel">(2.18)</a> gives the relativistic velocity addition to predict the velocity <span class="math notranslate nohighlight">\(u_x\)</span> of the <span class="math notranslate nohighlight">\(\gamma\)</span> rays measured in the laboratory as</p>
+<div class="math notranslate nohighlight">
+\[ u_x = \frac{c + 0.99975c}{1+\frac{(0.99975c)c}{c^2}} = c. \]</div>
+<p>The <span class="math notranslate nohighlight">\(x\)</span> direction is along the path of a <span class="math notranslate nohighlight">\(\gamma\)</span> ray in the forward direction and thus, <span class="math notranslate nohighlight">\(u_y = u_y^\prime = u_z = u_z^\prime =  0\)</span>.  The experimental measurement was accomplished by measuring the time taken for the <span class="math notranslate nohighlight">\(\gamma\)</span> rays to travel between two detectors placed ~30 m apart and was in excellent agreement with the relativistic prediction.  We again have conclusive evidence for the need for the special theory of relativity.</p>
+</div>
+</div>
+<div class="section" id="twin-paradox">
+<h2><span class="section-number">2.8. </span>Twin Paradox<a class="headerlink" href="#twin-paradox" title="Permalink to this headline">#</a></h2>
+<p>One of the most interesting topics in relativity is the <a class="reference external" href="https://en.wikipedia.org/wiki/Twin_paradox">twin paradox</a>.  <strong>Suppose there exists a pair of identical twins, where one twin sets out on a spaceship to study <span class="math notranslate nohighlight">\(\alpha\)</span> Centauri (4.37 ly away).</strong>  The <strong>m</strong>oving twin on the spaceship travels at very high speeds to reach the star and returns within 12 years.  The biological clock of the moving twin on the spaceship ticks more slowly than the <strong>f</strong>ixed twin that remained on Earth.  The paradox allows for these scenarios:</p>
+<ol class="simple">
+<li><p>From the <strong>f</strong>ixed twin’s perspective, the moving twin should return having aged less than the fixed twin.</p></li>
+<li><p>From the <strong>m</strong>oving twin’s perspective, the fixed twin will be the younger.</p></li>
+<li><p>Moreover, one could argue that because nature cannot allow both possibilities, it must be true that symmetry prevails and that the twins will still be the same age.</p></li>
+</ol>
+<p>The correct answer is options 1, where the <strong>m</strong>oving twin should return as the younger twin.  According to the <strong>f</strong>ixed twin, the spaceship takes off from Earth and quickly reaches its travel speed of <span class="math notranslate nohighlight">\(0.8c\)</span>.  The travel time to the star is 5.46 years and the total travel time is 10.92 years.  If the twins were 30 years old on departure, then the <strong>f</strong>ixed twin on Earth would be ~41 years on the spaceship’s return.  The travel time to <span class="math notranslate nohighlight">\(\alpha\)</span> Centauri for the <strong>m</strong>oving twin is only <span class="math notranslate nohighlight">\(5.46\sqrt{1-0.8^2}\ {\rm yr} = 3.28\ {\rm yr}\)</span>.  Therefore the <strong>m</strong>oving twin will only be 36.5 years old when returning with respect to the the <strong>f</strong>ixed twin’s clock at rest.</p>
+<p>The important fact here is that the <strong>f</strong>ixed twin’s clock is in an inertial system during the entire trip, where the <strong>m</strong>oving twin’s clock is not.  The <strong>m</strong>oving twin eventually leaves the original inertial system to slow down and turn around.  The <strong>f</strong>ixed twin feels no additional acceleration during the trip, but the <strong>m</strong>oving twin will feel a positive and negative acceleration to turn around.</p>
+</div>
+<div class="section" id="spacetime">
+<h2><span class="section-number">2.9. </span>Spacetime<a class="headerlink" href="#spacetime" title="Permalink to this headline">#</a></h2>
+<p>It is sometimes convenient to represent events on a <a class="reference external" href="https://en.wikipedia.org/wiki/Spacetime_diagram">spacetime diagram</a>.  For simplicity, we use only one spatial coordinate <span class="math notranslate nohighlight">\(x\)</span> along the horizontal axis and use <span class="math notranslate nohighlight">\(ct\)</span> instead of time along the vertical axis, so that both coordinates will have dimensions of length.</p>
+<div class="figure align-default" id="spacetime-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/c/c2/Minkowski_diagram_-_photon.svg"><img alt="spacetime" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Minkowski_diagram_-_photon.svg" width="300px" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.6 </span><span class="caption-text">The world line (yellow path) of a photon, which is at location x = 0 at time ct = 0. Image credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Spacetime_diagram">wikipedia</a></span><a class="headerlink" href="#spacetime-fig" title="Permalink to this image">#</a></p>
+</div>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Hermann_Minkowski">Hermann Minkowski</a> first used spacetime diagrams in 1908 and are often called <strong>Minkowski diagrams</strong>.  An event specifies 3 spatial coordiantes (<span class="math notranslate nohighlight">\(x,\ y,\ \&amp;\ z\)</span>) at a point in time <span class="math notranslate nohighlight">\(t\)</span>.  this is the origin of the term <em>fourth dimension</em> for time.  In our spacetime, we eliminate two spatial dimensions to define two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> as (<span class="math notranslate nohighlight">\(x_A,\ ct_A\)</span>) and (<span class="math notranslate nohighlight">\(x_B,\ ct_B\)</span>), respectively.  The line connecting events A and B is called a <strong>worldline</strong>.  A  light signal launched from the origin (<span class="math notranslate nohighlight">\(0,\ 0\)</span>) follows a straight line that at <span class="math notranslate nohighlight">\(45^\circ\)</span> as shown in Figure <a class="reference internal" href="#spacetime-fig"><span class="std std-numref">2.6</span></a>.  An object moving with a velocity less than <span class="math notranslate nohighlight">\(c\)</span> would simply have a different slope (<span class="math notranslate nohighlight">\(c/v\)</span>).</p>
+<p>The spacetime diagram relates position and simultaneity of events.  <strong>Suppose two photons are released from the origin, one in the positive <span class="math notranslate nohighlight">\(x\)</span> direction and the other in the negative <span class="math notranslate nohighlight">\(x\)</span> direction.</strong>  Both photons are moving forward in time (i.e., the future), therefore the <span class="math notranslate nohighlight">\(ct\)</span> coordinate will be positive.  How do we know that two events occur simultaneously  Simultaneous events will share the same vertical coordinate <span class="math notranslate nohighlight">\(ct\)</span>, or a horizontal line connects the two worldlines.  If one event occurs in a moving reference frame, then the two events cannot be simultaneous due to the Lorentz transformation.  Since the <span class="math notranslate nohighlight">\(x\)</span> coordinate of each event are different, then the <span class="math notranslate nohighlight">\(ct\)</span> of the respective events are not equal either.  Note that a negative <span class="math notranslate nohighlight">\(ct\)</span> coordinate denotes an event that occurs in the past.</p>
+<p>If we add another spatial coordinate <span class="math notranslate nohighlight">\(y\)</span> to our spacetime coordinates, we will have a cone, which is known as a <strong>light cone</strong>.  All causal events related to the present <span class="math notranslate nohighlight">\((x=0,\ ct = 0\)</span>) must be within the light cone.  Figure <a class="reference internal" href="#lightcone-fig"><span class="std std-numref">2.7</span></a> shows a light cone with events A, B, and C.  Event B lies within the light cone of the present (A) and is causally linked, where event C is outside of the light cone and cannot possibly affect event B.</p>
+<div class="figure align-default" id="lightcone-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/cbd9b38e7c9b172a5118c7899933962ee1c4e03e"><img alt="lightcone" src="https://openstax.org/apps/archive/20220325.143432/resources/cbd9b38e7c9b172a5118c7899933962ee1c4e03e" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.7 </span><span class="caption-text">The light cone consists of all the world lines followed by light from the event A at the vertex of the cone. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/5-5-the-lorentz-transformation">OpenStax: University Physics Vol. 3</a></span><a class="headerlink" href="#lightcone-fig" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Invariant</strong> quantities have the same value in all inertial frames, where they serve a special role in physics because their values do not change from one system to another (e.g., the speed of light is invariant).  In Euclidean geometry, we define the distance <span class="math notranslate nohighlight">\(d\)</span> through <span class="math notranslate nohighlight">\(d^2 = x^2 + y^2 + z^2\)</span> and can obtain the same result for <span class="math notranslate nohighlight">\(d^2\)</span> in any inertial frame of reference.  In spacetime, we can define a distance using a similar form for two systems <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-5e65c8a6-6ace-42ef-9d1a-84e78b7de918">
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-5e65c8a6-6ace-42ef-9d1a-84e78b7de918" title="Permalink to this equation">#</a></span>\[\begin{align}
+s^2 &amp;= x^2 -(ct)^2, \\
+s^{\prime 2} &amp;= x^{\prime 2} -(ct^\prime)^2.
+\end{align}\]</div>
+<p>If we use the Lorentz transformation for <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>, we find that <span class="math notranslate nohighlight">\(s^2 = s^{\prime 2}\)</span>, which makes <strong><span class="math notranslate nohighlight">\(\mathbf{s^2}\)</span> an invariant quantity</strong>.  This relationship can be extended to include the two other spatial coordinates, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>, so that</p>
+<div class="amsmath math notranslate nohighlight" id="equation-179d6951-75c6-4162-8593-48d72fbbbaf0">
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-179d6951-75c6-4162-8593-48d72fbbbaf0" title="Permalink to this equation">#</a></span>\[\begin{align}
+s^2 &amp;= x^2 + y^2 + z^2 -(ct)^2.
+\end{align}\]</div>
+</div>
+<div class="section" id="doppler-effect">
+<h2><span class="section-number">2.10. </span>Doppler Effect<a class="headerlink" href="#doppler-effect" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="relativistic-momentum">
+<h2><span class="section-number">2.11. </span>Relativistic Momentum<a class="headerlink" href="#relativistic-momentum" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="relativistic-energy">
+<h2><span class="section-number">2.12. </span>Relativistic Energy<a class="headerlink" href="#relativistic-energy" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="computations-in-modern-physics">
+<h2><span class="section-number">2.13. </span>Computations in Modern Physics<a class="headerlink" href="#computations-in-modern-physics" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="electromagnetism-and-relativity">
+<h2><span class="section-number">2.14. </span>Electromagnetism and Relativity<a class="headerlink" href="#electromagnetism-and-relativity" title="Permalink to this headline">#</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

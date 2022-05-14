@@ -46,6 +46,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Structure of the Atom" href="../Chapter_4/structure-of-the-atom.html" />
@@ -123,6 +125,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../Preamble/Markdown-basics.html">
    Introduction to Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/HW_template.html">
+   Homework Assignments
   </a>
  </li>
 </ul>
@@ -441,13 +448,19 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#compton-effect">
    3.8. Compton Effect
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pair-production-and-annihilation">
-     3.8.1. Pair Production and Annihilation
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pair-production-and-annihilation">
+   3.9. Pair Production and Annihilation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homework-problems">
+   3.10.
+   <strong>
+    Homework Problems
+   </strong>
+  </a>
  </li>
 </ul>
 
@@ -529,13 +542,19 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#compton-effect">
    3.8. Compton Effect
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pair-production-and-annihilation">
-     3.8.1. Pair Production and Annihilation
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pair-production-and-annihilation">
+   3.9. Pair Production and Annihilation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homework-problems">
+   3.10.
+   <strong>
+    Homework Problems
+   </strong>
+  </a>
  </li>
 </ul>
 
@@ -549,44 +568,1393 @@ title="Print to PDF"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="experimental-quantum-physics">
 <h1><span class="section-number">3. </span>Experimental Quantum Physics<a class="headerlink" href="#experimental-quantum-physics" title="Permalink to this headline">#</a></h1>
+<p>During the 30-year period of 1900-1930, our understanding of physical laws dramatically changed.  This was partly motivated by advances in theory by Einstein’s special relativity and through new experimental results (e.g., Michelson-Morley experiment).  Another great advance began in 1900 when Max Planck introduced his explanation of blackbody radiation.  The discovery of the x-ray, electron, and electron charge were also great experimental achievements.</p>
 <div class="section" id="discovery-of-the-x-ray-and-the-electron">
 <h2><span class="section-number">3.1. </span>Discovery of the X-Ray and the Electron<a class="headerlink" href="#discovery-of-the-x-ray-and-the-electron" title="Permalink to this headline">#</a></h2>
+<p>in the 1890s, <em>cathode rays</em> were easily generated from a metal plate with a large electric potential and in an evacuated tube.  However, the origin and constitution of cathode rays was not well understood (or even known).  The concept of an atomic substructure of matter was useful to explain the results of chemical experiments, Therefore, physicists deduced that cathode rays had something to do with atoms.  For example, cathode rays could penetrate matter, and their properties were of great interest in the 1890s.</p>
+<p>In 1895, Wilhelm Röntgen studied how cathode rays interacted with various materials and noticed a phosphorescent screen glowing vividly in the darkened room.  Röntgen realized he was observing a new kind of ray that was unaffected by magnetic fields and could better penetrate matter as compared to typical cathode rays.  He called them <strong>x-rays</strong>, where they were apparently produced by the cathode rays bombarding the glass walls of his vacuum tube.  Röntgen even showed that he could obtain an image of the bones in a hand when x-rays were allowed to pass through.  For his discovery, Röntgen received the first Nobel Prize for Physics in 1901.  See the YouTube video below from TedEd for more details.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/gsV7SJDDCY4" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>For several years, before the discovery of x-rays, J.J. Thomson had been studying the properties of electrical discharges in gases.  Thomson, Röntgen and many other scientists used a similar <a class="reference external" href="https://en.wikipedia.org/wiki/Cathode-ray_tube">apparatus</a> (see Figure <a class="reference internal" href="#thomson-fig"><span class="std std-numref">&lt;number&gt;</span></a>).  Thomson believed that cathode rays were particles, whereas several other scientists believed they were wave phenomena.</p>
+<div class="figure align-default" id="thomson-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/58ccc382e2195b4250cc9e7786710487db8254a7"><img alt="Thomson" src="https://openstax.org/apps/archive/20220325.143432/resources/58ccc382e2195b4250cc9e7786710487db8254a7" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">(a) J. J. Thomson produced a visible beam in a cathode ray tube. (b) This is an early cathode ray tube, invented in 1897 by Ferdinand Braun. (c) In the cathode ray, the beam (shown in yellow) comes from the cathode and is accelerated past the anode toward a fluorescent scale at the end of the tube. Simultaneous deflections by applied electric and magnetic fields permitted Thomson to calculate the mass-to-charge ratio of the particles composing the cathode ray. Image Credit: <a class="reference external" href="https://openstax.org/books/chemistry-2e/pages/2-2-evolution-of-atomic-theory">OpenStax: Chemistry</a>.</span><a class="headerlink" href="#thomson-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Thomson showed in 1897 that the charged particles emitted from a heated electrical cathode were in fact the same as cathode rays.  The rays from the cathode are attracted to the positive potential on the anode and further collimated to travel in a straight line, striking a fluorescent screen in the rear of the tube.  A voltage across the deflection plates sets up an electric field that deflects charged particles.  Thomson also studied the effects of a magnetic field upon the cathode rays and proved convincingly that the cathode rays acted as negatively charged particles (electrons) in both electric and magnetic fields.  Thomson received the Nobel Prize for Physics in 1906.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hertz performed a similar experiment, but observed on effect on the cathode rays due to the deflecting voltage.  In Hertz’s experiment, the poorer vacuum allowed the cathode rays to interact with and ionize residual gas.  Thomson found the same result at first, but improved the vacuum to obtain his final result.</p>
+</div>
+<p>Thomson’s method of measuring the ratio of the electron’s charge to mass <span class="math notranslate nohighlight">\(e/m\)</span> is now a stand technique.  With the magnetic field turned off, the electron entering the region between the plates is accelerated upward by the electric field as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7e0ed2c1-9797-4302-b5b1-31eaeb18dbd2">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-7e0ed2c1-9797-4302-b5b1-31eaeb18dbd2" title="Permalink to this equation">#</a></span>\[\begin{align}
+F_y = ma_y = qE,
+\end{align}\]</div>
+<p>where the ratio of the electron charge <span class="math notranslate nohighlight">\(q\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span> are determined by measuring the acceleration <span class="math notranslate nohighlight">\(a_y\)</span>.  The time <span class="math notranslate nohighlight">\(t\)</span> for the electron to traverse the deflecting plates of length <span class="math notranslate nohighlight">\(\ell\)</span> is <span class="math notranslate nohighlight">\(t \approx \ell/v_o\)</span>.  The exit angle $\theta of the electron is then given by</p>
+<div class="math notranslate nohighlight" id="equation-deflection-angle">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-deflection-angle" title="Permalink to this equation">#</a></span>\[\tan \theta = \frac{v_y}{v_x} = \frac{a_y t}{v_o} = \frac{q}{m}\frac{E\ell}{v_o^2}.\]</div>
+<div class="figure align-default" id="deflection-fig">
+<a class="reference internal image-reference" href="../_images/electron_deflection.png"><img alt="e-deflect" src="../_images/electron_deflection.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Thomson’s method of measuring the electron charge to mass ratio was to
+send electrons through a region containing a magnetic field (<span class="math notranslate nohighlight">\(\vec{B}\)</span> into page) perpendicular to an electric field (<span class="math notranslate nohighlight">\(\vec{E}\)</span> down).</span><a class="headerlink" href="#deflection-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The ratio <span class="math notranslate nohighlight">\(q/m\)</span> can be determined if the initial velocity <span class="math notranslate nohighlight">\(v_o\)</span> is known.  The initial velocity can be determined by turning on the magnetic field and adjusting the strength of <span class="math notranslate nohighlight">\(\vec{B}\)</span> until no deflection occurs.  The condition for zero deflection is the case of equilibrium or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d80cb183-d860-494d-b09a-24433f78a498">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-d80cb183-d860-494d-b09a-24433f78a498" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{F} = q\vec{E} + q\vec{v} \times \vec{B} = 0,
+\end{align}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[ \vec{E} = -\vec{v} \times \vec{B}.\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\vec{v}\)</span> and <span class="math notranslate nohighlight">\(\vec{B}\)</span> are perpendicular (i.e., the cross-product <span class="math notranslate nohighlight">\(\sin \theta = 1\)</span>), the initial velocity is related to the electric and magnetic field strengths by</p>
+<div class="math notranslate nohighlight" id="equation-electron-vel">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-electron-vel" title="Permalink to this equation">#</a></span>\[v_x = v_o = E/B.\]</div>
+<p>We can extract the ratio <span class="math notranslate nohighlight">\(q/m\)</span> through substitution by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8fafec35-3e3d-4770-b023-6f39d8ac9a99">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-8fafec35-3e3d-4770-b023-6f39d8ac9a99" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{q}{m} = \frac{v_o^2 \tan \theta}{E\ell} = \frac{E\tan \theta}{B^2 \ell}.
+\end{align}\]</div>
+<p><strong>An undergraduate that is reproducing Thomson’s experiment uses deflecting plates that are <span class="math notranslate nohighlight">\(5.0\ {\rm cm}\)</span> in length with an electric field of <span class="math notranslate nohighlight">\(1.2 \times 10^4\ {\rm V/m}\)</span>.  Without the magnetic field, we find an angular deflection of <span class="math notranslate nohighlight">\(30^\circ\)</span> and no deflection with a magnetic of <span class="math notranslate nohighlight">\(8.8 \times 10^{-4}\ {\rm T}\)</span>.  What is the initial velocity of the electron and its <span class="math notranslate nohighlight">\(q/m\)</span>?</strong></p>
+<blockquote>
+<div><p>For the case of no deflection, we only need to know the magnitudes of the electric <span class="math notranslate nohighlight">\(E\)</span> and magnetic <span class="math notranslate nohighlight">\(B\)</span> fields.  Since those are given, we can solve for the initial velocity directly as</p>
+<div class="math notranslate nohighlight">
+\[ v_o = \frac{E}{B} = \frac{1.2 \times 10^4\ {\rm V/m}}{8.8 \times 10^{-4}\ {\rm T}} = 1.4 \times 10^7\ {\rm m/s}. \]</div>
+<p>The unit of one Tesla <span class="math notranslate nohighlight">\({\rm T}\)</span> represents a <span class="math notranslate nohighlight">\(\frac{{\rm N\ s}}{{\rm C\ m}}\)</span> and one Volt <span class="math notranslate nohighlight">\({\rm V}\)</span> represents a <span class="math notranslate nohighlight">\(\frac{{\rm N\ m}}{{\rm C}}\)</span>.  Therefore the units of <span class="math notranslate nohighlight">\({\rm C}\)</span> and <span class="math notranslate nohighlight">\({\rm N}\)</span> cancel, leaving only <span class="math notranslate nohighlight">\({\rm m/s}\)</span>.</p>
+<p>Using the given angular deflection and plate length, the charge to mass ratio is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{q}{m} = \frac{E\tan \theta}{B^2 \ell} = \frac{(1.2 \times 10^4\ {\rm V/m})(\tan 30^\circ)}{(8.8 \times 10^{-4}\ {\rm T})^2(0.05\ {\rm m})} = 1.8 \times 10^{11}\ {\rm C/kg}.\]</div>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">E_mag</span> <span class="o">=</span> <span class="mf">1.2e4</span> <span class="c1">#Electric field strength in V/m</span>
+<span class="n">B_mag</span> <span class="o">=</span> <span class="mf">8.8e-4</span> <span class="c1">#Magnetic field strength in T</span>
+
+<span class="n">l_plate</span> <span class="o">=</span> <span class="mf">0.05</span> <span class="c1">#plate length in m</span>
+<span class="n">deflect_ang</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="c1">#deflection angle in radians</span>
+
+<span class="n">v_o</span> <span class="o">=</span> <span class="n">E_mag</span><span class="o">/</span><span class="n">B_mag</span>
+<span class="n">q_m</span> <span class="o">=</span> <span class="n">E_mag</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">deflect_ang</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">B_mag</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">l_plate</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The initial velocity of the electron is </span><span class="si">%1.1e</span><span class="s2"> m/s.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">v_o</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The charge to mass ratio is </span><span class="si">%1.1e</span><span class="s2"> C/kg.&quot;</span> <span class="o">%</span> <span class="n">q_m</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The initial velocity of the electron is 1.4e+07 m/s.
+
+The charge to mass ratio is 1.8e+11 C/kg.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Thomson’s actual experiment obtained a result about 35% lower than the presently accepted value <span class="math notranslate nohighlight">\(e/m = 1.76 \times 10^{11}\ {\rm C/kg}\)</span>.  Thomson realized that the value of <span class="math notranslate nohighlight">\(e/m\)</span> for an electron was much larger than anticipated and a factor of <span class="math notranslate nohighlight">\(10^3\)</span> larger than the <span class="math notranslate nohighlight">\(q/m\)</span> previously measured for the hydrogen atom.  He concluded that <span class="math notranslate nohighlight">\(m\)</span> was small, <span class="math notranslate nohighlight">\(e\)</span> was large, or both.  In addition, the “carriers of the electricity” were quite penetrating compared with atoms or molecules, which must be larger in size.</p>
 </div>
 <div class="section" id="determination-of-electron-charge">
 <h2><span class="section-number">3.2. </span>Determination of Electron Charge<a class="headerlink" href="#determination-of-electron-charge" title="Permalink to this headline">#</a></h2>
+<p>AFter Thomson’s measurement of <span class="math notranslate nohighlight">\(e/m\)</span>, several investigators attempted to determine the actual magnitude of the electron’s charge.  <a class="reference external" href="https://en.wikipedia.org/wiki/Robert_Andrews_Millikan">Robert Millikan</a> in 1911 reported evidence for an accurate determination of the electron’s charge.  Millikan’s classic experiment visually measured the motion of charged (positively and negatively) and uncharged oil drops under the influence of electrical and gravitational forces.</p>
+<div class="figure align-default" id="oildrop-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Simplified_scheme_of_Millikan%E2%80%99s_oil-drop_experiment.svg/1920px-Simplified_scheme_of_Millikan%E2%80%99s_oil-drop_experiment.svg.png"><img alt="oildrop" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Simplified_scheme_of_Millikan%E2%80%99s_oil-drop_experiment.svg/1920px-Simplified_scheme_of_Millikan%E2%80%99s_oil-drop_experiment.svg.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Simplified scheme of Millikan’s oil-drop experiment. Image Credit: <a class="reference external" href="https://openstax.org/books/chemistry-2e/pages/2-2-evolution-of-atomic-theoryhttps://en.wikipedia.org/wiki/Oil_drop_experiment">Wikipedia</a>.</span><a class="headerlink" href="#oildrop-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>When an oil drop falls downward through the air, it experiences a frictional force <span class="math notranslate nohighlight">\(\vec{F}_j\)</span> that is proportional to its velocity due to the air’s viscosity by</p>
+<div class="math notranslate nohighlight" id="equation-air-friction">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-air-friction" title="Permalink to this equation">#</a></span>\[\vec{F}_j = -b\vec{v}.\]</div>
+<p>This drag force always opposes the velocity, hence the negative sign.  The constant <span class="math notranslate nohighlight">\(b\)</span> is determined via <a class="reference external" href="https://en.wikipedia.org/wiki/Stokes%27_law">Stokes’ law</a> and is proportional to the oil drop’s radius.  Millikan showed that Stokes’ law was incorrect for small-diameter spheres due to the atomic nature of the medium, where an appropriate correction was required.  For a first-order calculation, we neglect the buoyancy of the air that produces an upward force on the drop.</p>
+<p>To suspend the oil drop at rest between the plates, the electric and gravitational forces must be balanced.  This makes the frictional force equal to zero because the oil drop’s velocity is zero.  The force balance is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f3c9e739-b245-4f76-a104-0eb0bf072c3d">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-f3c9e739-b245-4f76-a104-0eb0bf072c3d" title="Permalink to this equation">#</a></span>\[\begin{align}
+\vec{F}_E = q\vec{E}=-m\vec{g}, \quad (\text{when } v=0).
+\end{align}\]</div>
+<p>The magnitude of the electric field is <span class="math notranslate nohighlight">\(E=V/d\)</span>, which depends on the voltage <span class="math notranslate nohighlight">\(V\)</span> across large, flat plates separated by a small distance <span class="math notranslate nohighlight">\(d\)</span>.  The magnitude of the electron charge is determined as</p>
+<div class="math notranslate nohighlight" id="equation-electron-q">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-electron-q" title="Permalink to this equation">#</a></span>\[q = \frac{mgd}{V}.\]</div>
+<p>To calculate <span class="math notranslate nohighlight">\(q\)</span>, we need to know the mass <span class="math notranslate nohighlight">\(m\)</span> of the oil drops.  Millikan found he could determine <span class="math notranslate nohighlight">\(m\)</span> by measuring the terminal velocity of the oil drop while the electric field was off.  From Stoke’s law (or Eqn. <a class="reference internal" href="#equation-air-friction">(3.6)</a>), the radius of the oil drop is related to the terminal velocity.  Using the radius <span class="math notranslate nohighlight">\(r\)</span> and the density <span class="math notranslate nohighlight">\(\rho\)</span> of the oil, the mass of the oil can be determined by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1b8bfed2-b51c-41bb-85d8-c7ad8e3e3080">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-1b8bfed2-b51c-41bb-85d8-c7ad8e3e3080" title="Permalink to this equation">#</a></span>\[\begin{align}
+m = \frac{4}{3}\pi r^3 \rho.
+\end{align}\]</div>
+<p>The oil drop can be moved up and down in the apparatus at will by adjusting the voltage magnitude and polarity.  millikan reported that he was able to observe an oil drop for up to six hours, where the drop changed its charge several times.  Millikan made 1000s of measurements using different oils and showed that there is a basic quantized electron charge.  Millikan’s value was very close to the modern value <span class="math notranslate nohighlight">\(e=1.602 \times 10^{-19}\ {\rm C}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We always quote a positive number for the charge <span class="math notranslate nohighlight">\(e\)</span> and the charge on an electron is then <span class="math notranslate nohighlight">\(-e\)</span>.</p>
+</div>
+<p>In an actual undergraduate laboratory experiment, students used plastic balls of about <span class="math notranslate nohighlight">\(1\ \mu{\rm m}\)</span> in diameter in place of the oil drops.  This avoids the measurement of the oil drop’s terminal velocity and the dependence on Stokes’ law.  the small plastic balls are sprayed through an atomizer in a liquid solution, which quickly evaporates.  The balls are observed through a microscope.  To make it easier for the charge on a ball to change, the region between the plates is bombarded occasionally with beta particle (electron) radiation from a radioactive source.</p>
+<p>The table under the dropdown menu provides the first 30 (out of 100) measurements.  The <em>first</em> python code produces a histogram with <span class="math notranslate nohighlight">\(0.2 \times 10^{-19}\ {\rm C}\)</span> sized bins. Due to the experimental setup, multiple charges can exist on the balls.  We can account for this using the model <span class="math notranslate nohighlight">\(q = n q_o\)</span>, where <span class="math notranslate nohighlight">\(q_o\)</span> represents the basic charge and <span class="math notranslate nohighlight">\(n\)</span> is an integer (starting from 1).  The <em>second</em> python codes uses the data to find a best-fit value of <span class="math notranslate nohighlight">\(q_o = 1.77 \times 10^{-19}\ {\rm C}\)</span>.  The percentage error (using only the first 30 measurements) of this experiment is about <span class="math notranslate nohighlight">\(10.7\%\)</span>.  Using all the measurements, produces a best-fit value of <span class="math notranslate nohighlight">\(q_o = 1.5 \times 10^{-19}\ {\rm C}\)</span>, which is much closer to the true value.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Click to reveal a table of observations!<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p class="card-text"><strong>Particle</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>Voltage (V)</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><span class="math notranslate nohighlight">\(\mathbf{q}\ (\times 10^{-19}\ {\rm C})\)</span></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>Particle</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>Voltage</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>q</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>Particle</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>Voltage</strong></p></th>
+<th class="text-align:center head"><p class="card-text"><strong>q</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p class="card-text">1</p></td>
+<td class="text-align:center"><p class="card-text">-30</p></td>
+<td class="text-align:center"><p class="card-text">-7.43</p></td>
+<td class="text-align:center"><p class="card-text">11</p></td>
+<td class="text-align:center"><p class="card-text">-126.3</p></td>
+<td class="text-align:center"><p class="card-text">-1.77</p></td>
+<td class="text-align:center"><p class="card-text">21</p></td>
+<td class="text-align:center"><p class="card-text">-31.5</p></td>
+<td class="text-align:center"><p class="card-text">-7.08</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p class="card-text">2</p></td>
+<td class="text-align:center"><p class="card-text">+28.8</p></td>
+<td class="text-align:center"><p class="card-text">+7.74</p></td>
+<td class="text-align:center"><p class="card-text">12</p></td>
+<td class="text-align:center"><p class="card-text">-83.9</p></td>
+<td class="text-align:center"><p class="card-text">-2.66</p></td>
+<td class="text-align:center"><p class="card-text">22</p></td>
+<td class="text-align:center"><p class="card-text">-66.8</p></td>
+<td class="text-align:center"><p class="card-text">-3.34</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p class="card-text">3</p></td>
+<td class="text-align:center"><p class="card-text">-28.4</p></td>
+<td class="text-align:center"><p class="card-text">-7.85</p></td>
+<td class="text-align:center"><p class="card-text">13</p></td>
+<td class="text-align:center"><p class="card-text">-44.6</p></td>
+<td class="text-align:center"><p class="card-text">-5.00</p></td>
+<td class="text-align:center"><p class="card-text">23</p></td>
+<td class="text-align:center"><p class="card-text">+41.5</p></td>
+<td class="text-align:center"><p class="card-text">+5.37</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p class="card-text">4</p></td>
+<td class="text-align:center"><p class="card-text">+30.6</p></td>
+<td class="text-align:center"><p class="card-text">+7.29</p></td>
+<td class="text-align:center"><p class="card-text">14</p></td>
+<td class="text-align:center"><p class="card-text">-65.5</p></td>
+<td class="text-align:center"><p class="card-text">-3.40</p></td>
+<td class="text-align:center"><p class="card-text">24</p></td>
+<td class="text-align:center"><p class="card-text">-34.8</p></td>
+<td class="text-align:center"><p class="card-text">-6.41</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p class="card-text">5</p></td>
+<td class="text-align:center"><p class="card-text">-136.2</p></td>
+<td class="text-align:center"><p class="card-text">-1.64</p></td>
+<td class="text-align:center"><p class="card-text">15</p></td>
+<td class="text-align:center"><p class="card-text">-139.1</p></td>
+<td class="text-align:center"><p class="card-text">-1.60</p></td>
+<td class="text-align:center"><p class="card-text">25</p></td>
+<td class="text-align:center"><p class="card-text">-44.3</p></td>
+<td class="text-align:center"><p class="card-text">-5.03</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p class="card-text">6</p></td>
+<td class="text-align:center"><p class="card-text">-134.3</p></td>
+<td class="text-align:center"><p class="card-text">-1.66</p></td>
+<td class="text-align:center"><p class="card-text">16</p></td>
+<td class="text-align:center"><p class="card-text">-64.5</p></td>
+<td class="text-align:center"><p class="card-text">-3.46</p></td>
+<td class="text-align:center"><p class="card-text">26</p></td>
+<td class="text-align:center"><p class="card-text">-143.6</p></td>
+<td class="text-align:center"><p class="card-text">-1.55</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p class="card-text">7</p></td>
+<td class="text-align:center"><p class="card-text">+82.2</p></td>
+<td class="text-align:center"><p class="card-text">+2.71</p></td>
+<td class="text-align:center"><p class="card-text">17</p></td>
+<td class="text-align:center"><p class="card-text">-28.7</p></td>
+<td class="text-align:center"><p class="card-text">-7.77</p></td>
+<td class="text-align:center"><p class="card-text">27</p></td>
+<td class="text-align:center"><p class="card-text">+77.2</p></td>
+<td class="text-align:center"><p class="card-text">+2.89</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p class="card-text">8</p></td>
+<td class="text-align:center"><p class="card-text">+28.7</p></td>
+<td class="text-align:center"><p class="card-text">+7.77</p></td>
+<td class="text-align:center"><p class="card-text">18</p></td>
+<td class="text-align:center"><p class="card-text">-30.7</p></td>
+<td class="text-align:center"><p class="card-text">-7.26</p></td>
+<td class="text-align:center"><p class="card-text">28</p></td>
+<td class="text-align:center"><p class="card-text">-39.9</p></td>
+<td class="text-align:center"><p class="card-text">-5.59</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p class="card-text">9</p></td>
+<td class="text-align:center"><p class="card-text">-39.9</p></td>
+<td class="text-align:center"><p class="card-text">-5.59</p></td>
+<td class="text-align:center"><p class="card-text">19</p></td>
+<td class="text-align:center"><p class="card-text">+32.8</p></td>
+<td class="text-align:center"><p class="card-text">+6.8</p></td>
+<td class="text-align:center"><p class="card-text">29</p></td>
+<td class="text-align:center"><p class="card-text">-57.9</p></td>
+<td class="text-align:center"><p class="card-text">-3.85</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p class="card-text">10</p></td>
+<td class="text-align:center"><p class="card-text">+54.3</p></td>
+<td class="text-align:center"><p class="card-text">+4.11</p></td>
+<td class="text-align:center"><p class="card-text">20</p></td>
+<td class="text-align:center"><p class="card-text">-140.8</p></td>
+<td class="text-align:center"><p class="card-text">+1.58</p></td>
+<td class="text-align:center"><p class="card-text">30</p></td>
+<td class="text-align:center"><p class="card-text">+42.3</p></td>
+<td class="text-align:center"><p class="card-text">+5.27</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="mi">218</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">26</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">50</span><span class="o">/</span><span class="mf">256.</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s2">&quot;oil_drop.csv&quot;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]),</span><span class="n">bins</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">0.2</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">9.5</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Counts&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Charge on balls ($</span><span class="se">\\</span><span class="s2">times 10^{-19}\ {</span><span class="se">\\</span><span class="s2">rm C})$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/experimental-quantum-physics_4_0.png" src="../_images/experimental-quantum-physics_4_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="mi">218</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">26</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">50</span><span class="o">/</span><span class="mf">256.</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">model</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">q0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">q0</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s2">&quot;oil_drop.csv&quot;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="c1">#fit to model q = n*q_o; n= 1,2,3,...</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">q</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="n">popt</span><span class="p">,</span> <span class="n">pcov</span> <span class="o">=</span> <span class="n">curve_fit</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+<span class="n">pct_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mf">1e-19</span><span class="o">-</span><span class="n">e</span><span class="p">)</span><span class="o">/</span><span class="n">e</span><span class="o">*</span><span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The error is </span><span class="si">%1.1f</span><span class="s2"> percent.&quot;</span> <span class="o">%</span> <span class="n">pct_error</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="s1">&#39;.&#39;</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">model</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="o">*</span><span class="n">popt</span><span class="p">),</span><span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="s1">&#39;$q_o$ = </span><span class="si">%1.2f</span><span class="s1"> $</span><span class="se">\\</span><span class="s1">times 10^{-19}\ {</span><span class="se">\\</span><span class="s1">rm C}$&#39;</span> <span class="o">%</span> <span class="n">popt</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mf">0.9</span><span class="p">,</span><span class="mf">4.1</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$n$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$q$ ($</span><span class="se">\\</span><span class="s2">times 10^{-19}\ {</span><span class="se">\\</span><span class="s2">rm C})$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The error is 10.7 percent.
+</pre></div>
+</div>
+<img alt="../_images/experimental-quantum-physics_5_1.png" src="../_images/experimental-quantum-physics_5_1.png" />
+</div>
+</div>
 </div>
 <div class="section" id="line-spectra">
 <h2><span class="section-number">3.3. </span>Line Spectra<a class="headerlink" href="#line-spectra" title="Permalink to this headline">#</a></h2>
+<p>Thermal bodies produce a smooth, continuous radiation spectrum (intensity vs. wavelength), where chemical elements produce unique wavelengths (or colors) when burned in a flame or excited in an electrical discharge.  Scientists used prisms (at least since Newton) to break light apart into their constituent colors for examination.  <a class="reference external" href="https://en.wikipedia.org/wiki/Henry_Augustus_Rowland">Henry Rowland</a> made high quality diffraction gratings, which made <a class="reference external" href="https://en.wikipedia.org/wiki/Optical_spectrometer">optical spectroscopy</a> an important area of experimental physics.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rowland was one of the first six professors chosen in 1875 for the founding of Johns Hopkins University and was one of the foremost American physicists during that time, together with Michelson.  Rowland was the first president of the <a class="reference external" href="https://www.aps.org/">American Physical Society</a> in 1899, where Michelson was the vice president.  <strong>Neither Rowland nor Michelson had formally earned a Ph.D. degree.</strong></p>
+</div>
+<div class="figure align-default" id="spectrometer-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Spectrometer.svg/1920px-Spectrometer.svg.png"><img alt="spectrometer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Spectrometer.svg/1920px-Spectrometer.svg.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Schematic of a grating spectrometer. Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Optical_spectrometer">Wikipedia</a>.</span><a class="headerlink" href="#spectrometer-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>A spectrometer (see Fig. <a class="reference internal" href="#spectrometer-fig"><span class="std std-numref">3.4</span></a>) uses the light produced by a low-pressure gas contained in a tube, when an electrical discharge excites the atoms in the gas.  The collimated light passes through a diffraction grating (with many ruling lines per centimeter) and the diffracted light is separated at an angle <span class="math notranslate nohighlight">\(\theta\)</span> depending on its wavelength <span class="math notranslate nohighlight">\(\lambda\)</span>.  The diffraction maxima are described mathematically by</p>
+<div class="math notranslate nohighlight" id="equation-diffraction">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-diffraction" title="Permalink to this equation">#</a></span>\[d \sin \theta = n\lambda,\]</div>
+<p>which depends on the distance between rulings <span class="math notranslate nohighlight">\(d\)</span> and the order number <span class="math notranslate nohighlight">\(n\)</span> (an integer).  Figure <a class="reference internal" href="#balmer-fig"><span class="std std-numref">3.5</span></a> illustrates the resulting pattern of light bands and dark areas (on the right) from a hydrogen gas tube (on the left).  The pattern is called a <em>line spectrum</em>.</p>
+<div class="figure align-default" id="balmer-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/modpic/hydtube.jpg"><img alt="balmer" src="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/modpic/hydtube.jpg" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.5 </span><span class="caption-text">At left is a hydrogen spectral tube excited by a 5000 volt transformer. The three prominent hydrogen lines are shown at the right of the image through a 600 lines/mm diffraction grating. Figure Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hyde.html">Hyperphysics</a>.</span><a class="headerlink" href="#balmer-fig" title="Permalink to this image">#</a></p>
+</div>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Robert_Bunsen">Robert Bunsen</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Gustav_Kirchhoff">Gustav Kirchhoff</a> realized that the wavelength of these line spectra constituted a fingerprint for the  chemical elements and the identification for the composition of materials.  The field of spectroscopy flourished due to the continual improvements made to diffraction gratings (i.e., finer and more evenly ruled gratings).  Particular attention was paid to the Sun’s spectrum in hopes of understanding the origin of sunlight.  The element helium was actually “discovered” by its line spectra from the Sun before it was recognized on Earth.</p>
+<p>Scientists of the 1800s attempted to find some simple underlying order for the characteristic wavelengths of line spectra (i.e., why are the lines different for each element?).  Hydrogen appeared to have the simplest looking spectrum and some chemists thought hydrogen atoms might build up to make more complex atoms.  <a class="reference external" href="https://en.wikipedia.org/wiki/Johann_Jakob_Balmer">Johann Balmer</a> in 1885 succeeded in obtaining a simple empirical formula that fit the wavelengths of the (then known) four lines in the hydrogen spectrum and several ultraviolet (UV) lines that were found in the spectra of white stars.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When a formula is derived empirically, it is typically based on <em>measurements</em> of a few fundamental parameters.  The coefficient(s) of the formula denote an approximation of some other unknown (perhaps fundamental) quantities.  This is not to be confused with analytical formula, which is <em>derived from first principles</em> and expressed solely in terms of well-known fundamental quantities.</p>
+</div>
+<p>The <em>Balmer series</em> is described by</p>
+<div class="math notranslate nohighlight" id="equation-balmer-series">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-balmer-series" title="Permalink to this equation">#</a></span>\[\lambda = 364.56 \left( \frac{k^2}{k^2-4}\right)\ {\rm nm},\]</div>
+<p>where the integer <span class="math notranslate nohighlight">\(k\)</span> (starting from 3) produces wavelengths that match all the visible hydrogen lines.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Wavelengths were formerly listed in units of angstroms (Å) which are named after <a class="reference external" href="https://en.wikipedia.org/wiki/Anders_Jonas_%C3%85ngstr%C3%B6m">Anders Ångstrom</a>.  Ångstrom was one of the first people to observe and measure the wavelengths of the four visible lines of hydrogen.  <span class="math notranslate nohighlight">\(1\ {\rm \unicode{x212B}} = 0.1\ {\rm nm} = 10^{-10}\ {\rm m}\)</span>.</p>
+</div>
+<p>Equation <a class="reference internal" href="#equation-balmer-series">(3.11)</a> can be rewritten as its reciprocal into the following form</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3adc9008-8821-4df8-86a0-1f9472393ab2">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-3adc9008-8821-4df8-86a0-1f9472393ab2" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{1}{\lambda} = \frac{1}{365.56\ {\rm nm}}\left(\frac{k^2 -4}{k^2}\right) = \frac{4}{365.56\ {\rm nm}}\left( \frac{1}{2^2}-\frac{1}{k^2}\right) = R_{\rm H} \left( \frac{1}{2^2}-\frac{1}{k^2}\right),
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(R_{\rm H}\)</span> represents the <em>Rydberg constant</em> (for hydrogen) and <span class="math notranslate nohighlight">\(k\)</span> is an integer.  The ratio (<span class="math notranslate nohighlight">\(4/364.56\ {\rm nm}\)</span>) is <span class="math notranslate nohighlight">\(1.0972 \times 10^7\ {\rm m^{-1}}\)</span>, where the more accurate value is <span class="math notranslate nohighlight">\(1.096776 \times 10^7\ {\rm m^{-1}}\)</span>.  <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Rydberg">Johannes Rydberg</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Walther_Ritz">Walther Ritz</a> determined a more general empirical equation for calculating the wavelengths known as the <strong>Rydberg equation</strong>, given by</p>
+<div class="math notranslate nohighlight" id="equation-rydberg-eqn">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-rydberg-eqn" title="Permalink to this equation">#</a></span>\[\frac{1}{\lambda} = R_{\rm H}\left(\frac{1}{n^2}-\frac{1}{k^2}\right),\]</div>
+<p>and is generalized as long as <span class="math notranslate nohighlight">\(k&gt;n\)</span>.  The Balmer series is a special case of the Rydberg equation, when <span class="math notranslate nohighlight">\(n=2\)</span>.  By 1925, the five series related to the hydrogen atom’s spectral lines were discovered, where each series corresponded to a different integer <span class="math notranslate nohighlight">\(n\)</span>.  The understanding of the Rydberg equation and the discrete spectrum of hydrogen helped uncover the mysteries of the atom in the early 20th century.</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Discoverer (year)</p></th>
+<th class="head"><p>Wavelength</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(n\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(k\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1916ApJ....43...89L/abstract">Lyman (1916)</a></p></td>
+<td><p>Ultraviolet (UV)</p></td>
+<td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://www.ffn.ub.es/luisnavarro/nuevo_maletin/Balmer_1885.pdf">Balmer (1885)</a>; translated from German</p></td>
+<td><p>Visible, Ultraviolet (UV)</p></td>
+<td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1908AnP...332..537P/abstract">Paschen (1908)</a>; in German</p></td>
+<td><p>Infrared (IR)</p></td>
+<td><p>3</p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;3\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1922ApJ....56..154B/abstract">Brackett (1922)</a></p></td>
+<td><p>Infrared (IR)</p></td>
+<td><p>4</p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;4\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1924JOSA....9..193P/abstract">Pfund (1924)</a></p></td>
+<td><p>Infrared (IR)</p></td>
+<td><p>5</p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;5\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The visible lines of the Balmer series were observed first because they are the most easily seen (i.e., visible!).  Show that the wavelengths of spectral lines in the Lyman (<span class="math notranslate nohighlight">\(n=1\)</span>) and Paschen (<span class="math notranslate nohighlight">\(n=3\)</span>) are not in the visible region (<span class="math notranslate nohighlight">\(\lambda = 400-700\ {\rm nm}\)</span>). Find the wavelengths of the four visible atomic hydrogen lines.</strong></p>
+<blockquote>
+<div><p>For a given <span class="math notranslate nohighlight">\(n\)</span> in the Rydberg equation (Eqn. <a class="reference internal" href="#equation-rydberg-eqn">(3.13)</a>), the wavelength decreases with <span class="math notranslate nohighlight">\(k\)</span> because <span class="math notranslate nohighlight">\(R_{\rm H}^{-1} \approx 91.174\ {\rm nm}\)</span> and the difference in parentheses of the Rydberg equation can only cause this value to decrease after the first permissible <span class="math notranslate nohighlight">\(k\)</span>.  For comparing wavelengths in a series, it is sometimes more useful to represent the Rydberg equation as</p>
+<div class="math notranslate nohighlight">
+\[ \lambda = R_{\rm H}^{-1}\left(\frac{n^2k^2}{k^2-n^2}\right), \]</div>
+<p>for a finite <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<p>Using the above expression, we can examine the wavelengths of each series (Lyman, Balmer, and Paschen) for hydrogen in turn.</p>
+<p><strong>For the Lyman series:</strong> <span class="math notranslate nohighlight">\(n=1\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+k=2:&amp; \quad \lambda = 91.174\left(\frac{1^22^2}{2^2-1^2}\right) = 121.57\ {\rm nm}\ \text{(UV)} \\
+k=3:&amp; \quad \lambda = 91.174\left(\frac{1^23^2}{3^2-1^2}\right) = 102.57\ {\rm nm}\ \text{(UV)} \\
+\end{align*}\]</div>
+<p>All the wavelengths in the Lyman series are in the UV region and not visible by eye.</p>
+<p><strong>For the Balmer series:</strong> <span class="math notranslate nohighlight">\(n=2\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+k=3:&amp; \quad \lambda = 91.174\left(\frac{2^23^2}{3^2-2^2}\right) = 656.47\ {\rm nm}\ \text{(Red)} \\
+k=4:&amp; \quad \lambda = 91.174\left(\frac{2^24^2}{4^2-2^2}\right) = 486.27\ {\rm nm}\ \text{(Blue-green)} \\
+k=5:&amp; \quad \lambda = 91.174\left(\frac{2^25^2}{5^2-2^2}\right) = 434.17\ {\rm nm}\ \text{(Violet)} \\
+k=6:&amp; \quad \lambda = 91.174\left(\frac{2^26^2}{6^2-2^2}\right) = 410.29\ {\rm nm}\ \text{(Violet)} \\
+k=7:&amp; \quad \lambda = 91.174\left(\frac{2^27^2}{7^2-2^2}\right) = 397.12\ {\rm nm}\ \text{(UV)} \\
+\end{align*}\]</div>
+<p>The first four wavelengths in the Balmer series are in the visible, although the <span class="math notranslate nohighlight">\(k=6\)</span> line is difficult to see due to its weak intensity.</p>
+<p><strong>For the Paschen series:</strong> <span class="math notranslate nohighlight">\(n=3\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+k=4:&amp; \quad \lambda = 91.174\left(\frac{3^24^2}{4^2-3^2}\right) = 1875.63\ {\rm nm}\ \text{(IR)} \\
+k=5:&amp; \quad \lambda = 91.174\left(\frac{3^25^2}{4^2-5^2}\right) = 1282.17\ {\rm nm}\ \text{(IR)} \\
+k=\infty:&amp; \quad \lambda = 91.174\left(\frac{1}{3^2} - \frac{1}{\infty}\right)^{-1} = 820.59\ {\rm nm}\ \text{(IR)} \\
+\end{align*}\]</div>
+<p>All the wavelengths in the Paschen series are in the IR region and are not visible by eye.  The higher series <span class="math notranslate nohighlight">\(n\geq 4\)</span>, will all have wavelengths well above the visible region.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">Rydberg_wavelength</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="c1">#Calculates the wavelength using the Rydberg equation</span>
+    <span class="c1"># n = integer; denotes type of series</span>
+    <span class="c1"># k = integer; denotes the kth line of a series</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">Rydberg</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">k</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mf">1.e-9</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">Rydberg</span><span class="p">)</span><span class="o">*</span><span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">1.</span><span class="o">/</span><span class="n">k</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mf">1e-9</span>
+<span class="n">Rydberg</span> <span class="o">=</span> <span class="mf">1.096776e7</span> <span class="c1">#Rydberg constant in m^-1</span>
+<span class="n">series</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">series_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Lyman&quot;</span><span class="p">,</span><span class="s2">&quot;Balmer&quot;</span><span class="p">,</span><span class="s2">&quot;Paschen&quot;</span><span class="p">]</span>
+<span class="n">k_vals</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">]]</span>
+
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">series</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">k_v</span> <span class="ow">in</span> <span class="n">k_vals</span><span class="p">[</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="n">H_lambda</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Rydberg_wavelength</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">k_v</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">k_v</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: (</span><span class="si">%i</span><span class="s2">,</span><span class="si">%i</span><span class="s2">) --&gt; </span><span class="si">%3.2f</span><span class="s2"> nm.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">series_names</span><span class="p">[</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="n">s</span><span class="p">,</span><span class="n">k_v</span><span class="p">,</span><span class="n">H_lambda</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">: (</span><span class="si">%i</span><span class="s2">,infty) --&gt; </span><span class="si">%3.2f</span><span class="s2"> nm.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">series_names</span><span class="p">[</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="n">s</span><span class="p">,</span><span class="n">H_lambda</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Lyman: (1,2) --&gt; 121.57 nm.
+Lyman: (1,3) --&gt; 102.57 nm.
+Balmer: (2,3) --&gt; 656.47 nm.
+Balmer: (2,4) --&gt; 486.27 nm.
+Balmer: (2,5) --&gt; 434.17 nm.
+Balmer: (2,6) --&gt; 410.29 nm.
+Balmer: (2,7) --&gt; 397.12 nm.
+Paschen: (3,4) --&gt; 1875.63 nm.
+Paschen: (3,5) --&gt; 1282.17 nm.
+Paschen: (3,infty) --&gt; 820.59 nm.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="quantization">
 <h2><span class="section-number">3.4. </span>Quantization<a class="headerlink" href="#quantization" title="Permalink to this headline">#</a></h2>
+<p>Some Greek philosophers believed that matter must be composed of fundamental units, where the <em>atom</em> means “not further divisible.”  Today think that some elements of matter are indivisible, which are the elementary particles that make up the atom.  If there are building blocks of matter, then there must be some basic units of mass-energy of which matter is composed.</p>
+<p>Building up matter from smaller parts implies that the smaller parts are quantized, or well-defined packets of mass-energy.  Millikan’s oil drop experiment showed the quantization of electric charge <span class="math notranslate nohighlight">\(q_o = e\)</span>.  Modern theories predict that charges are quantized in units (called <strong>quarks</strong>) of <span class="math notranslate nohighlight">\(\pm e/3\)</span> and <span class="math notranslate nohighlight">\(\pm 2e/3\)</span>.  The charges of particles that have been directly observed are quantized in units of <span class="math notranslate nohighlight">\(\pm e\)</span>.</p>
+<p>The measured atomic weights are not continuous, where they have only discrete values.  Molecules are formed from an integral (whole number) of atoms.  For example, water is composed of <em>exactly</em> two hydrogen atoms and one oxygen atom.  An organ pipe produces one fundamental musical note with overtones is a form of quantization arising from fitting a precise number (or fractions) of sound waves into the pipe (see Fig. <a class="reference internal" href="#overtones-fig"><span class="std std-numref">3.6</span></a>).  Line spectra are another examples of quantization, where the precise wavelengths can be described empirically by simple equations.</p>
+<div class="figure align-default" id="overtones-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220422.171947/resources/ad2df2f12c9d6c295799574abcdb8caf2c232b66"><img alt="overtones" src="https://openstax.org/apps/archive/20220422.171947/resources/ad2df2f12c9d6c295799574abcdb8caf2c232b66" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.6 </span><span class="caption-text">The fundamental and three lowest overtones for a tube closed at one end. All have maximum air displacements at the open end and none at the closed end. Figure Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/17-4-normal-modes-of-a-standing-sound-wave">OpenStax: University Physics Vol 1</a>.</span><a class="headerlink" href="#overtones-fig" title="Permalink to this image">#</a></p>
+</div>
 </div>
 <div class="section" id="blackbody-radiation">
 <h2><span class="section-number">3.5. </span>Blackbody Radiation<a class="headerlink" href="#blackbody-radiation" title="Permalink to this headline">#</a></h2>
+<p>When matter is heated, it emits radiation.  This is nothing new if you’ve been around a campfire or forge.  We can feel heat radiation emitted by the heat element on a electric stove, and the color of the element changes from dark red <span class="math notranslate nohighlight">\((550^\circ{\rm C})\)</span> to bright red <span class="math notranslate nohighlight">\((700^\circ{\rm C})\)</span>.  If the temperature were increased further, the color would progress through orange, yellow, and finally white.  Physicists of the 19th century measured the intensity of the emitted radiation as a function of material, temperature, and wavelength.</p>
+<p>All bodies emit and absorb radiation.  The body is in <em>thermal equilibrium</em> with its surroundings when a its temperature is constant in time.  For this to occur, the rate of emitted radiation must equal the rate absorbed.  This implies a good thermal emitter is also a good absorber.  The simplest (or most idealized) case is called a <a class="reference external" href="https://en.wikipedia.org/wiki/Black_body">blackbody</a>, which absorbs all the radiation falling onto it and reflects none.  The simplest way to construct a blackbody is to drill a small hole in a hollow container (or cavity), where radiation enters and is eventually absorbed after many reflections (see Fig. <a class="reference internal" href="#cavity-fig"><span class="std std-numref">3.7</span></a>).  Only a small fraction of the entering rays will exit through the hole.  If the blackbody is in thermal equilibrium, then it must also be an excellent emitter of radiation.</p>
+<div class="figure align-default" id="cavity-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Black_body_realization.svg/1024px-Black_body_realization.svg.png"><img alt="cavity" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Black_body_realization.svg/1024px-Black_body_realization.svg.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.7 </span><span class="caption-text">An approximate realization of a black body as a tiny hole in an insulated enclosure. Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Black_body">Wikipedia</a>.</span><a class="headerlink" href="#cavity-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The radiation properties of the blackbody are independent of the composition of the container.  Physicists study the properties of intensity vs. wavelength (i.e., <em>spectral distribution</em>) at fixed temperatures without having to know the details of emission or absorption by a particular kind of atom.</p>
+<p>The intensity <span class="math notranslate nohighlight">\(\mathcal{I}(\lambda,T)\)</span> is the total power radiated per unit area per unit wavelength at a given temperature.  Two important points about a spectrum are:</p>
+<ol class="simple">
+<li><p>The maximum of the distribution shifts to smaller wavelengths as the temperature is increased.</p></li>
+<li><p>The total power radiated increases with the temperature.</p></li>
+</ol>
+<p>The first point is described mathematically as <strong>Wien’s displacement law</strong>:</p>
+<div class="math notranslate nohighlight" id="equation-wien-law">
+<span class="eqno">(3.14)<a class="headerlink" href="#equation-wien-law" title="Permalink to this equation">#</a></span>\[\lambda_{\rm max}T = 2.898 \times 10^{-3}\ {\rm m \cdot K} = 2.898 \times 10^6\ {\rm nm \cdot K},\]</div>
+<p>where the wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm max}\)</span> is found at the peak of the spectral distribution for a given temperature.  We can see in Fig. <a class="reference internal" href="#spectrum-fig"><span class="std std-numref">3.8</span></a> that the position of <span class="math notranslate nohighlight">\(\lambda_{\rm max}\)</span> varies with temperature as prescribed by Wien’s displacement law.</p>
+<div class="figure align-default" id="spectrum-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Black_body.svg/1024px-Black_body.svg.png"><img alt="spectrum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Black_body.svg/1024px-Black_body.svg.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.8 </span><span class="caption-text">As the temperature of a blackbody decreases, its intensity also decreases and its peak moves to longer wavelengths. Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Black_body">Wikipedia</a>.</span><a class="headerlink" href="#spectrum-fig" title="Permalink to this image">#</a></p>
+</div>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Wilhelm_Wien">Wilhelm Wien</a> received the Nobel Prize in 1911 for his discoveries concerning radiation.  We can quantify the second point (concerning the total power) by integrating the function <span class="math notranslate nohighlight">\(\mathcal{I}(\lambda, T)\)</span> over all wavelengths to find the power per unit area at temperature <span class="math notranslate nohighlight">\(T\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[ R(T) \int_0^\infty \mathcal{I}(\lambda, T) d\lambda. \]</div>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Josef_Stefan">Josef Stefan</a> determined a empirical formula for <span class="math notranslate nohighlight">\(R(T)\)</span> in 1879, while Boltzmann derived it theoretically a few years later.  They showed that <span class="math notranslate nohighlight">\(R(T)\)</span> is related to the temperature <span class="math notranslate nohighlight">\(T\)</span> by</p>
+<div class="math notranslate nohighlight" id="equation-stefan-boltzmann">
+<span class="eqno">(3.15)<a class="headerlink" href="#equation-stefan-boltzmann" title="Permalink to this equation">#</a></span>\[R(T) = \epsilon \sigma T^4,\]</div>
+<p>which depends on the experimentally determined constant <span class="math notranslate nohighlight">\(\sigma = 5.6705 \times 10^{-8}\ {\rm W/\left(m^2\cdot K^4\right)}\)</span> called the <a class="reference external" href="https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_constant">Stefan-Boltzmann constant</a> and is part of the <strong>Stefan-Boltzmann law</strong> <span class="math notranslate nohighlight">\(R(T)\)</span>.  This formula can be applied to <em>any</em> material with a known <strong>emissivity</strong> <span class="math notranslate nohighlight">\(\epsilon\)</span>.  The emissivity is simply the ratio of the emissive power of an object to that of an ideal blackbody.  For an ideal blackbody, <span class="math notranslate nohighlight">\(\epsilon = 1\)</span> and therefore, the value for emissivity is always less than 1.  Equation <a class="reference internal" href="#equation-stefan-boltzmann">(3.15)</a> is valid for experiments on Earth and for measuring the properties of stars.</p>
+<p><strong>A furnace has walls that reach <span class="math notranslate nohighlight">\(1600^\circ{\rm C}\)</span>, when it is in use.  What is the wavelength of maximum intensity emitted when a small door is opened?</strong></p>
+<blockquote>
+<div><p>The wavelength of maximum intensity is just <span class="math notranslate nohighlight">\(\lambda_{\rm max}\)</span>, which means we can apply Wien’s displacement law.  First, we <em>convert</em> the temperature to Kelvin</p>
+<div class="math notranslate nohighlight">
+\[ T = (1600 + 273.15)\ {\rm K} = 1873.15\ {\rm K}.\]</div>
+<p>Then, Wien’s law is applied to find the peak wavelength</p>
+<div class="math notranslate nohighlight">
+\[ \lambda_{\rm max} = \frac{2.898 \times 10^6\ {\rm nm \cdot K}}{1873.15\ {\rm K}} = 1547\ {\rm nm}. \]</div>
+<p>The peak wavelength lies in the infrared (IR) region of the EM spectrum.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">Wien</span><span class="p">,</span> <span class="n">zero_Celsius</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">T_wall</span> <span class="o">=</span> <span class="mi">1600</span> <span class="c1">#temperature of the furnace wall in ^oC</span>
+<span class="n">T_K</span> <span class="o">=</span> <span class="n">T_wall</span> <span class="o">+</span> <span class="n">zero_Celsius</span> <span class="c1"># convert temperature into K</span>
+
+<span class="k">def</span> <span class="nf">lambda_max</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+    <span class="c1">#find the peak wavelength of a material given a temperature</span>
+    <span class="k">return</span> <span class="n">Wien</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="mf">1e-9</span> <span class="c1">#returns the peak wavelength (in nm)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The peak wavelength is </span><span class="si">%i</span><span class="s2"> nm.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">lambda_max</span><span class="p">(</span><span class="n">T_K</span><span class="p">),</span><span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The peak wavelength is 1547 nm.
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>The peak wavelength of the Sun’s spectral distribution is measured to be near <span class="math notranslate nohighlight">\(500\ {\rm nm}\)</span>.  Assuming that the Sun is a blackbody, calculate (a) the Sun’s effective surface temperature, (b) the total power per unit area <span class="math notranslate nohighlight">\(R(T)\)</span> emitted from the Sun’s surface, and (c) the energy received by the Earth each day.</strong></p>
+<blockquote>
+<div><p><strong>(a)</strong> Since we assume that the Sun behaves like an ideal blackbody (<span class="math notranslate nohighlight">\(\epsilon=1\)</span>), then we can use Wien’s displacement law to determine its temperature <span class="math notranslate nohighlight">\(T\)</span> at the surface by</p>
+<div class="math notranslate nohighlight">
+\[ T_{\rm surf} = \frac{2.898 \times 10^6\ {\rm nm\cdot K}}{500\ {\rm nm}} = 5800\ {\rm K}.\]</div>
+<p><strong>(b)</strong> The total power per unit area at <span class="math notranslate nohighlight">\(5800\ {\rm K}\)</span> is calculated by the Stefan-Boltzmann law as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R(T) &amp;= \epsilon \sigma T^4 = \sigma T^4 \\
+&amp; = \left(5.6705 \times 10^{-8}\ {\rm W/\left(m^2\cdot K^4\right)}\right)(5800\ {\rm K})^4 = 6.40 \times 10^7\ {\rm W/m^2}.
+\end{align*}\]</div>
+<p><strong>(c)</strong> The amount of power the Earth receives is determined by the total power from the Sun, which modifies the Stefan-Boltzmann law to include the surface area of the Sun as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+P_{\rm Sun} &amp;= (4\pi r_{Sun}^2)R(T) \\
+&amp;= (6.082 \times 10^{18}\ {\rm m^2})(6.40 \times 10^7\ {\rm W/m^2}) = 3.89 \times 10^{26}\ {\rm W}. 
+\end{align*}\]</div>
+<p>Then, we need to determine the radiative flux <span class="math notranslate nohighlight">\(F\)</span> received at 1 astronomical unit (AU) from the Sun, where <span class="math notranslate nohighlight">\(1\ {\rm AU} = 1.495 \times 10^{11}\ {\rm m}\)</span>.  The radiative flux is given as</p>
+<div class="math notranslate nohighlight">
+\[ F = \frac{P_{Sun}}{4\pi d^2} = \frac{3.89 \times 10^{26}\ {\rm W}}{4\pi\left(1.495 \times 10^{11}\ {\rm m}\right)^2} = 1380\ {\rm W/m^2}. \]</div>
+<p>Measurements of the Sun’s radiation outside the Earth’s atmosphere vary slightly throughout year given the small changes in <span class="math notranslate nohighlight">\(d\)</span>, where the average value is called the <a class="reference external" href="https://en.wikipedia.org/wiki/Solar_constant">Solar Constant</a> and is equal to <span class="math notranslate nohighlight">\(1360\ {\rm W/m^2}\)</span>.  Our calculation is a little high because the Sun’s actual surface temperature is a little lower <span class="math notranslate nohighlight">\((T_\odot = 5777\ {\rm K})\)</span> than our estimate using the Stefan-Boltzmann law.  However, it does show that the Sun does act as a blackbody.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">Wien</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">astronomical_unit</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">T_surf</span><span class="p">(</span><span class="n">l_max</span><span class="p">):</span>
+    <span class="c1">#determine the surface temperature given the peak wavelength l_max (in nm)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">Wien</span><span class="o">*</span><span class="mf">1e9</span><span class="p">)</span><span class="o">/</span><span class="n">l_max</span> <span class="c1">#return the surface temperature in K</span>
+<span class="k">def</span> <span class="nf">Stef_Boltz</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+    <span class="c1">#calculate the total power (in W/m^2) for a given temperature T</span>
+    <span class="k">return</span> <span class="n">sigma</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">4</span>
+<span class="k">def</span> <span class="nf">surf_area</span><span class="p">(</span><span class="n">R</span><span class="p">):</span>
+    <span class="c1">#calculate the surface area of a sphere of radius R (in m)</span>
+    <span class="k">return</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span>
+<span class="k">def</span> <span class="nf">flux</span><span class="p">(</span><span class="n">Rad</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">d</span><span class="p">):</span>
+    <span class="c1">#calculate the flux received at a distance d</span>
+    <span class="c1">#Rad = total power per unit area (in W/m^2)</span>
+    <span class="c1">#R = radius of the Sun (in m)</span>
+    <span class="c1">#d = distance to the Sun (in m)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">Rad</span><span class="o">*</span><span class="n">surf_area</span><span class="p">(</span><span class="n">R</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mf">4.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">lmax_sun</span> <span class="o">=</span> <span class="mi">500</span> <span class="c1">#peak wavelength (in nm) observed for the Sun</span>
+<span class="n">T_sun</span> <span class="o">=</span> <span class="n">T_surf</span><span class="p">(</span><span class="n">lmax_sun</span><span class="p">)</span>
+<span class="n">Rad_Sun</span> <span class="o">=</span> <span class="n">Stef_Boltz</span><span class="p">(</span><span class="n">T_sun</span><span class="p">)</span>
+
+<span class="n">R_sun</span> <span class="o">=</span> <span class="mf">6.95700e8</span> <span class="c1">#radius of the Sun (in m) as defined by the IAU; https://en.wikipedia.org/wiki/Solar_radius</span>
+<span class="n">R_earth</span> <span class="o">=</span> <span class="mf">6.3781e6</span> <span class="c1">#radius of the Earth (in m); https://en.wikipedia.org/wiki/Earth_radius </span>
+
+<span class="n">flux_AU</span> <span class="o">=</span> <span class="n">flux</span><span class="p">(</span><span class="n">Rad_Sun</span><span class="p">,</span><span class="n">R_sun</span><span class="p">,</span><span class="n">astronomical_unit</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Sun&#39;s surface temperature is </span><span class="si">%i</span><span class="s2"> K.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">T_sun</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total power emitted by the Sun per unit area is </span><span class="si">%1.2e</span><span class="s2"> W/m^2.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Rad_Sun</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total power received by the Earth per unit area is </span><span class="si">%i</span><span class="s2"> W/m^2.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">flux_AU</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Sun&#39;s surface temperature is 5800 K.
+
+The total power emitted by the Sun per unit area is 6.40e+07 W/m^2.
+
+The total power received by the Earth per unit area is 1380 W/m^2.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Attempts to understand and derive (from basic principles) the shape of the blackbody spectral distribution (Fig. <a class="reference internal" href="#spectrum-fig"><span class="std std-numref">3.8</span></a>) were unsuccessful and presented a serious problem for scientists near the beginning of the 20th century.  A blackbody’s radiation can be expressed as a superposition of electromagnetic waves (over a range of frequencies) within a cavity (i.e., a standing wave dependent on frequency).  The equipartion theorem from thermodynamics assigns equal average energy <span class="math notranslate nohighlight">\(kT\)</span> to each possible wave configuration.  But which wave configuration was the most probable?</p>
+<p>In 1900, Lord Rayleigh showed that the blackbody spectral distribution should have a <span class="math notranslate nohighlight">\(\lambda^{-4}\)</span> dependence, where his derivation was based from classical theories of electromagnetism and thermodynamics.  Later, <a class="reference external" href="https://en.wikipedia.org/wiki/James_Jeans">Sir James Jeans</a> helped Rayleigh determine the proportionality factor of the distribution, where their complete result (known as the <strong>Rayleigh-Jeans formula</strong>) is</p>
+<div class="math notranslate nohighlight" id="equation-rayleigh-jeans">
+<span class="eqno">(3.16)<a class="headerlink" href="#equation-rayleigh-jeans" title="Permalink to this equation">#</a></span>\[\mathcal{I}(\lambda, T) = \frac{2\pi ckT}{\lambda^4}.\]</div>
+<p>It was the best formulation that classical theory could muster to describe blackbody radiation.  For long wavelengths <span class="math notranslate nohighlight">\((&gt;10^4\ {\rm nm})\)</span>, the Rayleigh-Jeans formula provided a reasonable match to observations because there there are a few configurations by which a standing wave can form inside the cavity (see the <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mod6.html#c6">hyperphysics</a> page for more detail).  However, as the wavelengths become shorter the number of standing wave possibilities increases.  in the limit <span class="math notranslate nohighlight">\(\lambda \rightarrow 0\)</span>, the total energy of all configurations becomes infinite because each standing wave has nonzero energy <span class="math notranslate nohighlight">\(kT\)</span>.</p>
+<div class="figure align-default" id="rayleigh-jeans-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/imgmod/uvcatas.gif"><img alt="RJ_law" src="http://hyperphysics.phy-astr.gsu.edu/hbase/imgmod/uvcatas.gif" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Comparison of the classical Rayleigh-Jeans Law and the Planck radiation formula (which matches the experimental data). Image Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/mod6.html">Hyperphysics</a>.</span><a class="headerlink" href="#rayleigh-jeans-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Figure <a class="reference internal" href="#rayleigh-jeans-fig"><span class="std std-numref">3.9</span></a> shows the result from the Rayleigh-Jeans formula compared to the Planck Radiation formula that better matches the experimental data.  Note that it deviates badly at short wavelengths, where <a class="reference external" href="https://en.wikipedia.org/wiki/Paul_Ehrenfest">Paul Ehrenfest</a> dubbed this situation as the “<em>ultraviolet catastrophe</em>” and was a phenomenon that classical physics could not explain.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Max_Planck">Max Planck</a> was an expert on the second law of thermodynamics, rejected Boltzmann’s statistical version of thermodynamics, and even doubted the atomic theory of matter.  In 1889, Planck’s view began to change when he investigated the irreversibility of radiation processes.  He that the laws of electromagnetism distinguished between past and present, but Boltzmann showed that there could be no difference.  Planck then examined the problem of blackbody radiation.</p>
+<p>Planck tried many functions to fit the measurements of <span class="math notranslate nohighlight">\(\mathcal{I}(\lambda, T)\)</span> and it wasn’t clear that he was even aware of Lord Rayleigh’s result.  Planck reported is formula in 1900, but could not explain it fully.  Plank assumed that the radiation in the cavity was emitted (and absorbed) by some sort of “oscillators” that were contain in the walls.  Building on Hertz’s and Boltzmann’s work, he added up the energies of the oscillators and each oscillator had an energy that was an integral multiple of <span class="math notranslate nohighlight">\(hf\)</span> (<span class="math notranslate nohighlight">\(h\)</span> is a constant and <span class="math notranslate nohighlight">\(f\)</span> is the frequency of the oscillator).  This was a technique invented by Boltzmann, where Planck expected tot ake the limit <span class="math notranslate nohighlight">\(h\rightarrow 0\)</span> to include all the possibilities.  He noticed by keeping <span class="math notranslate nohighlight">\(h&gt;0\)</span> that he arrived at the needed equation as</p>
+<div class="math notranslate nohighlight" id="equation-planck-law">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-planck-law" title="Permalink to this equation">#</a></span>\[\mathcal{I}(\lambda, T) = \frac{2\pi hc^2}{\lambda^5\left(e^{hc/(\lambda kT}) - 1\right)}.\]</div>
+<p>Equation <a class="reference internal" href="#equation-planck-law">(3.17)</a> is known as <strong>Planck’s radiation law</strong>.  No matter what Planck tried, he could only find agreement with the experimental data if he made two modifications to the classical theory:</p>
+<ol class="simple">
+<li><p>The oscillators (of electromagnetic origin) can only have discrete energies determined by <span class="math notranslate nohighlight">\(E_n = nhf\)</span>, which depends on an integer <span class="math notranslate nohighlight">\(n\)</span>, the oscillator frequency <span class="math notranslate nohighlight">\(f\)</span>, and <strong>Planck’s constant</strong> <span class="math notranslate nohighlight">\(h = 6.6261 \times 10^{-34}\ {\rm J\cdot s}\)</span>.</p></li>
+<li><p>The oscillators can absorb or emit energy in the discrete multiples of the fundamental quantum of energy given by <span class="math notranslate nohighlight">\(\Delta E = hf\)</span>.</p></li>
+</ol>
+<p>Planck found these results quite disturbing and spent several years trying his initial plan so that <span class="math notranslate nohighlight">\(h\rightarrow 0\)</span>.  Each attempt failed and Planck’s quantum result become one of the cornerstones of modern physics.</p>
+<p><strong>Show that Wien’s displacement law follows from Planck’s radiation law.</strong></p>
+<blockquote>
+<div><p>Wien’s law describes the <em>maximum</em> wavelength for the function <span class="math notranslate nohighlight">\(\mathcal{I}(\lambda, T)\)</span>.  Recall from calculus, that the maximum of a function is determined by the setting the first derivative equal to zero.  Since it is the maximum wavelength, we take the first derivative with respect to <span class="math notranslate nohighlight">\(\lambda\)</span>, or</p>
+<div class="math notranslate nohighlight">
+\[\frac{ d\mathcal{I}(\lambda, T)}{d\lambda} = 0. \]</div>
+<p>Using the <a class="reference external" href="https://en.wikipedia.org/wiki/Product_rule">product rule</a> (or quotient rule), we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+2\pi hc^2\frac{d}{d\lambda}\left[\lambda^{-5}\left(e^{hc/(\lambda kT)} - 1\right)^{-1}\right] = 0, \\
+2\pi hc^2\left[-5\lambda^{-6}\left(e^{hc/(\lambda kT)} + 1\right)^{-1} - \frac{hc}{\lambda^7 kT}e^{hc/(\lambda kT)}\left(e^{hc/(\lambda kT)} - 1\right)^{-2}\right] = 0, \\
+\frac{2\pi hc^2}{\lambda^6\left(e^{hc/(\lambda kT)} + 1\right)}\left[-5 - \frac{hc}{\lambda kT}e^{hc/(\lambda kT)}\left(e^{hc/(\lambda kT)} - 1\right)^{-1}\right] = 0, \\
+\frac{\mathcal{I}(\lambda, T)}{\lambda}\left[-5 + \frac{hc}{\lambda kT}\frac{e^{hc/(\lambda kT)}}{\left(e^{hc/(\lambda kT)} - 1\right)}\right] = 0.
+\end{align*}\]</div>
+<p>The trivial solution is that <span class="math notranslate nohighlight">\(\mathcal{I}(\lambda, T) = 0\)</span>, which doesn’t fit the observations.  Therefore the second term in brackets must be equal to zero, or</p>
+<div class="math notranslate nohighlight">
+\[ -5 + \frac{hc}{\lambda kT}\frac{e^{hc/(\lambda kT)}}{\left(e^{hc/(\lambda kT)} - 1\right)} = 0.\]</div>
+<p>Let’s try the transformation <span class="math notranslate nohighlight">\(x = hc/(\lambda kT)\)</span> and upon substitution, we get</p>
+<div class="math notranslate nohighlight">
+\[ -5 + \frac{xe^x}{e^x-1} = 0, \]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[ xe^x = 5(e^x-1).\]</div>
+<p>This is a transcendental equation and can be solved numerically via a root finding method (e.g., <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.bisect.html">bisection</a>).  The result is <span class="math notranslate nohighlight">\(x\approx 4.965\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[ \frac{hc}{\lambda_{\rm max}kT} = 4.965.\]</div>
+<p>Wien’s displacement law is <span class="math notranslate nohighlight">\(\lambda_{\rm max}T = \text{constant}\)</span>.  Solving for the left hand side produces</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lambda_{\rm max}T &amp;= \frac{hc}{4.965k} \\
+&amp;= \frac{(6.6261 \times 10^{-34}\ {\rm J\cdot s})(3 \times 10^8\ {\rm m/s})}{4.965(1.38 \times 10^{-23}\ {\rm J/K})} \\
+&amp;= 2.898 \times 10^{-3}\ {\rm m\cdot K},
+\end{align*}\]</div>
+<p>which is the empirically determined Wien’s displacement law.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">bisect</span>
+<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">Wien</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">x_trans</span><span class="p">(</span><span class="n">lam</span><span class="p">):</span>
+    <span class="c1">#get x transformation given a value for lambda (wavelength in nm)</span>
+    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="p">((</span><span class="n">lam</span><span class="o">*</span><span class="mf">1e-9</span><span class="p">)</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">Wien_constant</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="c1">#calculate the constant for Wien&#39;s law</span>
+    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">lam</span><span class="p">):</span>
+    <span class="c1">#evaluate the transcendental equation </span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x_trans</span><span class="p">(</span><span class="n">lam</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">6000</span> <span class="c1">#trial temperature for hc/(lambda kT)</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">bisect</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">x_max</span> <span class="o">=</span> <span class="n">x_trans</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="n">Wien_disp</span> <span class="o">=</span> <span class="n">Wien_constant</span><span class="p">(</span><span class="n">x_max</span><span class="p">)</span>
+<span class="n">pct_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Wien</span><span class="o">-</span><span class="n">Wien_disp</span><span class="p">)</span><span class="o">/</span><span class="n">Wien</span><span class="o">*</span><span class="mi">100</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The root of the transcendental equation is </span><span class="si">%1.3f</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">x_max</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The constant for Wien&#39;s displacement law is </span><span class="si">%1.3e</span><span class="s2"> m K.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Wien_disp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The error for Wien&#39;s displacement law constant is </span><span class="si">%1.2e</span><span class="s2"> percent.&quot;</span> <span class="o">%</span> <span class="n">pct_error</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The root of the transcendental equation is 4.965.
+
+The constant for Wien&#39;s displacement law is 2.898e-03 m K.
+
+The error for Wien&#39;s displacement law constant is 6.39e-09 percent.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="photoelectric-effect">
 <h2><span class="section-number">3.6. </span>Photoelectric Effect<a class="headerlink" href="#photoelectric-effect" title="Permalink to this headline">#</a></h2>
+<p>The simplest evidence for the quantization of radiation energy comes from the explanation of the <strong>photoelectric effect</strong>.  Hertz noticed that when UV light fell on a metal electrode, a charge was produced that separated the leaves of his electroscope.  The photoelectric effect is on of the several ways electrons can be emitted by materials.  By the early 20th century, it was known that electrons are bound to matter, where the “free” valence electrons are able to move easily from atom to atom and are not able to leave the surface.  The methods now known by which electrons can escape the material include:</p>
+<ol class="simple">
+<li><p><em>Thermionic emission</em>: Application of heat allows electrons to gain enough energy to escape.</p></li>
+<li><p><em>Secondary emission</em>: The electron gains enough energy by transfer from a high-speed particle that strikes the material from outside.</p></li>
+<li><p><em>Field emission</em>: A strong external electric field pulls the electron out of the material.</p></li>
+<li><p><em>Photoelectric effect</em>: Incident light (EM radiation) shining on the material transfers energy to the electrons, which allows them to escape.</p></li>
+</ol>
+<p>Electrons in metals are weakly bound, where light can give electrons enough extra kinetic energy to allow them to escape.  The ejected electrons, or <strong>photoelectrons</strong>, are produce when the minimum extra kinetic energy equals the <strong>work function</strong> <span class="math notranslate nohighlight">\(\phi\)</span>.  The work function is the minimum binding energy of the electron to the material and thus, depends on the chemical makeup of the material.</p>
+<table class="table" id="work-func">
+<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">Work Functions: From <a class="reference external" href="https://www.google.com/books/edition/CRC_Handbook_of_Chemistry_and_Physics_90/OmkbNgAACAAJ?hl=en">Handbook of Chemistry and Physics</a></span><a class="headerlink" href="#work-func" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Element</strong></p></th>
+<th class="head"><p><strong><span class="math notranslate nohighlight">\(\phi\ ({\rm eV})\)</span></strong></p></th>
+<th class="head"><p><strong>Element</strong></p></th>
+<th class="head"><p><strong><span class="math notranslate nohighlight">\(\phi\ ({\rm eV})\)</span></strong></p></th>
+<th class="head"><p><strong>Element</strong></p></th>
+<th class="head"><p><strong><span class="math notranslate nohighlight">\(\phi\ ({\rm eV})\)</span></strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ag</p></td>
+<td><p>4.64</p></td>
+<td><p>K</p></td>
+<td><p>2.29</p></td>
+<td><p>Pd</p></td>
+<td><p>5.22</p></td>
+</tr>
+<tr class="row-odd"><td><p>Al</p></td>
+<td><p>4.20</p></td>
+<td><p>Li</p></td>
+<td><p>2.93</p></td>
+<td><p>Pt</p></td>
+<td><p>5.64</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>5.0</p></td>
+<td><p>Na</p></td>
+<td><p>2.36</p></td>
+<td><p>W</p></td>
+<td><p>4.63</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cs</p></td>
+<td><p>1.95</p></td>
+<td><p>Nd</p></td>
+<td><p>3.2</p></td>
+<td><p>Zn</p></td>
+<td><p>4.33</p></td>
+</tr>
+<tr class="row-even"><td><p>Cu</p></td>
+<td><p>4.48</p></td>
+<td><p>Ni</p></td>
+<td><p>5.22</p></td>
+<td><p>Zr</p></td>
+<td><p>4.05</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fe</p></td>
+<td><p>4.67</p></td>
+<td><p>Pb</p></td>
+<td><p>4.25</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="experimental-results">
 <h3><span class="section-number">3.6.1. </span>Experimental Results<a class="headerlink" href="#experimental-results" title="Permalink to this headline">#</a></h3>
+<p>Photoelectricity was studied using an experimental apparatus, where incident light falls on the <strong>emitter</strong> (i.e., the photocathode or <strong>cathode</strong>) that ejects electrons.  Some of the electrons travel toward the <strong>collector</strong> (i.e., the <strong>anode</strong>), where either negative (<em>retarding</em>) or positive (<em>accelerating</em>) applied voltage <span class="math notranslate nohighlight">\(V\)</span> is imposed by the power supply.  The current <span class="math notranslate nohighlight">\(I\)</span> measured in the ammeter (photocurrent) arises from the flow of photoelectons from emitter to collector.  Figure <a class="reference internal" href="#photoelectric-fig"><span class="std std-numref">3.10</span></a> illustrates a schematic of the experimental setup.</p>
+<div class="figure align-default" id="photoelectric-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/5/57/Photoelectric_effect_measurement_apparatus_-_microscopic_picture.svg"><img alt="photoelectric" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Photoelectric_effect_measurement_apparatus_-_microscopic_picture.svg" width="300px" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.10 </span><span class="caption-text">Schematic of the experiment to demonstrate the photoelectric effect. Filtered, monochromatic light of a certain wavelength strikes the emitting electrode (E) inside a vacuum tube. The collector electrode (C) is biased to a voltage <span class="math notranslate nohighlight">\(V_C\)</span> that can be set to attract the emitted electrons, when positive, or prevent any of them from reaching the collector when negative. Figure Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Photoelectric_effect">Wikipedia</a>.</span><a class="headerlink" href="#photoelectric-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The experimental study of the photoelectric effect reveals that:</p>
+<ol class="simple">
+<li><p><em>The kinetic energies of the photoelectrons are independent of the light intensity.</em>  A stopping potential (i.e., applied voltage) of <span class="math notranslate nohighlight">\(-V_o\)</span> is sufficient to stop all the photoelectrons, <em>for any light intensity</em>.  For a given light intensity there is a maximum (saturation) photocurrent, which is reached as the applied voltage increases from negative to positive values.</p></li>
+<li><p><em>The maximum kinetic energy of the photoelectrons depends on the frequency of the light and the composition of the emitting material.</em>  For light of different frequency a different retarding (slowing) potential <span class="math notranslate nohighlight">\(-V_o\)</span> is required to stop the most energetic photoelectrons.  The value of <span class="math notranslate nohighlight">\(V_o\)</span> depends on the frequency <span class="math notranslate nohighlight">\(f\)</span> but not on the intensity.</p></li>
+<li><p><em>The smaller the work function <span class="math notranslate nohighlight">\(\phi\)</span> of the emitter material, the lower is the threshold frequency of the light that can eject photoelectrons.</em>  No photoelectrons are produced for frequencies below this threshold frequency, for any light intensity.</p></li>
+<li><p><em>When the photoelectrons are produced, their number is proportional to the light intensity.</em> The maximum photocurrent is proportional to the light intensity.</p></li>
+<li><p><em>The photoelectrons are emitted almost instantly (<span class="math notranslate nohighlight">\(\leq 3\times 10^{-9}\ {\rm s}\)</span>) following the illumination of the photocathode, which is independent of the light intensity.</em></p></li>
+</ol>
+<div class="figure align-default" id="stopping-voltage-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/5/52/Photoelectric_effect_-_stopping_voltage_diagram_for_zinc_-_English.svg"><img alt="stopping voltage" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Photoelectric_effect_-_stopping_voltage_diagram_for_zinc_-_English.svg" width="500px" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.11 </span><span class="caption-text">Diagram of the maximum kinetic energy as a function of the frequency of light on zinc. Photoelectrons are produced using <span class="math notranslate nohighlight">\( f = 10.4 \times 10^{14}\ {\rm Hz}\)</span> photons (i.e., UV (<span class="math notranslate nohighlight">\(289\ {\rm nm}\)</span>) photons). Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Photoelectric_effect">Wikipedia</a>.</span><a class="headerlink" href="#stopping-voltage-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Except for result 5, these experimental observations were known in rudimentary form by 1902. This was primarily due to the work of <a class="reference external" href="https://en.wikipedia.org/wiki/Philipp_Lenard">Philipp Lenard</a>, who extensively studied the photoelectric effect and received the Nobel Prize in Physics in 1905.</p>
 </div>
 <div class="section" id="classical-interpretation">
-<h3><span class="section-number">3.6.2. </span>Classical Interpretation<a class="headerlink" href="#classical-interpretation" title="Permalink to this headline">#</a></h3>
+<span id="classical"></span><h3><span class="section-number">3.6.2. </span>Classical Interpretation<a class="headerlink" href="#classical-interpretation" title="Permalink to this headline">#</a></h3>
+<p>Classical theory allows electromagnetic radiation to eject photoelectrons from matter, but the theory also predicts that the total amount of energy in a light wave increases as the light intensity increases.  According to classical theory, the electrons should have more kinetic energy if the light intensity is increased.</p>
+<ul class="simple">
+<li><p>According to experimental result 1, a characteristic retarding potential <span class="math notranslate nohighlight">\(-V_o\)</span> is sufficient to stop all photoelectrons for a given light frequency <span class="math notranslate nohighlight">\(f\)</span>.  Classical EM theory is unable to explain this result.</p></li>
+<li><p>From result 2, the maximum kinetic energy of the photoelectrons depends on the value of the light frequency <span class="math notranslate nohighlight">\(f\)</span> and not on the light intensity.  Classical theory cannot explain this result either.</p></li>
+<li><p>The existence of a threshold frequency is inexplicable in classical theory.</p></li>
+<li><p>Classical theory <em>does</em> predict the number of photoelectrons ejected will increase with intensity in agreement with experimental result 4.</p></li>
+<li><p>For extremely low light intensities, a long time would elapse before any one electron could obtain sufficient energy to escape.  However, the photoelectrons are ejected almost immediately. Classical theory fails to explain result 5.</p></li>
+</ul>
+<p><strong>Photoelectrons may be emitted from <a class="reference external" href="https://en.wikipedia.org/wiki/Sodium">sodium</a> <span class="math notranslate nohighlight">\({\rm Na}\)</span> (<span class="math notranslate nohighlight">\(\phi = 2.36\ {\rm eV}\)</span>) even for light intensities as low as <span class="math notranslate nohighlight">\(10^{-8}\ {\rm W/m^2}\)</span>.  Calculate classically how much time the light must shine to produce a photoelectron of kinetic energy of <span class="math notranslate nohighlight">\(1\ {\rm eV}\)</span>.</strong></p>
+<blockquote>
+<div><p>We assume that all of the light is absorbed in the surface layer of atoms.  We need to calculate the number of sodium atoms per unit area in the surface layer (i.e. 1 atom thick).  We find the number of <span class="math notranslate nohighlight">\({\rm Na}\)</span> atoms/volume by (and looking up some key properties of <span class="math notranslate nohighlight">\({\rm Na}\)</span>)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+\frac{\text{Avogadro's number}}{\text{Na gram molecular weight}} \times \text{density} &amp;= \frac{\text{number of Na atoms}}{\text{volume}}, \\
+\frac{6.02 \times 10^{23}\ {\rm atoms/mol}}{23\ {\rm g/mol}} \times 0.97 \frac{{\rm g}}{{\rm cm^3}} &amp;= 2.54 \times 10^{22}\ \frac{\rm atoms}{\rm cm^3} = 2.54 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}.
+\end{align*}\]</div>
+<p>To estimate the thickness of one layer of atoms, we assume a cubic structure and</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1\ {\rm atom}}{d^3} &amp;= 2.54 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}, \\
+d &amp;= \left(\frac{1\ {\rm atom}}{2.54 \times 10^{28}\ \frac{\rm atoms}{\rm m^3} }\right)^{1/3} = 3.40 \times 10^{-10}\ {\rm m} = 0.34\ {\rm nm}. 
+\end{align*}\]</div>
+<p>If all the light is absorbed in the first layer of atoms, the number of exposed atoms per <span class="math notranslate nohighlight">\({\rm m^2}\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[ 2.54 \times 10^{28}\ \frac{\rm atoms}{\rm m^3} \times 3.40 \times 10^{-10}\ {\rm m} = 8.64 \times 10^{18}\ \frac{\rm atoms}{\rm m^2}. \]</div>
+<p>With the intensity of <span class="math notranslate nohighlight">\(10^{-8}\ {\rm W/m^2}\)</span>, each atom will receive energy at the rate of</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+10^{-8}\ {\rm W/m^2} \times \frac{1}{8.64 \times 10^{18}\ \frac{\rm atoms}{\rm m^2}} &amp;= 1.16 \times 10^{-27}\ {\rm W}, \\
+ &amp; = 7.25 \times 10^{-9}\ {\rm eV/s}.
+\end{align*}\]</div>
+<p>To escape, the electrons need to attain an total energy of <span class="math notranslate nohighlight">\(3.36\ {\rm eV}\ (= \phi + 1\ {\rm eV})\)</span>.  Using the energy absorption rate for a single electron, we can find the time <span class="math notranslate nohighlight">\(t\)</span> needed to absorb the total energy by</p>
+<div class="math notranslate nohighlight">
+\[ t = \frac{ 3.36\ {\rm eV}}{7.25\times 10^{-9}\ {\rm eV/s}} = 4.63 \times 10^8\ {\rm s} = 14.7\ {\rm years}. \]</div>
+<p>Based on classical calculations, the time required to eject a photoelectron should be 15 years!</p>
+</div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 1\ {\rm W} &amp;= 1\ \frac{\rm J}{\rm s} \times \frac{1}{1.6 \times 10^{-19}\ {\rm J/eV}} = 6.25 \times 10^{18}\ {\rm eV/s}\\
+
+1\ {\rm year} &amp;= \frac{365.25\ {\rm days}}{1}\times \frac{24\ {\rm hr}}{1\ {\rm day}} \times \frac{3600\ {\rm s}}{1\ {\rm hr}} = 3.156 \times 10^7\ {\rm s}
+\end{align*}\]</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">eV</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">N_A</span>
+
+<span class="n">I_src</span> <span class="o">=</span> <span class="mf">1e-8</span> <span class="c1">#Instensity of light in W/m^2</span>
+<span class="n">phi_Na</span> <span class="o">=</span> <span class="mf">2.36</span><span class="o">*</span><span class="n">eV</span> <span class="c1">#work function for Na (in J)</span>
+<span class="n">KE_pe</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">eV</span> <span class="c1">#kinetic energy of a photoelectron</span>
+<span class="n">Tot_E</span> <span class="o">=</span> <span class="n">phi_Na</span> <span class="o">+</span> <span class="n">KE_pe</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total energy required to eject a 1 eV photoelectron from Na is </span><span class="si">%1.2e</span><span class="s2"> J or </span><span class="si">%1.2f</span><span class="s2"> eV.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">Tot_E</span><span class="p">,</span><span class="n">Tot_E</span><span class="o">/</span><span class="n">eV</span><span class="p">))</span>
+
+<span class="n">Na_density</span> <span class="o">=</span> <span class="mf">0.968</span> <span class="c1">#density of Na (in g/cm^3)</span>
+<span class="n">Na_molar_mass</span> <span class="o">=</span> <span class="mf">22.990</span> <span class="c1">#molar mass of sodium in g/mol</span>
+<span class="n">Na_atoms_vol</span> <span class="o">=</span> <span class="n">N_A</span><span class="o">/</span><span class="n">Na_molar_mass</span><span class="o">*</span><span class="n">Na_density</span><span class="o">*</span><span class="mf">1e6</span> <span class="c1">#Na atoms/m^3</span>
+<span class="n">d_Na</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">Na_atoms_vol</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span> <span class="c1">#thickness of one layer of Na atoms</span>
+<span class="n">Na_atom_area</span> <span class="o">=</span> <span class="n">Na_atoms_vol</span><span class="o">*</span><span class="n">d_Na</span> <span class="c1">#Na atoms/m^2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of atoms per unit volume in Na is </span><span class="si">%1.2e</span><span class="s2"> atom/m^3.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Na_atoms_vol</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The thickness of one layer of Na atoms is </span><span class="si">%1.2e</span><span class="s2"> m or </span><span class="si">%1.2f</span><span class="s2"> nm.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">d_Na</span><span class="p">,</span><span class="n">d_Na</span><span class="o">/</span><span class="mf">1e-9</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of atoms of Na per unit area is </span><span class="si">%1.2e</span><span class="s2"> atom/m^2.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Na_atom_area</span><span class="p">)</span>
+
+<span class="n">energy_rate</span> <span class="o">=</span> <span class="n">I_src</span><span class="o">/</span><span class="n">Na_atom_area</span> <span class="c1">#energy absorption rate of I_src</span>
+<span class="n">t_req</span> <span class="o">=</span> <span class="n">Tot_E</span><span class="o">/</span><span class="n">energy_rate</span><span class="o">/</span><span class="n">year</span> <span class="c1">#time required to eject a photoelectron in years</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The energy rate for the Na atoms is </span><span class="si">%1.2e</span><span class="s2"> W. </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">energy_rate</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The time required to eject a 1 eV photoelectron from Na is </span><span class="si">%2.1f</span><span class="s2"> years.&quot;</span> <span class="o">%</span> <span class="n">t_req</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The total energy required to eject a 1 eV photoelectron from Na is 5.38e-19 J or 3.36 eV.
+
+The number of atoms per unit volume in Na is 2.54e+28 atom/m^3.
+
+The thickness of one layer of Na atoms is 3.40e-10 m or 0.34 nm.
+
+The number of atoms of Na per unit area is 8.63e+18 atom/m^2.
+
+The energy rate for the Na atoms is 1.16e-27 W. 
+
+The time required to eject a 1 eV photoelectron from Na is 14.7 years.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="einstein-s-theory">
 <h3><span class="section-number">3.6.3. </span>Einstein’s theory<a class="headerlink" href="#einstein-s-theory" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a> was intrigued by Planck’s hypothesis that the electromagnetic radiation field must be absorbed and emitted in <em>quantized</em> amounts.  Einstein took Planck’s idea one step further and suggested that the <em>electromagnetic radiation field itself is quantized</em>.  He also suggested in his 1905 paper (<a class="reference external" href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/andp.19053220607">in German</a>; <a class="reference external" href="http://astro1.panet.utoledo.edu/~ljc/PE_eng.pdf">in English</a>) that</p>
+<blockquote class="epigraph">
+<div><p>“the energy of a light ray spreading out from a point source is <em>not</em> continuously distributed over an increasing space but consists of a finite number of energy quanta which are localized at points in space, which move without dividing, and which can only be produced and absorbed as complete units.”</p>
+</div></blockquote>
+<p>We now call the energy quanta of light: <strong>photons</strong>.  According to Einstein, each photon has the energy quantum</p>
+<div class="math notranslate nohighlight" id="equation-energy-quantum">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-energy-quantum" title="Permalink to this equation">#</a></span>\[E = hf,\]</div>
+<p>which only depends on the frequency <span class="math notranslate nohighlight">\(f\)</span> of the electromagnetic wave and Planck’s constant <span class="math notranslate nohighlight">\(h\)</span>.  The photon travels at the speed of light <span class="math notranslate nohighlight">\(c\)</span> in a vacuum, where its wavelength is given by</p>
+<div class="math notranslate nohighlight" id="equation-light-speed">
+<span class="eqno">(3.19)<a class="headerlink" href="#equation-light-speed" title="Permalink to this equation">#</a></span>\[\lambda f = c.\]</div>
+<p>Einstein proposed that light should behave with its well-known wave-like aspect and <em>light should also be considered to have a particle-like aspect</em>.  The quantum of light delivers it entire energy <span class="math notranslate nohighlight">\(hf\)</span> to a single electron in the material.  To leave the material, the struck electron must give up an amount of energy <span class="math notranslate nohighlight">\(\phi\)</span> to overcome its binding in the material.  The electron may lose some additional energy by electron interactions on its way to the surface.  Whatever remaining energy will appear as the electron’s kinetic energy as it leaves the emitter.  The conservation of energy requires that</p>
+<div class="amsmath math notranslate nohighlight" id="equation-2ae886ee-d1fb-4a86-9703-30780b84a878">
+<span class="eqno">(3.20)<a class="headerlink" href="#equation-2ae886ee-d1fb-4a86-9703-30780b84a878" title="Permalink to this equation">#</a></span>\[\begin{align}
+hf = \phi + \text{K.E. (electron)}.
+\end{align}\]</div>
+<p>We are safe in using the nonrelativistic form of the electron’s kinetic energy <span class="math notranslate nohighlight">\((\frac{1}{2}mv^2)\)</span> because the energies involved are on the order of <span class="math notranslate nohighlight">\({\rm eV}\)</span>.  The electron’s energy will degrade as it passes through the emitter material. Experimentally, we detect the maximum value of the kinetic energy as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-761a4470-f817-4136-a70f-50eb67e309d8">
+<span class="eqno">(3.21)<a class="headerlink" href="#equation-761a4470-f817-4136-a70f-50eb67e309d8" title="Permalink to this equation">#</a></span>\[\begin{align}
+hf = \phi + \frac{1}{2}mv^2_{\rm max}.
+\end{align}\]</div>
+<p>The retarding potentials are opposing potentials needed to stop (i.e., work against) the most energetic electrons, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4c50ddd7-bff1-45f0-a500-2919fec1d0d6">
+<span class="eqno">(3.22)<a class="headerlink" href="#equation-4c50ddd7-bff1-45f0-a500-2919fec1d0d6" title="Permalink to this equation">#</a></span>\[\begin{align}
+W = eV_o = \frac{1}{2}mv^2_{\rm max}.
+\end{align}\]</div>
 </div>
 <div class="section" id="quantum-interpretation">
 <h3><span class="section-number">3.6.4. </span>Quantum Interpretation<a class="headerlink" href="#quantum-interpretation" title="Permalink to this headline">#</a></h3>
+<p><a class="reference internal" href="#classical"><span class="std std-ref">Classical Interpretation</span></a> interpreted the experimental results using classical physics, but does the photoelectric effect (as explained by Einstein) explain all the data?  The 1st and 2nd experimental results can be explained, where an electron’s kinetic energy does not depend on the light intensity at all.  It depends only on the light frequency and the work function of the material through</p>
+<div class="math notranslate nohighlight" id="equation-photoelectric-work">
+<span class="eqno">(3.23)<a class="headerlink" href="#equation-photoelectric-work" title="Permalink to this equation">#</a></span>\[\frac{1}{2}mv^2_{\rm max} = eV_o = hf - \phi.\]</div>
+<p>A potential that is slightly more positive than <span class="math notranslate nohighlight">\(-V_o\)</span> will not be able to repel all the electrons, and practically all the electrons will be collected when the retarding voltage is near zero.  For very large positive potentials, all the electrons will be collected.  If the light intensity increases, there will be more photons per unit area, more electrons ejected, and therefore, a higher photocurrent.</p>
+<p>If a different light frequency is used, then a different stopping potential is required to stop the most energetic electrons.  For a constant light intensity, a different stopping potential <span class="math notranslate nohighlight">\(V_o\)</span> is required for each <span class="math notranslate nohighlight">\(f\)</span>, but the maximum photocurrent will not change because the number of photoelectrons ejected is constant.  The quantum theory easily explains result 4.</p>
+<p>Equation <a class="reference internal" href="#equation-photoelectric-work">(3.23)</a> predicts that the stopping potential will be linearly proportional to the light frequency, with a slope <span class="math notranslate nohighlight">\(h/e\)</span> and <span class="math notranslate nohighlight">\(h\)</span> <em>is Planck’s constant</em>.  The slope is independent of the metal used to construct the photocathode, where Eqn. <a class="reference internal" href="#equation-photoelectric-work">(3.23)</a> can be rewritten as</p>
+<div class="math notranslate nohighlight" id="equation-stopping-v">
+<span class="eqno">(3.24)<a class="headerlink" href="#equation-stopping-v" title="Permalink to this equation">#</a></span>\[eV_o = \frac{1}{2}mv^2_{\rm max} = hf - hf_o = h\Delta f,\]</div>
+<p>and the negative of the <span class="math notranslate nohighlight">\(y\)</span>-intercept is <span class="math notranslate nohighlight">\(\phi = hf_o\)</span>.  The frequency <span class="math notranslate nohighlight">\(f_o\)</span> represents the <em>threshold frequency</em> for the photoelectric effect.  This explains experimental result 3.</p>
+<p>The data available in 1905 were not sufficiently accurate enough to prove (or disprove) Einstein’s theory, where Planck and others viewed the theory with skepticism.  in 1916, Millikan confirmed Einstein’s prediction even though he set out to disprove it at the beginning of his investigation.  Millikan found the value of <span class="math notranslate nohighlight">\(h\)</span> from the slope of a line for measurements of the kinetic energy and the photon frequency (see data in <a class="reference external" href="http://hermes.ffn.ub.es/luisnavarro/nuevo_maletin/Millikan_1916_2.pdf">Table III</a>).  Millikan’s result is in good agreement with the modern value of <span class="math notranslate nohighlight">\(h\)</span> (see python code below).  Due to the success of these explanations and predictions, Einstein received the Nobel Prize in 1922.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">h</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#Values from Millikan (1916) Table III using deflections ~2-3 mm (assuming that +3.928 --&gt; 0.928 as typo)</span>
+<span class="n">Na_lam</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4339</span><span class="p">,</span><span class="mi">4047</span><span class="p">,</span><span class="mi">3650</span><span class="p">,</span><span class="mi">3126</span><span class="p">,</span><span class="mi">2535</span><span class="p">])</span><span class="o">*</span><span class="mf">1e-10</span> <span class="c1">#wavelengths in Angstroms converted to m</span>
+<span class="n">Na_Volts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.103</span><span class="p">,</span><span class="o">-</span><span class="mf">0.9</span><span class="p">,</span><span class="o">-</span><span class="mf">0.539</span><span class="p">,</span><span class="mf">0.058</span><span class="p">,</span><span class="mf">0.928</span><span class="p">])</span> <span class="c1">#voltages</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="mi">218</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">26</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">50</span><span class="o">/</span><span class="mf">256.</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">Na_lam</span><span class="p">,</span> <span class="n">e</span><span class="o">*</span><span class="n">Na_Volts</span><span class="o">/</span><span class="n">eV</span> <span class="o">+</span> <span class="mf">2.36</span> <span class="c1">#shifted by \phi for Na</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_coord</span><span class="o">/</span><span class="mf">1e14</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span><span class="s1">&#39;k.&#39;</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_coord</span><span class="o">/</span><span class="mf">1e14</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">z</span><span class="p">)(</span><span class="n">x_coord</span><span class="p">),</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value of h from Millikan is </span><span class="si">%1.2e</span><span class="s2"> J s.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">eV</span><span class="p">))</span>
+<span class="n">pct_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">eV</span><span class="o">-</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="n">h</span><span class="o">*</span><span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The error in Millikan&#39;s result is </span><span class="si">%2.1f</span><span class="s2"> percent.&quot;</span> <span class="o">%</span> <span class="n">pct_error</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Frequency $f$ ($</span><span class="se">\\</span><span class="s2">times 10^</span><span class="si">{14}</span><span class="s2">$ Hz)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Work (eV)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The value of h from Millikan is 6.65e-34 J s.
+
+The error in Millikan&#39;s result is 0.4 percent.
+</pre></div>
+</div>
+<img alt="../_images/experimental-quantum-physics_20_1.png" src="../_images/experimental-quantum-physics_20_1.png" />
+</div>
+</div>
+<p>The quantization of the electromagnetic radiation field tells us that electromagnetic radiation consists of <em>photons</em>, which are particle-like and each consists of energy</p>
+<div class="math notranslate nohighlight" id="equation-quant-energy">
+<span class="eqno">(3.25)<a class="headerlink" href="#equation-quant-energy" title="Permalink to this equation">#</a></span>\[E = hf = \frac{hc}{\lambda},\]</div>
+<p>depending on the frequency <span class="math notranslate nohighlight">\(f\)</span> or wavelength <span class="math notranslate nohighlight">\(\lambda\)</span> of the photon.  The total energy of a beam of light is the sum of the energy of all the photons, where a monochromatic (i.e., single color) light is an integral multiple of <span class="math notranslate nohighlight">\(hf\)</span>.  The photons have only one speed: the speed of light (<span class="math notranslate nohighlight">\(=c\)</span> in vacuum).</p>
+<p><strong>A <span class="math notranslate nohighlight">\(400\ {\rm nm}\)</span> photon is incident upon lithium <span class="math notranslate nohighlight">\((\phi = 2.93\ {\rm eV})\)</span>.  Calculate (a) the photon energy and (b) the stopping potential <span class="math notranslate nohighlight">\(V_o\)</span>.</strong></p>
+<blockquote>
+<div><p><strong>(a)</strong> Since we know the wavelength of the photon, we can calculate is energy through</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E = \frac{hc}{\lambda} &amp;= \frac{(6.626 \times 10^{-34}\ {\rm J\cdot s}),(3\times 10^8\ {\rm m/s})}{400 \times 10^{-9}}, \\
+&amp;= 4.97 \times 10^{-19}\ {\rm J}, \\
+&amp;= 3.10\ {\rm eV}.
+\end{align*}\]</div>
+<p><strong>(b)</strong> For the stopping potential, Eqn. <a class="reference internal" href="#equation-stopping-v">(3.24)</a> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+eV_o &amp;= \frac{hc}{\lambda} - \phi = 3.10\ {\rm eV} - 2.93\ {\rm eV} = 0.17\ {\rm eV}, \\
+V_o &amp;= 0.17\ {\rm V}.
+\end{align*}\]</div>
+<p>A retarding potential of <span class="math notranslate nohighlight">\(0.17\ {\rm V}\)</span> will stop all photoelectrons.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span>
+
+<span class="n">phi_Li</span> <span class="o">=</span> <span class="mf">2.93</span> <span class="c1">#work function for lithium in eV</span>
+<span class="n">E_400</span> <span class="o">=</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="mf">400e-9</span> <span class="c1">#energy of a 400 nm photon in J</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The energy of a 400 nm photon is </span><span class="si">%1.2e</span><span class="s2"> J or </span><span class="si">%1.2f</span><span class="s2"> eV.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">E_400</span><span class="p">,</span><span class="n">E_400</span><span class="o">/</span><span class="n">eV</span><span class="p">))</span>
+
+<span class="n">V_o</span> <span class="o">=</span> <span class="n">E_400</span><span class="o">/</span><span class="n">eV</span> <span class="o">-</span> <span class="n">phi_Li</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The stopping potential for a 400 nm photon on lithium is </span><span class="si">%1.2f</span><span class="s2"> V.&quot;</span> <span class="o">%</span> <span class="n">V_o</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The energy of a 400 nm photon is 4.97e-19 J or 3.10 eV.
+
+The stopping potential for a 400 nm photon on lithium is 0.17 V.
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>(a) What frequency of light is needed to produce electrons <span class="math notranslate nohighlight">\(3\ {\rm eV}\)</span> electrons from the illumination of lithium? (b) Find the wavelength of this light and where it lies in the electromagnetic spectrum.</strong></p>
+<blockquote>
+<div><p><strong>(a)</strong> From the previous example, we know the work function for lithium <span class="math notranslate nohighlight">\((\phi = 2.93\ {\rm eV})\)</span>.  Through conservation of energy, the energy of the light is equal to the total energy of the electron, or</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+hf &amp;= \phi + \frac{1}{2}mv_{max}^2, \\
+&amp;= 2.93\ {\rm eV} + 3\ {\rm eV} = 5.93\ {\rm eV}, \\
+&amp;= 9.50 \times 10^{-19}\ {\rm J}.
+\end{align*}\]</div>
+<p>The photon frequency is now found to be</p>
+<div class="math notranslate nohighlight">
+\[ f = \frac{E}{h} = \frac{9.50 \times 10^{-19}\ {\rm J}}{6.6261 \times 10^{-34}\ {\rm J\cdot s}} = 1.43 \times 10^{15}\ {\rm Hz}. \]</div>
+<p><strong>(b)</strong> The wavelength of the light can be found from <span class="math notranslate nohighlight">\(c = \lambda f\)</span>, which is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+\lambda &amp;= \frac{c}{f}, \\
+&amp;= \frac{3\times 10^8\ {\rm m/s}}{1.43 \times 10^{15}\ {\rm Hz}}, \\
+&amp;= 2.09 \times 10^{-7}\ {\rm m}, \\
+&amp; = 209\ {\rm nm}.
+\end{align*}\]</div>
+<p>This photon is in the UV <span class="math notranslate nohighlight">\((\lambda &lt;400\ {\rm nm})\)</span> portion of the electromagnetic spectrum.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span> <span class="n">eV</span><span class="p">,</span> <span class="n">c</span>
+
+<span class="n">phi_Li</span> <span class="o">=</span> <span class="mf">2.93</span> <span class="c1">#work function for lithium (in eV)</span>
+<span class="n">KE_e</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1">#kinetic energy of the electron (in eV)</span>
+
+<span class="n">E_phot</span> <span class="o">=</span> <span class="n">phi_Li</span> <span class="o">+</span> <span class="n">KE_e</span> <span class="c1">#total photon energy (in eV)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The total photon energy is </span><span class="si">%1.2f</span><span class="s2"> eV or </span><span class="si">%1.2e</span><span class="s2"> J.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">E_phot</span><span class="p">,</span><span class="n">E_phot</span><span class="o">*</span><span class="n">eV</span><span class="p">))</span>
+
+<span class="n">f_phot</span> <span class="o">=</span> <span class="n">E_phot</span><span class="o">*</span><span class="n">eV</span><span class="o">/</span><span class="n">h</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The frequency of the photon is </span><span class="si">%1.2e</span><span class="s2"> Hz.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">f_phot</span><span class="p">)</span>
+<span class="n">l_phot</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">f_phot</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The wavelength of the photon is </span><span class="si">%1.2e</span><span class="s2"> m or </span><span class="si">%i</span><span class="s2"> nm.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l_phot</span><span class="p">,</span><span class="n">l_phot</span><span class="o">/</span><span class="mf">1e-9</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The total photon energy is 5.93 eV or 9.50e-19 J.
+
+The frequency of the photon is 1.43e+15 Hz.
+
+The wavelength of the photon is 2.09e-07 m or 209 nm.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="x-ray-production">
 <h2><span class="section-number">3.7. </span>X-Ray Production<a class="headerlink" href="#x-ray-production" title="Permalink to this headline">#</a></h2>
+<p>in the photoelectric effect, a photon gives up all its energy to an electron and allows the electron to escape from the material.</p>
+<ul class="simple">
+<li><p>Can an electron (or any charged particle) give up its energy and create a photon?</p></li>
+</ul>
+<p>If the process is consistent with the laws of physics, then yes.  Photons must be created or absorbed as whole units (i.e., a photon cannot give up half (or any fraction) its energy; it must give up all its energy).  If in some physical process only part of the photon’s energy were required, then a <em>new</em> photon would be created to carry away the remaining energy.</p>
+<p>An electron <em>can</em> give up a fraction or all of its kinetic energy, while maintaining its identity as an electron.  When an electron interacts (i.e., accelerates) with the strong electric field of the atomic nucleus, then the electron radiates electromagnetic energy continuously.  In the quantum picture, the electron behaves like a series of photons with varying energies and then, the inverse photoelectric effect can occur.</p>
+<p>An energetic electron passing through matter will radiate photons and lose kinetic energy.  Since the electron is slowing down, the process is called <strong>bremsstrahlung</strong> from the German word for “braking radiation.”  Figure <a class="reference internal" href="#bremsstrahlung-fig"><span class="std std-numref">3.12</span></a> illustrates the process, where an electron of energy <span class="math notranslate nohighlight">\(E_1\)</span> passes through the electric field of a positively charged nucleus, is accelerated, and produces a photon of energy <span class="math notranslate nohighlight">\(E = hf\)</span>.</p>
+<div class="figure align-default" id="bremsstrahlung-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/1/1e/Bremsstrahlung.svg"><img alt="bremsstrahlung" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Bremsstrahlung.svg" width="200px" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.12 </span><span class="caption-text">Bremsstrahlung is when an electron is accelerated while under the influence of the nucleus. The accelerated electron emits a photon. Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Bremsstrahlung">Wikipedia</a>.</span><a class="headerlink" href="#bremsstrahlung-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The final energy of the electron is determined from the conservation of energy:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-5c209fd6-4a52-44ef-a6a0-eecf876a104b">
+<span class="eqno">(3.26)<a class="headerlink" href="#equation-5c209fd6-4a52-44ef-a6a0-eecf876a104b" title="Permalink to this equation">#</a></span>\[\begin{align}
+E_f = E_i - hf.
+\end{align}\]</div>
+<p>The nucleus absorbs very little energy because linear momentum must be conserved.  One or more photons may be created in this way as electrons pass through matter.</p>
+<div class="figure align-default" id="xraytube-fig">
+<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220422.171947/resources/5508d7b84c93fd722d6c440e2f3b8cddc8e2a451"><img alt="x-ray tube" src="https://openstax.org/apps/archive/20220422.171947/resources/5508d7b84c93fd722d6c440e2f3b8cddc8e2a451" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.13 </span><span class="caption-text">A sketch of an X-ray tube. X-rays are emitted from the tungsten target. Figure Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays">OpenStax: University Physics Vol 3</a>.</span><a class="headerlink" href="#xraytube-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The x-rays discovered by Röntgen are produced by the bremsstrahlung effect, where Figure <a class="reference internal" href="#xraytube-fig"><span class="std std-numref">3.13</span></a> illustrates the process in a x-ray tube.  Current passing through a filament produces many electrons by thermionic emission.  These electrons are focused by the cathode into a beam and accelerated by <span class="math notranslate nohighlight">\(\gtrsim 1000\ {rm V}\)</span> potential differences until they strike a metal anode surface and produce x-rays by bremsstrahlung (and other processes) as they stop in the anode material.</p>
+<p>Much of the electron’s kinetic energy is lost by heating the anode material and not by bremsstrahlung.  The contents of the tube are under vacuum so that electrons will not be scattered by air.  The x-rays produced pass through the sides of the tube.  Such tubes are used for a large number of applications, including medical radiology, fundamental research in atomic and molecular structure, and engineering diagnoses of flaws in large welds and castings.</p>
+<p>X-rays from standard tube include photons of many wavelengths.  By scattering x-rays from crystals, we can produce strongly collimated monochromatic x-ray beams.  Early x-ray spectra produced by x-ray tubes had targets of tungsten, molybdenum, and chromium.  The production of x-rays from different targets can all have the same minimum wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm min}\)</span> (and associated frequency <span class="math notranslate nohighlight">\(f_{\rm max}\)</span>).  If the electrons are accelerated through a voltage <span class="math notranslate nohighlight">\(V_o\)</span>, then their kinetic energy is <span class="math notranslate nohighlight">\(eV_o\)</span>.  The maximum photon energy occurs when the electron gives up all its kinetic energy and creates one photon (this is relatively unlikely).  This process is the <strong>inverse photoelectric effect</strong>.</p>
+<p>The conservation of energy requires that the electron kinetic energy equal the maximum photon energy; the work function is small compared to the kinetic energy <span class="math notranslate nohighlight">\((\phi \ll eV_o)\)</span>.  Through conservation of energy, we have</p>
+<div class="math notranslate nohighlight">
+\[ eV_o = hf_{\rm max} = \frac{hc}{\lambda_{\rm min}}, \]</div>
+<p>or</p>
+<div class="math notranslate nohighlight" id="equation-duane-hunt-rule">
+<span class="eqno">(3.27)<a class="headerlink" href="#equation-duane-hunt-rule" title="Permalink to this equation">#</a></span>\[\lambda_{\rm min} = \frac{hc}{eV_o}.\]</div>
+<p>Equation <a class="reference internal" href="#equation-duane-hunt-rule">(3.27)</a> was first found experimentally and is known as the <strong>Duane-Hunt rule</strong>.  The value <span class="math notranslate nohighlight">\(\lambda_{\rm min}\)</span> depends only on the accelerating voltage and is the same for all targets.</p>
+<p><strong>Suppose we have a tungsten anode <span class="math notranslate nohighlight">\((\phi = 4.63\ {\rm eV})\)</span> and an electron acceleration voltage of <span class="math notranslate nohighlight">\(35\ {\rm kV}\)</span>.  (a) Why can we ignore the initial kinetic energy of the electrons from the filament and the work functions of the filaments and anodes?  (b) What is the minimum wavelength of the x-rays?</strong></p>
+<blockquote>
+<div><p><strong>(a)</strong>  The initial kinetic energies and work functions are on the order of a few <span class="math notranslate nohighlight">\({\rm eV}\)</span>, while the acceleration voltage is <span class="math notranslate nohighlight">\(35\ {\rm keV}\)</span>.  The error in neglecting everything but <span class="math notranslate nohighlight">\(eV_o\)</span> is small.</p>
+<p><strong>(b)</strong> Using the Duane-Hunt rule, we can determine the minimum wavelength by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} \lambda_{\rm min} &amp;= \frac{(6.6261 \times 10^{-34}\ {\rm J\cdot s})(3\times 10^8\ {\rm m/s})}{(1.602 \times 10^{-19}\ {\rm C})(3.5\times 10^4\ {\rm J/C})}, \\
+&amp;= 3.5\times 10^{-11}\ {\rm m}, \\
+&amp;= 0.35\ {\rm nm},
+\end{align*}\]</div>
+<p>recalling that <span class="math notranslate nohighlight">\(1\ {\rm V} = 1\ {\rm J/C}\)</span>.  This result is in good with the experimental data of <a class="reference external" href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.11.401">Ulrey (1918)</a> (see Figure <a class="reference internal" href="#tungsten-xray-fig"><span class="std std-numref">3.14</span></a>).</p>
+</div></blockquote>
+<div class="figure align-default" id="tungsten-xray-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/xraybr.gif"><img alt="x-ray tungsten" src="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/xraybr.gif" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.14 </span><span class="caption-text">The curves above are from Ulrey (1918), who bombarded tungsten targets with electrons of four different energies. Image Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/xrayc.html">Hyperphysics</a>.</span><a class="headerlink" href="#tungsten-xray-fig" title="Permalink to this image">#</a></p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">e</span>
+
+<span class="n">V_o</span> <span class="o">=</span> <span class="mf">3.5e4</span> <span class="c1">#acceleration voltage</span>
+<span class="n">lam_min</span> <span class="o">=</span> <span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">e</span><span class="o">*</span><span class="n">V_o</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The minimum wavelength for x-rays is </span><span class="si">%1.2e</span><span class="s2"> m or </span><span class="si">%1.3f</span><span class="s2"> nm.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">lam_min</span><span class="p">,</span><span class="n">lam_min</span><span class="o">/</span><span class="mf">1e-9</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The minimum wavelength for x-rays is 3.54e-11 m or 0.035 nm.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="compton-effect">
 <h2><span class="section-number">3.8. </span>Compton Effect<a class="headerlink" href="#compton-effect" title="Permalink to this headline">#</a></h2>
-<div class="section" id="pair-production-and-annihilation">
-<h3><span class="section-number">3.8.1. </span>Pair Production and Annihilation<a class="headerlink" href="#pair-production-and-annihilation" title="Permalink to this headline">#</a></h3>
+<p>When a photon enters matter, it is likely to interact with an atomic electron.  From classical theory, the electrons will oscillate at the photon frequency (e.g., a buoy in the wake of a boat) due to the electric and magnetic field of the photon.  Then, the electron will reradiate EM radiation (i.e., emit photons) at this same frequency and is called <strong>Thomson scattering</strong>.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Arthur_Compton">Arthur Compton</a> experimentally confirmed (<a class="reference external" href="https://history.aip.org/exhibits/gap/PDF/compton.pdf">Compton 1923</a>) an earlier observation (<a class="reference external" href="https://archive.org/details/londonedinburg6261913lond/page/610/mode/2up?view=theater">Gray Phil. Mag. 26, 611, 1913</a>) that there appeared to be a component of emitted (called a <strong>modified</strong> wave) that had a longer wavelength that the original primary (<strong>unmodified</strong> wave), especially at backward-scattering angles.  Classical electromagnetic theory cannot explain the modified wave and Compton attempted to understand the process theoretically.  He could only find one explanation: <em>Einstein’s photon particle concept must be correct.</em>  Figure <a class="reference internal" href="#compton-fig"><span class="std std-numref">3.15</span></a> illustrates the scattering of a photon by an electron (in the electron’s rest frame).</p>
+<div class="figure align-default" id="compton-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/comptonr.gif"><img alt="compton" src="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/comptonr.gif" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.15 </span><span class="caption-text">Compton scattering of a photon by an electron essentially at rest. Image Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/comptint.html">Hyperphysics</a>.</span><a class="headerlink" href="#compton-fig" title="Permalink to this image">#</a></p>
 </div>
+<p>Compton proposed that the photon is scattered from only one electron and that the conservation laws of energy and momentum apply, as in any elastic collision between two particles (see <a class="reference external" href="https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum">OpenStax: University Physics Vol 1</a> for a review).  From special relativity, the momentum of a photon is given by</p>
+<div class="math notranslate nohighlight">
+\[ p = \frac{E}{c} = \frac{hf}{c} = {h}{\lambda},\]</div>
+<p>and we treat the photon as a particle with a definite energy and momentum.  Scattering takes place in a plane, where both <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components of momentum must be conserved.  The energy before and after the collision (treated relativistically) are listed in <a class="reference internal" href="#compton-tab"><span class="std std-numref">Table 3.2</span></a>.</p>
+<table class="table" id="compton-tab">
+<caption><span class="caption-number">Table 3.2 </span><span class="caption-text">Results of Compton Scattering</span><a class="headerlink" href="#compton-tab" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Energy or Momentum</strong></p></th>
+<th class="head"><p><strong>Initial System</strong></p></th>
+<th class="head"><p><strong>Final System</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Photon energy</p></td>
+<td><p><span class="math notranslate nohighlight">\(hf\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(hf^\prime\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Photon momentum <span class="math notranslate nohighlight">\(p_x\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{h}{\lambda}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{h}{\lambda^\prime}\cos \theta\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Photon momentum <span class="math notranslate nohighlight">\(p_y\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{h}{\lambda^\prime}\sin \theta\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Electron energy</p></td>
+<td><p><span class="math notranslate nohighlight">\(m_e c^2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(E_e = m_e c^2 + \text{K.E.}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Photon momentum <span class="math notranslate nohighlight">\(p_x\)</span></p></td>
+<td><p>0$</p></td>
+<td><p><span class="math notranslate nohighlight">\(p_e\cos \phi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Photon momentum <span class="math notranslate nohighlight">\(p_y\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-p_e\sin \phi\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>The incident and scatter photons have frequencies <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(f^\prime\)</span>, respectively.  The recoil electron has energy <span class="math notranslate nohighlight">\(E_e\)</span> and momentum <span class="math notranslate nohighlight">\(p_e\)</span>.</p>
+<p>In the final system, the electron’s total energy is related to its momentum by</p>
+<div class="math notranslate nohighlight">
+\[ E_e^2 = (m_ec^2)^2 + p_e^2c^2. \]</div>
+<p>The conservation laws for energy and momentum are:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ee37945b-39cd-44ef-8594-0139ffa30475">
+<span class="eqno">(3.28)<a class="headerlink" href="#equation-ee37945b-39cd-44ef-8594-0139ffa30475" title="Permalink to this equation">#</a></span>\[\begin{align}
+\text{Energy:} &amp; \quad &amp; hf + m_ec^2 = hf^\prime + E_e, \\
+p_x: &amp; \quad &amp;  \frac{h}{\lambda} = \frac{h}{\lambda^\prime}\cos \theta + p_e \cos \phi, \\
+p_y: &amp; \quad &amp;  0 = \frac{h}{\lambda^\prime}\sin \theta - p_e\sin \phi.
+\end{align}\]</div>
+<p>The recoil angle <span class="math notranslate nohighlight">\(\phi\)</span> can be eliminated by finding the momentum squared of each component,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f1341ce2-4708-4812-aa02-39a29192307b">
+<span class="eqno">(3.29)<a class="headerlink" href="#equation-f1341ce2-4708-4812-aa02-39a29192307b" title="Permalink to this equation">#</a></span>\[\begin{align}
+p_x^2: &amp; \quad &amp; \left(\frac{h}{\lambda}\right)^2 +\left(\frac{h}{\lambda^\prime}\right)^2\cos^2 \theta - 2\left(\frac{h}{\lambda}\right) \left(\frac{h}{\lambda^\prime}\right)\cos \theta = p_e^2 \cos^2 \phi , \\
+p_y^2: &amp; \quad &amp; \left(\frac{h}{\lambda^\prime}\right)^2\sin^2 \theta = p_e^2 \sin^2 \phi,
+\end{align}\]</div>
+<p>and adding them together (i.e., <span class="math notranslate nohighlight">\(\cos^2 \phi + \sin^2 \phi = 1\)</span>) to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f01dff75-21a3-4fcb-ab21-f854efa5e488">
+<span class="eqno">(3.30)<a class="headerlink" href="#equation-f01dff75-21a3-4fcb-ab21-f854efa5e488" title="Permalink to this equation">#</a></span>\[\begin{align}
+p_e^2 = \left(\frac{h}{\lambda}\right)^2 + \left(\frac{h}{\lambda^\prime} \right)^2 - 2\left(\frac{h}{\lambda}\right) \left(\frac{h}{\lambda^\prime}\right)\cos \theta.
+\end{align}\]</div>
+<p>Now, we can substitute values into the conservation energy equation (using <span class="math notranslate nohighlight">\(\lambda = c/f\)</span>) to get,</p>
+<div class="math notranslate nohighlight">
+\[ \left[h(f-f^\prime) + (m_ec^2)\right]^2 = m_e^2 c^4 + (hf)^2+  (hf^\prime)^2 - 2(hf)(hf^\prime)\cos \theta.\]</div>
+<p>Squaring the left-hand side and canceling terms leaves</p>
+<div class="math notranslate nohighlight">
+\[ m_ec^2(f-f^\prime) = hff^\prime(1-\cos \theta), \]</div>
+<p>and rearranging terms produces</p>
+<div class="math notranslate nohighlight" id="equation-compton-freq">
+<span class="eqno">(3.31)<a class="headerlink" href="#equation-compton-freq" title="Permalink to this equation">#</a></span>\[\frac{h}{m_ec^2}(1-\cos \theta) = \frac{f-f^\prime}{ff^\prime}.\]</div>
+<p>The right-hand side can be re-written in terms of wavelength (using <span class="math notranslate nohighlight">\(f = c/\lambda\)</span>) to get</p>
+<div class="math notranslate nohighlight">
+\[ \frac{(c/\lambda) - (c/\lambda^\prime)}{c^2/(\lambda \lambda^\prime)} = \frac{\lambda^\prime}{c} - \frac{\lambda}{c} = \frac{\Delta \lambda}{c}. \]</div>
+<p>Substituting back into Eqn. <a class="reference internal" href="#equation-compton-freq">(3.31)</a> gives the result Compton found in 1923 for the increase in wavelength of the scatter photon as</p>
+<div class="math notranslate nohighlight" id="equation-compton-wave">
+<span class="eqno">(3.32)<a class="headerlink" href="#equation-compton-wave" title="Permalink to this equation">#</a></span>\[\frac{h}{m_ec}(1-\cos \theta) = \lambda^\prime - \lambda = \Delta \lambda.\]</div>
+<p>Compton checked the validity of his theoretical result by performing a careful experiment, where he scattered x-rays (<span class="math notranslate nohighlight">\(\lambda = 0.071\ {\rm nm}\)</span>) from carbon at several angles.  he showed that the modified wavelength was in good agreement with his prediction.  Figure <a class="reference internal" href="#compton-scattering-fig"><span class="std std-numref">3.16</span></a> shows Compton’s experiment, where the peaks correspond to the modified and unmodified scattered waves.</p>
+<div class="figure align-default" id="compton-scattering-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/compdat.gif"><img alt="compton scattering" src="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/imgqua/compdat.gif" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.16 </span><span class="caption-text">Compton scattering of an x-ray photon off a carbon target over several angles, where a second peak arises at the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>. Image Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/compdat.html#c1">Hyperphysics</a>.</span><a class="headerlink" href="#compton-scattering-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The process of elastic photon scattering from electrons in now called the <strong>Compoton effect</strong>, which depends on a few constants (<span class="math notranslate nohighlight">\(h,\ c,\ m_e,\ \text{and the scattering angle }\theta\)</span>).  The quantity <span class="math notranslate nohighlight">\(\lambda_C = h/(m_e c) = 2.426 \times 10^{-3}\ {\rm nm}\)</span> is called the <strong>Compton wavelength</strong> of the electron.  Only for wavelengths <span class="math notranslate nohighlight">\(\lesssim \lambda_C\)</span> will the fractional shift <span class="math notranslate nohighlight">\(\Delta \lambda/\lambda\)</span> be large.  For the x-rays used by Compton, the ratio of <span class="math notranslate nohighlight">\(\Delta \lambda/\lambda \sim 0.03\)</span> and could easily be observed.  The compton effect is important only for x-ray or <span class="math notranslate nohighlight">\(\gamma\)</span>-ray photons.</p>
+<p>The physical process of the Compton effect can be described as:</p>
+<ol class="simple">
+<li><p>The photon elastically scatters from an essentially free electron in the material, and</p></li>
+<li><p>The newly created photon then has a modified, longer wavelength,</p></li>
+</ol>
+<p>for the modified photon.  If the photon scatters from one of the tightly bound electrons, then</p>
+<ol class="simple">
+<li><p>The scattering is effectively from the entire atom (nucleus + electrons), and</p></li>
+<li><p>The mass is now much larger in Eqn. <a class="reference internal" href="#equation-compton-wave">(3.32)</a> and <span class="math notranslate nohighlight">\(\Delta \lambda\)</span> is correspondingly smaller,</p></li>
+</ol>
+<p>which results in the unmodified photon scattering.  The quantum picture also explains the existence of the unmodified photon scattering through Thomson scattering.  Compton received the Nobel Prize in Physics for his discovery in 1927.</p>
+<p><strong>An x-ray (<span class="math notranslate nohighlight">\(\lambda = 0.050\ {\rm nm}\)</span>) scatter from a gold target.  (a) Can the x-ray be Compton-scattered from an electron bound by as much as <span class="math notranslate nohighlight">\(62\ {\rm keV}\)</span>?  (b) What is the largest wavelength for the scattered photon that can be observed?  (c)What is the kinetic energy of the most energetic recoil electron and at what angle does it occur?</strong></p>
+<blockquote>
+<div><p><strong>(a)</strong> The x-ray energy can be determined using <span class="math notranslate nohighlight">\(E_x = hc/\lambda\)</span>, which is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E_x &amp;= \frac{(6.6261 \times 10^{-23}\ {\rm J\cdot s})(3\times 10^{8}\ {\rm m/s})}{5 \times 10^{-11}\ {\rm m}}, \\
+&amp; = 3.97 \times 10^{-15}\ {\rm J}, \\
+&amp;=  2.48 \times 10^4\ {\rm eV} = 24.8\ {\rm keV}.
+\end{align*}\]</div>
+<p>Since the x-ray energy <span class="math notranslate nohighlight">\(E_x\)</span> is less than the binding energy of the inner electron (<span class="math notranslate nohighlight">\(62\ {\rm keV}\)</span>), the x-ray cannot be Compton-scattered from an inner electron.  In this case, we have to use the atomic mass, which results in little change in the wavelength (i.e., Thomson scattering).</p>
+<p><strong>(b)</strong> Scattering may still occur from <em>outer</em> electrons, where we use the electron mass in Eqn. <a class="reference internal" href="#equation-compton-wave">(3.32)</a> to determine the longest wavelength <span class="math notranslate nohighlight">\(\lambda^\prime  = \lambda + \Delta \lambda\)</span>.  The wavelength <span class="math notranslate nohighlight">\(\lambda^\prime\)</span> is maximized when <span class="math notranslate nohighlight">\(\theta = 180^\circ = \pi\)</span>.  The longest wavelength is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lambda^\prime &amp;= \lambda \frac{h}{m_e c}\left(1-\cos 180^\circ \right) = \lambda + \frac{2h}{m_e c}, \\
+&amp;= 0.05\ {\rm nm} + 2(0.00243\ {\rm nm}) = 0.055\ {\rm nm}.
+\end{align*}\]</div>
+<p><strong>(c)</strong>  The energy of the scattered photon <span class="math notranslate nohighlight">\(E_x^\prime\)</span> is then a minimum and can be found through</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E_x^\prime &amp;= \frac{(6.6261 \times 10^{-23}\ {\rm J\cdot s})(3\times 10^{8}\ {\rm m/s})}{5.5 \times 10^{-11}\ {\rm m}}, \\
+&amp; = 3.62 \times 10^{-15}\ {\rm J}, \\
+&amp;=  2.26 \times 10^4\ {\rm eV} = 22.6\ {\rm keV}.
+\end{align*}\]</div>
+<p>Through conservation of energy, the kinetic energy is the difference of the x-ray photon’s initial <span class="math notranslate nohighlight">\(E_x\)</span> and final <span class="math notranslate nohighlight">\(E_x^\prime\)</span> energy.  The recoil electron must scatter in the forward direction (<span class="math notranslate nohighlight">\(\phi = 0^\circ\)</span>; recoil angle), when the final photon is in the backward direction (<span class="math notranslate nohighlight">\(\theta = 180^\circ\)</span>) to conserve momentum.  The maximum kinetic energy is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E_x &amp;= E_x^\prime + \text{K.E. (electron)}, \\
+\text{K.E. (electron)} &amp;= E_x - E_x^\prime, \\
+&amp;= 24.8\ {\rm keV} - 22.6\ {\rm keV} = 2.2\ {\rm keV}.
+\end{align*}\]</div>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">m_e</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">phot_E</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="c1">#calculate the energy of a photon </span>
+    <span class="c1">#l = lambda; wavelength in m</span>
+    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="n">l</span>
+
+<span class="n">l_x</span> <span class="o">=</span> <span class="mf">5e-11</span> <span class="c1">#x-ray wavelength in m</span>
+<span class="n">E_x</span> <span class="o">=</span> <span class="n">phot_E</span><span class="p">(</span><span class="n">l_x</span><span class="p">)</span> <span class="c1">#x-ray energy in J</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The energy of the x-ray photon is </span><span class="si">%1.2e</span><span class="s2"> J or </span><span class="si">%1.2e</span><span class="s2"> eV.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">E_x</span><span class="p">,</span><span class="n">E_x</span><span class="o">/</span><span class="n">eV</span><span class="p">))</span>
+
+<span class="n">l_prime</span> <span class="o">=</span> <span class="n">l_x</span> <span class="o">+</span> <span class="n">h</span><span class="o">/</span><span class="p">(</span><span class="n">m_e</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mf">180.</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The longest wavelength is </span><span class="si">%1.3e</span><span class="s2"> m or </span><span class="si">%1.3f</span><span class="s2"> nm.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l_prime</span><span class="p">,</span><span class="n">l_prime</span><span class="o">/</span><span class="mf">1e-9</span><span class="p">))</span>
+
+<span class="n">E_xp</span> <span class="o">=</span> <span class="n">phot_E</span><span class="p">(</span><span class="n">l_prime</span><span class="p">)</span> <span class="c1">#scattered x-ray energy in J</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The energy of the x-ray photon is </span><span class="si">%1.2e</span><span class="s2"> J or </span><span class="si">%1.2e</span><span class="s2"> eV.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">E_xp</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">E_xp</span><span class="o">/</span><span class="n">eV</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">)))</span>
+
+<span class="n">KE_e</span> <span class="o">=</span> <span class="n">E_x</span> <span class="o">-</span> <span class="n">E_xp</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The maximum kinetic energy of the electron is </span><span class="si">%1.2e</span><span class="s2"> J or </span><span class="si">%1.2e</span><span class="s2"> eV.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">KE_e</span><span class="p">,</span><span class="n">KE_e</span><span class="o">/</span><span class="n">eV</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The energy of the x-ray photon is 3.97e-15 J or 2.48e+04 eV.
+
+The longest wavelength is 5.485e-11 m or 0.055 nm.
+
+The energy of the x-ray photon is 3.62e-15 J or 2.26e+04 eV.
+
+The maximum kinetic energy of the electron is 3.51e-16 J or 2.19e+03 eV.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="pair-production-and-annihilation">
+<h2><span class="section-number">3.9. </span>Pair Production and Annihilation<a class="headerlink" href="#pair-production-and-annihilation" title="Permalink to this headline">#</a></h2>
+<p>A guiding principle of scientific investigation is that we might expect a non-forbidden process to eventually occur.  For example, can the kinetic energy of a photon be converted into particle mass and vice versa?  Such a process should be possible, if none of the conservation laws are violated.</p>
+<p><strong>Consider the conversion of photon energy into mass.</strong> The electron has a rest mass <span class="math notranslate nohighlight">\((m_e = 0.511\ {\rm MeV/c^2})\)</span> and is the lightest particle within an atom.  If a photon can create an electron, then it must also create a positive charge too (i.e., charge conservation).  in 1932, <a class="reference external" href="https://en.wikipedia.org/wiki/Carl_David_Anderson">Carl Anderson</a> observed a positively charged electron <span class="math notranslate nohighlight">\((e^+)\)</span> in cosmic radiation.  This particle (called a <strong>positron</strong>) was predicted by <a class="reference external" href="https://en.wikipedia.org/wiki/Paul_Dirac">Paul Dirac</a> several years earlier.</p>
+<p>The positron has the same mass as the electron, but an opposite charge.  Positrons are also observed when high-energy <span class="math notranslate nohighlight">\(\gamma\)</span>-rays (photons) pass through matter.  Experiments show that photon’s energy can be converted entirely into an electron and a positron in a process called <strong>pair production</strong>.  The reaction is</p>
+<div class="math notranslate nohighlight" id="equation-pair-production">
+<span class="eqno">(3.33)<a class="headerlink" href="#equation-pair-production" title="Permalink to this equation">#</a></span>\[\gamma \rightarrow e^+ + e^-.\]</div>
+<p>This process occurs only when the photon passes through matter because energy and momentum would not be conserved if the reaction took place in isolation.  The missing momentum must be supplied by interaction with a nearby massive object such as a nucleus.  Figure <a class="reference internal" href="#pair-production-fig"><span class="std std-numref">3.17</span></a> illustrates the pair production through the interaction with a nucleus.</p>
+<div class="figure align-default" id="pair-production-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/imgpar/eppair.gif"><img alt="pair production" src="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/imgpar/eppair.gif" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.17 </span><span class="caption-text">For photon energies far above <span class="math notranslate nohighlight">\(1.022\ {\rm MeV}\)</span>, pair production becomes the dominant mode for the interaction of x-rays and <span class="math notranslate nohighlight">\(\gamma\)</span>-rays with matter. Image Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/lepton.html">Hyperphysics</a>.</span><a class="headerlink" href="#pair-production-fig" title="Permalink to this image">#</a></p>
+</div>
+<p><strong>Show that a photon cannot produce and electron-positron pair in free space.</strong></p>
+<blockquote>
+<div><p>The electron has a total energy <span class="math notranslate nohighlight">\(E_{-}\)</span> and momentum <span class="math notranslate nohighlight">\(p_{-}\)</span>, while the positron has a total energy <span class="math notranslate nohighlight">\(E_+\)</span> and momentum <span class="math notranslate nohighlight">\(p_+\)</span>.  The conservation laws are then:</p>
+<div class="math notranslate nohighlight" id="equation-pair-conservation">
+<span class="eqno">(3.34)<a class="headerlink" href="#equation-pair-conservation" title="Permalink to this equation">#</a></span>\[\begin{split} \text{Energy:} &amp; \quad &amp; hf = E_{-} + E_{+}, \\
+p_x: &amp; \quad &amp;  hf = p_{-}c \cos \theta_{-} + p_{+}c \cos \theta_{+}, \\
+p_y: &amp; \quad &amp;  0 = p_{-} \sin \theta_{-} + p_{+} \sin \theta_{+}.
+\end{split}\]</div>
+<p>The energy of the electron <span class="math notranslate nohighlight">\(E_{-}\)</span> and positron <span class="math notranslate nohighlight">\(E_+\)</span> can be written (from Eqn. <a class="reference internal" href="../Chapter_2/special-theory-of-relativity.html#equation-momentum-energy">(2.56)</a>) as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E_{-}^2 &amp;= p_{-}^2c^2 + m_e^2c^2, \\
+E_{+}^2 &amp;= p_{+}^2c^2 + m_e^2c^2.
+\end{align*}\]</div>
+<p>Then, we insert into the conservation of energy from Eqn. <a class="reference internal" href="#equation-pair-conservation">(3.34)</a> to get</p>
+<div class="math notranslate nohighlight" id="equation-pair-energy">
+<span class="eqno">(3.35)<a class="headerlink" href="#equation-pair-energy" title="Permalink to this equation">#</a></span>\[
+hf = \sqrt{p_{-}^2c^2 + m_e^2c^2} + \sqrt{p_{+}^2c^2 + m_e^2c^2}.
+\]</div>
+<p>The maximum value of <span class="math notranslate nohighlight">\(hf\)</span> is if <span class="math notranslate nohighlight">\(\theta_{-} = \theta_{+} = 0^\circ\)</span> from <span class="math notranslate nohighlight">\(p_x\)</span>, which is</p>
+<div class="math notranslate nohighlight">
+\[ hf_{\rm max} = p_{-}c + p_{+}c. \]</div>
+<p>However, from Eqn. <a class="reference internal" href="#equation-pair-energy">(3.35)</a>, we have the condition</p>
+<div class="math notranslate nohighlight">
+\[ hf &gt; p_{-}c + p_{-}c, \]</div>
+<p>due to the rest mass <span class="math notranslate nohighlight">\(m_e\)</span>.  The results from conservation of energy are inconsistent with those from conservation of momentum and both cannot be simultaneously valid.  Equations <a class="reference internal" href="#equation-pair-conservation">(3.34)</a> do not describe a possible reaction.</p>
+</div></blockquote>
+<p><strong>Consider the conversion of a photon into an electron and a positron that takes place inside an atom where the electric field of the nucleus is large.</strong>  The nucleus recoils and takes away a negligible amount of energy, but a considerable amount of momentum.  The conservation of energy becomes</p>
+<div class="amsmath math notranslate nohighlight" id="equation-119c09f1-e0e8-4f10-becc-eb9aa2084507">
+<span class="eqno">(3.36)<a class="headerlink" href="#equation-119c09f1-e0e8-4f10-becc-eb9aa2084507" title="Permalink to this equation">#</a></span>\[\begin{align}
+hf = E_{-} + E_{+} + \text{K.E. (nucleus)}.
+\end{align}\]</div>
+<p>The photon energy must be equal to <span class="math notranslate nohighlight">\(2m_ec^2\)</span> in order to create the masses of the electron and positron, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-88061446-07df-4678-ba31-333aaffce930">
+<span class="eqno">(3.37)<a class="headerlink" href="#equation-88061446-07df-4678-ba31-333aaffce930" title="Permalink to this equation">#</a></span>\[\begin{align}
+hf &gt; 2 m_ec^2 = 1.022\ {\rm MeV}. \qquad \text{(for pair production)}
+\end{align}\]</div>
+<p>The probability of pair production increases dramatically with higher: photon energy and atomic number <span class="math notranslate nohighlight">\(Z\)</span> fo the atom’s nucleus (due to the correspondingly higher electric field).</p>
+<p><em>Why is the positron not commonly found in nature?</em>  Positrons are found in nature, where they are detected in cosmic radiation and products of radioactivity.  Their existences are doomed from interactions with electrons.  When positrons and electrons are in proximity (even for a short time), they annihilate each other and produce photon<strong>s</strong>.</p>
+<p>A positron passing through matter will quickly lose its kinetic energy through atomic collisions and will likely <strong>annihilate</strong> with an electron.  After a positron slows down, it is drawn to an electron by their mutual attraction, where the electron and positron can sometimes form an atomlike configuration called <strong>positronium</strong>.  The electron and positron orbit their common center of mass (like binary stars).  Eventually the pair annihilate each other (typically in <span class="math notranslate nohighlight">\(10^{-10}\ {\rm s}\)</span>) and produce electromagnetic radiation (i.e., photons).  This process is called <strong>pair annihilation</strong> and is represented by</p>
+<div class="math notranslate nohighlight">
+\[ e^+ + e^- \rightarrow \gamma + \gamma. \]</div>
+<p><strong>Consider a positronium “atom” at rest in free space.</strong> It must emit at least two photons to conserve energy and momentum.  If the positronium annihilation takes place near a nucleus, it is possible that only one photon will be created because the missing momentum cna be supplied by the nucleus recoil.  The conservation laws for the above process will be</p>
+<div class="amsmath math notranslate nohighlight" id="equation-cd37479e-4ecf-4005-9ea9-d8332d88f24f">
+<span class="eqno">(3.38)<a class="headerlink" href="#equation-cd37479e-4ecf-4005-9ea9-d8332d88f24f" title="Permalink to this equation">#</a></span>\[\begin{align}
+\text{Energy: } &amp; \quad &amp; 2m_e c^2 = hf_1 + hf_2, \\
+\text{Momentum: } &amp; \quad &amp; 0 = \frac{hf_1}{c} - \frac{hf_2}{c}.
+\end{align}\]</div>
+<p>By the conservation of momentum, the frequencies are identical (<span class="math notranslate nohighlight">\(f_1 = f_2 = f\)</span>).  As a result the conservation of energy becomes</p>
+<div class="math notranslate nohighlight">
+\[ 2m_e c^2 = 2hf, \]</div>
+<p>or</p>
+<div class="math notranslate nohighlight" id="equation-electron-energy">
+<span class="eqno">(3.39)<a class="headerlink" href="#equation-electron-energy" title="Permalink to this equation">#</a></span>\[hf = m_ec^2 = 0.511\ {\rm MeV}.\]</div>
+<p>The two photons from positronium annihilation will move in opposite direction, each with an energy of <span class="math notranslate nohighlight">\(0.511\ {\rm MeV}\)</span>.  This is exactly matches the experiments.</p>
+<div class="figure align-default" id="pair-annihilation-fig">
+<a class="reference internal image-reference" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/imgpar/annih.gif"><img alt="pair annihilation" src="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/imgpar/annih.gif" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.18 </span><span class="caption-text">Annihilation of positronium atom (consisting of an electron and positron), to produce two photons. Image Credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/lepton.html">Hyperphysics</a>.</span><a class="headerlink" href="#pair-annihilation-fig" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<div class="section" id="homework-problems">
+<h2><span class="section-number">3.10. </span><strong>Homework Problems</strong><a class="headerlink" href="#homework-problems" title="Permalink to this headline">#</a></h2>
 </div>
 </div>
 

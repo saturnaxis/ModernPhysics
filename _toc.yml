@@ -9,6 +9,7 @@ parts:
   - file: Preamble/who-for
   - file: Preamble/Python-basics
   - file: Preamble/Markdown-basics
+  - file: Preamble/HW_template
 - caption: Introduction
   numbered: true
   chapters:

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,12 +47,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="5. Wave and Quantum Mechanics" href="../Chapter_5/quantum-mechanics.html" />
     <link rel="prev" title="3. Experimental Quantum Physics" href="../Chapter_3/experimental-quantum-physics.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
@@ -533,11 +535,267 @@ title="Print to PDF"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="structure-of-the-atom">
 <h1><span class="section-number">4. </span>Structure of the Atom<a class="headerlink" href="#structure-of-the-atom" title="Permalink to this headline">#</a></h1>
+<p>By the end to the 19th century, most physicists and chemists believed in an atomic theory of matter.  Origins of atomic theory dat back to the Greek philosophers, who imagined atoms to be featureless har spheres.  There are considerable similarities between how physicists addressed their atomic theories in the late 19th century and how elementary particle physicists still search for the underlying structure of the building blocks of matter.</p>
+<p>Physicists and chemists (in 1900) had three pieces of evidence that the atom was not a fundamental unit:</p>
+<ol class="simple">
+<li><p>There seemed to be many kinds of atoms, each belonging to a distinct chemical element.  Ancient Greeks believed in four types of atoms (e.g., earth, air, water, and fire) that combined to make the matter we observe.  The development of chemistry made it clear that there were at least 70 kinds of atoms.</p></li>
+<li><p>Experiments showed that atoms and electromagnetic phenomena were intimately related.  Molecules can be dissociated into their components via electrolysis.  Some atoms form magnetic materials, electrical conductors, or insulators.  All kinds of atoms emit light, where the chemical composition can be analyzed through spectroscopy.</p></li>
+<li><p>There was the problem of <strong>valence</strong>: why certain elements combine while others do not and why combined elements vary in proportions by the valences of the atoms.  The characteristics of valence suggested that the forces between the atoms are specific in nature, which hinted at an internal atomic structure.</p></li>
+</ol>
+<p>In addition to this evidence, there were the discoveries of radioactivity, x-rays, and of the electron, which seemed in conflict with earlier ideas of indivisible and elementary atoms.  These indirect hits that the atom had structure developed into an investigation of the atom and its internal composition.</p>
 <div class="section" id="the-atomic-models-of-thomson-and-rutherford">
-<h2><span class="section-number">4.1. </span>The Atomic Models of Thomson and Rutherford<a class="headerlink" href="#the-atomic-models-of-thomson-and-rutherford" title="Permalink to this headline">#</a></h2>
+<span id="atomic-models"></span><h2><span class="section-number">4.1. </span>The Atomic Models of Thomson and Rutherford<a class="headerlink" href="#the-atomic-models-of-thomson-and-rutherford" title="Permalink to this headline">#</a></h2>
+<p>Following J.J. Thomson’s discovery of the electron, Thomson and others tried to unravel the mystery of the atomic structure.  Scientists knew that electrons were less massive than atoms and that their number was related to the atomic mass.  The central question was, <em>“How are the electrons arranged and where are the positive charges that make the atom electrically neutral?</em></p>
+<p>Thomson proposed a model wherein the positive charges were spread uniformly throughout an atom-sized sphere, with electrons embedded in the uniform background.  His model was likened to the distribution of raisins in plum pudding (see the YouTube video below.)  The arrangement of charges had to be in a stable equilibrium.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/JUJPyQtoB5E" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>In Thomson’s view, when the atom was heated the electrons could vibrate about their equilibrium positions, thus producing electromagnetic radiation.  The emission frequencies of this radiation would correlate with visible light, if the sphere of positive charges were <span class="math notranslate nohighlight">\(\sim 10^{-10}\ {\rm m}\)</span> in diameter.  This size was known to be the approximate size of an atom.  Thomson was unsuccessful in calculating the light spectrum of hydrogen using his model.</p>
+<p>The small size of the atoms made it impossible to see directly their internal structure.  To make further progress, a new approach was supplied by <a class="reference external" href="https://en.wikipedia.org/wiki/Ernest_Rutherford">Ernest Rutherford</a>.  Rutherford projected very small particles onto a thin material, some of which collided with atoms and eventually exited at various angles.  Rutherford (assisted by <a class="reference external" href="https://en.wikipedia.org/wiki/Hans_Geiger">Hans Geiger</a>) conceived a new technique using the scattering of energetic alpha (<span class="math notranslate nohighlight">\(\alpha\)</span>) particles from atoms.  Geiger worked with a young student (<a class="reference external" href="https://en.wikipedia.org/wiki/Ernest_Marsden">Ernest Marsden</a>) to show that surprisingly many <span class="math notranslate nohighlight">\(\alpha\)</span> particles were scattered from thin gold-leaf targets at backward angles greater than <span class="math notranslate nohighlight">\(90^\circ\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rutherford had already demonstrated that the <span class="math notranslate nohighlight">\(\alpha\)</span> particle is an ionized helium atom.</p>
+</div>
+<p>Rutherford worked on the structure of the atom for several years and was well aware of Thomson’s model.  Even though he greatly respected Thomson, Rutherford could see that Thomson’s model did not agree with spectroscopy or with Geiger’s latest experiment with <span class="math notranslate nohighlight">\(\alpha\)</span> particles.</p>
+<p>A simple thought experiment posits that a .22-caliber rifle fires a bullet into a thin black box.  If the box contains a homogenous material (e.g., wood or water), then the bullet will pass through the box with little or no deviation in its path.  However, if the box contains a few massive steel ball bearings, then occasionally a bullet will be deflected (ricocheted) backward and this would explain the observations of <span class="math notranslate nohighlight">\(\alpha\)</span> scattering by Geiger and Marsden.</p>
+<p><strong>Geiger and Marsden observed backward-scattered <span class="math notranslate nohighlight">\((\theta \geq 90^\circ )\)</span> <span class="math notranslate nohighlight">\(\alpha\)</span> particles when a beam was directed at a piece of gold foil as thin as <span class="math notranslate nohighlight">\(600\ {\rm nm}\)</span>.  Assuming an <span class="math notranslate nohighlight">\(\alpha\)</span> particle scatters from an electron in the foil, what is the maximum scattering angle?</strong></p>
+<blockquote>
+<div><p>For particle collisions, we use the conservation of linear momentum and energy.  The collision describes an electron (initially at rest) is struck by an <span class="math notranslate nohighlight">\(\alpha\)</span> particle with a velocity <span class="math notranslate nohighlight">\(v\)</span>.  The maximum scattering angle corresponds to the maximum momentum change for the <span class="math notranslate nohighlight">\(\alpha\)</span> particle, where this transfer occurs when the <span class="math notranslate nohighlight">\(\alpha\)</span> particle hits the electron head-on.</p>
+</div></blockquote>
+<div class="figure align-default" id="collision-fig">
+<a class="reference internal image-reference" href="../_images/particle_collision.png"><img alt="collision" src="../_images/particle_collision.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Schematic (before and after) of a collision between an <span class="math notranslate nohighlight">\(\alpha\)</span> particle (with a speed <span class="math notranslate nohighlight">\(v_\alpha\)</span> and mass <span class="math notranslate nohighlight">\(m_\alpha\)</span>) and an electron (with a mass <span class="math notranslate nohighlight">\(m_e\)</span>) initially at rest.</span><a class="headerlink" href="#collision-fig" title="Permalink to this image">#</a></p>
+</div>
+<blockquote>
+<div><p>From Fig. <a class="reference internal" href="#collision-fig"><span class="std std-numref">4.1</span></a>, the conservation of momentum and energy (nonrelativistically) gives</p>
+<div class="math notranslate nohighlight">
+\[ m_\alpha v_\alpha = m_\alpha v_\alpha^\prime + m_e v_e^\prime; \qquad
+ \frac{1}{2}m_\alpha v_\alpha^2 = \frac{1}{2}m_\alpha {v_\alpha^\prime}^2 + \frac{1}{2}m_e {v_e^\prime}^2.\]</div>
+<p>From mechanics, a head-on collision with the targe at rest has the following <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/elacol2.html">solutions</a> for the final velocities,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} v_\alpha^\prime = \frac{(m_\alpha - m_e)}{(m_\alpha + m_e)}v_\alpha, \\
+v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
+<p>The <span class="math notranslate nohighlight">\(\alpha\)</span> particle is much more massive than the electron (<span class="math notranslate nohighlight">\(m_\alpha/m_e \approx 4\frac{m_p}{m_e} \approx 7000\)</span>).  The <span class="math notranslate nohighlight">\(\alpha\)</span> particle’s velocity is hardly affected with <span class="math notranslate nohighlight">\(v_\alpha^\prime \approx v_\alpha\)</span> and the electron’s velocity is nearly <span class="math notranslate nohighlight">\(2v_\alpha\)</span>.  In general, the maximum momentum change of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle is simply</p>
+<div class="math notranslate nohighlight">
+\[ \Delta \vec{p}_\alpha = m_\alpha \vec{v}_\alpha - m_\alpha \vec{v}_\alpha^\prime = m_e \vec{v}_e^\prime, \]</div>
+<p>or for a head-on collision,</p>
+<div class="math notranslate nohighlight">
+\[ \Delta p_{\rm max} = 2m_ev_\alpha.\]</div>
+<p>An upper limit for the angular deviation <span class="math notranslate nohighlight">\(\theta\)</span> can be determined by letting <span class="math notranslate nohighlight">\(\Delta p_{\rm max}\)</span> be perpendicular to the initial momentum of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle,</p>
+<div class="math notranslate nohighlight">
+\[ \theta_{\rm max} = \frac{\Delta p_\alpha}{p_\alpha} = \frac{2m_ev_\alpha}{m_\alpha v_\alpha} = \frac{2m_e}{m_\alpha} = \frac{2}{7000}\ {\rm rad} = 0.016^\circ.\]</div>
+<p>Thus it is impossible for an <span class="math notranslate nohighlight">\(\alpha\)</span> particle to be deflected through a large angle by a single encounter with an electron.</p>
+</div></blockquote>
+<div class="figure align-default" id="momentum-exchange-fig">
+<a class="reference internal image-reference" href="../_images/momentum_exchange.png"><img alt="momentum exchange" src="../_images/momentum_exchange.png" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Vector diagram illustrating the change in momentum of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle after scattering from the electron.</span><a class="headerlink" href="#momentum-exchange-fig" title="Permalink to this image">#</a></p>
+</div>
+<p><em>What would happen if an <span class="math notranslate nohighlight">\(\alpha\)</span> particle were scattered by many electrons in the target?</em>  Multiple scattering is possible, where a calculation for <span class="math notranslate nohighlight">\(N\)</span> random multiple scattering from electrons results in an average scattering angle <span class="math notranslate nohighlight">\(\langle\theta \rangle_{\rm total} \approx \sqrt{N}\theta\)</span>.  The <span class="math notranslate nohighlight">\(\alpha\)</span> particle ias as likely to scatter on either side for each collision.  We can estimate the number of atoms across the thin (<span class="math notranslate nohighlight">\(600\ {\rm nm}\)</span>) <a class="reference external" href="https://en.wikipedia.org/wiki/Gold">gold</a> layer used by Gieger and Marsden by,</p>
+<div class="math notranslate nohighlight" id="equation-gold-n-density">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-gold-n-density" title="Permalink to this equation">#</a></span>\[\begin{split}
+\frac{\text{Number of molecules}}{\rm cm^3} &amp;= N_A \times \text{molar mass} \times \text{density}, \\
+&amp;= \left( 6.02 \times 10^{23}\ \frac{\rm molecules}{\rm mol}\right) \left(\frac{1\ {\rm mol}}{197\ {\rm g}}\right) \left( 19.3 \frac{\rm g}{\rm cm^3}\right), \\
+&amp;= 5.9 \times 10^{22}\ \frac{\rm molecules}{\rm cm^3} =  5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}.
+\end{split}\]</div>
+<p>If there are <span class="math notranslate nohighlight">\(5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}\)</span>, then each atom occupies <span class="math notranslate nohighlight">\((5.9 \times 10^{28})^{-1}\ {\rm m^3}\)</span> of space.  Assuming the atoms form a cubic lattice, the distance <span class="math notranslate nohighlight">\(d\)</span> between centers is <span class="math notranslate nohighlight">\(d = (5.9 \times 10^{28})^{-1/3}\ {\rm m} = 2.6 \times 10^{-10}\ {\rm m}\)</span>. In the foil, there are</p>
+<div class="math notranslate nohighlight">
+\[ N = \frac{600\ {\rm nm}}{0.26\ {\rm nm}} = 2300\ {\rm atoms} \]</div>
+<p>along the <span class="math notranslate nohighlight">\(\alpha\)</span> particle’s path.  If we assume the $\alpha particle interacts with one electron from each atom, then</p>
+<div class="math notranslate nohighlight">
+\[ \langle \theta \rangle = \sqrt{2300}(0.016^\circ) = 0.8^\circ, \]</div>
+<p>where we used <span class="math notranslate nohighlight">\(theta\)</span> from example above.  Even if the <span class="math notranslate nohighlight">\(\alpha\)</span> particle scattered from all 79 electrons in each gold atom, the expected deflection is <span class="math notranslate nohighlight">\(&lt;7^\circ\)</span>.</p>
+<p>Rutherford proposed that an atom consisted mostly of empty space with a central charge (either positive or negative).  In 1911, Rutherford wrote,</p>
+<blockquote class="epigraph">
+<div><p>“Considering the evidence as a whole, it seems simplest to suppose that the atom contains a central charge distributed through a very small volume, and that the large single deflections are due to the central charge as a whole, and not to its constituents.”</p>
+</div></blockquote>
+<p>Rutherford worked out the scattering expected for the <span class="math notranslate nohighlight">\(\alpha\)</span> particles as a function of angle, material thickness, velocity and charge.  Geiger and Marsden investigated Rutherford’s ideas and confirmed the theory.  Rutherford was the first to call the central charged core a <strong>nucleus</strong> and definitely decided that the core was <em>positively</em> charged, surrounded by the negatively charged electrons.</p>
 </div>
 <div class="section" id="rutherford-scattering">
 <h2><span class="section-number">4.2. </span>Rutherford Scattering<a class="headerlink" href="#rutherford-scattering" title="Permalink to this headline">#</a></h2>
+<p>The scattering of charged particles by matter is called <strong>Coulomb</strong> or <strong>Rutherford scattering</strong> when it takes place at low energies, where only the Coulomb interactions are important.</p>
+<p>A charged particle of mass <span class="math notranslate nohighlight">\(m\)</span>, charge <span class="math notranslate nohighlight">\(Z_1e\)</span>, and speed <span class="math notranslate nohighlight">\(v_o\)</span> is incident on a target material or scatterer of charge <span class="math notranslate nohighlight">\(Z_2e\)</span>.  The distance <span class="math notranslate nohighlight">\(b\)</span> denotes the classical <em>impact parameter</em>, which is the closest approach between the beam particle and scatterer (if the projectile had continued in a straight line).  The angle <span class="math notranslate nohighlight">\(\theta\)</span> between the incident beam and the deflected particle is called the <em>scattering angle</em>.</p>
+<div class="figure align-default" id="alpha-scattering-fig">
+<a class="reference internal image-reference" href="../_images/alpha_scattering.gif"><img alt="alpha scattering" src="../_images/alpha_scattering.gif" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">The scattering of the alpha particle by the central repulsive Coulomb force leads to a hyperbolic trajectory. From the scattering angle and momentum, one can calculate the impact parameter and closest approach to the target nucleus. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rutsca.html">Hyperphysics</a></span><a class="headerlink" href="#alpha-scattering-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>When the impact parameter is small, the distance of closest approach <span class="math notranslate nohighlight">\(r_{\rm min}\)</span> is small, and the Coulomb force is large.  Therefore, the scattering angle is large, and the particle is repelled backward.  For large impact parameters, the particles never get close together, so the Coulomb force is small and the scattering angle is also small.</p>
+<div class="figure align-default" id="impact-parameter-fig">
+<a class="reference internal image-reference" href="../_images/impact_parameter.gif"><img alt="impact parameter" src="../_images/impact_parameter.gif" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Besides the masses of the target and projectile, the scattering angle depends upon the force and upon the impact parameter. The impact parameter is the perpendicular distance to the closest approach if the projectile were undeflected. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/rutsca2.html#c5">Hyperphysics</a></span><a class="headerlink" href="#impact-parameter-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Rutherford made the following assumptions regarding the relationship between <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
+<ol class="simple">
+<li><p>The scatterer is so massive that it does not significantly recoil; therefore the initial and final kinetic energies of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle are practically equal.</p></li>
+<li><p>The target is so thin that only a single scattering occurs.</p></li>
+<li><p>The bombarding particle and target scatterer are so small that they may be treated as point masses and charges.</p></li>
+<li><p>Only the Coulomb force is effective.</p></li>
+</ol>
+<p>Assumption 1 means that <span class="math notranslate nohighlight">\({\rm K.E._{initial}} \approx {\rm K.E._{final}} \equiv K\)</span> for the <span class="math notranslate nohighlight">\(\alpha\)</span> particle.  For central forces like the Coulomb force, the trajectory of the scattered particle lies in a plane due to the conservation of angular momentum <span class="math notranslate nohighlight">\(mv_ob\)</span> defined by the initial velocity <span class="math notranslate nohighlight">\(v_o\)</span>.</p>
+<p>The instantaneous position of the particle is defined by the angle <span class="math notranslate nohighlight">\(\phi\)</span> and the distance <span class="math notranslate nohighlight">\(r\)</span> from the force center.  When the distance <span class="math notranslate nohighlight">\(r\)</span> is a minimum, <span class="math notranslate nohighlight">\(\phi = 0\)</span> and defines the <span class="math notranslate nohighlight">\(z^\prime\)</span> axis.  The change in momentum is equal to the impulse</p>
+<div class="math notranslate nohighlight" id="equation-impulse">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-impulse" title="Permalink to this equation">#</a></span>\[\Delta \vec{p} = \int \vec{F}_{\Delta p}dt,\]</div>
+<p>defined by the force <span class="math notranslate nohighlight">\(\vec{F}_{\Delta p}\)</span> along the direction of <span class="math notranslate nohighlight">\(\Delta \vec{p}\)</span>.  The massive scatterer absorbs this momentum change without gaining any appreciable kinetic energy (i.e., no recoil).  The momentum change is</p>
+<div class="math notranslate nohighlight" id="equation-momentum-change">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-momentum-change" title="Permalink to this equation">#</a></span>\[\Delta \vec{p} = \vec{p}_f - \vec{p}_i,\]</div>
+<p>where the subscripts <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(i\)</span> indicate the final and initial momentum, respectively.  Since <span class="math notranslate nohighlight">\(p_f \approx p_i\)</span>, the vector triangle in Fig. <a class="reference internal" href="#alpha-scattering-fig"><span class="std std-numref">4.3</span></a> is isosceles and the angle <span class="math notranslate nohighlight">\(\theta\)</span> can be bisected.  The magnitude of <span class="math notranslate nohighlight">\(\Delta p\)</span> is now</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8a71332b-c6b2-4798-9400-e99a5ef5617a">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-8a71332b-c6b2-4798-9400-e99a5ef5617a" title="Permalink to this equation">#</a></span>\[\begin{align} 
+\Delta p = 2mv_o \sin \frac{\theta}{2}.
+\end{align}\]</div>
+<p>The direction of <span class="math notranslate nohighlight">\(\Delta \vec{p}\)</span> is the <span class="math notranslate nohighlight">\(z^\prime\)</span> axis, where we need to determine the <span class="math notranslate nohighlight">\(z^\prime\)</span> component of <span class="math notranslate nohighlight">\(\vec{F}\)</span>.  The Coulomb force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is defined as</p>
+<div class="math notranslate nohighlight" id="equation-coulomb-force">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-coulomb-force" title="Permalink to this equation">#</a></span>\[\vec{F} = \frac{1}{4\pi \epsilon_o}\frac{Z_1 Z_2 e^2}{r^2}\hat{e}_r,\]</div>
+<p>where the unit vector <span class="math notranslate nohighlight">\(\hat{e}_r\)</span> points along a position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span>.  The component along <span class="math notranslate nohighlight">\(\Delta p\)</span> is given as <span class="math notranslate nohighlight">\(F_{\Delta p} = F \cos \phi\)</span>.</p>
+<p>Substituting into Eqn. <a class="reference internal" href="#equation-impulse">(4.2)</a>, we get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+\Delta p &amp;= 2mv_o \sin \frac{\theta}{2}, \\
+&amp;= \int F\cos \phi dt = \frac{Z_1 Z_2 e^2}{4\pi \epsilon_o}\int \frac{\cos \phi}{r^2} dt.
+\end{align*}\]</div>
+<p>The instantaneous angular momentum must be conserved, so</p>
+<div class="math notranslate nohighlight">
+\[ mr\left(r\frac{d\phi}{dt}\right) = mv_o b, \]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[ r^2 = \frac{v_ob}{d\phi/dt}. \]</div>
+<p>Substituting <span class="math notranslate nohighlight">\(r^2\)</span> into the integral for impulse, we get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+2mv_o \sin \frac{\theta}{2} &amp;= \frac{Z_1 Z_2 e^2}{4\pi \epsilon_o} \int \frac{\cos \phi}{v_o b}\frac{dt}{d\phi}dt, \\
+&amp;= \frac{Z_1 Z_2 e^2}{4\pi \epsilon_o v_o b} \int_{\phi_i}^{\phi_f} \cos \phi d\phi.
+\end{align*}\]</div>
+<p>If we let the angle <span class="math notranslate nohighlight">\(\phi_i\)</span> be on the negative side and the final angle <span class="math notranslate nohighlight">\(\phi_f\)</span> on the positive side of the <span class="math notranslate nohighlight">\(z^\prime\)</span> axis, then we have <span class="math notranslate nohighlight">\(\phi_i = -\phi_f\)</span>, and <span class="math notranslate nohighlight">\(-\phi_i + \phi_f + \theta = \pi\)</span>, so <span class="math notranslate nohighlight">\(\phi_i = - (\pi -\theta)/2\)</span> and <span class="math notranslate nohighlight">\(\phi_f = +(\pi - \theta)/2\)</span>.  Then,</p>
+<div class="math notranslate nohighlight">
+\[ \frac{8\pi \epsilon_o mv_o^2 b}{Z_1 Z_2 e^2} \sin \frac{\theta}{2} = \int_{-(\pi - \theta)/2}^{+(\pi - \theta)/2} \cos \phi d\phi = 2 \cos \frac{\theta}{2}. \]</div>
+<p>The impact parameter <span class="math notranslate nohighlight">\(b\)</span> can be determined as</p>
+<div class="math notranslate nohighlight" id="equation-impact-parameter">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-impact-parameter" title="Permalink to this equation">#</a></span>\[b = \frac{Z_1 Z_2 e^2}{4\pi \epsilon_o mv_o^2} \cot \frac{\theta}{2} = \frac{Z_1 Z_2 e^2}{8\pi \epsilon_o K} \cot \frac{\theta}{2},\]</div>
+<p>where the kinetic energy of the bombarding particle is <span class="math notranslate nohighlight">\(K = mv_o^2/2\)</span>.  This is the fundamental relationship between the impact parameter <span class="math notranslate nohighlight">\(b\)</span> and the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span> for the Coulomb force.</p>
+<p>For a given experiment, we are not able to select individual impact parameters.  When we put a detector at a particular angle <span class="math notranslate nohighlight">\(\theta\)</span>, we cover a <em>finite</em> <span class="math notranslate nohighlight">\(\Delta \theta\)</span>, which corresponds to a range of impact parameters <span class="math notranslate nohighlight">\(\Delta b\)</span>.  The bombarding particles are incident at varied impact parameters.  All the particles with <span class="math notranslate nohighlight">\(b&lt;b_o\)</span> will be scattered at angles <span class="math notranslate nohighlight">\(\theta &gt; \theta_o\)</span>.  Any particle with an impact parameter inside the area of a circle with an area <span class="math notranslate nohighlight">\(\pi b_o^2\)</span> (i.e., radius <span class="math notranslate nohighlight">\(b_o\)</span>) will be similarly scattered.  For Coulomb scattering, the cross section <span class="math notranslate nohighlight">\(\sigma\)</span> is</p>
+<div class="math notranslate nohighlight" id="equation-cross-section">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-cross-section" title="Permalink to this equation">#</a></span>\[\sigma = \pi b^2.\]</div>
+<p>The cross section <span class="math notranslate nohighlight">\(\sigma\)</span> is related to the <em>probability</em> for a particle being scattered by the nucleus.</p>
+<p>If we have a target foil of <strong>thickness</strong> <span class="math notranslate nohighlight">\(t\)</span> with <span class="math notranslate nohighlight">\(n\)</span> atoms/volume, the target nuclei per unit area is <span class="math notranslate nohighlight">\(nt\)</span>.  Because we assumed a thin target area <span class="math notranslate nohighlight">\(A\)</span> and all nuclei are exposed, the number of target nuclei is <span class="math notranslate nohighlight">\(ntA\)</span>.  The number density <span class="math notranslate nohighlight">\(n\)</span> is related to the density <span class="math notranslate nohighlight">\(\rho\)</span>, Avogadro’s number <span class="math notranslate nohighlight">\(N_A\)</span>, atoms per molecule <span class="math notranslate nohighlight">\(N_M\)</span>, and the molecular weight by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-303e02c7-3899-492b-9e4e-194613b10820">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-303e02c7-3899-492b-9e4e-194613b10820" title="Permalink to this equation">#</a></span>\[\begin{align}
+n &amp;= \rho \left(\frac{\rm g}{\rm cm^3}\right) N_A \left(\frac{\rm molecules}{\rm mol}\right)N_M \left(\frac{\rm atoms}{\rm molecule}\right) \left(M_g ({\rm g/mol})\right)^{-1}, \\
+&amp; = \frac{\rho N_A N_M}{M_g} \frac{\rm atoms}{\rm cm^3}.
+\end{align}\]</div>
+<p>Then the number of scattering nuclei per unit area is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7b345772-574a-4f88-82d5-37d364962508">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-7b345772-574a-4f88-82d5-37d364962508" title="Permalink to this equation">#</a></span>\[\begin{align}
+nt = \frac{\rho N_A N_M t}{M_g} \frac{\rm atoms}{\rm cm^2},
+\end{align}\]</div>
+<p>the number of target nuclei <span class="math notranslate nohighlight">\(N_s\)</span> is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a2bdb3ab-1500-4575-a588-073e47b20cd1">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-a2bdb3ab-1500-4575-a588-073e47b20cd1" title="Permalink to this equation">#</a></span>\[\begin{align}
+N_s = ntA = \frac{\rho N_A N_M tA}{M_g}\ {\rm atoms}.
+\end{align}\]</div>
+<p>The probability of the particle begin scattered is equal number of target nuclei times the cross section divided by the total target area <span class="math notranslate nohighlight">\(A\)</span>, or</p>
+<div class="math notranslate nohighlight" id="equation-frac-scattered">
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-frac-scattered" title="Permalink to this equation">#</a></span>\[\begin{split}
+f &amp;= \frac{\text{target area exposed by scatterers}}{\text{total target area}} = \frac{ntA\sigma}{A}, \\
+&amp;=  nt\sigma = nt\pi b^2, \\
+&amp;= \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot^2 \frac{\theta}{2}.
+\end{split}\]</div>
+<p><strong>Find the fraction of 7.7-MeV <span class="math notranslate nohighlight">\(\alpha\)</span> particles that is deflected at <span class="math notranslate nohighlight">\(\geq 90^\circ\)</span> from a gold foil of <span class="math notranslate nohighlight">\(1\ {\mu \rm m}\)</span> in thickness.</strong></p>
+<blockquote>
+<div><p>First, we need the number density <span class="math notranslate nohighlight">\(n\)</span>.  In <a class="reference internal" href="#atomic-models"><span class="std std-ref">The Atomic Models of Thomson and Rutherford</span></a>, we have already calculated the number density in Eqn. <a class="reference internal" href="#equation-gold-n-density">(4.1)</a> so that <span class="math notranslate nohighlight">\(n = 5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}\)</span>.  To determine fraction <span class="math notranslate nohighlight">\(f\)</span> of alpha particles, we use</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+f &amp;= \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot^2 \frac{\theta}{2}, \\
+&amp;= \pi\left(5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3} \right)(10^{-6}\ {\rm m}) \left[\frac{(79)(2)(1.6\times 10^{-19}\ {\rm C})(9\times 10^9\ {\rm N\cdot m^2/C^2})}{2(7.7\times 10^6\ {\rm eV})(1.6 \times 10^{-19}\ {\rm J/eV})} \right]^2 \left(\cot 45^\circ\right)^2, \\
+&amp;= 4 \times 10^{-5}.
+\end{align*}\]</div>
+<p>One <span class="math notranslate nohighlight">\(\alpha\)</span> particle in 25,000 is deflected by <span class="math notranslate nohighlight">\(90^\circ\)</span> or greater.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">pi</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">n_au</span> <span class="o">=</span> <span class="mf">5.9e28</span> <span class="c1">#number density of gold atoms per m^3</span>
+<span class="n">t_au</span> <span class="o">=</span> <span class="mf">1e-6</span> <span class="c1">#thickness of the gold foil in m</span>
+<span class="n">K_alpha</span> <span class="o">=</span> <span class="mf">7.7e6</span><span class="o">*</span><span class="n">eV</span> <span class="c1">#kinetic energy of the alpha particles in J</span>
+<span class="n">Z_au</span> <span class="o">=</span> <span class="mi">79</span> <span class="c1">#number of protons in gold</span>
+<span class="n">Z_he</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">#number of protons in helium</span>
+<span class="n">theta_alpha</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span> <span class="c1">#scattering angle of the alpha particles</span>
+
+<span class="n">f_au</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="n">n_au</span><span class="o">*</span><span class="n">t_au</span><span class="o">*</span><span class="p">((</span><span class="n">Z_au</span><span class="o">*</span><span class="n">Z_he</span><span class="o">*</span><span class="n">e</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">epsilon_0</span><span class="o">*</span><span class="n">K_alpha</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">theta_alpha</span><span class="o">/</span><span class="mf">2.</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The fraction of deflected (7.7 MeV) alpha particles is </span><span class="si">%1.1e</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">f_au</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The fraction of deflected (7.7 MeV) alpha particles is 4.0e-05.
+</pre></div>
+</div>
+</div>
+</div>
+<p>In a typical experiment, a detector is positioned over a range of angles and thus, we need to find the number of particles scattered between <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\theta + d\theta\)</span> with corresponding impact parameters (<span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(b+db\)</span>).</p>
+<div class="figure align-default" id="fraction-scattered-fig">
+<a class="reference internal image-reference" href="../_images/particle_deflection.png"><img alt="fraction scattered" src="../_images/particle_deflection.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Particles scattered over the range of impact parameters <span class="math notranslate nohighlight">\(b\)</span> corresponding to a range of scattering angles <span class="math notranslate nohighlight">\(\theta\)</span>. Image credit: <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">(Thornton &amp; Rex (2012))</a></span><a class="headerlink" href="#fraction-scattered-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>The fraction of incident particles scattered is <span class="math notranslate nohighlight">\(df\)</span>, or the derivative of Eq. <a class="reference internal" href="#equation-frac-scattered">(4.11)</a> with respect to <span class="math notranslate nohighlight">\(d\theta\)</span>, is</p>
+<div class="math notranslate nohighlight">
+\[ df = -\pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot \frac{\theta}{2} csc^2 \frac{\theta}{2}d\theta.
+\]</div>
+<p>If the total number of incident particles is <span class="math notranslate nohighlight">\(N_i\)</span>, the number of particles scattered into the ring of angular width <span class="math notranslate nohighlight">\(d\theta\)</span> is <span class="math notranslate nohighlight">\(N_i|df|\)</span>.  The area of the ring <span class="math notranslate nohighlight">\(dA\)</span> is <span class="math notranslate nohighlight">\(2\pi r^2 \sin \theta d\theta\)</span>.  The number of particles scattered per unit area, <span class="math notranslate nohighlight">\(N(\theta)\)</span>, into the ring is</p>
+<div class="math notranslate nohighlight" id="equation-rutherford-scattering">
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-rutherford-scattering" title="Permalink to this equation">#</a></span>\[\begin{split}
+N(\theta) &amp;= \frac{N_i|df|}{dA} = \frac{N_i \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2}{2\pi r^2 \sin \theta d\theta} \cot \frac{\theta}{2} csc^2 \frac{\theta}{2}d\theta, \\
+&amp;= \frac{N_i nt}{16}\left(\frac{e^2}{4\pi \epsilon_o}\right)^2 \frac{Z_1^2 Z_2^2}{r^2K^2 \sin^4 (\theta/2)}.
+\end{split}\]</div>
+<p>Equation <a class="reference internal" href="#equation-rutherford-scattering">(4.12)</a> is the famous <strong>Rutherford scattering equation</strong>.  The important points are</p>
+<ol class="simple">
+<li><p>The scattering is proportional to the square of the atomic number of both the incident particle <span class="math notranslate nohighlight">\(Z_1\)</span> and the target scatterer <span class="math notranslate nohighlight">\(Z_2\)</span>.</p></li>
+<li><p>The number of scattered particles is inversely proportional to the square of the kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of the incident particle.</p></li>
+<li><p>The scattering is inversely proportional to the 4th power of the <span class="math notranslate nohighlight">\(\sin (\theta /2)\)</span>, where <span class="math notranslate nohighlight">\(\theta\)</span> is the scattering angle.</p></li>
+<li><p>The scattering is proportional to the target thickness for thin targets.</p></li>
+</ol>
+<p><strong>Calculate the fraction per <span class="math notranslate nohighlight">\({\rm mm^2}\)</span> area of 7.7-MeV <span class="math notranslate nohighlight">\(\alpha\)</span> particles scattered at <span class="math notranslate nohighlight">\(45^\circ\)</span> from a gold foil of thickness <span class="math notranslate nohighlight">\(0.21\ \mu{\rm m}\)</span> at a distance of <span class="math notranslate nohighlight">\(1\ {\rm cm}\)</span> from the target.</strong></p>
+<blockquote>
+<div><p>First, we need the number density <span class="math notranslate nohighlight">\(n\)</span>.  In <a class="reference internal" href="#atomic-models"><span class="std std-ref">The Atomic Models of Thomson and Rutherford</span></a>, we have already calculated the number density in Eqn. <a class="reference internal" href="#equation-gold-n-density">(4.1)</a> so that <span class="math notranslate nohighlight">\(n = 5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}\)</span>.  To determine fraction <span class="math notranslate nohighlight">\(N(\theta)/N_i\)</span> of alpha particles, we use</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{N(\theta)}{N_i} &amp; = \frac{nt}{16}\left(\frac{e^2}{4\pi \epsilon_o}\right)^2 \frac{Z_1^2 Z_2^2}{r^2K^2 \sin^4 (\theta/2)}, \\
+&amp;= \frac{\left(5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3} \right)(2.1 \times 10^{-7}\ {\rm m})\left[(1.6\times 10^{-19}\ {\rm C})^2(9\times 10^9\ {\rm N\cdot m^2/C^2})\right]^2 (2^2) (79^2)}{16(10^{-2}\ {\rm m})^2 (7.7\times 10^6\ {\rm eV})^2(1.6 \times 10^{-19}\ {\rm J/eV})^2 \sin^4 (45^\circ/2) }, \\
+&amp;= 0.32\ {\rm m^{-2}} = 3.2 \times 10^{-7}\ {\rm mm^{-2}}.
+\end{align*}\]</div>
+<p>This is the theoretical basis for the experiment performed by Geiger and Marsden to check the validity of Rutherford’s calculation.  Our calculated result agrees with their experimental result of <span class="math notranslate nohighlight">\(3.7 \times 10^{-7}\ {\rm mm^{-2}}\)</span> when the experimental uncertainty is taken into account.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">pi</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">n_au</span> <span class="o">=</span> <span class="mf">5.9e28</span> <span class="c1">#number density of gold atoms per m^3</span>
+<span class="n">t_au</span> <span class="o">=</span> <span class="mf">2.1e-7</span> <span class="c1">#thickness of the gold foil in m</span>
+<span class="n">K_alpha</span> <span class="o">=</span> <span class="mf">7.7e6</span><span class="o">*</span><span class="n">eV</span> <span class="c1">#kinetic energy of the alpha particles in J</span>
+<span class="n">Z_au</span> <span class="o">=</span> <span class="mi">79</span> <span class="c1">#number of protons in gold</span>
+<span class="n">Z_he</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">#number of protons in helium</span>
+<span class="n">theta_alpha</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span> <span class="c1">#scattering angle of the alpha particles</span>
+<span class="n">r_alpha</span> <span class="o">=</span> <span class="mf">0.01</span> <span class="c1">#distance from the target in m</span>
+
+<span class="n">Ntheta_Ni</span> <span class="o">=</span> <span class="n">n_au</span><span class="o">*</span><span class="n">t_au</span><span class="o">/</span><span class="mf">16.</span><span class="o">*</span><span class="p">(</span><span class="n">e</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">epsilon_0</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">Z_au</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">Z_he</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">r_alpha</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">K_alpha</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta_alpha</span><span class="o">/</span><span class="mf">2.</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="c1">#fraction per m^2</span>
+<span class="n">Ntheta_Ni_mm2</span> <span class="o">=</span> <span class="n">Ntheta_Ni</span><span class="o">*</span><span class="p">(</span><span class="mf">0.001</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="c1">#convert per m^2 to per mm^2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The fraction per mm^2 is </span><span class="si">%1.2e</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">Ntheta_Ni_mm2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The fraction per mm^2 is 3.15e-07.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="the-classical-atomic-model">
 <h2><span class="section-number">4.3. </span>The Classical Atomic Model<a class="headerlink" href="#the-classical-atomic-model" title="Permalink to this headline">#</a></h2>

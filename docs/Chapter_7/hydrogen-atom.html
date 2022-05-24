@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. The Hydrogen Atom &#8212; PHYS2700 Modern Physics</title>
+    <title>7. The Hydrogen Atom and Atomic Physics &#8212; PHYS2700 Modern Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,8 +50,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Atomic Physics" href="../Chapter_7/atomic-physics.html" />
-    <link rel="prev" title="5. Wave and Quantum Mechanics" href="../Chapter_5/quantum-mechanics.html" />
+    <link rel="next" title="8. Statistical Physics" href="../Chapter_8/statistical-physics.html" />
+    <link rel="prev" title="6. Quantum Mechanics: Part II" href="../Chapter_6/quantum-mechanics-part2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -170,23 +170,23 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Development of Quantum Mechanics
+  Quantum Mechanics
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_5/quantum-mechanics.html">
-   5. Wave and Quantum Mechanics
+   5. Quantum Mechanics: Part I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_6/quantum-mechanics-part2.html">
+   6. Quantum Mechanics: Part II
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   6. The Hydrogen Atom
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_7/atomic-physics.html">
-   7. Atomic Physics
+   7. The Hydrogen Atom and Atomic Physics
   </a>
  </li>
  <li class="toctree-l1">
@@ -280,7 +280,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_6/hydrogen-atom.ipynb"
+        <a href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_7/hydrogen-atom.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -336,7 +336,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/Chapter_6/hydrogen-atom.ipynb"
+        <a href="../_sources/Chapter_7/hydrogen-atom.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -397,39 +397,39 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#application-of-the-schrodinger-equation-to-the-hydrogen-atom">
-   6.1. Application of the Schrödinger Equation to the Hydrogen Atom
+   7.1. Application of the Schrödinger Equation to the Hydrogen Atom
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-the-schrodinger-equation-for-the-hydrogen-atom">
-   6.2. Solution of the Schrödinger Equation for the Hydrogen Atom
+   7.2. Solution of the Schrödinger Equation for the Hydrogen Atom
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#separation-of-variables">
-     6.2.1. Separation of Variables
+     7.2.1. Separation of Variables
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-the-radial-equation">
-     6.2.2. Solution of the Radial Equation
+     7.2.2. Solution of the Radial Equation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-the-angular-and-azimuthal-equations">
-     6.2.3. Solution of the Angular and Azimuthal Equations
+     7.2.3. Solution of the Angular and Azimuthal Equations
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#quantum-numbers">
-   6.3. Quantum Numbers
+   7.3. Quantum Numbers
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#principal-quantum-number-n">
-     6.3.1. Principal Quantum Number
+     7.3.1. Principal Quantum Number
      <span class="math notranslate nohighlight">
       \(n\)
      </span>
@@ -437,7 +437,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#orbital-angular-momentum-quantum-number-ell">
-     6.3.2. Orbital Angular Momentum Quantum Number
+     7.3.2. Orbital Angular Momentum Quantum Number
      <span class="math notranslate nohighlight">
       \(\ell\)
      </span>
@@ -445,7 +445,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#magnetic-quantum-number-m-ell">
-     6.3.3. Magnetic Quantum Number
+     7.3.3. Magnetic Quantum Number
      <span class="math notranslate nohighlight">
       \(m_\ell\)
      </span>
@@ -455,17 +455,54 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#magnetic-effects-on-atomic-spectra-the-normal-zeeman-effect">
-   6.4. Magnetic Effects on Atomic Spectra–The Normal Zeeman Effect
+   7.4. Magnetic Effects on Atomic Spectra–The Normal Zeeman Effect
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#intrinsic-spin">
-   6.5. Intrinsic Spin
+   7.5. Intrinsic Spin
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#energy-levels-and-electron-probabilities">
-   6.6. Energy Levels and Electron Probabilities
+   7.6. Energy Levels and Electron Probabilities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atomic-structure-and-the-periodic-table">
+   7.7. Atomic Structure and the Periodic Table
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#total-angular-momentum">
+   7.8. Total Angular Momentum
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-electron-atoms">
+     7.8.1. Single-Electron Atoms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#many-electron-atoms">
+     7.8.2. Many-Electron Atoms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ls-coupling">
+     7.8.3. LS Coupling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jj-coupling">
+     7.8.4. jj Coupling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anomalous-zeeman-effect">
+   7.9. Anomalous Zeeman Effect
   </a>
  </li>
 </ul>
@@ -477,7 +514,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>The Hydrogen Atom</h1>
+                <h1>The Hydrogen Atom and Atomic Physics</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -489,39 +526,39 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#application-of-the-schrodinger-equation-to-the-hydrogen-atom">
-   6.1. Application of the Schrödinger Equation to the Hydrogen Atom
+   7.1. Application of the Schrödinger Equation to the Hydrogen Atom
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-the-schrodinger-equation-for-the-hydrogen-atom">
-   6.2. Solution of the Schrödinger Equation for the Hydrogen Atom
+   7.2. Solution of the Schrödinger Equation for the Hydrogen Atom
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#separation-of-variables">
-     6.2.1. Separation of Variables
+     7.2.1. Separation of Variables
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-the-radial-equation">
-     6.2.2. Solution of the Radial Equation
+     7.2.2. Solution of the Radial Equation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-the-angular-and-azimuthal-equations">
-     6.2.3. Solution of the Angular and Azimuthal Equations
+     7.2.3. Solution of the Angular and Azimuthal Equations
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#quantum-numbers">
-   6.3. Quantum Numbers
+   7.3. Quantum Numbers
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#principal-quantum-number-n">
-     6.3.1. Principal Quantum Number
+     7.3.1. Principal Quantum Number
      <span class="math notranslate nohighlight">
       \(n\)
      </span>
@@ -529,7 +566,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#orbital-angular-momentum-quantum-number-ell">
-     6.3.2. Orbital Angular Momentum Quantum Number
+     7.3.2. Orbital Angular Momentum Quantum Number
      <span class="math notranslate nohighlight">
       \(\ell\)
      </span>
@@ -537,7 +574,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#magnetic-quantum-number-m-ell">
-     6.3.3. Magnetic Quantum Number
+     7.3.3. Magnetic Quantum Number
      <span class="math notranslate nohighlight">
       \(m_\ell\)
      </span>
@@ -547,17 +584,54 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#magnetic-effects-on-atomic-spectra-the-normal-zeeman-effect">
-   6.4. Magnetic Effects on Atomic Spectra–The Normal Zeeman Effect
+   7.4. Magnetic Effects on Atomic Spectra–The Normal Zeeman Effect
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#intrinsic-spin">
-   6.5. Intrinsic Spin
+   7.5. Intrinsic Spin
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#energy-levels-and-electron-probabilities">
-   6.6. Energy Levels and Electron Probabilities
+   7.6. Energy Levels and Electron Probabilities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atomic-structure-and-the-periodic-table">
+   7.7. Atomic Structure and the Periodic Table
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#total-angular-momentum">
+   7.8. Total Angular Momentum
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-electron-atoms">
+     7.8.1. Single-Electron Atoms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#many-electron-atoms">
+     7.8.2. Many-Electron Atoms
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ls-coupling">
+     7.8.3. LS Coupling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jj-coupling">
+     7.8.4. jj Coupling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anomalous-zeeman-effect">
+   7.9. Anomalous Zeeman Effect
   </a>
  </li>
 </ul>
@@ -570,43 +644,64 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="the-hydrogen-atom">
-<h1><span class="section-number">6. </span>The Hydrogen Atom<a class="headerlink" href="#the-hydrogen-atom" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="the-hydrogen-atom-and-atomic-physics">
+<h1><span class="section-number">7. </span>The Hydrogen Atom and Atomic Physics<a class="headerlink" href="#the-hydrogen-atom-and-atomic-physics" title="Permalink to this headline">#</a></h1>
 <div class="section" id="application-of-the-schrodinger-equation-to-the-hydrogen-atom">
-<h2><span class="section-number">6.1. </span>Application of the Schrödinger Equation to the Hydrogen Atom<a class="headerlink" href="#application-of-the-schrodinger-equation-to-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">7.1. </span>Application of the Schrödinger Equation to the Hydrogen Atom<a class="headerlink" href="#application-of-the-schrodinger-equation-to-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
 </div>
 <div class="section" id="solution-of-the-schrodinger-equation-for-the-hydrogen-atom">
-<h2><span class="section-number">6.2. </span>Solution of the Schrödinger Equation for the Hydrogen Atom<a class="headerlink" href="#solution-of-the-schrodinger-equation-for-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">7.2. </span>Solution of the Schrödinger Equation for the Hydrogen Atom<a class="headerlink" href="#solution-of-the-schrodinger-equation-for-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
 <div class="section" id="separation-of-variables">
-<h3><span class="section-number">6.2.1. </span>Separation of Variables<a class="headerlink" href="#separation-of-variables" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">7.2.1. </span>Separation of Variables<a class="headerlink" href="#separation-of-variables" title="Permalink to this headline">#</a></h3>
 </div>
 <div class="section" id="solution-of-the-radial-equation">
-<h3><span class="section-number">6.2.2. </span>Solution of the Radial Equation<a class="headerlink" href="#solution-of-the-radial-equation" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">7.2.2. </span>Solution of the Radial Equation<a class="headerlink" href="#solution-of-the-radial-equation" title="Permalink to this headline">#</a></h3>
 </div>
 <div class="section" id="solution-of-the-angular-and-azimuthal-equations">
-<h3><span class="section-number">6.2.3. </span>Solution of the Angular and Azimuthal Equations<a class="headerlink" href="#solution-of-the-angular-and-azimuthal-equations" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">7.2.3. </span>Solution of the Angular and Azimuthal Equations<a class="headerlink" href="#solution-of-the-angular-and-azimuthal-equations" title="Permalink to this headline">#</a></h3>
 </div>
 </div>
 <div class="section" id="quantum-numbers">
-<h2><span class="section-number">6.3. </span>Quantum Numbers<a class="headerlink" href="#quantum-numbers" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">7.3. </span>Quantum Numbers<a class="headerlink" href="#quantum-numbers" title="Permalink to this headline">#</a></h2>
 <div class="section" id="principal-quantum-number-n">
-<h3><span class="section-number">6.3.1. </span>Principal Quantum Number <span class="math notranslate nohighlight">\(n\)</span><a class="headerlink" href="#principal-quantum-number-n" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">7.3.1. </span>Principal Quantum Number <span class="math notranslate nohighlight">\(n\)</span><a class="headerlink" href="#principal-quantum-number-n" title="Permalink to this headline">#</a></h3>
 </div>
 <div class="section" id="orbital-angular-momentum-quantum-number-ell">
-<h3><span class="section-number">6.3.2. </span>Orbital Angular Momentum Quantum Number <span class="math notranslate nohighlight">\(\ell\)</span><a class="headerlink" href="#orbital-angular-momentum-quantum-number-ell" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">7.3.2. </span>Orbital Angular Momentum Quantum Number <span class="math notranslate nohighlight">\(\ell\)</span><a class="headerlink" href="#orbital-angular-momentum-quantum-number-ell" title="Permalink to this headline">#</a></h3>
 </div>
 <div class="section" id="magnetic-quantum-number-m-ell">
-<h3><span class="section-number">6.3.3. </span>Magnetic Quantum Number <span class="math notranslate nohighlight">\(m_\ell\)</span><a class="headerlink" href="#magnetic-quantum-number-m-ell" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">7.3.3. </span>Magnetic Quantum Number <span class="math notranslate nohighlight">\(m_\ell\)</span><a class="headerlink" href="#magnetic-quantum-number-m-ell" title="Permalink to this headline">#</a></h3>
 </div>
 </div>
 <div class="section" id="magnetic-effects-on-atomic-spectra-the-normal-zeeman-effect">
-<h2><span class="section-number">6.4. </span>Magnetic Effects on Atomic Spectra–The Normal Zeeman Effect<a class="headerlink" href="#magnetic-effects-on-atomic-spectra-the-normal-zeeman-effect" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">7.4. </span>Magnetic Effects on Atomic Spectra–The Normal Zeeman Effect<a class="headerlink" href="#magnetic-effects-on-atomic-spectra-the-normal-zeeman-effect" title="Permalink to this headline">#</a></h2>
 </div>
 <div class="section" id="intrinsic-spin">
-<h2><span class="section-number">6.5. </span>Intrinsic Spin<a class="headerlink" href="#intrinsic-spin" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">7.5. </span>Intrinsic Spin<a class="headerlink" href="#intrinsic-spin" title="Permalink to this headline">#</a></h2>
 </div>
 <div class="section" id="energy-levels-and-electron-probabilities">
-<h2><span class="section-number">6.6. </span>Energy Levels and Electron Probabilities<a class="headerlink" href="#energy-levels-and-electron-probabilities" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">7.6. </span>Energy Levels and Electron Probabilities<a class="headerlink" href="#energy-levels-and-electron-probabilities" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="atomic-structure-and-the-periodic-table">
+<h2><span class="section-number">7.7. </span>Atomic Structure and the Periodic Table<a class="headerlink" href="#atomic-structure-and-the-periodic-table" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="total-angular-momentum">
+<h2><span class="section-number">7.8. </span>Total Angular Momentum<a class="headerlink" href="#total-angular-momentum" title="Permalink to this headline">#</a></h2>
+<div class="section" id="single-electron-atoms">
+<h3><span class="section-number">7.8.1. </span>Single-Electron Atoms<a class="headerlink" href="#single-electron-atoms" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="many-electron-atoms">
+<h3><span class="section-number">7.8.2. </span>Many-Electron Atoms<a class="headerlink" href="#many-electron-atoms" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="ls-coupling">
+<h3><span class="section-number">7.8.3. </span>LS Coupling<a class="headerlink" href="#ls-coupling" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="jj-coupling">
+<h3><span class="section-number">7.8.4. </span>jj Coupling<a class="headerlink" href="#jj-coupling" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="anomalous-zeeman-effect">
+<h2><span class="section-number">7.9. </span>Anomalous Zeeman Effect<a class="headerlink" href="#anomalous-zeeman-effect" title="Permalink to this headline">#</a></h2>
 </div>
 </div>
 
@@ -623,7 +718,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Chapter_6"
+            path: "./Chapter_7"
         },
         predefinedOutput: true
     }
@@ -637,17 +732,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../Chapter_5/quantum-mechanics.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../Chapter_6/quantum-mechanics-part2.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5. </span>Wave and Quantum Mechanics</p>
+            <p class="prev-next-title"><span class="section-number">6. </span>Quantum Mechanics: Part II</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../Chapter_7/atomic-physics.html" title="next page">
+    <a class='right-next' id="next-link" href="../Chapter_8/statistical-physics.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Atomic Physics</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Statistical Physics</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

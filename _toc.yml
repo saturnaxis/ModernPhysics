@@ -17,12 +17,12 @@ parts:
   - file: Chapter_2/special-theory-of-relativity
   - file: Chapter_3/experimental-quantum-physics
   - file: Chapter_4/structure-of-the-atom
-- caption: Development of Quantum Mechanics
+- caption: Quantum Mechanics
   numbered: true
   chapters: 
-  - file: Chapter_5/quantum-mechanics
-  - file: Chapter_6/hydrogen-atom
-  - file: Chapter_7/atomic-physics
+  - file: Chapter_5/quantum-mechanics-part1
+  - file: Chapter_6/quantum-mechanics-part2
+  - file: Chapter_7/hydrogen-atom
   - file: Chapter_8/statistical-physics
 - caption: Applications of Modern Physics
   numbered: true

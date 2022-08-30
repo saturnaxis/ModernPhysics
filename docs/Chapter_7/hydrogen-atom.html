@@ -657,28 +657,332 @@ title="Print to PDF"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="the-hydrogen-atom-and-atomic-physics">
 <h1><span class="section-number">7. </span>The Hydrogen Atom and Atomic Physics<a class="headerlink" href="#the-hydrogen-atom-and-atomic-physics" title="Permalink to this headline">#</a></h1>
+<p>The hydrogen atom is the simplest, containing a single electron and proton, and has been the object of more experimentation (and study) than any other atom.  The hydrogen atom has been studied using the Bohr model to better predict spectral absorption and emission lines.  We can now apply the Schrödinger equation to the hydrogen atom and further develop quantum mechanics using a real system.  This requires a statistical interpretation of nature (at least for the very small) and the use of quantum numbers that are needed to explain experimental results.</p>
 <div class="section" id="application-of-the-schrodinger-equation-to-the-hydrogen-atom">
 <h2><span class="section-number">7.1. </span>Application of the Schrödinger Equation to the Hydrogen Atom<a class="headerlink" href="#application-of-the-schrodinger-equation-to-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
+<p>The hydrogen atom requires the full complexity of the 3D Schrödinger equation, which requires a description of the potential energy in a 3D coordinate system.  To a good approximation, the potential energy of the hydrogen atom is simply electrostatic:</p>
+<div class="math notranslate nohighlight" id="equation-electrostatic-pot">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-electrostatic-pot" title="Permalink to this equation">#</a></span>\[V(r) = -\frac{e^2}{4\pi \epsilon_o r}.\]</div>
+<p>The 3D time-independent Schrödinger equation can be written as</p>
+<div class="math notranslate nohighlight" id="equation-3d-schrodinger">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-3d-schrodinger" title="Permalink to this equation">#</a></span>\[\begin{split}-\frac{\hbar^2}{2m}\nabla^2\psi + V\psi &amp;= E\psi, \\
+-\frac{\hbar^2}{2\mu}\left[\frac{1}{r^2} \frac{\partial}{\partial r}\left(r^2 \frac{\partial \psi}{\partial r}\right) + \frac{1}{r^2\sin \theta}\frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial \psi}{\partial \theta} \right) + \frac{1}{r^2\sin^2 \theta}\frac{\partial^2 \psi}{\partial \phi^2} \right] + V\psi &amp;= E\psi,\end{split}\]</div>
+<p>where the first equation is a general form and the second equation is written using spherical polar coordinates <span class="math notranslate nohighlight">\((r,\ \theta,\ \phi)\)</span> using the reduced mass <span class="math notranslate nohighlight">\(\mu\)</span>.  In the terminology of partial differential equations, Equation <a class="reference internal" href="#equation-3d-schrodinger">(7.2)</a> is separable, which means that a solution may be determined using the product of three functions that depend only on one of the respective coordinates.  Thus, a trial solution is written as</p>
+<div class="math notranslate nohighlight" id="equation-trial-sol">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-trial-sol" title="Permalink to this equation">#</a></span>\[\psi\left(r,\ \theta,\ \phi \right) = R(r)f(\theta)g(\phi).\]</div>
+<p>From Section <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#three-dimensional-infinite-potential-well">6.5</a>, we known that the solution will have at least one quantum number.  In fact, we should expect there to be a quantum number corresponding to each dimension of motion.</p>
 </div>
 <div class="section" id="solution-of-the-schrodinger-equation-for-the-hydrogen-atom">
 <h2><span class="section-number">7.2. </span>Solution of the Schrödinger Equation for the Hydrogen Atom<a class="headerlink" href="#solution-of-the-schrodinger-equation-for-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
+<p>The first step in solving the Schrödinger equation for the Hydrogen Atom is to substitute the trial solution (Eq. <a class="reference internal" href="#equation-trial-sol">(7.3)</a>) into Eq. <a class="reference internal" href="#equation-3d-schrodinger">(7.2)</a>.  Then we can separate the resulting equation into three equations that correspond to the respective functions of each dimension.  The solutions to those equations will then provide a better understanding for the structure of the hydrogen atom, in both the ground state and in the excited states.</p>
 <div class="section" id="separation-of-variables">
 <h3><span class="section-number">7.2.1. </span>Separation of Variables<a class="headerlink" href="#separation-of-variables" title="Permalink to this headline">#</a></h3>
+<p>Starting with Eq. <a class="reference internal" href="#equation-trial-sol">(7.3)</a>, we find the necessary derivatives as</p>
+<div class="math notranslate nohighlight" id="equation-hyd-deriv">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-hyd-deriv" title="Permalink to this equation">#</a></span>\[\frac{\partial \psi}{\partial r} = fg\frac{\partial R}{\partial r}, \qquad \frac{\partial \psi}{\partial \theta} = Rg\frac{\partial f}{\partial \theta}, \qquad \text{and}\quad \frac{\partial^2 \psi}{\partial \phi^2} = Rf\frac{\partial^2 g}{\partial \phi^2}.\]</div>
+<p>We substitute substitute these results into Eq. <a class="reference internal" href="#equation-3d-schrodinger">(7.2)</a> to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6513bb49-8e49-49e4-a098-897c01e455eb">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-6513bb49-8e49-49e4-a098-897c01e455eb" title="Permalink to this equation">#</a></span>\[\begin{align}
+-\frac{\hbar^2}{2\mu}\left[\frac{fg}{r^2} \frac{\partial}{\partial r}\left(r^2 \frac{\partial R}{\partial r}\right) + \frac{Rg}{r^2\sin \theta}\frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial f}{\partial \theta} \right) + \frac{Rf}{r^2\sin^2 \theta}\frac{\partial^2 g}{\partial \phi^2} \right] + V(Rfg) &amp;= E(Rfg).
+\end{align}\]</div>
+<p>Next we multiply both sides by <span class="math notranslate nohighlight">\(r^2 \sin^2 \theta/ (Rfg)\)</span> and rearrange to have</p>
+<div class="math notranslate nohighlight" id="equation-sep-full-soln">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-sep-full-soln" title="Permalink to this equation">#</a></span>\[-\left[\frac{\sin^2 \theta}{R} \frac{\partial}{\partial r}\left(r^2 \frac{\partial R}{\partial r}\right) + \frac{\sin \theta}{f}\frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial f}{\partial \theta} \right) \right] - \frac{2\mu}{\hbar^2}(E-V)r^2 \sin^2 \theta = \frac{1}{g}\frac{\partial^2 g}{\partial \phi^2}\]</div>
+<p>Equation <a class="reference internal" href="#equation-sep-full-soln">(7.6)</a> shows that only the variables <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> (and their respective functions) appear on the left side, and the azimuthal variable <span class="math notranslate nohighlight">\(\phi\)</span> (and its function <span class="math notranslate nohighlight">\(g\)</span>) is separated onto the right side.  <em>What does this mean?</em>  The left side of the equation cannot change as <span class="math notranslate nohighlight">\(\phi\)</span> changes because it does not have any variables (or functions) that depend on <span class="math notranslate nohighlight">\(\phi\)</span>.  It then follows that the right side doesn’t change with <span class="math notranslate nohighlight">\(r\)</span> or <span class="math notranslate nohighlight">\(\theta\)</span>.  Both sides of the equation have to equal the same thing, and we set that as a constant <span class="math notranslate nohighlight">\(-m_\ell^2\)</span>.  Then the right hand side can become (after some rearranging)</p>
+<div class="math notranslate nohighlight" id="equation-azimuthal-eqn">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-azimuthal-eqn" title="Permalink to this equation">#</a></span>\[\frac{d^2 g}{d\phi^2} = -m_\ell^2.\]</div>
+<p>The partial derivatives <span class="math notranslate nohighlight">\(\partial\)</span> can be changed to ordinary derivatives <span class="math notranslate nohighlight">\(d\)</span> because the function <span class="math notranslate nohighlight">\(g\)</span> depends only on a single variable <span class="math notranslate nohighlight">\(\phi\)</span>.  Equation <a class="reference internal" href="#equation-azimuthal-eqn">(7.7)</a> is called the <strong>azimuthal equation</strong> as it describes changes in the azimuth angle (defined in astronomy).  The differential equation is that of a harmonic oscillator, which has solutions in terms of sines and cosines.  But, we find it convenient to choose a more compact form in terms of exponential functions <span class="math notranslate nohighlight">\(e^{im_\ell \phi}\)</span>.  The value <span class="math notranslate nohighlight">\(m_\ell\)</span> represents an integer (either positive or negative) or zero.</p>
+<p>Returning to left hand side of Eq. <a class="reference internal" href="#equation-sep-full-soln">(7.6)</a>, we can write (after some rearranging)</p>
+<div class="math notranslate nohighlight" id="equation-radial-ang-eqn">
+<span class="eqno">(7.8)<a class="headerlink" href="#equation-radial-ang-eqn" title="Permalink to this equation">#</a></span>\[\frac{1}{R} \frac{\partial}{\partial r}\left(r^2 \frac{\partial R}{\partial r}\right)  + \frac{2\mu r^2}{\hbar^2}(E-V) = \frac{m_\ell^2}{\sin^2 \theta} - \frac{1}{f\sin \theta}\frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial f}{\partial \theta} \right).\]</div>
+<p>Equation <a class="reference internal" href="#equation-radial-ang-eqn">(7.8)</a> is separated with the radial terms on the left side and the angular terms on the right.  Using a similar procedure as before, we set both sides equal to a constant, we call <span class="math notranslate nohighlight">\(\ell(\ell+1)\)</span>.  Doing so results in the following equations:</p>
+<div class="math notranslate nohighlight" id="equation-radial-eqn">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-radial-eqn" title="Permalink to this equation">#</a></span>\[\frac{1}{r^2} \frac{d}{d r}\left(r^2 \frac{d R}{d r}\right)  + \frac{2\mu}{\hbar^2}\left[E-V - \frac{\hbar^2}{2\mu}\frac{\ell(\ell+1)}{r^2}\right]R = 0, \qquad \text{Radial equation}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight" id="equation-angular-eqn">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-angular-eqn" title="Permalink to this equation">#</a></span>\[\frac{1}{\sin \theta}\frac{d}{d \theta}\left( \sin \theta \frac{d f}{d \theta} \right) + \left[\ell(\ell+1) - \frac{m_\ell^2}{\sin^2 \theta}\right]f = 0. \qquad \text{Angular equation}\]</div>
+<p>Similar to the azimuthal equation, we replace the partial derivatives with ordinary ones.  The process for separation of variables is complete, where the Schrödinger equation for the hydrogen atom is represented by three ordinary differential equations, each containing a single variable.</p>
 </div>
 <div class="section" id="solution-of-the-radial-equation">
 <h3><span class="section-number">7.2.2. </span>Solution of the Radial Equation<a class="headerlink" href="#solution-of-the-radial-equation" title="Permalink to this headline">#</a></h3>
+<p>The radial equation (Eq. <a class="reference internal" href="#equation-radial-eqn">(7.9)</a>) has well known solutions because it is very similar (with some rearranging) to the <a class="reference external" href="https://mathworld.wolfram.com/LaguerreDifferentialEquation.html">Laguerre equation</a> developed by <a class="reference external" href="https://en.wikipedia.org/wiki/Edmond_Laguerre">Edmond Laguerre</a>.  The solutions to the radial equation will define a radially dependent function <span class="math notranslate nohighlight">\(R\)</span> that satisfy the appropriate boundary conditions and take the form of the associated <a class="reference external" href="https://en.wikipedia.org/wiki/Laguerre_polynomials"><em>Laguerre polynomials</em></a>.</p>
+<p>Let’s first look at the ground state wave function <span class="math notranslate nohighlight">\(n=0\)</span>, which will necessarily describe the lowest possible angular momentum quantum number <span class="math notranslate nohighlight">\(\ell = 0\)</span> of the system.  When <span class="math notranslate nohighlight">\(\ell = 0\)</span>, Eq. <a class="reference internal" href="#equation-radial-eqn">(7.9)</a> simplifies to:</p>
+<div class="math notranslate nohighlight" id="equation-hydrogen-ground">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-hydrogen-ground" title="Permalink to this equation">#</a></span>\[\begin{split}\frac{1}{r^2} \frac{d}{d r}\left(r^2 \frac{d R}{d r}\right)  + \frac{2\mu}{\hbar^2}\left[E-V\right]R &amp;= 0, \\
+\frac{d^2 R}{d r^2} + \frac{2}{r}\frac{d R}{d r} + \frac{2\mu}{\hbar^2}\left[E-V\right]R &amp;= 0.\end{split}\]</div>
+<p>We can then replace <span class="math notranslate nohighlight">\(V\)</span> with the Coulomb potential energy (Eq. <a class="reference internal" href="#equation-electrostatic-pot">(7.1)</a>) to find</p>
+<div class="math notranslate nohighlight" id="equation-hydrogen-ground-full">
+<span class="eqno">(7.12)<a class="headerlink" href="#equation-hydrogen-ground-full" title="Permalink to this equation">#</a></span>\[\frac{d^2 R}{d r^2} + \frac{2}{r}\frac{d R}{d r} + \frac{2\mu}{\hbar^2}\left[E+\frac{e^2}{4\pi \epsilon_o r}\right]R = 0.\]</div>
+<p>Similar to the solution for the azimuthal equation, we will try a solution with an exponential.  With some prior experience in solving differential equations, we try a solution having the form</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d53adfd8-85d1-4668-8b0b-f6078bd688a5">
+<span class="eqno">(7.13)<a class="headerlink" href="#equation-d53adfd8-85d1-4668-8b0b-f6078bd688a5" title="Permalink to this equation">#</a></span>\[\begin{align}
+R = Ae^{-r/a_o},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> is a normalization constant and <span class="math notranslate nohighlight">\(a_o\)</span> is a constant that must cancel out the dimension of <span class="math notranslate nohighlight">\(r\)</span> with a length.  The first and second derivatives are</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8bc33ed5-8cec-413b-80f8-42b63e0954c0">
+<span class="eqno">(7.14)<a class="headerlink" href="#equation-8bc33ed5-8cec-413b-80f8-42b63e0954c0" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{dR}{dr} = -\frac{A}{a_o}e^{-r/a_o} = -\frac{R}{a_o}, \qquad \text{and} \qquad \frac{d^2R}{dr^2} = \frac{R}{a_o^2}.
+\end{align}\]</div>
+<p>Substituting these derivatives into Eq. <a class="reference internal" href="#equation-hydrogen-ground-full">(7.12)</a> yields</p>
+<div class="math notranslate nohighlight" id="equation-hydrogen-ground-derivatives">
+<span class="eqno">(7.15)<a class="headerlink" href="#equation-hydrogen-ground-derivatives" title="Permalink to this equation">#</a></span>\[\begin{split}\frac{R}{a_o^2} - \frac{2R}{ra_o} + \frac{2\mu}{\hbar^2}\left[E+\frac{e^2}{4\pi \epsilon_o r}\right]R &amp;= 0, \\
+\left(\frac{2\mu e^2}{4\pi \epsilon_o \hbar^2} - \frac{2}{a_o}\right)\frac{1}{r} + \left(\frac{1}{a_o^2} + \frac{2\mu E}{\hbar^2}\right) &amp; = 0.\end{split}\]</div>
+<p>Trying to solve Eq. <a class="reference internal" href="#equation-hydrogen-ground-derivatives">(7.15)</a> for <span class="math notranslate nohighlight">\(r\)</span> algebraically is rather complicated, where we’ll use the more trivial solution that each of the terms in parentheses are themselves equal to zero.  By setting the first term in parentheses to zero and solving for <span class="math notranslate nohighlight">\(a_o\)</span>, we find</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7d61a1e0-d4b0-4357-a606-028983335b48">
+<span class="eqno">(7.16)<a class="headerlink" href="#equation-7d61a1e0-d4b0-4357-a606-028983335b48" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_o = \frac{4\pi \epsilon_o \hbar^2}{\mu e^2},
+\end{align}\]</div>
+<p>and that <span class="math notranslate nohighlight">\(a_o\)</span> is equal to the Bohr radius (see Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_4/structure-of-the-atom.html#the-bohr-model-of-the-hydrogen-atom">4.4</a>).  Then we can set the second term in parentheses to zero and solve for <span class="math notranslate nohighlight">\(E\)</span> to find</p>
+<div class="amsmath math notranslate nohighlight" id="equation-14bc9b9d-ae42-48a4-afc4-9416fbcfbb4b">
+<span class="eqno">(7.17)<a class="headerlink" href="#equation-14bc9b9d-ae42-48a4-afc4-9416fbcfbb4b" title="Permalink to this equation">#</a></span>\[\begin{align}
+E = -\frac{\hbar^2}{2\mu a_o^2} = -E_o,
+\end{align}\]</div>
+<p>which is the ground state energy from the Bohr model.</p>
+<p><strong>Introduction to Quantum Numbers</strong> The full solution to the radial equation introduces the quantum number <em>n</em>, which is a positive (non-zero) integer.  The <em>angular equation</em> (Eq. <a class="reference internal" href="#equation-angular-eqn">(7.10)</a>) is similar to a mathematical equation solved by <a class="reference external" href="https://en.wikipedia.org/wiki/Adrien-Marie_Legendre">Adrien-Marie Legendre</a> who found solutions to the differential equation long before the quantum mechanical description of the hydrogen atom.  Therefore the angular equation will have solutions related to <a class="reference external" href="https://en.wikipedia.org/wiki/Legendre_polynomials">Legendre polynomials</a>.  Application of the appropriate boundary conditions leads to particular restrictions on the quantum numbers <span class="math notranslate nohighlight">\(\ell\)</span> and <span class="math notranslate nohighlight">\(m_\ell\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-quantum-num">
+<span class="eqno">(7.18)<a class="headerlink" href="#equation-quantum-num" title="Permalink to this equation">#</a></span>\[\begin{split}\ell &amp;= 0,\ 1,\ 2,\ 3,\ \ldots \\
+m_\ell &amp;= -\ell,\ (-\ell+1),\ (-\ell+2),\ \ldots,\ -1,\ 0,\ 1,\ (\ell+2),\ (\ell+1),\ \ell.\end{split}\]</div>
+<p>The quantum number <span class="math notranslate nohighlight">\(\ell\)</span> must be a positive integer (including zero), and the quantum number <span class="math notranslate nohighlight">\(m_\ell\)</span> must be an integer subject to the restriction that <span class="math notranslate nohighlight">\(|m_\ell| \leq \ell\)</span>.  There is a further restriction on the quantum number <span class="math notranslate nohighlight">\(\ell\)</span>, such that <span class="math notranslate nohighlight">\(\ell &lt; n\)</span>.  The first few radial wave functions <span class="math notranslate nohighlight">\(R_{n\ell}\)</span> are listed in Table <a class="reference internal" href="#hyd-rad-funct"><span class="std std-numref">7.1</span></a>.</p>
+<table class="table" id="hyd-rad-funct">
+<caption><span class="caption-number">Table 7.1 </span><span class="caption-text">Hydrogen Atom Radial Wave Functions</span><a class="headerlink" href="#hyd-rad-funct" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(n\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\ell\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(R_{n\ell}(r)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(2 \frac{e^{-r/a_o}}{a_o^{3/2}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\left(2-\frac{r}{a_o}\right) \frac{e^{-r/(2a_o)}}{2a_o^{3/2}}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{r}{a_o}\frac{e^{-r/(2a_o)}}{\sqrt{3}(2a_o)^{3/2}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{2}{81}\left(27-18\frac{r}{a_o} + 2 \frac{r^2}{a_o^2} \right)\frac{e^{-r/(3a_o)}}{\sqrt{3}a_o^{3/2}}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{4}{81}\left(6\frac{r}{a_o} - \frac{r^2}{a_o^2} \right)\frac{e^{-r/(3a_o)}}{\sqrt{6}a_o^{3/2}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{4}{81}\frac{r^2}{a_o^2}\frac{e^{-r/(3a_o)}}{\sqrt{30}a_o^{3/2}}\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="solution-of-the-angular-and-azimuthal-equations">
 <h3><span class="section-number">7.2.3. </span>Solution of the Angular and Azimuthal Equations<a class="headerlink" href="#solution-of-the-angular-and-azimuthal-equations" title="Permalink to this headline">#</a></h3>
+<p>In the azimuthal equation, its solution can be expressed in exponential form, but the angular equation also contains the quantum number <span class="math notranslate nohighlight">\(m_\ell\)</span>.  Thus the solutions to the angular and azimuthal equations are linked.  It is customary to group these solution together into so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_harmonics"><strong>spherical harmonics</strong></a> defined as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-64967a37-8d3d-45c5-8002-e84fc2986b77">
+<span class="eqno">(7.19)<a class="headerlink" href="#equation-64967a37-8d3d-45c5-8002-e84fc2986b77" title="Permalink to this equation">#</a></span>\[\begin{align}
+Y(\theta,\ \phi) = f(\theta)g(\phi),
+\end{align}\]</div>
+<p>where the <span class="math notranslate nohighlight">\(f(\theta)\)</span> is a Legendre polynomial of order <span class="math notranslate nohighlight">\(\ell\)</span>.  See Table <a class="reference internal" href="#norm-sph-harm"><span class="std std-numref">7.2</span></a> for a listing of the normalized spherical harmonics up to <span class="math notranslate nohighlight">\(\ell = 3\)</span>.</p>
+<table class="table" id="norm-sph-harm">
+<caption><span class="caption-number">Table 7.2 </span><span class="caption-text">Normalized Spherical Harmonics <span class="math notranslate nohighlight">\(Y(\theta,\ \phi)\)</span></span><a class="headerlink" href="#norm-sph-harm" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\ell\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(m_\ell\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(Y_{\ell m_\ell}(r)\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{\sqrt{4\pi}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{\frac{3}{4\pi}}\cos \theta\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mp\sqrt{\frac{3}{8\pi}}\sin \theta e^{\pm i\phi}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{\frac{5}{16\pi}}\left(3\cos^2 \theta - 1 \right)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mp\sqrt{\frac{15}{8\pi}}\sin \theta \cos \theta e^{\pm i\phi}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{\frac{15}{32\pi}}\sin^2 \theta \cos \theta e^{\pm 2i\phi}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{\frac{7}{16\pi}}\left(5\cos^3 \theta - 3 \cos \theta\right)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mp \sqrt{\frac{21}{64\pi}}\sin \theta \left(5\cos^2 \theta - 1\right)e^{\pm i\phi}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{\frac{105}{32\pi}}\sin^2 \theta \cos \theta e^{\pm 2i\phi}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pm 3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mp \sqrt{\frac{35}{64\pi}}\sin^3 \theta e^{\pm 3i\phi}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="exercise orange admonition" id="sph_harmonic-exercise">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.1 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>Show that the spherical harmonic function <span class="math notranslate nohighlight">\(Y_{11}(\theta,\ \phi)\)</span> satisfies the angular equation (Eq. <a class="reference internal" href="#equation-angular-eqn">(7.10)</a>).</strong></p>
+<p>From the spherical harmonic function <span class="math notranslate nohighlight">\(Y_{11}(\theta,\ \phi)\)</span> , we deduce that <span class="math notranslate nohighlight">\(\ell = 1\)</span> and <span class="math notranslate nohighlight">\(m_\ell = 1\)</span> from the subscript.  To simplify our calculation we rewrite <span class="math notranslate nohighlight">\(Y_{11}(\theta,\ \phi)\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[ Y_{11}(\theta,\ \phi) = -\sqrt{\frac{3}{8\pi}}\sin \theta e^{\pm i\phi} = A \sin \theta. \]</div>
+<p>Note that we chose the minus value from Table <a class="reference internal" href="#norm-sph-harm"><span class="std std-numref">7.2</span></a> because <span class="math notranslate nohighlight">\(m_\ell\)</span> is positive.  The factor <span class="math notranslate nohighlight">\(A\)</span> includes all the constants and the exponential term <span class="math notranslate nohighlight">\(e^{i\phi}\)</span>.  Now we insert this function into the angular equation (Eq. <a class="reference internal" href="#equation-angular-eqn">(7.10)</a>), where we have</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{\sin \theta} \frac{d}{d\theta}\left[A\sin \theta \frac{d(\sin \theta)}{d\theta} \right] + \left(2 - \frac{1}{\sin^2 \theta}\right) A \sin \theta = 0. \]</div>
+<p>Since <span class="math notranslate nohighlight">\(A\)</span> is common to both terms we can divide it through and discard it.  Then we’re left with calculating the derivative as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{\sin \theta} \frac{d}{d\theta}\left[\sin \theta \cos \theta \right] + 2 \sin \theta - \frac{1}{\sin \theta} &amp;= 0, \\
+\frac{1}{\sin \theta} \left(\cos^2 \theta - \sin^2 \theta \right) + 2 \sin \theta - \frac{1}{\sin \theta} &amp;= 0, \\
+\frac{1}{\sin \theta}  - 2\sin \theta + 2 \sin \theta - \frac{1}{\sin \theta} &amp;= 0, \\
+0 &amp;= 0.
+\end{align*}\]</div>
+<p>Thus Eq. <a class="reference internal" href="#equation-angular-eqn">(7.10)</a> is satisfied by the spherical harmonic function <span class="math notranslate nohighlight">\(Y_{11}(\theta,\ \phi)\)</span>.</p>
+</div>
+</div>
+<div class="exercise orange admonition" id="sph_norm-exercise">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.2 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>Show that the hydrogen wave function <span class="math notranslate nohighlight">\(\psi_{211}\)</span> is normalized.</strong></p>
+<p>A normalized function (e.g., <span class="math notranslate nohighlight">\(\psi_{n\ell m_\ell}\)</span>) has an area under the curve equal to unity, which is given mathematically as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-47d394dc-c3ec-465c-9893-8151dac6388b">
+<span class="eqno">(7.20)<a class="headerlink" href="#equation-47d394dc-c3ec-465c-9893-8151dac6388b" title="Permalink to this equation">#</a></span>\[\begin{align} 
+1 &amp;= \int \psi^*_{n\ell m_\ell} \psi_{n\ell m_\ell} d\tau, \\
+  &amp; = \int \psi^*_{211} \psi_{211} r^2 \sin \theta\ dr\ d\theta\ d\phi,
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(d\tau = r^2 \sin \theta\ dr\ d\theta\ d\phi\)</span> is the volume element in spherical coordinates.  We construct the wave function <span class="math notranslate nohighlight">\(\psi_{211}\)</span> using the respective functions from Tables <a class="reference internal" href="#hyd-rad-funct"><span class="std std-numref">7.1</span></a> and <a class="reference internal" href="#norm-sph-harm"><span class="std std-numref">7.2</span></a>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\psi_{211} &amp;= R_{21}Y_{11}, \\
+ &amp;= \left[ \frac{r}{a_o}\frac{e^{-r/(2a_o)}}{\sqrt{3}(2a_o)^{3/2}}\right] \left[-\sqrt{\frac{3}{8\pi}}\sin \theta e^{i\phi}\right].
+\end{align*}\]</div>
+<p>To evaluate the normalization integral, we need to compute the product of the wave function <span class="math notranslate nohighlight">\(\psi_{211}\)</span> with its complex conjugate <span class="math notranslate nohighlight">\(\psi^*_{211}\)</span>.  This is given as:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\psi^*_{211} \psi_{211} &amp;= \left[ \frac{r}{a_o}\frac{e^{-r/(2a_o)}}{\sqrt{3}(2a_o)^{3/2}}\right] \left[-\sqrt{\frac{3}{8\pi}}\sin \theta e^{-i\phi}\right]\left[ \frac{r}{a_o}\frac{e^{-r/(2a_o)}}{\sqrt{3}(2a_o)^{3/2}}\right] \left[-\sqrt{\frac{3}{8\pi}}\sin \theta e^{i\phi}\right], \\
+ &amp; = \left[ \frac{r^2}{24a^5_o}e^{-r/a_o}\right] \left[\frac{3}{8\pi}\sin^2 \theta \right], \\
+ &amp; = \frac{r^2}{64 \pi a^5_o}e^{-r/a_o}  \sin^2 \theta.
+\end{align*}\]</div>
+<p>Inserting into the normalization integral produces:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\int  \psi^*_{211} \psi_{211} r^2 \sin \theta\ dr\ d\theta\ d\phi &amp; = \int \frac{r^2}{64 \pi a^5_o}e^{-r/a_o}  \sin^2 \theta\ r^2 \sin \theta\ dr\ d\theta\ d\phi, \\
+ &amp; = \frac{1}{64 \pi a^5_o} \int_{0}^{\infty} r^4 e^{-r/a_o} dr \int_0^\pi \sin^3 \theta\ d\theta\ \int_0^{2\pi} d\phi, \\
+ &amp; = \frac{1}{64 \pi a^5_o} \left[ 24a_o^4 \right] \left[ \frac{4}{3}\right] \left[2\pi \right], \\
+ &amp; = 1.
+\end{align*}\]</div>
+<p>The wave function is indeed normalized.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="quantum-numbers">
 <h2><span class="section-number">7.3. </span>Quantum Numbers<a class="headerlink" href="#quantum-numbers" title="Permalink to this headline">#</a></h2>
+<p>Three quantum numbers are introduced when solving Eq. <a class="reference internal" href="#equation-3d-schrodinger">(7.2)</a>, which are:</p>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(n\)</span>  Principal quantum number</strong>,</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(\ell\)</span>   Orbital angular momentum quantum number</strong>, and</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(m_\ell\)</span>  Magnetic quantum number</strong>.</p></li>
+</ul>
+<p>The values of the quantum numbers are obtained by applying boundary conditions to the wave function <span class="math notranslate nohighlight">\(\psi\)</span>.  The boundary conditions require that the wave function have acceptable properties (e.g., single-valued and finite).  The restriction for <span class="math notranslate nohighlight">\(n\)</span> is that it is an positive (non-zero) integer, where the restrictions for <span class="math notranslate nohighlight">\(\ell\)</span> and <span class="math notranslate nohighlight">\(m_\ell\)</span> are given in Eq. <a class="reference internal" href="#equation-quantum-num">(7.18)</a>.</p>
+<p>Additionally, the orbital angular momentum quantum number <span class="math notranslate nohighlight">\(\ell\)</span> must be less than than the principe quantum number (i.e., <span class="math notranslate nohighlight">\(\ell &lt; n\)</span>).  The magnitude of the magnetic quantum number <span class="math notranslate nohighlight">\(m_\ell\)</span> must be less than or equal to the orbital angular momentum quantum number (i.e., <span class="math notranslate nohighlight">\(|m_\ell| \leq \ell\)</span>).</p>
+<div class="exercise orange admonition" id="qnum-exercise">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.3 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>What are the possible quantum numbers for the state n = 4 in atomic hydrogen?</strong></p>
+<p>We want to apply the restrictions for the quantum numbers, which is best shown through a table.</p>
+<table class="table" id="n4-h-table">
+<caption><span class="caption-number">Table 7.3 </span><span class="caption-text">Quantum Numbers for <span class="math notranslate nohighlight">\(n=4\)</span> in Atomic Hydrogen</span><a class="headerlink" href="#n4-h-table" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\mathbf{n}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\mathbf{\ell}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\mathbf{m_\ell}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>-1, 0, 1</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>2</p></td>
+<td><p>-2, -1, 0, 1, 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>3</p></td>
+<td><p>-3, -2, -1, 0, 1, 2, 3</p></td>
+</tr>
+</tbody>
+</table>
+<p>Quantum numbers are generated for <span class="math notranslate nohighlight">\(\ell &lt; 4\)</span>, but <strong>not</strong> <span class="math notranslate nohighlight">\(\ell = 4\)</span>.</p>
+</div>
+</div>
 <div class="section" id="principal-quantum-number-n">
 <h3><span class="section-number">7.3.1. </span>Principal Quantum Number <span class="math notranslate nohighlight">\(n\)</span><a class="headerlink" href="#principal-quantum-number-n" title="Permalink to this headline">#</a></h3>
+<p>The principal quantum number <span class="math notranslate nohighlight">\(n\)</span> results from the solution of the radial equation (Eq. <a class="reference internal" href="#equation-radial-eqn">(7.9)</a>).  The radial equation includes the potential energy <span class="math notranslate nohighlight">\(V(r)\)</span>, where the boundary conditions on <span class="math notranslate nohighlight">\(R(r)\)</span> quantize the energy <span class="math notranslate nohighlight">\(E\)</span> and is equal to the value found in the Bohr model.</p>
+<p>The energy levels (so far) depend on only on the principal quantum number <span class="math notranslate nohighlight">\(n\)</span>.  The energies are negative, which indicates that the electron and proton are bound together (i.e., the electron lies within an electrostatic well produced by the proton).</p>
+<p>It is perhaps surprising that the total energy of the electron does not depend on the angular momentum.  However, a similar result appears in the solution for planetary motion.  A planet’s energy depends solely on the semimajor axis and not on its orbital eccentricity.  This occurs because the gravitational and electrostatic forces act from central bodies and the force laws have an inverse-square dependence on distance.</p>
 </div>
 <div class="section" id="orbital-angular-momentum-quantum-number-ell">
 <h3><span class="section-number">7.3.2. </span>Orbital Angular Momentum Quantum Number <span class="math notranslate nohighlight">\(\ell\)</span><a class="headerlink" href="#orbital-angular-momentum-quantum-number-ell" title="Permalink to this headline">#</a></h3>
+<p>The orbital angular momentum quantum number <span class="math notranslate nohighlight">\(\ell\)</span> arises in both the radial and angular (Eq. <a class="reference internal" href="#equation-angular-eqn">(7.10)</a>) equations of the wave function.  The electron-proton system has orbital angular momentum from the relative motion of both particles.  Classically, the angular momentum is given as</p>
+<div class="math notranslate nohighlight">
+\[ \vec{L} = \vec{r} \times \vec{p},\]</div>
+<p>with a magnitude <span class="math notranslate nohighlight">\(L = mv_{\rm orb}r\)</span> and the <span class="math notranslate nohighlight">\(v_{\rm orb}\)</span> represents the electron’s orbital velocity perpendicular to its orbital radius <span class="math notranslate nohighlight">\(r\)</span>.  The quantum number <span class="math notranslate nohighlight">\(\ell\)</span> is related to the magnitude of the orbital angular momentum number <span class="math notranslate nohighlight">\(L\)</span> by,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-499a6b80-6047-4e95-b169-302ad4977dac">
+<span class="eqno">(7.21)<a class="headerlink" href="#equation-499a6b80-6047-4e95-b169-302ad4977dac" title="Permalink to this equation">#</a></span>\[\begin{align}
+L = \sqrt{\ell(\ell + 1)}\hbar.
+\end{align}\]</div>
+<p>The dependence on <span class="math notranslate nohighlight">\(\ell(\ell + 1)\)</span> is a wave phenomenon that results from applying the boundary conditions on <span class="math notranslate nohighlight">\(\psi\)</span>.  The quantum result disagrees with the Bohr’s theory, where <span class="math notranslate nohighlight">\(L = n\hbar\)</span>.  This will force us to discard Bohr’s semiclassical “planetary” model when considering the finer structures of the atom.</p>
+<p>An energy level is <em>degenerate</em> with respect to <span class="math notranslate nohighlight">\(\ell\)</span> when the energy is independent of the value of <span class="math notranslate nohighlight">\(\ell\)</span>.  For example for an <span class="math notranslate nohighlight">\(n= 3\)</span> state, the energy is the same for all possible values of <span class="math notranslate nohighlight">\(\ell\)</span> (i.e., <span class="math notranslate nohighlight">\(\ell = 0,\ 1,\ 2\)</span>).  It is customary (especially in chemistry) to use letter names for the various <span class="math notranslate nohighlight">\(\ell\)</span> values.  These are</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\ell &amp;=&amp; &amp;0&amp; &amp;1&amp; &amp;2&amp; &amp;3&amp; &amp;4&amp; 5\ldots \\
+\text{Letter} &amp;=&amp; &amp;s&amp; &amp;p&amp; &amp;d&amp; &amp;f&amp; &amp;g&amp; h\ldots
+\end{align*}\]</div>
+<p>The choices for the first 4 letter designations originate from visual observations of early spectra that were <strong>s</strong>harp, <strong>p</strong>rincipal, <strong>d</strong>iffuse, and <strong>f</strong>undamental.  After <span class="math notranslate nohighlight">\(\ell = 3\)</span>, the letters follow alphabetical order.</p>
+<p>Atomic states are usually referred by their <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(\ell\)</span> combination with the number and letter.  For example, a state with <span class="math notranslate nohighlight">\(n=2\)</span> and <span class="math notranslate nohighlight">\(\ell = 1\)</span> is called the <span class="math notranslate nohighlight">\(2p\)</span> state.</p>
 </div>
 <div class="section" id="magnetic-quantum-number-m-ell">
 <h3><span class="section-number">7.3.3. </span>Magnetic Quantum Number <span class="math notranslate nohighlight">\(m_\ell\)</span><a class="headerlink" href="#magnetic-quantum-number-m-ell" title="Permalink to this headline">#</a></h3>

@@ -1,9 +1,0 @@
-name: my_binder
-channels:
-  - conda-forge
-  - default
-dependencies:
-  - python
-  - numpy
-  - scipy
-  - matplotlib-base

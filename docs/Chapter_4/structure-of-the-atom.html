@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4. Structure of the Atom &#8212; PHYS2700 Modern Physics</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,12 +19,8 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,20 +28,24 @@
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -72,7 +73,21 @@ const thebe_selector_output = ".output, .cell_output"
                 </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -81,9 +96,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -101,14 +117,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../home.html">
-   PHYS2700: Modern Physics
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../home.html">
+                    PHYS2700: Modern Physics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Preamble
  </span>
@@ -218,103 +235,213 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Chapter_4/structure-of-the-atom.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/saturnaxis/ModernPhysics"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_4/structure-of-the-atom.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/saturnaxis/ModernPhysics/main?urlpath=tree/Chapter_4/structure-of-the-atom.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_4/structure-of-the-atom.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/saturnaxis/ModernPhysics"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/Chapter_4/structure-of-the-atom.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-atomic-models-of-thomson-and-rutherford">
    4.1. The Atomic Models of Thomson and Rutherford
@@ -379,12 +506,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Structure of the Atom</h1>
@@ -465,21 +591,22 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="structure-of-the-atom">
-<h1><span class="section-number">4. </span>Structure of the Atom<a class="headerlink" href="#structure-of-the-atom" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>Structure of the Atom<a class="headerlink" href="#structure-of-the-atom" title="Permalink to this headline">#</a></h1>
 <p>By the end to the 19th century, most physicists and chemists believed in an atomic theory of matter.  Origins of atomic theory dat back to the Greek philosophers, who imagined atoms to be featureless har spheres.  There are considerable similarities between how physicists addressed their atomic theories in the late 19th century and how elementary particle physicists still search for the underlying structure of the building blocks of matter.</p>
 <p>Physicists and chemists (in 1900) had three pieces of evidence that the atom was not a fundamental unit:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>There seemed to be many kinds of atoms, each belonging to a distinct chemical element.  Ancient Greeks believed in four types of atoms (e.g., earth, air, water, and fire) that combined to make the matter we observe.  The development of chemistry made it clear that there were at least 70 kinds of atoms.</p></li>
 <li><p>Experiments showed that atoms and electromagnetic phenomena were intimately related.  Molecules can be dissociated into their components via electrolysis.  Some atoms form magnetic materials, electrical conductors, or insulators.  All kinds of atoms emit light, where the chemical composition can be analyzed through spectroscopy.</p></li>
 <li><p>There was the problem of <strong>valence</strong>: why certain elements combine while others do not and why combined elements vary in proportions by the valences of the atoms.  The characteristics of valence suggested that the forces between the atoms are specific in nature, which hinted at an internal atomic structure.</p></li>
 </ol>
 <p>In addition to this evidence, there were the discoveries of radioactivity, x-rays, and of the electron, which seemed in conflict with earlier ideas of indivisible and elementary atoms.  These indirect hits that the atom had structure developed into an investigation of the atom and its internal composition.</p>
 <div class="section" id="the-atomic-models-of-thomson-and-rutherford">
-<span id="atomic-models"></span><h2><span class="section-number">4.1. </span>The Atomic Models of Thomson and Rutherford<a class="headerlink" href="#the-atomic-models-of-thomson-and-rutherford" title="Permalink to this headline">¶</a></h2>
+<span id="atomic-models"></span><h2><span class="section-number">4.1. </span>The Atomic Models of Thomson and Rutherford<a class="headerlink" href="#the-atomic-models-of-thomson-and-rutherford" title="Permalink to this headline">#</a></h2>
 <p>Following J.J. Thomson’s discovery of the electron, Thomson and others tried to unravel the mystery of the atomic structure.  Scientists knew that electrons were less massive than atoms and that their number was related to the atomic mass.  The central question was, <em>“How are the electrons arranged and where are the positive charges that make the atom electrically neutral?</em></p>
 <p>Thomson proposed a model wherein the positive charges were spread uniformly throughout an atom-sized sphere, with electrons embedded in the uniform background.  His model was likened to the distribution of raisins in plum pudding (see the YouTube video below.)  The arrangement of charges had to be in a stable equilibrium.</p>
 <div align="center">
@@ -499,7 +626,7 @@ allowfullscreen></iframe>
 <p>A simple thought experiment posits that a .22-caliber rifle fires a bullet into a thin black box.  If the box contains a homogenous material (e.g., wood or water), then the bullet will pass through the box with little or no deviation in its path.  However, if the box contains a few massive steel ball bearings, then occasionally a bullet will be deflected (ricocheted) backward and this would explain the observations of <span class="math notranslate nohighlight">\(\alpha\)</span> scattering by Geiger and Marsden.</p>
 <div class="figure align-default" id="collision-fig">
 <a class="reference internal image-reference" href="../_images/particle_collision.png"><img alt="collision" src="../_images/particle_collision.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Schematic (before and after) of a collision between an <span class="math notranslate nohighlight">\(\alpha\)</span> particle (with a speed <span class="math notranslate nohighlight">\(v_\alpha\)</span> and mass <span class="math notranslate nohighlight">\(m_\alpha\)</span>) and an electron (with a mass <span class="math notranslate nohighlight">\(m_e\)</span>) initially at rest.</span><a class="headerlink" href="#collision-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Schematic (before and after) of a collision between an <span class="math notranslate nohighlight">\(\alpha\)</span> particle (with a speed <span class="math notranslate nohighlight">\(v_\alpha\)</span> and mass <span class="math notranslate nohighlight">\(m_\alpha\)</span>) and an electron (with a mass <span class="math notranslate nohighlight">\(m_e\)</span>) initially at rest.</span><a class="headerlink" href="#collision-fig" title="Permalink to this image">#</a></p>
 </div>
 <div class="exercise orange admonition" id="Chapter_4/structure-of-the-atom-exercise-0">
 
@@ -529,11 +656,11 @@ v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
 </div>
 <div class="figure align-default" id="momentum-exchange-fig">
 <a class="reference internal image-reference" href="../_images/momentum_exchange.png"><img alt="momentum exchange" src="../_images/momentum_exchange.png" style="width: 200px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Vector diagram illustrating the change in momentum of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle after scattering from the electron.</span><a class="headerlink" href="#momentum-exchange-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Vector diagram illustrating the change in momentum of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle after scattering from the electron.</span><a class="headerlink" href="#momentum-exchange-fig" title="Permalink to this image">#</a></p>
 </div>
 <p><em>What would happen if an <span class="math notranslate nohighlight">\(\alpha\)</span> particle were scattered by many electrons in the target?</em>  Multiple scattering is possible, where a calculation for <span class="math notranslate nohighlight">\(N\)</span> random multiple scattering from electrons results in an average scattering angle <span class="math notranslate nohighlight">\(\langle\theta \rangle_{\rm total} \approx \sqrt{N}\theta\)</span>.  The <span class="math notranslate nohighlight">\(\alpha\)</span> particle ias as likely to scatter on either side for each collision.  We can estimate the number of atoms across the thin (<span class="math notranslate nohighlight">\(600\ {\rm nm}\)</span>) <a class="reference external" href="https://en.wikipedia.org/wiki/Gold">gold</a> layer used by Gieger and Marsden by,</p>
 <div class="math notranslate nohighlight" id="equation-gold-n-density">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-gold-n-density" title="Permalink to this equation">¶</a></span>\[\begin{split}
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-gold-n-density" title="Permalink to this equation">#</a></span>\[\begin{split}
 \frac{\text{Number of molecules}}{\rm cm^3} &amp;= N_A \times \text{molar mass} \times \text{density}, \\
 &amp;= \left( 6.02 \times 10^{23}\ \frac{\rm molecules}{\rm mol}\right) \left(\frac{1\ {\rm mol}}{197\ {\rm g}}\right) \left( 19.3 \frac{\rm g}{\rm cm^3}\right), \\
 &amp;= 5.9 \times 10^{22}\ \frac{\rm molecules}{\rm cm^3} =  5.9 \times 10^{28}\ \frac{\rm atoms}{\rm m^3}.
@@ -552,20 +679,20 @@ v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
 <p>Rutherford worked out the scattering expected for the <span class="math notranslate nohighlight">\(\alpha\)</span> particles as a function of angle, material thickness, velocity and charge.  Geiger and Marsden investigated Rutherford’s ideas and confirmed the theory.  Rutherford was the first to call the central charged core a <strong>nucleus</strong> and definitely decided that the core was <em>positively</em> charged, surrounded by the negatively charged electrons.</p>
 </div>
 <div class="section" id="rutherford-scattering">
-<span id="id1"></span><h2><span class="section-number">4.2. </span>Rutherford Scattering<a class="headerlink" href="#rutherford-scattering" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2><span class="section-number">4.2. </span>Rutherford Scattering<a class="headerlink" href="#rutherford-scattering" title="Permalink to this headline">#</a></h2>
 <p>The scattering of charged particles by matter is called <strong>Coulomb</strong> or <strong>Rutherford scattering</strong> when it takes place at low energies, where only the Coulomb interactions are important.</p>
 <p>A charged particle of mass <span class="math notranslate nohighlight">\(m\)</span>, charge <span class="math notranslate nohighlight">\(Z_1e\)</span>, and speed <span class="math notranslate nohighlight">\(v_o\)</span> is incident on a target material or scatterer of charge <span class="math notranslate nohighlight">\(Z_2e\)</span>.  The distance <span class="math notranslate nohighlight">\(b\)</span> denotes the classical <em>impact parameter</em>, which is the closest approach between the beam particle and scatterer (if the projectile had continued in a straight line).  The angle <span class="math notranslate nohighlight">\(\theta\)</span> between the incident beam and the deflected particle is called the <em>scattering angle</em>.</p>
 <div class="figure align-default" id="alpha-scattering-fig">
 <a class="reference internal image-reference" href="../_images/alpha_scattering.gif"><img alt="alpha scattering" src="../_images/alpha_scattering.gif" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">The scattering of the alpha particle by the central repulsive Coulomb force leads to a hyperbolic trajectory. From the scattering angle and momentum, one can calculate the impact parameter and closest approach to the target nucleus. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rutsca.html">Hyperphysics</a></span><a class="headerlink" href="#alpha-scattering-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">The scattering of the alpha particle by the central repulsive Coulomb force leads to a hyperbolic trajectory. From the scattering angle and momentum, one can calculate the impact parameter and closest approach to the target nucleus. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/rutsca.html">Hyperphysics</a></span><a class="headerlink" href="#alpha-scattering-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>When the impact parameter is small, the distance of closest approach <span class="math notranslate nohighlight">\(r_{\rm min}\)</span> is small, and the Coulomb force is large.  Therefore, the scattering angle is large, and the particle is repelled backward.  For large impact parameters, the particles never get close together, so the Coulomb force is small and the scattering angle is also small.</p>
 <div class="figure align-default" id="impact-parameter-fig">
 <a class="reference internal image-reference" href="../_images/impact_parameter.gif"><img alt="impact parameter" src="../_images/impact_parameter.gif" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Besides the masses of the target and projectile, the scattering angle depends upon the force and upon the impact parameter. The impact parameter is the perpendicular distance to the closest approach if the projectile were undeflected. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/rutsca2.html#c5">Hyperphysics</a></span><a class="headerlink" href="#impact-parameter-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Besides the masses of the target and projectile, the scattering angle depends upon the force and upon the impact parameter. The impact parameter is the perpendicular distance to the closest approach if the projectile were undeflected. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/rutsca2.html#c5">Hyperphysics</a></span><a class="headerlink" href="#impact-parameter-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>Rutherford made the following assumptions regarding the relationship between <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>The scatterer is so massive that it does not significantly recoil; therefore the initial and final kinetic energies of the <span class="math notranslate nohighlight">\(\alpha\)</span> particle are practically equal.</p></li>
 <li><p>The target is so thin that only a single scattering occurs.</p></li>
 <li><p>The bombarding particle and target scatterer are so small that they may be treated as point masses and charges.</p></li>
@@ -574,18 +701,18 @@ v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
 <p>Assumption 1 means that <span class="math notranslate nohighlight">\({\rm K.E._{initial}} \approx {\rm K.E._{final}} \equiv K\)</span> for the <span class="math notranslate nohighlight">\(\alpha\)</span> particle.  For central forces like the Coulomb force, the trajectory of the scattered particle lies in a plane due to the conservation of angular momentum <span class="math notranslate nohighlight">\(mv_ob\)</span> defined by the initial velocity <span class="math notranslate nohighlight">\(v_o\)</span>.</p>
 <p>The instantaneous position of the particle is defined by the angle <span class="math notranslate nohighlight">\(\phi\)</span> and the distance <span class="math notranslate nohighlight">\(r\)</span> from the force center.  When the distance <span class="math notranslate nohighlight">\(r\)</span> is a minimum, <span class="math notranslate nohighlight">\(\phi = 0\)</span> and defines the <span class="math notranslate nohighlight">\(z^\prime\)</span> axis.  The change in momentum is equal to the impulse</p>
 <div class="math notranslate nohighlight" id="equation-impulse">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-impulse" title="Permalink to this equation">¶</a></span>\[\Delta \vec{p} = \int \vec{F}_{\Delta p}dt,\]</div>
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-impulse" title="Permalink to this equation">#</a></span>\[\Delta \vec{p} = \int \vec{F}_{\Delta p}dt,\]</div>
 <p>defined by the force <span class="math notranslate nohighlight">\(\vec{F}_{\Delta p}\)</span> along the direction of <span class="math notranslate nohighlight">\(\Delta \vec{p}\)</span>.  The massive scatterer absorbs this momentum change without gaining any appreciable kinetic energy (i.e., no recoil).  The momentum change is</p>
 <div class="math notranslate nohighlight" id="equation-momentum-change">
-<span class="eqno">(4.3)<a class="headerlink" href="#equation-momentum-change" title="Permalink to this equation">¶</a></span>\[\Delta \vec{p} = \vec{p}_f - \vec{p}_i,\]</div>
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-momentum-change" title="Permalink to this equation">#</a></span>\[\Delta \vec{p} = \vec{p}_f - \vec{p}_i,\]</div>
 <p>where the subscripts <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(i\)</span> indicate the final and initial momentum, respectively.  Since <span class="math notranslate nohighlight">\(p_f \approx p_i\)</span>, the vector triangle in Fig. <a class="reference internal" href="#alpha-scattering-fig"><span class="std std-numref">4.3</span></a> is isosceles and the angle <span class="math notranslate nohighlight">\(\theta\)</span> can be bisected.  The magnitude of <span class="math notranslate nohighlight">\(\Delta p\)</span> is now</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f3a362da-4485-4374-80f2-fa0e1e6301bc">
-<span class="eqno">(4.4)<a class="headerlink" href="#equation-f3a362da-4485-4374-80f2-fa0e1e6301bc" title="Permalink to this equation">¶</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-741d8e32-136b-408e-a81a-631f447e8d77">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-741d8e32-136b-408e-a81a-631f447e8d77" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \Delta p = 2mv_o \sin \frac{\theta}{2}.
 \end{align}\]</div>
 <p>The direction of <span class="math notranslate nohighlight">\(\Delta \vec{p}\)</span> is the <span class="math notranslate nohighlight">\(z^\prime\)</span> axis, where we need to determine the <span class="math notranslate nohighlight">\(z^\prime\)</span> component of <span class="math notranslate nohighlight">\(\vec{F}\)</span>.  The Coulomb force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is defined as</p>
 <div class="math notranslate nohighlight" id="equation-coulomb-force">
-<span class="eqno">(4.5)<a class="headerlink" href="#equation-coulomb-force" title="Permalink to this equation">¶</a></span>\[\vec{F} = \frac{1}{4\pi \epsilon_o}\frac{Z_1 Z_2 e^2}{r^2}\hat{e}_r,\]</div>
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-coulomb-force" title="Permalink to this equation">#</a></span>\[\vec{F} = \frac{1}{4\pi \epsilon_o}\frac{Z_1 Z_2 e^2}{r^2}\hat{e}_r,\]</div>
 <p>where the unit vector <span class="math notranslate nohighlight">\(\hat{e}_r\)</span> points along a position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span>.  The component along <span class="math notranslate nohighlight">\(\Delta p\)</span> is given as <span class="math notranslate nohighlight">\(F_{\Delta p} = F \cos \phi\)</span>.</p>
 <p>Substituting into Eqn. <a class="reference internal" href="#equation-impulse">(4.2)</a>, we get</p>
 <div class="amsmath math notranslate nohighlight">
@@ -610,31 +737,31 @@ v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
 \[ \frac{8\pi \epsilon_o mv_o^2 b}{Z_1 Z_2 e^2} \sin \frac{\theta}{2} = \int_{-(\pi - \theta)/2}^{+(\pi - \theta)/2} \cos \phi d\phi = 2 \cos \frac{\theta}{2}. \]</div>
 <p>The impact parameter <span class="math notranslate nohighlight">\(b\)</span> can be determined as</p>
 <div class="math notranslate nohighlight" id="equation-impact-parameter">
-<span class="eqno">(4.6)<a class="headerlink" href="#equation-impact-parameter" title="Permalink to this equation">¶</a></span>\[b = \frac{Z_1 Z_2 e^2}{4\pi \epsilon_o mv_o^2} \cot \frac{\theta}{2} = \frac{Z_1 Z_2 e^2}{8\pi \epsilon_o K} \cot \frac{\theta}{2},\]</div>
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-impact-parameter" title="Permalink to this equation">#</a></span>\[b = \frac{Z_1 Z_2 e^2}{4\pi \epsilon_o mv_o^2} \cot \frac{\theta}{2} = \frac{Z_1 Z_2 e^2}{8\pi \epsilon_o K} \cot \frac{\theta}{2},\]</div>
 <p>where the kinetic energy of the bombarding particle is <span class="math notranslate nohighlight">\(K = mv_o^2/2\)</span>.  This is the fundamental relationship between the impact parameter <span class="math notranslate nohighlight">\(b\)</span> and the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span> for the Coulomb force.</p>
 <p>For a given experiment, we are not able to select individual impact parameters.  When we put a detector at a particular angle <span class="math notranslate nohighlight">\(\theta\)</span>, we cover a <em>finite</em> <span class="math notranslate nohighlight">\(\Delta \theta\)</span>, which corresponds to a range of impact parameters <span class="math notranslate nohighlight">\(\Delta b\)</span>.  The bombarding particles are incident at varied impact parameters.  All the particles with <span class="math notranslate nohighlight">\(b&lt;b_o\)</span> will be scattered at angles <span class="math notranslate nohighlight">\(\theta &gt; \theta_o\)</span>.  Any particle with an impact parameter inside the area of a circle with an area <span class="math notranslate nohighlight">\(\pi b_o^2\)</span> (i.e., radius <span class="math notranslate nohighlight">\(b_o\)</span>) will be similarly scattered.  For Coulomb scattering, the cross section <span class="math notranslate nohighlight">\(\sigma\)</span> is</p>
 <div class="math notranslate nohighlight" id="equation-cross-section">
-<span class="eqno">(4.7)<a class="headerlink" href="#equation-cross-section" title="Permalink to this equation">¶</a></span>\[\sigma = \pi b^2.\]</div>
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-cross-section" title="Permalink to this equation">#</a></span>\[\sigma = \pi b^2.\]</div>
 <p>The cross section <span class="math notranslate nohighlight">\(\sigma\)</span> is related to the <em>probability</em> for a particle being scattered by the nucleus.</p>
 <p>If we have a target foil of <strong>thickness</strong> <span class="math notranslate nohighlight">\(t\)</span> with <span class="math notranslate nohighlight">\(n\)</span> atoms/volume, the target nuclei per unit area is <span class="math notranslate nohighlight">\(nt\)</span>.  Because we assumed a thin target area <span class="math notranslate nohighlight">\(A\)</span> and all nuclei are exposed, the number of target nuclei is <span class="math notranslate nohighlight">\(ntA\)</span>.  The number density <span class="math notranslate nohighlight">\(n\)</span> is related to the density <span class="math notranslate nohighlight">\(\rho\)</span>, Avogadro’s number <span class="math notranslate nohighlight">\(N_A\)</span>, atoms per molecule <span class="math notranslate nohighlight">\(N_M\)</span>, and the molecular weight by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec0bd980-6552-4878-8169-51c86284320b">
-<span class="eqno">(4.8)<a class="headerlink" href="#equation-ec0bd980-6552-4878-8169-51c86284320b" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-381541e4-f5cc-43dc-9634-52196b25d17c">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-381541e4-f5cc-43dc-9634-52196b25d17c" title="Permalink to this equation">#</a></span>\[\begin{align}
 n &amp;= \rho \left(\frac{\rm g}{\rm cm^3}\right) N_A \left(\frac{\rm molecules}{\rm mol}\right)N_M \left(\frac{\rm atoms}{\rm molecule}\right) \left(M_g ({\rm g/mol})\right)^{-1}, \\
 &amp; = \frac{\rho N_A N_M}{M_g} \frac{\rm atoms}{\rm cm^3}.
 \end{align}\]</div>
 <p>Then the number of scattering nuclei per unit area is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6ede9045-db7a-4979-8582-ad37335d0fab">
-<span class="eqno">(4.9)<a class="headerlink" href="#equation-6ede9045-db7a-4979-8582-ad37335d0fab" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9891fc1d-5565-44b1-9ec8-91b99dcf0166">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-9891fc1d-5565-44b1-9ec8-91b99dcf0166" title="Permalink to this equation">#</a></span>\[\begin{align}
 nt = \frac{\rho N_A N_M t}{M_g} \frac{\rm atoms}{\rm cm^2},
 \end{align}\]</div>
 <p>and the number of target nuclei <span class="math notranslate nohighlight">\(N_s\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cfdd9706-a66e-43e6-9a65-b57c80db6cf4">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-cfdd9706-a66e-43e6-9a65-b57c80db6cf4" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d0958993-7156-4ed3-b6c0-dc4f4ca70297">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-d0958993-7156-4ed3-b6c0-dc4f4ca70297" title="Permalink to this equation">#</a></span>\[\begin{align}
 N_s = ntA = \frac{\rho N_A N_M tA}{M_g}\ {\rm atoms}.
 \end{align}\]</div>
 <p>The probability of the particle begin scattered is equal number of target nuclei times the cross section divided by the total target area <span class="math notranslate nohighlight">\(A\)</span>, or</p>
 <div class="math notranslate nohighlight" id="equation-frac-scattered">
-<span class="eqno">(4.11)<a class="headerlink" href="#equation-frac-scattered" title="Permalink to this equation">¶</a></span>\[\begin{split}
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-frac-scattered" title="Permalink to this equation">#</a></span>\[\begin{split}
 f &amp;= \frac{\text{target area exposed by scatterers}}{\text{total target area}} = \frac{ntA\sigma}{A}, \\
 &amp;=  nt\sigma = nt\pi b^2, \\
 &amp;= \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot^2 \frac{\theta}{2}.
@@ -681,7 +808,7 @@ f &amp;= \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot^2 \frac{
 <p>In a typical experiment, a detector is positioned over a range of angles and thus, we need to find the number of particles scattered between <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\theta + d\theta\)</span> with corresponding impact parameters (<span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(b+db\)</span>).</p>
 <div class="figure align-default" id="fraction-scattered-fig">
 <a class="reference internal image-reference" href="../_images/particle_deflection.png"><img alt="fraction scattered" src="../_images/particle_deflection.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Particles scattered over the range of impact parameters <span class="math notranslate nohighlight">\(b\)</span> corresponding to a range of scattering angles <span class="math notranslate nohighlight">\(\theta\)</span>. Image credit: <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">(Thornton &amp; Rex (2012))</a></span><a class="headerlink" href="#fraction-scattered-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Particles scattered over the range of impact parameters <span class="math notranslate nohighlight">\(b\)</span> corresponding to a range of scattering angles <span class="math notranslate nohighlight">\(\theta\)</span>. Image credit: <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">(Thornton &amp; Rex (2012))</a></span><a class="headerlink" href="#fraction-scattered-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>The fraction of incident particles scattered is <span class="math notranslate nohighlight">\(df\)</span>, or the derivative of Eq. <a class="reference internal" href="#equation-frac-scattered">(4.11)</a> with respect to <span class="math notranslate nohighlight">\(d\theta\)</span>, is</p>
 <div class="math notranslate nohighlight">
@@ -689,12 +816,12 @@ f &amp;= \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot^2 \frac{
 \]</div>
 <p>If the total number of incident particles is <span class="math notranslate nohighlight">\(N_i\)</span>, the number of particles scattered into the ring of angular width <span class="math notranslate nohighlight">\(d\theta\)</span> is <span class="math notranslate nohighlight">\(N_i|df|\)</span>.  The area of the ring <span class="math notranslate nohighlight">\(dA\)</span> is <span class="math notranslate nohighlight">\(2\pi r^2 \sin \theta d\theta\)</span>.  The number of particles scattered per unit area, <span class="math notranslate nohighlight">\(N(\theta)\)</span>, into the ring is</p>
 <div class="math notranslate nohighlight" id="equation-rutherford-scattering">
-<span class="eqno">(4.12)<a class="headerlink" href="#equation-rutherford-scattering" title="Permalink to this equation">¶</a></span>\[\begin{split}
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-rutherford-scattering" title="Permalink to this equation">#</a></span>\[\begin{split}
 N(\theta) &amp;= \frac{N_i|df|}{dA} = \frac{N_i \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2}{2\pi r^2 \sin \theta d\theta} \cot \frac{\theta}{2} csc^2 \frac{\theta}{2}d\theta, \\
 &amp;= \frac{N_i nt}{16}\left(\frac{e^2}{4\pi \epsilon_o}\right)^2 \frac{Z_1^2 Z_2^2}{r^2K^2 \sin^4 (\theta/2)}.
 \end{split}\]</div>
 <p>Equation <a class="reference internal" href="#equation-rutherford-scattering">(4.12)</a> is the famous <strong>Rutherford scattering equation</strong>.  The important points are</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>The scattering is proportional to the square of the atomic number of both the incident particle <span class="math notranslate nohighlight">\(Z_1\)</span> and the target scatterer <span class="math notranslate nohighlight">\(Z_2\)</span>.</p></li>
 <li><p>The number of scattered particles is inversely proportional to the square of the kinetic energy <span class="math notranslate nohighlight">\(K\)</span> of the incident particle.</p></li>
 <li><p>The scattering is inversely proportional to the 4th power of the <span class="math notranslate nohighlight">\(\sin (\theta /2)\)</span>, where <span class="math notranslate nohighlight">\(\theta\)</span> is the scattering angle.</p></li>
@@ -743,30 +870,30 @@ N(\theta) &amp;= \frac{N_i|df|}{dA} = \frac{N_i \pi nt\left(\frac{Z_1Z_2 e^2}{8\
 </div>
 </div>
 <div class="section" id="the-classical-atomic-model">
-<h2><span class="section-number">4.3. </span>The Classical Atomic Model<a class="headerlink" href="#the-classical-atomic-model" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.3. </span>The Classical Atomic Model<a class="headerlink" href="#the-classical-atomic-model" title="Permalink to this headline">#</a></h2>
 <p>Rutherford’s model was generally accepted after experimental verification in 1913, where the atom consisted of a small, massive, positively charged “nucleus” surround by electrons.  Thomson’s plum-pudding model was ruled out by the data.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Thomson had previously considered a planetary model resembling the Solar System but rejected it because the planets <em>attract</em> one another while orbiting the Sun, whereas the electrons would <em>repel</em> one another.</p>
 </div>
 <p>Let’s examine the hydrogen atom, which consists of a single proton and electron.  Assuming also that the electron has a circular orbit.  The force of attraction due to the proton is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e9fb6fe0-73a4-4e85-b7fb-939f2ebb4062">
-<span class="eqno">(4.13)<a class="headerlink" href="#equation-e9fb6fe0-73a4-4e85-b7fb-939f2ebb4062" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8dbc99ba-1c79-41ce-80a0-537e349b335f">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-8dbc99ba-1c79-41ce-80a0-537e349b335f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_e = \frac{-1}{4\pi \epsilon_o}\frac{e^2}{r^2}\hat{e}_r,
 \end{align}\]</div>
 <p>where the negative sign indicates the force is attractive.  The electrostatic force provides the centripetal force need for the electron to move in a circular orbit at constant speed.  Its radial acceleration is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a96f8f48-d855-42e0-adfc-bf63e961816f">
-<span class="eqno">(4.14)<a class="headerlink" href="#equation-a96f8f48-d855-42e0-adfc-bf63e961816f" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-24102750-daf0-4604-9015-52cab16a12f1">
+<span class="eqno">(4.14)<a class="headerlink" href="#equation-24102750-daf0-4604-9015-52cab16a12f1" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_r = \frac{v^2}{r},
 \end{align}\]</div>
 <p>which depends on the tangential velocity <span class="math notranslate nohighlight">\(v\)</span> of the electron.  Newton’s second law gives,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-51a03480-0c97-4f30-b20b-01ad8f7c6eeb">
-<span class="eqno">(4.15)<a class="headerlink" href="#equation-51a03480-0c97-4f30-b20b-01ad8f7c6eeb" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-76f05e2b-8ff4-459b-a087-e1cc612502f8">
+<span class="eqno">(4.15)<a class="headerlink" href="#equation-76f05e2b-8ff4-459b-a087-e1cc612502f8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{4\pi \epsilon_o}\frac{e^2}{r^2} = \frac{m_ev^2}{r},
 \end{align}\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight" id="equation-orbital-ve">
-<span class="eqno">(4.16)<a class="headerlink" href="#equation-orbital-ve" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(4.16)<a class="headerlink" href="#equation-orbital-ve" title="Permalink to this equation">#</a></span>\[
 v = \frac{e}{\sqrt{4\pi \epsilon_o m_e r}}.
 \]</div>
 <div class="exercise orange admonition" id="Chapter_4/structure-of-the-atom-exercise-3">
@@ -804,13 +931,13 @@ v &amp;\approx \frac{(1.6\times 10^{-19}\ {\rm C}) (9\times 10^9\ {\rm N\cdot m^
 </div>
 </div>
 <p>The kinetic energy of the system due to the electron is <span class="math notranslate nohighlight">\(K = m_ev^2/2\)</span>, where we assume that the nucleus is essentially at rest because it is so massive compared with the electron <span class="math notranslate nohighlight">\((m_p/m_e = 1836)\)</span>.  The potential energy is <span class="math notranslate nohighlight">\(V = -e^2/(4\pi \epsilon_o r)\)</span>.  The total mechanical energy is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-abf95beb-e63d-49bf-8db0-ced5ac9ce1ab">
-<span class="eqno">(4.17)<a class="headerlink" href="#equation-abf95beb-e63d-49bf-8db0-ced5ac9ce1ab" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0cdb6421-8f49-4b09-a362-372211b8a086">
+<span class="eqno">(4.17)<a class="headerlink" href="#equation-0cdb6421-8f49-4b09-a362-372211b8a086" title="Permalink to this equation">#</a></span>\[\begin{align}
 E = K + V = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi \epsilon_o r}.
 \end{align}\]</div>
 <p>If we substitute from Eqn. <a class="reference internal" href="#equation-orbital-ve">(4.16)</a>, then we have</p>
 <div class="math notranslate nohighlight" id="equation-energy-hyd">
-<span class="eqno">(4.18)<a class="headerlink" href="#equation-energy-hyd" title="Permalink to this equation">¶</a></span>\[\begin{split}E &amp;= \frac{1}{2}m_e\left(\frac{e^2}{4\pi \epsilon_o m_e r}\right) - \frac{e^2}{4\pi \epsilon_o r}, \\
+<span class="eqno">(4.18)<a class="headerlink" href="#equation-energy-hyd" title="Permalink to this equation">#</a></span>\[\begin{split}E &amp;= \frac{1}{2}m_e\left(\frac{e^2}{4\pi \epsilon_o m_e r}\right) - \frac{e^2}{4\pi \epsilon_o r}, \\
 &amp;= \frac{e^2}{8\pi \epsilon_o r} - \frac{e^2}{4\pi \epsilon_o r}, \\
 &amp;= \frac{-e^2}{8\pi \epsilon_o r}.\end{split}\]</div>
 <p>The total energy is negative, which indicates a bound system.</p>
@@ -818,7 +945,7 @@ E = K + V = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi \epsilon_o r}.
 <p>If the electron is radiating energy, then the total energy <span class="math notranslate nohighlight">\(E\)</span> must decrease continuously, which means that <span class="math notranslate nohighlight">\(r\)</span> must decrease.  The electron will continuously radiate energy as the electron orbit becomes smaller and smaller, until the electron crashes into the nucleus!  This process would occur in about <span class="math notranslate nohighlight">\(10^{-9}\ {\rm s}\)</span>.</p>
 </div>
 <div class="section" id="the-bohr-model-of-the-hydrogen-atom">
-<h2><span class="section-number">4.4. </span>The Bohr Model of the Hydrogen Atom<a class="headerlink" href="#the-bohr-model-of-the-hydrogen-atom" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.4. </span>The Bohr Model of the Hydrogen Atom<a class="headerlink" href="#the-bohr-model-of-the-hydrogen-atom" title="Permalink to this headline">#</a></h2>
 <p>Shortly after receiving his Ph.D. in 1911, <a class="reference external" href="https://en.wikipedia.org/wiki/Niels_Bohr">Niels Bohr</a> began traveling and meeting with Thomson, Rutherford, and others.  Bohr believed that a fundamental length (<span class="math notranslate nohighlight">\(\sim 10^{-10}\ {\rm m}\)</span>) ws needed for an atomic model and it somehow was connected to Planck’s constant <span class="math notranslate nohighlight">\(h\)</span>.  Around 1913, Bohr learned of new precise measurements of the hydrogen spectrum and the empirical formulas describing the measurements (e.g., Balmer formula, Rydberg Equation, and Ritz’s combination principles).  He set out to develop a fundamental basis to derive them.</p>
 <p>Bohr was acquainted with Planck’s work and believed that quantum principles should govern more phenomena than just the blackbody spectrum.  He was also impressed with Einstein’s application of the quantum theory to the photoelectric effect and wondered how the quantum theory might affect atomic structure.</p>
 <p>In 1913, Bohr published <a class="reference external" href="http://web.ihep.su/dbserv/compas/src/bohr13/eng.pdf">On the Composition of Atoms and Molecules</a>, which laid out his assumptions and was the first step to building his theory.  Bohr assumed that electrons moved like planets around a massive, positively charge nucleus, where the electron orbits are circular.  The electron has a negative charge <span class="math notranslate nohighlight">\(-e\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span>, which revolves around a positive charge <span class="math notranslate nohighlight">\(+e\)</span> of radius <span class="math notranslate nohighlight">\(a\)</span>.  The central mass is take to be much more massive than the electron such that we can work in its rest frame.  The size of the nucleus is small compared with the atomic radius <span class="math notranslate nohighlight">\(a\)</span>.</p>
@@ -827,7 +954,7 @@ E = K + V = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi \epsilon_o r}.
 <p>Bohr’s treatment of the atom like a planetary system is a <em>useful fiction</em>, which provides the path to a more sophisticated model that is not intuitive.  However, we should remember that analogies are not replacements for an accurate, physical model and not to treat them as such.</p>
 </div>
 <p>Bohr’s model is summarized by the following <em>general assumptions</em> of his 1915 paper:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Certain “stationary states” exist in atoms, which differs from the classical stable states.  The orbiting electrons do not continuously radiate EM energy. The stationary states are states of <em>definite</em> total energy.</p></li>
 <li><p>The emission (or absorption) of EM radiation can occur in conjunction with a transition between two stationary states.  The frequency of the emitted (or absorbed) radiation is proportional to the difference in energy between the two stationary states (1 and 2): <span class="math notranslate nohighlight">\(E = E_1 - E_2 = hf\)</span>, and depends on Planck’s constant <span class="math notranslate nohighlight">\(h\)</span>.</p></li>
 <li><p>The dynamical equilibrium of the system in the stationary states is governed by the classical laws of physics, but these laws do not apply to transitions between stationary states.</p></li>
@@ -838,19 +965,19 @@ E = K + V = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi \epsilon_o r}.
 <div class="math notranslate nohighlight">
 \[ L = |\vec{r} \times \vec{p}| = m_evr. \]</div>
 <p>Assumption 4 states this should be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d8f83cf-4adf-4c27-9aac-4171a4e3eb7c">
-<span class="eqno">(4.19)<a class="headerlink" href="#equation-5d8f83cf-4adf-4c27-9aac-4171a4e3eb7c" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b1447b6e-d854-4b3a-8fe7-49b0e173abbb">
+<span class="eqno">(4.19)<a class="headerlink" href="#equation-b1447b6e-d854-4b3a-8fe7-49b0e173abbb" title="Permalink to this equation">#</a></span>\[\begin{align}
 L = m_evr = n\hbar,
 \end{align}\]</div>
 <p>which is defined by the <strong>principal quantum number</strong> <span class="math notranslate nohighlight">\(n\)</span> (an integer).  Then the equation for the orbital velocity is</p>
 <div class="math notranslate nohighlight" id="equation-quantum-ve">
-<span class="eqno">(4.20)<a class="headerlink" href="#equation-quantum-ve" title="Permalink to this equation">¶</a></span>\[v = \frac{n\hbar}{m_er}.\]</div>
+<span class="eqno">(4.20)<a class="headerlink" href="#equation-quantum-ve" title="Permalink to this equation">#</a></span>\[v = \frac{n\hbar}{m_er}.\]</div>
 <p>Equation <a class="reference internal" href="#equation-orbital-ve">(4.16)</a> provided an independent relation between <span class="math notranslate nohighlight">\(v\)</span> and <span class="math notranslate nohighlight">\(r\)</span>.  Setting <span class="math notranslate nohighlight">\(v^2\)</span> from Eqn. <a class="reference internal" href="#equation-orbital-ve">(4.16)</a> equal to <span class="math notranslate nohighlight">\(v^2\)</span> from <a class="reference internal" href="#equation-quantum-ve">(4.20)</a> produces</p>
 <div class="math notranslate nohighlight" id="equation-quantum-vsqr">
-<span class="eqno">(4.21)<a class="headerlink" href="#equation-quantum-vsqr" title="Permalink to this equation">¶</a></span>\[v^2 = \frac{e^2}{4\pi \epsilon_o m_e r} = \frac{n^2\hbar^2}{m_e^2}r^2.\]</div>
+<span class="eqno">(4.21)<a class="headerlink" href="#equation-quantum-vsqr" title="Permalink to this equation">#</a></span>\[v^2 = \frac{e^2}{4\pi \epsilon_o m_e r} = \frac{n^2\hbar^2}{m_e^2}r^2.\]</div>
 <p>From Equation <a class="reference internal" href="#equation-quantum-vsqr">(4.21)</a>, we can solve for <span class="math notranslate nohighlight">\(r\)</span> in terms of all fundamental constants and the integer <span class="math notranslate nohighlight">\(n\)</span>, to get</p>
 <div class="math notranslate nohighlight" id="equation-bohr-radius">
-<span class="eqno">(4.22)<a class="headerlink" href="#equation-bohr-radius" title="Permalink to this equation">¶</a></span>\[r_n = n^2\frac{4\pi \epsilon_o \hbar^2}{m_e e^2} \equiv n^2 a_o,\]</div>
+<span class="eqno">(4.22)<a class="headerlink" href="#equation-bohr-radius" title="Permalink to this equation">#</a></span>\[r_n = n^2\frac{4\pi \epsilon_o \hbar^2}{m_e e^2} \equiv n^2 a_o,\]</div>
 <p>The fundamental constants are grouped into the <strong>Bohr radius</strong> <span class="math notranslate nohighlight">\(a_o\)</span>, which is</p>
 <div class="math notranslate nohighlight">
 \[ a_o = \frac{4\pi \epsilon_o \hbar^2}{m_e e^2} = 0.53 \times 10^{-10}\ {\rm m}. \]</div>
@@ -858,29 +985,29 @@ L = m_evr = n\hbar,
 <p>Bohr found the fundamental length <span class="math notranslate nohighlight">\(a_o\)</span> in terms of fundamental constants (i.e., <span class="math notranslate nohighlight">\(\epsilon_o\)</span>, <span class="math notranslate nohighlight">\(h\)</span>, <span class="math notranslate nohighlight">\(e\)</span>, and <span class="math notranslate nohighlight">\(m_e\)</span>) and the atomic radius is now quantized.  The quantization arises from the principal quantum number <span class="math notranslate nohighlight">\(n\)</span>, where <span class="math notranslate nohighlight">\(n=1\)</span> represents the lowest energy state, or <em>ground</em> state.  The values of <span class="math notranslate nohighlight">\(n&gt;1\)</span> describe the hydrogen atom in an <em>excited</em> state.</p>
 <p>The energies of the stationary states <span class="math notranslate nohighlight">\(E_n\)</span> can be determined from Eqns. <a class="reference internal" href="#equation-energy-hyd">(4.18)</a> and <a class="reference internal" href="#equation-bohr-radius">(4.22)</a> as</p>
 <div class="math notranslate nohighlight" id="equation-energy-levels">
-<span class="eqno">(4.23)<a class="headerlink" href="#equation-energy-levels" title="Permalink to this equation">¶</a></span>\[E_n = \frac{-e^2}{8\pi \epsilon_o r_n} = \frac{-e^2}{8\pi \epsilon_o a_o n^2} = -\frac{E_o}{n^2},\]</div>
+<span class="eqno">(4.23)<a class="headerlink" href="#equation-energy-levels" title="Permalink to this equation">#</a></span>\[E_n = \frac{-e^2}{8\pi \epsilon_o r_n} = \frac{-e^2}{8\pi \epsilon_o a_o n^2} = -\frac{E_o}{n^2},\]</div>
 <p>where the lowest energy state occurs when <span class="math notranslate nohighlight">\(E_1 = -E_o\)</span>, and</p>
 <div class="math notranslate nohighlight" id="equation-ground-energy">
-<span class="eqno">(4.24)<a class="headerlink" href="#equation-ground-energy" title="Permalink to this equation">¶</a></span>\[E_o = \frac{e^2}{8\pi \epsilon_o a_o} = \frac{e^2}{8\pi \epsilon_o}\frac{m_e e^2}{4\pi \epsilon_o \hbar^2} = \frac{m_e e^4}{32\pi^2 \epsilon_o^2 \hbar^2} = 13.6\ {\rm eV}.\]</div>
+<span class="eqno">(4.24)<a class="headerlink" href="#equation-ground-energy" title="Permalink to this equation">#</a></span>\[E_o = \frac{e^2}{8\pi \epsilon_o a_o} = \frac{e^2}{8\pi \epsilon_o}\frac{m_e e^2}{4\pi \epsilon_o \hbar^2} = \frac{m_e e^4}{32\pi^2 \epsilon_o^2 \hbar^2} = 13.6\ {\rm eV}.\]</div>
 <div class="figure align-default" id="hydrogen-energy-fig">
 <a class="reference internal image-reference" href="../_images/hydrogen_energy_levels.gif"><img alt="hydrogen energy levels" src="../_images/hydrogen_energy_levels.gif" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.6 </span><span class="caption-text">The basic hydrogen energy level structure is in agreement with the Bohr model. Common pictures are those of a shell structure with each main shell associated with a value of the principal quantum number <span class="math notranslate nohighlight">\(n\)</span>. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hyde.html">Hyperphysics</a></span><a class="headerlink" href="#hydrogen-energy-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.6 </span><span class="caption-text">The basic hydrogen energy level structure is in agreement with the Bohr model. Common pictures are those of a shell structure with each main shell associated with a value of the principal quantum number <span class="math notranslate nohighlight">\(n\)</span>. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hyde.html">Hyperphysics</a></span><a class="headerlink" href="#hydrogen-energy-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>The ground state energy is equivalent to the experimentally measured ionization energy of the hydrogen atom.  Bohr’s Assumptions 3 and 4 imply that the atom can exist only in <em>stationary states</em>, or energy levels, with definite, quantized energies <span class="math notranslate nohighlight">\(E_n\)</span>.  Emission of light occurs when the atom is in an excited state <span class="math notranslate nohighlight">\(n^\prime\)</span> and decays to a lower energy state <span class="math notranslate nohighlight">\(n\)</span>.  A transition between two levels is described by Assumption 2 as</p>
 <div class="math notranslate nohighlight" id="equation-energy-trans">
-<span class="eqno">(4.25)<a class="headerlink" href="#equation-energy-trans" title="Permalink to this equation">¶</a></span>\[\Delta E = hf = E_{n^\prime} - E_n,\]</div>
+<span class="eqno">(4.25)<a class="headerlink" href="#equation-energy-trans" title="Permalink to this equation">#</a></span>\[\Delta E = hf = E_{n^\prime} - E_n,\]</div>
 <p>which depends on the frequency <span class="math notranslate nohighlight">\(f\)</span> of the emitted light (photon).  Equation <a class="reference internal" href="#equation-energy-trans">(4.25)</a> can be rewritten in terms of wavelength (<span class="math notranslate nohighlight">\(f=c/\lambda\)</span>) to get the Rydberg Equation by</p>
 <div class="math notranslate nohighlight" id="equation-rydberg-bohr">
-<span class="eqno">(4.26)<a class="headerlink" href="#equation-rydberg-bohr" title="Permalink to this equation">¶</a></span>\[\begin{split}f &amp;= \frac{1}{h}(E_{n^\prime} - E_n), \\
+<span class="eqno">(4.26)<a class="headerlink" href="#equation-rydberg-bohr" title="Permalink to this equation">#</a></span>\[\begin{split}f &amp;= \frac{1}{h}(E_{n^\prime} - E_n), \\
 \frac{1}{\lambda} &amp;= \frac{-E_o}{hc}\left(\frac{1}{{n^\prime}^2} - \frac{1}{n^2}\right) = \frac{E_o}{hc}\left(\frac{1}{n^2}- \frac{1}{{n^\prime}^2} \right),\end{split}\]</div>
 <p>where</p>
 <div class="math notranslate nohighlight" id="equation-rydberg-infty">
-<span class="eqno">(4.27)<a class="headerlink" href="#equation-rydberg-infty" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(4.27)<a class="headerlink" href="#equation-rydberg-infty" title="Permalink to this equation">#</a></span>\[
 \frac{E_o}{hc} = \frac{m_e e^4}{64c \epsilon_o^2 \pi^3\hbar^3} = R_\infty.
 \]</div>
 <p>The <strong>Rydberg constant</strong> <span class="math notranslate nohighlight">\(R_\infty\)</span> is for an infinite nuclear mass and Eqn. <a class="reference internal" href="#equation-rydberg-bohr">(4.26)</a> becomes</p>
 <div class="math notranslate nohighlight" id="equation-rydberg-eqn-bohr">
-<span class="eqno">(4.28)<a class="headerlink" href="#equation-rydberg-eqn-bohr" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(4.28)<a class="headerlink" href="#equation-rydberg-eqn-bohr" title="Permalink to this equation">#</a></span>\[
 \frac{1}{\lambda} = R_\infty \left(\frac{1}{n^2}- \frac{1}{{n^\prime}^2} \right),
 \]</div>
 <p>which is similar to Eqn. <a class="reference internal" href="../Chapter_3/experimental-quantum-physics.html#equation-rydberg-eqn">(3.13)</a>.  The value of <span class="math notranslate nohighlight">\(R_\infty = 1.097373 \times 10^7\ {\rm m^{-1}}\)</span> agrees well with the experimental value.</p>
@@ -888,14 +1015,14 @@ L = m_evr = n\hbar,
 <p>The atom will remain in an excited state for only a short time <span class="math notranslate nohighlight">\((\sim 10^{-10}\ {\rm s})\)</span> before emitting a photon (<em>in a random direction</em>) and returning to the lower state <span class="math notranslate nohighlight">\(n\)</span>.  Practically all hydrogen atoms exist in the lowest possible energy state (<span class="math notranslate nohighlight">\(n=1\)</span>), and only the Lyman series absorption lines are observed.  These line are not in the visible region.  However, the Sun acts as a blackbody (emitting over a broad range of frequencies), where the hydrogen atoms of its outer atmosphere absorb wavelengths of the Balmer series can be seen.</p>
 <div class="figure align-default" id="hydrogen-spectrum-fig">
 <a class="reference internal image-reference" href="../_images/hydrogen_spectrum.gif"><img alt="hydrogen spectrum" src="../_images/hydrogen_spectrum.gif" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.7 </span><span class="caption-text">This spectrum was produced by exciting a glass tube of hydrogen gas with about 5000 volts from a transformer. It was viewed through a diffraction grating with 600 lines/mm. The colors cannot be expected to be accurate because of differences in display devices. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hyde.html">Hyperphysics</a></span><a class="headerlink" href="#hydrogen-spectrum-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.7 </span><span class="caption-text">This spectrum was produced by exciting a glass tube of hydrogen gas with about 5000 volts from a transformer. It was viewed through a diffraction grating with 600 lines/mm. The colors cannot be expected to be accurate because of differences in display devices. Figure credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hyde.html">Hyperphysics</a></span><a class="headerlink" href="#hydrogen-spectrum-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>The electron’s velocity in the Bohr model depends on the energy level <span class="math notranslate nohighlight">\(n\)</span> as</p>
 <div class="math notranslate nohighlight" id="equation-velocity-bohr">
-<span class="eqno">(4.29)<a class="headerlink" href="#equation-velocity-bohr" title="Permalink to this equation">¶</a></span>\[v_n = \frac{n\hbar}{m_e r_n} = \frac{1}{n}\frac{\hbar}{m_e a_o} = \frac{1}{n}\frac{e^2}{4\pi \epsilon_o \hbar}.\]</div>
+<span class="eqno">(4.29)<a class="headerlink" href="#equation-velocity-bohr" title="Permalink to this equation">#</a></span>\[v_n = \frac{n\hbar}{m_e r_n} = \frac{1}{n}\frac{\hbar}{m_e a_o} = \frac{1}{n}\frac{e^2}{4\pi \epsilon_o \hbar}.\]</div>
 <p>The velocity of the ground state is <span class="math notranslate nohighlight">\(v_1 = 2.2\times 10^6\ {\rm m/s}\)</span>, where the excited states will have lower speeds.  Comparing the ground state velocity to the speed of light produces a ratio called the <strong>fine structure constant</strong>, which is</p>
 <div class="math notranslate nohighlight" id="equation-fine-structure">
-<span class="eqno">(4.30)<a class="headerlink" href="#equation-fine-structure" title="Permalink to this equation">¶</a></span>\[\alpha \equiv \frac{v_1}{c} = \frac{e^2}{4\pi \epsilon_o \hbar c} \approx \frac{1}{137}.\]</div>
+<span class="eqno">(4.30)<a class="headerlink" href="#equation-fine-structure" title="Permalink to this equation">#</a></span>\[\alpha \equiv \frac{v_1}{c} = \frac{e^2}{4\pi \epsilon_o \hbar c} \approx \frac{1}{137}.\]</div>
 <div class="exercise orange admonition" id="Chapter_4/structure-of-the-atom-exercise-4">
 
 <p class="admonition-title"><span class="caption-number">Exercise 4.5 </span></p>
@@ -947,47 +1074,47 @@ The wave number and wavelength for the 3--&gt;infinity transition is 1.219e+06 m
 </div>
 </div>
 <div class="section" id="the-correspondence-principle">
-<h3><span class="section-number">4.4.1. </span>The Correspondence Principle<a class="headerlink" href="#the-correspondence-principle" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.4.1. </span>The Correspondence Principle<a class="headerlink" href="#the-correspondence-principle" title="Permalink to this headline">#</a></h3>
 <p>In the early 20th century, physicists had trouble reconciling classical and quantum results.  For example, there were two radiation laws: one used in classical electrodynamics and another was expressed in Bohr’s atomic model.  Physicists proposed several correspondence principles to relate the classical and quantum results.  In 1913, Bohr proposed the best <em>correspondence principle</em>, which is</p>
 <blockquote class="epigraph">
 <div><p>In the limits where classical and quantum theories should agree, the quantum theory must reduce to the classical result.</p>
 <p class="attribution">—Bohr’s correspondence principle</p>
 </div></blockquote>
 <p><strong>Consider the predictions of the two radiation laws.</strong>  The frequency of the radiation produced by the atomic electrons in the Bohr model should agree with the predictions from classical electrodynamics where the Planck’s constant is unimportant (i.e., for large quantum number <span class="math notranslate nohighlight">\(n\)</span>).  Classically, the frequency of emitted radiation is equal to the electron’s orbital frequency <span class="math notranslate nohighlight">\(f_{\rm orb}\)</span> around the nucleus:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-87292de9-bf18-4fee-bb72-4cdadee39240">
-<span class="eqno">(4.31)<a class="headerlink" href="#equation-87292de9-bf18-4fee-bb72-4cdadee39240" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b6e9256b-f872-4b03-9974-1541828802b6">
+<span class="eqno">(4.31)<a class="headerlink" href="#equation-b6e9256b-f872-4b03-9974-1541828802b6" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_{\rm classical} &amp;= f_{\rm orb} = \frac{\omega}{2\pi} = \frac{v}{2\pi r},\\
 &amp;= \frac{1}{2\pi}\sqrt{\frac{e^2}{4\pi \epsilon_o m_e r^3}}, \\
 &amp; = \frac{1}{n^3}\frac{m_e e^4}{4\epsilon_o^2 h^3}.
 \end{align}\]</div>
 <p>Substituting values in terms of fundamental constants from Bohr’s model leads to a classical frequency that depends on the principal quantum number <span class="math notranslate nohighlight">\(n\)</span>.  Starting from the Bohr model, the nearest we can come to continuous radiation is a cascade of transitions from a <span class="math notranslate nohighlight">\(n+1\)</span> level to the <span class="math notranslate nohighlight">\(n\)</span> level.  The frequency of the transition from <span class="math notranslate nohighlight">\(n+1 \rightarrow n\)</span> is</p>
 <div class="math notranslate nohighlight" id="equation-bohr2classical">
-<span class="eqno">(4.32)<a class="headerlink" href="#equation-bohr2classical" title="Permalink to this equation">¶</a></span>\[\begin{split}f_{\rm Bohr} &amp;= \frac{E_o}{h}\left[ \frac{1}{n^2} - \frac{1}{(n+1)^2} \right],\\
+<span class="eqno">(4.32)<a class="headerlink" href="#equation-bohr2classical" title="Permalink to this equation">#</a></span>\[\begin{split}f_{\rm Bohr} &amp;= \frac{E_o}{h}\left[ \frac{1}{n^2} - \frac{1}{(n+1)^2} \right],\\
 &amp;= \frac{E_o}{h}\left[\frac{(n+1)^2 - n^2}{n^2(n+1)^2} \right], \\
 &amp;= \frac{E_o}{h}\left[\frac{2n+1}{n^2(n+1)^2} \right].\end{split}\]</div>
 <p>For large <span class="math notranslate nohighlight">\(n\)</span>, Eqn. <a class="reference internal" href="#equation-bohr2classical">(4.32)</a> becomes</p>
 <div class="math notranslate nohighlight">
 \[ f_{\rm Bohr} \approx \frac{E_o}{h}\left[ \frac{2n}{n^4} \right] = \frac{2E_o}{hn^3}. \]</div>
 <p>If we substitute Bohr’s <span class="math notranslate nohighlight">\(E_o\)</span> from Eqn. <a class="reference internal" href="#equation-ground-energy">(4.24)</a>, the result is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c92d5dd8-8d30-4608-8e71-c22d467b06b9">
-<span class="eqno">(4.33)<a class="headerlink" href="#equation-c92d5dd8-8d30-4608-8e71-c22d467b06b9" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4380578f-5fb1-42c4-889c-e4ce5b99c3b8">
+<span class="eqno">(4.33)<a class="headerlink" href="#equation-4380578f-5fb1-42c4-889c-e4ce5b99c3b8" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_{\rm Bohr} = \frac{1}{n^3}\frac{m_e e^4}{4\epsilon_o^2 h^3} = f_{\rm classical}.
 \end{align}\]</div>
 <p>The frequencies of the radiated energy agree between the classical theory and the Bohr model for large values of the principle quantum number <span class="math notranslate nohighlight">\(n\)</span>.  Bohr’s correspondence principle is verified for large electron orbits, where classical and quantum physics should agree.</p>
 </div>
 </div>
 <div class="section" id="success-and-failures-of-the-bohr-model">
-<h2><span class="section-number">4.5. </span>Success and Failures of the Bohr Model<a class="headerlink" href="#success-and-failures-of-the-bohr-model" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.5. </span>Success and Failures of the Bohr Model<a class="headerlink" href="#success-and-failures-of-the-bohr-model" title="Permalink to this headline">#</a></h2>
 <div class="section" id="reduced-mass-correction">
-<h3><span class="section-number">4.5.1. </span>Reduced Mass Correction<a class="headerlink" href="#reduced-mass-correction" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.5.1. </span>Reduced Mass Correction<a class="headerlink" href="#reduced-mass-correction" title="Permalink to this headline">#</a></h3>
 <p>The electron and hydrogen nucleus actually revolve about their mutual center of mass, where this is a two-body problem.  Instead of just <span class="math notranslate nohighlight">\(r\)</span>, we should have used the electron’s distance <span class="math notranslate nohighlight">\(r_e\)</span> and the nucleus’ distance <span class="math notranslate nohighlight">\(r_{\rm nucleus}\)</span> from the center of mass.  A straightforward analysis from classical mechanics shows that the two-body problem can be reduced to an equivalent one-body problem in terms of the reduced mass <span class="math notranslate nohighlight">\(\mu_e\)</span> that is moving around the center of mass.  The reduced mass depends on the mass of the nucleus <span class="math notranslate nohighlight">\(M\)</span> and the electron mass <span class="math notranslate nohighlight">\(m_e\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d0c6d06b-c98c-4d94-a5c6-fd97e6769d6b">
-<span class="eqno">(4.34)<a class="headerlink" href="#equation-d0c6d06b-c98c-4d94-a5c6-fd97e6769d6b" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-973a4574-9dca-4dba-af0c-e01dcf93bf9a">
+<span class="eqno">(4.34)<a class="headerlink" href="#equation-973a4574-9dca-4dba-af0c-e01dcf93bf9a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mu_e = \frac{m_eM}{m_e + M} = \frac{m_e}{1+m_e/M}.
 \end{align}\]</div>
 <p>In the case of the hydrogen atom, the mass of the nucleus <span class="math notranslate nohighlight">\(M\)</span> is the proton mass, and the correction for the hydrogen atom is <span class="math notranslate nohighlight">\(\mu_e = 0.999456\ m_e\)</span>.  Athough it is small, the difference is still measurable experimentally.  The Rydberg constant <span class="math notranslate nohighlight">\(R_\infty\)</span> (see <a class="reference internal" href="#equation-rydberg-infty">(4.27)</a>) should be replaced by</p>
 <div class="math notranslate nohighlight" id="equation-rydberg-corr">
-<span class="eqno">(4.35)<a class="headerlink" href="#equation-rydberg-corr" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(4.35)<a class="headerlink" href="#equation-rydberg-corr" title="Permalink to this equation">#</a></span>\[
 R = \frac{\mu_e}{m_e}R_\infty =\frac{\mu_e e^4}{64c \epsilon_o^2 \pi^3\hbar^3}.
 \]</div>
 <p>Using the reduced mass for hydrogen, the Rydberg constant is <span class="math notranslate nohighlight">\(R_{\rm H} = 1.096776 \times 10^6\ {\rm m^{-1}}\)</span>.</p>
@@ -1063,15 +1190,15 @@ The H_alpha wavelength for Tritium is 656.23 nm.
 </div>
 <p>The Bohr model may be applied to any <em>single-electron</em> atom even if the nuclear charge is greater than 1 proton charge <span class="math notranslate nohighlight">\((+e)\)</span> (e.g., <span class="math notranslate nohighlight">\({\rm He^+}\)</span> and <span class="math notranslate nohighlight">\({\rm Li^{2+}}\)</span>).  The only change needed is in the calculation of the Coulomb force, where <span class="math notranslate nohighlight">\(e^2\)</span> is replace with <span class="math notranslate nohighlight">\(Ze^2\)</span> to account for the nuclear charge of <span class="math notranslate nohighlight">\(+Ze\)</span>.  The Rydberg Equation becomes</p>
 <div class="math notranslate nohighlight" id="equation-single-electron-rydberg">
-<span class="eqno">(4.36)<a class="headerlink" href="#equation-single-electron-rydberg" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(4.36)<a class="headerlink" href="#equation-single-electron-rydberg" title="Permalink to this equation">#</a></span>\[
 \frac{1}{\lambda} = Z^2R \left(\frac{1}{n^2} - \frac{1}{{n^\prime}^2}\right).
 \]</div>
 </div>
 <div class="section" id="other-limitations">
-<h3><span class="section-number">4.5.2. </span>Other Limitations<a class="headerlink" href="#other-limitations" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.5.2. </span>Other Limitations<a class="headerlink" href="#other-limitations" title="Permalink to this headline">#</a></h3>
 <p>With increased precision in optical spectrographs, (two lines that were originally believed to be a single line) could be resolved and is known as <strong>fine structure</strong>.  <a class="reference external" href="https://en.wikipedia.org/wiki/Arnold_Sommerfeld">Arnold Sommerfeld</a> adapted the special theory of relativity to Bohr’s hypotheses and accounted for some ot the “splitting” of spectral lines.  In addition, external magnetic (Zeeman effect) and electric (Stark effect) fields applied to radiating atoms affected the spectral lines by splitting and broadening them.  Classical electromagnetic theory could explain the (normal) Zeeman effect, but it was unable to account for the Stark effect.</p>
 <p>The Bohr model was a great step forward, but it had its limitations:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>It could be successfully applied only to <em>single-electron</em> atoms.</p></li>
 <li><p>It was not able to account for the intensities or the fine structure of the spectral lines.</p></li>
 <li><p>Bohr’s model could not explain the binding of atoms into molecules.</p></li>
@@ -1080,11 +1207,11 @@ The H_alpha wavelength for Tritium is 656.23 nm.
 </div>
 </div>
 <div class="section" id="characteristic-x-ray-spectra-and-atomic-number">
-<h2><span class="section-number">4.6. </span>Characteristic X-Ray Spectra and Atomic Number<a class="headerlink" href="#characteristic-x-ray-spectra-and-atomic-number" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.6. </span>Characteristic X-Ray Spectra and Atomic Number<a class="headerlink" href="#characteristic-x-ray-spectra-and-atomic-number" title="Permalink to this headline">#</a></h2>
 <p>With the initial success of the Bohr’s model, it was believed tha the general characteristics fo the Bohr-Rutherford atom would prevail.  We can now understand the <strong>characteristic x-ray wavelengths</strong> by adopting Bohr’s <em>electron shell</em> hypothesis.  Bohr’s model suggests that an electron shell is quantified by a radius <span class="math notranslate nohighlight">\(r_n\)</span> that is associated with the principal quantum number <span class="math notranslate nohighlight">\(n\)</span>.  Electrons with lower values of <span class="math notranslate nohighlight">\(n\)</span> are more tightly bound to the nucleus (i.e., stronger Coulomb force).  The radii of the electron orbits increase in proportion to <span class="math notranslate nohighlight">\(n^2\)</span>, where a specific energy is also linked to each value of <span class="math notranslate nohighlight">\(n\)</span>.  We may assume that the inner electron shells (low values of <span class="math notranslate nohighlight">\(n\)</span>) are filled before outer shells as electrons are added.</p>
 <div class="figure align-default" id="xray-transition-fig">
 <a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220422.171947/resources/87ecbe358dce83fe6ae8ba89287c4bb7dc10ed6d"><img alt="x-ray transition" src="https://openstax.org/apps/archive/20220422.171947/resources/87ecbe358dce83fe6ae8ba89287c4bb7dc10ed6d" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.8 </span><span class="caption-text">The x-rays emitted between different atomic states.  The Greek letter subscripts indicate the value of <span class="math notranslate nohighlight">\(\Delta n\)</span>, where the Roman letter denotes the value of <span class="math notranslate nohighlight">\(n\)</span>. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays">OpenStax: University Physics Vol 3</a>.</span><a class="headerlink" href="#xray-transition-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.8 </span><span class="caption-text">The x-rays emitted between different atomic states.  The Greek letter subscripts indicate the value of <span class="math notranslate nohighlight">\(\Delta n\)</span>, where the Roman letter denotes the value of <span class="math notranslate nohighlight">\(n\)</span>. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays">OpenStax: University Physics Vol 3</a>.</span><a class="headerlink" href="#xray-transition-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>Historically the electron shells were given letter names starting from <span class="math notranslate nohighlight">\(K\)</span> for <span class="math notranslate nohighlight">\(n=1\)</span>, <span class="math notranslate nohighlight">\(L\)</span> for <span class="math notranslate nohighlight">\(n=2\)</span>, and so on.  Atomic nuclei with a larger positive charge require and equal number of electrons to remain electrically neutral.  We may suppose that heavy atoms with many electrons contain many electrons within several shells.  <em>What happens when a high-energy electron in an x-ray tube collides with one of the <span class="math notranslate nohighlight">\(K\)</span>-shell electrons in a target atom?</em></p>
 <p>If enough energy is supplied to the <span class="math notranslate nohighlight">\(K\)</span> electron to dislodge (free) it from the atom, then a vacancy is left in the <span class="math notranslate nohighlight">\(K\)</span> shell.  This allows another electron to descend from a higher energy level and fill the vacancy so that the <em>ground state</em> is full.  In the process, the electron has to emit some radiation to transition downward.  When this occurs, we call the EM radiation an <em>x-ray</em> and it has the energy</p>
@@ -1093,7 +1220,7 @@ The H_alpha wavelength for Tritium is 656.23 nm.
 <p>where the process is precisely analogous to what happens in an excited hydrogen atom (see Eqn. <a class="reference internal" href="#equation-energy-trans">(4.25)</a>).  The photon produced when the electron falls from the <span class="math notranslate nohighlight">\(L\)</span> (<span class="math notranslate nohighlight">\(n=2\)</span>) shell into the <span class="math notranslate nohighlight">\(K\)</span> (<span class="math notranslate nohighlight">\(n=1\)</span>) shell is called a <span class="math notranslate nohighlight">\(K_\alpha\)</span> x-ray.  When it falls from a higher level, like <span class="math notranslate nohighlight">\(M\)</span> (<span class="math notranslate nohighlight">\(n=3\)</span>), it is called a <span class="math notranslate nohighlight">\(K_\beta\)</span> x-ray.  The relative positions of the energy levels of the various shells differ for each element (i.e., differing amount of positive charge in the nucleus), and the characteristic x-ray energies are simply the energy difference between the shells.</p>
 <p>Physicists in Rutherford’s lab had already fully accepted the concept of the atomic number and most European physicists believed that the <strong>atomic weight</strong> <span class="math notranslate nohighlight">\(A\)</span> was an important factor in the structure of the periodic table of elements. The <strong>atomic number</strong> <span class="math notranslate nohighlight">\(Z\)</span> is the number of protons (positive charges) in the nucleus, where the actual makeup of the nucleus was unknown at the time.  In 1913, <a class="reference external" href="https://en.wikipedia.org/wiki/Henry_Moseley">Henry Moseley</a> was working in Rutherford’s laboratory and was engaged in cataloguing the characteristic x-ray spectra of a series of elements.  Moseley compared the frequencies of the characteristic x-rays with atomic number of the elements.  He found empirically that the frequency and atomic number were related by</p>
 <div class="math notranslate nohighlight" id="equation-moseley-eqn">
-<span class="eqno">(4.37)<a class="headerlink" href="#equation-moseley-eqn" title="Permalink to this equation">¶</a></span>\[f_{K_\alpha} = \frac{3}{4}cR\left(Z-1\right)^2.\]</div>
+<span class="eqno">(4.37)<a class="headerlink" href="#equation-moseley-eqn" title="Permalink to this equation">#</a></span>\[f_{K_\alpha} = \frac{3}{4}cR\left(Z-1\right)^2.\]</div>
 <p>The empirical relation holds for the <span class="math notranslate nohighlight">\(K_\alpha\)</span> x-rays and a similar result was found for the <span class="math notranslate nohighlight">\(L\)</span> shell.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1101,59 +1228,97 @@ The H_alpha wavelength for Tritium is 656.23 nm.
 </div>
 <div class="figure align-default" id="moseley-experiment-fig">
 <a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220422.171947/resources/bed94aa9243461f87d7c0b88ac3a9a346e67b559"><img alt="Moseley experiment" src="https://openstax.org/apps/archive/20220422.171947/resources/bed94aa9243461f87d7c0b88ac3a9a346e67b559" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Moseley’s data indicating the relationship between the atomic number <span class="math notranslate nohighlight">\(Z\)</span> and the characteristic x-ray frequencies. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays">OpenStax: University Physics Vol 3</a>.</span><a class="headerlink" href="#moseley-experiment-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Moseley’s data indicating the relationship between the atomic number <span class="math notranslate nohighlight">\(Z\)</span> and the characteristic x-ray frequencies. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays">OpenStax: University Physics Vol 3</a>.</span><a class="headerlink" href="#moseley-experiment-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>If a vacancy occurs in the <span class="math notranslate nohighlight">\(K\)</span> shell, then there is still one electron remaining in the <span class="math notranslate nohighlight">\(K\)</span> shell.  An electron in the <span class="math notranslate nohighlight">\(L\)</span> shell will feel an effective charge of <span class="math notranslate nohighlight">\((Z-1)e\)</span> due to the <span class="math notranslate nohighlight">\(+Ze\)</span> from the nucleus and <span class="math notranslate nohighlight">\(-e\)</span> from the remaining <span class="math notranslate nohighlight">\(K\)</span> shell electron.  The other electrons outside the <span class="math notranslate nohighlight">\(K\)</span> shell hardly affect the <span class="math notranslate nohighlight">\(L\)</span> shell electron.  The x-ray produced when a transition occurs from the <span class="math notranslate nohighlight">\(n=2\rightarrow 1\)</span> shell has the wavelength (from Eqn. <a class="reference internal" href="#equation-single-electron-rydberg">(4.36)</a>) of</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f7d1c311-5161-45de-b987-422c507f3c01">
-<span class="eqno">(4.38)<a class="headerlink" href="#equation-f7d1c311-5161-45de-b987-422c507f3c01" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-669f4953-8d32-4e9c-b723-ca35ecc7a2a6">
+<span class="eqno">(4.38)<a class="headerlink" href="#equation-669f4953-8d32-4e9c-b723-ca35ecc7a2a6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda_{K_\alpha}} &amp;= (Z-1)^2 R\left(\frac{2^2 -1^2}{1^22^2}\right), \\
  &amp;= \frac{3}{4}R(Z-1)^2, \\
 f_{K_\alpha} &amp;= \frac{c}{\lambda_{K_\alpha}} = \frac{3}{4}cR(Z-1)^2.
 \end{align}\]</div>
 <p>Moseley’s equation describing the <span class="math notranslate nohighlight">\(K_\alpha\)</span> shell x-rays is an application of Bohr’s model.  The general form for the <span class="math notranslate nohighlight">\(K\)</span> series of x-ray wavelengths is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6cf336be-7462-47fb-89bf-2657f6bea059">
-<span class="eqno">(4.39)<a class="headerlink" href="#equation-6cf336be-7462-47fb-89bf-2657f6bea059" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e81aba67-dded-4b24-8b2a-0304b1eca1b1">
+<span class="eqno">(4.39)<a class="headerlink" href="#equation-e81aba67-dded-4b24-8b2a-0304b1eca1b1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda_K} &amp;= R(Z-1)^2 \left(\frac{n^2 -1}{n^2}\right).
 \end{align}\]</div>
 <p>Moseley correctly concluded that the atomic number <span class="math notranslate nohighlight">\(Z\)</span> was the determining factor for the ordering of the periodic table, where the reordering by atomic number was more consistent with chemical properties than one based on atomic weight.  He also concluded that the atomic number of an element should be identified with the number of positive charges (protons) in the nucleus.  He tabulated all the atomic numbers between aluminum <span class="math notranslate nohighlight">\({\rm Al}\ (Z=13)\)</span> to gold <span class="math notranslate nohighlight">\({\rm Au}\ (Z=79)\)</span> and pointed out that there were still three elements (<span class="math notranslate nohighlight">\(Z=43,\ 61,\ \text{and } 75\)</span>) yet to be discovered!  The element promethium (<span class="math notranslate nohighlight">\(Z=61\)</span>) was discovered around 1940.</p>
 <p>Moseley’s research helped put the Rutherford-Bohr model on a firmer footing.  It clarified the importance of the electron shells for all the elements (not just for hydrogen). It also helped to show that the atomic number was the significant factor in the ordering of the periodic table, not the atomic weight.</p>
-<div class="exercise orange admonition" id="Chapter_4/structure-of-the-atom-exercise-6">
+<div class="exercise orange admonition" id="Moseley_ex">
 
 <p class="admonition-title"><span class="caption-number">Exercise 4.7 </span></p>
 <div class="section" id="exercise-content">
 <p><strong>Moseley found experimentally an equation describing the frequency of the <span class="math notranslate nohighlight">\(L_\alpha\)</span> line as <span class="math notranslate nohighlight">\(f_{L_\alpha} = (5/36)cR(Z-7.4)^2\)</span>.  How can the Bohr model explain this result?  What is the general form for the <span class="math notranslate nohighlight">\(L\)</span> series wavelengths <span class="math notranslate nohighlight">\(\lambda_L\)</span>?</strong></p>
 <p>The <span class="math notranslate nohighlight">\(L_\alpha\)</span> x-ray results from the transition of <span class="math notranslate nohighlight">\(n=3\rightarrow 2\)</span>, where the <span class="math notranslate nohighlight">\(L\)</span> series refer to transition to the <span class="math notranslate nohighlight">\(n=2\)</span> state from higher states.  For the case of the <span class="math notranslate nohighlight">\(K\)</span> series, the effective charge of the nucleus <span class="math notranslate nohighlight">\(Z_{\rm eff}\)</span> was simply <span class="math notranslate nohighlight">\(Z-1\)</span>.  Since we don’t yet know the detailed arrangement of electrons, we just let <span class="math notranslate nohighlight">\(Z=Z_{\rm eff}\)</span> and its value will be determined empirically.  From Bohr’s model we can proceed to find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-617711bc-a666-47af-a012-4ebed10ed619">
-<span class="eqno">(4.40)<a class="headerlink" href="#equation-617711bc-a666-47af-a012-4ebed10ed619" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dd203950-3d3f-4daa-89d6-23834e2e07e8">
+<span class="eqno">(4.40)<a class="headerlink" href="#equation-dd203950-3d3f-4daa-89d6-23834e2e07e8" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_{L_\alpha} = cRZ_{\rm eff}^2\left(\frac{3^2-2^2}{2^23^2}\right) = \frac{5}{36}cRZ_{\rm eff}^2.
 \end{align}\]</div>
 <p>According to Moseley’s data, the effective charge must be <span class="math notranslate nohighlight">\(Z-7.4\)</span>.  We can rewrite our result by replacing <span class="math notranslate nohighlight">\(3\rightarrow n\)</span> (and changing to wavelength) to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-86ed031f-1cc6-4c4c-a6e7-f91fa6588e6b">
-<span class="eqno">(4.41)<a class="headerlink" href="#equation-86ed031f-1cc6-4c4c-a6e7-f91fa6588e6b" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-05ac41bf-ef5c-4054-9085-c0029365e029">
+<span class="eqno">(4.41)<a class="headerlink" href="#equation-05ac41bf-ef5c-4054-9085-c0029365e029" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda_L} = RZ_{\rm eff}^2\left(\frac{n^2 -4}{4n^2}\right) = R(Z - 7.4)^2\left(\frac{n^2 -4}{4n^2}\right).
 \end{align}\]</div>
 </div>
 </div>
 </div>
 <div class="section" id="atomic-excitation-by-electrons">
-<h2><span class="section-number">4.7. </span>Atomic Excitation by Electrons<a class="headerlink" href="#atomic-excitation-by-electrons" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.7. </span>Atomic Excitation by Electrons<a class="headerlink" href="#atomic-excitation-by-electrons" title="Permalink to this headline">#</a></h2>
 <p>So far quantum theory has been characterized by the packets of electromagnetic radiation that we call photons (or quanta).  The Bohr model explained the measured optical spectra of certain atoms.  Spectroscopic experiments were performed by exciting the elements (e.g., a high-voltage discharge tube to examine the emission spectra).</p>
 <p>In 1914, <a class="reference external" href="https://en.wikipedia.org/wiki/James_Franck">James Franck</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Gustav_Ludwig_Hertz">Gustav Hertz</a> decided to study the possibility of transferring a part of an electron’s kinetic energy to an atom (i.e., the <a class="reference external" href="https://en.wikipedia.org/wiki/Franck%E2%80%93Hertz_experiment">Franck-Hertz experiment</a>).  Their measurements would provide a new technique for studying atomic structure.  In their experiment, electrons are emitted thermionically from a hot cathode (filament) and are accelerated by an electric field.  After passing through a wire mesh, the electrons are subjected to a decelerating voltage (<span class="math notranslate nohighlight">\(\sim 1.5\ {\rm V}\)</span>) between the mesh and an anode (collector).  If the electrons have <span class="math notranslate nohighlight">\(&gt;1.5\ {\rm eV}\)</span> after passing through the mesh, then they will have enough energy to reach the collector and be registered as current through and <em>electrometer</em> (i.e., an extremely sensitive ammeter).  A voltmeter measures the accelerating voltage <span class="math notranslate nohighlight">\(V\)</span>, where the final result shows the collector current as a function of the measured voltage.</p>
 <div class="figure align-default" id="franck-hertz-fig">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/FranckHertzHgTube.jpg/800px-FranckHertzHgTube.jpg"><img alt="Franck-Hertz experiment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/FranckHertzHgTube.jpg/800px-FranckHertzHgTube.jpg" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Photograph of a vacuum tube used for the Franck–Hertz experiment in instructional laboratories. There is a droplet of mercury inside the tube, although it is not visible in the photograph. C - cathode assembly; the cathode itself is hot, and glows orange. It emits electrons which pass through the metal mesh grid (G) and are collected as an electric current by the anode (A). Figure credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Franck%E2%80%93Hertz_experiment">Wikipedia</a>.</span><a class="headerlink" href="#franck-hertz-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Photograph of a vacuum tube used for the Franck–Hertz experiment in instructional laboratories. There is a droplet of mercury inside the tube, although it is not visible in the photograph. C - cathode assembly; the cathode itself is hot, and glows orange. It emits electrons which pass through the metal mesh grid (G) and are collected as an electric current by the anode (A). Figure credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Franck%E2%80%93Hertz_experiment">Wikipedia</a>.</span><a class="headerlink" href="#franck-hertz-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>The accelerating electrons pass through a region containing mercury (<span class="math notranslate nohighlight">\(\rm Hg\)</span>) vapor.  Franck and Hertz found the electrons did not lose energy as long as the accelerating voltage <span class="math notranslate nohighlight">\(V &lt; 5\ {\rm V}\)</span> (i.e., the maximum kinetic energy of the electrons was <span class="math notranslate nohighlight">\(&lt;5\ {\rm eV}\)</span>).  The electron current measured in the electrometer increased with a larger voltage, but there was a sudden drop in the current when the accelerating voltage increased above <span class="math notranslate nohighlight">\(5\ {\rm V}\)</span>.  As the accelerating voltage increased, the measured current increased again until the voltage reached <span class="math notranslate nohighlight">\(10\ {\rm V}\)</span>, which it suddenly dropped.  Franck and Hertz interpreted this behavior ast teh onset of ionization of the <span class="math notranslate nohighlight">\({\rm Hg}\)</span> atom (i.e., freeing an electron from <span class="math notranslate nohighlight">\({\rm Hg}\)</span>).  They later realized that the <span class="math notranslate nohighlight">\({\rm Hg}\)</span> atom was actually begin excited to its first excited state.</p>
 <div class="figure align-default" id="fh-voltage-fig">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Franck-Hertz_en.svg/1280px-Franck-Hertz_en.svg.png"><img alt="FH voltage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Franck-Hertz_en.svg/1280px-Franck-Hertz_en.svg.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Anode current (arbitrary units) versus grid voltage (relative to the cathode). This graph is based on the original 1914 paper by Franck and Hertz. Image credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Franck%E2%80%93Hertz_experiment">Wikipedia</a>.</span><a class="headerlink" href="#fh-voltage-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Anode current (arbitrary units) versus grid voltage (relative to the cathode). This graph is based on the original 1914 paper by Franck and Hertz. Image credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Franck%E2%80%93Hertz_experiment">Wikipedia</a>.</span><a class="headerlink" href="#fh-voltage-fig" title="Permalink to this image">#</a></p>
 </div>
 <p>Within the context of Bohr’s picture of <em>quantized atomic energy levels</em>, the <strong>ground state</strong> <span class="math notranslate nohighlight">\(E_o\)</span> is when all the electrons are in their lowest possible energy states.  The first excited state has an energy <span class="math notranslate nohighlight">\(E_1\)</span> and is measured using the ground state energy <span class="math notranslate nohighlight">\(E_o\)</span> as the “zero point” (i.e., <span class="math notranslate nohighlight">\(E_o = 0\)</span>).  The energy difference between states is called the <strong>excitation energy</strong>.  The first excited state of <span class="math notranslate nohighlight">\({\rm Hg}\)</span> is at <span class="math notranslate nohighlight">\(4.88\ {\rm eV}\)</span> and as long as the accelerating electron’s kinetic energy is below <span class="math notranslate nohighlight">\(4.88\ {\rm eV}\)</span>, then no energy can be transferred to the recoil of <span class="math notranslate nohighlight">\({\rm Hg}\)</span> atom.</p>
 <p>For an accelerating voltage below <span class="math notranslate nohighlight">\(4.88\ {\rm V}\)</span>, the collision between the electron and the <span class="math notranslate nohighlight">\({\rm Hg}\)</span> atom is <em>elastic</em>, where the electron can only bound off the <span class="math notranslate nohighlight">\(\rm Hg\)</span> atom with the same kinetic energy.  Above <span class="math notranslate nohighlight">\(4.88\ {\rm V}\)</span>, the collision becomes <em>inelastic</em>, where the electron can promote the <span class="math notranslate nohighlight">\(\rm Hg\)</span> atom to its first excited state.  A bombarding electron that has lost energy in an inelastic collision then has too little energy to reach the collector.  Above <span class="math notranslate nohighlight">\(4.88\ {\rm V}\)</span>, the current dramatically drops.  The process can repeat gain when the accelerating voltage increases to <span class="math notranslate nohighlight">\(9.8\ {\rm V}\ (\approx 2\times 4.88\ {\rm V})\)</span>, where a second electron is excited and the current drops sharply again.</p>
 <p>The Franck-Hertz experiment convincingly proved the quantization of atomic electron energy levels.  The bombarding electron’s kinetic energy can change only by discere amounts.  They performed the experiment with gases of several other elements and obtained similar results.</p>
 </div>
 <div class="section" id="homework-problems">
-<h2><span class="section-number">4.8. </span><strong>Homework Problems</strong><a class="headerlink" href="#homework-problems" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.8. </span><strong>Homework Problems</strong><a class="headerlink" href="#homework-problems" title="Permalink to this headline">#</a></h2>
+<div class="admonition-problem-1 admonition">
+<p class="admonition-title">Problem 1</p>
+<p>Calculate the impact parameter for scattering a <span class="math notranslate nohighlight">\(7.7\ \rm MeV\ \alpha\)</span> particle from gold at an angle of (a) <span class="math notranslate nohighlight">\(1^\circ\)</span> and (b) <span class="math notranslate nohighlight">\(90^\circ\)</span>.</p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p>Compute and compare the electrostatic and gravitational forces in the classical hydrogen atom, assuming a radius of <span class="math notranslate nohighlight">\(5.3 \times 10^{-11}\ {\rm m}\)</span>.</p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p>A hydrogen atom in an excited state absorbs a photon of wavelength <span class="math notranslate nohighlight">\(410\ {\rm nm}\)</span>.  What where the initial and final states of the hydrogen atom?</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p>A hydrogen atom exists in an excited state for typically <span class="math notranslate nohighlight">\(10^{-8}\ {\rm s}\)</span>.  How many revolutions would an electron make in an <span class="math notranslate nohighlight">\(n=3\)</span> state before decaying?</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p>Calculate the Rydberg constant for the single-electron (hydrogen-like) ions of helium, potassium, and uranium.  Compare each of them with <span class="math notranslate nohighlight">\(R_\infty\)</span> and determine the percentage difference.</p>
+</div>
+<div class="admonition-problem-6 admonition">
+<p class="admonition-title">Problem 6</p>
+<p>What wavelengths for the <span class="math notranslate nohighlight">\(L_\alpha\)</span> lines did Moseley predict for the missing <span class="math notranslate nohighlight">\(Z= 43,\ 61,\ \text{and}\ 75\)</span> elements (See Exercise <a class="reference internal" href="#Moseley_ex"><span class="std std-numref">4.7</span></a>)?</p>
+</div>
+<div class="admonition-problem-7 admonition">
+<p class="admonition-title">Problem 7</p>
+<p>Calculate the <span class="math notranslate nohighlight">\(K_\alpha\)</span> and <span class="math notranslate nohighlight">\(K_\beta\)</span> wavelengths for <span class="math notranslate nohighlight">\(\rm He\)</span> and <span class="math notranslate nohighlight">\(\rm Li\)</span>.</p>
+</div>
+<div class="admonition-problem-8 admonition">
+<p class="admonition-title">Problem 8</p>
+<p>The redshift measurements of spectra from magnesium and iron are important in understanding distant galaxies.  What are the <span class="math notranslate nohighlight">\(K_\alpha\)</span> and <span class="math notranslate nohighlight">\(L_\alpha\)</span> wavelengths for magnesium and iron?</p>
+</div>
+<div class="admonition-problem-9 admonition">
+<p class="admonition-title">Problem 9</p>
+<p>A beam of <span class="math notranslate nohighlight">\(8.0\ \rm MeV\ \alpha\)</span> particles scatters from a gold foil of thickness <span class="math notranslate nohighlight">\(0.32\ \rm \mu m\)</span>.</p>
+<p><strong>(a)</strong> What fraction of the <span class="math notranslate nohighlight">\(\alpha\)</span> particles is scattered between <span class="math notranslate nohighlight">\(1.0^\circ-2.0^\circ\)</span>?</p>
+<p><strong>(b)</strong> What is the ratio of <span class="math notranslate nohighlight">\(\alpha\)</span> particles scattered through angles greater than <span class="math notranslate nohighlight">\(1^\circ\)</span> to the number scattered through angles greater than <span class="math notranslate nohighlight">\(10^\circ\)</span>?</p>
+</div>
 </div>
 </div>
 
@@ -1161,8 +1326,8 @@ f_{L_\alpha} = cRZ_{\rm eff}^2\left(\frac{3^2-2^2}{2^23^2}\right) = \frac{5}{36}
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "saturnaxis/ModernPhysics",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -1179,9 +1344,11 @@ f_{L_\alpha} = cRZ_{\rm eff}^2\left(\frac{3^2-2^2}{2^23^2}\right) = \frac{5}{36}
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="../Chapter_3/experimental-quantum-physics.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1197,24 +1364,28 @@ f_{L_\alpha} = cRZ_{\rm eff}^2\left(\frac{3^2-2^2}{2^23^2}\right) = \frac{5}{36}
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Billy Quarles<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Billy Quarles<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

@@ -52,8 +52,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="8. Statistical Physics" href="../Chapter_8/statistical-physics.html" />
@@ -763,8 +763,8 @@ title="Print to PDF"
 <div class="math notranslate nohighlight" id="equation-hyd-deriv">
 <span class="eqno">(7.4)<a class="headerlink" href="#equation-hyd-deriv" title="Permalink to this equation">#</a></span>\[\frac{\partial \psi}{\partial r} = fg\frac{\partial R}{\partial r}, \qquad \frac{\partial \psi}{\partial \theta} = Rg\frac{\partial f}{\partial \theta}, \qquad \text{and}\quad \frac{\partial^2 \psi}{\partial \phi^2} = Rf\frac{\partial^2 g}{\partial \phi^2}.\]</div>
 <p>We substitute substitute these results into Eq. <a class="reference internal" href="#equation-3d-schrodinger">(7.2)</a> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6d4d0734-60b0-4eda-8953-aebc9f6d1847">
-<span class="eqno">(7.5)<a class="headerlink" href="#equation-6d4d0734-60b0-4eda-8953-aebc9f6d1847" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-466c4158-b6d1-45a3-8013-bafd89ff1892">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-466c4158-b6d1-45a3-8013-bafd89ff1892" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2\mu}\left[\frac{fg}{r^2} \frac{\partial}{\partial r}\left(r^2 \frac{\partial R}{\partial r}\right) + \frac{Rg}{r^2\sin \theta}\frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial f}{\partial \theta} \right) + \frac{Rf}{r^2\sin^2 \theta}\frac{\partial^2 g}{\partial \phi^2} \right] + V(Rfg) &amp;= E(Rfg).
 \end{align}\]</div>
 <p>Next we multiply both sides by <span class="math notranslate nohighlight">\(r^2 \sin^2 \theta/ (Rfg)\)</span> and rearrange to have</p>
@@ -796,13 +796,13 @@ title="Print to PDF"
 <div class="math notranslate nohighlight" id="equation-hydrogen-ground-full">
 <span class="eqno">(7.12)<a class="headerlink" href="#equation-hydrogen-ground-full" title="Permalink to this equation">#</a></span>\[\frac{d^2 R}{d r^2} + \frac{2}{r}\frac{d R}{d r} + \frac{2\mu}{\hbar^2}\left[E+\frac{e^2}{4\pi \epsilon_o r}\right]R = 0.\]</div>
 <p>Similar to the solution for the azimuthal equation, we will try a solution with an exponential.  With some prior experience in solving differential equations, we try a solution having the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2040c2d2-3940-4e20-9265-957a5bb66b1d">
-<span class="eqno">(7.13)<a class="headerlink" href="#equation-2040c2d2-3940-4e20-9265-957a5bb66b1d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2b12df6a-cbce-411b-9302-41ebdf5bdbc5">
+<span class="eqno">(7.13)<a class="headerlink" href="#equation-2b12df6a-cbce-411b-9302-41ebdf5bdbc5" title="Permalink to this equation">#</a></span>\[\begin{align}
 R = Ae^{-r/a_o},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span> is a normalization constant and <span class="math notranslate nohighlight">\(a_o\)</span> is a constant that must cancel out the dimension of <span class="math notranslate nohighlight">\(r\)</span> with a length.  The first and second derivatives are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ac265ebe-d09e-473c-9eec-7c09c872cff4">
-<span class="eqno">(7.14)<a class="headerlink" href="#equation-ac265ebe-d09e-473c-9eec-7c09c872cff4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-65403d26-59bd-4e95-ac6e-afdec36666a1">
+<span class="eqno">(7.14)<a class="headerlink" href="#equation-65403d26-59bd-4e95-ac6e-afdec36666a1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{dR}{dr} = -\frac{A}{a_o}e^{-r/a_o} = -\frac{R}{a_o}, \qquad \text{and} \qquad \frac{d^2R}{dr^2} = \frac{R}{a_o^2}.
 \end{align}\]</div>
 <p>Substituting these derivatives into Eq. <a class="reference internal" href="#equation-hydrogen-ground-full">(7.12)</a> yields</p>
@@ -810,13 +810,13 @@ R = Ae^{-r/a_o},
 <span class="eqno">(7.15)<a class="headerlink" href="#equation-hydrogen-ground-derivatives" title="Permalink to this equation">#</a></span>\[\begin{split}\frac{R}{a_o^2} - \frac{2R}{ra_o} + \frac{2\mu}{\hbar^2}\left[E+\frac{e^2}{4\pi \epsilon_o r}\right]R &amp;= 0, \\
 \left(\frac{2\mu e^2}{4\pi \epsilon_o \hbar^2} - \frac{2}{a_o}\right)\frac{1}{r} + \left(\frac{1}{a_o^2} + \frac{2\mu E}{\hbar^2}\right) &amp; = 0.\end{split}\]</div>
 <p>Trying to solve Eq. <a class="reference internal" href="#equation-hydrogen-ground-derivatives">(7.15)</a> for <span class="math notranslate nohighlight">\(r\)</span> algebraically is rather complicated, where we’ll use the more trivial solution that each of the terms in parentheses are themselves equal to zero.  By setting the first term in parentheses to zero and solving for <span class="math notranslate nohighlight">\(a_o\)</span>, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6a172f1f-36ee-47ba-a558-74d5ff4ace03">
-<span class="eqno">(7.16)<a class="headerlink" href="#equation-6a172f1f-36ee-47ba-a558-74d5ff4ace03" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e0001d7e-ca9b-4b94-b6b9-df8005adf54d">
+<span class="eqno">(7.16)<a class="headerlink" href="#equation-e0001d7e-ca9b-4b94-b6b9-df8005adf54d" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_o = \frac{4\pi \epsilon_o \hbar^2}{\mu e^2},
 \end{align}\]</div>
 <p>and that <span class="math notranslate nohighlight">\(a_o\)</span> is equal to the Bohr radius (see Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_4/structure-of-the-atom.html#the-bohr-model-of-the-hydrogen-atom">4.4</a>).  Then we can set the second term in parentheses to zero and solve for <span class="math notranslate nohighlight">\(E\)</span> to find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-baa03382-f691-4c6a-ab09-ea25fd47aee5">
-<span class="eqno">(7.17)<a class="headerlink" href="#equation-baa03382-f691-4c6a-ab09-ea25fd47aee5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3b54b4b9-81fa-4ece-a2e6-3de0d0961cf8">
+<span class="eqno">(7.17)<a class="headerlink" href="#equation-3b54b4b9-81fa-4ece-a2e6-3de0d0961cf8" title="Permalink to this equation">#</a></span>\[\begin{align}
 E = -\frac{\hbar^2}{2\mu a_o^2} = -E_o,
 \end{align}\]</div>
 <p>which is the ground state energy from the Bohr model.</p>
@@ -869,8 +869,8 @@ m_\ell &amp;= -\ell,\ (-\ell+1),\ (-\ell+2),\ \ldots,\ -1,\ 0,\ 1,\ (\ell+2),\ (
 <div class="section" id="solution-of-the-angular-and-azimuthal-equations">
 <h3><span class="section-number">7.2.3. </span>Solution of the Angular and Azimuthal Equations<a class="headerlink" href="#solution-of-the-angular-and-azimuthal-equations" title="Permalink to this headline">#</a></h3>
 <p>In the azimuthal equation, its solution can be expressed in exponential form, but the angular equation also contains the quantum number <span class="math notranslate nohighlight">\(m_\ell\)</span>.  Thus the solutions to the angular and azimuthal equations are linked.  It is customary to group these solution together into so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_harmonics"><strong>spherical harmonics</strong></a> defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96d7187c-85a7-47ca-a40e-27333c500fbc">
-<span class="eqno">(7.19)<a class="headerlink" href="#equation-96d7187c-85a7-47ca-a40e-27333c500fbc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-098075b4-f508-4df1-b7c4-ebf72b5c2937">
+<span class="eqno">(7.19)<a class="headerlink" href="#equation-098075b4-f508-4df1-b7c4-ebf72b5c2937" title="Permalink to this equation">#</a></span>\[\begin{align}
 Y(\theta,\ \phi) = f(\theta)g(\phi),
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(f(\theta)\)</span> is a Legendre polynomial of order <span class="math notranslate nohighlight">\(\ell\)</span>.  See Table <a class="reference internal" href="#norm-sph-harm"><span class="std std-numref">7.2</span></a> for a listing of the normalized spherical harmonics up to <span class="math notranslate nohighlight">\(\ell = 3\)</span>.</p>
@@ -958,8 +958,8 @@ Y(\theta,\ \phi) = f(\theta)g(\phi),
 <div class="section" id="exercise-content">
 <p><strong>Show that the hydrogen wave function <span class="math notranslate nohighlight">\(\psi_{211}\)</span> is normalized.</strong></p>
 <p>A normalized function (e.g., <span class="math notranslate nohighlight">\(\psi_{n\ell m_\ell}\)</span>) has an area under the curve equal to unity, which is given mathematically as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7f3457ee-575b-414e-8a94-09c7e0f20f27">
-<span class="eqno">(7.20)<a class="headerlink" href="#equation-7f3457ee-575b-414e-8a94-09c7e0f20f27" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-20941b08-5ab1-4934-abe7-a3e61969aaff">
+<span class="eqno">(7.20)<a class="headerlink" href="#equation-20941b08-5ab1-4934-abe7-a3e61969aaff" title="Permalink to this equation">#</a></span>\[\begin{align} 
 1 &amp;= \int \psi^*_{n\ell m_\ell} \psi_{n\ell m_\ell} d\tau, \\
   &amp; = \int \psi^*_{211} \psi_{211} r^2 \sin \theta\ dr\ d\theta\ d\phi,
 \end{align}\]</div>
@@ -1052,8 +1052,8 @@ Y(\theta,\ \phi) = f(\theta)g(\phi),
 <div class="math notranslate nohighlight">
 \[ \vec{L} = \vec{r} \times \vec{p},\]</div>
 <p>with a magnitude <span class="math notranslate nohighlight">\(L = mv_{\rm orb}r\)</span> and the <span class="math notranslate nohighlight">\(v_{\rm orb}\)</span> represents the electron’s orbital velocity perpendicular to its orbital radius <span class="math notranslate nohighlight">\(r\)</span>.  The quantum number <span class="math notranslate nohighlight">\(\ell\)</span> is related to the magnitude of the orbital angular momentum number <span class="math notranslate nohighlight">\(L\)</span> by,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b91f3e17-a64f-47e4-87fc-50950821d4bc">
-<span class="eqno">(7.21)<a class="headerlink" href="#equation-b91f3e17-a64f-47e4-87fc-50950821d4bc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-70db52e0-836c-4ad3-b65b-e44bb4cbe048">
+<span class="eqno">(7.21)<a class="headerlink" href="#equation-70db52e0-836c-4ad3-b65b-e44bb4cbe048" title="Permalink to this equation">#</a></span>\[\begin{align}
 L = \sqrt{\ell(\ell + 1)}\hbar.
 \end{align}\]</div>
 <p>The dependence on <span class="math notranslate nohighlight">\(\ell(\ell + 1)\)</span> is a wave phenomenon that results from applying the boundary conditions on <span class="math notranslate nohighlight">\(\psi\)</span>.  The quantum result disagrees with the Bohr’s theory, where <span class="math notranslate nohighlight">\(L = n\hbar\)</span>.  This will force us to discard Bohr’s semiclassical “planetary” model when considering the finer structures of the atom.</p>
@@ -1076,8 +1076,8 @@ L = \sqrt{\ell(\ell + 1)}\hbar.
 </ul>
 <p>The solution to the Schrödinger equation for the angular equation <span class="math notranslate nohighlight">\(f(\theta)\)</span> specifies that <span class="math notranslate nohighlight">\(\ell\)</span> is an integer, and therefor the magnitude of <span class="math notranslate nohighlight">\(\vec{L}\)</span> is quantized.</p>
 <p>The azimuthal angle <span class="math notranslate nohighlight">\(\phi\)</span> measures a rotation about the <span class="math notranslate nohighlight">\(z\)</span>-axis.  The solution of the azimuthal equation <span class="math notranslate nohighlight">\(g(\phi)\)</span> specifies that <span class="math notranslate nohighlight">\(m_\ell\)</span> is an integer <em>and</em> is related to <span class="math notranslate nohighlight">\(L_z\)</span> (i.e., the <span class="math notranslate nohighlight">\(z\)</span>-component of the angular momentum) by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b265f338-1b42-4254-a2b6-c20d403dd3f2">
-<span class="eqno">(7.22)<a class="headerlink" href="#equation-b265f338-1b42-4254-a2b6-c20d403dd3f2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-36cf8adb-3f53-4849-b532-9f02b0ebe978">
+<span class="eqno">(7.22)<a class="headerlink" href="#equation-36cf8adb-3f53-4849-b532-9f02b0ebe978" title="Permalink to this equation">#</a></span>\[\begin{align}
 L_z = m_\ell \hbar.
 \end{align}\]</div>
 <p>The relationship of <span class="math notranslate nohighlight">\(L,\ L_z,\ \ell,\)</span> and <span class="math notranslate nohighlight">\(m_\ell\)</span> is displayed in Fig. <a class="reference internal" href="#lz-fig"><span class="std std-numref">7.1</span></a> for the value <span class="math notranslate nohighlight">\(\ell=2\)</span>.  Because <span class="math notranslate nohighlight">\(L_z\)</span> is quantized, only certain orientations of <span class="math notranslate nohighlight">\(\vec{L}\)</span> are possible and each orientation corresponds to a different <span class="math notranslate nohighlight">\(m_\ell\)</span>.  This phenomenon is called <strong>space quantization</strong> because only certain orientations of <span class="math notranslate nohighlight">\(\vec{L}\)</span> are allowed in space.</p>
@@ -1138,8 +1138,8 @@ L_z = m_\ell \hbar.
 <p>The simultaneous knowledge of the same component of position and momentum is forbidden by the uncertainty principle.</p>
 <p>Only the magnitude of <span class="math notranslate nohighlight">\(\vec{L}\)</span> and <span class="math notranslate nohighlight">\(L_z\)</span> may be specified simultaneously.  The values of <span class="math notranslate nohighlight">\(L_x\)</span> and <span class="math notranslate nohighlight">\(L_y\)</span> must be consistent with <span class="math notranslate nohighlight">\(L^2 = L_x^2 + L_y^2 + L_z^2\)</span> but cannot be specified individually.  The angular momentum vector <span class="math notranslate nohighlight">\(\vec{L}\)</span> <em>never</em> points in the <span class="math notranslate nohighlight">\(z\)</span> direction because <span class="math notranslate nohighlight">\(L = \sqrt{\ell(\ell _ 1)}\hbar\)</span> and <span class="math notranslate nohighlight">\(L &gt; L_z^{\rm max} = \ell \hbar\)</span>.</p>
 <p>The values of <span class="math notranslate nohighlight">\(L_z\)</span> range from <span class="math notranslate nohighlight">\(-\ell\)</span> to <span class="math notranslate nohighlight">\(\ell\)</span> in steps of <span class="math notranslate nohighlight">\(1\)</span>, for a total of <span class="math notranslate nohighlight">\(2\ell + 1\)</span> allowed values.  There is nothing special about the Cartesian directions, and thus we expect the average angular momentum components squared in the three directions to be the same (i.e., <span class="math notranslate nohighlight">\(\langle L_x^2\rangle = \langle L_y^2\rangle = \langle L_z^2\rangle\)</span>).  the average value of <span class="math notranslate nohighlight">\(\langle L^2 \rangle\)</span> is equal to three times the average value of any one of the components.  To find <span class="math notranslate nohighlight">\(\langle L^2 \rangle\)</span>, we use <span class="math notranslate nohighlight">\(L_z\)</span> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c7753343-10c0-4f8e-a114-9ed3c3ad5878">
-<span class="eqno">(7.23)<a class="headerlink" href="#equation-c7753343-10c0-4f8e-a114-9ed3c3ad5878" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-623b36ee-5d32-44a4-8d2e-fdb8a26e43f7">
+<span class="eqno">(7.23)<a class="headerlink" href="#equation-623b36ee-5d32-44a4-8d2e-fdb8a26e43f7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle L^2 \rangle &amp;= 3 \langle L_z^2 \rangle = \frac{3}{2\ell + 1} \sum_{m_\ell = - \ell}^\ell (m_\ell \hbar)^2, \\
 &amp; = \frac{3}{2\ell + 1} \left[\frac{\ell}{3}(\ell+1)(2\ell+1)\hbar^2\right], \\
 &amp;= \ell(\ell+1)\hbar^2.
@@ -1198,21 +1198,21 @@ L_z = m_\ell \hbar.
 </ul>
 <p>The normal Zeeman effect can be explained by considering the atom to behave like a small magnet.  By the 1920s, the <strong>fine structure</strong> of atomic spectral lines from hydrogen and other elements had already been identified.  Fine structure refers to the splitting of a spectral line into more closely spaced lines.</p>
 <p>As a rough model, think of an electron circulating around the nucleus as a circular current loop.  The current loop has a magnetic moment <span class="math notranslate nohighlight">\(\mu = IA\)</span>, which depends on the area of the current loop <span class="math notranslate nohighlight">\(A\)</span> and the movement of the electron through a current <span class="math notranslate nohighlight">\(I = dq/dt\)</span>.  The current can be calculated as the electron charge <span class="math notranslate nohighlight">\(-e\)</span> divided by the period <span class="math notranslate nohighlight">\(T\)</span> to make one revolution $T = 2\pi r/v).  Thus the magnetic moment is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-84c4e468-6fb8-413d-8fa7-627a8ec5aa7e">
-<span class="eqno">(7.24)<a class="headerlink" href="#equation-84c4e468-6fb8-413d-8fa7-627a8ec5aa7e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bad43bff-6fd8-4e58-8ca7-c0586be402d9">
+<span class="eqno">(7.24)<a class="headerlink" href="#equation-bad43bff-6fd8-4e58-8ca7-c0586be402d9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mu &amp;= IA = \frac{q}{T}A, \\
  &amp;= -\frac{e\pi r^2}{2\pi r/v},\\
  &amp; = -\frac{1}{2}erv, \\
  &amp; = -\frac{eL}{2m}, 
 \end{align}\]</div>
 <p>and can be written in terms of the orbital angular momentum <span class="math notranslate nohighlight">\(L = mvr\)</span>.  Both the magnetic moment <span class="math notranslate nohighlight">\(\vec{\mu}\)</span> and angular momentum <span class="math notranslate nohighlight">\(\vec{L}\)</span> are vectors so that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b434ae2e-da3e-4735-84df-7988198f7b20">
-<span class="eqno">(7.25)<a class="headerlink" href="#equation-b434ae2e-da3e-4735-84df-7988198f7b20" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-257e565c-dd6d-4235-91b0-0826ac620bd6">
+<span class="eqno">(7.25)<a class="headerlink" href="#equation-257e565c-dd6d-4235-91b0-0826ac620bd6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\mu} = -\frac{e}{2m}\vec{L}.
 \end{align}\]</div>
 <p>In the absence of an external magnetic field to align them, the magnetic moments <span class="math notranslate nohighlight">\(\vec{\mu}\)</span> of atoms point in random directions.  In classical electromagnetism, if a magnetic dipole is placed in an external field, then the dipole will experience a torque <span class="math notranslate nohighlight">\(\vec{\tau} = \vec{\mu} \times \vec{B}\)</span> that tends to align the dipole with the magnetic field.  The dipole has a potential energy <span class="math notranslate nohighlight">\(V_B\)</span> in the field given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d29dff43-d2c2-454c-a2c0-08a5129a44f8">
-<span class="eqno">(7.26)<a class="headerlink" href="#equation-d29dff43-d2c2-454c-a2c0-08a5129a44f8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-36ca357c-3c2b-4872-91a4-e392e5bcd9ed">
+<span class="eqno">(7.26)<a class="headerlink" href="#equation-36ca357c-3c2b-4872-91a4-e392e5bcd9ed" title="Permalink to this equation">#</a></span>\[\begin{align}
 V_B = -\vec{\mu} \cdot \vec{B}.
 \end{align}\]</div>
 <p>According to classical physics, the magnetic moment will align itself with the external magnetic field to minimize energy as long as the system can change its potential energy.</p>
@@ -1221,8 +1221,8 @@ V_B = -\vec{\mu} \cdot \vec{B}.
 <p>There is a similarity to the case of a spinning top in a gravitational field.  A child’s spinning top precesses about the gravitational field, where the spin axis rotates about the direction of the gravitational force. (i.e., vertical).  The gravitational field is not parallel to the angular momentum, and the force of gravity results in a <em>precession</em> of the top about the field direction.</p>
 </div>
 <p>The angular momentum is aligned with the magnetic moment, and the torque (due to the magnetic moment) causes a precession of <span class="math notranslate nohighlight">\(\vec{\mu}\)</span> about the magnetic field, not an alignment.  The magnetic field establishes a preferred direction in space along which we customarily define the <span class="math notranslate nohighlight">\(z\)</span>-axis.  Then we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0d4959ab-dd3c-4d9d-9232-08861e13a598">
-<span class="eqno">(7.27)<a class="headerlink" href="#equation-0d4959ab-dd3c-4d9d-9232-08861e13a598" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1f1dfcb9-5faa-4a66-81f3-389fde10f637">
+<span class="eqno">(7.27)<a class="headerlink" href="#equation-1f1dfcb9-5faa-4a66-81f3-389fde10f637" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mu_z = \frac{e\hbar}{2m}m_\ell = -\mu_B m_\ell,
 \end{align}\]</div>
 <p>where a unit of the magnetic moment <span class="math notranslate nohighlight">\(\mu_B\)</span> is called the <strong>Bohr magneton</strong>.  From the quantization of <span class="math notranslate nohighlight">\(L_z\)</span> and that <span class="math notranslate nohighlight">\(L&gt;m_\ell \hbar\)</span>, we cannot have <span class="math notranslate nohighlight">\(|\vec{\mu}| = \mu_z\)</span>, or the magnetic moment can’t align itself exactly in the <span class="math notranslate nohighlight">\(z\)</span>-direction.  Therefore, the magnetic moment has only certain quantized orientations.</p>
@@ -1266,14 +1266,14 @@ V_B = -\vec{\mu} \cdot \vec{B}.
 <p>To explain the experimental data, Goudsmit and Uhlenbeck proposed that the electron must have an <em>intrinsic spin quantum number</em> <span class="math notranslate nohighlight">\(s= 1/2\)</span>.  The spinning electron reacts similarly to the orbiting electron in a magnetic field.  Therefore, we should try to find quantities analogous to the angular momentum variable <span class="math notranslate nohighlight">\(L\)</span>, <span class="math notranslate nohighlight">\(L_z\)</span>, <span class="math notranslate nohighlight">\(\ell\)</span>, and <span class="math notranslate nohighlight">\(m_\ell\)</span>.  By analogy, there will be <span class="math notranslate nohighlight">\(2s+1 = 2(1/2) + 1 = 2\)</span> components of the spin angular momentum <span class="math notranslate nohighlight">\(\vec{S}\)</span>.  Thus the <strong>magnetic spin quantum number</strong> <span class="math notranslate nohighlight">\(m_s\)</span> has only two values <span class="math notranslate nohighlight">\(m_s = \pm 1/2\)</span>.  The electron’s spin will be oriented either “up” or “down” in a magnetic field, and the electron can never be spinning with its magnetic moment <span class="math notranslate nohighlight">\(\mu\)</span> exactly along the <span class="math notranslate nohighlight">\(z\)</span> axis (or the direction of the external field <span class="math notranslate nohighlight">\(\vec{B}\)</span>).</p>
 <p>Each atomic state is described by three quantum numbers (<span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(\ell\)</span>, and <span class="math notranslate nohighlight">\(m_\ell\)</span>) plus an additional quantum number <span class="math notranslate nohighlight">\(m_s \pm 1/2\)</span> that accounts for the spin.  The states are degenerate in energy unless an external magnetic field is applied and the energies are split.  Then the energy levels introduced by the magnetic field have removed the energy degeneracy.</p>
 <p>The <strong>intrinsic spin angular momentum</strong> vector <span class="math notranslate nohighlight">\(\vec{S}\)</span> has a magnitude <span class="math notranslate nohighlight">\(S = \sqrt{s(s+1)}\hbar\)</span>, where the magnetic moment <span class="math notranslate nohighlight">\(\vec{\mu}_s = -(e/m)\vec{S} = -(2\mu_B/hbar)\vec{S}\)</span>.  Incorporating the special theory of relativity into the Schrödinger equation (i.e., the Dirac equation) introduces a second factor of <span class="math notranslate nohighlight">\(\mu_B\)</span>.  The relationship between the magnetic moment and the angular momentum vector is called the <a class="reference external" href="https://en.wikipedia.org/wiki/Gyromagnetic_ratio">gyromagnetic ratio</a> and is designated by the letter <span class="math notranslate nohighlight">\(g\)</span>, along with an appropriate subscript <span class="math notranslate nohighlight">\(\ell\)</span> or <span class="math notranslate nohighlight">\(s\)</span>.  In terms of the gyromagnetic ratio:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ad6e2d7b-c677-4193-8f4d-6ffdc5d092cb">
-<span class="eqno">(7.29)<a class="headerlink" href="#equation-ad6e2d7b-c677-4193-8f4d-6ffdc5d092cb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a82a4565-af92-461b-8fda-a40319336bdc">
+<span class="eqno">(7.29)<a class="headerlink" href="#equation-a82a4565-af92-461b-8fda-a40319336bdc" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{\mu}_\ell &amp;= -\frac{g_\ell \mu_B}{\hbar}\vec{L} &amp;= -\frac{\mu_B}{\hbar}\vec{L} \\
 \vec{\mu}_s &amp;= -\frac{g_s \mu_B}{\hbar}\vec{S} &amp;= -\frac{-2\mu_B}{\hbar}\vec{S}.
 \end{align}\]</div>
 <p>The Stern-Gerlach produce two distinct lines due to the quantum number <span class="math notranslate nohighlight">\(m_s\)</span>.  If the atoms were in a <span class="math notranslate nohighlight">\(\ell = 0\)</span> state, there would be now splitting due to <span class="math notranslate nohighlight">\(m_\ell\)</span>, but there is still space quantization due to the intrinsic spin.  A similar expression for potential energy from Eq. <a class="reference internal" href="#equation-pot-energy-mag">(7.28)</a> becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-07cabac0-6270-4f4e-967f-36751650266c">
-<span class="eqno">(7.30)<a class="headerlink" href="#equation-07cabac0-6270-4f4e-967f-36751650266c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7975716a-f168-4605-958f-c3e300ea1019">
+<span class="eqno">(7.30)<a class="headerlink" href="#equation-7975716a-f168-4605-958f-c3e300ea1019" title="Permalink to this equation">#</a></span>\[\begin{align}
 V_s = -\vec{\mu} \cdot \vec{B} = \frac{e}{m}\vec{S} \cdot \vec{B}.
 \end{align}\]</div>
 </div>
@@ -1282,7 +1282,7 @@ V_s = -\vec{\mu} \cdot \vec{B} = \frac{e}{m}\vec{S} \cdot \vec{B}.
 <p>A more complete description of the hydrogen includes every possible state with a distinct wave function that is specified by four quantum numbers <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(\ell\)</span>, <span class="math notranslate nohighlight">\(m_\ell\)</span>, and <span class="math notranslate nohighlight">\(m_s\)</span>.  In many cases the energy differences associates with the magnetic numbers <span class="math notranslate nohighlight">\(m_\ell\)</span> and <span class="math notranslate nohighlight">\(m_s\)</span> are insignificant and we can describe the states adequately by <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(\ell\)</span> alone.</p>
 <p>Generally, capital letters (<span class="math notranslate nohighlight">\(S\)</span>, <span class="math notranslate nohighlight">\(P\)</span>, and <span class="math notranslate nohighlight">\(D\)</span>) describe the orbital angular momentum of atomic states, while the lower case letters (<span class="math notranslate nohighlight">\(s\)</span>, <span class="math notranslate nohighlight">\(p\)</span>, and <span class="math notranslate nohighlight">\(d\)</span>) describe the individual electrons.  For hydrogen, it makes little difference because each state has only a single electron.</p>
 <div class="figure align-default" id="hydrogen-lvls-types">
-<a class="reference internal image-reference" href="http://guweb2.gonzaga.edu/faculty/cronk/chemistry/images/orbital_energy_and_type_diagram.gif"><img alt="orbital_energy_type" src="http://guweb2.gonzaga.edu/faculty/cronk/chemistry/images/orbital_energy_and_type_diagram.gif" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/orbital_energy_and_type_diagram.gif"><img alt="orbital_energy_type" src="../_images/orbital_energy_and_type_diagram.gif" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 7.2 </span><span class="caption-text">Schematic illustrating the hydrogen energy levels along with the associated electron clouds (shells) due to the spherical harmonics. Image credit: Jeff Cronk &#64; Gonzaga University)</span><a class="headerlink" href="#hydrogen-lvls-types" title="Permalink to this image">#</a></p>
 </div>
 <p>Figure <a class="reference internal" href="#hydrogen-lvls-types"><span class="std std-numref">7.2</span></a> illustrates a diagram that incorporates the energy distinction for <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(d\)</span> type orbitals.  Such diagrams can be used for hydrogen and many-electron atoms.  We have previously learned that atoms emit characteristic electromagnetic radiation when the make transitions to states of lower energy.  An atom in its ground state cannot emit radiation because there is not an energy level for which to descend.  However, it can absorb EM radiation to gain energy (or through collisions with other atoms), and have one (or more) of its electron transferred to a higher energy state. Then, the atom can emit its characteristic EM radiation.</p>

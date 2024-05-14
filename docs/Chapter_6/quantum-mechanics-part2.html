@@ -1,51 +1,71 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Quantum Mechanics: Part II &#8212; PHYS2700 Modern Physics</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>6. Quantum Mechanics: Part II &#8212; PHYS2700 Modern Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-6WTX4WF23B');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -54,69 +74,103 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_6/quantum-mechanics-part2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="7. The Hydrogen Atom and Atomic Physics" href="../Chapter_7/hydrogen-atom.html" />
     <link rel="prev" title="5. Quantum Mechanics: Part I" href="../Chapter_5/quantum-mechanics-part1.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
-<script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-6WTX4WF23B');
-                </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../home.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/bohr_gif.gif" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">PHYS2700 Modern Physics</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -125,574 +179,330 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Preamble
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Preamble</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Preamble/who-for.html">
-   Who are these notes for?
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Preamble/Python-basics.html">
-   Introduction to Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Preamble/Markdown-basics.html">
-   Introduction to Markdown
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Preamble/HW_template.html">
-   Homework Assignments
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/who-for.html">Who are these notes for?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/Python-basics.html">Introduction to Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/Markdown-basics.html">Introduction to Markdown</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Preamble/HW_template.html">Homework Assignments</a></li>
+
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_1/birth-of-modern-physics.html">
-   1. Birth of Modern Physics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_2/special-theory-of-relativity.html">
-   2. Special Theory of Relativity
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_3/experimental-quantum-physics.html">
-   3. Experimental Quantum Physics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_4/structure-of-the-atom.html">
-   4. Structure of the Atom
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_1/birth-of-modern-physics.html">1. Birth of Modern Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_2/special-theory-of-relativity.html">2. Special Theory of Relativity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_3/experimental-quantum-physics.html">3. Experimental Quantum Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_4/structure-of-the-atom.html">4. Structure of the Atom</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Quantum Mechanics
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Quantum Mechanics</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_5/quantum-mechanics-part1.html">
-   5. Quantum Mechanics: Part I
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   6. Quantum Mechanics: Part II
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_7/hydrogen-atom.html">
-   7. The Hydrogen Atom and Atomic Physics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_8/statistical-physics.html">
-   8. Statistical Physics
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_5/quantum-mechanics-part1.html">5. Quantum Mechanics: Part I</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Quantum Mechanics: Part II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_7/hydrogen-atom.html">7. The Hydrogen Atom and Atomic Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_8/statistical-physics.html">8. Statistical Physics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Applications of Modern Physics
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Applications of Modern Physics</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_9/molecules-and-lasers.html">
-   9. Molecules and Lasers
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_10/semiconductors.html">
-   10. Semiconductors
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_11/nuclear-physics.html">
-   11. Nuclear Physics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Chapter_12/particle-physics.html">
-   12. Particle Physics
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_9/molecules-and-lasers.html">9. Molecules and Lasers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_10/semiconductors.html">10. Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_11/nuclear-physics.html">11. Nuclear Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Chapter_12/particle-physics.html">12. Particle Physics</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/saturnaxis/ModernPhysics/main?urlpath=tree/Chapter_6/quantum-mechanics-part2.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/saturnaxis/ModernPhysics/main?urlpath=tree/Chapter_6/quantum-mechanics-part2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_binder.svg">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="btn__text-container">Binder</span>
 </a>
-
-      </li>
+</li>
       
-      <li>
-        <a href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_6/quantum-mechanics-part2.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_6/quantum-mechanics-part2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
+      
+      
+      
       
       <li>
-        
 <button onclick="initThebeSBT()"
-  class="headerbtn headerbtn-launch-thebe"
-  data-toggle="tooltip"
-data-placement="left"
-title="Launch Thebe"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-play"></i>
   </span>
-<span class="headerbtn__text-container">Live Code</span>
+<span class="btn__text-container">Live Code</span>
 </button>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/ModernPhysics" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/saturnaxis/ModernPhysics/issues/new?title=Issue%20on%20page%20%2FChapter_6/quantum-mechanics-part2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Chapter_6/quantum-mechanics-part2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/saturnaxis/ModernPhysics"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/saturnaxis/ModernPhysics/issues/new?title=Issue%20on%20page%20%2FChapter_6/quantum-mechanics-part2.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/Chapter_6/quantum-mechanics-part2.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-schrodinger-wave-equation">
-   6.1. The Schrödinger Wave Equation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#normalization-and-probability">
-     6.1.1. Normalization and Probability
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#properties-of-valid-wave-functions">
-     6.1.2. Properties of Valid Wave Functions
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#time-independent-schrodinger-wave-equation">
-     6.1.3. Time-Independent Schrödinger Wave Equation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#comparison-of-classical-and-quantum-mechanics">
-     6.1.4. Comparison of Classical and Quantum Mechanics
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#expectation-values">
-   6.2. Expectation Values
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#infinite-square-well-potential">
-   6.3. Infinite Square-Well Potential
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#finite-square-well-potential">
-   6.4. Finite Square-Well Potential
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#three-dimensional-infinite-potential-well">
-   6.5. Three-Dimensional Infinite-Potential Well
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#simple-harmonic-oscillator">
-   6.6. Simple Harmonic Oscillator
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#barriers-and-tunneling">
-   6.7. Barriers and Tunneling
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#potential-barrier-with-e-v-o">
-     6.7.1. Potential Barrier with
-     <span class="math notranslate nohighlight">
-      \(E&gt;V_o\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     6.7.2. Potential Barrier with
-     <span class="math notranslate nohighlight">
-      \(E&lt;V_o\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#potential-well">
-     6.7.3. Potential Well
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#alpha-particle-decay">
-     6.7.4. Alpha-Particle Decay
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#homework-problems">
-   6.8.
-   <strong>
-    Homework Problems
-   </strong>
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Quantum Mechanics: Part II</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-schrodinger-wave-equation">
-   6.1. The Schrödinger Wave Equation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#normalization-and-probability">
-     6.1.1. Normalization and Probability
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#properties-of-valid-wave-functions">
-     6.1.2. Properties of Valid Wave Functions
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#time-independent-schrodinger-wave-equation">
-     6.1.3. Time-Independent Schrödinger Wave Equation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#comparison-of-classical-and-quantum-mechanics">
-     6.1.4. Comparison of Classical and Quantum Mechanics
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#expectation-values">
-   6.2. Expectation Values
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#infinite-square-well-potential">
-   6.3. Infinite Square-Well Potential
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#finite-square-well-potential">
-   6.4. Finite Square-Well Potential
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#three-dimensional-infinite-potential-well">
-   6.5. Three-Dimensional Infinite-Potential Well
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#simple-harmonic-oscillator">
-   6.6. Simple Harmonic Oscillator
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#barriers-and-tunneling">
-   6.7. Barriers and Tunneling
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#potential-barrier-with-e-v-o">
-     6.7.1. Potential Barrier with
-     <span class="math notranslate nohighlight">
-      \(E&gt;V_o\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     6.7.2. Potential Barrier with
-     <span class="math notranslate nohighlight">
-      \(E&lt;V_o\)
-     </span>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#potential-well">
-     6.7.3. Potential Well
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#alpha-particle-decay">
-     6.7.4. Alpha-Particle Decay
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#homework-problems">
-   6.8.
-   <strong>
-    Homework Problems
-   </strong>
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Quantum Mechanics: Part II</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-schrodinger-wave-equation">6.1. The Schrödinger Wave Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization-and-probability">6.1.1. Normalization and Probability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-valid-wave-functions">6.1.2. Properties of Valid Wave Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-independent-schrodinger-wave-equation">6.1.3. Time-Independent Schrödinger Wave Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-classical-and-quantum-mechanics">6.1.4. Comparison of Classical and Quantum Mechanics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation-values">6.2. Expectation Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-square-well-potential">6.3. Infinite Square-Well Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finite-square-well-potential">6.4. Finite Square-Well Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#three-dimensional-infinite-potential-well">6.5. Three-Dimensional Infinite-Potential Well</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-harmonic-oscillator">6.6. Simple Harmonic Oscillator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#barriers-and-tunneling">6.7. Barriers and Tunneling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-barrier-with-e-v-o">6.7.1. Potential Barrier with <span class="math notranslate nohighlight">\(E&gt;V_o\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.7.2. Potential Barrier with <span class="math notranslate nohighlight">\(E&lt;V_o\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-well">6.7.3. Potential Well</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-particle-decay">6.7.4. Alpha-Particle Decay</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-problems">6.8. <strong>Homework Problems</strong></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="quantum-mechanics-part-ii">
-<h1><span class="section-number">6. </span>Quantum Mechanics: Part II<a class="headerlink" href="#quantum-mechanics-part-ii" title="Permalink to this headline">#</a></h1>
-<div class="section" id="the-schrodinger-wave-equation">
-<h2><span class="section-number">6.1. </span>The Schrödinger Wave Equation<a class="headerlink" href="#the-schrodinger-wave-equation" title="Permalink to this headline">#</a></h2>
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quantum-mechanics-part-ii">
+<h1><span class="section-number">6. </span>Quantum Mechanics: Part II<a class="headerlink" href="#quantum-mechanics-part-ii" title="Permalink to this heading">#</a></h1>
+<section id="the-schrodinger-wave-equation">
+<h2><span class="section-number">6.1. </span>The Schrödinger Wave Equation<a class="headerlink" href="#the-schrodinger-wave-equation" title="Permalink to this heading">#</a></h2>
 <p>In November 1925, Schrödinger was presenting on de Broglie’s wave theory for particles when <a class="reference external" href="https://en.wikipedia.org/wiki/Peter_Debye">Peter Debye</a> suggested that there should be a wave equation.  Within a few weeks, Schrödinger found a suitable equation based on what he knew about geometrical and wave optics.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -718,7 +528,7 @@ allowfullscreen></iframe>
 </div><div class="exercise orange admonition" id="superpos-exercise">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.1 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>The wave equation must be linear so that we can use the <em>superposition principle</em> to form wave packets comprised of two or more waves.  Prove that the wave function in Eqn. <a class="reference internal" href="#equation-1d-schrodinger">(6.1)</a> is linear by using the addition of two waves by using two waves (<span class="math notranslate nohighlight">\(\Psi_1\)</span> and <span class="math notranslate nohighlight">\(\Psi_2\)</span>) with constant coefficients (<span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>) as</strong></p>
 <div class="math notranslate nohighlight">
 \[ \Psi(x,t) = a\Psi_1(x,t) + b\Psi_2(x,t), \]</div>
@@ -737,7 +547,7 @@ allowfullscreen></iframe>
 <div class="math notranslate nohighlight">
 \[ a \left(i\hbar\frac{\partial \Psi_1}{\partial t} + \frac{\hbar^2}{2m}\frac{\partial^2 \Psi_1}{\partial x^2} - V\Psi_1 \right) = -b \left(i\hbar\frac{\partial \Psi_2}{\partial t} + \frac{\hbar^2}{2m}\frac{\partial^2 \Psi_2}{\partial x^2} - V\Psi_2 \right). \]</div>
 <p>If <span class="math notranslate nohighlight">\(\Psi_1\)</span> and <span class="math notranslate nohighlight">\(\Psi_2\)</span> satisfy Eqn. <a class="reference internal" href="#equation-1d-schrodinger">(6.1)</a> individually, then the quantities in parentheses are identically zero.  Therefore <span class="math notranslate nohighlight">\(\Psi\)</span> is also a solution.</p>
-</div>
+</section>
 </div>
 <p>A wave can be characterized by a wave number <span class="math notranslate nohighlight">\(k\)</span> and angular frequency <span class="math notranslate nohighlight">\(\omega\)</span> traveling in the <span class="math notranslate nohighlight">\(+x\)</span> direction by</p>
 <div class="math notranslate nohighlight" id="equation-sine-wave">
@@ -749,7 +559,7 @@ allowfullscreen></iframe>
 <div class="exercise orange admonition" id="TISE-exercise">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.2 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>(a) Show that <span class="math notranslate nohighlight">\(\Psi_A(x,t) = Ae^{i(kx-\omega t)}\)</span> satisfies the time-dependent Schrödinger wave equation.</strong></p>
 <p><strong>(b) Determine whether <span class="math notranslate nohighlight">\(\Psi_B(x,t) = A\sin(kx-\omega t)\)</span> is an acceptable solution to the time-dependent Schrödinger wave equation.</strong></p>
 <p><strong>(a)</strong>  Similar to the previous example, we need to take the appropriate partial derivatives of the wave function <span class="math notranslate nohighlight">\(\Psi_A\)</span> with respect to time as</p>
@@ -799,16 +609,16 @@ i\hbar \left(-\omega A\cos(kx-\omega t) \right) &amp;= -\frac{\hbar^2}{2m} \left
 &amp;= \left(\frac{\hbar^2k^2}{2m} + V\right) \Psi_B.
 \end{align*}\]</div>
 <p>The left-hand side of the above result is complex where the right-hand side is real.  Therefore, <span class="math notranslate nohighlight">\(\Psi_B\)</span> is not an acceptable wave function because Eqn. <a class="reference internal" href="#equation-1d-schrodinger">(6.1)</a> is not satisfied for all <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>.  The function <span class="math notranslate nohighlight">\(\Psi_B\)</span> is a solution to the classical wave equation.</p>
+</section>
 </div>
-</div>
-<div class="section" id="normalization-and-probability">
-<h3><span class="section-number">6.1.1. </span>Normalization and Probability<a class="headerlink" href="#normalization-and-probability" title="Permalink to this headline">#</a></h3>
+<section id="normalization-and-probability">
+<h3><span class="section-number">6.1.1. </span>Normalization and Probability<a class="headerlink" href="#normalization-and-probability" title="Permalink to this heading">#</a></h3>
 <p>The probability <span class="math notranslate nohighlight">\(P(x)\ dx\)</span> of a particle between <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x+dx\)</span> is given as</p>
 <div class="math notranslate nohighlight">
 \[ P(x)\ dx = |\Psi(x,t)|^2\ dx = \Psi^*(x,t)\Psi(x,t)\ dx, \]</div>
 <p>where the complex conjugate operator <span class="math notranslate nohighlight">\(^*\)</span> negates the complex parts of a function (i.e., <span class="math notranslate nohighlight">\(i\rightarrow -i\)</span>) and leaves the real parts unchanged.  The probability of a particle existing between two points (<span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>) is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b2a2d071-2e56-4cb5-9ae4-4f8a879e6529">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-b2a2d071-2e56-4cb5-9ae4-4f8a879e6529" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f5c429a1-cbe9-4d6f-8347-c6e809b09cdf">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-f5c429a1-cbe9-4d6f-8347-c6e809b09cdf" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 \end{align}\]</div>
 <p>If the wave function represents the probability of a particle existing somewhere, then the sum of all probability intervals must equal unity, or</p>
@@ -816,6 +626,11 @@ P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 <span class="eqno">(6.4)<a class="headerlink" href="#equation-normalization" title="Permalink to this equation">#</a></span>\[P(\text{all space}) = \int_{-\infty}^\infty \Psi^*\Psi dx = 1,\]</div>
 <p>which is called <strong>normalization</strong>.</p>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -860,19 +675,20 @@ P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_6_1.png" src="../_images/quantum-mechanics-part2_6_1.png" />
+<img alt="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" src="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" />
 </div>
+</details>
 </div>
-<div class="figure align-default" id="wave-function" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_6_0.png" src="../_images/quantum-mechanics-part2_6_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.1 </span><span class="caption-text">The wave function <span class="math notranslate nohighlight">\(\Psi(x) = Ae^{-\frac{|x|}{\alpha}}\)</span> is plotted as a function of <span class="math notranslate nohighlight">\(x\)</span>. The area under the curve represents the probability to find the particle between <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>.  Note that the wave function is symmetric about <span class="math notranslate nohighlight">\(x=0\)</span>.</span><a class="headerlink" href="#wave-function" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="wave-function" style="width: 600px">
+<img alt="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" src="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">The wave function <span class="math notranslate nohighlight">\(\Psi(x) = Ae^{-\frac{|x|}{\alpha}}\)</span> is plotted as a function of <span class="math notranslate nohighlight">\(x\)</span>. The area under the curve represents the probability to find the particle between <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>.  Note that the wave function is symmetric about <span class="math notranslate nohighlight">\(x=0\)</span>.</span><a class="headerlink" href="#wave-function" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="exercise orange admonition" id="normalize-exercise">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.3 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Consider a wave packet formed by using the wave function <span class="math notranslate nohighlight">\(\Psi(x) = Ae^{-\frac{|x|}{\alpha}}\)</span>, where <span class="math notranslate nohighlight">\(A\)</span> is a constant to be determined by normalization (Fig. <a class="reference internal" href="#wave-function"><span class="std std-numref">6.1</span></a>).  Normalize this wave function and find the probabilities of the particle being between (a) <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> (gray area in Fig. <a class="reference internal" href="#wave-function"><span class="std std-numref">6.1</span></a> ) and (b) <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(2\alpha\)</span> (blue area in Fig. <a class="reference internal" href="#wave-function"><span class="std std-numref">6.1</span></a>).</strong></p>
 <p>To normalize the wave function <span class="math notranslate nohighlight">\(\Psi\)</span>, we use Eqn. <a class="reference internal" href="#equation-normalization">(6.4)</a> by</p>
 <div class="amsmath math notranslate nohighlight">
@@ -904,31 +720,31 @@ P_b &amp;= \frac{1}{\alpha} \int_0^\alpha e^{-\frac{2x}{\alpha}} dx, \\
 &amp;= -\frac{1}{2}\left(e^{-4}-e^{-2}\right) \approx 0.059.
 \end{align*}\]</div>
 <p>The particle is much more likely to exist in interval (a) than in interval (b).  This is expected given the shape of the wave function.</p>
-</div>
+</section>
 </div>
 <p>The wave function <span class="math notranslate nohighlight">\(e^{i(kx-\omega t)}\)</span> represents a “free” particle under zero net force (constant <span class="math notranslate nohighlight">\(V\)</span>) moving along the <span class="math notranslate nohighlight">\(x\)</span> axis.  There is a problem with this wave function if we try to normalize it. <em>The normalization integral diverges to infinity!</em></p>
 <p>This occurs because there is a finite probability of the particle to exist anywhere along the <span class="math notranslate nohighlight">\(x\)</span> axis and our sum is trying to add up an infinite number of small boxes containing a finite probability.  The only other possibility is a zero probability, but that is not an interesting physical result.</p>
 <p>Because this wave function has a precise <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span>, it represents a particle with a definite energy and momentum.  From the uncertainty principle, <span class="math notranslate nohighlight">\(\Delta E = 0\)</span> and <span class="math notranslate nohighlight">\(\Delta p = 0\)</span>, which implies that <span class="math notranslate nohighlight">\(\Delta t = \infty\)</span> and <span class="math notranslate nohighlight">\(\Delta x = \infty\)</span>.  We cannot know where the particle is at any time.  We can still use such wave functions, if we restrict the particle to certain positions in space, such as in a box or in an atom.  We can also form wave packets from such functions to localize the particle.</p>
-</div>
-<div class="section" id="properties-of-valid-wave-functions">
-<h3><span class="section-number">6.1.2. </span>Properties of Valid Wave Functions<a class="headerlink" href="#properties-of-valid-wave-functions" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="properties-of-valid-wave-functions">
+<h3><span class="section-number">6.1.2. </span>Properties of Valid Wave Functions<a class="headerlink" href="#properties-of-valid-wave-functions" title="Permalink to this heading">#</a></h3>
 <p>There are certain properties (i.e., <strong>boundary conditions</strong>) that an acceptable wave function <span class="math notranslate nohighlight">\(\Psi\)</span> must:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>be finite everywhere to avoid infinite probabilities.</p></li>
 <li><p>be single valued to avoid multiple values of the probability.</p></li>
 <li><p>be continuous for finite potentials.  Its spatial derivative <span class="math notranslate nohighlight">\(\partial \Psi/\partial x\)</span> must also be continuous.  This is required due to the second-order derivative term in the Schrödinger equation. (There are exceptions to this rule for infinite potentials).</p></li>
 <li><p>must approach zero as <span class="math notranslate nohighlight">\(x \rightarrow \pm \infty\)</span> to normalize the wave functions.</p></li>
 </ol>
 <p>Solutions for <span class="math notranslate nohighlight">\(\Psi\)</span> that do not satisfy these properties do not generally correspond to physically realizable circumstances.</p>
-</div>
-<div class="section" id="time-independent-schrodinger-wave-equation">
-<h3><span class="section-number">6.1.3. </span>Time-Independent Schrödinger Wave Equation<a class="headerlink" href="#time-independent-schrodinger-wave-equation" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="time-independent-schrodinger-wave-equation">
+<h3><span class="section-number">6.1.3. </span>Time-Independent Schrödinger Wave Equation<a class="headerlink" href="#time-independent-schrodinger-wave-equation" title="Permalink to this heading">#</a></h3>
 <p>In many cases, the potential will not depend explicitly on time (i.e., time-independent).  The dependence on time and position can then be separated in the Schödinger equation.  Let <span class="math notranslate nohighlight">\(\Psi(x,t) = \psi(x)f(t)\)</span>, and insert into Eqn. <a class="reference internal" href="#equation-1d-schrodinger">(6.1)</a> to find</p>
 <div class="math notranslate nohighlight">
 \[ i\hbar \psi(x)\frac{\partial f(t)}{\partial t} = -\frac{\hbar^2 f(t)}{2m}\frac{\partial^2 \psi(x)}{\partial x^2} + V(x)\psi(x)f(t). \]</div>
 <p>Dividing by <span class="math notranslate nohighlight">\(\psi(x) f(t)\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c66dabe2-79f9-4143-bf8c-27fa40948fa2">
-<span class="eqno">(6.5)<a class="headerlink" href="#equation-c66dabe2-79f9-4143-bf8c-27fa40948fa2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-48656454-d59c-4d62-a4f2-99aca48e1acc">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-48656454-d59c-4d62-a4f2-99aca48e1acc" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{i\hbar}{f(t)} \frac{d f(t)}{dt} = -\frac{\hbar^2}{2m}\frac{d^2 \psi(x)}{d x^2} + V(x). 
 \end{align}\]</div>
 <p>Notice that the left-hand side depends only on time, while the right-hand side depends only on spatial coordinates.  This allows us to change the partial derivatives to ordinary derivatives because each side depends only on one variable.  Each side must be equal to a constant because one variable may change independently of the other.  Let’s call this constant <span class="math notranslate nohighlight">\(B\)</span> and set it equal to the left-hand side to get</p>
@@ -944,8 +760,8 @@ i\hbar \int \frac{df}{f} &amp;= \int B\ dt.
 <div class="math notranslate nohighlight">
 \[ \ln f = \frac{Bt}{i\hbar}, \]</div>
 <p>and we determine <span class="math notranslate nohighlight">\(f\)</span> to be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9757e2cd-507f-46e3-b5e8-12e03cfa48dc">
-<span class="eqno">(6.6)<a class="headerlink" href="#equation-9757e2cd-507f-46e3-b5e8-12e03cfa48dc" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-6165f4b3-a340-4e5d-96f8-102c16e93ca2">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-6165f4b3-a340-4e5d-96f8-102c16e93ca2" title="Permalink to this equation">#</a></span>\[\begin{align} 
 f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 \end{align}\]</div>
 <p>If we let <span class="math notranslate nohighlight">\(B = \hbar \omega = E\)</span>, then <span class="math notranslate nohighlight">\(f(t) = e^{-i\omega t} = e^{-\frac{iEt}{\hbar}}\)</span>.  We can now write the <strong>time-independent Schödinger equation</strong> as</p>
@@ -956,8 +772,8 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <span class="eqno">(6.8)<a class="headerlink" href="#equation-ti-wave-function" title="Permalink to this equation">#</a></span>\[\Psi(x,t) = \psi(x)e^{-i\omega t}.\]</div>
 <p>Many important results can be obtained when only the spatial part of the wave function <span class="math notranslate nohighlight">\(\psi(x)\)</span> is needed.</p>
 <p>The probability density used the complex conjugate operator, which now becomes useful.  Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-246c43a4-5252-4b58-9d9d-7261cf2418ae">
-<span class="eqno">(6.9)<a class="headerlink" href="#equation-246c43a4-5252-4b58-9d9d-7261cf2418ae" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bd6c69dc-349b-4463-8c9a-aeb74d4b7dbd">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-bd6c69dc-349b-4463-8c9a-aeb74d4b7dbd" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Psi^*\Psi &amp;= \psi^2(x)\left(e^{i\omega t}e^{-i\omega t}\right), \\
 &amp;= \psi^2(x),
 \end{align}\]</div>
@@ -965,7 +781,7 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <div class="exercise orange admonition" id="free_particle">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.4 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Consider a metal in which there are free electrons, and the potential is zero (e.g., a conductor).  What mathematical form does the wave function <span class="math notranslate nohighlight">\(\psi(x)\)</span> take?</strong></p>
 <p>Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we let <span class="math notranslate nohighlight">\(V(x)=0\)</span> to get</p>
 <div class="math notranslate nohighlight">
@@ -980,41 +796,41 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <p>Otherwise (<span class="math notranslate nohighlight">\(E&lt;0\)</span>), then <span class="math notranslate nohighlight">\(k^2\)</span> is imaginary and the wave function solution is</p>
 <div class="math notranslate nohighlight">
 \[ \psi(x) = Ce^{ikx}.\]</div>
+</section>
 </div>
-</div>
-</div>
-<div class="section" id="comparison-of-classical-and-quantum-mechanics">
-<h3><span class="section-number">6.1.4. </span>Comparison of Classical and Quantum Mechanics<a class="headerlink" href="#comparison-of-classical-and-quantum-mechanics" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="comparison-of-classical-and-quantum-mechanics">
+<h3><span class="section-number">6.1.4. </span>Comparison of Classical and Quantum Mechanics<a class="headerlink" href="#comparison-of-classical-and-quantum-mechanics" title="Permalink to this heading">#</a></h3>
 <p>Newton’s second law (<span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span>) and Schrödinger’s equation are both differential equations that are postulated to explain observed behavior, and experiments show that they are successful.  Newton’s second law can be derived from the Schrödinger equation.  Schrödinger’s equation is more fundamental.  Classical mechanics only appears to be more precise because it deals with macroscopic phenomena, where the underlying uncertainties are just too small to be significant.</p>
 <p>An interesting parallel between classical and quantum mechanics lies in considering ray and wave optics.  Throughout the 18th century, scientists argued whether wave or ray optics was more fundamental (Newton favored ray optics).  In the early 19th century, it was shown that wave optics was need to explain diffraction and interference.  Ray optics is a good approximation as long as the wavelength <span class="math notranslate nohighlight">\(\lambda\)</span> is much smaller than the dimensions of the apertures because rays of light are characteristic of particle-like behavior.  To describe interference phenomena, wave optics is required.</p>
 <p>For macroscopic objects, the de Broglie wavelength is so small that wave behavior is not apparent.  Eventually the wave descriptions and quantum mechanics were required to understand all the data.  Classical mechanics is a good macroscopic approximation, but there is only one correct theory, <em>quantum mechanics</em>, as far as we know.</p>
-</div>
-</div>
-<div class="section" id="expectation-values">
-<h2><span class="section-number">6.2. </span>Expectation Values<a class="headerlink" href="#expectation-values" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section id="expectation-values">
+<h2><span class="section-number">6.2. </span>Expectation Values<a class="headerlink" href="#expectation-values" title="Permalink to this heading">#</a></h2>
 <p>The wave equation formalism must measure physical quantities (e.g., position, momentum, and energy).  <strong>Consider a measurement of the the position <span class="math notranslate nohighlight">\(x\)</span> of a particular system.</strong>  If we make three measurements of the position, we are likely to obtain three different results due to uncertainty.  If our method of measurement is inherently accurate, then there is some physical significance to the <em>average</em> of our measure values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p>The precision of our result improves with additional measurement.  In quantum mechanics, we use wave functions to calculate the expected result of the average of many measurements of a given quantity.  Measurements are made through integration, which returns the average value (recall the <a class="reference external" href="https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus">mean value theorem</a> from calculus).  We call this result the <strong>expectation value</strong>, where the expectation value of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(\langle x \rangle\)</span>.  *<em>Physical observables</em> are found the the epxectation value.  The expectation value mus be <em>real</em> (i.e., not complex) because the results of measurements are real.</p>
 <p><strong>Consider a particle that is constrained to move along the <span class="math notranslate nohighlight">\(x\)</span>-axis.</strong>  If we make many measurements of the particle, we may observe the particle at the position <span class="math notranslate nohighlight">\(x_1\)</span> for a number <span class="math notranslate nohighlight">\(N_1\)</span> times, the position <span class="math notranslate nohighlight">\(x_2\)</span> for <span class="math notranslate nohighlight">\(N_2\)</span> times, and so forth.  The average value of <span class="math notranslate nohighlight">\(x\)</span> (i.e., <span class="math notranslate nohighlight">\(\bar{x}\)</span> or <span class="math notranslate nohighlight">\(x_{\rm av}\)</span>) is then</p>
 <div class="math notranslate nohighlight">
 \[ \bar{x} = \frac{N_1 x_1 + N_2 x_2 + \cdots}{N_1 + N_2 + \cdots} = \frac{\sum_i N_i x_i}{\sum_i N_i}, \]</div>
 <p>from a series of discrete measurements.  For continuous variables, we use the probability <span class="math notranslate nohighlight">\(P(x,t)\)</span> of observing the particle at a particular <span class="math notranslate nohighlight">\(x\)</span>.  Then the average value of <span class="math notranslate nohighlight">\(x\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-92aaaf80-7fd3-4f55-bb77-e67ac82ecc00">
-<span class="eqno">(6.10)<a class="headerlink" href="#equation-92aaaf80-7fd3-4f55-bb77-e67ac82ecc00" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-49ee0cdb-3b2b-4230-8e23-fde0bcd6d241">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-49ee0cdb-3b2b-4230-8e23-fde0bcd6d241" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{x} = \frac{\int_{-\infty}^\infty xP(x) dx}{\int_{-\infty}^\infty P(x) dx}.
 \end{align}\]</div>
 <p>In quantum mechanics, we use the probability distribution (i.e., <span class="math notranslate nohighlight">\(P(x)dx = \Psi^*(x,t)\Psi(x,t) dx\)</span>) to determine the average or expectation value.  The expectation value <span class="math notranslate nohighlight">\(\langle x \rangle\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4f5316f3-4815-4f49-afb8-d9f7354d6917">
-<span class="eqno">(6.11)<a class="headerlink" href="#equation-4f5316f3-4815-4f49-afb8-d9f7354d6917" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-59d2db31-ae80-47bc-b5bb-d4f9c1cdd593">
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-59d2db31-ae80-47bc-b5bb-d4f9c1cdd593" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle x \rangle = \frac{\int_{-\infty}^\infty x\Psi^*(x,t)\Psi(x,t) dx}{\int_{-\infty}^\infty \Psi^*(x,t)\Psi(x,t) dx}.
 \end{align}\]</div>
 <p>The denominator is the normalization equation.  If the wave function is normalized, then the denominator is equal to unity.  For a <em>normalized</em> wave function <span class="math notranslate nohighlight">\(\Psi\)</span>, the expectation value is then given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-82eff9e4-f91a-4bf6-9946-9f9be4695f84">
-<span class="eqno">(6.12)<a class="headerlink" href="#equation-82eff9e4-f91a-4bf6-9946-9f9be4695f84" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7a741b4b-babb-481a-83ef-b1b3d45b5059">
+<span class="eqno">(6.12)<a class="headerlink" href="#equation-7a741b4b-babb-481a-83ef-b1b3d45b5059" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle x \rangle = \int_{-\infty}^\infty x\Psi^*(x,t)\Psi(x,t) dx.
 \end{align}\]</div>
 <p>The same general procedure is applicable to determining the expectation value of any function <span class="math notranslate nohighlight">\(g(x)\)</span> for a normalized wave function <span class="math notranslate nohighlight">\(\Psi(x,t)\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7fb70a70-965f-4119-b7ac-b6e232b831be">
-<span class="eqno">(6.13)<a class="headerlink" href="#equation-7fb70a70-965f-4119-b7ac-b6e232b831be" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bf5f469b-6d2e-401f-9421-4c9605837b80">
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-bf5f469b-6d2e-401f-9421-4c9605837b80" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle g(x) \rangle = \int_{-\infty}^\infty \Psi^*(x,t)g(x)\Psi(x,t) dx.
 \end{align}\]</div>
 <p>Any knowledge we might have of the simultaneous value of the position <span class="math notranslate nohighlight">\(x\)</span> and the momentum <span class="math notranslate nohighlight">\(p\)</span> must be consistent with the uncertainty principle.  To find the expectation value of <span class="math notranslate nohighlight">\(p\)</span>, we need to represent <span class="math notranslate nohighlight">\(p\)</span> in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>.  <strong>Consider the wave function of the free particle, <span class="math notranslate nohighlight">\(\Psi(x,t) = e^{i(kx-\omega t)}\)</span>.</strong>  The spatial derivative is</p>
@@ -1034,19 +850,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>An <strong>operator</strong> is a mathematical operation that transforms one function into another.  <em>Coffee is the operator that transforms ideas into knowledge!</em>  An operator, denoted by <span class="math notranslate nohighlight">\(\hat{Q}\)</span>, transforms the function <span class="math notranslate nohighlight">\(f(x)\)</span> by <span class="math notranslate nohighlight">\(\hat{Q}f(x) = g(x)\)</span>.  The <em>momentum operator</em> <span class="math notranslate nohighlight">\(\hat{p}\)</span> is then represented by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a4495349-1baa-4d1a-8e0b-81e5bd9650f4">
-<span class="eqno">(6.14)<a class="headerlink" href="#equation-a4495349-1baa-4d1a-8e0b-81e5bd9650f4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-49a01189-042c-4aa9-ac67-c95203e6532c">
+<span class="eqno">(6.14)<a class="headerlink" href="#equation-49a01189-042c-4aa9-ac67-c95203e6532c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \hat{p} = -i\hbar \frac{\partial}{\partial x},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(\hat{\ }\)</span> symbol (i.e., “hat”) sign over the letter indicates that it is an operator.</p>
 <p>The momentum operator is not unique, where each of the physical observables has an associated operator that used to find the observable’s expectation value.  To compute the expectation value of some physical observable <span class="math notranslate nohighlight">\(Q\)</span>, the operator <span class="math notranslate nohighlight">\(\hat{Q}\)</span> must <em>operate</em> on <span class="math notranslate nohighlight">\(\Psi\)</span> before calculating the probability to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-de6866c9-ea73-45b2-bd19-eaff51f581bd">
-<span class="eqno">(6.15)<a class="headerlink" href="#equation-de6866c9-ea73-45b2-bd19-eaff51f581bd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6ba877e3-3e82-46d6-93cd-1179458d41dd">
+<span class="eqno">(6.15)<a class="headerlink" href="#equation-6ba877e3-3e82-46d6-93cd-1179458d41dd" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle Q \rangle = \int_{-\infty}^\infty \Psi^*(x,t)\hat{Q}\Psi(x,t) dx.
 \end{align}\]</div>
 <p>The expectation value of the momentum <span class="math notranslate nohighlight">\(p\)</span> becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7a994a81-d0ce-4e96-b395-025dcc896a6a">
-<span class="eqno">(6.16)<a class="headerlink" href="#equation-7a994a81-d0ce-4e96-b395-025dcc896a6a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-796b7e2c-f9f7-4429-b050-f3b1279b0dbd">
+<span class="eqno">(6.16)<a class="headerlink" href="#equation-796b7e2c-f9f7-4429-b050-f3b1279b0dbd" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle p \rangle &amp;= \int_{-\infty}^\infty \Psi^*(x,t)\hat{p}\Psi(x,t) dx, \\
 &amp;=-i\hbar \int_{-\infty}^\infty \Psi^*(x,t)\frac{\partial \Psi(x,t)}{\partial x} dx.
 \end{align}\]</div>
@@ -1059,8 +875,8 @@ allowfullscreen></iframe>
 <span class="eqno">(6.17)<a class="headerlink" href="#equation-energy-operator" title="Permalink to this equation">#</a></span>\[\begin{split}E\left[\Psi(x,t)\right] &amp;= i\hbar \frac{\partial \Psi}{\partial t}, \\
 \hat{E}\Psi(x,t) &amp;= i\hbar \frac{\partial }{\partial t}\Psi(x,t).\end{split}\]</div>
 <p>The energy operator <span class="math notranslate nohighlight">\(\hat{E}\)</span> is used to find the expectation value <span class="math notranslate nohighlight">\(\langle E \rangle\)</span> of the energy by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-de40087c-a628-4fb9-8cca-8a20ea1c95c5">
-<span class="eqno">(6.18)<a class="headerlink" href="#equation-de40087c-a628-4fb9-8cca-8a20ea1c95c5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-13164aad-213b-40e5-921d-a1d6dc973d9e">
+<span class="eqno">(6.18)<a class="headerlink" href="#equation-13164aad-213b-40e5-921d-a1d6dc973d9e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle E \rangle &amp;= \int_{-\infty}^\infty \Psi^*(x,t)\hat{E}\Psi(x,t) dx, \\
 &amp;=i\hbar \int_{-\infty}^\infty \Psi^*(x,t)\frac{\partial \Psi(x,t)}{\partial t} dx.
 \end{align}\]</div>
@@ -1068,7 +884,7 @@ allowfullscreen></iframe>
 <div class="exercise orange admonition" id="energy-operator">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.5 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Use the momentum and energy operators with the conservation of energy to produce the Schrödinger wave equation.</strong></p>
 <p>The conservation of energy tells us how to calculate the total energy</p>
 <div class="math notranslate nohighlight">
@@ -1086,11 +902,11 @@ allowfullscreen></iframe>
 i\hbar \frac{\partial }{\partial t}\Psi(x,t) &amp;= -\frac{\hbar^2}{2m} \frac{\partial^2 \Psi}{\partial x^2} + V\Psi,
 \end{align*}\]</div>
 <p>which is the time-dependent Schrödinger wave equation.  This is not a derivation, but only a verification of the consistency of the definition.</p>
+</section>
 </div>
-</div>
-</div>
-<div class="section" id="infinite-square-well-potential">
-<h2><span class="section-number">6.3. </span>Infinite Square-Well Potential<a class="headerlink" href="#infinite-square-well-potential" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="infinite-square-well-potential">
+<h2><span class="section-number">6.3. </span>Infinite Square-Well Potential<a class="headerlink" href="#infinite-square-well-potential" title="Permalink to this heading">#</a></h2>
 <p>The simplest system consists of a particle trapped in a well with infinitely hard walls that the particle cannot penetrate (i.e., particle-in-a-box).  This scenario was explored in Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_5/quantum-mechanics.html#particle-in-a-box">5.8</a>, but now we present the full quantum mechanical solution.</p>
 <div align="center">
 <iframe width="560" height="315"
@@ -1100,8 +916,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>The potential that gives rise to an <em>infinite square well</em> with a width <span class="math notranslate nohighlight">\(L\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7ce83422-dd62-4be7-9e12-39f5d6ce60fa">
-<span class="eqno">(6.19)<a class="headerlink" href="#equation-7ce83422-dd62-4be7-9e12-39f5d6ce60fa" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-763489a9-00ff-49cb-8f7a-de74953db359">
+<span class="eqno">(6.19)<a class="headerlink" href="#equation-763489a9-00ff-49cb-8f7a-de74953db359" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = \begin{cases} \infty &amp;\qquad x\leq 0, x\geq L \\ 0 &amp;\qquad 0&lt;x&lt;L. \end{cases}
 \end{align}\]</div>
 <p>The particle is constrained to move only between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>, where the particle experiences no forces.  The infinite square-well potential can approximate many physical situations, such as the energy levels of simple atomic and nuclear systems.</p>
@@ -1114,24 +930,24 @@ V(x) = \begin{cases} \infty &amp;\qquad x\leq 0, x\geq L \\ 0 &amp;\qquad 0&lt;x
 <div class="math notranslate nohighlight">
 \[ \frac{d^2 \psi}{dx^2} = -\frac{2mE}{\hbar^2}\psi = -k^2 \psi, \]</div>
 <p>where the wave number <span class="math notranslate nohighlight">\(k = \sqrt{2mE/\hbar^2}\)</span>.  A suitable solution to this equation is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d1ba74c-65bc-4f74-b2a9-73ca6099e113">
-<span class="eqno">(6.20)<a class="headerlink" href="#equation-7d1ba74c-65bc-4f74-b2a9-73ca6099e113" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-88113a3e-8737-4124-acbf-e4af59d0eb16">
+<span class="eqno">(6.20)<a class="headerlink" href="#equation-88113a3e-8737-4124-acbf-e4af59d0eb16" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x) = A\sin kx + B \cos kx, 
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants used to normalize the wave function.  The wave function must be continuous at the boundaries, which means that <span class="math notranslate nohighlight">\(\psi(0)=\psi(L) = 0\)</span>.  Let’s apply these boundary conditions as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-092529f3-b9af-4a37-a2a9-2533d6c9a117">
-<span class="eqno">(6.21)<a class="headerlink" href="#equation-092529f3-b9af-4a37-a2a9-2533d6c9a117" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2bc57cb2-c7e6-476a-8654-b9dbc6bd35c5">
+<span class="eqno">(6.21)<a class="headerlink" href="#equation-2bc57cb2-c7e6-476a-8654-b9dbc6bd35c5" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(0) &amp;= A \sin (0) + B \cos(0) = B, \\
 \psi(L) &amp;= A \sin (kL) + B \cos(kL).
 \end{align}\]</div>
 <p>For <span class="math notranslate nohighlight">\(\psi(0) = 0\)</span>, this implies that <span class="math notranslate nohighlight">\(B=0\)</span>.  To apply <span class="math notranslate nohighlight">\(\psi(L) = 0\)</span>, then <span class="math notranslate nohighlight">\(A\sin(kL) = 0\)</span> and <span class="math notranslate nohighlight">\(A=0\)</span> is a trivial solution.  We must have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-47005996-5863-4afe-a02e-4eac146f0e69">
-<span class="eqno">(6.22)<a class="headerlink" href="#equation-47005996-5863-4afe-a02e-4eac146f0e69" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-05d3cb09-722c-4597-86d9-ab6d9fe8cf5f">
+<span class="eqno">(6.22)<a class="headerlink" href="#equation-05d3cb09-722c-4597-86d9-ab6d9fe8cf5f" title="Permalink to this equation">#</a></span>\[\begin{align}
 kL = n\pi
 \end{align}\]</div>
 <p>for <span class="math notranslate nohighlight">\(\sin(kL) = 0\)</span> and <span class="math notranslate nohighlight">\(n\)</span> is a positive integer.  The wave function is now</p>
-<div class="amsmath math notranslate nohighlight" id="equation-767292d1-3b52-4d4f-8b0a-f8c05c03853b">
-<span class="eqno">(6.23)<a class="headerlink" href="#equation-767292d1-3b52-4d4f-8b0a-f8c05c03853b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5af9390b-597e-4039-8639-1cffe17c4d2a">
+<span class="eqno">(6.23)<a class="headerlink" href="#equation-5af9390b-597e-4039-8639-1cffe17c4d2a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_n(x) = A \sin \left(\frac{n\pi}{L} x \right) \quad (n=1,\ 2,\ 3,\ \ldots).
 \end{align}\]</div>
 <p>The property that <span class="math notranslate nohighlight">\(d\psi /dx\)</span> must also be continuous so that we can normalize the wave function.  The normalization condition is</p>
@@ -1165,7 +981,7 @@ kL = n\pi
 <div class="exercise orange admonition" id="operator-exercise">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.6 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Determine the expectation values for (a) <span class="math notranslate nohighlight">\(x\)</span>, (b) <span class="math notranslate nohighlight">\(x^2\)</span>, (c) <span class="math notranslate nohighlight">\(p\)</span>, and (d) <span class="math notranslate nohighlight">\(p^2\)</span> of a particle in an infinite square well for the first excited state.</strong></p>
 <p>The first excited state corresponds to <span class="math notranslate nohighlight">\(n=2\)</span>, and we know the quantized (normalized) wave function for a particle in an infinite square well from Eqn. <a class="reference internal" href="#equation-normal-wave-func">(6.24)</a>.  This gives</p>
 <div class="math notranslate nohighlight">
@@ -1210,7 +1026,7 @@ kL = n\pi
 <div class="math notranslate nohighlight">
 \[ E_2 = \frac{\langle p^2\rangle}{2m} = \frac{4\pi^2 \hbar^2}{2mL^2}, \]</div>
 <p>which is correct because <span class="math notranslate nohighlight">\(V=0\)</span>.</p>
-</div>
+</section>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1240,23 +1056,21 @@ kL = n\pi
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for x is L/2
+The expectation value for x**2 is -L**2/(8*pi**2) + L**2/3 = [1/3 - 1/(8*pi**2)]*L**2 = 0.32 L**2
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for x**2 is -L**2/(8*pi**2) + L**2/3 = [1/3 - 1/(8*pi**2)]*L**2 = 0.32 L**2
-The expectation value for p is 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for p**2 is 4*pi**2*hbar**2/L**2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for p is 0
+The expectation value for p**2 is 4*pi**2*hbar**2/L**2
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="finite-square-well-potential">
-<h2><span class="section-number">6.4. </span>Finite Square-Well Potential<a class="headerlink" href="#finite-square-well-potential" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="finite-square-well-potential">
+<h2><span class="section-number">6.4. </span>Finite Square-Well Potential<a class="headerlink" href="#finite-square-well-potential" title="Permalink to this heading">#</a></h2>
 <p>An infinite potential well is not very realistic.  The <em>finite-well</em> potential is more realistic and similar to the infinite one.  <strong>Consider a potential that is zero between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>, but equal to a constant <span class="math notranslate nohighlight">\(V_o\)</span> everywhere else.</strong>  This is written mathematically as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ea9e29fa-6d42-468f-8bf8-fa9bf94599e4">
-<span class="eqno">(6.26)<a class="headerlink" href="#equation-ea9e29fa-6d42-468f-8bf8-fa9bf94599e4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6aea3f86-dd27-4aa9-9125-4a0d7af29b4a">
+<span class="eqno">(6.26)<a class="headerlink" href="#equation-6aea3f86-dd27-4aa9-9125-4a0d7af29b4a" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = 
 \begin{cases}
     V_o \quad &amp; x\leq -L,  \quad &amp;\text{region I} \\
@@ -1265,8 +1079,8 @@ V(x) =
 \end{cases}
 \end{align}\]</div>
 <p>First, let’s examine a particle of energy <span class="math notranslate nohighlight">\(E &lt; V_o\)</span> that is classically bound inside the well.  Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bc201924-4780-4dd3-84dd-06897f6fc7d2">
-<span class="eqno">(6.27)<a class="headerlink" href="#equation-bc201924-4780-4dd3-84dd-06897f6fc7d2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1ffaffcb-8b6d-4c3f-a1d5-97a362f8164a">
+<span class="eqno">(6.27)<a class="headerlink" href="#equation-1ffaffcb-8b6d-4c3f-a1d5-97a362f8164a" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2m} \frac{d^2\psi}{dx^2} = \left[E-V_o \right]\psi. \quad \text{regions I, III}
 \end{align}\]</div>
 <p>Let <span class="math notranslate nohighlight">\(\alpha^2 = 2m(V_o-E)/\hbar^2\)</span> (a positive constant), and we find</p>
@@ -1279,8 +1093,8 @@ V(x) =
 <div class="math notranslate nohighlight">
 \[ \lim_{x\rightarrow -\infty} \psi = Ae^{-\infty} + Be^{\infty}, \]</div>
 <p>which requires that <span class="math notranslate nohighlight">\(B = 0\)</span>.  Similarly, we can use a limit to find that <span class="math notranslate nohighlight">\(A=0\)</span> for <span class="math notranslate nohighlight">\(x\geq L\)</span>.  This allows us to define the wave functions in each region as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ae5be136-6e25-4685-b442-7b83011c7eb0">
-<span class="eqno">(6.28)<a class="headerlink" href="#equation-ae5be136-6e25-4685-b442-7b83011c7eb0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8c982cf8-8ace-4925-b8ce-b39490228d6b">
+<span class="eqno">(6.28)<a class="headerlink" href="#equation-8c982cf8-8ace-4925-b8ce-b39490228d6b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_I(x) &amp;= Ae^{\alpha x}, \quad \text{region I},\  x\leq -l \\
 \psi_{III}(x) &amp;= Be^{-\alpha x}. \quad \text{region III},\  x\geq L
 \end{align}\]</div>
@@ -1288,21 +1102,21 @@ V(x) =
 <div class="math notranslate nohighlight">
 \[ \frac{d^2\psi}{dx^2} = -k^2\psi, \]</div>
 <p>where <span class="math notranslate nohighlight">\(k=\sqrt{(2mE)/\hbar^2}\)</span>.  This differential equation has a solution, which is a combination of sinusoidal functions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d459ae2-6701-45a1-a290-e0a432205a00">
-<span class="eqno">(6.29)<a class="headerlink" href="#equation-5d459ae2-6701-45a1-a290-e0a432205a00" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5d5fa596-86cb-4b54-8b2b-6fe5dc422198">
+<span class="eqno">(6.29)<a class="headerlink" href="#equation-5d5fa596-86cb-4b54-8b2b-6fe5dc422198" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_{II}(x) = C\cos(kx) + D\sin(kx). \quad \text{region II},\ -L&lt;x&lt;L
 \end{align}\]</div>
 <p>To determine a valid wave function, it must be continuous at the boundary (e.g., <span class="math notranslate nohighlight">\((\psi_I = \psi_{II})\)</span> and <span class="math notranslate nohighlight">\((d\psi_I/dx = d\psi_{II}/dx)\)</span> at <span class="math notranslate nohighlight">\(x=-L\)</span>).  By choosing symmetric boundaries and noting that the potential is an even function (i.e., <span class="math notranslate nohighlight">\(V_ox^0\)</span>), we can simplify <span class="math notranslate nohighlight">\(\psi_{II}\)</span> to include only the even portion (i.e., <span class="math notranslate nohighlight">\(D=0\)</span>).  As a result, we find the following conditions</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ecbe2ec0-a918-4796-819e-59f13587e7a2">
-<span class="eqno">(6.30)<a class="headerlink" href="#equation-ecbe2ec0-a918-4796-819e-59f13587e7a2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4bb98a75-0f85-4a71-b7af-34f8dd8fb0a3">
+<span class="eqno">(6.30)<a class="headerlink" href="#equation-4bb98a75-0f85-4a71-b7af-34f8dd8fb0a3" title="Permalink to this equation">#</a></span>\[\begin{align}
 C\cos(kL)  &amp;= A e^{-\alpha L}, \\
 kC\sin(kL)  &amp;= -\alpha A e^{-\alpha L}, \\
 C\cos(kL) &amp;= Be^{-\alpha L}, \\
 -kC\sin(kL) &amp;= -\alpha B e^{-\alpha L}.
 \end{align}\]</div>
 <p>We immediately find that <span class="math notranslate nohighlight">\(B=A\)</span>, and we can divide the last two equations to eliminate <span class="math notranslate nohighlight">\(C\)</span> to get,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2a1a0232-5c71-43ea-a3c6-bb9a80609d7f">
-<span class="eqno">(6.31)<a class="headerlink" href="#equation-2a1a0232-5c71-43ea-a3c6-bb9a80609d7f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-19ed6ed6-18b4-4d14-87ca-ca7016b84e25">
+<span class="eqno">(6.31)<a class="headerlink" href="#equation-19ed6ed6-18b4-4d14-87ca-ca7016b84e25" title="Permalink to this equation">#</a></span>\[\begin{align}
 k\tan(kL) = \alpha.
 \end{align}\]</div>
 <p>Recall that <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> are both functions of energy <span class="math notranslate nohighlight">\(E\)</span>.  To solve for <span class="math notranslate nohighlight">\(E\)</span>, we perform a variable transformation <span class="math notranslate nohighlight">\(z \equiv kL\)</span> and <span class="math notranslate nohighlight">\(z_o \equiv \frac{L}{\hbar}\sqrt{2mV_o}\)</span>.  Using the definitions of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span>, we find that</p>
@@ -1325,6 +1139,11 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1380,16 +1199,22 @@ allowfullscreen></iframe>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_19_1.png" src="../_images/quantum-mechanics-part2_19_1.png" />
+<img alt="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" src="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" />
 </div>
+</details>
 </div>
-<div class="figure align-default" id="finite-square-well" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_19_0.png" src="../_images/quantum-mechanics-part2_19_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Graphical solution for the finite square well potential using Eqn. <a class="reference internal" href="#equation-fsw-eq">(6.32)</a>, for <span class="math notranslate nohighlight">\(z_o = 8\)</span> (even states).  The three roots (blue dots) are <span class="math notranslate nohighlight">\(0.44\pi\)</span>, <span class="math notranslate nohighlight">\(1.33\pi\)</span>, and <span class="math notranslate nohighlight">\(2.17\pi\)</span>.</span><a class="headerlink" href="#finite-square-well" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="finite-square-well" style="width: 600px">
+<img alt="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" src="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Graphical solution for the finite square well potential using Eqn. <a class="reference internal" href="#equation-fsw-eq">(6.32)</a>, for <span class="math notranslate nohighlight">\(z_o = 8\)</span> (even states).  The three roots (blue dots) are <span class="math notranslate nohighlight">\(0.44\pi\)</span>, <span class="math notranslate nohighlight">\(1.33\pi\)</span>, and <span class="math notranslate nohighlight">\(2.17\pi\)</span>.</span><a class="headerlink" href="#finite-square-well" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1467,28 +1292,29 @@ allowfullscreen></iframe>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_21_1.png" src="../_images/quantum-mechanics-part2_21_1.png" />
+<img alt="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" src="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" />
 </div>
+</details>
 </div>
-<div class="figure align-default" id="finite-square-well-waves" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_21_0.png" src="../_images/quantum-mechanics-part2_21_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Wave functions (red curves) for the finite square well using <span class="math notranslate nohighlight">\(z_o = 8\)</span>. The gray regions mark where the wave function penetrate into the walls of the potential well.</span><a class="headerlink" href="#finite-square-well-waves" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="finite-square-well-waves" style="width: 600px">
+<img alt="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" src="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Wave functions (red curves) for the finite square well using <span class="math notranslate nohighlight">\(z_o = 8\)</span>. The gray regions mark where the wave function penetrate into the walls of the potential well.</span><a class="headerlink" href="#finite-square-well-waves" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The application of the boundary conditions leads to quantized energy values <span class="math notranslate nohighlight">\(E_n\)</span> and associated wave functions <span class="math notranslate nohighlight">\(\psi_n\)</span>.  Remarkably, the particle has a finite probability of being outside the square well (see Fig. <a class="reference internal" href="#finite-square-well-waves"><span class="std std-numref">6.3</span></a>).  Notice that the wave functions joint smoothly at the edges of the well and approach zero exponentially outside the well.</p>
 <p>The particle existing outside the well is prohibited classically, but occurs in quantum mechanics.  Because of the exponential decrease of the the wave functions (<span class="math notranslate nohighlight">\(\psi_I\)</span> and <span class="math notranslate nohighlight">\(\psi_{III}\)</span>), the probability of the particle penetrating a distance greater than <span class="math notranslate nohighlight">\(\delta x \approx 1/\alpha\)</span> decreases quickly, where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-726c0375-554c-4e63-9d2d-4aab7c567831">
-<span class="eqno">(6.33)<a class="headerlink" href="#equation-726c0375-554c-4e63-9d2d-4aab7c567831" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-29c4d348-2597-4d29-94d5-b89f98e9c26c">
+<span class="eqno">(6.33)<a class="headerlink" href="#equation-29c4d348-2597-4d29-94d5-b89f98e9c26c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \delta x \approx \frac{1}{\alpha} = \frac{\hbar}{\sqrt{2m(V_o-E)}}
 \end{align}\]</div>
 <p>is called the <em>penetration depth</em>.  The fraction of particles that successfully tunnel through the outer walls of the potential well is exceedingly small, but the results have important applications.</p>
-</div>
-<div class="section" id="three-dimensional-infinite-potential-well">
-<span id="three-dimensional-well"></span><h2><span class="section-number">6.5. </span>Three-Dimensional Infinite-Potential Well<a class="headerlink" href="#three-dimensional-infinite-potential-well" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="three-dimensional-infinite-potential-well">
+<span id="three-dimensional-well"></span><h2><span class="section-number">6.5. </span>Three-Dimensional Infinite-Potential Well<a class="headerlink" href="#three-dimensional-infinite-potential-well" title="Permalink to this heading">#</a></h2>
 <p>Like the one-dimensional infinite-potential well, the three-dimensional potential well is expected to have time-independent solutions that can be determined from the time-independent Schrödinger equation.  The wave function must depend on all three spatial coordinates, <span class="math notranslate nohighlight">\(\psi =\psi(x,y,z)\)</span>.  Beginning with the conservation of energy, we multiply by the wave function to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0f87ecdf-6726-4ebf-b560-e63c9ec17431">
-<span class="eqno">(6.34)<a class="headerlink" href="#equation-0f87ecdf-6726-4ebf-b560-e63c9ec17431" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-4398700e-7a01-49d6-8c01-bdbbf59c1f25">
+<span class="eqno">(6.34)<a class="headerlink" href="#equation-4398700e-7a01-49d6-8c01-bdbbf59c1f25" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \frac{p^2}{2m}\psi + V\psi = E\psi.
 \end{align}\]</div>
 <p>Then, we use the momentum operator for each dimension because <span class="math notranslate nohighlight">\(\hat{p}^2 = \hat{p}_x^2 + \hat{p}_y^2 + \hat{p}_z^2\)</span>.  Individually we have</p>
@@ -1502,29 +1328,29 @@ allowfullscreen></iframe>
 <div class="math notranslate nohighlight" id="equation-3d-tise">
 <span class="eqno">(6.35)<a class="headerlink" href="#equation-3d-tise" title="Permalink to this equation">#</a></span>\[-\frac{\hbar^2}{2m}\left(\frac{\partial^2 \psi}{\partial x^2} + \frac{\partial^2 \psi}{\partial y^2}+ \frac{\partial^2 \psi}{\partial z^2} \right) + V\psi = E\psi,\]</div>
 <p>which defines the time-independent Schrödinger equation in three dimensions.  The expression in parentheses is the Laplacian operator, which is usually written using the shorthand notation as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-14c01e04-61ff-474c-a9d5-1667eacc7ce7">
-<span class="eqno">(6.36)<a class="headerlink" href="#equation-14c01e04-61ff-474c-a9d5-1667eacc7ce7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4edffd51-b8ce-41c4-b9f4-11287a790c2b">
+<span class="eqno">(6.36)<a class="headerlink" href="#equation-4edffd51-b8ce-41c4-b9f4-11287a790c2b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \nabla^2 = \frac{\partial^2 }{\partial x^2} + \frac{\partial^2 }{\partial y^2} + \frac{\partial^2 }{\partial z^2},
 \end{align}\]</div>
 <p>and we can write Eqn. <a class="reference internal" href="#equation-3d-tise">(6.35)</a> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6c6baad4-73a2-4031-8116-450955435e17">
-<span class="eqno">(6.37)<a class="headerlink" href="#equation-6c6baad4-73a2-4031-8116-450955435e17" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0ec4ed25-d83c-48a6-a150-4d173c336a1c">
+<span class="eqno">(6.37)<a class="headerlink" href="#equation-0ec4ed25-d83c-48a6-a150-4d173c336a1c" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2m}\nabla^2 \psi + v\psi = E\psi.
 \end{align}\]</div>
 <div class="exercise orange admonition" id="PIC-exercise">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.7 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Consider a free particle inside a box with lengths <span class="math notranslate nohighlight">\(L_1\)</span>, <span class="math notranslate nohighlight">\(L_2\)</span>, and <span class="math notranslate nohighlight">\(L_3\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> axes, respectively.  The particle is constrained to be inside the box.  (a) Find the wave functions and energies.  (b) Find the ground-state wave function for a cube.  (c) Find the energies of the ground and first excited state for a cube of sides <span class="math notranslate nohighlight">\(L\)</span>.</strong></p>
 <p><strong>(a)</strong>  Similar to the one-dimensional infinite square well, it is reasonable to try a sinusoidal wave function for each of the dimensions.  As a result, we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-57b385fe-3bff-4e92-823d-e6dc9acdfed5">
-<span class="eqno">(6.38)<a class="headerlink" href="#equation-57b385fe-3bff-4e92-823d-e6dc9acdfed5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bdc52f63-436f-4575-85dd-533d9f5a1d9f">
+<span class="eqno">(6.38)<a class="headerlink" href="#equation-bdc52f63-436f-4575-85dd-533d9f5a1d9f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin(k_1x)\sin(k_2y)\sin(k_3z),
 \end{align}\]</div>
 <p>which has a normalization constant <span class="math notranslate nohighlight">\(A\)</span> and the quantities <span class="math notranslate nohighlight">\(k_i\)</span> (<span class="math notranslate nohighlight">\(k_1\)</span>, <span class="math notranslate nohighlight">\(k_2\)</span>, and <span class="math notranslate nohighlight">\(k_3\)</span>) are determined by applying the appropriate boundary conditions.</p>
 <p>The condition that <span class="math notranslate nohighlight">\(\psi = 0\)</span> at <span class="math notranslate nohighlight">\(x=L_1\)</span> requires that <span class="math notranslate nohighlight">\(k_1L_1 = n_1\pi\)</span>.  Generalizing this constraint and solving for <span class="math notranslate nohighlight">\(k_i\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4cb22a92-e7e1-4f2a-b48d-2ca8d0052571">
-<span class="eqno">(6.39)<a class="headerlink" href="#equation-4cb22a92-e7e1-4f2a-b48d-2ca8d0052571" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-216edb59-507a-42e1-994b-42c70219495a">
+<span class="eqno">(6.39)<a class="headerlink" href="#equation-216edb59-507a-42e1-994b-42c70219495a" title="Permalink to this equation">#</a></span>\[\begin{align}
 k_1 = \frac{n_1\pi}{L_1}, \quad k_2 = \frac{n_2\pi}{L_2}, \quad k_3 = \frac{n_3\pi}{L_3},
 \end{align}\]</div>
 <p>using the integers <span class="math notranslate nohighlight">\(n_1\)</span>, <span class="math notranslate nohighlight">\(n_2\)</span>, and <span class="math notranslate nohighlight">\(n_3\)</span> for quantum numbers in each of the dimensions.</p>
@@ -1540,23 +1366,23 @@ k_1 = \frac{n_1\pi}{L_1}, \quad k_2 = \frac{n_2\pi}{L_2}, \quad k_3 = \frac{n_3\
 <div class="math notranslate nohighlight">
 \[ \frac{\hbar^2}{2m}\left(k_1^2 + k_2^2 + k_3^2\right)\psi = E\psi. \]</div>
 <p>The <span class="math notranslate nohighlight">\(k_i\)</span> represent a wave number for each dimension, where we can generalize the energies of the one-dimensional case to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8e86be02-3065-47b2-bc24-be878b863fc0">
-<span class="eqno">(6.40)<a class="headerlink" href="#equation-8e86be02-3065-47b2-bc24-be878b863fc0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5e1d7d11-76bf-4bbc-b717-b1a99c7a2399">
+<span class="eqno">(6.40)<a class="headerlink" href="#equation-5e1d7d11-76bf-4bbc-b717-b1a99c7a2399" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \frac{\pi^2\hbar^2}{2m}\left(\frac{n_1^2}{L_1^2} + \frac{n_2^2}{L_2^2} + \frac{n_3^2}{L_3^2} \right),
 \end{align}\]</div>
 <p>where the allowed energies depend on the three quantum numbers.  The wave function can also be written in terms of the quantum numbers as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eb24d2c8-968b-4735-b17d-d66308769bff">
-<span class="eqno">(6.41)<a class="headerlink" href="#equation-eb24d2c8-968b-4735-b17d-d66308769bff" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cdd4753a-7c01-4627-a2c6-ccab233a0253">
+<span class="eqno">(6.41)<a class="headerlink" href="#equation-cdd4753a-7c01-4627-a2c6-ccab233a0253" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin\left(\frac{n_1\pi x}{L_1}\right) \sin\left(\frac{n_2\pi y}{L_2}\right) \sin\left(\frac{n_3\pi z}{L_3}\right)
 \end{align}\]</div>
 <p><strong>(b)</strong> For a cube <span class="math notranslate nohighlight">\(L_1 = L_2 = L_3 = L\)</span> and the ground state is given by <span class="math notranslate nohighlight">\(n_1 = n_2 = n_3 = 1\)</span>.  The ground-state wave function is simply</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c66fc843-1bd3-4067-be79-28c6ef041d70">
-<span class="eqno">(6.42)<a class="headerlink" href="#equation-c66fc843-1bd3-4067-be79-28c6ef041d70" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b06a9dfa-4e05-4980-9e63-1188d6eae954">
+<span class="eqno">(6.42)<a class="headerlink" href="#equation-b06a9dfa-4e05-4980-9e63-1188d6eae954" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin\left(\frac{\pi x}{L}\right) \sin\left(\frac{\pi y}{L}\right) \sin\left(\frac{\pi z}{L}\right).
 \end{align}\]</div>
 <p><strong>(c)</strong>  For a cube the energies are given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-83a9cfa4-ab9c-4249-a355-9cf939235dee">
-<span class="eqno">(6.43)<a class="headerlink" href="#equation-83a9cfa4-ab9c-4249-a355-9cf939235dee" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7e0f5b67-7a67-4732-bcda-1d661c401eb1">
+<span class="eqno">(6.43)<a class="headerlink" href="#equation-7e0f5b67-7a67-4732-bcda-1d661c401eb1" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \frac{\pi^2\hbar^2}{2mL^2}\left(n_1^2 + n_2^2 + n_3^2\right),
 \end{align}\]</div>
 <p>and the ground state energy is <span class="math notranslate nohighlight">\(E_{111} = \frac{3\pi^2\hbar^2}{2mL^2}\)</span>.</p>
@@ -1567,12 +1393,12 @@ E_{211} &amp;= \frac{\pi^2\hbar^2}{2mL^2}\left(2^2 + 1^2 + 1^2\right) = \frac{6\
 &amp;= E_{121} = E_{112}.
 \end{align*}\]</div>
 <p>There are three possible combinations for the first excited state depending on which dimension of the cube is excited.</p>
-</div>
+</section>
 </div>
 <p>A given state is <strong>degenerate</strong> when there is more than one wave function for a given energy (see Exercise <a class="reference internal" href="#PIC-exercise"><span class="std std-numref">6.7</span></a>).  Degeneracies are often the result of symmetries.  For a cube, there is a degeneracy, but it is removed if the sides have different lengths because there would be different energies.  Degeneracy also occurs in classical physics where orbits with different eccentricities may have the same energy.  A <em>perturbation</em> of the potential energy can remove a degeneracy.  Energy levels can split (thereby removing a degeneracy) by applying an external magnetic (Zeeman effect) or electric (Stark effect) field.</p>
-</div>
-<div class="section" id="simple-harmonic-oscillator">
-<h2><span class="section-number">6.6. </span>Simple Harmonic Oscillator<a class="headerlink" href="#simple-harmonic-oscillator" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="simple-harmonic-oscillator">
+<h2><span class="section-number">6.6. </span>Simple Harmonic Oscillator<a class="headerlink" href="#simple-harmonic-oscillator" title="Permalink to this heading">#</a></h2>
 <p>Simple harmonic oscillators (SHOs) commonly occur in nature and are one of the first physical systems studied within introductory physics.  <strong>Consider a spring with a spring constant <span class="math notranslate nohighlight">\(\kappa\)</span>, which is in equilibrium at <span class="math notranslate nohighlight">\(x=x_o\)</span>.</strong>  There is a restoring force described through Hooke’s law and a potential energy, which is given as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1580,8 +1406,8 @@ F &amp;= -\kappa(x-x_o), \\
 V &amp;= \kappa (x-x_o)^2.
 \end{align*}\]</div>
 <p>The application of the restoring force introduces <em>simple harmonic motion</em> (SHM).  Diatomic molecules or a system of atoms in a solid lattice can be approximated by SHM in a general way.  Within a lattice, the force on the atoms depends on the distance <span class="math notranslate nohighlight">\(x\)</span> from some equilibrium position and the potential <span class="math notranslate nohighlight">\(V(x)\)</span> can be represented by a Taylor series as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3b16aed2-95eb-469c-b810-e5aab592ba6f">
-<span class="eqno">(6.44)<a class="headerlink" href="#equation-3b16aed2-95eb-469c-b810-e5aab592ba6f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6cd541ed-b7ee-4af8-9e72-8fe90aa6bc03">
+<span class="eqno">(6.44)<a class="headerlink" href="#equation-6cd541ed-b7ee-4af8-9e72-8fe90aa6bc03" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = V_o + V_1(x-x_o) + \frac{V_2}{2}\left(x-x_o\right)^2 + \cdots,
 \end{align}\]</div>
 <p>where each term of the series has a constant <span class="math notranslate nohighlight">\(V_i\)</span>.  For <span class="math notranslate nohighlight">\(x-x_o \approx 0\)</span> (i.e., a small perturbation), the higher terms are negligible.  The minimum of the potential occurs at the equilibrium position, which means that <span class="math notranslate nohighlight">\(dV/dx = 0\)</span> and the lowest surviving term of the potential is</p>
@@ -1595,19 +1421,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>To study the quantum description of SHM, we insert a potential <span class="math notranslate nohighlight">\(V = kx^2/2\)</span> into Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fc78dcd8-f14d-4149-9212-4f7981766802">
-<span class="eqno">(6.45)<a class="headerlink" href="#equation-fc78dcd8-f14d-4149-9212-4f7981766802" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f85c4d04-bd59-4bf5-8779-2d0c220f167b">
+<span class="eqno">(6.45)<a class="headerlink" href="#equation-f85c4d04-bd59-4bf5-8779-2d0c220f167b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2 \psi}{dx^2} = -\frac{2m}{\hbar^2}\left(E - \frac{1}{2}\kappa x^2 \right)\psi = \left(\frac{m\kappa}{\hbar^2}x^2 - \frac{2mE}{\hbar^2}\right) \psi.
 \end{align}\]</div>
 <p>Through a pair of variable transformations,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-80040eed-0ba4-4e1a-947a-c003733a5f76">
-<span class="eqno">(6.46)<a class="headerlink" href="#equation-80040eed-0ba4-4e1a-947a-c003733a5f76" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec731d95-d211-41ed-9e76-8cc7b57e99d6">
+<span class="eqno">(6.46)<a class="headerlink" href="#equation-ec731d95-d211-41ed-9e76-8cc7b57e99d6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha^2 &amp;= \frac{m\kappa}{\hbar^2}, \\
 \beta = \frac{2mE}{\hbar^2},
 \end{align}\]</div>
 <p>we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-27c39012-301e-4e89-baf0-9eb07112fe55">
-<span class="eqno">(6.47)<a class="headerlink" href="#equation-27c39012-301e-4e89-baf0-9eb07112fe55" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-df5f091d-0964-4e48-84d1-3a7ac298acd4">
+<span class="eqno">(6.47)<a class="headerlink" href="#equation-df5f091d-0964-4e48-84d1-3a7ac298acd4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2 \psi}{dx^2} = (\alpha^2 x^2 - \beta)\psi.
 \end{align}\]</div>
 <p>The particle is confined to the potential well, and thus, has zero probability of being at <span class="math notranslate nohighlight">\(x= \pm \infty\)</span>, which means</p>
@@ -1616,6 +1442,11 @@ allowfullscreen></iframe>
 <p>Additionally, the lowest energy state cannot be <span class="math notranslate nohighlight">\(E=0\)</span> because if <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(v=0\)</span>, then the kinetic energy is also zero (i.e., <span class="math notranslate nohighlight">\(p=0\)</span>).  The uncertainty principle prevents us from knowing <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span> exactly, which means at <span class="math notranslate nohighlight">\(x=0\)</span> that <span class="math notranslate nohighlight">\(p&gt;0\)</span> (i.e., <span class="math notranslate nohighlight">\(E&gt;0\)</span>).</p>
 <p>The lowest energy state is defined as some non-zero potential or <span class="math notranslate nohighlight">\(E_o = V_o\)</span>.  If we represent the energy by a height above the bottom of the well (i.e., some inherent potential energy), then there will be a symmetric distance <span class="math notranslate nohighlight">\(\pm a\)</span> from the equilibrium position to denote the lowest energy (i.e., <span class="math notranslate nohighlight">\(E_o = \kappa a^2/2\)</span>).  The walls of the potential are similar to the finite potential well, where there is some small probability of the wave function existing outside the potential.  But the wave function decreases rapidly on the other side of the barrier.  The minimum energy <span class="math notranslate nohighlight">\(E_o\)</span> is also called the <em>zero-point energy</em> (see Fig. <a class="reference internal" href="#sho-pot-ground"><span class="std std-numref">6.4</span></a>).</p>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1679,19 +1510,20 @@ allowfullscreen></iframe>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_28_1.png" src="../_images/quantum-mechanics-part2_28_1.png" />
+<img alt="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" src="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" />
 </div>
+</details>
 </div>
-<div class="figure align-default" id="sho-pot-ground" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_28_0.png" src="../_images/quantum-mechanics-part2_28_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Simple harmonic oscillator potential (left) and ground state wave function (right).  The horizontal (dashed) line represents the zero-point energy.</span><a class="headerlink" href="#sho-pot-ground" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="sho-pot-ground" style="width: 600px">
+<img alt="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" src="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Simple harmonic oscillator potential (left) and ground state wave function (right).  The horizontal (dashed) line represents the zero-point energy.</span><a class="headerlink" href="#sho-pot-ground" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="exercise orange admonition" id="zero-point">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.8 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Estimate the minimum energy of the simple harmonic oscillator (SHO) allowed by the uncertainty principle.</strong></p>
 <p>From classical mechanics, the average kinetic energy is equal to the average potential energy (i.e., <span class="math notranslate nohighlight">\(K_{\rm av}=V_{\rm av}\)</span>; <a class="reference external" href="https://en.wikipedia.org/wiki/Virial_theorem">virial theorem</a>.  As a result, the average potential and kinetic energy are equal to half of the total energy.  We can write this mathematically as</p>
 <div class="amsmath math notranslate nohighlight">
@@ -1715,7 +1547,7 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 <div class="math notranslate nohighlight">
 \[ E_o = \kappa\frac{\hbar}{2\sqrt{m\kappa}} = \frac{\hbar}{2}\sqrt{\frac{\kappa}{m}} = \frac{1}{2}\hbar \omega. \]</div>
 <p>The zero point energy for the SHO is <span class="math notranslate nohighlight">\(\frac{1}{2}\hbar \omega\)</span>.</p>
-</div>
+</section>
 </div>
 <p>Deriving the wave function solutions for the SHO is beyond the our scope.  They are written in terms of <a class="reference external" href="https://en.wikipedia.org/wiki/Hermite_polynomials">Hermite polynomial functions</a> <span class="math notranslate nohighlight">\(H_n(x)\)</span> that have an order <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(n\)</span> is a positive integer.  The wave function general solution and first four <span class="math notranslate nohighlight">\(\psi_n\)</span> are</p>
 <div class="math notranslate nohighlight" id="equation-sho-wave-func">
@@ -1724,13 +1556,18 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 \psi_1 &amp;= \sqrt{2\alpha}x \psi_o, \\
 \psi_2 &amp;= \frac{1}{\sqrt{2}}\left(2\alpha x^2 - 1\right)\psi_o, \\
 \psi_3 &amp;= \sqrt{\frac{\alpha}{3}}\left(2\alpha x^3 - 3x\right)\psi_o.\end{split}\]</div>
-<div class="figure align-default" id="sho-waves" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_32_0.png" src="../_images/quantum-mechanics-part2_32_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Simple harmonic oscillator wave functions (left) and probability density functions (right).  The vertical (dashed) line represents the with of the potential well at a given energy <span class="math notranslate nohighlight">\(E_n\)</span>.</span><a class="headerlink" href="#sho-waves" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="sho-waves" style="width: 600px">
+<img alt="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" src="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Simple harmonic oscillator wave functions (left) and probability density functions (right).  The vertical (dashed) line represents the with of the potential well at a given energy <span class="math notranslate nohighlight">\(E_n\)</span>.</span><a class="headerlink" href="#sho-waves" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1818,22 +1655,28 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_32_1.png" src="../_images/quantum-mechanics-part2_32_1.png" />
+<img alt="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" src="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" />
 </div>
+</details>
 </div>
 <p>In contrast to the particle-in-a-box, the oscillatory behavior is due to the polynomial, which dominates at small <span class="math notranslate nohighlight">\(x\)</span>, and the damping occurs due to the Gaussian function, which dominates at large <span class="math notranslate nohighlight">\(x\)</span>.  Then energy levels are given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cb2d3410-04da-419b-9220-ff8c0950ef1c">
-<span class="eqno">(6.49)<a class="headerlink" href="#equation-cb2d3410-04da-419b-9220-ff8c0950ef1c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3b0aa59b-3d13-4403-88f9-312a26bd692c">
+<span class="eqno">(6.49)<a class="headerlink" href="#equation-3b0aa59b-3d13-4403-88f9-312a26bd692c" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \sqrt{\frac{\kappa}{m}}.
 \end{align}\]</div>
-<div class="figure align-default" id="sho-energy" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_34_0.png" src="../_images/quantum-mechanics-part2_34_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Simple harmonic oscillator potential (red curve) with first four energy levels (horizontal dashed lines).</span><a class="headerlink" href="#sho-energy" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="sho-energy" style="width: 600px">
+<img alt="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" src="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Simple harmonic oscillator potential (red curve) with first four energy levels (horizontal dashed lines).</span><a class="headerlink" href="#sho-energy" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The <em>zero-point energy</em> E_o is <span class="math notranslate nohighlight">\(\hbar\omega/2\)</span>, where this result is precisely the value found in Exercise <a class="reference internal" href="#zero-point"><span class="std std-numref">6.8</span></a> by using the uncertainty principle.  The uncertainty principle is responsible for the minimum energy of the SHO, where the minimum value of the uncertainty principle is can be determined using Gaussian wave packets (see Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_5/quantum-mechanics-part1.html#uncertainty-principle">5.6</a>).  The minimum energy <span class="math notranslate nohighlight">\(E_o\)</span> allowed by the uncertainty principle for the ground state of the SHO is sometimes called the <em>Heisenbergy limit</em>.</p>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1882,8 +1725,9 @@ E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_34_1.png" src="../_images/quantum-mechanics-part2_34_1.png" />
+<img alt="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" src="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" />
 </div>
+</details>
 </div>
 <p>Classically, the probability of finding a mass on a spring is greatest at the ends of the motion and smallest at the center.  The quantum theory probability density for the lowest energy state <span class="math notranslate nohighlight">\((\psi_o^2)\)</span> is contrary to the classical one, where the largest probability is for the particle to be at the center.  From the correspondence principle, this distinction disappears for large <span class="math notranslate nohighlight">\(n\)</span> and the average value of the quantum probability approaches the classical result.</p>
 <div class="dropdown admonition">
@@ -1905,7 +1749,7 @@ E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \
 <div class="exercise orange admonition" id="Chapter_6/quantum-mechanics-part2-exercise-8">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.9 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>Normalize the ground state wave function <span class="math notranslate nohighlight">\(\psi_o\)</span> for the simple harmonic oscillator (SHO).  Find the expectation values <span class="math notranslate nohighlight">\(\langle x \rangle\)</span> and <span class="math notranslate nohighlight">\(\langle x^2 \rangle\)</span>.</strong></p>
 <p>Starting from the general solution for the SHO, we have <span class="math notranslate nohighlight">\(H_o = 1\)</span> for the ground state and</p>
 <div class="math notranslate nohighlight">
@@ -1949,14 +1793,14 @@ A &amp;= \left(\frac{\alpha}{\pi} \right)^{1/4}.
 <div class="math notranslate nohighlight">
 \[ \langle x^2 \rangle = \frac{\hbar}{2\sqrt{m\kappa}} = \frac{\hbar}{2m\omega}, \]</div>
 <p>which is what we argued in Exercise <a class="reference internal" href="#zero-point"><span class="std std-numref">6.8</span></a> using the uncertainty principle.</p>
+</section>
 </div>
-</div>
-</div>
-<div class="section" id="barriers-and-tunneling">
-<h2><span class="section-number">6.7. </span>Barriers and Tunneling<a class="headerlink" href="#barriers-and-tunneling" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="barriers-and-tunneling">
+<h2><span class="section-number">6.7. </span>Barriers and Tunneling<a class="headerlink" href="#barriers-and-tunneling" title="Permalink to this heading">#</a></h2>
 <p>For the finite square-well potential (see Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#finite-square-well-potential">6.3</a>), there was a finite probability for the wave function to enter the walls of the potential, but it must decay quickly.  A <em>potential barrier</em> describes a similar situation with the boundaries inverted.  The potential is instead</p>
-<div class="amsmath math notranslate nohighlight" id="equation-13701416-00f5-4534-af91-839e0f117c7b">
-<span class="eqno">(6.50)<a class="headerlink" href="#equation-13701416-00f5-4534-af91-839e0f117c7b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4a4b11ab-ef1b-4a61-9151-ce2e74bc3871">
+<span class="eqno">(6.50)<a class="headerlink" href="#equation-4a4b11ab-ef1b-4a61-9151-ce2e74bc3871" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = 
 \begin{cases}
     0 \quad &amp; x\leq -L,  \quad &amp;\text{region I} \\
@@ -1972,8 +1816,8 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 </div>
-<div class="section" id="potential-barrier-with-e-v-o">
-<h3><span class="section-number">6.7.1. </span>Potential Barrier with <span class="math notranslate nohighlight">\(E&gt;V_o\)</span><a class="headerlink" href="#potential-barrier-with-e-v-o" title="Permalink to this headline">#</a></h3>
+<section id="potential-barrier-with-e-v-o">
+<h3><span class="section-number">6.7.1. </span>Potential Barrier with <span class="math notranslate nohighlight">\(E&gt;V_o\)</span><a class="headerlink" href="#potential-barrier-with-e-v-o" title="Permalink to this heading">#</a></h3>
 <p>Classically we expect that a particle with <span class="math notranslate nohighlight">\(E&gt;V_o\)</span> will pass the barrier, but move with a reduced velocity in the region of <span class="math notranslate nohighlight">\(V_o\)</span>.  This can be shown through conservation of energy as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*} 
@@ -1983,23 +1827,23 @@ v &amp;= \sqrt{\frac{2}{m}(E-V_o)}.
 \end{align*}\]</div>
 <p>The particle velocity must decrease for a positive <span class="math notranslate nohighlight">\(V_o\)</span> and increase for a negative <span class="math notranslate nohighlight">\(V_o\)</span>.  A classical analogy is where a ball is through horizontally over a mountain, where it experiences a pull due to gravity (ignoring air resistance).  The pull increases when the ball is directly over the mountain because there is slightly increased mass and this extra force reduces the ball’s speed.  Conversely, a ball traveling over a valley experiences slightly less gravity.  This is not noticeable for most objects, but NASA’s <a class="reference external" href="https://www.nasa.gov/audience/foreducators/k-4/features/F_Measuring_Gravity_With_Grace.html">GRACE</a> has measured the perturbations of Earth’s gravity field using two satellites.</p>
 <p>According to quantum mechanics, the particle will behave differently because of its wavelike character, where the will be differences in the wave number <span class="math notranslate nohighlight">\(k\)</span> in the three regions.  The wave numbers are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e286f17c-5234-4c9a-947b-70d88e838a6b">
-<span class="eqno">(6.51)<a class="headerlink" href="#equation-e286f17c-5234-4c9a-947b-70d88e838a6b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-285ffbfe-2f37-4169-888e-cf8ecfc219e3">
+<span class="eqno">(6.51)<a class="headerlink" href="#equation-285ffbfe-2f37-4169-888e-cf8ecfc219e3" title="Permalink to this equation">#</a></span>\[\begin{align}
 k_I &amp;= k_{III} = \frac{\sqrt{2mE}}{\hbar}, \quad &amp;\text{where }V = 0 \\
 k_{II} &amp;= \frac{\sqrt{2m(E-V_o)}}{\hbar}. \quad &amp;\text{where }V = V_o
 \end{align}\]</div>
 <p>Another analogy comes from optics, where light bends (i.e., changes speed) after it penetrates another medium.  Actually, some of the light is <em>reflected</em> and the rest is <em>transmitted</em> into the medium.  The wave function will exhibit a similar behavior, where there will be an (1) incident wave, (2) reflected wave, and (3) a transmitted wave.</p>
 <p>Classical mechanics allows <em>no</em> reflection if <span class="math notranslate nohighlight">\(E&gt;V_o\)</span> and <em>total</em> reflection for <span class="math notranslate nohighlight">\(E&lt;V_o\)</span>.  In contrast, quantum mechanics predicts some <em>reflection</em> for <span class="math notranslate nohighlight">\(E\gg V_o\)</span> and some <em>transmission</em> for <span class="math notranslate nohighlight">\(E\ll V_o\)</span>.</p>
 <p>The time-independent Schrödinger equation for the three regions are as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-33ef566b-36d8-499d-a364-737f73d62d48">
-<span class="eqno">(6.52)<a class="headerlink" href="#equation-33ef566b-36d8-499d-a364-737f73d62d48" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6b8fa635-96c8-42a0-a44b-468a782c4438">
+<span class="eqno">(6.52)<a class="headerlink" href="#equation-6b8fa635-96c8-42a0-a44b-468a782c4438" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2\psi_I}{dx^2} + \frac{2m}{\hbar^2}E\psi_I &amp;= 0, \quad &amp; \text{Region I } \\
 \frac{d^2\psi_{II}}{dx^2} + \frac{2m}{\hbar^2}(E-V_o)\psi_{II} &amp;= 0, \quad &amp; \text{Region II } \\
 \frac{d^2\psi_{III}}{dx^2} + \frac{2m}{\hbar^2}E\psi_{III} &amp;= 0. \quad &amp; \text{Region III }
 \end{align}\]</div>
 <p>The corresponding wave functions for these equations are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b42c61a3-75bc-430f-be3f-fc821a1bd70b">
-<span class="eqno">(6.53)<a class="headerlink" href="#equation-b42c61a3-75bc-430f-be3f-fc821a1bd70b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b0deac1e-1fde-4cf0-b5aa-86e647afebff">
+<span class="eqno">(6.53)<a class="headerlink" href="#equation-b0deac1e-1fde-4cf0-b5aa-86e647afebff" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_I &amp;= Ae^{ik_Ix} + Be^{-ik_Ix}, \quad &amp; \text{Region I } \\
 \psi_{II} &amp;= Ce^{ik_{II}x} + De^{-ik_{II}x}, \quad &amp; \text{Region II } \\
 \psi_{III} &amp;= Fe^{ik_Ix} + Ge^{-ik_Ix}. \quad &amp; \text{Region III }
@@ -2017,25 +1861,30 @@ k_IAe^{-ik_IL} - k_IBe^{ik_IL} &amp;= k_{II}Ce^{-ik_{II}L} -k_{II}De^{ik_{II}L},
 Ce^{ik_{II}L} + De^{-k_{II}L} &amp;= Fe^{ik_IL}, \\
 k_{II}Ce^{ik_{II}L} - k_{II}De^{-ik_{II}L} &amp;= k_IFe^{ik_IL}.\end{split}\]</div>
 <p>The probability of particles being reflected <span class="math notranslate nohighlight">\(R\)</span> or transmitted <span class="math notranslate nohighlight">\(T\)</span> is determined by the ratio of the appropriate <span class="math notranslate nohighlight">\(\psi^*\psi\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-63063445-5e3f-47e8-903e-69bdf54b482e">
-<span class="eqno">(6.55)<a class="headerlink" href="#equation-63063445-5e3f-47e8-903e-69bdf54b482e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd42e863-c883-4d75-80eb-428be191af58">
+<span class="eqno">(6.55)<a class="headerlink" href="#equation-cd42e863-c883-4d75-80eb-428be191af58" title="Permalink to this equation">#</a></span>\[\begin{align}
 R &amp;= \frac{|\psi_I(\text{reflected})|^2}{|\psi_I(\text{incident})|^2} = \frac{B^*B}{A^*A}, \\[5pt]
 T &amp;= \frac{|\psi_{III}(\text{transmitted})|^2}{|\psi_1(\text{incident})|^2} = \frac{F^*F}{A^*A}.
 \end{align}\]</div>
 <p>Because the particles must be either reflected or transmitted, we must have <span class="math notranslate nohighlight">\(R+T = 1\)</span> (i.e., the total probability must equal unity).</p>
 <p>The values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(T\)</span> are found by solving for <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(D\)</span> in terms of <span class="math notranslate nohighlight">\(F\)</span>.  Then those results are substituted to find <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> in terms of <span class="math notranslate nohighlight">\(F\)</span>.  This a long process of <a class="reference external" href="http://www.trentu.ca/academic/physics/jbeda/PHYS202H/PHYS202H-2004-Fall/HW-11-202H-solutions.pdf">tedious algebra</a>, where the transmission probability is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0fa2ea5a-1bc7-4571-8e16-1d3c625d2954">
-<span class="eqno">(6.56)<a class="headerlink" href="#equation-0fa2ea5a-1bc7-4571-8e16-1d3c625d2954" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-29a521b4-ae52-4295-a208-a92a3e2380d1">
+<span class="eqno">(6.56)<a class="headerlink" href="#equation-29a521b4-ae52-4295-a208-a92a3e2380d1" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 \end{align}\]</div>
 <p>Notice when <span class="math notranslate nohighlight">\(k_{II}L = n\pi\)</span>, then the second term goes to zero, resulting in a transmission probability equal to 1.  Also, it is possible for particles to be reflected at both <span class="math notranslate nohighlight">\(x=-L\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>.  Their path difference back toward the <span class="math notranslate nohighlight">\(-x\)</span> direction is <span class="math notranslate nohighlight">\(2L\)</span>.  For an integral number of wavelengths inside the potential barrier, the incident and reflected wave functions are precisely out of phase and cancel completely.</p>
-<div class="figure align-default" id="barrier-potential" style="width: 600px">
-<div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_37_0.png" src="../_images/quantum-mechanics-part2_37_0.png" />
-</div>
-<p class="caption"><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Wave function for a free particle (<span class="math notranslate nohighlight">\(E=20\ {\rm eV}\)</span>) traveling over a potential barrier of width <span class="math notranslate nohighlight">\(2L\)</span> and height <span class="math notranslate nohighlight">\(V_o = 10\ {\rm eV}\)</span>.</span><a class="headerlink" href="#barrier-potential" title="Permalink to this image">#</a></p>
-</div>
+<figure class="align-default" id="barrier-potential" style="width: 600px">
+<img alt="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" src="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Wave function for a free particle (<span class="math notranslate nohighlight">\(E=20\ {\rm eV}\)</span>) traveling over a potential barrier of width <span class="math notranslate nohighlight">\(2L\)</span> and height <span class="math notranslate nohighlight">\(V_o = 10\ {\rm eV}\)</span>.</span><a class="headerlink" href="#barrier-potential" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -2141,43 +1990,46 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/quantum-mechanics-part2_37_1.png" src="../_images/quantum-mechanics-part2_37_1.png" />
+<img alt="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" src="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" />
 </div>
+</details>
 </div>
-</div>
-<div class="section" id="id1">
-<h3><span class="section-number">6.7.2. </span>Potential Barrier with <span class="math notranslate nohighlight">\(E&lt;V_o\)</span><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="id1">
+<h3><span class="section-number">6.7.2. </span>Potential Barrier with <span class="math notranslate nohighlight">\(E&lt;V_o\)</span><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>When the energy <span class="math notranslate nohighlight">\(E\)</span> is less than a potential barrier <span class="math notranslate nohighlight">\(V_o\)</span>, the particle cannot penetrate the barrier classically because its kinetic energy is negative.  The particle is reflected at <span class="math notranslate nohighlight">\(x=-L\)</span> and returns.  However, the quantum mechanical result describes a small (but finite) probability that the particle can penetrate the barrier and even emerge on the other side.</p>
-<div class="figure align-default" id="barrier-penetration">
+<figure class="align-default" id="barrier-penetration">
 <a class="reference internal image-reference" href="../_images/barrier_pot.gif"><img alt="barrier potential" src="../_images/barrier_pot.gif" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.8 </span><span class="caption-text">Classically, a particle of energy <span class="math notranslate nohighlight">\(E&lt;V_o\)</span> (<span class="math notranslate nohighlight">\(U_o = V_o\)</span> in the figure labels) could not penetrate the region inside the barrier. But the wave function associated with a free particle must be continuous at the barrier and will show an exponential decay inside the barrier. The wave function must also be continuous on the far side of the barrier, so there is a finite probability that the particle will tunnel through the barrier. Image credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/barr.html">Hyperphysics</a></span><a class="headerlink" href="#barrier-penetration" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 6.8 </span><span class="caption-text">Classically, a particle of energy <span class="math notranslate nohighlight">\(E&lt;V_o\)</span> (<span class="math notranslate nohighlight">\(U_o = V_o\)</span> in the figure labels) could not penetrate the region inside the barrier. But the wave function associated with a free particle must be continuous at the barrier and will show an exponential decay inside the barrier. The wave function must also be continuous on the far side of the barrier, so there is a finite probability that the particle will tunnel through the barrier. Image credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/barr.html">Hyperphysics</a></span><a class="headerlink" href="#barrier-penetration" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>There are only a few changes to the equations already presented in Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#potential-barrier-with-e-v-o">6.7.1</a>.  In region II, the wave function becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2c339700-3610-4395-a2c6-c85f5f81389d">
-<span class="eqno">(6.57)<a class="headerlink" href="#equation-2c339700-3610-4395-a2c6-c85f5f81389d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2afbfb2d-a2fc-4b0b-9782-7731a8db7688">
+<span class="eqno">(6.57)<a class="headerlink" href="#equation-2afbfb2d-a2fc-4b0b-9782-7731a8db7688" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_{II}(x) = Ce^{\kappa x} + De^{-\kappa x},\quad \text{where } \kappa = \sqrt{\frac{2m(V_o-E)}{\hbar^2}}.
 \end{align}\]</div>
 <p>The parameter <span class="math notranslate nohighlight">\(\kappa\)</span> is a positive, real number because <span class="math notranslate nohighlight">\(V_o &gt; E\)</span>.  The application of boundary conditions and a lot of tedious algebra relate the coefficients of the wave functions.</p>
 <p>The equations for the reflection and transmission probabilities are unchanged, but the results will be modified by replacing <span class="math notranslate nohighlight">\(ik_{II}\rightarrow \kappa\)</span>.  <strong>Tunneling</strong> is the effect where the particle penetrates the barrier and emerges on the other side.  The transmission probability is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1ceecec3-2f4a-4b5d-afc6-69edb6b4ab0a">
-<span class="eqno">(6.58)<a class="headerlink" href="#equation-1ceecec3-2f4a-4b5d-afc6-69edb6b4ab0a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e4de6c6a-5a42-42db-a768-7bd9b968536b">
+<span class="eqno">(6.58)<a class="headerlink" href="#equation-e4de6c6a-5a42-42db-a768-7bd9b968536b" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \left[ 1 + \frac{V_o^2 \sinh^2(kL)}{4E(V_o-E)}\right]^{-1}.
 \end{align}\]</div>
 <p>The only difference from the previous transmission coefficient is the replacement of sine with hyperbolic sine (<span class="math notranslate nohighlight">\(\sinh\)</span>).  When <span class="math notranslate nohighlight">\(kL \gg 1\)</span> the transmission probability reduces to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-53ade930-688d-4b80-a209-84a0b66d9de3">
-<span class="eqno">(6.59)<a class="headerlink" href="#equation-53ade930-688d-4b80-a209-84a0b66d9de3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0a8be8d0-0fca-4f1d-84a6-58a6ad1c539b">
+<span class="eqno">(6.59)<a class="headerlink" href="#equation-0a8be8d0-0fca-4f1d-84a6-58a6ad1c539b" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \frac{16E}{V_o}\left(1 -\frac{E}{V_o}\right)e^{-2\kappa L}.
 \end{align}\]</div>
 <p>Tunneling can be understood using the uncertainty principle, where inside the barrier the wave function <span class="math notranslate nohighlight">\(\psi_{II}\)</span> is dominated by the <span class="math notranslate nohighlight">\(e^{-\kappa x}\)</span> term, and the probability density <span class="math notranslate nohighlight">\(|\psi_{II}|^2 \approx e^{-2\kappa x}\)</span>.  Over a small interval <span class="math notranslate nohighlight">\(\Delta x = 1/\kappa\)</span>, the probability density of observing the particle has decreased substantially (<span class="math notranslate nohighlight">\(e^{-2} \approx 0.14\)</span>).  The uncertainty in the momentum is <span class="math notranslate nohighlight">\(\Delta p \geq \hbar/\Delta x = \hbar \kappa\)</span>.  The minimum kinetic energy must be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a61a522f-e926-4a08-96a6-7ff924fb8684">
-<span class="eqno">(6.60)<a class="headerlink" href="#equation-a61a522f-e926-4a08-96a6-7ff924fb8684" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-705bf6da-d3bd-4e6f-9ee5-bcac4f536b7b">
+<span class="eqno">(6.60)<a class="headerlink" href="#equation-705bf6da-d3bd-4e6f-9ee5-bcac4f536b7b" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_{\rm min} = \frac{(\Delta p)^2}{2m} = \frac{\pi^2 \kappa^2}{2m} = V_o - E.
 \end{align}\]</div>
 <p>The violation allowed by the uncertainty principle is exactly equal to the <em>negative</em> kinetic energy required.  The particle is allowed by quantum mechanics and the uncertainty principle to penetrate into a classically forbidden region.</p>
 <div class="exercise orange admonition" id="Chapter_6/quantum-mechanics-part2-exercise-9">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.10 </span></p>
-<div class="section" id="exercise-content">
+<section id="exercise-content">
 <p><strong>In a particular semiconductor device, electrons that are accelerated through a potential of <span class="math notranslate nohighlight">\(5\ {\rm V}\)</span> attempt to tunnel through a barrier (<span class="math notranslate nohighlight">\(0.8\ {\rm nm}\)</span> wide and <span class="math notranslate nohighlight">\(10\ {V}\)</span> tall).  What fraction of the electrons are able to tunnel through the barrier if the potential is zero outside the barrier?</strong></p>
 <p>The kinetic energy of the electrons is <span class="math notranslate nohighlight">\(5\ {\rm eV}\)</span>, which is less than the barrier potential height (<span class="math notranslate nohighlight">\(V_o = 10\ {\rm eV}\)</span>).  Thus, we use the equation for the transmission probability with the <span class="math notranslate nohighlight">\(\sinh\)</span> term and <span class="math notranslate nohighlight">\(\kappa\)</span>.  The parameter <span class="math notranslate nohighlight">\(\kappa\)</span> is given as</p>
 <div class="amsmath math notranslate nohighlight">
@@ -2193,7 +2045,7 @@ K_{\rm min} = \frac{(\Delta p)^2}{2m} = \frac{\pi^2 \kappa^2}{2m} = V_o - E.
 T = \left[\frac{1 + (1.602 \times 10^{-18}\ {\rm J})\sinh^2(9.2)}{4(8 \times 10^{-19}\ {\rm J})(8 \times 10^{-19}\ {\rm J})}\right]^{-1} = 4.1 \times 10^{-8}
 \end{align*}\]</div>
 <p>The fraction of electrons that can tunnel through the barrier is equal to the transmission probability.</p>
-</div>
+</section>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2229,24 +2081,26 @@ The fraction of electrons (transmission coefficient) that can penetrate the barr
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="potential-well">
-<h3><span class="section-number">6.7.3. </span>Potential Well<a class="headerlink" href="#potential-well" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="potential-well">
+<h3><span class="section-number">6.7.3. </span>Potential Well<a class="headerlink" href="#potential-well" title="Permalink to this heading">#</a></h3>
 <p>A particle of energy <span class="math notranslate nohighlight">\(E&gt;0\)</span> could pass through a potential well rather than into a potential barrier.  This is an example for the above cases where <span class="math notranslate nohighlight">\(V=-V_o\)</span> in the region <span class="math notranslate nohighlight">\(-L&lt; x &lt;L\)</span> and zero elsewhere.  Classically the particle would gain energy and accelerate while passing the well region.  In quantum mechanics, reflection and transmission may occur, but the wavelength inside the potential well is smaller than outside.</p>
 <p>When the potential well width is precisely equal to half-integral or integral units of the wavelength, then the reflected waves may be out of phase or in phase with the original wave.  Additionally cancellations or resonances may occur.</p>
-</div>
-<div class="section" id="alpha-particle-decay">
-<h3><span class="section-number">6.7.4. </span>Alpha-Particle Decay<a class="headerlink" href="#alpha-particle-decay" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="alpha-particle-decay">
+<h3><span class="section-number">6.7.4. </span>Alpha-Particle Decay<a class="headerlink" href="#alpha-particle-decay" title="Permalink to this heading">#</a></h3>
 <p>The phenomenon of tunneling explains the alpha-particle decay of radioactive nuclei.  Many nuclei heavier than lead are natural emitters of alpha particles, but their emission rates vary (by a factor of <span class="math notranslate nohighlight">\(10^{13}\)</span>) and their energies are limited to only <span class="math notranslate nohighlight">\(4-8\ {\rm MeV}\)</span>.  Inside the nucleus, the alpha particle feels the strong, short-range attractive nuclear force (i.e., a potential well) and the repulsive Coulomb force (i.e., a potential barrier).</p>
-<div class="figure align-default" id="alpha-tunneling">
+<figure class="align-default" id="alpha-tunneling">
 <a class="reference internal image-reference" href="../_images/alpha_tunneling.png"><img alt="alpha particle tunneling" src="../_images/alpha_tunneling.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 6.9 </span><span class="caption-text">The nuclear strong force and the electromagnetic force influence radioactivity in the form of alpha decay. Image credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/alptun.html">Hyperphysics</a></span><a class="headerlink" href="#alpha-tunneling" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 6.9 </span><span class="caption-text">The nuclear strong force and the electromagnetic force influence radioactivity in the form of alpha decay. Image credit: <a class="reference external" href="http://hyperphysics.phy-astr.gsu.edu/hbase/Nuclear/alptun.html">Hyperphysics</a></span><a class="headerlink" href="#alpha-tunneling" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The alpha particle is trapped inside the nucleus and classically, it does not have enough energy to penetrate the Coulomb barrier.  Through quantum mechanics, the alpha particle can “tunnel” through the Coulomb potential to escape.  The widely varying alpha emission rates can be explained by small changes in the potential barrier (both height and width).</p>
-</div>
-</div>
-<div class="section" id="homework-problems">
-<h2><span class="section-number">6.8. </span><strong>Homework Problems</strong><a class="headerlink" href="#homework-problems" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section id="homework-problems">
+<h2><span class="section-number">6.8. </span><strong>Homework Problems</strong><a class="headerlink" href="#homework-problems" title="Permalink to this heading">#</a></h2>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
 <p>Show directly that the trial wave function <span class="math notranslate nohighlight">\(\Psi (x,t) = e^{i(kx-\omega t)}\)</span> satisfies the time-dependent Schrödinger wave equation.</p>
@@ -2277,8 +2131,8 @@ The fraction of electrons (transmission coefficient) that can penetrate the barr
 <p class="admonition-title">Problem 7</p>
 <p>Check to see whether the simple linear combination of sine and cosine functions (<span class="math notranslate nohighlight">\(\psi = A\sin(kx) + B\cos(kx)\)</span>) satisfies the <strong>time-independent</strong> Schrödinger equation for a free particle (<span class="math notranslate nohighlight">\(V=0\)</span>).</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2292,7 +2146,7 @@ The fraction of electrons (transmission coefficient) that can penetrate the barr
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Chapter_6"
         },
         predefinedOutput: true
@@ -2300,50 +2154,120 @@ The fraction of electrons (transmission coefficient) that can penetrate the barr
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../Chapter_5/quantum-mechanics-part1.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5. </span>Quantum Mechanics: Part I</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Chapter_5/quantum-mechanics-part1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Quantum Mechanics: Part I</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="../Chapter_7/hydrogen-atom.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="../Chapter_7/hydrogen-atom.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">7. </span>The Hydrogen Atom and Atomic Physics</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-schrodinger-wave-equation">6.1. The Schrödinger Wave Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalization-and-probability">6.1.1. Normalization and Probability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-valid-wave-functions">6.1.2. Properties of Valid Wave Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-independent-schrodinger-wave-equation">6.1.3. Time-Independent Schrödinger Wave Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-classical-and-quantum-mechanics">6.1.4. Comparison of Classical and Quantum Mechanics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation-values">6.2. Expectation Values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-square-well-potential">6.3. Infinite Square-Well Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finite-square-well-potential">6.4. Finite Square-Well Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#three-dimensional-infinite-potential-well">6.5. Three-Dimensional Infinite-Potential Well</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-harmonic-oscillator">6.6. Simple Harmonic Oscillator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#barriers-and-tunneling">6.7. Barriers and Tunneling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-barrier-with-e-v-o">6.7.1. Potential Barrier with <span class="math notranslate nohighlight">\(E&gt;V_o\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.7.2. Potential Barrier with <span class="math notranslate nohighlight">\(E&lt;V_o\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-well">6.7.3. Potential Well</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alpha-particle-decay">6.7.4. Alpha-Particle Decay</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-problems">6.8. <strong>Homework Problems</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Billy Quarles<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Billy Quarles
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

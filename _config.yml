@@ -7,7 +7,7 @@
 # Book settings
 title                       : PHYS2700 Modern Physics  # The title of the book. Will be placed in the left navbar.
 author                      : Billy Quarles  # The author of the book
-copyright                   : "2022"  # Copyright year to be placed in the footer
+copyright                   : "2024"  # Copyright year to be placed in the footer
 logo                        : "bohr_gif.gif"  # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints","*.png"]
@@ -35,6 +35,7 @@ parse:
     - dollarmath
     - html_image
     - html_admonition
+    - colon_fence
 
 #######################################################################################
 # LaTeX-specific settings

@@ -72,6 +72,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_10/semiconductors';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -443,7 +445,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -459,6 +463,43 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#band-theory-of-solids">10.1. Band Theory of Solids</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kronig-penney-model">10.1.1. Kronig-Penney Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#band-theory-and-conductivity">10.1.2. Band Theory and Conductivity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductor-theory">10.2. Semiconductor Theory</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermoelectric-effect">10.2.1. Thermoelectric Effect</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductor-devices">10.3. Semiconductor Devices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diodes">10.3.1. Diodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rectifiers">10.3.2. Rectifiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zener-diodes">10.3.3. Zener Diodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#light-emitting-diodes-leds">10.3.4. Light-Emitting Diodes (LEDs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photovoltaic-cells">10.3.5. Photovoltaic Cells</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transistors">10.3.6. Transistors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#field-effect-transistors">10.3.7. Field Effect Transistors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schottky-barriers">10.3.8. Schottky Barriers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductor-lasers">10.3.9. Semiconductor Lasers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrated-circuits">10.3.10. Integrated Circuits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nanotechnology">10.4. Nanotechnology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-nanotubes">10.4.1. Carbon Nanotubes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nanoscale-electronics">10.4.2. Nanoscale Electronics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-dots">10.4.3. Quantum Dots</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nanotechnolgy-and-the-life-sciences">10.4.4. Nanotechnolgy and the Life Sciences</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#information-science">10.4.5. Information Science</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -470,6 +511,434 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="semiconductors">
 <h1><span class="section-number">10. </span>Semiconductors<a class="headerlink" href="#semiconductors" title="Permalink to this heading">#</a></h1>
+<section id="band-theory-of-solids">
+<h2><span class="section-number">10.1. </span>Band Theory of Solids<a class="headerlink" href="#band-theory-of-solids" title="Permalink to this heading">#</a></h2>
+<p>There are three categories of solids, based on their conduction properties: conductors, semiconductors, and insulators.  The electrical conductivity at room temperature is quite different for each of these three kinds of solids.  In order from highest to lowest conductivity is metals and alloys; semiconductors, and insulators.</p>
+<p>The free electorn model does not apply to semiconductors and insulators.  These materials lack enough free electrons to conduct in a free-electron mode.  If the electirical conductivity of semiconductors is about <span class="math notranslate nohighlight">\(10\)</span> orders of magnitude lower, could it be that the charge carrier density is lower by that factors?</p>
+<p>That is only part of the story, where there is a differnt conduction mechanism for semiconductors than for normal conductors.  Although free-electron theory predicts a linear increase in resistivity with temperature, semiconductors generally exhibit <em>decreasing</em> resistivity with increasing temperature.</p>
+<p><strong>Band theory</strong> is needed to account for the temperature dependence and other properties of semiconductors.  In band theory, the allowed energy states for electrons are nearly continuous over certain ranges (i.e., <strong>energy bands</strong>) with forbidden <strong>energy gaps</strong> between the bands.</p>
+<p>Let’s consider what happens when two atoms of hydrogen are brought together; hydrogen is used only because we conveniently know its wave function, but any other element could have been chosen.</p>
+<ul class="simple">
+<li><p>When the two atoms are far apart, the electronic wave functions can be treated as noninteracting.</p></li>
+<li><p>As the atoms are brought closer together, the wave functions begin to overlap.</p></li>
+</ul>
+<p>Because any linear combination of wave functions is possible, there can be either a symmetric or antisymmetric overlap.  These two situations correspond to slightly different energies.  An electron in the symmetric state <span class="math notranslate nohighlight">\((\Psi_A + \Psi_B)\)</span> has a nonzero probability of being halfway between the two atoms, whereas an electron in the antisymmetric state <span class="math notranslate nohighlight">\((\Psi_A + \Psi_B)\)</span> has a zero probability of begin at that location.</p>
+<p>This causes the binding to be slightly stronger in the symmetric case, and hence the energy of that state is lower.  As a result, there is a splitting of all possible energy levels <span class="math notranslate nohighlight">\((1s,\ 2s,\ \ldots)\)</span>.  In each case the symmetric state has the lower energy.</p>
+<p>When more atoms are added, there is a further splitting of energy levels.  With a large number of atoms, the levels are split into nearly continuous energy bands, with each band consisting of a number of closely spaced energy levels.</p>
+<p>An energy gap may or may not exist between bands, depending onthe type of atom (or atoms) in the solid, lattice spacing, lattice structure, temperature, and an number of other factors.</p>
+<section id="kronig-penney-model">
+<h3><span class="section-number">10.1.1. </span>Kronig-Penney Model<a class="headerlink" href="#kronig-penney-model" title="Permalink to this heading">#</a></h3>
+<p>An effectinve way to understand the energy gap in semiconductors is to model the interaction betwen the electrons and the lattice of atoms.  This interaction is more important in semiconductors because much higher resistivity implies tighter binding and/or more interaction.  <a class="reference external" href="https://en.wikipedia.org/wiki/Ralph_Kronig">Ralph de Laer Kronig</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/William_Penney,_Baron_Penney">William Penney</a> developed a useful 1-D model of the electron lattice interaction in 1931.</p>
+<p>They assumed that an electron experiences a potential like a square-wave, or in infinite 1-D array of finite potential wells.  Each potential well represents an atom in the lattice, so the size of the wells must roughly correspond to the lattice spacing.</p>
+<p>The Kronig-Penney method for finding the allowed energy levels follows the method of barrier tunneling (see barriers and tunneling in <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#barriers-and-tunneling">Chapter 6</a>).  The electrons are not free.  We assume that the total energy <span class="math notranslate nohighlight">\(E\)</span> of an electron is less than the height <span class="math notranslate nohighlight">\(V_o\)</span> of each barrier/well in the Kronig-Penney potential.  The electron is essentially free in the gap <span class="math notranslate nohighlight">\(0&lt;x &lt;a\)</span>, where it has a wave function of the form</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a9a2bc53-e2db-46de-acfc-951b230dcad2">
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-a9a2bc53-e2db-46de-acfc-951b230dcad2" title="Permalink to this equation">#</a></span>\[\begin{align}
+\psi = Ae^{ikx} + Be^{-ikx},
+\end{align}\]</div>
+<p>where the wave number <span class="math notranslate nohighlight">\(k\)</span> is given by the usual relation <span class="math notranslate nohighlight">\(k^2 = 2mE/\hbar^2\)</span>.  In the barrier region <span class="math notranslate nohighlight">\(a&lt;x&lt;a+b\)</span>, the electron can tunnel through.  This means that the wave function loses its sinusoidal character and becomes</p>
+<div class="amsmath math notranslate nohighlight" id="equation-db7355eb-26b3-4349-851e-e7fcef135f26">
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-db7355eb-26b3-4349-851e-e7fcef135f26" title="Permalink to this equation">#</a></span>\[\begin{align}
+\psi = Ce^{\kappa x} + De^{-\kappa x},
+\end{align}\]</div>
+<p>with <span class="math notranslate nohighlight">\(\kappa^2 = 2 m\left(V_o - E\right)/\hbar^2\)</span>.</p>
+<p>Kronig and Penney used the technique of matching wave functions and their first derivatives at the various boundaries.  Application of the appropriate boundary conditions yields the relation</p>
+<div class="math notranslate nohighlight" id="equation-boundary-eqn">
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-boundary-eqn" title="Permalink to this equation">#</a></span>\[\frac{\kappa^2b}{2k}\sin{(ka)} + \cos{(ka)} = \cos{(Ka)},\]</div>
+<p>where <span class="math notranslate nohighlight">\(K\)</span> is another wave number.</p>
+<p>In the python script below, you can see the left hand side (LHS) of Eq. <a class="reference internal" href="#equation-boundary-eqn">(10.3)</a> plotted against the argument <span class="math notranslate nohighlight">\(ka\)</span> for <span class="math notranslate nohighlight">\(\kappa^2 ba/2 = 3\pi/2\)</span>.  Because the sine and cosine funcitons are restricted to <span class="math notranslate nohighlight">\({-1,1}\)</span>, the relation in Eq. <a class="reference internal" href="#equation-boundary-eqn">(10.3)</a> cannot be satisfied for all values of <span class="math notranslate nohighlight">\(\kappa\)</span> and <span class="math notranslate nohighlight">\(k\)</span>.  The right hand side (RHS) of Eq. <a class="reference internal" href="#equation-boundary-eqn">(10.3)</a> is also restricted to <span class="math notranslate nohighlight">\({-1,1}\)</span>, which leads to <strong>forbidden zones</strong> for the wave numbers, or gaps in the corresponding energies.</p>
+<p>The gaps occur regularly at <span class="math notranslate nohighlight">\(ka = n\pi\)</span>, for integer values of <span class="math notranslate nohighlight">\(n\)</span>.  With <span class="math notranslate nohighlight">\(k = n\pi/a = 2\pi/\lambda\)</span>, we see that <span class="math notranslate nohighlight">\(\lambda = 2a/n\)</span>.  Twice the lattice spacing <span class="math notranslate nohighlight">\((2a)\)</span> correponds to an integer multiple of the free-particle wavelength <span class="math notranslate nohighlight">\((n\lambda)\)</span>, and a free particle with this wavelength would be reflected by the lattice.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+
+<span class="n">ka_L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mf">0.01</span><span class="p">)</span> <span class="c1"># k = np.arange(...)/a</span>
+<span class="c1">#kappa^2 ba/2 = 3\pi/2 --&gt; kappa^2 ba/(2*np.arange(..))</span>
+<span class="n">fact</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">ka_L</span><span class="p">)</span>
+<span class="n">LHS</span> <span class="o">=</span> <span class="n">fact</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">ka_L</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">ka_L</span><span class="p">)</span>
+<span class="n">Ka_R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">RHS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka_R</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mf">2.5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ka_L</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">LHS</span><span class="p">,</span><span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">ka_L</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">LHS</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">where</span><span class="o">=</span><span class="n">LHS</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">ka_L</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">LHS</span><span class="p">,</span><span class="n">where</span><span class="o">=</span><span class="n">LHS</span><span class="o">&lt;-</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s1">&#39;</span><span class="si">%i</span><span class="s1">$</span><span class="se">\\</span><span class="s1">pi$&#39;</span><span class="o">%</span> <span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$ka$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;large&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$</span><span class="se">\\</span><span class="s2">frac{\kappa^2 b}</span><span class="si">{2k}</span><span class="s2">\sin(ka) + \cos(ka)$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;large&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/386c8114ab70c6b48632b43a455c9de167ebcb087ecbe321aa49872e80e54e9e.png" src="../_images/386c8114ab70c6b48632b43a455c9de167ebcb087ecbe321aa49872e80e54e9e.png" />
+</div>
+</div>
+<p>There are some differences between our simplified Kronig-Penney model and the single potential well from <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#barriers-and-tunneling">Chapter 6</a>).</p>
+<ol class="arabic simple">
+<li><p>For an infinite lattice, the allowed energies within each band are continuous rather than discrete.  In a real crystal the lattice is not infinite.  Even if the chains are only thousands of atoms long, the allowed energies are nearly continuous.</p></li>
+<li><p>In a real 3-D crystal it is appropriate to speak of a <strong>wave vector</strong> <span class="math notranslate nohighlight">\(\vec{k}\)</span> (i.e., contains a direction and magnitude).  The allowed ranges for <span class="math notranslate nohighlight">\(\vec{k}\)</span> constitute the <a class="reference external" href="https://en.wikipedia.org/wiki/Brillouin_zone"><strong>Brillouin zones</strong></a>.</p></li>
+<li><p>In a real crystal, the potential funciton is somewhat more complicated than the Kronig-Penney squares.  As a result, the energy gaps are not uniform in size.  The gap sizes may be changed by impurities or imperfections of the lattice.</p></li>
+</ol>
+<p>These differences are important as we try to understand the electronic behavior of semiconductors.</p>
+</section>
+<section id="band-theory-and-conductivity">
+<h3><span class="section-number">10.1.2. </span>Band Theory and Conductivity<a class="headerlink" href="#band-theory-and-conductivity" title="Permalink to this heading">#</a></h3>
+<p>Good conductors (e.g., copper) are understood using the free-electron model.</p>
+<ul class="simple">
+<li><p>It is also possible to make a conductor using a material with its highest band filled, in which case no electron in that band can be considered free.</p></li>
+<li><p>If the filled band overlaps with the next higher band (i.e., effectively there is no gap between the two bands), then an applied electric field can make an electron from the filled band jump to the higher level.</p></li>
+<li><p>This allows conduction to take place, although typically with slightly higher resistance than in normal metals. Such materials are called <strong>semimetals</strong> (e.g., arsenic, bismuth, and antimony).</p></li>
+</ul>
+<p>The band structures of insulators and semiconductors resemble each other qualitatively.  Normally there exists (in both insulators and semiconductors) a filled energy band known as the <strong>valence band</strong>, which is separated from the next higher band called the <strong>conduction band</strong> by an energy gap.</p>
+<p>If the gap is at least several electron volts (<span class="math notranslate nohighlight">\(\rm eV\)</span>), the material is an insulator.  It is too difficult for an applied field to overcome that large energy gap, and thermal excitations lack the energy to promote sufficient numbers of electrons to the conduction band.</p>
+<p>But if the energy gap is smaller (<span class="math notranslate nohighlight">\({\sim}1\ {\rm eV}\)</span>), it is possible for enough electrons to be excited into the conduction band.  Therefore, an applied electric field can produce a modest current.  The result is a semiconductor.</p>
+</section>
+</section>
+<section id="semiconductor-theory">
+<h2><span class="section-number">10.2. </span>Semiconductor Theory<a class="headerlink" href="#semiconductor-theory" title="Permalink to this heading">#</a></h2>
+<p>At <span class="math notranslate nohighlight">\(T=0\)</span>, we expect all of the atoms in a solid are in the ground state.  The distribution of electrons (i.e., fermions) at the various energy levels is described by the Fermi-Dirac distribution:</p>
+<div class="math notranslate nohighlight">
+\[ F_{\rm FD} = \frac{1}{e^{\beta(E-E_{\rm F})}+1}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\beta = 1/(kT)\)</span> and <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> is the Fermi energy.  Atoms are found in the excited states when the temperature is increased from <span class="math notranslate nohighlight">\(T=0\)</span>.</p>
+<p>The increased number of electrons in excited states explains the temperature dependence for the resistivity of semiconductors.  Only those electrons that have jumped from the valence band to the conduction band are available to participate in the conduction process in a semiconductor.  As the temperature increases, more electrons are found in the conduction band, but the resistivity decreases.</p>
+<p>A couple of observations about the Fermi-Dirac factor:</p>
+<ol class="arabic simple">
+<li><p>The energy <span class="math notranslate nohighlight">\(E\)</span> in the exponential factor makes it clear why the band gap is so crucial.  An increase in the band gap by a factor of 10 will (for a given temperature) increaes the value of <span class="math notranslate nohighlight">\(e^{\beta E}\)</span> by a factor of <span class="math notranslate nohighlight">\(e^{9\beta E}\)</span>.  This makes the factor <span class="math notranslate nohighlight">\(F_{\rm FD}\)</span> so small that the material has to be an insulator.</p></li>
+<li><p>One may expect the resistance of a semiconductor to decrease exponentially with increasing temperature.  This is approximately true, but the function <span class="math notranslate nohighlight">\(F_{\rm FD}\)</span> is not a simple exponential and the bad gap varies with temperature.</p></li>
+</ol>
+<p>A useful empirical expression developed by <a class="reference external" href="https://pubs.aip.org/aip/rsi/article-abstract/23/5/213/298007/The-Low-Temperature-Characteristics-of-Carbon">Clement &amp; Quinnell (1952)</a> for the temperature variation of standard carbon resistors is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-cdb9fd93-8005-47cc-94c6-220a466f60ca">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-cdb9fd93-8005-47cc-94c6-220a466f60ca" title="Permalink to this equation">#</a></span>\[\begin{align}
+\log{R} + \frac{K}{\log{R}} = A + \frac{B}{T},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(K\)</span> are constants.  When the above equation is plotted against <span class="math notranslate nohighlight">\(1/T\)</span>, straight lines are seen up to <span class="math notranslate nohighlight">\(1/T \sim 0.6\)</span>, which allows us to conclude that the Clement-Quinnell equation is accurate down to <span class="math notranslate nohighlight">\(T \approx 1/0.6\ {\rm K} = 1.7\ {\rm K}\)</span>.</p>
+<p>In a plot of resistance versus temperature, the variation of <span class="math notranslate nohighlight">\(R\)</span> with <span class="math notranslate nohighlight">\(T\)</span> is rapid in the low-temperature range (<span class="math notranslate nohighlight">\(0\leq T \lesssim 20\ {\rm K})\)</span> for semiconductor materials.  For this reason, carbon and other semiconductors are widely used as resistance thermometers (“thermistors”) in low-temperature physics.</p>
+<div class="exercise orange admonition" id="Chapter_10/semiconductors-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10.1 </span></p>
+<section id="exercise-content">
+<p><strong>Find the relative number of electrons with energies <span class="math notranslate nohighlight">\(0.10\)</span>, <span class="math notranslate nohighlight">\(1.0\)</span>, and <span class="math notranslate nohighlight">\(10\ {\rm eV}\)</span> above the valence band at room temperature <span class="math notranslate nohighlight">\((293\ {\rm K})\)</span>.</strong></p>
+<p>Since we have only energies and temperatures, it makes sense to use the Fermi-Dirac distribution for this comparison.  Also, we will use an alternative form of Boltzmann’s constant <span class="math notranslate nohighlight">\(k = 8.617 \times 10^{-5}\ {\rm eV/K}\)</span> to make the calculation a little easier.</p>
+<p>In the Fermi-Dirac distribution <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> is the Fermi energy, but <span class="math notranslate nohighlight">\(E-E_{\rm F}\)</span> represents the energy <em>above</em> the valence band.  To simplify the expression, we first calculate <span class="math notranslate nohighlight">\(kT = (8.617 \times 10^{-5}\ {\rm eV/K})(293\ {\rm K}) = 0.02525\ {\rm eV}\)</span>. Therefore, we can proceed with a simple substitution to get:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f4fc21d3-a33c-4bb1-9cf9-c0e457f1859e">
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-f4fc21d3-a33c-4bb1-9cf9-c0e457f1859e" title="Permalink to this equation">#</a></span>\[\begin{align}
+F_{\rm FD}(0.10\ {\rm eV}) &amp;= \frac{1}{e^{(0.1\ {\rm eV})/(0.02525\ {\rm eV})}+1} = 0.0187, \\
+F_{\rm FG}(1.0\ {\rm eV}) &amp;= \frac{1}{e^{(1\ {\rm eV})/(0.02525\ {\rm eV})}+1} = 6.30 \times 10^{-18}, \\
+F_{\rm FG}(10\ {\rm eV}) &amp;= \frac{1}{e^{(10\ {\rm eV})/(0.02525\ {\rm eV})}+1} = 9.86 \times 10^{-173}.
+\end{align}\]</div>
+<p>This example demonstrates how strongly the Fermi-Dirac factor depends on the size of the band gap, <span class="math notranslate nohighlight">\(E-E_{\rm F}\)</span>.  The number of electrons available for conduction drops off sharply as the band gap increases.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">physical_constants</span> 
+
+<span class="k">def</span> <span class="nf">Fermi_Dirac</span><span class="p">(</span><span class="n">deltaE</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">):</span>
+    <span class="c1">#calculate the relative number of electrons above the valence band</span>
+    <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">deltaE</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">k_eV</span> <span class="o">=</span> <span class="n">physical_constants</span><span class="p">[</span><span class="s1">&#39;Boltzmann constant in eV/K&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">T_room</span> <span class="o">=</span> <span class="mi">293</span> <span class="c1">#room temperature in K</span>
+
+<span class="n">Evals</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="c1">#energies delta E = E-E_F</span>
+<span class="k">for</span> <span class="n">E</span> <span class="ow">in</span> <span class="n">Evals</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The relative number of electrons at room temperature for delta E = </span><span class="si">%1.1f</span><span class="s2"> is </span><span class="si">%1.3e</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">Fermi_Dirac</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">k_eV</span><span class="p">,</span><span class="n">T_room</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The relative number of electrons at room temperature for delta E = 0.1 is 1.870e-02.
+The relative number of electrons at room temperature for delta E = 1.0 is 6.301e-18.
+The relative number of electrons at room temperature for delta E = 10.0 is 9.861e-173.
+</pre></div>
+</div>
+</div>
+</div>
+<p>When electrons move into the conduction band, they leave behind vacancies (or <strong>holes</strong>) in the valence band.  The holes represent the absence of negative charges, where it can be useful to think of them as positive charges.  Electrons move in a direction <em>opposite</em> to the applied electric field, but holes move in the direction of the electric field.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A semiconductor with a balance between the number of electrons in the conduction band and the number of holes in the valence band is called an <strong>intrinsic semiconductor</strong>, such as pure carbon and germanium.</p>
+</div>
+<p>It is possible to fine-tune a semiconductor’s properties by adding a small amount of material (called a <em>dopant</em>) to the semiconductor.  The resulting compound is called an <strong>impurity semiconductor</strong>.  This happens when we add a small amount of arsenic to silicon.  Each arsenic atom replaces a silicon atom in the lattice.  <em>What does this do to the conductive properties of the material?</em></p>
+<p>Notice that silicon has four electrons <span class="math notranslate nohighlight">\((3s^23p^2)\)</span> in its outermost shell (i.e., the valence band) and arsenic has five electrons <span class="math notranslate nohighlight">\((3s^24p^3)\)</span>. Arsenic’s fifth electron is very weakly bound, where the other for outer-shell electrons participate in covalent bonding with its nearest neighbor (just as another silicon atom would).  It only takes <span class="math notranslate nohighlight">\(0.05\ {\rm eV}\)</span> to move the extra electron into the conduction band.  Adding only a small amount of arsenic to silicon greatly increases the electrical conductivity.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The addition of arsenic to silicon creates an <span class="math notranslate nohighlight">\(\mathbf{n}\)</span><strong>-type</strong> semiconductor (<span class="math notranslate nohighlight">\(n\)</span> for negative) because electrons close to the conduction band will easily conduct current.  The new arsenic energy levels just below the conduction band are called <strong>donor levels</strong> because an electron there is easily donated to the conduction band.</p>
+</div>
+<p>Consider what happens when indium <span class="math notranslate nohighlight">\((5s^25p^1)\)</span> is added to silicon.  Indium has one less electron in its outer shell than silicon, which results in one extra hole per indium atom.  The existence of these holes creates extra energy levels just above the valence band because it takes very little energy to move another electron into a hole.</p>
+<p>Those new indium levels are called <strong>acceptor levels</strong> because they easily accept an electron from the valence band.  The result is an increased flow of current (or lower electrical resistance) as the electrons fill holes under an applied electric field.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is easier to think in terms of the flow of positive charges (holes) in the direction of the applied field, so we cal this a <span class="math notranslate nohighlight">\(\mathbf{p}\)</span><strong>-type</strong> semiconductor (<span class="math notranslate nohighlight">\(p\)</span> for positive).</p>
+</div>
+<p>There are many <strong>compound semiconductors</strong>, which consist of equal numbers of two kinds of atoms.  Examples include <span class="math notranslate nohighlight">\(\rm GaAs,\ InP,\ GaN,\ SiC,\ \text{and}\ InSb\)</span>. In a compound semiconductor, a mixed form of covalent and ionic bonding creates the same type of tetrhedral bonding as pure <span class="math notranslate nohighlight">\(\rm Ge\)</span> and <span class="math notranslate nohighlight">\(\rm Si\)</span>.  Compound semiconductors have band gaps and can be doped like intrinsic semiconductors to form <span class="math notranslate nohighlight">\(p\)</span>-type and <span class="math notranslate nohighlight">\(n\)</span>-type semiconductors.</p>
+<p>One may be skeptical when we introduce a so-called “positive current” and ask to what extent the holes are real.  It can be shown experimentally (using the normal Hall effect) that <span class="math notranslate nohighlight">\(p\)</span>-type materials really do behave as if the charge carriers were positive.  The magnitude and sign of the Hall voltage allow one to calculate the density and sign of the charge carriers in a conductor (or semiconductor) and verigy that charges in <span class="math notranslate nohighlight">\(p\)</span>-type and <span class="math notranslate nohighlight">\(n\)</span>-type materials have different signs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Benjamin Franklin popularized the “single-fluid” model of electricity, where Franklin considered electrical forces as the result of excesses (“positive”) and deficiencies (“negative”) of an electrical fluid.  His designation is rather arbitrary, and if he had chosen the reverse, electrons would be positive.</p>
+</div>
+<section id="thermoelectric-effect">
+<h3><span class="section-number">10.2.1. </span>Thermoelectric Effect<a class="headerlink" href="#thermoelectric-effect" title="Permalink to this heading">#</a></h3>
+<p>When there is a temperature gradient in a thermoelectric material, an electric field appears which we call the <a class="reference external" href="https://en.wikipedia.org/wiki/Thermoelectric_effect"><strong>thermoelectric effect</strong></a>.  It’s easier to understand why this happens in a pure metal, where we can assume a gas of free electrons.</p>
+<p>As in an ideal gas, the density of free electrons is greater at the colder end of the wire, and the electrical potential is higher at the warmer end (and lower at the colder end).  Since the conducting properties are temperature dependent, it is reasonable that semiconductors should exhibit a thermoelectric effect (even though the free-electron modle is not valid for semiconductors).</p>
+<p>In 1-D the induced electric field <span class="math notranslate nohighlight">\(E\)</span> in a semiconductor is propotional to the temperature gradient, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-196ce9d0-c20c-42cd-b377-f65f02d564a5">
+<span class="eqno">(10.6)<a class="headerlink" href="#equation-196ce9d0-c20c-42cd-b377-f65f02d564a5" title="Permalink to this equation">#</a></span>\[\begin{align}
+E = Q \frac{dT}{dx},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(Q\)</span> is the <strong>thermoelectric power</strong>.  The direction of the induced field depends on whether the seminconductor is <span class="math notranslate nohighlight">\(p\)</span>- or <span class="math notranslate nohighlight">\(n\)</span>-type.  As a result, the thermoelectric effect can be used to determine the extent to which <span class="math notranslate nohighlight">\(n\)</span>- or <span class="math notranslate nohighlight">\(p\)</span>-type carriers dominate in a complex system.</p>
+<p>The thermoelectric effect (sometimes called the <a class="reference external" href="https://en.wikipedia.org/wiki/Thermoelectric_effect#Seebeck_effect"><strong>Seebeck effect</strong></a>) that demonstrates the type of semiconductor is the most commonly used thermoelectric effect.  However, there are two others.</p>
+<ol class="arabic simple">
+<li><p>In a normal conductor, heat is generated at the rate <span class="math notranslate nohighlight">\(I^2R\)</span>, but a temperature gradient across the conductor causes additional heat to be generated.  The is known as the <a class="reference external" href="https://en.wikipedia.org/wiki/Thermoelectric_effect#Thomson_effect"><strong>Thomson effect</strong></a> and is entirely reversible (strangely enough).</p>
+<ul class="simple">
+<li><p>If the direction of the current is toward the higher temperature end, heat is generated.</p></li>
+<li><p>If the current flows toward the lower temperature end, heat is absorbed from the surroundings.</p></li>
+</ul>
+</li>
+<li><p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Thermoelectric_effect#Peltier_effect"><strong>Peltier effect</strong></a> occurs when heat is generated at a junction between two conductors as current passes through the junction.</p></li>
+</ol>
+<p>An application of the Seebeck effect i in thermometry.  The thermoelectric power of a given conductor varies as a function of temperature, and the variation can be quite different for two different conductors.  This difference makes possible the operation of a <a class="reference external" href="https://en.wikipedia.org/wiki/Thermocouple"><strong>thermocouple</strong></a>.</p>
+<p>Two conductors <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are joined at each end, where one end is held at a reference temperature <span class="math notranslate nohighlight">\(T_o\)</span> and the other is placed as some unknown temperature <span class="math notranslate nohighlight">\(T\)</span>.  The differential thermopowers of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> cause a voltage <span class="math notranslate nohighlight">\(V_{AB}\)</span> to be induced between the two ends of the thermocouple.  Knowing the temperature variation of each thermopower allows one to calculate the temperature difference <span class="math notranslate nohighlight">\(T-T_o\)</span> (and deduce the unknown temperature <span class="math notranslate nohighlight">\(T\)</span>) as a function of <span class="math notranslate nohighlight">\(V_{AB}\)</span>.</p>
+<p>In practice, it is not necessary to measure thermopowers to use a thermocouple.  Well-established tables (see <a class="reference external" href="https://www.pyromation.com/downloads/data/temperature-tables.pdf">Table 7</a>) for voltage versus temperature can be found in many handbooks for different conductiong pairs over wide ranges of temperature.</p>
+</section>
+</section>
+<section id="semiconductor-devices">
+<h2><span class="section-number">10.3. </span>Semiconductor Devices<a class="headerlink" href="#semiconductor-devices" title="Permalink to this heading">#</a></h2>
+<section id="diodes">
+<h3><span class="section-number">10.3.1. </span>Diodes<a class="headerlink" href="#diodes" title="Permalink to this heading">#</a></h3>
+<p>When <span class="math notranslate nohighlight">\(p\)</span>-type and <span class="math notranslate nohighlight">\(n\)</span>-type semiconductors are joined together, they make a simple device known as a <span class="math notranslate nohighlight">\(\mathbf{pn}\)</span><strong>-junction diode</strong>.  The principal characteristic of a <span class="math notranslate nohighlight">\(pn\)</span>-junction diode is that it allows current to flow easily in <em>one</em> direction but hardly at all in the other direction.</p>
+<p>When no external voltage is applied it is the <strong>no bias</strong> case.  Free electrons from the <span class="math notranslate nohighlight">\(n\)</span> side drift through random motion to the <span class="math notranslate nohighlight">\(p\)</span> side, and their migration leaves a small net positive charge on the <span class="math notranslate nohighlight">\(n\)</span> side.</p>
+<ul class="simple">
+<li><p>The flow of electrons is called the electron recombination current <span class="math notranslate nohighlight">\(I_r\)</span>.  Equilibrium is achieved very quickly because the potential difference created by the charge migration tends to prohibit further migration.</p></li>
+<li><p>There is typically a small current of electrons from the <span class="math notranslate nohighlight">\(p\)</span> side to the <span class="math notranslate nohighlight">\(n\)</span> side because electrons on the <span class="math notranslate nohighlight">\(p\)</span> side can be thermally excited (at normal temperatures) from the valence band to an acceptor level.</p></li>
+<li><p>The thermal electron current is designated as <span class="math notranslate nohighlight">\(I_t\)</span>.</p></li>
+</ul>
+<p>With no external voltage source, the net electron current is zero (i.e., cancels out) where <span class="math notranslate nohighlight">\(I_t=I_r\)</span>, preserving the equlibrium.</p>
+<p>In the <strong>reverse bias</strong> case, a potential difference is applied across the junction.  In a normal conductor, electrons would tend to flow freely from the negative toward the positive terminal.  But in the <span class="math notranslate nohighlight">\(pn\)</span> junction, there remains the tendency for electrons to drirt back from the <span class="math notranslate nohighlight">\(n\)</span> side toward the <span class="math notranslate nohighlight">\(p\)</span> side whenever an imbalance is created.  The result is only a small net flow of electrons from the <span class="math notranslate nohighlight">\(p\)</span> side to the <span class="math notranslate nohighlight">\(n\)</span> side (i.e., a small positive current from the high- to low-potential side of the battery).</p>
+<p>In the <strong>forward bias</strong> case, a potential difference is applied with the positive terminal connected to the <span class="math notranslate nohighlight">\(p\)</span> side and the negative terminal to the <span class="math notranslate nohighlight">\(n\)</span> side of the junction.  Electrons are pushed the way they would tend to move anyway.  The only compensating factor (e.g., thermal flow of electrons) is too small to retard the electron flow.  The result is a steady flow of positive current from higher to lower potential, inhibitied only by the natural resistance of the device.</p>
+<p>Using the tools of statistical physics, we can model the <span class="math notranslate nohighlight">\(I-V\)</span> characteristics of the <span class="math notranslate nohighlight">\(pn\)</span>-junction diode and obtaion a quantitative justification of the empirical curve.  Starting with the <em>no bias</em> case, where there is still a potential difference <span class="math notranslate nohighlight">\(V_o\)</span> present between the two sides and a corresponding current <span class="math notranslate nohighlight">\(I_o\)</span> due to the presence of holes on one side and electrons on the other.</p>
+<p>Let <span class="math notranslate nohighlight">\(N\)</span> be the number of electrons present in the conduction band on the <span class="math notranslate nohighlight">\(n\)</span> side.  At room temperature, Maxwell-Boltzmann statistics are sufficient to describe the electron behavior.  In the no-bias case, the number of electron able to move from the <span class="math notranslate nohighlight">\(n\)</span> to the <span class="math notranslate nohighlight">\(p\)</span> side is proportional to <span class="math notranslate nohighlight">\(Ne^{-e(V_o-V)/(kT)} = Ne^{-eV_o/(kT)}e^{eV/(kT)}\)</span>.</p>
+<p>The electron current under forward bias must be <span class="math notranslate nohighlight">\(I = I_oe^{eV/(kT)}\)</span> because there is still an additional current <span class="math notranslate nohighlight">\(-I_o\)</span> in the forward bias due to the motion of holes.  The total current in forward bias is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ce2247aa-ef1a-4a14-bd37-a535cf4f577a">
+<span class="eqno">(10.7)<a class="headerlink" href="#equation-ce2247aa-ef1a-4a14-bd37-a535cf4f577a" title="Permalink to this equation">#</a></span>\[\begin{align}
+I = I_o \left(e^{eV/(kT)} - 1\right),
+\end{align}\]</div>
+<p>which is a good approximation of the <span class="math notranslate nohighlight">\(I-V\)</span> empirical curve (see python code below).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">physical_constants</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">e</span>
+
+<span class="k">def</span> <span class="nf">bias_current</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">):</span>
+    <span class="c1">#return the normalized forward bias current</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">e</span><span class="o">*</span><span class="n">V</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="n">T_room</span> <span class="o">=</span> <span class="mi">293</span> <span class="c1">#room temperature in K</span>
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mf">0.001</span> <span class="c1">#voltage in volts</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">bias_current</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T_room</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">V</span><span class="p">[</span><span class="n">V</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="n">y</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;r--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Reverse bias&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">V</span><span class="p">[</span><span class="n">V</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="n">y</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;b--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Forward bias&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">V</span><span class="p">[</span><span class="n">V</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">],</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="p">[</span><span class="n">y</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">V</span><span class="p">[</span><span class="n">V</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">],</span><span class="n">y</span><span class="p">[</span><span class="n">y</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Current $I/I_o$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Voltage V (in $</span><span class="se">\\</span><span class="s2">rm mV$)&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;$I-V$ curve for a $pn$-junction diode&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.125</span><span class="p">,</span><span class="mf">0.025</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">125</span><span class="p">,</span><span class="mi">25</span><span class="p">)])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">50</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/e07505ee9fd10eac4a91cf52e8a1669aa841938cc54e447f23167f45fcdd190b.png" src="../_images/e07505ee9fd10eac4a91cf52e8a1669aa841938cc54e447f23167f45fcdd190b.png" />
+</div>
+</div>
+</section>
+<section id="rectifiers">
+<h3><span class="section-number">10.3.2. </span>Rectifiers<a class="headerlink" href="#rectifiers" title="Permalink to this heading">#</a></h3>
+<p>The diode is an important tool in many kinds of electrical circuits.  Consider the <a class="reference external" href="https://en.wikipedia.org/wiki/Diode_bridge"><strong>bridge rectifier</strong></a>, which is set up so that it allows current to flow in only one direction through the resistor <span class="math notranslate nohighlight">\(R\)</span> when an AC (alternating current) supply is placed across the bridge.  The current through the resistor is then a <em>rectified</em> sine wave of the form:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-571effcd-9a8f-4aef-ba2e-fd4b4a56c03d">
+<span class="eqno">(10.8)<a class="headerlink" href="#equation-571effcd-9a8f-4aef-ba2e-fd4b4a56c03d" title="Permalink to this equation">#</a></span>\[\begin{align}
+I = I_{\rm max}\left|\sin{(\omega t)}\right|.
+\end{align}\]</div>
+<p>This is the first step in changing AC to DC (direct current).  The design of a power supply can be completed by adding capacitors and resistors in appropriate proportions.  The rectificier is important because many of our devices need DC, where we receive AC from our wall sockets.  Another common application is in car alternators, where they are used to charge the car’s battery.</p>
+</section>
+<section id="zener-diodes">
+<h3><span class="section-number">10.3.3. </span>Zener Diodes<a class="headerlink" href="#zener-diodes" title="Permalink to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Zener_diode"><strong>Zener diode</strong></a> is made to operate under reverse bias once a sufficiently high voltage has been reached.  The <span class="math notranslate nohighlight">\(I-V\)</span> curve of a Zener diode is different thatn for the <span class="math notranslate nohighlight">\(pn\)</span>-junction diode, where it has a sharp decline in the reverse bias.  This current arises when a large reverse bias voltage is reached and the current increases (becomes more negative) at a very high rate.</p>
+<p>Depending on which semiconductor materials are used to make the diode, the Zener <span class="math notranslate nohighlight">\(I-V\)</span> phenonomenon can occur in one of two ways.</p>
+<ol class="arabic simple">
+<li><p>For a <em>Zener breakdown</em>, the applied voltage induces electrons from the valence band on the <span class="math notranslate nohighlight">\(p\)</span> side to move to the conduction band on the <span class="math notranslate nohighlight">\(n\)</span> side.  Once a high reverse bias voltage is reached, large numbers of electrons are pulled immediately into the conduction band.  This accounts for the sudden breakdown.</p></li>
+<li><p>For an <em>avalanche multiplication</em>, the applied voltage is high enough to accelerate electrons to energies sufficient to ionize atoms through collision.  The “avalanche” occurs when electrons released in this process are accelerated and ionize other atoms.  This happens rather suddenly, which accounts for a sharp increase in current at a particular voltage.</p></li>
+</ol>
+<p>In heavily doped material, Zener breakdown is likely to occur first.</p>
+<p>A common application of Zener diodes is in regulated voltage sources, which are components in many electronic instruments.</p>
+<ul class="simple">
+<li><p>To regulate the voltage, we operate on the steep part of the <span class="math notranslate nohighlight">\(I-V\)</span> curve sot that any change (e.g., increase) in the supply voltage <span class="math notranslate nohighlight">\(V\)</span> tends to be compensated for by a sharp increase in the current through the Zener diode.</p></li>
+<li><p>The voltage across the resistor increases, which tends to keep the output voltage <span class="math notranslate nohighlight">\(V_Z = V-IR\)</span> fairly constant.</p></li>
+</ul>
+</section>
+<section id="light-emitting-diodes-leds">
+<h3><span class="section-number">10.3.4. </span>Light-Emitting Diodes (LEDs)<a class="headerlink" href="#light-emitting-diodes-leds" title="Permalink to this heading">#</a></h3>
+<p>Another important kind of diode is the <a class="reference external" href="https://en.wikipedia.org/wiki/Light-emitting_diode"><strong>light-emitting diode</strong></a> (LED).  Whenever an electron makes a transition from the conduction band to the valence band (i.e., filling a hole), there is a release of energy in the form of a photon.  In some materials the energy levels are spaced so that the photon is in the visible portion of the EM spectrum.  The continuous flow of current through the LED results in a continuous stream of <em>nearly</em> monochromatic light.</p>
+<p>LEDs are ubiquitious today including the displays for PCs, TVs, car dashboards, car lights, and traffic signals.  The LED can also be a principal component of a laser, where photons released from the LED are used to stimulate the emission of other photons.</p>
+</section>
+<section id="photovoltaic-cells">
+<h3><span class="section-number">10.3.5. </span>Photovoltaic Cells<a class="headerlink" href="#photovoltaic-cells" title="Permalink to this heading">#</a></h3>
+<p>Solar cells (or <a class="reference external" href="https://en.wikipedia.org/wiki/Solar_cell"><strong>photovoltaic cells</strong></a>) take incoming light energy and turns it into electrical energy.  A good way to think of the solar cell is to consider the LED in reverse.</p>
+<blockquote>
+<div><p>A <span class="math notranslate nohighlight">\(pn\)</span>-junciton diode absorbs a photon, where the photon’s energy is isued to promote an electron from the valence band to the conduction band.</p>
+</div></blockquote>
+<p>In doing so, both a conducting electron and a hole are created.  If a circuit is connected to the <span class="math notranslate nohighlight">\(pn\)</span>-junction, the motion of holes and electrons creates an electric current with positive current flowing from the <span class="math notranslate nohighlight">\(p\)</span> to <span class="math notranslate nohighlight">\(n\)</span> side.</p>
+<p>The photovoltaic effect was first observed in 1839 by <a class="reference external" href="https://en.wikipedia.org/wiki/Edmond_Becquerel">Alexandre-Edmond Becquerel</a>, but it remained a curiosity among scientists for more than 100 years.  In the 1954, a silicon-based solar cell (with an efficiency of <span class="math notranslate nohighlight">\(6\%\)</span>) was made at <a class="reference external" href="https://en.wikipedia.org/wiki/Bell_Labs">Bell Laboratories</a>.  Later advances in design and manufacture of semiconductor devices have increased the efficiences to more than <span class="math notranslate nohighlight">\(20\%\)</span> by using both silicon and gallium arsenide solar cells.</p>
+<p>The most widely used and studied photovoltaic materials are silicon-based, where manufacturing technology exists to make large single crystals of silicon.  Unfortunately, the cost of making good single crystals of silicon is prohibitive.  The cost of making cells with polycrystalline and amorphous silicon is lower, but so is the efficiency of such cells.</p>
+<p>Other thin-film materials can approach the efficiency of silicon devices, where the prime candidate is <span class="math notranslate nohighlight">\(\rm GaAs\)</span> and its alloys (including <span class="math notranslate nohighlight">\(\rm AlGaAs,\ InGaAs,\ \text{and } AlGaP\)</span>).  A device with <span class="math notranslate nohighlight">\(32\%\)</span> efficiency was made on a <span class="math notranslate nohighlight">\(\rm GaAs\)</span> substrate, where single crystals of <span class="math notranslate nohighlight">\(\rm GaAs\)</span> are made fairly inexpensively by growing them on single crystals of <span class="math notranslate nohighlight">\(\rm Ge\)</span>.</p>
+<p>An advantage of <span class="math notranslate nohighlight">\(\rm GaAs\)</span> is that it makes uses the solar spectrum more efficiently than silicon.  The use of multiple layers has been successful, where each layer sensitive to a different wavelength range.</p>
+<ul class="simple">
+<li><p>The upper layer semimconductor <span class="math notranslate nohighlight">\((\rm GaAs)\)</span> has a band gap of <span class="math notranslate nohighlight">\(1.42\ {\rm eV}\)</span>, which corresponds to a wavelength <span class="math notranslate nohighlight">\(\lambda = 875\ {\rm nm}\)</span> and is in the near infrared portion of the spectrum.</p></li>
+<li><p>The lower layer is made of <span class="math notranslate nohighlight">\(\rm GaSb\)</span> with a band gap of <span class="math notranslate nohighlight">\(0.72\ {\rm eV}\)</span> corresponding to a wavelength <span class="math notranslate nohighlight">\(\lambda = 1730\ {\rm nm}\)</span>.</p></li>
+</ul>
+<p>Photons with wavelengths shorter than <span class="math notranslate nohighlight">\(875\ {\rm nm}\)</span> have sufficient energy to boost an electron from the valence to the conduction band in <span class="math notranslate nohighlight">\(\rm GaAs\)</span>, and the top layer is able to use near-IR, visible, and UV solar radiation to produce energy.  Less-energetic IR photons make it thorugh to the <span class="math notranslate nohighlight">\(\rm GaSb\)</span> layer, where they can be absorbed and convered to current if their wavelength is <span class="math notranslate nohighlight">\(&lt; 1730\ {\rm nm}\)</span>.</p>
+<p>The use of solar energy has some intrinsic advantages and disadvantages compared with other sources.  The net cost of energy from solar cells is generally high compared to more common alternatives using the <a class="reference external" href="https://en.wikipedia.org/wiki/Cost_of_electricity_by_source#Bank_of_America_(2023)">levelized full system cost of electricity</a> (LFSCOE) approach.</p>
+<p>The primary advantages are:</p>
+<ol class="arabic simple">
+<li><p>Lower environmental waste in their use and manufacture.</p></li>
+<li><p>Lower emissions while in operation; zero emissions if not supplemented with another source.</p></li>
+<li><p>Scalable manufacture, where large arrays can be used to power cities and smaller arrays for directly powering homes (and small businesses).</p></li>
+</ol>
+<p>The principal (and significant) disadvantages are:</p>
+<ol class="arabic simple">
+<li><p>It is not always sunny;</p></li>
+<li><p>The produced energy doesn’t always meet the current demand, which necessitates a energy storage facility (e.g., chemical, thermal, and gravitational batteries).  The environmental benefits may be canceled out by the type of energy storage method.</p></li>
+</ol>
+<p>Other kinds of solar-energy technology do not use semiconductor materials.  Many buildings are designed to use “passive” solar energy, where letting the sun heat the inside air directly.  Other systems use the sun to heat water that is then piped through the building for radiant heating.  Large-scale power plants with arrays of troughs with parabolic mirrors are used to focus the sun’s rays onto water filled tubes.  The water is boiled and its steam is used to power electric turbines.</p>
+</section>
+<section id="transistors">
+<h3><span class="section-number">10.3.6. </span>Transistors<a class="headerlink" href="#transistors" title="Permalink to this heading">#</a></h3>
+<p><strong>Transistors</strong> amplify voltages of currents in many kinds of circuits.  The first transistor was developed in 1948 by <a class="reference external" href="https://en.wikipedia.org/wiki/John_Bardeen">John Bardeen</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/William_Shockley">William Shockley</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Walter_Houser_Brattain">Walter Brattain</a>.</p>
+<p>Consider the <span class="math notranslate nohighlight">\(\mathbf{npn}\)</span><strong>-junction transistor</strong>, which consists of a thin layer of <span class="math notranslate nohighlight">\(p\)</span>-type semicondcutor sandwiched between two <span class="math notranslate nohighlight">\(n\)</span>-type semiconductors.  The three terminals (one on each semiconducting material) are known as the <strong>collector</strong>, <strong>emitter</strong>, and <strong>base</strong>.  A good way of thing of this transistor is to think of two <span class="math notranslate nohighlight">\(pn\)</span>-junction diodes back to back.</p>
+<ul class="simple">
+<li><p>The emitter side consists of a diode in forward bias.</p></li>
+<li><p>The collector side consists of a diode in reverse bias.</p></li>
+<li><p>The base is the <span class="math notranslate nohighlight">\(p\)</span> side of each diode.</p></li>
+</ul>
+<p>If the emitter is more heavilty doped than the base, then there is a heavy flow of electrons from left to right into the base.  The base is made thin enough so that virtually all of those electrons can pass through the collector and into the output portion of the circuit.  As a result, the output current is a very high fraction of the input current.</p>
+<p>Because the base-collector combination is essentiall a diode connected in reverse bias, the voltage on the output side can be made higher than the voltage on the input side.  Recall that the output and input currents are comparable, so the resulting power (current <span class="math notranslate nohighlight">\(\times\)</span> voltage) is much higher than the input power.</p>
+<p>In the above circuit description, the transistor is used as a voltage amplifier.  If the input signal is moved to a position between the base and ground, then it can be a current amplifier instead.  A <span class="math notranslate nohighlight">\(pnp\)</span>-junction transistor is made using <span class="math notranslate nohighlight">\(npn\)</span>-junction model, but with hole conduction taking the place of electron conduction.</p>
+<p>Consider a circuit with fixed voltages <span class="math notranslate nohighlight">\(V_{bb}\)</span> and <span class="math notranslate nohighlight">\(V_{cc}\)</span>.  The resistances <span class="math notranslate nohighlight">\(R_c\)</span> and <span class="math notranslate nohighlight">\(R_e\)</span> may (in part) be separate from the transistor, buth they must include the intrinsic base-collector and base-emittor resistances, respectively.  Assume that there is a current gain <span class="math notranslate nohighlight">\(\beta\)</span> so that <span class="math notranslate nohighlight">\(I_c = \beta I_b\)</span> so that we amplify a signal <span class="math notranslate nohighlight">\(V_s\)</span>.</p>
+<p>To calculate the voltage gain, we first apply Kirchhoff’s loop rule to the obtain:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a91966a2-ea49-46b6-85af-b8075b387b2e">
+<span class="eqno">(10.9)<a class="headerlink" href="#equation-a91966a2-ea49-46b6-85af-b8075b387b2e" title="Permalink to this equation">#</a></span>\[\begin{align}
+I_b &amp;= \frac{V_s + V_{bb}}{R_b + (1+\beta)R_e}, \\
+I_c &amp;= \beta I_b.
+\end{align}\]</div>
+<p>The output voltage on the load resistor is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-721b3ee6-d506-4edd-988b-138f94ea8df8">
+<span class="eqno">(10.10)<a class="headerlink" href="#equation-721b3ee6-d506-4edd-988b-138f94ea8df8" title="Permalink to this equation">#</a></span>\[\begin{align}
+V_c &amp;= I_c R_c = \beta I_b R_c.
+\end{align}\]</div>
+<p>We can calculate the voltage gain <span class="math notranslate nohighlight">\(A_v\)</span> as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-74a63b14-8872-4cfc-95c3-b4f8e13e617c">
+<span class="eqno">(10.11)<a class="headerlink" href="#equation-74a63b14-8872-4cfc-95c3-b4f8e13e617c" title="Permalink to this equation">#</a></span>\[\begin{align}
+A_v &amp;= \frac{V_c}{V_s} = \beta \left(\frac{I_b}{V_s}\right) R_c,\\
+&amp;= \beta \left(\frac{1+V_{bb}/V_s}{R_b + (1+\beta)R_e}\right)R_c.
+\end{align}\]</div>
+<p>Because the voltages <span class="math notranslate nohighlight">\(V_cc\)</span> and <span class="math notranslate nohighlight">\(V_bb\)</span> are present only to establish the proper bias on the transitor, it is possible (in practice) to make <span class="math notranslate nohighlight">\(V_bb \ll V_s\)</span>, so that</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b2e603fd-0ba8-4f74-ae0c-81f8c591c349">
+<span class="eqno">(10.12)<a class="headerlink" href="#equation-b2e603fd-0ba8-4f74-ae0c-81f8c591c349" title="Permalink to this equation">#</a></span>\[\begin{align}
+A_v \approx \beta\frac{R_c}{R_b + (1+\beta)R_e}.
+\end{align}\]</div>
+<p>With the appropriate choice of resistors, one can (in theory) achieve any desired voltage gain.  In real circuits, there are severe limitations based on the characteristics of the particular transistor and power in various parts of the circuit.</p>
+<ul class="simple">
+<li><p>Capacitors are put into the circuit to limit power surges.</p></li>
+<li><p>It is not unusual to amplify a smal lsignal through several (or many) stages before reaching the desired output voltages.</p></li>
+</ul>
+<p>The initial output from a magnetic or optical reading device is typically on the order of <span class="math notranslate nohighlight">\(\rm \mu V\)</span>, and it has to be amplified several times before it is strong enough to drive the speakers of an audio system.</p>
+</section>
+<section id="field-effect-transistors">
+<h3><span class="section-number">10.3.7. </span>Field Effect Transistors<a class="headerlink" href="#field-effect-transistors" title="Permalink to this heading">#</a></h3>
+<p>The <span class="math notranslate nohighlight">\(npn\)</span>- and <span class="math notranslate nohighlight">\(pnp\)</span>-junction devices are called <strong>bipolar transistors</strong>.  Another type of transistor is the <a class="reference external" href="https://en.wikipedia.org/wiki/Field-effect_transistor"><strong>field effect transistor</strong></a>.  The three terminals of the FET are called the <em>drain</em>, <em>source</em>, and <em>gate</em>, which correspond to the collector, emitter, and base, resepectively, of a bipolar transistor.</p>
+<p>The principal difference between a FET and bipolar transistor is that the <span class="math notranslate nohighlight">\(p\)</span>-type gate is connected in reverse bias with <em>both</em> the <span class="math notranslate nohighlight">\(n\)</span>-type source and <span class="math notranslate nohighlight">\(n\)</span>-type drain, while the <span class="math notranslate nohighlight">\(p\)</span>-type base is connected in reverse bias with the <span class="math notranslate nohighlight">\(n\)</span>-type collector, but a forward bias with the <span class="math notranslate nohighlight">\(n\)</span>-type emitter.  The effect is a severe depletion of charge carriers (both holes and electrons) at the <span class="math notranslate nohighlight">\(pn\)</span> junction of the FET.  Therefore, very little current can flow through that junction.</p>
+<p>FET has a high input impedance and is voltage controlled, while the bipolar transistor is current controlled.  This is an advantage in the design of many kinds of circuits because the FET draws a relatively small current.</p>
+<p>In common use today is the metal oxide semiconductor FET, or <a class="reference external" href="https://en.wikipedia.org/wiki/MOSFET"><strong>MOSFET</strong></a>.  In a MOSFET, the gate is a metal that is separated from teh channel by a thin layer of oxide (an insulator) which is usually silicon dioxide.  The oxide layer makes the input impedance of the MOSFTET much higher than a standard FET, which can be up to <span class="math notranslate nohighlight">\(10^{15}\ \rm \Omega\)</span> by making the oxide layer thicker.  MOSFETs can be made extremely small using thin-film deposition methods.</p>
+<p>Beginning in 2007, the semiconductory industry shifted from using <span class="math notranslate nohighlight">\(\rm SiO_2\)</span>-based gates to hafnium oxide (and other materials with a much larger dielectric constant).  As silicon-based transistors grew smaller, ther result was excessive leaking of charge, where hafnium-based materials facilitated further miniaturization of transistor circuits.</p>
+</section>
+<section id="schottky-barriers">
+<h3><span class="section-number">10.3.8. </span>Schottky Barriers<a class="headerlink" href="#schottky-barriers" title="Permalink to this heading">#</a></h3>
+<p>When there is direct contact between a metal and a semiconductor, it produces a <a class="reference external" href="https://en.wikipedia.org/wiki/Schottky_barrier"><strong>Schottky barrier</strong></a>.  If the semiconductor is <span class="math notranslate nohighlight">\(n\)</span>-type, electrons from it tend to migrate into the metal and leave a depleted region within the semiconductor.  This will happen as the <em>work function of the metal</em> is higher (for a <span class="math notranslate nohighlight">\(n\)</span>-type semiconductor) or lower (for a <span class="math notranslate nohighlight">\(p\)</span>-type semiconductor) than that of the semiconductor.</p>
+<p>The width of the depleted region is typically <span class="math notranslate nohighlight">\({\sim}1 {\rm \mu m}\)</span>, but depends on the properties of the particular metal and semiconductor being used.  The <span class="math notranslate nohighlight">\(I-V\)</span> chacteristics of the Schottky barriere are similar to the <span class="math notranslate nohighlight">\(pn\)</span>-junciton diode.  When a <span class="math notranslate nohighlight">\(p\)</span>-type semiconductor is used, the depletion region has a deficit of holes when compared to a <span class="math notranslate nohighlight">\(pn\)</span>-junction.</p>
+<p>One variation of the Schottky barrier is an <a class="reference external" href="https://en.wikipedia.org/wiki/Ohmic_contact"><strong>ohmic contact</strong></a>.  The ohmic contact invovles contact between a metal and semimconductor, but now the <em>work function of the semiconductor</em> is higher (for a <span class="math notranslate nohighlight">\(n\)</span>-type semiconductor) or lower (for a <span class="math notranslate nohighlight">\(p\)</span>-type semiconductor).  The interface region will be enriched in majority carriers (whether <span class="math notranslate nohighlight">\(p\)</span> or <span class="math notranslate nohighlight">\(n\)</span>), and current can flow easily across the boundary.</p>
+</section>
+<section id="semiconductor-lasers">
+<h3><span class="section-number">10.3.9. </span>Semiconductor Lasers<a class="headerlink" href="#semiconductor-lasers" title="Permalink to this heading">#</a></h3>
+<p>Like gas lasers, <a class="reference external" href="https://en.wikipedia.org/wiki/Laser_diode"><strong>semiconductor lasers</strong></a> operate using population inversion, or an artificially high number of electrons in excited states.  In a semiconductor laser, the band gap determines the energy difference between the excited and ground state.</p>
+<p>Rather than optical pumping and electrical discharge used to operate gas lasers, semiconductor lasers use <strong>injection pumping</strong>, where a large forward current is passed through a diode.  This creates electron-hole pairs, with electrons in the conduction band and holes in the valence band.  A photon is emitted when an electron falls back to the valence band to recombine with the hole.  The photon energy is determined by the band gap in the semiconductor.</p>
+<p>The first semiconductor laser was made in 1962 with a <span class="math notranslate nohighlight">\(\rm GaAs\)</span> <span class="math notranslate nohighlight">\(pn\)</span>-junction and a band gap of <span class="math notranslate nohighlight">\(1.47\ {\rm eV}\)</span>.  The photon wavelength produced in a transition from the conduction to the valence band is <span class="math notranslate nohighlight">\(844\ {\rm nm}\)</span>., which is in the near-IR region.</p>
+<p>Semiconductor lasers have been used in fiber-optics communictation and a number of other applications.  One advantage of using semiconductor lasers is their small size with dimensions typically on the order of <span class="math notranslate nohighlight">\(0.1 {\rm mm}\)</span>.  They are solid-state devices, which are more robust than gas-filled tubes.</p>
+<p>The relatively small band gaps <span class="math notranslate nohighlight">\((1-2\ {\rm eV})\)</span> in semiconductors limited the operation of semiconductor lasers to longer wavelengths.  Over the years scientists worked to develop shorter wavelength semiconductor lasers, where <a class="reference external" href="https://en.wikipedia.org/wiki/Shuji_Nakamura"><strong>Shuji Nakamura</strong></a> demonstrated (in 1996) a blue-violet laser based on the semiconductor gallium nitride.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/AF8d72mA41M" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>By doping the gallium nitride with varying amounts of indium, Nakamura produced laser wavelengths from <span class="math notranslate nohighlight">\(390-440\ {\rm nm}\)</span>.  <a class="reference external" href="https://en.wikipedia.org/wiki/Blu-ray">Blu-ray DVD players</a> use a <span class="math notranslate nohighlight">\(405\)</span>-<span class="math notranslate nohighlight">\({\rm nm\ GaN}\)</span> laser.  Because of the shorter wavelength, the track width is narrower compared to DVDs or CDs.  The track width affects the storage capacity of the disc, where Blu-ray could store <span class="math notranslate nohighlight">\(5\times\)</span> more data than a DVD (limited to <span class="math notranslate nohighlight">\(5\ {\rm GB})\)</span>.</p>
+</section>
+<section id="integrated-circuits">
+<h3><span class="section-number">10.3.10. </span>Integrated Circuits<a class="headerlink" href="#integrated-circuits" title="Permalink to this heading">#</a></h3>
+<p>Semiconductor devices today do not work simply as discrete components, but in <strong>integrated circuits</strong>.  It is possible to fabricate a silicon-based substrate (i.e., <strong>chip</strong>) containing a hundred million (or more) components, including resistors, capacitors, transistors, and logic switches. This extreme miniaturization has done two things for the electronics industry:</p>
+<ol class="arabic simple">
+<li><p>Sophisticated integrated circuits were now possible to exist in the smallest products (e.g., cell phones and cameras).</p></li>
+<li><p>It enabled integrated circuits to work much faster.</p></li>
+</ol>
+<p>There are still physical limits based on operation speeds of switches, but the transit time of an electronic signal was reduced by packing the components more closely together.  Those signals travel essentially at the speed of light (<span class="math notranslate nohighlight">\(0.3\ {\rm \mu m/fs}\)</span>).</p>
+<p>Integrated circuits impacted the work of scientists and engineers by enhancing the computing power available to them.  The <a class="reference external" href="https://en.wikipedia.org/wiki/Manhattan_Project">Manhattan Project</a> and other work during World War II inspired the develoopment of large mechanical computers that could perform many computations more quickly.  The <a class="reference external" href="https://en.wikipedia.org/wiki/ENIAC"><strong>ENIAC</strong></a> could multiply <span class="math notranslate nohighlight">\(333\)</span> ten-digit numbers per second.  Unfortunately, it was very big, heavy, and power-hungry (<span class="math notranslate nohighlight">\(175\ {\rm kW}\)</span>) in normal operation.</p>
+<p>By 1963, the best computers (e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/CDC_6600">Control Data 6600</a>) still filled a normal-sized (<span class="math notranslate nohighlight">\(36\ {\rm m^2}\)</span>) room but could perform <span class="math notranslate nohighlight">\(10^6\)</span> operations per second.  In 1971, the first true commercial integrated circuit was released: the <a class="reference external" href="https://en.wikipedia.org/wiki/Intel_4004">Intel 4004</a>, which had <span class="math notranslate nohighlight">\(2300\)</span> transistors and could perform <span class="math notranslate nohighlight">\(60,000\)</span> operations per second.  By 2011, several supercomputers had suprassed the rate of 1 petaflop, or <span class="math notranslate nohighlight">\(10^{15}\)</span> operations per second.</p>
+<p>The number of transistors that could fit on a single microchip has grown rapidly with time, where the Intel 80826 chip had <span class="math notranslate nohighlight">\(134,000\)</span> transistors in 1982 (a <span class="math notranslate nohighlight">\(58\)</span>-fold increase compared to the 4004 in 1971).  By 1989, the Intel <span class="math notranslate nohighlight">\(486\)</span> chip had 1.2 million transistors,.  The Intel Pentium 4 (2002) and Intel Core i7 930 (2010) chips had 55 million and 731 million transistors, respectively.</p>
+<p>to achieve such high densities, the components need to be extremely small.  In the Core i7 930, the circuit elements are about <span class="math notranslate nohighlight">\(45\ {\rm nm}\)</span> in each direction; Note that this is less than the wavelength of visible light.  Newer circuit elements are as small as <span class="math notranslate nohighlight">\(32\ {\rm nm}\)</span> across.  Chip manufacturers use UV lithographic techniques to get down to smaller dimensions.  The rate of progress is summarized in <a class="reference external" href="https://en.wikipedia.org/wiki/Moore%27s_law"><strong>Moore’s law</strong></a>, which observes that microchip capacity doubles roughly every <span class="math notranslate nohighlight">\(18-24\)</span> months.</p>
+<p>Another important factor besides computing itself is the storage and retrieval of information.  It is possible to store and reliably retrieve more than <span class="math notranslate nohighlight">\(10^{13}\)</span> bits of information per <span class="math notranslate nohighlight">\(m^2\)</span> of magnetic disk or tape.  This is approaching the theoretical limit because as few as 100 magnetic particles are used to store each bit of information at this density.</p>
+<p>At higher densities, there are problems with reliability due to statistical fluctuations in the magnetization of the particles and overlap of magnetic fields from one small bit to another.  The hard disk drive in a computer is magnetic, where a DVD drive is an optical reader.  The density of data storage on solid-state devices (e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/M.2">M.2 devices</a>) have far exceeded that of a DVD with storing many terabytes compared to only gigabytes.</p>
+</section>
+</section>
+<section id="nanotechnology">
+<h2><span class="section-number">10.4. </span>Nanotechnology<a class="headerlink" href="#nanotechnology" title="Permalink to this heading">#</a></h2>
+<section id="carbon-nanotubes">
+<h3><span class="section-number">10.4.1. </span>Carbon Nanotubes<a class="headerlink" href="#carbon-nanotubes" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="nanoscale-electronics">
+<h3><span class="section-number">10.4.2. </span>Nanoscale Electronics<a class="headerlink" href="#nanoscale-electronics" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="quantum-dots">
+<h3><span class="section-number">10.4.3. </span>Quantum Dots<a class="headerlink" href="#quantum-dots" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="nanotechnolgy-and-the-life-sciences">
+<h3><span class="section-number">10.4.4. </span>Nanotechnolgy and the Life Sciences<a class="headerlink" href="#nanotechnolgy-and-the-life-sciences" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="information-science">
+<h3><span class="section-number">10.4.5. </span>Information Science<a class="headerlink" href="#information-science" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -526,6 +995,49 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#band-theory-of-solids">10.1. Band Theory of Solids</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kronig-penney-model">10.1.1. Kronig-Penney Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#band-theory-and-conductivity">10.1.2. Band Theory and Conductivity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductor-theory">10.2. Semiconductor Theory</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermoelectric-effect">10.2.1. Thermoelectric Effect</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductor-devices">10.3. Semiconductor Devices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diodes">10.3.1. Diodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rectifiers">10.3.2. Rectifiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zener-diodes">10.3.3. Zener Diodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#light-emitting-diodes-leds">10.3.4. Light-Emitting Diodes (LEDs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photovoltaic-cells">10.3.5. Photovoltaic Cells</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transistors">10.3.6. Transistors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#field-effect-transistors">10.3.7. Field Effect Transistors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schottky-barriers">10.3.8. Schottky Barriers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconductor-lasers">10.3.9. Semiconductor Lasers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrated-circuits">10.3.10. Integrated Circuits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nanotechnology">10.4. Nanotechnology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-nanotubes">10.4.1. Carbon Nanotubes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nanoscale-electronics">10.4.2. Nanoscale Electronics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-dots">10.4.3. Quantum Dots</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nanotechnolgy-and-the-life-sciences">10.4.4. Nanotechnolgy and the Life Sciences</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#information-science">10.4.5. Information Science</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

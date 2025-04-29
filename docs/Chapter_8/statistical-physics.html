@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>8. Statistical Physics &#8212; PHYS2700 Modern Physics</title>
   
@@ -15,50 +14,48 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -66,12 +63,16 @@
                 gtag('js', new Date());
                 gtag('config', 'G-6WTX4WF23B');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-6WTX4WF23B');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_8/statistical-physics';</script>
@@ -88,28 +89,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -131,12 +127,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -151,6 +155,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../home.html">
@@ -169,7 +176,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -223,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -232,14 +250,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -264,14 +282,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/saturnaxis/ModernPhysics/main?urlpath=tree/Chapter_8/statistical-physics.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -282,14 +300,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/saturnaxis/ModernPhysics/blob/main/Chapter_8/statistical-physics.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -428,26 +446,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -499,12 +519,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="statistical-physics">
-<h1><span class="section-number">8. </span>Statistical Physics<a class="headerlink" href="#statistical-physics" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">8. </span>Statistical Physics<a class="headerlink" href="#statistical-physics" title="Link to this heading">#</a></h1>
 <section id="historical-overview">
-<h2><span class="section-number">8.1. </span>Historical Overview<a class="headerlink" href="#historical-overview" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.1. </span>Historical Overview<a class="headerlink" href="#historical-overview" title="Link to this heading">#</a></h2>
 <p>At the beginning of the 19th century, many scientists had a mechanistic view of the universe containing a well-regulated and wholly deterministic set of physical laws.  This was in large part due to the success of Newtonian physics up to that point.  New mathematical models from Lagrange (~1790) and Hamilton (~1840) added to the computational power of Newtonian mechanics, which enabled physicists to describe complex physical systems with 2nd order differential equations.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Pierre-Simon_Laplace">Pierre-Simon de Laplace</a> held that it should be possible (in principle) to have a perfect knowledge of the physical universe.  This knowledge was dependent on the precision of measuring the position and velocity of every particle of matter and applying Newton’s laws.  The Heisenberg uncertainty principle creates serious problems for this position.</p>
 <div class="admonition note">
@@ -523,7 +543,7 @@ document.write(`
 </ol>
 </section>
 <section id="maxwell-velocity-distribution">
-<h2><span class="section-number">8.2. </span>Maxwell Velocity Distribution<a class="headerlink" href="#maxwell-velocity-distribution" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.2. </span>Maxwell Velocity Distribution<a class="headerlink" href="#maxwell-velocity-distribution" title="Link to this heading">#</a></h2>
 <p>To know everything about an ideal gas, we need to describe the <strong>state</strong> of the gas at a given time.  This state can be defined using <em>six</em> parameters per particle consisting of three for position <span class="math notranslate nohighlight">\((x,\ y,\ z)\)</span> and three for velocity <span class="math notranslate nohighlight">\((v_x,\ v_y,\ v_z)\)</span>.  Many relevant quantitities must depend on one (or more) of these six parameters.  These parameters are also described as the componenets of a 6-D <strong>phase space</strong>.</p>
 <p>Maxwell focused on the thee velocity components because the energy of a gas should depend only on the velocities and not the instantaneous positions (i.e., <span class="math notranslate nohighlight">\(K = 1/2mv^2\)</span>).  The crucial question for Maxwell was:</p>
 <blockquote>
@@ -537,18 +557,18 @@ f(\vec{v})\ d^3\vec{v} =&amp; \text{ the probability of finding a particle with}
 \end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(d^3\vec{v} = dv_x\ dv_y\ dv_z\)</span>, or a volume element in the phase space.  The product of a velocity distribution funciton with a phase space volume plays a role analogous to the probability density <span class="math notranslate nohighlight">\(\Psi^*\Psi\)</span> in quantum theory.</p>
 <p>Maxwell proved that the probability distribution funciton is proportional to <span class="math notranslate nohighlight">\(e^{-mv^2/(2kT)}\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the molecular mass, <span class="math notranslate nohighlight">\(v\)</span> is the molecular speed, <span class="math notranslate nohighlight">\(k\)</span> is Boltzmann’s constant, and <span class="math notranslate nohighlight">\(T\)</span> is the absolute temperature.  Then, we may write</p>
-<div class="amsmath math notranslate nohighlight" id="equation-29617351-f9b6-4505-8a3e-38399a50d316">
-<span class="eqno">(8.1)<a class="headerlink" href="#equation-29617351-f9b6-4505-8a3e-38399a50d316" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9f4d89d6-46e1-4a0d-b495-a100d4cc2fab">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-9f4d89d6-46e1-4a0d-b495-a100d4cc2fab" title="Permalink to this equation">#</a></span>\[\begin{align}
 f(\vec{v})\ d^3\vec{v} = Ce^{-\frac{1}{2}\beta mv^2}\ d^3\vec{v}, 
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(C\)</span> is aproportionality factor and <span class="math notranslate nohighlight">\(\beta \equiv (kT)^{-1}\)</span>; not to be confused with <span class="math notranslate nohighlight">\(\beta = v/c\)</span> from relativity.  We can expand the above expression as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bf8dcab8-b6cc-49cf-8426-bf3e420556f3">
-<span class="eqno">(8.2)<a class="headerlink" href="#equation-bf8dcab8-b6cc-49cf-8426-bf3e420556f3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9c4b8cba-6734-4742-93cd-bb258430030f">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-9c4b8cba-6734-4742-93cd-bb258430030f" title="Permalink to this equation">#</a></span>\[\begin{align}
 f(\vec{v})\ d^3\vec{v} = Ce^{-\frac{1}{2}\beta m(v_x^2+v_y^2+v_z^2)}\ d^3\vec{v},
 \end{align}\]</div>
 <p>and use the properties of exponents to rewrite as three factors that each contain one of the three velocity components.  They are defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-55cd9a05-f365-477a-bb16-df6308220284">
-<span class="eqno">(8.3)<a class="headerlink" href="#equation-55cd9a05-f365-477a-bb16-df6308220284" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-946d64cd-0454-4c88-ac0e-8af6f83164ea">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-946d64cd-0454-4c88-ac0e-8af6f83164ea" title="Permalink to this equation">#</a></span>\[\begin{align}
 g(v_x)\ dv_x &amp;\equiv C^\prime e^{-\frac{1}{2}\beta mv_x^2}\ dv_x, \\
 g(v_y)\ dv_y &amp;\equiv C^\prime e^{-\frac{1}{2}\beta mv_y^2}\ dv_y, \\
 g(v_z)\ dv_z &amp;\equiv C^\prime e^{-\frac{1}{2}\beta mv_z^2}\ dv_z,
@@ -576,7 +596,7 @@ I_n &amp;= C^\prime \int_{0}^\infty v_x e^{-\frac{1}{2}\beta mv_x^2}\ dv_x, \\
 \end{align*}\]</div>
 <p>Starting with <span class="math notranslate nohighlight">\(n=0\)</span>, we have</p>
 <div class="math notranslate nohighlight" id="equation-gaussian-int">
-<span class="eqno">(8.4)<a class="headerlink" href="#equation-gaussian-int" title="Permalink to this equation">#</a></span>\[I_o = \int_0^\infty e^{-au^2}du.\]</div>
+<span class="eqno">(8.4)<a class="headerlink" href="#equation-gaussian-int" title="Link to this equation">#</a></span>\[I_o = \int_0^\infty e^{-au^2}du.\]</div>
 <p>This integral requires a dummy substitution, where we can find the product of two integrals <span class="math notranslate nohighlight">\((u\rightarrow x,\ u\rightarrow y)\)</span> that can be tranformed into polar coordinates.  This leads to</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -585,7 +605,7 @@ I_o^2 &amp;= \int_0^\infty \int_0^\infty e^{-a(x^2+y^2)}\ dx\ dy, \\
 \end{align*}\]</div>
 <p>We can easily evaluate the <span class="math notranslate nohighlight">\(\theta\)</span> integral, which yields <span class="math notranslate nohighlight">\(\pi/2\)</span> and the <span class="math notranslate nohighlight">\(r\)</span> integral can be evaluated using a standard substitution <span class="math notranslate nohighlight">\((u=ar^2)\)</span>.  We find that</p>
 <div class="math notranslate nohighlight" id="equation-even-prob-int">
-<span class="eqno">(8.5)<a class="headerlink" href="#equation-even-prob-int" title="Permalink to this equation">#</a></span>\[\begin{split}I_o^2 &amp;= \frac{\pi}{4a} \int_0^\infty e^{-u}\ du = \frac{\pi}{4a}, \\
+<span class="eqno">(8.5)<a class="headerlink" href="#equation-even-prob-int" title="Link to this equation">#</a></span>\[\begin{split}I_o^2 &amp;= \frac{\pi}{4a} \int_0^\infty e^{-u}\ du = \frac{\pi}{4a}, \\
 I_o &amp;= \sqrt{\frac{\pi}{4a}} = \frac{1}{2}\sqrt{\frac{\pi}{a}}.\end{split}\]</div>
 </div>
 <p>This process can be expanded for other probability integrals, but we can now use the result for <span class="math notranslate nohighlight">\(I_o\)</span> to say</p>
@@ -595,24 +615,24 @@ I_o &amp;= \sqrt{\frac{\pi}{4a}} = \frac{1}{2}\sqrt{\frac{\pi}{a}}.\end{split}\]
 &amp;= C^\prime 2I_o = 1.
 \end{align*}\]</div>
 <p>Recalling that <span class="math notranslate nohighlight">\(a=\beta m/2\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b968847b-6eb5-4e9c-a3fa-72806a003cfb">
-<span class="eqno">(8.6)<a class="headerlink" href="#equation-b968847b-6eb5-4e9c-a3fa-72806a003cfb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5dafff03-4003-4d18-b92f-c8dd9285ca09">
+<span class="eqno">(8.6)<a class="headerlink" href="#equation-5dafff03-4003-4d18-b92f-c8dd9285ca09" title="Permalink to this equation">#</a></span>\[\begin{align}
 C^\prime &amp;= \frac{1}{2}\sqrt{\frac{4a}{\pi}}, \\
  &amp;= \frac{1}{2}\sqrt{\frac{2\beta m}{\pi}} = \sqrt{\frac{\beta m}{2\pi}},
 \end{align}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8d28694b-b64b-4d97-ae44-4f44a2fd9b3a">
-<span class="eqno">(8.7)<a class="headerlink" href="#equation-8d28694b-b64b-4d97-ae44-4f44a2fd9b3a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fc94bd78-b287-4291-913a-ce1a67deb9a8">
+<span class="eqno">(8.7)<a class="headerlink" href="#equation-fc94bd78-b287-4291-913a-ce1a67deb9a8" title="Permalink to this equation">#</a></span>\[\begin{align}
 g(v_x)\ dv_x = \sqrt{\frac{\beta m}{2\pi}} e^{-\frac{1}{2}\beta mv_x^2}\ dv_x.
 \end{align}\]</div>
 <p>With this distribution we can calculate <span class="math notranslate nohighlight">\(\bar{v}_x\)</span> (mean value of <span class="math notranslate nohighlight">\(v_x\)</span>) as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-91a2f19d-ae6c-41b8-b39d-8fe5fff43b47">
-<span class="eqno">(8.8)<a class="headerlink" href="#equation-91a2f19d-ae6c-41b8-b39d-8fe5fff43b47" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cfba8204-ded6-4e45-9913-9e659dfc41a2">
+<span class="eqno">(8.8)<a class="headerlink" href="#equation-cfba8204-ded6-4e45-9913-9e659dfc41a2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{v}_x = \int_{-\infty}^\infty v_x\ g(v_x)\ dv_x = C^\prime \int_{-\infty}^\infty v_x e^{-\frac{1}{2}\beta mv_x^2}\ dv_x = 0
 \end{align}\]</div>
 <p>because <span class="math notranslate nohighlight">\(v_x\)</span> is an odd function.  The result makes sense because in a random distribution of velocities one woul expect the velocity components to be evenly distributed about <span class="math notranslate nohighlight">\(v_x = 0\)</span>.  The mean value of <span class="math notranslate nohighlight">\(v_x^2\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d67f9205-7188-4eb3-b038-ea0b02923ec6">
-<span class="eqno">(8.9)<a class="headerlink" href="#equation-d67f9205-7188-4eb3-b038-ea0b02923ec6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0520744b-93de-40be-ac54-f89de52ffc5c">
+<span class="eqno">(8.9)<a class="headerlink" href="#equation-0520744b-93de-40be-ac54-f89de52ffc5c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{v}_x^2 &amp;= \int_{-\infty}^\infty v_x^2\ g(v_x)\ dv_x, \\
 &amp;= 2C^\prime \int_{0}^\infty v_x^2 e^{-\frac{1}{2}\beta mv_x^2}\ dv_x.
 \end{align}\]</div>
@@ -627,14 +647,14 @@ g(v_x)\ dv_x = \sqrt{\frac{\beta m}{2\pi}} e^{-\frac{1}{2}\beta mv_x^2}\ dv_x.
 I_2 = -\frac{dI_o}{da} = -\frac{\sqrt{\pi}}{2}\frac{d}{da}\left[a^{-1/2}\right] = \frac{\sqrt{\pi}}{4}a^{-3/2}.
 \end{align*}\]</div>
 <p>Alternatively, one could use an <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_integrals_of_exponential_functions">integral table</a> with exponential functions.  The final result via substitution is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b8807dae-35cf-4be2-bfa6-b83e6569fed2">
-<span class="eqno">(8.10)<a class="headerlink" href="#equation-b8807dae-35cf-4be2-bfa6-b83e6569fed2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4236f52e-e2b1-4bd7-81dd-6996a81febe9">
+<span class="eqno">(8.10)<a class="headerlink" href="#equation-4236f52e-e2b1-4bd7-81dd-6996a81febe9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{v}_x^2 &amp;= 2C^\prime I_2 = 2 \left(\frac{\beta m}{2\pi}\right)^{1/2} \frac{\sqrt{\pi}}{4}\left(\frac{2}{\beta m}\right)^{3/2}, \\
 &amp;= \frac{1}{\beta m} = \frac{kT}{m}.
 \end{align}\]</div>
 <p>There’s nothing special about the <span class="math notranslate nohighlight">\(x\)</span>-direction, so the results for the <span class="math notranslate nohighlight">\(x\)</span>-, <span class="math notranslate nohighlight">\(y\)</span>-, and <span class="math notranslate nohighlight">\(z\)</span>-velocity components are identical.  The three components can be summed to find the mean <em>translational</em> kinetic energy <span class="math notranslate nohighlight">\(\overline{K}\)</span> of a molecule:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-577d80a6-f9d1-4107-acc8-cab70d95e89f">
-<span class="eqno">(8.11)<a class="headerlink" href="#equation-577d80a6-f9d1-4107-acc8-cab70d95e89f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5e38e115-e0fa-4f98-a17b-a0b367e5864c">
+<span class="eqno">(8.11)<a class="headerlink" href="#equation-5e38e115-e0fa-4f98-a17b-a0b367e5864c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \overline{K} = \frac{1}{2}m \left(\bar{v}_x^2 + \bar{v}_y^2 + \bar{v}_z^2\right) = \frac{1}{2}m \left(\frac{3kT}{m}\right) = \frac{3}{2}kT.
 \end{align}\]</div>
 <p>This is one of the principal results of kinetic theory.</p>
@@ -683,7 +703,7 @@ The mean kinetic energy of a mole of ideal gas is 3650 J.
 </div>
 </section>
 <section id="equipartition-theorem">
-<h2><span class="section-number">8.3. </span>Equipartition Theorem<a class="headerlink" href="#equipartition-theorem" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.3. </span>Equipartition Theorem<a class="headerlink" href="#equipartition-theorem" title="Link to this heading">#</a></h2>
 <p>In the previous section, we showed that the internal energy of a thermodynamic system can be related to its temperature.  More precisely,</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -730,8 +750,8 @@ C_{\rm V} &amp;= \frac{f}{2}Nk, \\
 c_{\rm V} &amp;= \frac{f}{2}N_{\rm A}k.
 \end{align*}\]</div>
 <p>The uppercase <span class="math notranslate nohighlight">\(C_{\rm V}\)</span> denotes the heat capacity for a general amount, where the lowercase <span class="math notranslate nohighlight">\(c_{\rm V}\)</span> is per mole.</p>
-<table class="colwidths-auto table table-center" id="molar-heat-cap" style="width: 250px">
-<caption><span class="caption-number">Table 8.1 </span><span class="caption-text">Molar Heat Capacities for Selected Gases at <span class="math notranslate nohighlight">\(15^\circ C\)</span> and <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span></span><a class="headerlink" href="#molar-heat-cap" title="Permalink to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="molar-heat-cap" style="width: 250px">
+<caption><span class="caption-number">Table 8.1 </span><span class="caption-text">Molar Heat Capacities for Selected Gases at <span class="math notranslate nohighlight">\(15^\circ C\)</span> and <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span></span><a class="headerlink" href="#molar-heat-cap" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Gas</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(\mathbf{c_{\rm V} \mathbf{\rm (J/K)}}\)</span></p></th>
@@ -797,6 +817,7 @@ c_{\rm V} &amp;= \frac{f}{2}N_{\rm A}k.
 </tr>
 </tbody>
 </table>
+</div>
 <p>Table <a class="reference internal" href="#molar-heat-cap"><span class="std std-numref">8.1</span></a> shows the molar heat capacities for selected gases in terms of the heat capacity <span class="math notranslate nohighlight">\(c_{\rm V}\)</span> and a value normalized by the <a class="reference external" href="https://en.wikipedia.org/wiki/Gas_constant"><strong>ideal gas constant</strong></a> <span class="math notranslate nohighlight">\(R=N_{\rm A} k\)</span>.</p>
 <p>There is no law where our three models (translational, rotation, and vibrational) must remain separate.  Therefore, we should expect a lower limit of <span class="math notranslate nohighlight">\(1.5\)</span> for <span class="math notranslate nohighlight">\(c_{\rm V}/R\)</span>, where an upper limit may be <span class="math notranslate nohighlight">\({\sim}3.5\)</span>.  The upper limit is less defined due to other assumptions in our approximations and the chosen temperature.</p>
 <ul class="simple">
@@ -827,7 +848,7 @@ c_{\rm V} &amp;= \frac{f}{2}N_{\rm A}k.
 </div>
 </section>
 <section id="maxwell-speed-distribution">
-<h2><span class="section-number">8.4. </span>Maxwell Speed Distribution<a class="headerlink" href="#maxwell-speed-distribution" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.4. </span>Maxwell Speed Distribution<a class="headerlink" href="#maxwell-speed-distribution" title="Link to this heading">#</a></h2>
 <p>The general form of the Maxwell velocity distribution is given as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -853,8 +874,8 @@ F(r)dr = &amp; \text{ probability of finding a particle} \\
 &amp; \text{ between }r\ \text{and}\ r + dr.
 \end{align*}\]</div>
 <p>The space between <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(r+dr\)</span> is a <em>spherical shell</em>, and thus, we must integrate over that volume to transform to the radial distribution.  These two distributions are related by the volume of spherical shell, or <span class="math notranslate nohighlight">\(4\pi r^2\)</span>.  We may write</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1517f7a9-f9e2-4458-a043-cbfe68a9a67d">
-<span class="eqno">(8.12)<a class="headerlink" href="#equation-1517f7a9-f9e2-4458-a043-cbfe68a9a67d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c88a2136-40d3-445b-b20c-5512f4a6e5f5">
+<span class="eqno">(8.12)<a class="headerlink" href="#equation-c88a2136-40d3-445b-b20c-5512f4a6e5f5" title="Permalink to this equation">#</a></span>\[\begin{align}
 F(r)dr = f(x,\ y,\ z) 4\pi r^2\ dr.
 \end{align}\]</div>
 <p>Returning to the problem of the speed distribution <span class="math notranslate nohighlight">\(F(v)\)</span> from the velocity distribution <span class="math notranslate nohighlight">\(f(\vec{v})\)</span>.  We need to integrate over a spherical shell in the velocity phase space, where we replace <span class="math notranslate nohighlight">\(r\rightarrow v\)</span> from the previous example.  The desired speed distribution is</p>
@@ -863,15 +884,15 @@ F(r)dr = f(x,\ y,\ z) 4\pi r^2\ dr.
 <p><strong>Maxwell speed distribution</strong></p>
 </aside>
 <div class="math notranslate nohighlight" id="equation-maxwell-speed">
-<span class="eqno">(8.13)<a class="headerlink" href="#equation-maxwell-speed" title="Permalink to this equation">#</a></span>\[F(v)\ dv = 4\pi Ce^{-\frac{1}{2}\beta m v^2}v^2\ dv.\]</div>
+<span class="eqno">(8.13)<a class="headerlink" href="#equation-maxwell-speed" title="Link to this equation">#</a></span>\[F(v)\ dv = 4\pi Ce^{-\frac{1}{2}\beta m v^2}v^2\ dv.\]</div>
 <p>The Maxwell speed distribution as derived from purely classical considerations, where it gives a nonzero probability of finding a particle with a speed greater than <span class="math notranslate nohighlight">\(c\)</span>.  Therefore, it is only valid in the classical limit.</p>
 <p>The assymetry of the distribution curve leads to an interesting result:</p>
 <blockquote>
 <div><p>the most probable speed <span class="math notranslate nohighlight">\(v_{\rm mp}\)</span>, the mean speed <span class="math notranslate nohighlight">\(\bar{v}\)</span>, and the root-mean-square speed <span class="math notranslate nohighlight">\(v_{\rm rms}\)</span> are all slightly different from each other.</p>
 </div></blockquote>
 <p>To find the most probable speed, we simply find <em>maximum</em> speed in the probabilty curve, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a822cda-2018-4231-aa5f-ccd9f3052711">
-<span class="eqno">(8.14)<a class="headerlink" href="#equation-9a822cda-2018-4231-aa5f-ccd9f3052711" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-76791da8-aac1-4d80-a621-743545a19bc2">
+<span class="eqno">(8.14)<a class="headerlink" href="#equation-76791da8-aac1-4d80-a621-743545a19bc2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{dF}{dv} &amp;= 4\pi C \frac{d}{dv}\left[e^{-\frac{1}{2}\beta m v^2}v^2 \right], \\
 &amp;= 2ve^{-\frac{1}{2}\beta m v^2} - \left(\beta m v\right)v^2 e^{-\frac{1}{2}\beta m v^2}.
 \end{align}\]</div>
@@ -880,8 +901,8 @@ F(r)dr = f(x,\ y,\ z) 4\pi r^2\ dr.
 <p class="sidebar-title"></p>
 <p><strong>Most probable speed <span class="math notranslate nohighlight">\(v_{\rm mp}\)</span></strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-29b75b0e-41a8-4a6d-87b3-b90cd73e3b4a">
-<span class="eqno">(8.15)<a class="headerlink" href="#equation-29b75b0e-41a8-4a6d-87b3-b90cd73e3b4a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8ef4c508-899e-4145-b6f7-95fda333a095">
+<span class="eqno">(8.15)<a class="headerlink" href="#equation-8ef4c508-899e-4145-b6f7-95fda333a095" title="Permalink to this equation">#</a></span>\[\begin{align}
 2v_{\rm mp}e^{-\frac{1}{2}\beta m v_{\rm mp}^2} &amp;= \left(\beta m v_{\rm mp}\right)v_{\rm mp}^2 e^{-\frac{1}{2}\beta m v_{\rm mp}^2}, \\
 v_{\rm mp} &amp;= \sqrt{\frac{2}{\beta m}} = \sqrt{\frac{2kT}{m}}.
 \end{align}\]</div>
@@ -897,7 +918,7 @@ v_{\rm mp} &amp;= \sqrt{\frac{2}{\beta m}} = \sqrt{\frac{2kT}{m}}.
 <p><strong>Mean speed <span class="math notranslate nohighlight">\(\bar{v}\)</span></strong></p>
 </aside>
 <div class="math notranslate nohighlight" id="equation-mean-speed-stat">
-<span class="eqno">(8.16)<a class="headerlink" href="#equation-mean-speed-stat" title="Permalink to this equation">#</a></span>\[\begin{split}\bar{v} &amp;= 4\pi C \left(\frac{1}{2(\beta m/2)^2}\right) = 8\pi \left(\frac{\beta m}{2\pi}\right)^{3/2} \left(\frac{1}{(\beta m)^2}\right), \\
+<span class="eqno">(8.16)<a class="headerlink" href="#equation-mean-speed-stat" title="Link to this equation">#</a></span>\[\begin{split}\bar{v} &amp;= 4\pi C \left(\frac{1}{2(\beta m/2)^2}\right) = 8\pi \left(\frac{\beta m}{2\pi}\right)^{3/2} \left(\frac{1}{(\beta m)^2}\right), \\
  &amp;= \frac{4}{\sqrt{2\pi}} \left(\frac{1}{\sqrt{\beta m}}\right), \\ &amp;= \frac{2}{\sqrt{\pi}} \sqrt{\frac{2kT}{m}}, \\
  &amp;= \frac{2}{\sqrt{\pi}} v_{\rm mp}.\end{split}\]</div>
 <p>We define the <strong>root-mean-square</strong> <span class="math notranslate nohighlight">\(v_{\rm rms}\)</span> to be <span class="math notranslate nohighlight">\( v_{\rm rms} \equiv \left(\overline{v^2}\right)^{1/2}\)</span>.  We cannot simply use the result for the mean speed <span class="math notranslate nohighlight">\(\bar{v}\)</span> directly.  Instead, we need to find the mean using the probability function <span class="math notranslate nohighlight">\(F(v)\)</span>, or</p>
@@ -906,8 +927,8 @@ v_{\rm mp} &amp;= \sqrt{\frac{2}{\beta m}} = \sqrt{\frac{2kT}{m}}.
 \overline{v^2} = \int_0^\infty v^2F(v)\ dv = 4\pi C \int_0^\infty v^4e^{-\frac{1}{2}\beta m v^2}dv.
 \end{align*}\]</div>
 <p>See a list of <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_integrals_of_exponential_functions">integrals containing exponential functions</a> and using <span class="math notranslate nohighlight">\((k=2,\ n=4,\ a=\beta m/2)\)</span> to find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eb694655-67a7-4ab5-85cd-60996b4a996c">
-<span class="eqno">(8.17)<a class="headerlink" href="#equation-eb694655-67a7-4ab5-85cd-60996b4a996c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a55d1ed0-38c6-4f67-8a06-acf37dd267ba">
+<span class="eqno">(8.17)<a class="headerlink" href="#equation-a55d1ed0-38c6-4f67-8a06-acf37dd267ba" title="Permalink to this equation">#</a></span>\[\begin{align}
 \overline{v^2} &amp;= 4\pi C \int_0^\infty v^4e^{-\frac{1}{2}\beta m v^2}dv = 4\pi C \left(\frac{3!!}{8a^2}\sqrt{\frac{\pi}{a}}\right), \\
 &amp;= 4\pi \left(\frac{\beta m}{2\pi}\right)^{3/2} \frac{3}{2(\beta m)^2} \sqrt{\frac{2\pi}{\beta m}}, \\
 &amp;= \frac{3(\beta m)^{3/2}}{(\beta m)^{5/2} } = \frac{3}{\beta m}, \\
@@ -918,8 +939,8 @@ v_{\rm mp} &amp;= \sqrt{\frac{2}{\beta m}} = \sqrt{\frac{2kT}{m}}.
 <p class="sidebar-title"></p>
 <p><strong>Root-mean-square speed <span class="math notranslate nohighlight">\(v_{\rm rms}\)</span></strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-8585eb84-36ae-44a9-a60b-89a453749521">
-<span class="eqno">(8.18)<a class="headerlink" href="#equation-8585eb84-36ae-44a9-a60b-89a453749521" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0d309784-15cc-480e-af3a-17f36050ce56">
+<span class="eqno">(8.18)<a class="headerlink" href="#equation-0d309784-15cc-480e-af3a-17f36050ce56" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{\rm rms} = \left(\overline{v^2}\right)^{1/2} = \sqrt{\frac{3kT}{m}} = \sqrt{\frac{3}{2}}v_{\rm mp}.
 \end{align}\]</div>
 <p>A particle moving with the mean squared speed has a kinetic energy</p>
@@ -927,8 +948,8 @@ v_{\rm rms} = \left(\overline{v^2}\right)^{1/2} = \sqrt{\frac{3kT}{m}} = \sqrt{\
 \[ \overline{K} = \frac{1}{2}m\overline{v^2} = \frac{1}{2}m \left(\frac{3kT}{m}\right) = \frac{3}{2}kT \]</div>
 <p>in keeping with our basic law of kinetic theory.</p>
 <p>The <strong>standard deviation</strong> of the molecular speeds <span class="math notranslate nohighlight">\(\sigma_v\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5deda309-97e5-496a-b4ae-cec54a22dac4">
-<span class="eqno">(8.19)<a class="headerlink" href="#equation-5deda309-97e5-496a-b4ae-cec54a22dac4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-12fca52f-3c18-491e-911c-e7ae8890d3d8">
+<span class="eqno">(8.19)<a class="headerlink" href="#equation-12fca52f-3c18-491e-911c-e7ae8890d3d8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sigma_v &amp;= \left(\overline{v^2} - \bar{v}^2\right)^{1/2} = \left(\frac{3kT}{m} - \frac{8kT}{m\pi}\right)^{1/2}, \\
 &amp;= \left[\frac{(3\pi-8)kT}{m\pi}\right]^{1/2},\\
 &amp;= \left[3-\left(\frac{8}{\pi}\right)\right]^{1/2} \sqrt{\frac{kT}{m}}, \\
@@ -943,8 +964,8 @@ v_{\rm rms} = \left(\overline{v^2}\right)^{1/2} = \sqrt{\frac{3kT}{m}} = \sqrt{\
 <div class="math notranslate nohighlight">
 \[ \bar{v} = \frac{2}{\sqrt{\pi}} \sqrt{\frac{2kT}{m}}, \]</div>
 <p>which can be applied to each type of gas.  The only difference between results will be due to the molar mass <span class="math notranslate nohighlight">\(m\)</span>.  The molar mass of <span class="math notranslate nohighlight">\(\rm H_2\)</span> is <span class="math notranslate nohighlight">\(2.01568\ {\rm u}\)</span>, which is found by multiplying the mass of hydrogen by two.  The conversion from atomic mass units <span class="math notranslate nohighlight">\({\rm u}\)</span> to <span class="math notranslate nohighlight">\(\rm kg\)</span> is <span class="math notranslate nohighlight">\(1.660539 \times 10^{-27}\ {\rm kg/u}\)</span>. Let’s re-write the mean molecular speed so that all the physical constants are combined and so that we can use atomic mass units directly.  This gives</p>
-<div class="amsmath math notranslate nohighlight" id="equation-beefaaab-30da-43d6-a508-06857cc3f30e">
-<span class="eqno">(8.20)<a class="headerlink" href="#equation-beefaaab-30da-43d6-a508-06857cc3f30e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6a5adcd1-e219-46c2-bbac-1e4e98122ba5">
+<span class="eqno">(8.20)<a class="headerlink" href="#equation-6a5adcd1-e219-46c2-bbac-1e4e98122ba5" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{v} = \left(2\sqrt{\frac{2k}{\pi u}}\right)\sqrt{\frac{T\ \text{(in K)}}{m\ \text{(in u)}}} = 145.5081\sqrt{\frac{T}{m}}.
 \end{align}\]</div>
 <p>Then, we compute the mean molecular speed for molecular hydrogen <span class="math notranslate nohighlight">\(\rm H_2\)</span> as</p>
@@ -1006,8 +1027,8 @@ The mass ratio (m_Rn/m_H2) is 110 and the ratio of speeds (v_H2/v_Rn) is 10.5.
 <section id="exercise-content">
 <p><strong>What fraction of the molecules in an ideal gas in equilibrium has speeds with <span class="math notranslate nohighlight">\(\pm1\%\)</span> of the most probable speed <span class="math notranslate nohighlight">\(v_{\rm mp}\)</span>?</strong></p>
 <p>The Maxwell speed distribution function provides the probability of finding a particle within an interval of speeds.  The fraction of molecules within the a given speed interval is equal to the integrated probability over the interval.  Mathematically, this is expressed by the number of molecules at a particular speed <span class="math notranslate nohighlight">\(N(v)\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f8ecaca3-c10f-4688-bb34-3de96ba038a1">
-<span class="eqno">(8.21)<a class="headerlink" href="#equation-f8ecaca3-c10f-4688-bb34-3de96ba038a1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ebec7a30-5ecf-49b4-a053-da8bd20cb3f6">
+<span class="eqno">(8.21)<a class="headerlink" href="#equation-ebec7a30-5ecf-49b4-a053-da8bd20cb3f6" title="Permalink to this equation">#</a></span>\[\begin{align}
 P(\pm1\%) = \frac{N(1.01v_{\rm mp})-N(0.99v_{\rm mp})}{N} = \int_{0.99v_{\rm mp}}^{1.01v_{\rm mp}} F(v)dv.
 \end{align}\]</div>
 <p>The indefinite integral introduces the <a class="reference external" href="https://en.wikipedia.org/wiki/Error_function">error function</a>, which is beyond the scope of this course.  However, we can obtain an approximate solution by calculating <span class="math notranslate nohighlight">\(F(v_{\rm mp})\)</span> and multiplying by <span class="math notranslate nohighlight">\(dv \approx \Delta v = 0.02v_{\rm mp}\)</span>.  This solution works for a small window, where wider intervals are easily evaluated using numerical methods (e.g., <a class="reference external" href="https://saturnaxis.github.io/CompPhysics/Chapter_4/Integration.html#simpson-s-rule">Simpson’s rule</a>).</p>
@@ -1080,14 +1101,14 @@ P(\pm1\%) &amp;= F(v_{\rm mp})(0.02v_{\rm mp}),\\
 </div>
 </section>
 <section id="classical-and-quantum-statistics">
-<h2><span class="section-number">8.5. </span>Classical and Quantum Statistics<a class="headerlink" href="#classical-and-quantum-statistics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.5. </span>Classical and Quantum Statistics<a class="headerlink" href="#classical-and-quantum-statistics" title="Link to this heading">#</a></h2>
 <p>The Maxwell speed distribution is only valid in the classical limit, which prohibits its use at exceptionally high temperatures (i.e., gas particle velocities near <span class="math notranslate nohighlight">\(c\)</span>).  An ideal gas is dilute, which means that the gas molecules rarely interact or collide with one another due to their large (relative) separations.  When collisions occur, they can be treated as totally elastic, and have no effect on the distributions and mean values.</p>
 <p>When the density of matter is higher (i.e., solid or liquids), the assumption of noninteracting particles may no longer be valid.  If molecules, atoms, or subatomic particles are closely packed together, the Pauli exclusion principle prevents two particles in identical quantum states from sharing the same s=pace.  This limits the allowed energy states of any particle (fermion), which affects the distribution of energies for a system of particles.</p>
 <section id="classical-distributions">
-<h3><span class="section-number">8.5.1. </span>Classical Distributions<a class="headerlink" href="#classical-distributions" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.5.1. </span>Classical Distributions<a class="headerlink" href="#classical-distributions" title="Link to this heading">#</a></h3>
 <p>Because energy levels are fundamental in quantum theory, we rewrite the Maxwell speed distribution in terms of energy rather than velcocity.  For a monatomic gas, the energy is all translational kinetic energy.  We can use the following relations</p>
-<div class="amsmath math notranslate nohighlight" id="equation-918ee56b-c162-4b3e-969e-22f0da038ad3">
-<span class="eqno">(8.22)<a class="headerlink" href="#equation-918ee56b-c162-4b3e-969e-22f0da038ad3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cc846d26-9c0b-43e8-9d01-61cfa9524440">
+<span class="eqno">(8.22)<a class="headerlink" href="#equation-cc846d26-9c0b-43e8-9d01-61cfa9524440" title="Permalink to this equation">#</a></span>\[\begin{align}
 E &amp;= \frac{1}{2}mv^2, \\
 dE &amp;= mv dv, \\
 dv &amp;= \frac{dE}{\sqrt{2mE}}.
@@ -1097,8 +1118,8 @@ dv &amp;= \frac{dE}{\sqrt{2mE}}.
 <p class="sidebar-title"></p>
 <p><strong>Maxwell-Boltzmann energy distribution</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-4b5efcf9-9603-4e96-87d5-d720c6c5edde">
-<span class="eqno">(8.23)<a class="headerlink" href="#equation-4b5efcf9-9603-4e96-87d5-d720c6c5edde" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8f2323e3-8232-4285-88ad-8ab2dbff69eb">
+<span class="eqno">(8.23)<a class="headerlink" href="#equation-8f2323e3-8232-4285-88ad-8ab2dbff69eb" title="Permalink to this equation">#</a></span>\[\begin{align}
 F(v)\ dv &amp;= 4\pi C e^{-\frac{1}{2}\beta mv^2}v^2\ dv, \\
 &amp;= 4\pi C e^{-\beta E}\left( \frac{2E}{m}\right) \frac{dE}{\sqrt{2mE}}, \\
 &amp;= \frac{8\pi C}{\sqrt{2m^3}} e^{-\beta E}\sqrt{E}\ dE.
@@ -1108,20 +1129,20 @@ F(v)\ dv &amp;= 4\pi C e^{-\frac{1}{2}\beta mv^2}v^2\ dv, \\
 <p class="sidebar-title"></p>
 <p><strong>Maxwell-Boltzmann factor</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-0fc8daeb-652a-4180-8250-daeda141d0a6">
-<span class="eqno">(8.24)<a class="headerlink" href="#equation-0fc8daeb-652a-4180-8250-daeda141d0a6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fa7d5a48-fda9-436b-8c09-d5181926e217">
+<span class="eqno">(8.24)<a class="headerlink" href="#equation-fa7d5a48-fda9-436b-8c09-d5181926e217" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{\rm MB} = Ae^{-\beta E},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span> is a normalization constant.  The energy distribution for a classical system will then have the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-459909ea-f6e0-46c7-a5b9-e80741aa33f5">
-<span class="eqno">(8.25)<a class="headerlink" href="#equation-459909ea-f6e0-46c7-a5b9-e80741aa33f5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-15eefbaf-78f9-4379-a1dc-9e979810b0ea">
+<span class="eqno">(8.25)<a class="headerlink" href="#equation-15eefbaf-78f9-4379-a1dc-9e979810b0ea" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(E) = g(E)F_{\rm MB},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(n(E)\)</span> is a distribution that represents the number of particles within a bin of energy from <span class="math notranslate nohighlight">\(E\)</span> to <span class="math notranslate nohighlight">\(E+dE\)</span>.</p>
 <p>The function <span class="math notranslate nohighlight">\(g(E)\)</span> is known as the <strong>density of states</strong>, or the number of states available per unit energy range.  The density of states is an essential element in al distributions.  The factor <span class="math notranslate nohighlight">\(F_{\rm MB}\)</span> is the relative probability that an energy state is occupied at a given temperature.</p>
 </section>
 <section id="quantum-distributions">
-<h3><span class="section-number">8.5.2. </span>Quantum Distributions<a class="headerlink" href="#quantum-distributions" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.5.2. </span>Quantum Distributions<a class="headerlink" href="#quantum-distributions" title="Link to this heading">#</a></h3>
 <p>In quantum theory, particles are described by wave functions.  Indentical particles cannot be distinguished from one another if there is a significant overlap of their wave functions.  It is this characteristic that makes quantum statistics different from classical stastics.</p>
 <p><strong>Suppose that we have a system of just two particles.</strong>  Each particle has an equal probability (0.5) of existing in either of two energy states.  If the particles are distinguishable (e.g., labeled A and B), then the possible configurations are</p>
 <ol class="arabic simple">
@@ -1130,8 +1151,8 @@ n(E) = g(E)F_{\rm MB},
 <li><p>Both in state 2.</p></li>
 </ol>
 <p>These configurations can be illustrated using a probability table:</p>
-<table class="colwidths-auto table table-center" id="id1" style="width: 250px">
-<caption><span class="caption-number">Table 8.2 </span><span class="caption-text">Probability Table of Two Particles (A &amp; B)</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id1" style="width: 250px">
+<caption><span class="caption-number">Table 8.2 </span><span class="caption-text">Probability Table of Two Particles (A &amp; B)</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>State 1</strong></p></th>
 <th class="head"><p><strong>State 2</strong></p></th>
@@ -1152,9 +1173,10 @@ n(E) = g(E)F_{\rm MB},
 </tr>
 </tbody>
 </table>
+</div>
 <p>Each of the four configurations are equally likely, where the probability of each is one-fourth (0.25).  If the two particles are indistinguishable, then our probability table changes:</p>
-<table class="colwidths-auto table table-center" id="id2" style="width: 250px">
-<caption><span class="caption-number">Table 8.3 </span><span class="caption-text">Probability Table of Two Indistinguishable Particles</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id2" style="width: 250px">
+<caption><span class="caption-number">Table 8.3 </span><span class="caption-text">Probability Table of Two Indistinguishable Particles</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>State 1</strong></p></th>
 <th class="head"><p><strong>State 2</strong></p></th>
@@ -1172,6 +1194,7 @@ n(E) = g(E)F_{\rm MB},
 </tr>
 </tbody>
 </table>
+</div>
 <p>Now there are only three equally likely configurations, where each have a probability of one-third (<span class="math notranslate nohighlight">\({\sim}0.33\)</span>).</p>
 <p>Two kinds of quantum distributions are needed because some particles obey the Pauli exclusion principle and others do not.</p>
 <ul class="simple">
@@ -1187,8 +1210,8 @@ n(E) = g(E)F_{\rm MB},
 <p class="sidebar-title"></p>
 <p><strong>Fermi-Dirac distribution</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-726ba9d3-06ad-46a5-8a0c-e680897d209c">
-<span class="eqno">(8.26)<a class="headerlink" href="#equation-726ba9d3-06ad-46a5-8a0c-e680897d209c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a5c21309-f021-4c4e-9c3b-ae9c98ea86ee">
+<span class="eqno">(8.26)<a class="headerlink" href="#equation-a5c21309-f021-4c4e-9c3b-ae9c98ea86ee" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(E) &amp;= g(E)F_{\rm FD},\ \qquad \text{where } \\
 F_{\rm FD} &amp;= \frac{1}{B_{\rm FD}\ e^{\beta E}+1}.
 \end{align}\]</div>
@@ -1197,8 +1220,8 @@ F_{\rm FD} &amp;= \frac{1}{B_{\rm FD}\ e^{\beta E}+1}.
 <p class="sidebar-title"></p>
 <p><strong>Bose-Einstein distribution</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-447d061e-e7f8-47d9-bc60-024c5f40cb5a">
-<span class="eqno">(8.27)<a class="headerlink" href="#equation-447d061e-e7f8-47d9-bc60-024c5f40cb5a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6bfe6a17-225a-486f-9b86-66516c3bd851">
+<span class="eqno">(8.27)<a class="headerlink" href="#equation-6bfe6a17-225a-486f-9b86-66516c3bd851" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(E) &amp;= g(E)F_{\rm BE},\ \qquad \text{where } \\
 F_{\rm BE} &amp;= \frac{1}{B_{\rm BE}\ e^{\beta E}-1}.
 \end{align}\]</div>
@@ -1208,8 +1231,8 @@ F_{\rm BE} &amp;= \frac{1}{B_{\rm BE}\ e^{\beta E}-1}.
 <p>The Fermi-Dirac and Bose-Einstein distributions look very similar, where they differ only by the normalization constant and by the sign attached to the <span class="math notranslate nohighlight">\(1\)</span> in the denominator.</p>
 </div>
 <p>Both the Fermi-Dirac and Bose-Einstein distributions reduce to the classical Maxwell-Boltzmann distribution when <span class="math notranslate nohighlight">\(B_ie^{\beta E} \gg 1\)</span> <span class="math notranslate nohighlight">\((\text{recall }x\pm 1 \approx x\)</span> for <span class="math notranslate nohighlight">\(x\gg 1)\)</span> and <span class="math notranslate nohighlight">\(A = 1/B_i\)</span>.  This means that the Maxwell-Boltzmann factor is much less than 1 (i.e., the probability that a particular energy state will be occupied is much less than 1).</p>
-<table class="colwidths-auto table table-center" id="id3" style="width: 600px">
-<caption><span class="caption-number">Table 8.4 </span><span class="caption-text">Classical and Quantum Distributions</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<div class="pst-scrollable-table-container"><table class="table table-center" id="id3" style="width: 600px">
+<caption><span class="caption-number">Table 8.4 </span><span class="caption-text">Classical and Quantum Distributions</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Distributions</p></th>
 <th class="head"><p>Properties</p></th>
@@ -1235,14 +1258,15 @@ F_{\rm BE} &amp;= \frac{1}{B_{\rm BE}\ e^{\beta E}-1}.
 </tr>
 </tbody>
 </table>
+</div>
 <div class="exercise orange admonition" id="Chapter_8/statistical-physics-exercise-4">
 
 <p class="admonition-title"><span class="caption-number">Exercise 8.5 </span></p>
 <section id="exercise-content">
 <p><strong>Assume that the Maxwell-Boltmann distribution is valid in a gas of atomic hydrogen.  What is the relative number of atoms in the ground state and first excited state at: <span class="math notranslate nohighlight">\(293\ {\rm K}\)</span>, <span class="math notranslate nohighlight">\(5000\ {\rm K}\)</span>, and <span class="math notranslate nohighlight">\(10^6\ {\rm K}\)</span>?</strong></p>
 <p>The relative number of atoms between the ground and first excited states can be determined by using the ratio of <span class="math notranslate nohighlight">\(n(E_2)\)</span> to <span class="math notranslate nohighlight">\(n(E_1)\)</span>.  Mathematically this is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c52f5902-3826-4ddb-97f8-7dc7b1973606">
-<span class="eqno">(8.28)<a class="headerlink" href="#equation-c52f5902-3826-4ddb-97f8-7dc7b1973606" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1d52aef2-c840-4e49-b22e-a95093a0850e">
+<span class="eqno">(8.28)<a class="headerlink" href="#equation-1d52aef2-c840-4e49-b22e-a95093a0850e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{n(E_2)}{n(E_1)} &amp;= \frac{g(E_2)}{g(E_1)} e^{-\beta(E_2-E1)},
 \end{align}\]</div>
 <p>where the density of states <span class="math notranslate nohighlight">\(g(E_1) = 2\)</span> for the ground state (spin up or down) and <span class="math notranslate nohighlight">\(g(E_2) = 8\)</span> for the first excited state (see <a class="reference external" href="https://en.wikipedia.org/wiki/Electron_shell">Electron shells</a>).  For atomic hydrogen, <span class="math notranslate nohighlight">\(E_2-E_1 = 10.2\ {\rm eV}\)</span>.  Putting this together we can write</p>
@@ -1299,24 +1323,24 @@ The relative number of atoms at 293 K is 3.55.
 </section>
 </section>
 <section id="fermi-dirac-statistics">
-<h2><span class="section-number">8.6. </span>Fermi-Dirac Statistics<a class="headerlink" href="#fermi-dirac-statistics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.6. </span>Fermi-Dirac Statistics<a class="headerlink" href="#fermi-dirac-statistics" title="Link to this heading">#</a></h2>
 <section id="introduction-to-fermi-dirac-theory">
-<h3><span class="section-number">8.6.1. </span>Introduction to Fermi-Dirac Theory<a class="headerlink" href="#introduction-to-fermi-dirac-theory" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.6.1. </span>Introduction to Fermi-Dirac Theory<a class="headerlink" href="#introduction-to-fermi-dirac-theory" title="Link to this heading">#</a></h3>
 <p>The Fermi-Dirac distribution helps us understand how collections of fermions behave, one of its most useful applications is for the problem of electrical conducion.</p>
 <p>First, we consider the role of the factor <span class="math notranslate nohighlight">\(B_{\rm FD}\)</span>.  Like any other normalization factor, one could simply integrate over all allowed values of <span class="math notranslate nohighlight">\(F_{\rm FD}\)</span>.  The factor <span class="math notranslate nohighlight">\(B_{\rm FD}\)</span> is temperature dependent because of the parameter <span class="math notranslate nohighlight">\(\beta\ (=1/kT)\)</span>.  We express this temperature dependence as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9af270e0-ac01-4cdc-820c-99d15626acc6">
-<span class="eqno">(8.29)<a class="headerlink" href="#equation-9af270e0-ac01-4cdc-820c-99d15626acc6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e2ebd643-2882-4c0f-afea-b9de209aae65">
+<span class="eqno">(8.29)<a class="headerlink" href="#equation-e2ebd643-2882-4c0f-afea-b9de209aae65" title="Permalink to this equation">#</a></span>\[\begin{align}
 B_{\rm FD} = e^{-\beta E_{\rm F}},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> is the <strong>Fermi energy</strong>.  Then we can rewrite the Fermi-Dirac distribution as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1212a72c-9534-4240-bf92-76223ba05d67">
-<span class="eqno">(8.30)<a class="headerlink" href="#equation-1212a72c-9534-4240-bf92-76223ba05d67" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fe393c16-e1f6-405c-965d-00e34d06c767">
+<span class="eqno">(8.30)<a class="headerlink" href="#equation-fe393c16-e1f6-405c-965d-00e34d06c767" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{\rm FD} = \frac{1}{e^{\beta(E-E_{\rm F})}+1}.
 \end{align}\]</div>
 <p>Notice what happens when <span class="math notranslate nohighlight">\(E=E_{\rm F}\)</span>, <span class="math notranslate nohighlight">\(F_{\rm FD} = 1/2\)</span> (exactly).  As a result, it is common to define the Fermi energy as the energy at which <span class="math notranslate nohighlight">\(F_{\rm FD} = 1/2\)</span>.</p>
 <p>Consider the temperature dependence of <span class="math notranslate nohighlight">\(F_{\rm FD}\)</span>, where in the limit as <span class="math notranslate nohighlight">\(T \rightarrow 0\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a1935f54-c7bf-4088-8dda-13e8f2b9f396">
-<span class="eqno">(8.31)<a class="headerlink" href="#equation-a1935f54-c7bf-4088-8dda-13e8f2b9f396" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d3d4ae88-1bbb-40ee-82a5-35b25ba5de57">
+<span class="eqno">(8.31)<a class="headerlink" href="#equation-d3d4ae88-1bbb-40ee-82a5-35b25ba5de57" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{\rm FD} &amp;= \begin{cases} 1, &amp; \text{for } E &lt; E_{\rm F}, \\ 0,  &amp; \text{for } E &gt; E_{\rm F}. \end{cases}
 \end{align}\]</div>
 <ul class="simple">
@@ -1331,13 +1355,13 @@ F_{\rm FD} &amp;= \begin{cases} 1, &amp; \text{for } E &lt; E_{\rm F}, \\ 0,  &a
 </ul>
 </section>
 <section id="classical-theory-of-electrical-conduction">
-<h3><span class="section-number">8.6.2. </span>Classical Theory of Electrical Conduction<a class="headerlink" href="#classical-theory-of-electrical-conduction" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.6.2. </span>Classical Theory of Electrical Conduction<a class="headerlink" href="#classical-theory-of-electrical-conduction" title="Link to this heading">#</a></h3>
 <p>In 1900 <a class="reference external" href="https://en.wikipedia.org/wiki/Paul_Drude">Paul Drude</a> developed a theory of electrical conduction to explain the observed conductivity of metals.  His model assumed that the electrons existed as a gas of free particles.  This is a fair assumption because (in a conductor) the outermost electron is weakly bound to the atom and easily stripped away, even by a very weak electric field.</p>
 <p>In the Drude model, the mteal is treated as a lattice of positive ions with a electron gas that is free to flow through it.  Just as in the case of ideal gases, electrons have a thermal kinetic energy proportional to temperature.  The mean speed of an electron at room temperature is <span class="math notranslate nohighlight">\({\sim}10^5\ {\rm m/s}\)</span>.  But, the particle velocities in a gas are directed randomly.  Therefore, ther will be no net flow of electrons unless an electric field is applied to the conductor.</p>
 <p>When an electric field is applied, the negatively charged electrons flow in the direction <em>opposite</em> that of the field.  According to Drude, their flow is severely restricted by collisions with the lattice ions.  Using some basic assumptions from classical mechanics, Drude showed that the current in a conductor should be linearly proportional to the applied electric field.  This is consistent with Ohm’s law.</p>
 <p>Unfortunately, the numerical predictions of the theory were not as successful.  One important prediction was that the electrical conductivity <span class="math notranslate nohighlight">\(\sigma\)</span> could be expressed as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ccab3d57-082b-4970-b4c8-a0e39b16aad3">
-<span class="eqno">(8.32)<a class="headerlink" href="#equation-ccab3d57-082b-4970-b4c8-a0e39b16aad3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-926b551c-1585-4516-98b0-0def52987a49">
+<span class="eqno">(8.32)<a class="headerlink" href="#equation-926b551c-1585-4516-98b0-0def52987a49" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sigma &amp;= \frac{n}{m}e^2\tau,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(n\)</span> is the number density of conduction electrons, <span class="math notranslate nohighlight">\(e\)</span> is the electron charge, <span class="math notranslate nohighlight">\(\tau\)</span> is the average time between electron-ion collisions, and <span class="math notranslate nohighlight">\(m\)</span> is the electron mass.  It is possible to measure <span class="math notranslate nohighlight">\(n\)</span> through the <a class="reference external" href="https://en.wikipedia.org/wiki/Hall_effect">Hall effect</a>.</p>
@@ -1348,8 +1372,8 @@ F_{\rm FD} &amp;= \begin{cases} 1, &amp; \text{for } E &lt; E_{\rm F}, \\ 0,  &a
 </aside>
 <p>The mean time between collisions <span class="math notranslate nohighlight">\(\tau\)</span> should be simply the mean distance <span class="math notranslate nohighlight">\(\ell\)</span> traveled by an electron between collisions (i.e., the <strong>mean free path</strong>) divided by the mean speed <span class="math notranslate nohighlight">\(\bar{v}\)</span> of the electrons, <span class="math notranslate nohighlight">\(\tau = \ell/\bar{v}\)</span>.</p>
 <p>Then the electrical conductivity is expressed as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-049b611c-d098-4f89-993a-c58d34c3af21">
-<span class="eqno">(8.33)<a class="headerlink" href="#equation-049b611c-d098-4f89-993a-c58d34c3af21" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-83eed4a8-ae08-412d-a825-e9ecfc339871">
+<span class="eqno">(8.33)<a class="headerlink" href="#equation-83eed4a8-ae08-412d-a825-e9ecfc339871" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sigma &amp;= \frac{n\ell}{m\bar{v}}e^2.
 \end{align}\]</div>
 <p>Equation <a class="reference internal" href="#equation-mean-speed-stat">(8.16)</a> shows that the mean speed is proportional to the square root of the absolute temperature.  According to the Drude model, the conductivity is proportional to <span class="math notranslate nohighlight">\(T^{-1/2}\)</span>.  For most conductors the conductivity is nearly proportional to <span class="math notranslate nohighlight">\(T^{-1}\)</span>, except at low temperatures.  Drude’s classical model fails again.</p>
@@ -1357,14 +1381,14 @@ F_{\rm FD} &amp;= \begin{cases} 1, &amp; \text{for } E &lt; E_{\rm F}, \\ 0,  &a
 <p>This is not consistent with experimental results.  The electronic contribution to the heat capacity depends on temperature and is only <span class="math notranslate nohighlight">\({\sim}0.02R\)</span> per mole at room temperature.</p>
 </section>
 <section id="quantum-theory-of-electrical-conduction">
-<h3><span class="section-number">8.6.3. </span>Quantum Theory of Electrical Conduction<a class="headerlink" href="#quantum-theory-of-electrical-conduction" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.6.3. </span>Quantum Theory of Electrical Conduction<a class="headerlink" href="#quantum-theory-of-electrical-conduction" title="Link to this heading">#</a></h3>
 <p>To obtain a better solution, we turn to quantum theory where it is necesary to understand how the electron energies are distributed in a conductor.  We can use the Fermi-Dirac distribution, but we have a problem to find <span class="math notranslate nohighlight">\(g(E)\)</span>, or the number of allowed states per unit energy.</p>
 <blockquote>
 <div><p>What energy values should we use?</p>
 </div></blockquote>
 <p>Let’s retain the “free electron” assumption of the Drude model and use the results of the 3-D infinite square-well potential because it corresponds physically to a cubic lattice of ions.  The allowed energies are</p>
 <div class="math notranslate nohighlight" id="equation-box-energy">
-<span class="eqno">(8.34)<a class="headerlink" href="#equation-box-energy" title="Permalink to this equation">#</a></span>\[E = \frac{h^2}{8mL^2}\left(n_1^2 + n_2^2 + n_3^2 \right),\]</div>
+<span class="eqno">(8.34)<a class="headerlink" href="#equation-box-energy" title="Link to this equation">#</a></span>\[E = \frac{h^2}{8mL^2}\left(n_1^2 + n_2^2 + n_3^2 \right),\]</div>
 <p>where <span class="math notranslate nohighlight">\(L\)</span> is the side-length of a cube and <span class="math notranslate nohighlight">\(n_i\)</span> are the integer quantum numbers.</p>
 <p>Let’s first solve the problem at <span class="math notranslate nohighlight">\(T=0\)</span>.  The distribution at room temperature is very much like <span class="math notranslate nohighlight">\(T=0\)</span> because <span class="math notranslate nohighlight">\(T_{\rm F}\)</span> is high for conductive metals (e.g, <span class="math notranslate nohighlight">\(T_{\rm F} = 80,000\ {\rm K}\)</span> for <span class="math notranslate nohighlight">\(\rm Cu\)</span>).</p>
 <p>The above allowed energies can be rewritten as</p>
@@ -1374,14 +1398,14 @@ E = r^2 E_c,
 \end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r^2\ (= n_1^2 + n_2^2 + n_3^2)\)</span> represents the “radius” of a sphere in phase space (also dimensionless) and <span class="math notranslate nohighlight">\(E_c\)</span> is just a constant, not the ground state energy.</p>
 <p>We have defined <span class="math notranslate nohighlight">\(r\)</span> in this way to construct a geometric solution to the problem of deteriming <span class="math notranslate nohighlight">\(g(E)\)</span>.  Think of the <span class="math notranslate nohighlight">\(n_i\)</span> as the “coordianates” of a 3-D number space.  The number of allowed states up to “radius” <span class="math notranslate nohighlight">\(r\)</span> (or up to energy <span class="math notranslate nohighlight">\(E\)</span>) is directly related to the spherical “volume” <span class="math notranslate nohighlight">\(\frac{4}{3}\pi r^3\)</span>.  The exact number of states up to radius <span class="math notranslate nohighlight">\(r\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-55030eb7-9c11-44b3-ba69-68ce4920c2ac">
-<span class="eqno">(8.35)<a class="headerlink" href="#equation-55030eb7-9c11-44b3-ba69-68ce4920c2ac" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-deaa6440-1c20-4094-901f-c5e7207332ce">
+<span class="eqno">(8.35)<a class="headerlink" href="#equation-deaa6440-1c20-4094-901f-c5e7207332ce" title="Permalink to this equation">#</a></span>\[\begin{align}
 N_r &amp;= (2)\left(\frac{1}{8}\right) \left(\frac{4}{3}\pi r^3 \right).
 \end{align}\]</div>
 <p>The extra factor of <span class="math notranslate nohighlight">\(2\)</span> comes from spin degeneracy (one spin up and spin down electron).  The factor of <span class="math notranslate nohighlight">\(1/8\)</span> is necessary because we are restricted to positive quantum numbers (i.e., one octant of a 3-D number space).</p>
 <p>The number of states <span class="math notranslate nohighlight">\(N_r\)</span> can be expressed as a function of <span class="math notranslate nohighlight">\(E\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4963ea0a-70ea-471e-91b1-469035727b2f">
-<span class="eqno">(8.36)<a class="headerlink" href="#equation-4963ea0a-70ea-471e-91b1-469035727b2f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d5e5ebe3-6549-4b5a-8017-69179649e895">
+<span class="eqno">(8.36)<a class="headerlink" href="#equation-d5e5ebe3-6549-4b5a-8017-69179649e895" title="Permalink to this equation">#</a></span>\[\begin{align}
 N_r &amp;= \frac{1}{3} \pi r^3 = \frac{1}{3} \pi \left(\sqrt{\frac{E}{E_c}}\right)^3, \\
 &amp;= \frac{1}{3} \pi \left(\frac{E}{E_c}\right)^{3/2}. 
 \end{align}\]</div>
@@ -1390,7 +1414,7 @@ N_r &amp;= \frac{1}{3} \pi r^3 = \frac{1}{3} \pi \left(\sqrt{\frac{E}{E_c}}\righ
 \[ N = \frac{1}{3} \pi \left(\sqrt{\frac{E_{\rm F}}{E_c}}\right)^3. \]</div>
 <p>We solve for <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> to obtain</p>
 <div class="math notranslate nohighlight" id="equation-fermi-energy-cube">
-<span class="eqno">(8.37)<a class="headerlink" href="#equation-fermi-energy-cube" title="Permalink to this equation">#</a></span>\[\begin{split}E_{\rm F} &amp;= \left(\frac{3N}{\pi}\right)^{2/3}E_c, \\
+<span class="eqno">(8.37)<a class="headerlink" href="#equation-fermi-energy-cube" title="Link to this equation">#</a></span>\[\begin{split}E_{\rm F} &amp;= \left(\frac{3N}{\pi}\right)^{2/3}E_c, \\
 &amp;= \frac{h^2}{8m}\left(\frac{3N}{\pi L^3}\right)^{2/3}.\end{split}\]</div>
 <p>Equation <a class="reference internal" href="#equation-fermi-energy-cube">(8.37)</a> is useful because the ratio <span class="math notranslate nohighlight">\(N/L^3\)</span> is well knonw for most condutors, where it is the number density of conduction electrons at <span class="math notranslate nohighlight">\(T=0\)</span>.</p>
 <div class="exercise orange admonition" id="Chapter_8/statistical-physics-exercise-5">
@@ -1444,20 +1468,20 @@ The Fermi temperature for copper is 8.16e+04 K.
 <div class="math notranslate nohighlight">
 \[ g(E) = \frac{N_r}{dE} = \frac{\pi}{2}E_c^{-3/2}E^{1/2}. \]</div>
 <p>This result can be expressed in terms of <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b92037ce-dc23-49d1-9a2f-64966dd9dda4">
-<span class="eqno">(8.38)<a class="headerlink" href="#equation-b92037ce-dc23-49d1-9a2f-64966dd9dda4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-947eaced-b00a-4650-ae8e-d6d17c610b4d">
+<span class="eqno">(8.38)<a class="headerlink" href="#equation-947eaced-b00a-4650-ae8e-d6d17c610b4d" title="Permalink to this equation">#</a></span>\[\begin{align}
 g(E) &amp;= \frac{\pi}{2} \left( E_{\rm F}^{-3/2} \frac{3N}{\pi}\right) E^{1/2}, \\
 &amp;= \frac{3}{2}N E_{\rm F}^{-3/2} E^{1/2}.
 \end{align}\]</div>
 <p>Because we are considering <span class="math notranslate nohighlight">\(T=0\)</span>, it is possible to use the step function form of the Fermi-Dirac factor.  We have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5d211135-7343-439a-802d-17e0743af283">
-<span class="eqno">(8.39)<a class="headerlink" href="#equation-5d211135-7343-439a-802d-17e0743af283" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c3a4aae5-a3f2-4978-9e53-0714a3e6d861">
+<span class="eqno">(8.39)<a class="headerlink" href="#equation-c3a4aae5-a3f2-4978-9e53-0714a3e6d861" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(E) &amp;= \begin{cases} g(E), &amp;\text{for }E&lt; E_{\rm F}, \\
 0, &amp; \text{for } E&gt;E_{\rm F}.
 \end{cases} \end{align}\]</div>
 <p>With the distribution function <span class="math notranslate nohighlight">\(n(E)\)</span>, the mean electron energy can be calculated as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-501229a5-1838-4666-88e4-31a8e86b7b89">
-<span class="eqno">(8.40)<a class="headerlink" href="#equation-501229a5-1838-4666-88e4-31a8e86b7b89" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7d559fb6-3c48-4598-8bac-fb6f7958bff4">
+<span class="eqno">(8.40)<a class="headerlink" href="#equation-7d559fb6-3c48-4598-8bac-fb6f7958bff4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \overline{E} &amp;= \frac{1}{N} \int_0^\infty n(E) E\ dE = \frac{1}{N} \int_0^{E_{\rm F}} g(E)E\ dE, \\
 &amp;= \frac{3}{2} \int_0^{E_{\rm F}} \left(\frac{E}{E_{\rm F}}\right)^{3/2} \ dE, \\
 &amp;= \frac{3}{2 E_{\rm F}^{3/2}} \int_0^{E_{\rm F}} E^{3/2}\ dE = \frac{3}{5} E_{\rm F}.
@@ -1467,8 +1491,8 @@ n(E) &amp;= \begin{cases} g(E), &amp;\text{for }E&lt; E_{\rm F}, \\
 \[ U = N\overline{E} = \frac{3}{5}N E_{\rm F}. \]</div>
 <p>The important question for determining the heat capacity is how <span class="math notranslate nohighlight">\(U\)</span> increases with temperature because the energy levels are filled up to <span class="math notranslate nohighlight">\(E_{\rm F}\)</span>.  We expect that only those electrons within about <span class="math notranslate nohighlight">\(kT\)</span> of <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> will absorb thermal energy and jumpt to a higher state.  The fraction of electrons capable of engaging in this thermal process is on the order of <span class="math notranslate nohighlight">\(kT/E_{\rm F}\)</span>.</p>
 <p>The exact number of electrons depends on the temperature because the shape of the curve for <span class="math notranslate nohighlight">\(n(E)\)</span> changes with temperature.  In general, we can say</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1ff0a9fd-a129-4a05-8040-7ae93e38be0d">
-<span class="eqno">(8.41)<a class="headerlink" href="#equation-1ff0a9fd-a129-4a05-8040-7ae93e38be0d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-87ccda56-0d72-43c3-9d3d-1f2c38660e8b">
+<span class="eqno">(8.41)<a class="headerlink" href="#equation-87ccda56-0d72-43c3-9d3d-1f2c38660e8b" title="Permalink to this equation">#</a></span>\[\begin{align}
 U = \frac{3}{5}N E_{\rm F} + \alpha N \left(\frac{kT}{E_{\rm F}}\right) kT,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is a constant <span class="math notranslate nohighlight">\(&gt;1\)</span> due to the shape of the distribution curve.  Therefore the electronic contribution to the heat capacity is</p>
@@ -1477,8 +1501,8 @@ U = \frac{3}{5}N E_{\rm F} + \alpha N \left(\frac{kT}{E_{\rm F}}\right) kT,
 C_{\rm V} = \frac{\partial U}{\partial T} = 2\alpha N k^2 \frac{T}{E_{\rm F}}.
 \end{align*}\]</div>
 <p>The molar heat capacity is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-52a53015-83b3-4698-b384-1ce4d337617c">
-<span class="eqno">(8.42)<a class="headerlink" href="#equation-52a53015-83b3-4698-b384-1ce4d337617c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7ea04cff-b281-4ece-a03f-d37757b510e8">
+<span class="eqno">(8.42)<a class="headerlink" href="#equation-7ea04cff-b281-4ece-a03f-d37757b510e8" title="Permalink to this equation">#</a></span>\[\begin{align}
 c_{\rm V} = 2\alpha R \frac{T}{T_{\rm F}},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(R=N_{\rm A}k\)</span> and <span class="math notranslate nohighlight">\(E_{\rm F} = kT_{\rm F}\)</span>.</p>
@@ -1554,46 +1578,46 @@ The heat capacity for silver is 0.0227 R.
 </section>
 </section>
 <section id="bose-einstein-statistics">
-<h2><span class="section-number">8.7. </span>Bose-Einstein Statistics<a class="headerlink" href="#bose-einstein-statistics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">8.7. </span>Bose-Einstein Statistics<a class="headerlink" href="#bose-einstein-statistics" title="Link to this heading">#</a></h2>
 <section id="blackbody-radiation">
-<h3><span class="section-number">8.7.1. </span>Blackbody Radiation<a class="headerlink" href="#blackbody-radiation" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.7.1. </span>Blackbody Radiation<a class="headerlink" href="#blackbody-radiation" title="Link to this heading">#</a></h3>
 <p>Recall the definition of an <em>ideal</em> blackboddy as a nearly perfect absorbing cavity that emits a spectrum of electromagnetic radiation (see Section <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_3/experimental-quantum-physics.html#blackbody-radiation">3.5</a>).  The problem is to find the intensity of the emitted radiation as a function of temperature and wavelength:</p>
 <div class="math notranslate nohighlight" id="equation-spectral-density">
-<span class="eqno">(8.43)<a class="headerlink" href="#equation-spectral-density" title="Permalink to this equation">#</a></span>\[\mathcal{I}(\lambda,T) = \frac{2\pi c^2 h}{\lambda^5} \frac{1}{e^{hc/(\lambda kT)}-1}. \]</div>
+<span class="eqno">(8.43)<a class="headerlink" href="#equation-spectral-density" title="Link to this equation">#</a></span>\[\mathcal{I}(\lambda,T) = \frac{2\pi c^2 h}{\lambda^5} \frac{1}{e^{hc/(\lambda kT)}-1}. \]</div>
 <p>In quantum theory, we begin with the assumption that the electromagnetic radiation is a collection of photons with energy <span class="math notranslate nohighlight">\(hc/\lambda\)</span>.  Photons are <em>bosons</em> with spin <span class="math notranslate nohighlight">\(1\)</span>.  We use the Bose-Einstein distribution to find how the photons are distributed by energy, and then convert the energy distribution into a function of wavlength via <span class="math notranslate nohighlight">\(E= hc/\lambda.\)</span></p>
 <p>The key to the problem is the density of states <span class="math notranslate nohighlight">\(g(E)\)</span>.  We model the photon gas just as we did for the electron gas: a collection of free particles within a 3-D infinite potential well.  We cannot use Eq. <a class="reference internal" href="#equation-box-energy">(8.34)</a> for the energy states because the photons are masseless.</p>
 <p>We recast the solution to the particle-in-a-box problem in terms of mementum states rather than energy states.  For a free particle of mass <span class="math notranslate nohighlight">\(m\)</span>, the energy <span class="math notranslate nohighlight">\(E=p^2/(2m)\)</span>. We rewrite Eq. <a class="reference internal" href="#equation-box-energy">(8.34)</a> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f6091733-1084-4ff6-896f-608d885f6282">
-<span class="eqno">(8.44)<a class="headerlink" href="#equation-f6091733-1084-4ff6-896f-608d885f6282" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d9a2dfd8-7d77-47b6-ac52-1c5c37449434">
+<span class="eqno">(8.44)<a class="headerlink" href="#equation-d9a2dfd8-7d77-47b6-ac52-1c5c37449434" title="Permalink to this equation">#</a></span>\[\begin{align}
 p &amp;= \sqrt{p_x^2 + p_y^2 + p_z^2}, \\
 &amp;= \frac{h}{2L}\sqrt{n_1^2 + n_2^2 + n_3^2}.
 \end{align}\]</div>
 <p>The energy of a photon is <span class="math notranslate nohighlight">\(E=pc\)</span> so that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-60f7c222-ea22-4fee-9121-98c6447c8128">
-<span class="eqno">(8.45)<a class="headerlink" href="#equation-60f7c222-ea22-4fee-9121-98c6447c8128" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-466d5929-149f-4512-a3ff-f9471fca2285">
+<span class="eqno">(8.45)<a class="headerlink" href="#equation-466d5929-149f-4512-a3ff-f9471fca2285" title="Permalink to this equation">#</a></span>\[\begin{align}
 E = \frac{hc}{2L}\sqrt{n_1^2 + n_2^2 + n_3^2}.
 \end{align}\]</div>
 <p>Again by thinking of <span class="math notranslate nohighlight">\(n_i\)</span> as the coordinates of a number space and defining <span class="math notranslate nohighlight">\(r^2 = n_1^2 + n_2^2 + n_3^2\)</span>, we find the number of allowed energy states within “radius” <span class="math notranslate nohighlight">\(r\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[ N_r = 2\left(\frac{1}{8}\right) \left( \frac{4}{3} \pi r^3\right). \]</div>
 <p>This time the factor of <span class="math notranslate nohighlight">\(2\)</span> comes from the two possible <em>photon polarizations</em>.  Also, the energy is proportional to <span class="math notranslate nohighlight">\(r\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cd396f03-87af-4f9e-b02c-1e39c7e02c87">
-<span class="eqno">(8.46)<a class="headerlink" href="#equation-cd396f03-87af-4f9e-b02c-1e39c7e02c87" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-36adaed5-9bf1-4c95-9909-db937ade767b">
+<span class="eqno">(8.46)<a class="headerlink" href="#equation-36adaed5-9bf1-4c95-9909-db937ade767b" title="Permalink to this equation">#</a></span>\[\begin{align}
 E &amp;= \frac{hc}{2L} r.
 \end{align}\]</div>
 <p>We can then rewrite <span class="math notranslate nohighlight">\(N_r\)</span> in terms of <span class="math notranslate nohighlight">\(E\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-906fb3de-d3f3-4f14-a934-4f94c7be2c8e">
-<span class="eqno">(8.47)<a class="headerlink" href="#equation-906fb3de-d3f3-4f14-a934-4f94c7be2c8e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e9a2d9b4-1ad8-441f-a3c2-de160296ba13">
+<span class="eqno">(8.47)<a class="headerlink" href="#equation-e9a2d9b4-1ad8-441f-a3c2-de160296ba13" title="Permalink to this equation">#</a></span>\[\begin{align}
 N_r = \frac{1}{3} \pi r^3 = \frac{8\pi L^3}{3h^3 c^3} E^3.
 \end{align}\]</div>
 <p>The density of states <span class="math notranslate nohighlight">\(g(E)\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e041ef10-4f26-44c2-a44c-62957c603416">
-<span class="eqno">(8.48)<a class="headerlink" href="#equation-e041ef10-4f26-44c2-a44c-62957c603416" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cafe9708-0b32-4264-8f18-8f4165428c92">
+<span class="eqno">(8.48)<a class="headerlink" href="#equation-cafe9708-0b32-4264-8f18-8f4165428c92" title="Permalink to this equation">#</a></span>\[\begin{align}
 g(E) = \frac{dN_r}{dE} = \frac{8\pi L^3}{h^3 c^3}E^2.
 \end{align}\]</div>
 <p>The energy distribution is the product of the density of states and the a statistical factor.  In this case, the Bose-Einstein factor:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0568b7b3-0574-4cba-8e74-9b4b9eef80f8">
-<span class="eqno">(8.49)<a class="headerlink" href="#equation-0568b7b3-0574-4cba-8e74-9b4b9eef80f8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4f1ceabc-01e9-4c81-a057-2809843a18c9">
+<span class="eqno">(8.49)<a class="headerlink" href="#equation-4f1ceabc-01e9-4c81-a057-2809843a18c9" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(E) &amp;= g(E)F_{\rm BE} = \frac{8\pi L^3}{h^3 c^3} E^2 \frac{1}{e^{E/(kT)}-1}.
 \end{align}\]</div>
 <p>The normalization factor <span class="math notranslate nohighlight">\(B_{\rm BE} = 1\)</span> because we have a non-normalized collection of photons.  As photons are absorbed and emitted by the walls of the cavity, the number of photons is not constant.</p>
@@ -1603,13 +1627,13 @@ n(E) &amp;= g(E)F_{\rm BE} = \frac{8\pi L^3}{h^3 c^3} E^2 \frac{1}{e^{E/(kT)}-1}
 u(E) = n(E)\frac{E}{L^3} = \frac{8\pi}{h^3 c^3}E^3 \frac{1}{e^{E/(kT)}-1}.
 \end{align*}\]</div>
 <p>For all photons between <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(E+dE\)</span>,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-edfc2091-465f-4c20-9bde-dc8fa6f3cab2">
-<span class="eqno">(8.50)<a class="headerlink" href="#equation-edfc2091-465f-4c20-9bde-dc8fa6f3cab2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1972e334-787a-4a9c-97e3-306b46e9fb8b">
+<span class="eqno">(8.50)<a class="headerlink" href="#equation-1972e334-787a-4a9c-97e3-306b46e9fb8b" title="Permalink to this equation">#</a></span>\[\begin{align}
 u(E)\ dE =  \frac{8\pi}{h^3 c^3} \frac{E^3\ dE}{e^{E/(kT)}-1}.
 \end{align}\]</div>
 <p>Using <span class="math notranslate nohighlight">\(E=hc/\lambda\)</span> and <span class="math notranslate nohighlight">\(|dE| = \left(hc/\lambda^2\right) d\lambda\)</span>., we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-832faa13-ca29-418e-ac2a-74e0293ed90d">
-<span class="eqno">(8.51)<a class="headerlink" href="#equation-832faa13-ca29-418e-ac2a-74e0293ed90d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a430a826-049b-4d6f-abba-414ab1c040c6">
+<span class="eqno">(8.51)<a class="headerlink" href="#equation-a430a826-049b-4d6f-abba-414ab1c040c6" title="Permalink to this equation">#</a></span>\[\begin{align}
 u(\lambda, T)d\lambda = \frac{8\pi hc}{\lambda^5} \frac{ dE}{e^{E/(kT)}-1}.
 \end{align}\]</div>
 <p>In the SI system, multiplying by a factor <span class="math notranslate nohighlight">\(c/4\)</span> is required to change energy density <span class="math notranslate nohighlight">\(u(\lambda, T)\)</span> to a spectral density <span class="math notranslate nohighlight">\(\mathcal{I}(\lambda, T)\)</span>, or Eq. <a class="reference internal" href="#equation-spectral-density">(8.43)</a>.</p>
@@ -1621,7 +1645,7 @@ u(\lambda, T)d\lambda = \frac{8\pi hc}{\lambda^5} \frac{ dE}{e^{E/(kT)}-1}.
 </ul>
 </section>
 <section id="liquid-helium">
-<h3><span class="section-number">8.7.2. </span>Liquid Helium<a class="headerlink" href="#liquid-helium" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.7.2. </span>Liquid Helium<a class="headerlink" href="#liquid-helium" title="Link to this heading">#</a></h3>
 <p>Helium has the lowest boiling point of any element (<span class="math notranslate nohighlight">\(4.2\ {\rm K}\)</span> at <span class="math notranslate nohighlight">\(1\ {\rm atm}\)</span>) and has no solid phase at normal pressures.  In 1924 <a class="reference external" href="https://en.wikipedia.org/wiki/Heike_Kamerlingh_Onnes">Kamerlingh Onnes</a>, along with J. Boks, measured the density of liquid helium as a function of temperature, which shows that the density decreases for <span class="math notranslate nohighlight">\(T&gt;2.17\ {\rm K}\)</span>.  A similar phenomenon occurs for the specific heat of liquid helium, as shown by <a class="reference external" href="https://en.wikipedia.org/wiki/Willem_Hendrik_Keesom">Willem Keesom</a> and Klaus Clusius in 1932 (see the <a class="reference external" href="https://dwc.knaw.nl/DL/publications/PU00016277.pdf">orignal paper</a>).</p>
 <p>The python script below uses the data from Keesom &amp; Clusius (1932) to demonstrate the changes in specific heat of liquid helium with temperature.</p>
 <div class="cell docutils container">
@@ -1690,8 +1714,8 @@ allowfullscreen></iframe>
 <p>The word <em>superfluid</em> comes from a peculiar property of liquid helium below the lambda point.  The flow rate of the liquid helium through a capillary tube as a function of temperature dramatically increases as the temperature is reduced.  The superfluid has a <em>lower viscosity</em> than the normal fluid.</p>
 <p>The viscosity can be so low that the superfluid helium forms what is called a <strong>creeping film</strong> and flows upwards (and over the vertical walls) of its container.  If one tries to measure the viscosity of liquid helium (e.g., measuring the drag on a metal plate as it is passed over the surface of the liquid), the result is just about what one would get with a normal fluid, even at temperatures below the lambda point.  <em>There appears to be a contradiction between the experimental results for measuring viscosity and the capillary flow experiment.</em></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Fritz_London">Fritz London</a> provided a theory, which claimed that the liquid helium below the lambda point is part superfluid and part normal.  The superfluid component increases as the temperature is reduced from the lambda point.  The fraction <span class="math notranslate nohighlight">\(F\)</span> of helium atoms in the superfluid follows fairly closely the relation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a844a307-5354-4553-a2f1-5bca243666d5">
-<span class="eqno">(8.52)<a class="headerlink" href="#equation-a844a307-5354-4553-a2f1-5bca243666d5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b8778676-a78a-4730-9542-039e7f4aea71">
+<span class="eqno">(8.52)<a class="headerlink" href="#equation-b8778676-a78a-4730-9542-039e7f4aea71" title="Permalink to this equation">#</a></span>\[\begin{align}
 F = 1 - \left( \frac{T}{T_c}\right)^{3/2}.
 \end{align}\]</div>
 <p>The two-fluid model can explain our viscosity paradox, if we assume tha only the superfluid part participates in capillary flow and that enough normal fluid is always present to retard the motion of a metal plate dragged across its surface.</p>
@@ -1702,46 +1726,46 @@ F = 1 - \left( \frac{T}{T_c}\right)^{3/2}.
 </aside>
 <p>Superfluid helium is called a <strong>Bose-Einstein condensation</strong> into a single state, in this case the superfluid state.  All the particles in a Bose-Einstein condensate are in the same quantum state, which is not forbidden for bosons.  Note that <span class="math notranslate nohighlight">\(\rm ^3He\)</span> undergoes superfluidity, but in a different way where it is more like a fermion.</p>
 <p>Bose-Einstein statistics can be used to estimate <span class="math notranslate nohighlight">\(T_c\)</span> for the superfluid phase of <span class="math notranslate nohighlight">\(\rm ^4He\)</span>.  Since bosons don’t follow the Pauli exclusion principle, their density of states is less by a factor of 2 (i.e., no need to account for spin pairing).  As a result, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1eb26e31-92b1-4036-87f5-410519af9e87">
-<span class="eqno">(8.53)<a class="headerlink" href="#equation-1eb26e31-92b1-4036-87f5-410519af9e87" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-20c4cf66-3abf-41b8-bac5-0d50f3df9737">
+<span class="eqno">(8.53)<a class="headerlink" href="#equation-20c4cf66-3abf-41b8-bac5-0d50f3df9737" title="Permalink to this equation">#</a></span>\[\begin{align}
 g_{\rm BE}(E) = \frac{2\pi V}{h^3}\sqrt{8m^3 E},
 \end{align}\]</div>
 <p>with <span class="math notranslate nohighlight">\(V\equiv L^3\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is the mass of the helium atom.  The number distribution <span class="math notranslate nohighlight">\(n(E)\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-40b34147-5f4d-4878-89b2-9e41813fde3e">
-<span class="eqno">(8.54)<a class="headerlink" href="#equation-40b34147-5f4d-4878-89b2-9e41813fde3e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9968184b-a02d-45b4-9478-25641127b0d5">
+<span class="eqno">(8.54)<a class="headerlink" href="#equation-9968184b-a02d-45b4-9478-25641127b0d5" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(E) &amp;= g_{\rm BE}F_{\rm BE}, \\
 &amp;= \left(\frac{2\pi V}{h^3}\right) \frac{\sqrt{8m^3 E}}{B_{\rm BE}e^{E/(kT)}-1}.
 \end{align}\]</div>
 <p>In a collection of <span class="math notranslate nohighlight">\(N\)</span> helium atoms, the normalization condition is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-226310f9-4177-4736-9751-57b6eadb1294">
-<span class="eqno">(8.55)<a class="headerlink" href="#equation-226310f9-4177-4736-9751-57b6eadb1294" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d3ada160-49ae-4782-96e5-2b40420f06b1">
+<span class="eqno">(8.55)<a class="headerlink" href="#equation-d3ada160-49ae-4782-96e5-2b40420f06b1" title="Permalink to this equation">#</a></span>\[\begin{align}
 N &amp;= \int_0^\infty n(E)\ dE,\\
 &amp;=\left(\frac{2\pi V}{h^3}\right)\left(2m \right)^{3/2} \int_0^\infty\frac{\sqrt{ E}}{B_{\rm BE}e^{E/(kT)}-1}\ dE.
 \end{align}\]</div>
 <p>Using <span class="math notranslate nohighlight">\(u=E/(KT)\)</span>, this reduces to</p>
 <div class="math notranslate nohighlight" id="equation-n-be">
-<span class="eqno">(8.56)<a class="headerlink" href="#equation-n-be" title="Permalink to this equation">#</a></span>\[N = \left(\frac{2\pi V}{h^3}\right)\left(2m KT \right)^{3/2} \int_0^\infty\frac{\sqrt{ u}}{B_{\rm BE}e^u-1}\ du.\]</div>
+<span class="eqno">(8.56)<a class="headerlink" href="#equation-n-be" title="Link to this equation">#</a></span>\[N = \left(\frac{2\pi V}{h^3}\right)\left(2m KT \right)^{3/2} \int_0^\infty\frac{\sqrt{ u}}{B_{\rm BE}e^u-1}\ du.\]</div>
 <div class="admonition-definite-integral-of-the-type-int-0-infty-frac-u-n-1-e-u-1-du admonition">
 <p class="admonition-title">Definite Integral of the Type <span class="math notranslate nohighlight">\(\int_0^\infty \frac{u^{n-1}}{e^u-1}\ du\)</span></p>
 <p>Two special mathematical functions (the <a class="reference external" href="https://en.wikipedia.org/wiki/Gamma_function">gamma</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Riemann_zeta_function">Riemann zeta</a> functions) are needed to evaluate definite integrals from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(\infty\)</span> with <span class="math notranslate nohighlight">\(u^{n-1}\)</span> in the numerator and <span class="math notranslate nohighlight">\(e^u -1\)</span> in the denominator.  A handbook of integrals (see <a class="reference external" href="https://en.wikipedia.org/wiki/Gradshteyn_and_Ryzhik">Gradshteyn &amp; Ryzhik</a>) will give the result</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5cce054b-878c-4f8d-bf63-9010994fcfb5">
-<span class="eqno">(8.57)<a class="headerlink" href="#equation-5cce054b-878c-4f8d-bf63-9010994fcfb5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c76b6cd6-a0e9-48bd-ba05-5d6af63b0e13">
+<span class="eqno">(8.57)<a class="headerlink" href="#equation-c76b6cd6-a0e9-48bd-ba05-5d6af63b0e13" title="Permalink to this equation">#</a></span>\[\begin{align}
 \int_0^{\infty} \frac{u^{n-1}}{e^u-1}\ du = \Gamma(n)\zeta(n).
 \end{align}\]</div>
 <p>In many cases in physics the gamma functions will have <em>integer</em> arguments, where we can evaluate them using the identity</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7551a22a-8293-4f69-9ad7-998d41215ae9">
-<span class="eqno">(8.58)<a class="headerlink" href="#equation-7551a22a-8293-4f69-9ad7-998d41215ae9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-88008b3a-eeef-46ec-bfed-f9af97fbb106">
+<span class="eqno">(8.58)<a class="headerlink" href="#equation-88008b3a-eeef-46ec-bfed-f9af97fbb106" title="Permalink to this equation">#</a></span>\[\begin{align}
 \textbf{Gamma function} \qquad &amp; \Gamma(n) = (n-1)! = (n-1)(n-2)(n-3)\ldots(1).
 \end{align}\]</div>
 <p>When <span class="math notranslate nohighlight">\(n\)</span> is not an integer, we can use the recursion formula</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ba838da4-b348-4225-8046-2ee108641329">
-<span class="eqno">(8.59)<a class="headerlink" href="#equation-ba838da4-b348-4225-8046-2ee108641329" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f5dfeb4e-d6db-4be0-a28e-3c509be1767d">
+<span class="eqno">(8.59)<a class="headerlink" href="#equation-f5dfeb4e-d6db-4be0-a28e-3c509be1767d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Gamma(n+1) = n\Gamma(n),
 \end{align}\]</div>
 <p>with <a class="reference external" href="https://dlmf.nist.gov/5.2#E1">tabulated values of the gamma function</a>, or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.gamma.html"><code class="docutils literal notranslate"><span class="pre">scipy.special.gamma</span></code></a>.  There are some closed form solution for non-integer arguments, where <span class="math notranslate nohighlight">\(\Gamma(1.5) = \sqrt{\pi}/2\)</span>.</p>
 <p>Similar to the gamma function, we can use approporiate tables or <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.zeta.html"><code class="docutils literal notranslate"><span class="pre">scipy.special.zeta</span></code></a> to obtain values for the <strong>Riemann zeta function</strong> <span class="math notranslate nohighlight">\(\zeta(n)\)</span>.  However it is helpful to know that the zeta function has some closed form solutions.  For example,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-03df4b27-a015-4dd8-8bfe-49b4c650c090">
-<span class="eqno">(8.60)<a class="headerlink" href="#equation-03df4b27-a015-4dd8-8bfe-49b4c650c090" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2e967e00-d435-477c-9418-2f5582207ccd">
+<span class="eqno">(8.60)<a class="headerlink" href="#equation-2e967e00-d435-477c-9418-2f5582207ccd" title="Permalink to this equation">#</a></span>\[\begin{align}
 \zeta(2) &amp;= \frac{\pi^2}{6}, 
 \zeta(4) &amp;= \frac{\pi^4}{90}.
 \end{align}\]</div>
@@ -1774,18 +1798,18 @@ N &amp;= \int_0^\infty n(E)\ dE,\\
 </div>
 </div>
 <p>Due to our assumption that <span class="math notranslate nohighlight">\(B_{\rm BE} = 1\)</span>, this results in our determination of the maximum <span class="math notranslate nohighlight">\(N\)</span>, which is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3856a72b-376c-48f1-aadf-484d2c2af909">
-<span class="eqno">(8.61)<a class="headerlink" href="#equation-3856a72b-376c-48f1-aadf-484d2c2af909" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0acf4664-7c27-4761-99d3-d1fcb4196232">
+<span class="eqno">(8.61)<a class="headerlink" href="#equation-0acf4664-7c27-4761-99d3-d1fcb4196232" title="Permalink to this equation">#</a></span>\[\begin{align}
 N \leq \left(\frac{2\pi V}{h^3}\right)\left(2m KT \right)^{3/2} \left(2.3152 \right).
 \end{align}\]</div>
 <p>We can rearrange the above expression to determine the minimum temperature as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-10322991-565c-45e6-819a-8510dee4922f">
-<span class="eqno">(8.62)<a class="headerlink" href="#equation-10322991-565c-45e6-819a-8510dee4922f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d01b052e-353c-47dc-9ab2-6e01d54d5a66">
+<span class="eqno">(8.62)<a class="headerlink" href="#equation-d01b052e-353c-47dc-9ab2-6e01d54d5a66" title="Permalink to this equation">#</a></span>\[\begin{align}
 T \geq \frac{h^2}{2 mk}\left( \frac{N}{2\pi V (2.3152)}\right)^{2/3}.
 \end{align}\]</div>
 <p>Using the number density of liquid helium in the normal state <span class="math notranslate nohighlight">\((2.11 \times 10^{28}\ {\rm m^{-3}})\)</span>, we can find the minimum temperature for the normal state as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e4c72b16-7e0c-4434-bbc7-dbc8854d6e50">
-<span class="eqno">(8.63)<a class="headerlink" href="#equation-e4c72b16-7e0c-4434-bbc7-dbc8854d6e50" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ee4409fa-5fea-4f31-a37a-24ce30ed8b44">
+<span class="eqno">(8.63)<a class="headerlink" href="#equation-ee4409fa-5fea-4f31-a37a-24ce30ed8b44" title="Permalink to this equation">#</a></span>\[\begin{align}
 T \geq 3.06\ {\rm K}.
 \end{align}\]</div>
 <div class="cell docutils container">
@@ -1873,7 +1897,7 @@ The normalization constant for N_2 as using the Maxwell-Boltzmann factor is 1.79
 </div>
 </section>
 <section id="symmetry-of-boson-wave-functions">
-<h3><span class="section-number">8.7.3. </span>Symmetry of Boson Wave Functions<a class="headerlink" href="#symmetry-of-boson-wave-functions" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.7.3. </span>Symmetry of Boson Wave Functions<a class="headerlink" href="#symmetry-of-boson-wave-functions" title="Link to this heading">#</a></h3>
 <p>The properties of boson and fermion wave functions can be examined if we consider a system of two identical particles labeled “1” and “2”.  For now the particles can be either bosons or fermions.  The wave function that describes the two particles is <span class="math notranslate nohighlight">\(\Psi(1,2)\)</span>.  Because the two particles are identical, the probability density does not depend on their order:</p>
 <div class="math notranslate nohighlight">
 \[ |\Psi(1,2)|^2 = |\Psi(2,1)|^2, \]</div>
@@ -1890,8 +1914,8 @@ The normalization constant for N_2 as using the Maxwell-Boltzmann factor is 1.79
 </ul>
 <p>In a system of two noninteracting particles, the overall wave function can be expressed as a product of two individual wave functions (i.e., <span class="math notranslate nohighlight">\(\Psi(1,2) = \psi(1)\psi(2)\)</span>).</p>
 <p><strong>Suppose that the two particles are in different states, labeled <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>.</strong>  The net wave function for this system is a linear combination of the two possible combinations fo the particles in states <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>.  The symmetric wave function <span class="math notranslate nohighlight">\(\Psi_{\rm S}\)</span> and antisymmetric wavefunction <span class="math notranslate nohighlight">\(\Psi_{\rm A}\)</span> are written as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a6d2c4c7-74cf-4058-807e-0605a99d0990">
-<span class="eqno">(8.64)<a class="headerlink" href="#equation-a6d2c4c7-74cf-4058-807e-0605a99d0990" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-da776c21-ae6f-4e85-96ca-bbaa47c04cf2">
+<span class="eqno">(8.64)<a class="headerlink" href="#equation-da776c21-ae6f-4e85-96ca-bbaa47c04cf2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Psi_{\rm S} &amp;= \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) + \psi_a(2)\psi_b(1) \right] \qquad \text{and} \\
 \Psi_{\rm A} &amp;= \frac{1}{\sqrt{2}}\left[\psi_a(1)\psi_b(2) - \psi_a(2)\psi_b(1) \right],
 \end{align}\]</div>
@@ -1904,15 +1928,15 @@ The normalization constant for N_2 as using the Maxwell-Boltzmann factor is 1.79
 &amp;= \frac{2}{\sqrt{2}}\psi_a(1)\psi_a(2)
 \end{align*}\]</div>
 <p>and the probability density for this state is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-33cf6012-7b6d-482f-944c-3e4973f3b22e">
-<span class="eqno">(8.65)<a class="headerlink" href="#equation-33cf6012-7b6d-482f-944c-3e4973f3b22e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b9937ce5-b6d7-4e1b-a603-2b88bc04544e">
+<span class="eqno">(8.65)<a class="headerlink" href="#equation-b9937ce5-b6d7-4e1b-a603-2b88bc04544e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Psi_{\rm S}^*\Psi_{\rm S} &amp;= \left(\frac{2}{\sqrt{2}}\right)^2 \left[\psi_a^*(1)\psi_a^*(2) \psi_a(1)\psi_a(2)\right], \\
 &amp;= 2 \left[\psi_a^*(1)\psi_a^*(2) \psi_a(1)\psi_a(2)\right].
 \end{align}\]</div>
 <p>Thus, two bosons have a nonzero probability of occupying the same state.  If the conditions for Bose-Einstein condensation to occur, then it is likely to happen.</p>
 </section>
 <section id="bose-einstein-condensation-in-gases">
-<h3><span class="section-number">8.7.4. </span>Bose-Einstein Condensation in Gases<a class="headerlink" href="#bose-einstein-condensation-in-gases" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">8.7.4. </span>Bose-Einstein Condensation in Gases<a class="headerlink" href="#bose-einstein-condensation-in-gases" title="Link to this heading">#</a></h3>
 <p>For years physicists attempted to demonstrate Bose-Einstein condensation in gases.  They were hampered, by the strong Coulomb interactions among the gas particles.  This prevented them from obtaining the low temperatures and high densities needed to produce the condensate.</p>
 <p>In 1995, a group led by <a class="reference external" href="https://en.wikipedia.org/wiki/Eric_Allin_Cornell">Eric Cornell</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Carl_Wieman">Carl Wieman</a> achieved success. Forming a Bose-Einstein condensate from a gas requires extremely low temperatures, which was possible through a two-step process.</p>
 <ol class="arabic simple">
@@ -1962,8 +1986,8 @@ allowfullscreen></iframe>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../Chapter_7/hydrogen-atom.html"
@@ -1991,6 +2015,7 @@ allowfullscreen></iframe>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2041,9 +2066,10 @@ By Billy Quarles
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2024.
+      © Copyright 2025.
       <br/>
     
   </p>
@@ -2067,8 +2093,8 @@ By Billy Quarles
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

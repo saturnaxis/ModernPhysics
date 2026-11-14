@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>4. Structure of the Atom &#8212; PHYS2700 Modern Physics</title>
+    <title>4. Structure of the Atom &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_4/structure-of-the-atom';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="5. Quantum Mechanics: Part I" href="../Chapter_5/quantum-mechanics-part1.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -637,8 +647,8 @@ v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-momentum-change">
 <span class="eqno">(4.3)<a class="headerlink" href="#equation-momentum-change" title="Link to this equation">#</a></span>\[\Delta \vec{p} = \vec{p}_f - \vec{p}_i,\]</div>
 <p>where the subscripts <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(i\)</span> indicate the final and initial momentum, respectively.  Since <span class="math notranslate nohighlight">\(p_f \approx p_i\)</span>, the vector triangle in Fig. <a class="reference internal" href="#alpha-scattering-fig"><span class="std std-numref">4.3</span></a> is isosceles and the angle <span class="math notranslate nohighlight">\(\theta\)</span> can be bisected.  The magnitude of <span class="math notranslate nohighlight">\(\Delta p\)</span> is now</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fd8a21d8-04f9-4f9b-b639-989973faff40">
-<span class="eqno">(4.4)<a class="headerlink" href="#equation-fd8a21d8-04f9-4f9b-b639-989973faff40" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-2c358e18-5d26-4dc9-afbc-81aa9036309b">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-2c358e18-5d26-4dc9-afbc-81aa9036309b" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \Delta p = 2mv_o \sin \frac{\theta}{2}.
 \end{align}\]</div>
 <p>The direction of <span class="math notranslate nohighlight">\(\Delta \vec{p}\)</span> is the <span class="math notranslate nohighlight">\(z^\prime\)</span> axis, where we need to determine the <span class="math notranslate nohighlight">\(z^\prime\)</span> component of <span class="math notranslate nohighlight">\(\vec{F}\)</span>.  The Coulomb force <span class="math notranslate nohighlight">\(\vec{F}\)</span> is defined as</p>
@@ -675,19 +685,19 @@ v_e^\prime = \frac{2m_\alpha}{(m_\alpha + m_e)}v_\alpha. \end{split}\]</div>
 <span class="eqno">(4.7)<a class="headerlink" href="#equation-cross-section" title="Link to this equation">#</a></span>\[\sigma = \pi b^2.\]</div>
 <p>The cross section <span class="math notranslate nohighlight">\(\sigma\)</span> is related to the <em>probability</em> for a particle being scattered by the nucleus.</p>
 <p>If we have a target foil of <strong>thickness</strong> <span class="math notranslate nohighlight">\(t\)</span> with <span class="math notranslate nohighlight">\(n\)</span> atoms/volume, the target nuclei per unit area is <span class="math notranslate nohighlight">\(nt\)</span>.  Because we assumed a thin target area <span class="math notranslate nohighlight">\(A\)</span> and all nuclei are exposed, the number of target nuclei is <span class="math notranslate nohighlight">\(ntA\)</span>.  The number density <span class="math notranslate nohighlight">\(n\)</span> is related to the density <span class="math notranslate nohighlight">\(\rho\)</span>, Avogadro’s number <span class="math notranslate nohighlight">\(N_A\)</span>, atoms per molecule <span class="math notranslate nohighlight">\(N_M\)</span>, and the molecular weight by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-86551507-f216-4d28-9d5d-bb2c3a404781">
-<span class="eqno">(4.8)<a class="headerlink" href="#equation-86551507-f216-4d28-9d5d-bb2c3a404781" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4530b277-7ad4-4718-b9ee-2abd0dfc907d">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-4530b277-7ad4-4718-b9ee-2abd0dfc907d" title="Permalink to this equation">#</a></span>\[\begin{align}
 n &amp;= \rho \left(\frac{\rm g}{\rm cm^3}\right) N_A \left(\frac{\rm molecules}{\rm mol}\right)N_M \left(\frac{\rm atoms}{\rm molecule}\right) \left(M_g ({\rm g/mol})\right)^{-1}, \\
 &amp; = \frac{\rho N_A N_M}{M_g} \frac{\rm atoms}{\rm cm^3}.
 \end{align}\]</div>
 <p>Then the number of scattering nuclei per unit area is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6fb59b06-75c7-4245-a2e9-3a350bf0f40c">
-<span class="eqno">(4.9)<a class="headerlink" href="#equation-6fb59b06-75c7-4245-a2e9-3a350bf0f40c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d374a22b-09bb-4293-8255-3469442dce01">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-d374a22b-09bb-4293-8255-3469442dce01" title="Permalink to this equation">#</a></span>\[\begin{align}
 nt = \frac{\rho N_A N_M t}{M_g} \frac{\rm atoms}{\rm cm^2},
 \end{align}\]</div>
 <p>and the number of target nuclei <span class="math notranslate nohighlight">\(N_s\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cebdc00a-328a-487c-9240-6795929cdd92">
-<span class="eqno">(4.10)<a class="headerlink" href="#equation-cebdc00a-328a-487c-9240-6795929cdd92" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-46a20d0a-13f7-4483-bc2d-aae4b0b2750b">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-46a20d0a-13f7-4483-bc2d-aae4b0b2750b" title="Permalink to this equation">#</a></span>\[\begin{align}
 N_s = ntA = \frac{\rho N_A N_M tA}{M_g}\ {\rm atoms}.
 \end{align}\]</div>
 <p>The probability of the particle begin scattered is equal number of target nuclei times the cross section divided by the total target area <span class="math notranslate nohighlight">\(A\)</span>, or</p>
@@ -714,8 +724,8 @@ f &amp;= \pi nt\left(\frac{Z_1Z_2 e^2}{8\pi \epsilon_o K}\right)^2 \cot^2 \frac{
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">pi</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">pi</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">n_au</span> <span class="o">=</span> <span class="mf">5.9e28</span> <span class="c1">#number density of gold atoms per m^3</span>
 <span class="n">t_au</span> <span class="o">=</span> <span class="mf">1e-6</span> <span class="c1">#thickness of the gold foil in m</span>
@@ -778,8 +788,8 @@ N(\theta) &amp;= \frac{N_i|df|}{dA} = \frac{N_i \pi nt\left(\frac{Z_1Z_2 e^2}{8\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">pi</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">pi</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">n_au</span> <span class="o">=</span> <span class="mf">5.9e28</span> <span class="c1">#number density of gold atoms per m^3</span>
 <span class="n">t_au</span> <span class="o">=</span> <span class="mf">2.1e-7</span> <span class="c1">#thickness of the gold foil in m</span>
@@ -811,18 +821,18 @@ N(\theta) &amp;= \frac{N_i|df|}{dA} = \frac{N_i \pi nt\left(\frac{Z_1Z_2 e^2}{8\
 <p>Thomson had previously considered a planetary model resembling the Solar System but rejected it because the planets <em>attract</em> one another while orbiting the Sun, whereas the electrons would <em>repel</em> one another.</p>
 </div>
 <p>Let’s examine the hydrogen atom, which consists of a single proton and electron.  Assuming also that the electron has a circular orbit.  The force of attraction due to the proton is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d24c1153-efec-4f55-a590-bcd5377c62d9">
-<span class="eqno">(4.13)<a class="headerlink" href="#equation-d24c1153-efec-4f55-a590-bcd5377c62d9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a046b32a-d9ee-4c2f-9c0d-4a95911172d8">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-a046b32a-d9ee-4c2f-9c0d-4a95911172d8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_e = \frac{-1}{4\pi \epsilon_o}\frac{e^2}{r^2}\hat{e}_r,
 \end{align}\]</div>
 <p>where the negative sign indicates the force is attractive.  The electrostatic force provides the centripetal force need for the electron to move in a circular orbit at constant speed.  Its radial acceleration is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5b72add5-50c9-4c4c-852a-6ae9eeb7a0c7">
-<span class="eqno">(4.14)<a class="headerlink" href="#equation-5b72add5-50c9-4c4c-852a-6ae9eeb7a0c7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2160d8b4-e2bf-4d2b-8dcd-6683c2af1ab8">
+<span class="eqno">(4.14)<a class="headerlink" href="#equation-2160d8b4-e2bf-4d2b-8dcd-6683c2af1ab8" title="Permalink to this equation">#</a></span>\[\begin{align}
 a_r = \frac{v^2}{r},
 \end{align}\]</div>
 <p>which depends on the tangential velocity <span class="math notranslate nohighlight">\(v\)</span> of the electron.  Newton’s second law gives,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5e75137a-ed63-4010-b5f8-b7fb4383342a">
-<span class="eqno">(4.15)<a class="headerlink" href="#equation-5e75137a-ed63-4010-b5f8-b7fb4383342a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fa049ae5-6518-4f2d-83c4-706fbc0a9582">
+<span class="eqno">(4.15)<a class="headerlink" href="#equation-fa049ae5-6518-4f2d-83c4-706fbc0a9582" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{4\pi \epsilon_o}\frac{e^2}{r^2} = \frac{m_ev^2}{r},
 \end{align}\]</div>
 <p>and</p>
@@ -848,8 +858,8 @@ v &amp;\approx \frac{(1.6\times 10^{-19}\ {\rm C}) (9\times 10^9\ {\rm N\cdot m^
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">m_e</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">epsilon_0</span><span class="p">,</span><span class="n">m_e</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">r_Hyd</span> <span class="o">=</span> <span class="mf">0.5e-10</span> <span class="c1">#approximate radius of the hydrogen atom in m</span>
 
@@ -865,8 +875,8 @@ v &amp;\approx \frac{(1.6\times 10^{-19}\ {\rm C}) (9\times 10^9\ {\rm N\cdot m^
 </div>
 </div>
 <p>The kinetic energy of the system due to the electron is <span class="math notranslate nohighlight">\(K = m_ev^2/2\)</span>, where we assume that the nucleus is essentially at rest because it is so massive compared with the electron <span class="math notranslate nohighlight">\((m_p/m_e = 1836)\)</span>.  The potential energy is <span class="math notranslate nohighlight">\(V = -e^2/(4\pi \epsilon_o r)\)</span>.  The total mechanical energy is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-467b8cc5-85f1-4888-b080-45e9f8b0fc6c">
-<span class="eqno">(4.17)<a class="headerlink" href="#equation-467b8cc5-85f1-4888-b080-45e9f8b0fc6c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a62bef42-063e-4462-92a7-931c0c3d3b95">
+<span class="eqno">(4.17)<a class="headerlink" href="#equation-a62bef42-063e-4462-92a7-931c0c3d3b95" title="Permalink to this equation">#</a></span>\[\begin{align}
 E = K + V = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi \epsilon_o r}.
 \end{align}\]</div>
 <p>If we substitute from Eqn. <a class="reference internal" href="#equation-orbital-ve">(4.16)</a>, then we have</p>
@@ -899,8 +909,8 @@ E = K + V = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi \epsilon_o r}.
 <div class="math notranslate nohighlight">
 \[ L = |\vec{r} \times \vec{p}| = m_evr. \]</div>
 <p>Assumption 4 states this should be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-abe4a94e-de8f-41b4-afe9-d8e2a8f36eab">
-<span class="eqno">(4.19)<a class="headerlink" href="#equation-abe4a94e-de8f-41b4-afe9-d8e2a8f36eab" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4440a501-f20c-4af9-a4b9-3d7b33c67aca">
+<span class="eqno">(4.19)<a class="headerlink" href="#equation-4440a501-f20c-4af9-a4b9-3d7b33c67aca" title="Permalink to this equation">#</a></span>\[\begin{align}
 L = m_evr = n\hbar,
 \end{align}\]</div>
 <p>which is defined by the <strong>principal quantum number</strong> <span class="math notranslate nohighlight">\(n\)</span> (an integer).  Then the equation for the orbital velocity is</p>
@@ -985,10 +995,10 @@ L = m_evr = n\hbar,
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">Rydberg</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">Rydberg</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">Rydberg_eqn_Bohr</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Rydberg_eqn_Bohr</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
     <span class="c1">#calculate the wave number (1/\lambda) for the Rydberg equation using R_infty</span>
     <span class="c1">#n = the lower quantum number n</span>
     <span class="c1">#np = the higher quantum number np</span>
@@ -1021,8 +1031,8 @@ The wave number and wavelength for the 3--&gt;infinity transition is 1.219e+06 m
 <p class="attribution">—Bohr’s correspondence principle</p>
 </div></blockquote>
 <p><strong>Consider the predictions of the two radiation laws.</strong>  The frequency of the radiation produced by the atomic electrons in the Bohr model should agree with the predictions from classical electrodynamics where the Planck’s constant is unimportant (i.e., for large quantum number <span class="math notranslate nohighlight">\(n\)</span>).  Classically, the frequency of emitted radiation is equal to the electron’s orbital frequency <span class="math notranslate nohighlight">\(f_{\rm orb}\)</span> around the nucleus:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-00f9a5ee-87ba-44fa-a7c3-f7e6cefcaa33">
-<span class="eqno">(4.31)<a class="headerlink" href="#equation-00f9a5ee-87ba-44fa-a7c3-f7e6cefcaa33" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-27f4c13e-5002-40fb-9bc7-51be406f463c">
+<span class="eqno">(4.31)<a class="headerlink" href="#equation-27f4c13e-5002-40fb-9bc7-51be406f463c" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_{\rm classical} &amp;= f_{\rm orb} = \frac{\omega}{2\pi} = \frac{v}{2\pi r},\\
 &amp;= \frac{1}{2\pi}\sqrt{\frac{e^2}{4\pi \epsilon_o m_e r^3}}, \\
 &amp; = \frac{1}{n^3}\frac{m_e e^4}{4\epsilon_o^2 h^3}.
@@ -1036,8 +1046,8 @@ f_{\rm classical} &amp;= f_{\rm orb} = \frac{\omega}{2\pi} = \frac{v}{2\pi r},\\
 <div class="math notranslate nohighlight">
 \[ f_{\rm Bohr} \approx \frac{E_o}{h}\left[ \frac{2n}{n^4} \right] = \frac{2E_o}{hn^3}. \]</div>
 <p>If we substitute Bohr’s <span class="math notranslate nohighlight">\(E_o\)</span> from Eqn. <a class="reference internal" href="#equation-ground-energy">(4.24)</a>, the result is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bdb53858-7706-4c53-860c-5b4b89ae80df">
-<span class="eqno">(4.33)<a class="headerlink" href="#equation-bdb53858-7706-4c53-860c-5b4b89ae80df" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9dc134ed-b1d3-4550-b1e8-fe2b10a7baa4">
+<span class="eqno">(4.33)<a class="headerlink" href="#equation-9dc134ed-b1d3-4550-b1e8-fe2b10a7baa4" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_{\rm Bohr} = \frac{1}{n^3}\frac{m_e e^4}{4\epsilon_o^2 h^3} = f_{\rm classical}.
 \end{align}\]</div>
 <p>The frequencies of the radiated energy agree between the classical theory and the Bohr model for large values of the principle quantum number <span class="math notranslate nohighlight">\(n\)</span>.  Bohr’s correspondence principle is verified for large electron orbits, where classical and quantum physics should agree.</p>
@@ -1048,8 +1058,8 @@ f_{\rm Bohr} = \frac{1}{n^3}\frac{m_e e^4}{4\epsilon_o^2 h^3} = f_{\rm classical
 <section id="reduced-mass-correction">
 <h3><span class="section-number">4.5.1. </span>Reduced Mass Correction<a class="headerlink" href="#reduced-mass-correction" title="Link to this heading">#</a></h3>
 <p>The electron and hydrogen nucleus actually revolve about their mutual center of mass, where this is a two-body problem.  Instead of just <span class="math notranslate nohighlight">\(r\)</span>, we should have used the electron’s distance <span class="math notranslate nohighlight">\(r_e\)</span> and the nucleus’ distance <span class="math notranslate nohighlight">\(r_{\rm nucleus}\)</span> from the center of mass.  A straightforward analysis from classical mechanics shows that the two-body problem can be reduced to an equivalent one-body problem in terms of the reduced mass <span class="math notranslate nohighlight">\(\mu_e\)</span> that is moving around the center of mass.  The reduced mass depends on the mass of the nucleus <span class="math notranslate nohighlight">\(M\)</span> and the electron mass <span class="math notranslate nohighlight">\(m_e\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-831f5fc7-b072-4088-a0c6-72bbd07a9697">
-<span class="eqno">(4.34)<a class="headerlink" href="#equation-831f5fc7-b072-4088-a0c6-72bbd07a9697" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-44e7c267-e259-4144-b31b-c37a6620a582">
+<span class="eqno">(4.34)<a class="headerlink" href="#equation-44e7c267-e259-4144-b31b-c37a6620a582" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mu_e = \frac{m_eM}{m_e + M} = \frac{m_e}{1+m_e/M}.
 \end{align}\]</div>
 <p>In the case of the hydrogen atom, the mass of the nucleus <span class="math notranslate nohighlight">\(M\)</span> is the proton mass, and the correction for the hydrogen atom is <span class="math notranslate nohighlight">\(\mu_e = 0.999456\ m_e\)</span>.  Athough it is small, the difference is still measurable experimentally.  The Rydberg constant <span class="math notranslate nohighlight">\(R_\infty\)</span> (see <a class="reference internal" href="#equation-rydberg-infty">(4.27)</a>) should be replaced by</p>
@@ -1091,8 +1101,8 @@ R_T &amp;= \frac{0.0005485799\ {\rm u}}{3.015500\ {\rm u}}R_\infty = 0.99982R_\i
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">physical_constants</span><span class="p">,</span><span class="n">m_e</span><span class="p">,</span><span class="n">Rydberg</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">physical_constants</span><span class="p">,</span><span class="n">m_e</span><span class="p">,</span><span class="n">Rydberg</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1">#Rydberg = R_infty</span>
 
@@ -1177,15 +1187,15 @@ The H_alpha wavelength for Tritium is 656.23 nm.
 </figcaption>
 </figure>
 <p>If a vacancy occurs in the <span class="math notranslate nohighlight">\(K\)</span> shell, then there is still one electron remaining in the <span class="math notranslate nohighlight">\(K\)</span> shell.  An electron in the <span class="math notranslate nohighlight">\(L\)</span> shell will feel an effective charge of <span class="math notranslate nohighlight">\((Z-1)e\)</span> due to the <span class="math notranslate nohighlight">\(+Ze\)</span> from the nucleus and <span class="math notranslate nohighlight">\(-e\)</span> from the remaining <span class="math notranslate nohighlight">\(K\)</span> shell electron.  The other electrons outside the <span class="math notranslate nohighlight">\(K\)</span> shell hardly affect the <span class="math notranslate nohighlight">\(L\)</span> shell electron.  The x-ray produced when a transition occurs from the <span class="math notranslate nohighlight">\(n=2\rightarrow 1\)</span> shell has the wavelength (from Eqn. <a class="reference internal" href="#equation-single-electron-rydberg">(4.36)</a>) of</p>
-<div class="amsmath math notranslate nohighlight" id="equation-348695f3-f42a-479b-abc5-f43b6a5683eb">
-<span class="eqno">(4.38)<a class="headerlink" href="#equation-348695f3-f42a-479b-abc5-f43b6a5683eb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ef3f7c59-5c8d-4945-8f3a-28d0b055ce7f">
+<span class="eqno">(4.38)<a class="headerlink" href="#equation-ef3f7c59-5c8d-4945-8f3a-28d0b055ce7f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda_{K_\alpha}} &amp;= (Z-1)^2 R\left(\frac{2^2 -1^2}{1^22^2}\right), \\
  &amp;= \frac{3}{4}R(Z-1)^2, \\
 f_{K_\alpha} &amp;= \frac{c}{\lambda_{K_\alpha}} = \frac{3}{4}cR(Z-1)^2.
 \end{align}\]</div>
 <p>Moseley’s equation describing the <span class="math notranslate nohighlight">\(K_\alpha\)</span> shell x-rays is an application of Bohr’s model.  The general form for the <span class="math notranslate nohighlight">\(K\)</span> series of x-ray wavelengths is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-68a95ede-3e0f-4666-93d8-c53031177c8c">
-<span class="eqno">(4.39)<a class="headerlink" href="#equation-68a95ede-3e0f-4666-93d8-c53031177c8c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2d11f681-b67d-4b90-a605-3bc0c6eee651">
+<span class="eqno">(4.39)<a class="headerlink" href="#equation-2d11f681-b67d-4b90-a605-3bc0c6eee651" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda_K} &amp;= R(Z-1)^2 \left(\frac{n^2 -1}{n^2}\right).
 \end{align}\]</div>
 <p>Moseley correctly concluded that the atomic number <span class="math notranslate nohighlight">\(Z\)</span> was the determining factor for the ordering of the periodic table, where the reordering by atomic number was more consistent with chemical properties than one based on atomic weight.  He also concluded that the atomic number of an element should be identified with the number of positive charges (protons) in the nucleus.  He tabulated all the atomic numbers between aluminum <span class="math notranslate nohighlight">\({\rm Al}\ (Z=13)\)</span> to gold <span class="math notranslate nohighlight">\({\rm Au}\ (Z=79)\)</span> and pointed out that there were still three elements (<span class="math notranslate nohighlight">\(Z=43,\ 61,\ \text{and } 75\)</span>) yet to be discovered!  The element promethium (<span class="math notranslate nohighlight">\(Z=61\)</span>) was discovered around 1940.</p>
@@ -1196,13 +1206,13 @@ f_{K_\alpha} &amp;= \frac{c}{\lambda_{K_\alpha}} = \frac{3}{4}cR(Z-1)^2.
 <section id="exercise-content">
 <p><strong>Moseley found experimentally an equation describing the frequency of the <span class="math notranslate nohighlight">\(L_\alpha\)</span> line as <span class="math notranslate nohighlight">\(f_{L_\alpha} = (5/36)cR(Z-7.4)^2\)</span>.  How can the Bohr model explain this result?  What is the general form for the <span class="math notranslate nohighlight">\(L\)</span> series wavelengths <span class="math notranslate nohighlight">\(\lambda_L\)</span>?</strong></p>
 <p>The <span class="math notranslate nohighlight">\(L_\alpha\)</span> x-ray results from the transition of <span class="math notranslate nohighlight">\(n=3\rightarrow 2\)</span>, where the <span class="math notranslate nohighlight">\(L\)</span> series refer to transition to the <span class="math notranslate nohighlight">\(n=2\)</span> state from higher states.  For the case of the <span class="math notranslate nohighlight">\(K\)</span> series, the effective charge of the nucleus <span class="math notranslate nohighlight">\(Z_{\rm eff}\)</span> was simply <span class="math notranslate nohighlight">\(Z-1\)</span>.  Since we don’t yet know the detailed arrangement of electrons, we just let <span class="math notranslate nohighlight">\(Z=Z_{\rm eff}\)</span> and its value will be determined empirically.  From Bohr’s model we can proceed to find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d90e5031-8483-49ba-98a8-32226580ca06">
-<span class="eqno">(4.40)<a class="headerlink" href="#equation-d90e5031-8483-49ba-98a8-32226580ca06" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-59e5aa80-da51-4444-9fc2-034bf3a18fd3">
+<span class="eqno">(4.40)<a class="headerlink" href="#equation-59e5aa80-da51-4444-9fc2-034bf3a18fd3" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_{L_\alpha} = cRZ_{\rm eff}^2\left(\frac{3^2-2^2}{2^23^2}\right) = \frac{5}{36}cRZ_{\rm eff}^2.
 \end{align}\]</div>
 <p>According to Moseley’s data, the effective charge must be <span class="math notranslate nohighlight">\(Z-7.4\)</span>.  We can rewrite our result by replacing <span class="math notranslate nohighlight">\(3\rightarrow n\)</span> (and changing to wavelength) to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ae501ae3-e5d3-4ccc-97dd-69a693aea582">
-<span class="eqno">(4.41)<a class="headerlink" href="#equation-ae501ae3-e5d3-4ccc-97dd-69a693aea582" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-89956f46-0eb6-4c20-9ab4-54edd2610c5d">
+<span class="eqno">(4.41)<a class="headerlink" href="#equation-89956f46-0eb6-4c20-9ab4-54edd2610c5d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda_L} = RZ_{\rm eff}^2\left(\frac{n^2 -4}{4n^2}\right) = R(Z - 7.4)^2\left(\frac{n^2 -4}{4n^2}\right).
 \end{align}\]</div>
 </section>
@@ -1377,7 +1387,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

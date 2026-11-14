@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6. Quantum Mechanics: Part II &#8212; PHYS2700 Modern Physics</title>
+    <title>6. Quantum Mechanics: Part II &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_6/quantum-mechanics-part2';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="7. The Hydrogen Atom and Atomic Physics" href="../Chapter_7/hydrogen-atom.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -637,8 +647,8 @@ i\hbar \left(-\omega A\cos(kx-\omega t) \right) &amp;= -\frac{\hbar^2}{2m} \left
 <div class="math notranslate nohighlight">
 \[ P(x)\ dx = |\Psi(x,t)|^2\ dx = \Psi^*(x,t)\Psi(x,t)\ dx, \]</div>
 <p>where the complex conjugate operator <span class="math notranslate nohighlight">\(^*\)</span> negates the complex parts of a function (i.e., <span class="math notranslate nohighlight">\(i\rightarrow -i\)</span>) and leaves the real parts unchanged.  The probability of a particle existing between two points (<span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>) is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c33ca417-d119-4dfc-81d6-49d105d3cc51">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-c33ca417-d119-4dfc-81d6-49d105d3cc51" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-896c2f8e-7e77-4370-b471-f05e98c5d809">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-896c2f8e-7e77-4370-b471-f05e98c5d809" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 \end{align}\]</div>
 <p>If the wave function represents the probability of a particle existing somewhere, then the sum of all probability intervals must equal unity, or</p>
@@ -652,11 +662,11 @@ P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
-<span class="k">def</span> <span class="nf">Psi_alpha</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Psi_alpha</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
     <span class="c1">#calculate the wave function Ae^{-|x|/alpha}; alpha is a global variable</span>
     <span class="c1">#A = normalization constant</span>
     <span class="k">return</span> <span class="n">A</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">alpha</span><span class="p">)</span>
@@ -695,12 +705,12 @@ P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" src="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" />
+<img alt="../_images/aad34bf97865a17be37e583b550fa19095426657d851d8c7f884067be4847491.png" src="../_images/aad34bf97865a17be37e583b550fa19095426657d851d8c7f884067be4847491.png" />
 </div>
 </details>
 </div>
 <figure class="align-default" id="wave-function" style="width: 600px">
-<img alt="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" src="../_images/7478ff5ab6329f6eff3104048f559dd1098947b2f3781b8b43ec1c2b68ef2762.png" />
+<img alt="../_images/aad34bf97865a17be37e583b550fa19095426657d851d8c7f884067be4847491.png" src="../_images/aad34bf97865a17be37e583b550fa19095426657d851d8c7f884067be4847491.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">The wave function <span class="math notranslate nohighlight">\(\Psi(x) = Ae^{-\frac{|x|}{\alpha}}\)</span> is plotted as a function of <span class="math notranslate nohighlight">\(x\)</span>. The area under the curve represents the probability to find the particle between <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>.  Note that the wave function is symmetric about <span class="math notranslate nohighlight">\(x=0\)</span>.</span><a class="headerlink" href="#wave-function" title="Link to this image">#</a></p>
 </figcaption>
@@ -763,8 +773,8 @@ P_b &amp;= \frac{1}{\alpha} \int_0^\alpha e^{-\frac{2x}{\alpha}} dx, \\
 <div class="math notranslate nohighlight">
 \[ i\hbar \psi(x)\frac{\partial f(t)}{\partial t} = -\frac{\hbar^2 f(t)}{2m}\frac{\partial^2 \psi(x)}{\partial x^2} + V(x)\psi(x)f(t). \]</div>
 <p>Dividing by <span class="math notranslate nohighlight">\(\psi(x) f(t)\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-da594239-aa86-482a-b24d-9562efe349ea">
-<span class="eqno">(6.5)<a class="headerlink" href="#equation-da594239-aa86-482a-b24d-9562efe349ea" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b0e11bf7-5a90-46ec-9e55-e4d1b3e1a8a3">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-b0e11bf7-5a90-46ec-9e55-e4d1b3e1a8a3" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{i\hbar}{f(t)} \frac{d f(t)}{dt} = -\frac{\hbar^2}{2m}\frac{d^2 \psi(x)}{d x^2} + V(x). 
 \end{align}\]</div>
 <p>Notice that the left-hand side depends only on time, while the right-hand side depends only on spatial coordinates.  This allows us to change the partial derivatives to ordinary derivatives because each side depends only on one variable.  Each side must be equal to a constant because one variable may change independently of the other.  Let’s call this constant <span class="math notranslate nohighlight">\(B\)</span> and set it equal to the left-hand side to get</p>
@@ -780,8 +790,8 @@ i\hbar \int \frac{df}{f} &amp;= \int B\ dt.
 <div class="math notranslate nohighlight">
 \[ \ln f = \frac{Bt}{i\hbar}, \]</div>
 <p>and we determine <span class="math notranslate nohighlight">\(f\)</span> to be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a59b17b1-d1b8-4321-8523-028464f34055">
-<span class="eqno">(6.6)<a class="headerlink" href="#equation-a59b17b1-d1b8-4321-8523-028464f34055" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-4cd505e8-08b0-4eb3-92d1-288ece14c047">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-4cd505e8-08b0-4eb3-92d1-288ece14c047" title="Permalink to this equation">#</a></span>\[\begin{align} 
 f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 \end{align}\]</div>
 <p>If we let <span class="math notranslate nohighlight">\(B = \hbar \omega = E\)</span>, then <span class="math notranslate nohighlight">\(f(t) = e^{-i\omega t} = e^{-\frac{iEt}{\hbar}}\)</span>.  We can now write the <strong>time-independent Schödinger equation</strong> as</p>
@@ -792,8 +802,8 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <span class="eqno">(6.8)<a class="headerlink" href="#equation-ti-wave-function" title="Link to this equation">#</a></span>\[\Psi(x,t) = \psi(x)e^{-i\omega t}.\]</div>
 <p>Many important results can be obtained when only the spatial part of the wave function <span class="math notranslate nohighlight">\(\psi(x)\)</span> is needed.</p>
 <p>The probability density used the complex conjugate operator, which now becomes useful.  Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-97b16819-64df-4dfa-8acb-c04e12fd9c13">
-<span class="eqno">(6.9)<a class="headerlink" href="#equation-97b16819-64df-4dfa-8acb-c04e12fd9c13" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4fd0c2f5-efab-427f-8d36-bfccf9a2613a">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-4fd0c2f5-efab-427f-8d36-bfccf9a2613a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Psi^*\Psi &amp;= \psi^2(x)\left(e^{i\omega t}e^{-i\omega t}\right), \\
 &amp;= \psi^2(x),
 \end{align}\]</div>
@@ -834,23 +844,23 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <div class="math notranslate nohighlight">
 \[ \bar{x} = \frac{N_1 x_1 + N_2 x_2 + \cdots}{N_1 + N_2 + \cdots} = \frac{\sum_i N_i x_i}{\sum_i N_i}, \]</div>
 <p>from a series of discrete measurements.  For continuous variables, we use the probability <span class="math notranslate nohighlight">\(P(x,t)\)</span> of observing the particle at a particular <span class="math notranslate nohighlight">\(x\)</span>.  Then the average value of <span class="math notranslate nohighlight">\(x\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-50b8f624-95bf-4a5b-b9ba-7a58e66bfad9">
-<span class="eqno">(6.10)<a class="headerlink" href="#equation-50b8f624-95bf-4a5b-b9ba-7a58e66bfad9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bc7880e0-1a7e-4898-9148-725ce71938d2">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-bc7880e0-1a7e-4898-9148-725ce71938d2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{x} = \frac{\int_{-\infty}^\infty xP(x) dx}{\int_{-\infty}^\infty P(x) dx}.
 \end{align}\]</div>
 <p>In quantum mechanics, we use the probability distribution (i.e., <span class="math notranslate nohighlight">\(P(x)dx = \Psi^*(x,t)\Psi(x,t) dx\)</span>) to determine the average or expectation value.  The expectation value <span class="math notranslate nohighlight">\(\langle x \rangle\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9b33cfd2-7348-43eb-9ce0-20204a0929db">
-<span class="eqno">(6.11)<a class="headerlink" href="#equation-9b33cfd2-7348-43eb-9ce0-20204a0929db" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2176ff15-867f-4e92-ac10-a044b507d59c">
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-2176ff15-867f-4e92-ac10-a044b507d59c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle x \rangle = \frac{\int_{-\infty}^\infty x\Psi^*(x,t)\Psi(x,t) dx}{\int_{-\infty}^\infty \Psi^*(x,t)\Psi(x,t) dx}.
 \end{align}\]</div>
 <p>The denominator is the normalization equation.  If the wave function is normalized, then the denominator is equal to unity.  For a <em>normalized</em> wave function <span class="math notranslate nohighlight">\(\Psi\)</span>, the expectation value is then given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-91e083b6-afbf-4bba-ab13-8b50b4c871e7">
-<span class="eqno">(6.12)<a class="headerlink" href="#equation-91e083b6-afbf-4bba-ab13-8b50b4c871e7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b78a5b38-3a33-4282-b984-add459aeb741">
+<span class="eqno">(6.12)<a class="headerlink" href="#equation-b78a5b38-3a33-4282-b984-add459aeb741" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle x \rangle = \int_{-\infty}^\infty x\Psi^*(x,t)\Psi(x,t) dx.
 \end{align}\]</div>
 <p>The same general procedure is applicable to determining the expectation value of any function <span class="math notranslate nohighlight">\(g(x)\)</span> for a normalized wave function <span class="math notranslate nohighlight">\(\Psi(x,t)\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f930f5c9-57df-43bc-b283-632805d81fdd">
-<span class="eqno">(6.13)<a class="headerlink" href="#equation-f930f5c9-57df-43bc-b283-632805d81fdd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fe7af2df-6ebe-49ce-80da-6e68efa26dd2">
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-fe7af2df-6ebe-49ce-80da-6e68efa26dd2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle g(x) \rangle = \int_{-\infty}^\infty \Psi^*(x,t)g(x)\Psi(x,t) dx.
 \end{align}\]</div>
 <p>Any knowledge we might have of the simultaneous value of the position <span class="math notranslate nohighlight">\(x\)</span> and the momentum <span class="math notranslate nohighlight">\(p\)</span> must be consistent with the uncertainty principle.  To find the expectation value of <span class="math notranslate nohighlight">\(p\)</span>, we need to represent <span class="math notranslate nohighlight">\(p\)</span> in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>.  <strong>Consider the wave function of the free particle, <span class="math notranslate nohighlight">\(\Psi(x,t) = e^{i(kx-\omega t)}\)</span>.</strong>  The spatial derivative is</p>
@@ -870,19 +880,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>An <strong>operator</strong> is a mathematical operation that transforms one function into another.  <em>Coffee is the operator that transforms ideas into knowledge!</em>  An operator, denoted by <span class="math notranslate nohighlight">\(\hat{Q}\)</span>, transforms the function <span class="math notranslate nohighlight">\(f(x)\)</span> by <span class="math notranslate nohighlight">\(\hat{Q}f(x) = g(x)\)</span>.  The <em>momentum operator</em> <span class="math notranslate nohighlight">\(\hat{p}\)</span> is then represented by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-81f23053-9007-4dcc-87d3-dea053bdb8ce">
-<span class="eqno">(6.14)<a class="headerlink" href="#equation-81f23053-9007-4dcc-87d3-dea053bdb8ce" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dca86b85-f6af-4218-829a-a5f58e1dce97">
+<span class="eqno">(6.14)<a class="headerlink" href="#equation-dca86b85-f6af-4218-829a-a5f58e1dce97" title="Permalink to this equation">#</a></span>\[\begin{align}
 \hat{p} = -i\hbar \frac{\partial}{\partial x},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(\hat{\ }\)</span> symbol (i.e., “hat”) sign over the letter indicates that it is an operator.</p>
 <p>The momentum operator is not unique, where each of the physical observables has an associated operator that used to find the observable’s expectation value.  To compute the expectation value of some physical observable <span class="math notranslate nohighlight">\(Q\)</span>, the operator <span class="math notranslate nohighlight">\(\hat{Q}\)</span> must <em>operate</em> on <span class="math notranslate nohighlight">\(\Psi\)</span> before calculating the probability to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c743a177-f4ec-43e1-bab5-118ff4183ddf">
-<span class="eqno">(6.15)<a class="headerlink" href="#equation-c743a177-f4ec-43e1-bab5-118ff4183ddf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ee7ccb85-78f9-4cbb-a78a-fad76efee0b0">
+<span class="eqno">(6.15)<a class="headerlink" href="#equation-ee7ccb85-78f9-4cbb-a78a-fad76efee0b0" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle Q \rangle = \int_{-\infty}^\infty \Psi^*(x,t)\hat{Q}\Psi(x,t) dx.
 \end{align}\]</div>
 <p>The expectation value of the momentum <span class="math notranslate nohighlight">\(p\)</span> becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e62397c9-f60a-4719-a284-6472170f573a">
-<span class="eqno">(6.16)<a class="headerlink" href="#equation-e62397c9-f60a-4719-a284-6472170f573a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-41f06233-491c-4c0d-8bff-21246edc08ec">
+<span class="eqno">(6.16)<a class="headerlink" href="#equation-41f06233-491c-4c0d-8bff-21246edc08ec" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle p \rangle &amp;= \int_{-\infty}^\infty \Psi^*(x,t)\hat{p}\Psi(x,t) dx, \\
 &amp;=-i\hbar \int_{-\infty}^\infty \Psi^*(x,t)\frac{\partial \Psi(x,t)}{\partial x} dx.
 \end{align}\]</div>
@@ -895,8 +905,8 @@ allowfullscreen></iframe>
 <span class="eqno">(6.17)<a class="headerlink" href="#equation-energy-operator" title="Link to this equation">#</a></span>\[\begin{split}E\left[\Psi(x,t)\right] &amp;= i\hbar \frac{\partial \Psi}{\partial t}, \\
 \hat{E}\Psi(x,t) &amp;= i\hbar \frac{\partial }{\partial t}\Psi(x,t).\end{split}\]</div>
 <p>The energy operator <span class="math notranslate nohighlight">\(\hat{E}\)</span> is used to find the expectation value <span class="math notranslate nohighlight">\(\langle E \rangle\)</span> of the energy by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-510006bc-b5c4-4f02-a430-df5b7ae1b864">
-<span class="eqno">(6.18)<a class="headerlink" href="#equation-510006bc-b5c4-4f02-a430-df5b7ae1b864" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-353612f7-e17c-4264-b249-28f30eb29acf">
+<span class="eqno">(6.18)<a class="headerlink" href="#equation-353612f7-e17c-4264-b249-28f30eb29acf" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle E \rangle &amp;= \int_{-\infty}^\infty \Psi^*(x,t)\hat{E}\Psi(x,t) dx, \\
 &amp;=i\hbar \int_{-\infty}^\infty \Psi^*(x,t)\frac{\partial \Psi(x,t)}{\partial t} dx.
 \end{align}\]</div>
@@ -936,8 +946,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>The potential that gives rise to an <em>infinite square well</em> with a width <span class="math notranslate nohighlight">\(L\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ad1d1292-46f4-429d-966e-0611e8645bbb">
-<span class="eqno">(6.19)<a class="headerlink" href="#equation-ad1d1292-46f4-429d-966e-0611e8645bbb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-45f4c022-10d7-4346-8833-cc0b8655dcad">
+<span class="eqno">(6.19)<a class="headerlink" href="#equation-45f4c022-10d7-4346-8833-cc0b8655dcad" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = \begin{cases} \infty &amp;\qquad x\leq 0, x\geq L \\ 0 &amp;\qquad 0&lt;x&lt;L. \end{cases}
 \end{align}\]</div>
 <p>The particle is constrained to move only between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>, where the particle experiences no forces.  The infinite square-well potential can approximate many physical situations, such as the energy levels of simple atomic and nuclear systems.</p>
@@ -950,24 +960,24 @@ V(x) = \begin{cases} \infty &amp;\qquad x\leq 0, x\geq L \\ 0 &amp;\qquad 0&lt;x
 <div class="math notranslate nohighlight">
 \[ \frac{d^2 \psi}{dx^2} = -\frac{2mE}{\hbar^2}\psi = -k^2 \psi, \]</div>
 <p>where the wave number <span class="math notranslate nohighlight">\(k = \sqrt{2mE/\hbar^2}\)</span>.  A suitable solution to this equation is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-76dac5bf-3e93-4857-9304-3234f4fc7e8b">
-<span class="eqno">(6.20)<a class="headerlink" href="#equation-76dac5bf-3e93-4857-9304-3234f4fc7e8b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6d0879dc-d850-463d-b827-3d11fe2c89ec">
+<span class="eqno">(6.20)<a class="headerlink" href="#equation-6d0879dc-d850-463d-b827-3d11fe2c89ec" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x) = A\sin kx + B \cos kx, 
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants used to normalize the wave function.  The wave function must be continuous at the boundaries, which means that <span class="math notranslate nohighlight">\(\psi(0)=\psi(L) = 0\)</span>.  Let’s apply these boundary conditions as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cbde7ef3-a4c2-46d9-afaf-eff4c5599b65">
-<span class="eqno">(6.21)<a class="headerlink" href="#equation-cbde7ef3-a4c2-46d9-afaf-eff4c5599b65" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-45a1876c-6819-4610-aab7-5afeabd1b54b">
+<span class="eqno">(6.21)<a class="headerlink" href="#equation-45a1876c-6819-4610-aab7-5afeabd1b54b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(0) &amp;= A \sin (0) + B \cos(0) = B, \\
 \psi(L) &amp;= A \sin (kL) + B \cos(kL).
 \end{align}\]</div>
 <p>For <span class="math notranslate nohighlight">\(\psi(0) = 0\)</span>, this implies that <span class="math notranslate nohighlight">\(B=0\)</span>.  To apply <span class="math notranslate nohighlight">\(\psi(L) = 0\)</span>, then <span class="math notranslate nohighlight">\(A\sin(kL) = 0\)</span> and <span class="math notranslate nohighlight">\(A=0\)</span> is a trivial solution.  We must have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-15c8d98f-394a-4d4b-932e-12b4e7da832d">
-<span class="eqno">(6.22)<a class="headerlink" href="#equation-15c8d98f-394a-4d4b-932e-12b4e7da832d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fe09a436-51b7-4b8b-ae03-feac2fb427a0">
+<span class="eqno">(6.22)<a class="headerlink" href="#equation-fe09a436-51b7-4b8b-ae03-feac2fb427a0" title="Permalink to this equation">#</a></span>\[\begin{align}
 kL = n\pi
 \end{align}\]</div>
 <p>for <span class="math notranslate nohighlight">\(\sin(kL) = 0\)</span> and <span class="math notranslate nohighlight">\(n\)</span> is a positive integer.  The wave function is now</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a76e8d2c-5861-4687-8f3a-7963754b1651">
-<span class="eqno">(6.23)<a class="headerlink" href="#equation-a76e8d2c-5861-4687-8f3a-7963754b1651" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e91b25c9-bf91-4e7d-a789-3083e9979baf">
+<span class="eqno">(6.23)<a class="headerlink" href="#equation-e91b25c9-bf91-4e7d-a789-3083e9979baf" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_n(x) = A \sin \left(\frac{n\pi}{L} x \right) \quad (n=1,\ 2,\ 3,\ \ldots).
 \end{align}\]</div>
 <p>The property that <span class="math notranslate nohighlight">\(d\psi /dx\)</span> must also be continuous so that we can normalize the wave function.  The normalization condition is</p>
@@ -1050,7 +1060,7 @@ kL = n\pi
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">var</span>
 
 <span class="n">var</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">i</span><span class="p">,</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">L</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;i, hbar L&#39;</span><span class="p">)</span>
@@ -1089,8 +1099,8 @@ The expectation value for p**2 is 4*pi**2*hbar**2/L**2
 <section id="finite-square-well-potential">
 <h2><span class="section-number">6.4. </span>Finite Square-Well Potential<a class="headerlink" href="#finite-square-well-potential" title="Link to this heading">#</a></h2>
 <p>An infinite potential well is not very realistic.  The <em>finite-well</em> potential is more realistic and similar to the infinite one.  <strong>Consider a potential that is zero between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>, but equal to a constant <span class="math notranslate nohighlight">\(V_o\)</span> everywhere else.</strong>  This is written mathematically as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-662b5591-e028-48d3-aa5d-6aebcac019c8">
-<span class="eqno">(6.26)<a class="headerlink" href="#equation-662b5591-e028-48d3-aa5d-6aebcac019c8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5731c5f8-751d-4f7b-b7db-8e986ae0db08">
+<span class="eqno">(6.26)<a class="headerlink" href="#equation-5731c5f8-751d-4f7b-b7db-8e986ae0db08" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = 
 \begin{cases}
     V_o \quad &amp; x\leq -L,  \quad &amp;\text{region I} \\
@@ -1099,8 +1109,8 @@ V(x) =
 \end{cases}
 \end{align}\]</div>
 <p>First, let’s examine a particle of energy <span class="math notranslate nohighlight">\(E &lt; V_o\)</span> that is classically bound inside the well.  Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9ceda1f7-7e1c-4af2-856b-c7ec53cc6173">
-<span class="eqno">(6.27)<a class="headerlink" href="#equation-9ceda1f7-7e1c-4af2-856b-c7ec53cc6173" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c3f1b66f-77da-4452-b78d-cb0a9e2d1b38">
+<span class="eqno">(6.27)<a class="headerlink" href="#equation-c3f1b66f-77da-4452-b78d-cb0a9e2d1b38" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2m} \frac{d^2\psi}{dx^2} = \left[E-V_o \right]\psi. \quad \text{regions I, III}
 \end{align}\]</div>
 <p>Let <span class="math notranslate nohighlight">\(\alpha^2 = 2m(V_o-E)/\hbar^2\)</span> (a positive constant), and we find</p>
@@ -1113,8 +1123,8 @@ V(x) =
 <div class="math notranslate nohighlight">
 \[ \lim_{x\rightarrow -\infty} \psi = Ae^{-\infty} + Be^{\infty}, \]</div>
 <p>which requires that <span class="math notranslate nohighlight">\(B = 0\)</span>.  Similarly, we can use a limit to find that <span class="math notranslate nohighlight">\(A=0\)</span> for <span class="math notranslate nohighlight">\(x\geq L\)</span>.  This allows us to define the wave functions in each region as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cfdbe6c9-466a-4bd7-824f-5b7313ba6695">
-<span class="eqno">(6.28)<a class="headerlink" href="#equation-cfdbe6c9-466a-4bd7-824f-5b7313ba6695" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2ecdf671-9c2b-4938-b22b-9b918cb4bd30">
+<span class="eqno">(6.28)<a class="headerlink" href="#equation-2ecdf671-9c2b-4938-b22b-9b918cb4bd30" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_I(x) &amp;= Ae^{\alpha x}, \quad \text{region I},\  x\leq -l \\
 \psi_{III}(x) &amp;= Be^{-\alpha x}. \quad \text{region III},\  x\geq L
 \end{align}\]</div>
@@ -1122,21 +1132,21 @@ V(x) =
 <div class="math notranslate nohighlight">
 \[ \frac{d^2\psi}{dx^2} = -k^2\psi, \]</div>
 <p>where <span class="math notranslate nohighlight">\(k=\sqrt{(2mE)/\hbar^2}\)</span>.  This differential equation has a solution, which is a combination of sinusoidal functions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fb9a9325-fafd-44ee-9baa-8032121396b6">
-<span class="eqno">(6.29)<a class="headerlink" href="#equation-fb9a9325-fafd-44ee-9baa-8032121396b6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-617527c7-3fc8-4198-83b7-d08572010432">
+<span class="eqno">(6.29)<a class="headerlink" href="#equation-617527c7-3fc8-4198-83b7-d08572010432" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_{II}(x) = C\cos(kx) + D\sin(kx). \quad \text{region II},\ -L&lt;x&lt;L
 \end{align}\]</div>
 <p>To determine a valid wave function, it must be continuous at the boundary (e.g., <span class="math notranslate nohighlight">\((\psi_I = \psi_{II})\)</span> and <span class="math notranslate nohighlight">\((d\psi_I/dx = d\psi_{II}/dx)\)</span> at <span class="math notranslate nohighlight">\(x=-L\)</span>).  By choosing symmetric boundaries and noting that the potential is an even function (i.e., <span class="math notranslate nohighlight">\(V_ox^0\)</span>), we can simplify <span class="math notranslate nohighlight">\(\psi_{II}\)</span> to include only the even portion (i.e., <span class="math notranslate nohighlight">\(D=0\)</span>).  As a result, we find the following conditions</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2a64b42f-4303-4132-bf6f-8c42c69717cb">
-<span class="eqno">(6.30)<a class="headerlink" href="#equation-2a64b42f-4303-4132-bf6f-8c42c69717cb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-06128390-b391-4753-8994-d2df821792c7">
+<span class="eqno">(6.30)<a class="headerlink" href="#equation-06128390-b391-4753-8994-d2df821792c7" title="Permalink to this equation">#</a></span>\[\begin{align}
 C\cos(kL)  &amp;= A e^{-\alpha L}, \\
 kC\sin(kL)  &amp;= -\alpha A e^{-\alpha L}, \\
 C\cos(kL) &amp;= Be^{-\alpha L}, \\
 -kC\sin(kL) &amp;= -\alpha B e^{-\alpha L}.
 \end{align}\]</div>
 <p>We immediately find that <span class="math notranslate nohighlight">\(B=A\)</span>, and we can divide the last two equations to eliminate <span class="math notranslate nohighlight">\(C\)</span> to get,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2ef2c14b-09a1-44dc-b696-7bbb5da8230b">
-<span class="eqno">(6.31)<a class="headerlink" href="#equation-2ef2c14b-09a1-44dc-b696-7bbb5da8230b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4c858381-bb47-433d-97dc-548b2115e185">
+<span class="eqno">(6.31)<a class="headerlink" href="#equation-4c858381-bb47-433d-97dc-548b2115e185" title="Permalink to this equation">#</a></span>\[\begin{align}
 k\tan(kL) = \alpha.
 \end{align}\]</div>
 <p>Recall that <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> are both functions of energy <span class="math notranslate nohighlight">\(E\)</span>.  To solve for <span class="math notranslate nohighlight">\(E\)</span>, we perform a variable transformation <span class="math notranslate nohighlight">\(z \equiv kL\)</span> and <span class="math notranslate nohighlight">\(z_o \equiv \frac{L}{\hbar}\sqrt{2mV_o}\)</span>.  Using the definitions of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span>, we find that</p>
@@ -1165,15 +1175,15 @@ allowfullscreen></iframe>
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">newton</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">newton</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
-<span class="k">def</span> <span class="nf">fsw</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fsw</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
     <span class="c1">#Calculate the root for the finite square well (symmetric case)</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">z_o</span><span class="o">/</span><span class="n">z</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">fsw_prime</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fsw_prime</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
     <span class="c1">#Calculate the derivative of fsw</span>
     <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z_o</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">z_o</span><span class="o">/</span><span class="n">z</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">z</span><span class="o">**</span><span class="mi">3</span>
 
@@ -1219,12 +1229,12 @@ allowfullscreen></iframe>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" src="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" />
+<img alt="../_images/8ad1d9cd5a4d227ba8c1a25623eabc7c8e7083cce0c52f43a693423236efa384.png" src="../_images/8ad1d9cd5a4d227ba8c1a25623eabc7c8e7083cce0c52f43a693423236efa384.png" />
 </div>
 </details>
 </div>
 <figure class="align-default" id="finite-square-well" style="width: 600px">
-<img alt="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" src="../_images/d7eb8c234e14c442ba44c422e7a732648ba9cef370def7ec0c171f8c0294f037.png" />
+<img alt="../_images/8ad1d9cd5a4d227ba8c1a25623eabc7c8e7083cce0c52f43a693423236efa384.png" src="../_images/8ad1d9cd5a4d227ba8c1a25623eabc7c8e7083cce0c52f43a693423236efa384.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Graphical solution for the finite square well potential using Eqn. <a class="reference internal" href="#equation-fsw-eq">(6.32)</a>, for <span class="math notranslate nohighlight">\(z_o = 8\)</span> (even states).  The three roots (blue dots) are <span class="math notranslate nohighlight">\(0.44\pi\)</span>, <span class="math notranslate nohighlight">\(1.33\pi\)</span>, and <span class="math notranslate nohighlight">\(2.17\pi\)</span>.</span><a class="headerlink" href="#finite-square-well" title="Link to this image">#</a></p>
 </figcaption>
@@ -1236,13 +1246,13 @@ allowfullscreen></iframe>
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">m_e</span><span class="p">,</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">eV</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">m_e</span><span class="p">,</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">eV</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">minimize</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
-<span class="k">def</span> <span class="nf">fsw_wave_func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fsw_wave_func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
     <span class="c1">#Calculate the wave function for the finite square well</span>
     <span class="n">k</span> <span class="o">=</span> <span class="n">calc_k</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">m</span><span class="p">)</span>
     <span class="n">alpha</span> <span class="o">=</span> <span class="n">calc_alpha</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">)</span>
@@ -1257,19 +1267,19 @@ allowfullscreen></iframe>
 
     <span class="k">return</span> <span class="n">psi</span>
 
-<span class="k">def</span> <span class="nf">calc_alpha</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calc_alpha</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
     <span class="c1">#calculate alpha from E and V_o</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">E</span><span class="o">-</span><span class="n">V_o</span><span class="p">)</span><span class="o">/</span><span class="n">hbar</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">calc_k</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calc_k</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
     <span class="c1">#calculate k from E</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">E</span><span class="o">/</span><span class="n">hbar</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">calc_En</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">V_o</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calc_En</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">V_o</span><span class="p">):</span>
     <span class="c1">#calculate E_n for a wide deep well </span>
     <span class="c1">#return n**2*np.pi**2*hbar**2/(2*m*(2*L)**2) - V_o </span>
     <span class="n">z_n</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.44</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mf">1.33</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mf">2.17</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">z_n</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">hbar</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">calc_coeff</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calc_coeff</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
     <span class="c1">#calculate the coefficient A_n</span>
     <span class="n">k</span> <span class="o">=</span> <span class="n">calc_k</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">m</span><span class="p">)</span>
     <span class="n">alpha</span> <span class="o">=</span> <span class="n">calc_alpha</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">m</span><span class="p">)</span>
@@ -1312,20 +1322,20 @@ allowfullscreen></iframe>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" src="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" />
+<img alt="../_images/b8c9afa787cd617648bcdd8471e1d52dd82c59a69136b76eeef87dc82d1a0380.png" src="../_images/b8c9afa787cd617648bcdd8471e1d52dd82c59a69136b76eeef87dc82d1a0380.png" />
 </div>
 </details>
 </div>
 <figure class="align-default" id="finite-square-well-waves" style="width: 600px">
-<img alt="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" src="../_images/d8e8a41a90347252ec3839c3cdf1d91a65c04b662a9b3074a1c832149bde3c0c.png" />
+<img alt="../_images/b8c9afa787cd617648bcdd8471e1d52dd82c59a69136b76eeef87dc82d1a0380.png" src="../_images/b8c9afa787cd617648bcdd8471e1d52dd82c59a69136b76eeef87dc82d1a0380.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Wave functions (red curves) for the finite square well using <span class="math notranslate nohighlight">\(z_o = 8\)</span>. The gray regions mark where the wave function penetrate into the walls of the potential well.</span><a class="headerlink" href="#finite-square-well-waves" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The application of the boundary conditions leads to quantized energy values <span class="math notranslate nohighlight">\(E_n\)</span> and associated wave functions <span class="math notranslate nohighlight">\(\psi_n\)</span>.  Remarkably, the particle has a finite probability of being outside the square well (see Fig. <a class="reference internal" href="#finite-square-well-waves"><span class="std std-numref">6.3</span></a>).  Notice that the wave functions joint smoothly at the edges of the well and approach zero exponentially outside the well.</p>
 <p>The particle existing outside the well is prohibited classically, but occurs in quantum mechanics.  Because of the exponential decrease of the the wave functions (<span class="math notranslate nohighlight">\(\psi_I\)</span> and <span class="math notranslate nohighlight">\(\psi_{III}\)</span>), the probability of the particle penetrating a distance greater than <span class="math notranslate nohighlight">\(\delta x \approx 1/\alpha\)</span> decreases quickly, where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4b19bfef-79c8-422c-be65-26fa1b9d320f">
-<span class="eqno">(6.33)<a class="headerlink" href="#equation-4b19bfef-79c8-422c-be65-26fa1b9d320f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-74f3f0c0-15b9-4ae8-9f41-574ff9c49398">
+<span class="eqno">(6.33)<a class="headerlink" href="#equation-74f3f0c0-15b9-4ae8-9f41-574ff9c49398" title="Permalink to this equation">#</a></span>\[\begin{align}
 \delta x \approx \frac{1}{\alpha} = \frac{\hbar}{\sqrt{2m(V_o-E)}}
 \end{align}\]</div>
 <p>is called the <em>penetration depth</em>.  The fraction of particles that successfully tunnel through the outer walls of the potential well is exceedingly small, but the results have important applications.</p>
@@ -1333,8 +1343,8 @@ allowfullscreen></iframe>
 <section id="three-dimensional-infinite-potential-well">
 <span id="three-dimensional-well"></span><h2><span class="section-number">6.5. </span>Three-Dimensional Infinite-Potential Well<a class="headerlink" href="#three-dimensional-infinite-potential-well" title="Link to this heading">#</a></h2>
 <p>Like the one-dimensional infinite-potential well, the three-dimensional potential well is expected to have time-independent solutions that can be determined from the time-independent Schrödinger equation.  The wave function must depend on all three spatial coordinates, <span class="math notranslate nohighlight">\(\psi =\psi(x,y,z)\)</span>.  Beginning with the conservation of energy, we multiply by the wave function to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-945340a6-8507-4fc2-b451-9e041ec9f251">
-<span class="eqno">(6.34)<a class="headerlink" href="#equation-945340a6-8507-4fc2-b451-9e041ec9f251" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-730c34e3-2ed0-4548-94aa-f8c16efa06e8">
+<span class="eqno">(6.34)<a class="headerlink" href="#equation-730c34e3-2ed0-4548-94aa-f8c16efa06e8" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \frac{p^2}{2m}\psi + V\psi = E\psi.
 \end{align}\]</div>
 <p>Then, we use the momentum operator for each dimension because <span class="math notranslate nohighlight">\(\hat{p}^2 = \hat{p}_x^2 + \hat{p}_y^2 + \hat{p}_z^2\)</span>.  Individually we have</p>
@@ -1348,13 +1358,13 @@ allowfullscreen></iframe>
 <div class="math notranslate nohighlight" id="equation-3d-tise">
 <span class="eqno">(6.35)<a class="headerlink" href="#equation-3d-tise" title="Link to this equation">#</a></span>\[-\frac{\hbar^2}{2m}\left(\frac{\partial^2 \psi}{\partial x^2} + \frac{\partial^2 \psi}{\partial y^2}+ \frac{\partial^2 \psi}{\partial z^2} \right) + V\psi = E\psi,\]</div>
 <p>which defines the time-independent Schrödinger equation in three dimensions.  The expression in parentheses is the Laplacian operator, which is usually written using the shorthand notation as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8b653428-2132-480d-b813-3292df4fd7f3">
-<span class="eqno">(6.36)<a class="headerlink" href="#equation-8b653428-2132-480d-b813-3292df4fd7f3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8da5bcea-2971-418b-9e65-f177f62fed38">
+<span class="eqno">(6.36)<a class="headerlink" href="#equation-8da5bcea-2971-418b-9e65-f177f62fed38" title="Permalink to this equation">#</a></span>\[\begin{align}
 \nabla^2 = \frac{\partial^2 }{\partial x^2} + \frac{\partial^2 }{\partial y^2} + \frac{\partial^2 }{\partial z^2},
 \end{align}\]</div>
 <p>and we can write Eqn. <a class="reference internal" href="#equation-3d-tise">(6.35)</a> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f94ea34e-48d8-4e19-8813-d30176f7f702">
-<span class="eqno">(6.37)<a class="headerlink" href="#equation-f94ea34e-48d8-4e19-8813-d30176f7f702" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a3951f6b-480d-4087-bd01-b3a9b87992f5">
+<span class="eqno">(6.37)<a class="headerlink" href="#equation-a3951f6b-480d-4087-bd01-b3a9b87992f5" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2m}\nabla^2 \psi + v\psi = E\psi.
 \end{align}\]</div>
 <div class="exercise orange admonition" id="PIC-exercise">
@@ -1363,14 +1373,14 @@ allowfullscreen></iframe>
 <section id="exercise-content">
 <p><strong>Consider a free particle inside a box with lengths <span class="math notranslate nohighlight">\(L_1\)</span>, <span class="math notranslate nohighlight">\(L_2\)</span>, and <span class="math notranslate nohighlight">\(L_3\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> axes, respectively.  The particle is constrained to be inside the box.  (a) Find the wave functions and energies.  (b) Find the ground-state wave function for a cube.  (c) Find the energies of the ground and first excited state for a cube of sides <span class="math notranslate nohighlight">\(L\)</span>.</strong></p>
 <p><strong>(a)</strong>  Similar to the one-dimensional infinite square well, it is reasonable to try a sinusoidal wave function for each of the dimensions.  As a result, we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-175fab75-4b7f-4f1b-b342-469caea667ed">
-<span class="eqno">(6.38)<a class="headerlink" href="#equation-175fab75-4b7f-4f1b-b342-469caea667ed" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d42f955b-29c3-44a2-87bd-881b57354f08">
+<span class="eqno">(6.38)<a class="headerlink" href="#equation-d42f955b-29c3-44a2-87bd-881b57354f08" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin(k_1x)\sin(k_2y)\sin(k_3z),
 \end{align}\]</div>
 <p>which has a normalization constant <span class="math notranslate nohighlight">\(A\)</span> and the quantities <span class="math notranslate nohighlight">\(k_i\)</span> (<span class="math notranslate nohighlight">\(k_1\)</span>, <span class="math notranslate nohighlight">\(k_2\)</span>, and <span class="math notranslate nohighlight">\(k_3\)</span>) are determined by applying the appropriate boundary conditions.</p>
 <p>The condition that <span class="math notranslate nohighlight">\(\psi = 0\)</span> at <span class="math notranslate nohighlight">\(x=L_1\)</span> requires that <span class="math notranslate nohighlight">\(k_1L_1 = n_1\pi\)</span>.  Generalizing this constraint and solving for <span class="math notranslate nohighlight">\(k_i\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c21082dd-9011-4649-8e3f-176169ce49e7">
-<span class="eqno">(6.39)<a class="headerlink" href="#equation-c21082dd-9011-4649-8e3f-176169ce49e7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-71bb30ec-d07e-4f60-a573-4a7d8e6ddfbf">
+<span class="eqno">(6.39)<a class="headerlink" href="#equation-71bb30ec-d07e-4f60-a573-4a7d8e6ddfbf" title="Permalink to this equation">#</a></span>\[\begin{align}
 k_1 = \frac{n_1\pi}{L_1}, \quad k_2 = \frac{n_2\pi}{L_2}, \quad k_3 = \frac{n_3\pi}{L_3},
 \end{align}\]</div>
 <p>using the integers <span class="math notranslate nohighlight">\(n_1\)</span>, <span class="math notranslate nohighlight">\(n_2\)</span>, and <span class="math notranslate nohighlight">\(n_3\)</span> for quantum numbers in each of the dimensions.</p>
@@ -1386,23 +1396,23 @@ k_1 = \frac{n_1\pi}{L_1}, \quad k_2 = \frac{n_2\pi}{L_2}, \quad k_3 = \frac{n_3\
 <div class="math notranslate nohighlight">
 \[ \frac{\hbar^2}{2m}\left(k_1^2 + k_2^2 + k_3^2\right)\psi = E\psi. \]</div>
 <p>The <span class="math notranslate nohighlight">\(k_i\)</span> represent a wave number for each dimension, where we can generalize the energies of the one-dimensional case to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c93154b5-7563-413d-9d08-ddadf9fdae89">
-<span class="eqno">(6.40)<a class="headerlink" href="#equation-c93154b5-7563-413d-9d08-ddadf9fdae89" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-66e91c15-c196-4706-b510-bb06f40426d2">
+<span class="eqno">(6.40)<a class="headerlink" href="#equation-66e91c15-c196-4706-b510-bb06f40426d2" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \frac{\pi^2\hbar^2}{2m}\left(\frac{n_1^2}{L_1^2} + \frac{n_2^2}{L_2^2} + \frac{n_3^2}{L_3^2} \right),
 \end{align}\]</div>
 <p>where the allowed energies depend on the three quantum numbers.  The wave function can also be written in terms of the quantum numbers as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-17d03c36-1882-4de4-9758-6028cdc27989">
-<span class="eqno">(6.41)<a class="headerlink" href="#equation-17d03c36-1882-4de4-9758-6028cdc27989" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-defeec71-e719-4a2a-a1a4-1c6ce74da805">
+<span class="eqno">(6.41)<a class="headerlink" href="#equation-defeec71-e719-4a2a-a1a4-1c6ce74da805" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin\left(\frac{n_1\pi x}{L_1}\right) \sin\left(\frac{n_2\pi y}{L_2}\right) \sin\left(\frac{n_3\pi z}{L_3}\right)
 \end{align}\]</div>
 <p><strong>(b)</strong> For a cube <span class="math notranslate nohighlight">\(L_1 = L_2 = L_3 = L\)</span> and the ground state is given by <span class="math notranslate nohighlight">\(n_1 = n_2 = n_3 = 1\)</span>.  The ground-state wave function is simply</p>
-<div class="amsmath math notranslate nohighlight" id="equation-17d9b66c-8f94-4ffb-8876-ba4a9aa493d4">
-<span class="eqno">(6.42)<a class="headerlink" href="#equation-17d9b66c-8f94-4ffb-8876-ba4a9aa493d4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6a580b53-a441-4c32-aa83-ba49e89f5d48">
+<span class="eqno">(6.42)<a class="headerlink" href="#equation-6a580b53-a441-4c32-aa83-ba49e89f5d48" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin\left(\frac{\pi x}{L}\right) \sin\left(\frac{\pi y}{L}\right) \sin\left(\frac{\pi z}{L}\right).
 \end{align}\]</div>
 <p><strong>(c)</strong>  For a cube the energies are given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4e407ba9-e16b-4e0b-8bf6-567dc36903ac">
-<span class="eqno">(6.43)<a class="headerlink" href="#equation-4e407ba9-e16b-4e0b-8bf6-567dc36903ac" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-66cfa284-6315-4ce7-9c2c-49198313626d">
+<span class="eqno">(6.43)<a class="headerlink" href="#equation-66cfa284-6315-4ce7-9c2c-49198313626d" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \frac{\pi^2\hbar^2}{2mL^2}\left(n_1^2 + n_2^2 + n_3^2\right),
 \end{align}\]</div>
 <p>and the ground state energy is <span class="math notranslate nohighlight">\(E_{111} = \frac{3\pi^2\hbar^2}{2mL^2}\)</span>.</p>
@@ -1426,8 +1436,8 @@ F &amp;= -\kappa(x-x_o), \\
 V &amp;= \kappa (x-x_o)^2.
 \end{align*}\]</div>
 <p>The application of the restoring force introduces <em>simple harmonic motion</em> (SHM).  Diatomic molecules or a system of atoms in a solid lattice can be approximated by SHM in a general way.  Within a lattice, the force on the atoms depends on the distance <span class="math notranslate nohighlight">\(x\)</span> from some equilibrium position and the potential <span class="math notranslate nohighlight">\(V(x)\)</span> can be represented by a Taylor series as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-31280f8a-0337-4dcc-a505-c4334cff6075">
-<span class="eqno">(6.44)<a class="headerlink" href="#equation-31280f8a-0337-4dcc-a505-c4334cff6075" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e3ab1c14-a489-4cc4-aa83-b6bf059c5b9e">
+<span class="eqno">(6.44)<a class="headerlink" href="#equation-e3ab1c14-a489-4cc4-aa83-b6bf059c5b9e" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = V_o + V_1(x-x_o) + \frac{V_2}{2}\left(x-x_o\right)^2 + \cdots,
 \end{align}\]</div>
 <p>where each term of the series has a constant <span class="math notranslate nohighlight">\(V_i\)</span>.  For <span class="math notranslate nohighlight">\(x-x_o \approx 0\)</span> (i.e., a small perturbation), the higher terms are negligible.  The minimum of the potential occurs at the equilibrium position, which means that <span class="math notranslate nohighlight">\(dV/dx = 0\)</span> and the lowest surviving term of the potential is</p>
@@ -1441,19 +1451,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>To study the quantum description of SHM, we insert a potential <span class="math notranslate nohighlight">\(V = kx^2/2\)</span> into Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f7eee542-25db-4c1f-b7ce-5b4c6ec2052c">
-<span class="eqno">(6.45)<a class="headerlink" href="#equation-f7eee542-25db-4c1f-b7ce-5b4c6ec2052c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d18c01ae-bff6-4dad-8969-54554b7b06a2">
+<span class="eqno">(6.45)<a class="headerlink" href="#equation-d18c01ae-bff6-4dad-8969-54554b7b06a2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2 \psi}{dx^2} = -\frac{2m}{\hbar^2}\left(E - \frac{1}{2}\kappa x^2 \right)\psi = \left(\frac{m\kappa}{\hbar^2}x^2 - \frac{2mE}{\hbar^2}\right) \psi.
 \end{align}\]</div>
 <p>Through a pair of variable transformations,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0dd807c2-5877-4587-951c-b86eb1c18352">
-<span class="eqno">(6.46)<a class="headerlink" href="#equation-0dd807c2-5877-4587-951c-b86eb1c18352" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dc1b1487-17ca-49ce-a5fe-305241886645">
+<span class="eqno">(6.46)<a class="headerlink" href="#equation-dc1b1487-17ca-49ce-a5fe-305241886645" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha^2 &amp;= \frac{m\kappa}{\hbar^2}, \\
 \beta = \frac{2mE}{\hbar^2},
 \end{align}\]</div>
 <p>we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-40ff65b7-ccf5-472c-a56d-e10339da4cb2">
-<span class="eqno">(6.47)<a class="headerlink" href="#equation-40ff65b7-ccf5-472c-a56d-e10339da4cb2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7a164340-7b7d-43a6-8e3d-b5bb4163693d">
+<span class="eqno">(6.47)<a class="headerlink" href="#equation-7a164340-7b7d-43a6-8e3d-b5bb4163693d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2 \psi}{dx^2} = (\alpha^2 x^2 - \beta)\psi.
 \end{align}\]</div>
 <p>The particle is confined to the potential well, and thus, has zero probability of being at <span class="math notranslate nohighlight">\(x= \pm \infty\)</span>, which means</p>
@@ -1468,21 +1478,21 @@ allowfullscreen></iframe>
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">hermite</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">m_e</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.special</span><span class="w"> </span><span class="kn">import</span> <span class="n">hermite</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">m_e</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
 
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span> <span class="s1">&#39;cm&#39;</span><span class="p">})</span>
 
-<span class="k">def</span> <span class="nf">SHO_potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHO_potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c1">#calculate the SHO potential</span>
     <span class="k">return</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">kappa</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 
-<span class="k">def</span> <span class="nf">SHO_wave_func</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHO_wave_func</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
     <span class="c1">#calculate the SHO wave function</span>
     <span class="n">A</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mf">0.25</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -1530,12 +1540,12 @@ allowfullscreen></iframe>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" src="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" />
+<img alt="../_images/17060cecfae1ef39d52b49ca75293e6f06077693ca65c9f9709c91b3f9198df1.png" src="../_images/17060cecfae1ef39d52b49ca75293e6f06077693ca65c9f9709c91b3f9198df1.png" />
 </div>
 </details>
 </div>
 <figure class="align-default" id="sho-pot-ground" style="width: 600px">
-<img alt="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" src="../_images/74dcea92cfb16bc9981b3e05e5e6dae430c162a06ca47fee94078f1303defd9d.png" />
+<img alt="../_images/17060cecfae1ef39d52b49ca75293e6f06077693ca65c9f9709c91b3f9198df1.png" src="../_images/17060cecfae1ef39d52b49ca75293e6f06077693ca65c9f9709c91b3f9198df1.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Simple harmonic oscillator potential (left) and ground state wave function (right).  The horizontal (dashed) line represents the zero-point energy.</span><a class="headerlink" href="#sho-pot-ground" title="Link to this image">#</a></p>
 </figcaption>
@@ -1577,7 +1587,7 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 \psi_2 &amp;= \frac{1}{\sqrt{2}}\left(2\alpha x^2 - 1\right)\psi_o, \\
 \psi_3 &amp;= \sqrt{\frac{\alpha}{3}}\left(2\alpha x^3 - 3x\right)\psi_o.\end{split}\]</div>
 <figure class="align-default" id="sho-waves" style="width: 600px">
-<img alt="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" src="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" />
+<img alt="../_images/3287dd16ca8bd48796c126a67f2f30092d53da1da587b8b86ac2e082d228d01e.png" src="../_images/3287dd16ca8bd48796c126a67f2f30092d53da1da587b8b86ac2e082d228d01e.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Simple harmonic oscillator wave functions (left) and probability density functions (right).  The vertical (dashed) line represents the with of the potential well at a given energy <span class="math notranslate nohighlight">\(E_n\)</span>.</span><a class="headerlink" href="#sho-waves" title="Link to this image">#</a></p>
 </figcaption>
@@ -1589,21 +1599,21 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">hermite</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">m_e</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.special</span><span class="w"> </span><span class="kn">import</span> <span class="n">hermite</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">m_e</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
 
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span> <span class="s1">&#39;cm&#39;</span><span class="p">})</span>
 
-<span class="k">def</span> <span class="nf">SHO_potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHO_potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c1">#calculate the SHO potential</span>
     <span class="k">return</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">kappa</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 
-<span class="k">def</span> <span class="nf">SHO_wave_func</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHO_wave_func</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
     <span class="c1">#calculate the SHO wave function</span>
     <span class="n">psi_o</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mf">0.25</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -1675,17 +1685,17 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" src="../_images/023a17d4bd6514fa3652ce192ab1ec9adc909200d7d84f77b41370cbd47b4bee.png" />
+<img alt="../_images/3287dd16ca8bd48796c126a67f2f30092d53da1da587b8b86ac2e082d228d01e.png" src="../_images/3287dd16ca8bd48796c126a67f2f30092d53da1da587b8b86ac2e082d228d01e.png" />
 </div>
 </details>
 </div>
 <p>In contrast to the particle-in-a-box, the oscillatory behavior is due to the polynomial, which dominates at small <span class="math notranslate nohighlight">\(x\)</span>, and the damping occurs due to the Gaussian function, which dominates at large <span class="math notranslate nohighlight">\(x\)</span>.  Then energy levels are given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d437aaf5-a8f5-416f-adc8-26ee8cbb855d">
-<span class="eqno">(6.49)<a class="headerlink" href="#equation-d437aaf5-a8f5-416f-adc8-26ee8cbb855d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-db2546eb-d08b-4238-bca1-bfbaa7566dc3">
+<span class="eqno">(6.49)<a class="headerlink" href="#equation-db2546eb-d08b-4238-bca1-bfbaa7566dc3" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \sqrt{\frac{\kappa}{m}}.
 \end{align}\]</div>
 <figure class="align-default" id="sho-energy" style="width: 600px">
-<img alt="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" src="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" />
+<img alt="../_images/fd5b77b04db2fd2ecf7ed38e650abbed635b3737f6062fc2c80c0ca4d3d81670.png" src="../_images/fd5b77b04db2fd2ecf7ed38e650abbed635b3737f6062fc2c80c0ca4d3d81670.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Simple harmonic oscillator potential (red curve) with first four energy levels (horizontal dashed lines).</span><a class="headerlink" href="#sho-energy" title="Link to this image">#</a></p>
 </figcaption>
@@ -1698,17 +1708,17 @@ E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">hermite</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">m_e</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.special</span><span class="w"> </span><span class="kn">import</span> <span class="n">hermite</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">m_e</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
 
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 <span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span> <span class="s1">&#39;cm&#39;</span><span class="p">})</span>
 
-<span class="k">def</span> <span class="nf">SHO_potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHO_potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c1">#calculate the SHO potential</span>
     <span class="k">return</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">kappa</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 
@@ -1745,7 +1755,7 @@ E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" src="../_images/b7fa4a3a6545839abd2624965a12b8cab8d3087d6fcd1f1b00bd2dbed64e99a8.png" />
+<img alt="../_images/fd5b77b04db2fd2ecf7ed38e650abbed635b3737f6062fc2c80c0ca4d3d81670.png" src="../_images/fd5b77b04db2fd2ecf7ed38e650abbed635b3737f6062fc2c80c0ca4d3d81670.png" />
 </div>
 </details>
 </div>
@@ -1819,8 +1829,8 @@ A &amp;= \left(\frac{\alpha}{\pi} \right)^{1/4}.
 <section id="barriers-and-tunneling">
 <h2><span class="section-number">6.7. </span>Barriers and Tunneling<a class="headerlink" href="#barriers-and-tunneling" title="Link to this heading">#</a></h2>
 <p>For the finite square-well potential (see Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#finite-square-well-potential">6.3</a>), there was a finite probability for the wave function to enter the walls of the potential, but it must decay quickly.  A <em>potential barrier</em> describes a similar situation with the boundaries inverted.  The potential is instead</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dab5cfb8-c9b1-4018-a78a-e6cb841926ba">
-<span class="eqno">(6.50)<a class="headerlink" href="#equation-dab5cfb8-c9b1-4018-a78a-e6cb841926ba" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a374fd08-fde4-431e-937b-acd026dc168a">
+<span class="eqno">(6.50)<a class="headerlink" href="#equation-a374fd08-fde4-431e-937b-acd026dc168a" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = 
 \begin{cases}
     0 \quad &amp; x\leq -L,  \quad &amp;\text{region I} \\
@@ -1847,23 +1857,23 @@ v &amp;= \sqrt{\frac{2}{m}(E-V_o)}.
 \end{align*}\]</div>
 <p>The particle velocity must decrease for a positive <span class="math notranslate nohighlight">\(V_o\)</span> and increase for a negative <span class="math notranslate nohighlight">\(V_o\)</span>.  A classical analogy is where a ball is through horizontally over a mountain, where it experiences a pull due to gravity (ignoring air resistance).  The pull increases when the ball is directly over the mountain because there is slightly increased mass and this extra force reduces the ball’s speed.  Conversely, a ball traveling over a valley experiences slightly less gravity.  This is not noticeable for most objects, but NASA’s <a class="reference external" href="https://www.nasa.gov/audience/foreducators/k-4/features/F_Measuring_Gravity_With_Grace.html">GRACE</a> has measured the perturbations of Earth’s gravity field using two satellites.</p>
 <p>According to quantum mechanics, the particle will behave differently because of its wavelike character, where the will be differences in the wave number <span class="math notranslate nohighlight">\(k\)</span> in the three regions.  The wave numbers are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-edf7dad0-b4a3-4d5b-bdd7-fac2bddda2e9">
-<span class="eqno">(6.51)<a class="headerlink" href="#equation-edf7dad0-b4a3-4d5b-bdd7-fac2bddda2e9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd466134-9e84-46e5-aad2-790f098e3505">
+<span class="eqno">(6.51)<a class="headerlink" href="#equation-cd466134-9e84-46e5-aad2-790f098e3505" title="Permalink to this equation">#</a></span>\[\begin{align}
 k_I &amp;= k_{III} = \frac{\sqrt{2mE}}{\hbar}, \quad &amp;\text{where }V = 0 \\
 k_{II} &amp;= \frac{\sqrt{2m(E-V_o)}}{\hbar}. \quad &amp;\text{where }V = V_o
 \end{align}\]</div>
 <p>Another analogy comes from optics, where light bends (i.e., changes speed) after it penetrates another medium.  Actually, some of the light is <em>reflected</em> and the rest is <em>transmitted</em> into the medium.  The wave function will exhibit a similar behavior, where there will be an (1) incident wave, (2) reflected wave, and (3) a transmitted wave.</p>
 <p>Classical mechanics allows <em>no</em> reflection if <span class="math notranslate nohighlight">\(E&gt;V_o\)</span> and <em>total</em> reflection for <span class="math notranslate nohighlight">\(E&lt;V_o\)</span>.  In contrast, quantum mechanics predicts some <em>reflection</em> for <span class="math notranslate nohighlight">\(E\gg V_o\)</span> and some <em>transmission</em> for <span class="math notranslate nohighlight">\(E\ll V_o\)</span>.</p>
 <p>The time-independent Schrödinger equation for the three regions are as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c6ca197c-af9e-4198-858d-aecff573ecf9">
-<span class="eqno">(6.52)<a class="headerlink" href="#equation-c6ca197c-af9e-4198-858d-aecff573ecf9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dd3c5c0c-dc63-4a38-a1ec-5f5fe23bbe10">
+<span class="eqno">(6.52)<a class="headerlink" href="#equation-dd3c5c0c-dc63-4a38-a1ec-5f5fe23bbe10" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2\psi_I}{dx^2} + \frac{2m}{\hbar^2}E\psi_I &amp;= 0, \quad &amp; \text{Region I } \\
 \frac{d^2\psi_{II}}{dx^2} + \frac{2m}{\hbar^2}(E-V_o)\psi_{II} &amp;= 0, \quad &amp; \text{Region II } \\
 \frac{d^2\psi_{III}}{dx^2} + \frac{2m}{\hbar^2}E\psi_{III} &amp;= 0. \quad &amp; \text{Region III }
 \end{align}\]</div>
 <p>The corresponding wave functions for these equations are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1dd8a7f9-8626-4df2-8e31-5cf3f6c8412d">
-<span class="eqno">(6.53)<a class="headerlink" href="#equation-1dd8a7f9-8626-4df2-8e31-5cf3f6c8412d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a94eaf53-92d2-4118-b05c-258237958fe1">
+<span class="eqno">(6.53)<a class="headerlink" href="#equation-a94eaf53-92d2-4118-b05c-258237958fe1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_I &amp;= Ae^{ik_Ix} + Be^{-ik_Ix}, \quad &amp; \text{Region I } \\
 \psi_{II} &amp;= Ce^{ik_{II}x} + De^{-ik_{II}x}, \quad &amp; \text{Region II } \\
 \psi_{III} &amp;= Fe^{ik_Ix} + Ge^{-ik_Ix}. \quad &amp; \text{Region III }
@@ -1881,20 +1891,20 @@ k_IAe^{-ik_IL} - k_IBe^{ik_IL} &amp;= k_{II}Ce^{-ik_{II}L} -k_{II}De^{ik_{II}L},
 Ce^{ik_{II}L} + De^{-k_{II}L} &amp;= Fe^{ik_IL}, \\
 k_{II}Ce^{ik_{II}L} - k_{II}De^{-ik_{II}L} &amp;= k_IFe^{ik_IL}.\end{split}\]</div>
 <p>The probability of particles being reflected <span class="math notranslate nohighlight">\(R\)</span> or transmitted <span class="math notranslate nohighlight">\(T\)</span> is determined by the ratio of the appropriate <span class="math notranslate nohighlight">\(\psi^*\psi\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2ca37a6f-9dc9-4722-ac46-aade079e399b">
-<span class="eqno">(6.55)<a class="headerlink" href="#equation-2ca37a6f-9dc9-4722-ac46-aade079e399b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a11fe531-eeb0-488b-aeba-f3df64328c8b">
+<span class="eqno">(6.55)<a class="headerlink" href="#equation-a11fe531-eeb0-488b-aeba-f3df64328c8b" title="Permalink to this equation">#</a></span>\[\begin{align}
 R &amp;= \frac{|\psi_I(\text{reflected})|^2}{|\psi_I(\text{incident})|^2} = \frac{B^*B}{A^*A}, \\[5pt]
 T &amp;= \frac{|\psi_{III}(\text{transmitted})|^2}{|\psi_1(\text{incident})|^2} = \frac{F^*F}{A^*A}.
 \end{align}\]</div>
 <p>Because the particles must be either reflected or transmitted, we must have <span class="math notranslate nohighlight">\(R+T = 1\)</span> (i.e., the total probability must equal unity).</p>
 <p>The values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(T\)</span> are found by solving for <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(D\)</span> in terms of <span class="math notranslate nohighlight">\(F\)</span>.  Then those results are substituted to find <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> in terms of <span class="math notranslate nohighlight">\(F\)</span>.  This a long process of <a class="reference external" href="http://www.trentu.ca/academic/physics/jbeda/PHYS202H/PHYS202H-2004-Fall/HW-11-202H-solutions.pdf">tedious algebra</a>, where the transmission probability is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-75320de0-e192-439a-9018-050532d663cd">
-<span class="eqno">(6.56)<a class="headerlink" href="#equation-75320de0-e192-439a-9018-050532d663cd" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec9af7aa-4c4e-4aa3-b659-6caacaf74e06">
+<span class="eqno">(6.56)<a class="headerlink" href="#equation-ec9af7aa-4c4e-4aa3-b659-6caacaf74e06" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 \end{align}\]</div>
 <p>Notice when <span class="math notranslate nohighlight">\(k_{II}L = n\pi\)</span>, then the second term goes to zero, resulting in a transmission probability equal to 1.  Also, it is possible for particles to be reflected at both <span class="math notranslate nohighlight">\(x=-L\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>.  Their path difference back toward the <span class="math notranslate nohighlight">\(-x\)</span> direction is <span class="math notranslate nohighlight">\(2L\)</span>.  For an integral number of wavelengths inside the potential barrier, the incident and reflected wave functions are precisely out of phase and cancel completely.</p>
 <figure class="align-default" id="barrier-potential" style="width: 600px">
-<img alt="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" src="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" />
+<img alt="../_images/f950280723637f55cd7ea1e11319d0f8fcf51ba8370d23b505e58fca8506a94a.png" src="../_images/f950280723637f55cd7ea1e11319d0f8fcf51ba8370d23b505e58fca8506a94a.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Wave function for a free particle (<span class="math notranslate nohighlight">\(E=20\ {\rm eV}\)</span>) traveling over a potential barrier of width <span class="math notranslate nohighlight">\(2L\)</span> and height <span class="math notranslate nohighlight">\(V_o = 10\ {\rm eV}\)</span>.</span><a class="headerlink" href="#barrier-potential" title="Link to this image">#</a></p>
 </figcaption>
@@ -1906,15 +1916,15 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 <span class="expanded">Hide code cell content</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">m_e</span><span class="p">,</span> <span class="n">eV</span>
-<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span><span class="p">,</span> <span class="n">simpson</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span><span class="p">,</span><span class="n">fsolve</span>
-<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">m_e</span><span class="p">,</span> <span class="n">eV</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">odeint</span><span class="p">,</span> <span class="n">simpson</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">minimize</span><span class="p">,</span><span class="n">fsolve</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
 
-<span class="k">def</span> <span class="nf">ksqr</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ksqr</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">k_squared</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">if</span> <span class="n">x</span><span class="o">&lt;=-</span><span class="n">L</span><span class="p">:</span>
         <span class="n">V</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1924,7 +1934,7 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
         <span class="n">V</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">m_e</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">E_o</span><span class="o">-</span><span class="n">V</span><span class="p">)</span><span class="o">/</span><span class="n">hbar</span><span class="o">**</span><span class="mi">2</span>
 
-<span class="k">def</span> <span class="nf">psi_func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">coeff</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">psi_func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">coeff</span><span class="p">):</span>
     <span class="c1">#calculate the wave function</span>
     <span class="n">psi_x</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">k_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ksqr</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
@@ -1939,7 +1949,7 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
         <span class="n">psi_x</span> <span class="o">=</span> <span class="n">coeff</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">k_x</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">coeff</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">k_x</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">psi_x</span>
 
-<span class="k">def</span> <span class="nf">boundary</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">boundary</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">k_I</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ksqr</span><span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="o">*</span><span class="n">L</span><span class="p">))</span>
     <span class="n">k_II</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ksqr</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
     <span class="n">x_coeff</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
@@ -1951,7 +1961,7 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 
 
 
-<span class="k">def</span> <span class="nf">advance_psi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">xm</span><span class="p">,</span><span class="n">xp</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">psi_coeff</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">advance_psi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">xm</span><span class="p">,</span><span class="n">xp</span><span class="p">,</span><span class="n">dx</span><span class="p">,</span><span class="n">psi_coeff</span><span class="p">):</span>
     <span class="c1">#advance the wave function using Numerov&#39;s method</span>
     <span class="n">k_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ksqr</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
     <span class="n">k_xm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">ksqr</span><span class="p">(</span><span class="n">xm</span><span class="p">))</span>
@@ -2010,7 +2020,7 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" src="../_images/45555120335fbeb6ccb677dbebdb0a989a3620dfce42d3d4e57ffd14ae581195.png" />
+<img alt="../_images/f950280723637f55cd7ea1e11319d0f8fcf51ba8370d23b505e58fca8506a94a.png" src="../_images/f950280723637f55cd7ea1e11319d0f8fcf51ba8370d23b505e58fca8506a94a.png" />
 </div>
 </details>
 </div>
@@ -2026,24 +2036,24 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 </figcaption>
 </figure>
 <p>There are only a few changes to the equations already presented in Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#potential-barrier-with-e-v-o">6.7.1</a>.  In region II, the wave function becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5b0f01a4-6713-450e-9b4e-618b1287709c">
-<span class="eqno">(6.57)<a class="headerlink" href="#equation-5b0f01a4-6713-450e-9b4e-618b1287709c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5272d255-f4b5-42b6-a1b8-f93f2ccc3a0b">
+<span class="eqno">(6.57)<a class="headerlink" href="#equation-5272d255-f4b5-42b6-a1b8-f93f2ccc3a0b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_{II}(x) = Ce^{\kappa x} + De^{-\kappa x},\quad \text{where } \kappa = \sqrt{\frac{2m(V_o-E)}{\hbar^2}}.
 \end{align}\]</div>
 <p>The parameter <span class="math notranslate nohighlight">\(\kappa\)</span> is a positive, real number because <span class="math notranslate nohighlight">\(V_o &gt; E\)</span>.  The application of boundary conditions and a lot of tedious algebra relate the coefficients of the wave functions.</p>
 <p>The equations for the reflection and transmission probabilities are unchanged, but the results will be modified by replacing <span class="math notranslate nohighlight">\(ik_{II}\rightarrow \kappa\)</span>.  <strong>Tunneling</strong> is the effect where the particle penetrates the barrier and emerges on the other side.  The transmission probability is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3b923fae-4332-463a-a99b-0de3d3de3f2b">
-<span class="eqno">(6.58)<a class="headerlink" href="#equation-3b923fae-4332-463a-a99b-0de3d3de3f2b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6ae3b660-6e9a-4fe2-a135-6d372eecdd9f">
+<span class="eqno">(6.58)<a class="headerlink" href="#equation-6ae3b660-6e9a-4fe2-a135-6d372eecdd9f" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \left[ 1 + \frac{V_o^2 \sinh^2(kL)}{4E(V_o-E)}\right]^{-1}.
 \end{align}\]</div>
 <p>The only difference from the previous transmission coefficient is the replacement of sine with hyperbolic sine (<span class="math notranslate nohighlight">\(\sinh\)</span>).  When <span class="math notranslate nohighlight">\(kL \gg 1\)</span> the transmission probability reduces to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ebfa2747-a33f-49b6-a20a-0584921f6d88">
-<span class="eqno">(6.59)<a class="headerlink" href="#equation-ebfa2747-a33f-49b6-a20a-0584921f6d88" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7d2f4bbb-937d-416d-90c9-a2fa8ea3ea73">
+<span class="eqno">(6.59)<a class="headerlink" href="#equation-7d2f4bbb-937d-416d-90c9-a2fa8ea3ea73" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \frac{16E}{V_o}\left(1 -\frac{E}{V_o}\right)e^{-2\kappa L}.
 \end{align}\]</div>
 <p>Tunneling can be understood using the uncertainty principle, where inside the barrier the wave function <span class="math notranslate nohighlight">\(\psi_{II}\)</span> is dominated by the <span class="math notranslate nohighlight">\(e^{-\kappa x}\)</span> term, and the probability density <span class="math notranslate nohighlight">\(|\psi_{II}|^2 \approx e^{-2\kappa x}\)</span>.  Over a small interval <span class="math notranslate nohighlight">\(\Delta x = 1/\kappa\)</span>, the probability density of observing the particle has decreased substantially (<span class="math notranslate nohighlight">\(e^{-2} \approx 0.14\)</span>).  The uncertainty in the momentum is <span class="math notranslate nohighlight">\(\Delta p \geq \hbar/\Delta x = \hbar \kappa\)</span>.  The minimum kinetic energy must be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-39dc81f2-c722-4e10-824e-2871b2d664d7">
-<span class="eqno">(6.60)<a class="headerlink" href="#equation-39dc81f2-c722-4e10-824e-2871b2d664d7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-67d0e527-5a90-4215-9541-dac31c25e2c1">
+<span class="eqno">(6.60)<a class="headerlink" href="#equation-67d0e527-5a90-4215-9541-dac31c25e2c1" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_{\rm min} = \frac{(\Delta p)^2}{2m} = \frac{\pi^2 \kappa^2}{2m} = V_o - E.
 \end{align}\]</div>
 <p>The violation allowed by the uncertainty principle is exactly equal to the <em>negative</em> kinetic energy required.  The particle is allowed by quantum mechanics and the uncertainty principle to penetrate into a classically forbidden region.</p>
@@ -2070,16 +2080,16 @@ T = \left[\frac{1 + (1.602 \times 10^{-18}\ {\rm J})\sinh^2(9.2)}{4(8 \times 10^
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">m_e</span><span class="p">,</span> <span class="n">eV</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">hbar</span><span class="p">,</span> <span class="n">m_e</span><span class="p">,</span> <span class="n">eV</span>
 
-<span class="k">def</span> <span class="nf">get_kappa</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">E</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_kappa</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">E</span><span class="p">):</span>
     <span class="c1">#calculate the parameter kappa</span>
     <span class="c1">#m = mass of particle</span>
     <span class="c1">#V_o = height of potential barrier</span>
     <span class="c1">#E = kinetic energy of particle</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="p">(</span><span class="n">V_o</span><span class="o">-</span><span class="n">E</span><span class="p">))</span><span class="o">/</span><span class="n">hbar</span>
 
-<span class="k">def</span> <span class="nf">Transmission_coeff</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">E</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Transmission_coeff</span><span class="p">(</span><span class="n">kappa</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">V_o</span><span class="p">,</span><span class="n">E</span><span class="p">):</span>
     <span class="n">T_inv</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">+</span> <span class="n">V_o</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sinh</span><span class="p">(</span><span class="n">kappa</span><span class="o">*</span><span class="n">L</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">E</span><span class="o">*</span><span class="p">(</span><span class="n">V_o</span><span class="o">-</span><span class="n">E</span><span class="p">))</span>
     <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="n">T_inv</span>
 
@@ -2264,7 +2274,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

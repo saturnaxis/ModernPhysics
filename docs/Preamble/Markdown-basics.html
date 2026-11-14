@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction to Markdown &#8212; PHYS2700 Modern Physics</title>
+    <title>Introduction to Markdown &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Preamble/Markdown-basics';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Homework Assignments" href="HW_template.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -193,7 +203,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../home.html">
-                    PHYS2700: Modern Physics
+                    PHYS 321: Modern Physics
                 </a>
             </li>
         </ul>
@@ -202,7 +212,6 @@
 <li class="toctree-l1"><a class="reference internal" href="who-for.html">Who are these notes for?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python-basics.html">Introduction to Python</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to Markdown</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="HW_template.html">Homework Assignments</a></li>
 
 </ul>
@@ -488,40 +497,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction to Markdown</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-markdown">What is Markdown?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-markdown">Why Use Markdown?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-physics-in-a-notebook">Writing physics in a notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-and-rendering-text-cells">Editing and rendering text cells</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#headings-and-organization">Headings and organization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraphs-and-line-breaks">Paragraphs and line breaks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emphasis-and-problem-statements">Emphasis and problem statements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links-and-source-credit">Links and source credit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-mathematics-with-latex">Writing mathematics with LaTeX</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-mathematical-notation">Useful mathematical notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations-with-several-lines">Equations with several lines</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-shown-as-text-versus-executable-code">Code shown as text versus executable code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#small-tables-and-figures">Small tables and figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterbook-features-and-notebook-portability">JupyterBook features and notebook portability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-and-final-checks">Practice and final checks</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-syntax">Basic Syntax</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-headings">Section Headings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-best-practices">Heading Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraph-and-line-break-best-practices">Paragraph and Line Break Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#font-typesetting">Font Typesetting</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#font-typesetting-best-practices">Font Typesetting Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blockquotes">Blockquotes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockquotes-best-practices">Blockquotes Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-best-practices">Lists Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">Links</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-environment-with-latex">Math Environment with LaTeX</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -534,118 +526,269 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-markdown">
 <h1>Introduction to Markdown<a class="headerlink" href="#introduction-to-markdown" title="Link to this heading">#</a></h1>
-<section id="what-is-markdown">
-<h2>What is Markdown?<a class="headerlink" href="#what-is-markdown" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://www.markdownguide.org/">Markdown</a> is a lightweight markup language, where you can use simple formatting elements and the <em>LaTeX</em> math environments to generate elegant-looking notes that can be converted to HTML or pdf.  Markdown is different than a typical text editor because it does not show the formatting on the fly (i.e., a <a class="reference external" href="https://en.wikipedia.org/wiki/WYSIWYG">WSIWYG</a> editor).  Instead it allows for simple text commands to stand for formatting elements and implements them on “compilation”.  However, more complex markup from <code class="docutils literal notranslate"><span class="pre">HTML</span></code> can be used too.</p>
-<section id="why-use-markdown">
-<h3>Why Use Markdown?<a class="headerlink" href="#why-use-markdown" title="Link to this heading">#</a></h3>
-<p>There are several reasons to use markdown, which make it the more convenient choice over a WSIWYG editor (e.g., MS Word). For example,</p>
-<ul class="simple">
-<li><p>Markdown can be used for everything (e.g., websites, documents, notes, books, etc.).</p></li>
-<li><p>Markdown is how we include standard text alongside code within Jupyter notebooks.  Jupyter notebooks use cells like Mathematica or Matlab, where the cells can contain python or Markdown.  This documentation is developed in a Jupyter notebook with Markdown.</p></li>
-<li><p>Markdown is platform independent. PC, Linux, and Mac users can finally live in harmony!</p></li>
-<li><p>Markdown allows for <em>LaTeX</em> in-line math commands (e.g., <span class="math notranslate nohighlight">\(y=mx+b\)</span> or <span class="math notranslate nohighlight">\(\mathbf{F} = m \frac{d^2\mathbf{x}}{dt^2}\)</span>), which can be extremely useful for writing up class notes or homework assignments.</p></li>
-<li><p>Markdown makes linking to other webpages easy.</p></li>
-</ul>
-<p>Visit the Markdown Guide’s <a class="reference external" href="https://www.markdownguide.org/getting-started/">getting started</a> page for more details.</p>
+<section id="writing-physics-in-a-notebook">
+<h2>Writing physics in a notebook<a class="headerlink" href="#writing-physics-in-a-notebook" title="Link to this heading">#</a></h2>
+<p>Markdown uses simple text markers to organize and format writing. In a Jupyter notebook, Markdown cells hold explanations, headings, links, and mathematical notation, while code cells hold executable Python. Google Colab calls Markdown cells <strong>text cells</strong>. Rendering a text cell displays the formatted version of what you wrote; it does not require compiling a separate document.</p>
+<p>For this course, these tools let you present an argument that combines prose, equations, calculations, and figures. Write for a reader who needs to understand how you reached your result—including <strong>future-you</strong>, reviewing the material before an exam.</p>
+<p>The <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/HW_template.html">Homework Assignments</a> page defines the required submission format and explains how an introduction, method, results and discussion, and conclusion contribute to a solution. Use this guide as a reference for putting that writing into a notebook. You do not need to memorize every formatting command before beginning.</p>
 </section>
+<section id="editing-and-rendering-text-cells">
+<h2>Editing and rendering text cells<a class="headerlink" href="#editing-and-rendering-text-cells" title="Link to this heading">#</a></h2>
+<p>Open a text cell in editing mode to see its Markdown source. Edit the text, then finish editing to inspect the rendered result. In Colab, double-clicking a rendered text cell opens its editor; Shift+Enter renders the cell and moves to the next one. Code belongs in a code cell, where it can be executed.</p>
+<p>The shaded source examples throughout this guide show <strong>what to type or copy</strong>. Their surrounding triple backticks mark a code block in this tutorial; do not copy those fences when you want the enclosed Markdown to render as ordinary homework text.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Work smart, not hard!</strong> Use the rocket ship launch menu on the relevant course chapter page to open its notebook in Google Colab. Open the cell containing the homework question and copy the question directly from its Markdown source into your own notebook. Preserve the equations and part labels, then apply the bold blockquote format below. You can also inspect an equation already presented in the course text and reuse its LaTeX structure in your own analysis. Do not spend time searching for how to typeset an equation when its source is already available. Adapt the notation to your problem and explain your own reasoning; see the portability guidance below for MyST commands to leave out.</p>
+</div>
+<p>Save your own notebook copy in Google Drive before working, and use <strong>Ctrl+S</strong> frequently (Command+S on a Mac). Check that the save has completed.</p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="basic-syntax">
-<h1>Basic Syntax<a class="headerlink" href="#basic-syntax" title="Link to this heading">#</a></h1>
-<section id="section-headings">
-<h2>Section Headings<a class="headerlink" href="#section-headings" title="Link to this heading">#</a></h2>
-<p>To create a section heading, use the # symbol as the first character on a line, followed by a space, and then the word (or phrase) that you need for the section heading.  To create sublevels for the section heading, just add another # sign that corresponds to the level.  For example, the section headings rendered above are given in Markdown as,</p>
-<p><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Basic</span> <span class="pre">Syntax</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">Section</span> <span class="pre">Headings</span></code></p>
-<section id="heading-best-practices">
-<h3>Heading Best Practices<a class="headerlink" href="#heading-best-practices" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Include a space between the # and the words for the section heading.</p></li>
-<li><p>Put blank lines before and after a heading to ensure compatibility.</p></li>
-</ul>
-</section>
+<section id="headings-and-organization">
+<h2>Headings and organization<a class="headerlink" href="#headings-and-organization" title="Link to this heading">#</a></h2>
+<p>Begin a heading with one or more <code class="docutils literal notranslate"><span class="pre">#</span></code> characters followed by a space. The number of characters gives its level. For a homework submission, use one top-level heading for the assignment and a second-level heading for each problem:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># PHYS 321 — Chapter 02</span>
+
+<span class="gu">## Problem 1</span>
+
+<span class="gu">## Problem 2</span>
+</pre></div>
+</div>
+<p>Use <code class="docutils literal notranslate"><span class="pre">###</span></code> for a subsection only when it improves navigation through a longer investigation. The four parts of the scientific argument can also appear as connected paragraphs without explicit headings. Follow the length and content guidance in the homework template.</p>
+<p>Leave a blank line before and after headings. Keep heading levels consistent rather than choosing them simply to change font size.</p>
 </section>
 <section id="paragraphs-and-line-breaks">
-<h2>Paragraphs and Line Breaks<a class="headerlink" href="#paragraphs-and-line-breaks" title="Link to this heading">#</a></h2>
-<p>Paragraphs are rendered as blocks of text that are separated by a blank line.  The HTML paragraph open tag <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code> can also be used, but it needs to have the paragraph close tag <code class="docutils literal notranslate"><span class="pre">&lt;/p&gt;</span></code> as well.</p>
-<p>To create a line break, end a line with two or more spaces followed by a return.  The HTML line break tag <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code> can be used for a single line break.</p>
-<section id="paragraph-and-line-break-best-practices">
-<h3>Paragraph and Line Break Best Practices<a class="headerlink" href="#paragraph-and-line-break-best-practices" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Keep your lines left-aligned.</p></li>
-<li><p>Don’t indent paragraphs with spaces or tabs.  If you <em>need</em> to indent a paragraph use the HTML non-breaking space <code class="docutils literal notranslate"><span class="pre">&amp;nbsp;</span></code> four times to mimic an tab indent.</p></li>
-<li><p>Use either two trailing whites spaces or the <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code> HTML tag at the end of a line for the broadest compatibility.</p></li>
-</ul>
+<h2>Paragraphs and line breaks<a class="headerlink" href="#paragraphs-and-line-breaks" title="Link to this heading">#</a></h2>
+<p>Separate paragraphs with a blank line. A single line break in the source usually remains part of the same rendered paragraph.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>The observers assign different velocities to the particle. We need to determine whether they also measure different accelerations.
+
+A Galilean transformation relates the two descriptions and provides a way to compare them.
+</pre></div>
+</div>
+<p>For normal scientific writing, paragraph breaks are more useful than forced line breaks. If you need a line break within one paragraph, such as between lines of a short address, end the line with two spaces before pressing Enter, or use <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code>.</p>
+<p>Keep ordinary paragraphs left-aligned in the source. Do not use repeated spaces, tabs, or <code class="docutils literal notranslate"><span class="pre">&amp;nbsp;</span></code> to create paragraph indents: leading indentation can make prose appear as code. Let the notebook handle line wrapping.</p>
 </section>
-</section>
-<section id="font-typesetting">
-<h2>Font Typesetting<a class="headerlink" href="#font-typesetting" title="Link to this heading">#</a></h2>
-<p>Sometimes you might want to add emphasis so that a particular line or phrase <em>pops</em> out.  Markdown uses a single <code class="docutils literal notranslate"><span class="pre">*</span></code> before and after a word (or phrase) to indicate italics and a <code class="docutils literal notranslate"><span class="pre">**</span></code> to indicate bold.  If the text is <em><strong>really important</strong></em> with both bold and italics, then a <code class="docutils literal notranslate"><span class="pre">***</span></code> can be used.</p>
-<section id="font-typesetting-best-practices">
-<h3>Font Typesetting Best Practices<a class="headerlink" href="#font-typesetting-best-practices" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Single, double, and triple underscores can be used for italics, bold, and bold-italics, respectively. But compatibility not all Markdown applications agree on this convention.</p></li>
-</ul>
-</section>
-</section>
-<section id="blockquotes">
-<h2>Blockquotes<a class="headerlink" href="#blockquotes" title="Link to this heading">#</a></h2>
-<p>Blockquotes are sometimes necessary to emphasize a particular section or give it a distinctive look.  The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> character at the beginning of a line indicates a blockquote, where the number  <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> characters corresponds to the nesting of the blockquote (i.e., like the section headings).  Blockqoutes can contain other formatted elements (e.g., italics or bold).</p>
+<section id="emphasis-and-problem-statements">
+<h2>Emphasis and problem statements<a class="headerlink" href="#emphasis-and-problem-statements" title="Link to this heading">#</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">*italics*</span></code> for italics, <code class="docutils literal notranslate"><span class="pre">**bold**</span></code> for bold, and <code class="docutils literal notranslate"><span class="pre">***both***</span></code> for combined emphasis. Use emphasis sparingly so that the important information remains easy to find. <strong>Conclusions do not require italics.</strong></p>
+<p>For homework, put the problem statement in <strong>bold inside a blockquote</strong>. Start each quoted line with <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> and a space:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">**Show that the form of Newton&#39;s second law is invariant under a Galilean transformation.**</span>
+</pre></div>
+</div>
+<p>This renders as:</p>
 <blockquote>
-<div><p>A <em>single</em> blockquote can be good to set some text apart.</p>
-<blockquote>
-<div><p>A <strong>subsection</strong> of a blockquote is just as easy.</p>
+<div><p><strong>Show that the form of Newton’s second law is invariant under a Galilean transformation.</strong></p>
 </div></blockquote>
-</div></blockquote>
-<section id="blockquotes-best-practices">
-<h3>Blockquotes Best Practices<a class="headerlink" href="#blockquotes-best-practices" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>For compatibility, put blank lines before and after blockquotes.</p></li>
-</ul>
-</section>
+<p>For a multipart question, retain the original labels. Use a line containing only <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> to separate quoted paragraphs:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">**A photon has frequency $\nu$.**</span>
+<span class="k">&gt;</span>
+<span class="ge">&gt; **(a) Express its energy in terms of $\nu$.**</span>
+<span class="k">&gt;</span>
+<span class="ge">&gt; **(b) Determine how the energy changes if the frequency doubles.**</span>
+</pre></div>
+</div>
+<p>Leave a blank line after the blockquote, then begin your own explanation without <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>. Ordinary prose should not inherit the bold formatting of the question. Mathematical symbols inside a bold statement are still formatted by the math renderer and may not appear bold.</p>
+<p>Blockquotes can be nested with <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code>, but that extra level is usually unnecessary for homework. Reserve the blockquote treatment for the problem statement or an actual quotation.</p>
 </section>
 <section id="lists">
 <h2>Lists<a class="headerlink" href="#lists" title="Link to this heading">#</a></h2>
-<p>To create items in a list, you can use either numbers or bullets.  For <em>numbers</em>, simply start a line with a number, followed by a period, then a space, and finally the text item.  Bullets follow a similar syntax, but with <code class="docutils literal notranslate"><span class="pre">-</span></code> and a space.</p>
-<ol class="arabic">
-<li><p>First layer</p>
-<p>1.1 Use 4 spaces for the second layer</p>
-</li>
-<li><p>Second item</p></li>
-</ol>
-<ul class="simple">
-<li><p>First layer</p>
-<ul>
-<li><p>Second layer</p>
-<ul>
-<li><p>Third layer</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<section id="lists-best-practices">
-<h3>Lists Best Practices<a class="headerlink" href="#lists-best-practices" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Use number dot (1.) format for the best compatibility.</p></li>
-<li><p>Other characters (<code class="docutils literal notranslate"><span class="pre">*</span></code> or <code class="docutils literal notranslate"><span class="pre">+</span></code>) can be used for bullet lists.  Pick one and be consistent.</p></li>
-</ul>
+<p>Use a numbered list when order matters and a bulleted list for parallel items. Leave a blank line before and after a list.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">1.</span> Define the reference frames.
+<span class="k">2.</span> Transform the particle&#39;s acceleration.
+<span class="k">3.</span> Compare the equations of motion.
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>State the assumptions.
+<span class="k">-</span><span class="w"> </span>Identify the quantities being compared.
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>Distinguish the frame velocity from the particle velocity.
+<span class="k">-</span><span class="w"> </span>Interpret the result.
+</pre></div>
+</div>
+<p>Indent a nested item under its parent, as shown above. A nested numbered list uses ordinary entries such as <code class="docutils literal notranslate"><span class="pre">1.</span></code> and <code class="docutils literal notranslate"><span class="pre">2.</span></code> at the appropriate indentation; typing <code class="docutils literal notranslate"><span class="pre">1.1</span></code> does not automatically create a numbered sublist.</p>
+<p>Lists work well for assumptions or procedural summaries. Develop your physical argument in complete sentences and connected paragraphs rather than replacing the explanation with a list of equations or fragments.</p>
+</section>
+<section id="links-and-source-credit">
+<h2>Links and source credit<a class="headerlink" href="#links-and-source-credit" title="Link to this heading">#</a></h2>
+<p>Put descriptive link text in square brackets and the destination immediately afterward in parentheses:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>[<span class="nt">PHYS 321 course notes</span>](<span class="na">https://saturnaxis.github.io/ModernPhysics/home.html</span>)
+</pre></div>
+</div>
+<p><a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/home.html">PHYS 321 course notes</a></p>
+<p>A link helps readers reach a source, but explain what you used from that source. Credit externally obtained figures, data, or explanations where they appear. A literature review is not required for ordinary homework.</p>
+<p>Use <strong>absolute web links</strong> for all links to other pages, including pages within this course. Copy the full published URL beginning with <code class="docutils literal notranslate"><span class="pre">https://</span></code>, rather than linking to a relative notebook or HTML filename. For example:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>[<span class="nt">Homework Assignments</span>](<span class="na">https://saturnaxis.github.io/ModernPhysics/Preamble/HW_template.html</span>)
+</pre></div>
+</div>
+<p>This convention keeps links usable from the course website and a separate homework notebook and avoids relative-link warnings in the course book build.</p>
+</section>
+<section id="writing-mathematics-with-latex">
+<h2>Writing mathematics with LaTeX<a class="headerlink" href="#writing-mathematics-with-latex" title="Link to this heading">#</a></h2>
+<p>Notebook Markdown supports LaTeX-style mathematical notation. Put a short expression between single dollar signs to place it within a sentence:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>A photon of frequency $\nu$ has energy $E=h\nu$, where $h$ is Planck&#39;s constant.
+</pre></div>
+</div>
+<p>A photon of frequency <span class="math notranslate nohighlight">\(\nu\)</span> has energy <span class="math notranslate nohighlight">\(E=h\nu\)</span>, where <span class="math notranslate nohighlight">\(h\)</span> is Planck’s constant.</p>
+<p>Put a longer equation between pairs of dollar signs to display it on its own line. Leave blank lines around the display, and make the equation part of a grammatical sentence:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>The Lorentz factor is
+
+$$
+\gamma = \frac{1}{\sqrt{1-v^2/c^2}},
+$$
+
+where $v$ is the relative speed and $c$ is the speed of light.
+</pre></div>
+</div>
+<p>The Lorentz factor is</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{1}{\sqrt{1-v^2/c^2}},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> is the relative speed and <span class="math notranslate nohighlight">\(c\)</span> is the speed of light.</p>
+<p>Match every opening math delimiter with its closing delimiter. Within math, use braces to group a numerator, denominator, exponent, or subscript containing more than one character. For example, <code class="docutils literal notranslate"><span class="pre">x^{12}</span></code> places both digits in the exponent, whereas <code class="docutils literal notranslate"><span class="pre">x^12</span></code> does not.</p>
+<section id="useful-mathematical-notation">
+<h3>Useful mathematical notation<a class="headerlink" href="#useful-mathematical-notation" title="Link to this heading">#</a></h3>
+<p>The following examples are written inside math delimiters when used in a notebook:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Purpose</p></th>
+<th class="head"><p>LaTeX source</p></th>
+<th class="head"><p>Rendered expression</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Subscript and exponent</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">E_n</span></code>, <code class="docutils literal notranslate"><span class="pre">x^{12}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(E_n\)</span>, <span class="math notranslate nohighlight">\(x^{12}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Fraction</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\frac{p^2}{2m}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{p^2}{2m}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Square root</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\sqrt{x^2+y^2}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sqrt{x^2+y^2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Greek symbols</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\lambda</span></code>, <code class="docutils literal notranslate"><span class="pre">\nu</span></code>, <code class="docutils literal notranslate"><span class="pre">\psi</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(\nu\)</span>, <span class="math notranslate nohighlight">\(\psi\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Vector</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\vec{p}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vec{p}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Derivative</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\frac{d^2x}{dt^2}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{d^2x}{dt^2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Integral</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\int_0^L</span> <span class="pre">f(x)\,dx</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\int_0^L f(x)\,dx\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Absolute value</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\lvert\psi\rvert^2</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lvert\psi\rvert^2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Scientific notation</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3.31\times10^{-19}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(3.31\times10^{-19}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Upright units and spacing</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5.00\,{\rm</span> <span class="pre">eV}</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(5.00\,{\rm eV}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Use upright text for units and a small space between a value and its unit. For example, <code class="docutils literal notranslate"><span class="pre">$v=2.50\times10^6\,{\rm</span> <span class="pre">m/s}$</span></code> renders as <span class="math notranslate nohighlight">\(v=2.50\times10^6\,{\rm m/s}\)</span>. Define symbols in the surrounding prose; typesetting an equation does not explain its meaning.</p>
+</section>
+<section id="equations-with-several-lines">
+<h3>Equations with several lines<a class="headerlink" href="#equations-with-several-lines" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">\begin{align}</span> <span class="pre">...</span> <span class="pre">\end{align}</span></code> environment structures a multiline mathematical display. The <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> marks the alignment position, usually before an equals sign, and <code class="docutils literal notranslate"><span class="pre">\\</span></code> ends a line. Inspecting an existing course equation is a useful way to learn this structure:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
+x&#39; <span class="nb">&amp;</span>= x-Ut, <span class="k">\\</span>
+<span class="k">\frac</span><span class="nb">{</span>dx&#39;<span class="nb">}{</span>dt<span class="nb">}</span> <span class="nb">&amp;</span>= <span class="k">\frac</span><span class="nb">{</span>dx<span class="nb">}{</span>dt<span class="nb">}</span>-U.
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="amsmath math notranslate nohighlight" id="equation-91a309f6-9525-4e10-b887-eaea2e599734">
+<span class="eqno">(1)<a class="headerlink" href="#equation-91a309f6-9525-4e10-b887-eaea2e599734" title="Permalink to this equation">#</a></span>\[\begin{align}
+x' &amp;= x-Ut, \\
+\frac{dx'}{dt} &amp;= \frac{dx}{dt}-U.
+\end{align}\]</div>
+<p>Here, the second line assumes that <span class="math notranslate nohighlight">\(U\)</span> is constant and the frames share the same time coordinate. The <code class="docutils literal notranslate"><span class="pre">align</span></code> environment already defines a mathematical display; it does not need an additional pair of dollar-sign delimiters. An alternative is <code class="docutils literal notranslate"><span class="pre">\begin{aligned}</span> <span class="pre">...</span> <span class="pre">\end{aligned}</span></code> inside a <code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">...</span> <span class="pre">$$</span></code> display, as used in some notebook examples. Keep the opening and closing environment names matched.</p>
+<p>Use the rocket ship to open a chapter in Colab, enter the relevant text cell’s editing mode, and inspect the source of a similar equation. Reuse the arrangement of fractions, derivatives, alignment marks, and line breaks while adapting the quantities to your solution. Use separate displays with explanatory sentences when a derivation requires reasoning between steps.</p>
 </section>
 </section>
-<section id="links">
-<h2>Links<a class="headerlink" href="#links" title="Link to this heading">#</a></h2>
-<p>To create a link with a word, enclose the link text in brackets (e.g., <code class="docutils literal notranslate"><span class="pre">[Modern</span> <span class="pre">Astrophysics]</span></code>) and then follow it immediately with the URL in parentheses (e.g., https://saturnaxis.github.io/ModernAstro/home.html).  The rendered output looks like this:</p>
-<p><a class="reference external" href="https://saturnaxis.github.io/ModernAstro/home.html">Modern Astrophysics</a></p>
+<section id="code-shown-as-text-versus-executable-code">
+<h2>Code shown as text versus executable code<a class="headerlink" href="#code-shown-as-text-versus-executable-code" title="Link to this heading">#</a></h2>
+<p>Surround a short code expression with backticks when discussing it in a sentence. For example, writing <code class="docutils literal notranslate"><span class="pre">`energy</span> <span class="pre">=</span> <span class="pre">h</span> <span class="pre">*</span> <span class="pre">frequency`</span></code> displays <code class="docutils literal notranslate"><span class="pre">energy</span> <span class="pre">=</span> <span class="pre">h</span> <span class="pre">*</span> <span class="pre">frequency</span></code>.</p>
+<p>To show several lines without executing them, use a fenced code block. The example below includes the opening and closing triple backticks:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">```python</span>
+<span class="n">energy</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">frequency</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+<span class="sb">```</span>
+</pre></div>
+</div>
+<p>A fenced block in a text cell <strong>displays code but does not run it</strong>. To perform the calculation, place the Python in a code cell and define <code class="docutils literal notranslate"><span class="pre">h</span></code> and <code class="docutils literal notranslate"><span class="pre">frequency</span></code> before using them. Keep the physical explanation in nearby text cells, and interpret the resulting output.</p>
+<p>LaTeX math and Python use different syntax. A typeset equation might contain <code class="docutils literal notranslate"><span class="pre">h\nu</span></code> or <code class="docutils literal notranslate"><span class="pre">x^2</span></code>; the corresponding Python uses explicit multiplication, such as <code class="docutils literal notranslate"><span class="pre">h</span> <span class="pre">*</span> <span class="pre">frequency</span></code>, and <code class="docutils literal notranslate"><span class="pre">x**2</span></code> for the square. Do not paste LaTeX commands into a Python calculation.</p>
 </section>
-<section id="math-environment-with-latex">
-<h2>Math Environment with LaTeX<a class="headerlink" href="#math-environment-with-latex" title="Link to this heading">#</a></h2>
-<p>A LaTeX <a class="reference external" href="https://joshua.smcvt.edu/undergradmath/undergradmath.pdf">math guide for undergrads</a> is available from the Mathematics Department of Saint Michael’s College, VT.  This guide can be useful as a quick reference.</p>
-<p>LaTeX math commands can be rendered with a single <code class="docutils literal notranslate"><span class="pre">$</span></code> in the in-line format that you may already know.  To write math equations on a separate line (centered), use  <code class="docutils literal notranslate"><span class="pre">$$</span></code> instead.</p>
+<section id="small-tables-and-figures">
+<h2>Small tables and figures<a class="headerlink" href="#small-tables-and-figures" title="Link to this heading">#</a></h2>
+<p>A Markdown table is useful for a few values or a concise comparison. Separate columns with <code class="docutils literal notranslate"><span class="pre">|</span></code> and add a separator row beneath the headings:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>| Quantity | Symbol | Value |
+| --- | --- | --- |
+| Photon frequency | $\nu$ | $5.00\times10^{14}\,{\rm Hz}$ |
+| Photon energy | $E$ | $3.31\times10^{-19}\,{\rm J}$ |
+</pre></div>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Quantity</p></th>
+<th class="head"><p>Symbol</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Photon frequency</p></td>
+<td><p><span class="math notranslate nohighlight">\(\nu\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(5.00\times10^{14}\,{\rm Hz}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Photon energy</p></td>
+<td><p><span class="math notranslate nohighlight">\(E\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(3.31\times10^{-19}\,{\rm J}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These example values are related by <span class="math notranslate nohighlight">\(E=h\nu\)</span>. A table presents the results compactly; the surrounding explanation should still identify the relationship and interpret the values.</p>
+<p>Keep Python-generated figures with their code output. Label axes with quantities and units, and explain what the plot shows in a nearby text cell. If you insert an external image, make sure it is visible in both the notebook and exported PDF and include its source credit. A link to a file that exists only on your computer will not make that image available to another reader.</p>
+</section>
+<section id="jupyterbook-features-and-notebook-portability">
+<h2>JupyterBook features and notebook portability<a class="headerlink" href="#jupyterbook-features-and-notebook-portability" title="Link to this heading">#</a></h2>
+<p>The course website uses <strong>MyST</strong>, an extension of Markdown that supports JupyterBook features such as note and tip admonitions. For example, the source of a course-page tip can look like this:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{tip}
+Check the units before interpreting a numerical answer.
+```
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some commands in a chapter notebook format the JupyterBook webpage rather than your homework. Admonitions such as <code class="docutils literal notranslate"><span class="pre">{note}</span></code> and <code class="docutils literal notranslate"><span class="pre">{tip}</span></code>, equation directives such as <code class="docutils literal notranslate"><span class="pre">{math}</span></code>, their options such as <code class="docutils literal notranslate"><span class="pre">:label:</span></code>, and MyST cross-references such as <code class="docutils literal notranslate"><span class="pre">{eq}</span></code> are processed when the website is built and may not render in Colab. Copy the useful question text or LaTeX equation content, not these webpage wrappers. The colored labels in the homework example are also instructional aids and should be omitted from submissions.</p>
+</div>
+<p>For an equation inside a fenced <code class="docutils literal notranslate"><span class="pre">{math}</span></code> directive, copy only its mathematical content. Omit the directive fence and options, then enclose a single equation in <code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">...</span> <span class="pre">$$</span></code> or organize a multiline equation with the <code class="docutils literal notranslate"><span class="pre">align</span></code> environment shown above. A webpage equation label or cross-reference is not part of the physical equation. Render the adapted cell to check that the notation displays correctly.</p>
+<p>Notes and tips should highlight occasional guidance. They should not replace the main explanation or appear as a succession of boxes.</p>
+</section>
+<section id="practice-and-final-checks">
+<h2>Practice and final checks<a class="headerlink" href="#practice-and-final-checks" title="Link to this heading">#</a></h2>
+<p>Create a short practice notebook with a chapter heading, a bold blockquoted question, a paragraph containing inline math, and a displayed equation. Render the cells and compare their appearance with the source. This small exercise prepares you to format your own analysis; it is not an additional submission unless assigned.</p>
+<p>Before exporting your homework, check the following:</p>
 <ul class="simple">
-<li><p>Similar to other best practices, be sure to have 1 blank line before and after the equation.</p></li>
-<li><p>Also make sure that you end your equation with an appropriate <code class="docutils literal notranslate"><span class="pre">$</span></code> character.</p></li>
+<li><p>The question is bold and blockquoted, while your explanation is ordinary text.</p></li>
+<li><p>Heading levels, paragraph breaks, and mathematical notation are consistent.</p></li>
+<li><p>The writing satisfies the content and minimum-length guidance in the <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/HW_template.html">homework template</a>.</p></li>
+<li><p>Code has been run in order, and its output agrees with the accompanying explanation.</p></li>
+<li><p>All cell editors are closed and text cells are rendered. Do not print an editing view with Markdown source and a partial preview in two columns, or collapse content needed in the PDF.</p></li>
+<li><p>The saved PDF contains readable equations, figures, and complete text. Submit it together with the matching notebook, using a two-digit chapter number, such as <code class="docutils literal notranslate"><span class="pre">PHYS321_Chpt02_Quarles.ipynb</span></code> and <code class="docutils literal notranslate"><span class="pre">PHYS321_Chpt02_Quarles.pdf</span></code>.</p></li>
 </ul>
+<p>For additional syntax examples, consult the <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html">Jupyter Markdown documentation</a>, the <a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">original Markdown syntax reference</a>, and the MyST references for <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/math.html">mathematics</a> and <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/admonitions.html">admonitions</a>.</p>
 </section>
 </section>
 
@@ -713,40 +856,23 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction to Markdown</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-markdown">What is Markdown?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-markdown">Why Use Markdown?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-physics-in-a-notebook">Writing physics in a notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-and-rendering-text-cells">Editing and rendering text cells</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#headings-and-organization">Headings and organization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraphs-and-line-breaks">Paragraphs and line breaks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emphasis-and-problem-statements">Emphasis and problem statements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links-and-source-credit">Links and source credit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-mathematics-with-latex">Writing mathematics with LaTeX</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-mathematical-notation">Useful mathematical notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations-with-several-lines">Equations with several lines</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-shown-as-text-versus-executable-code">Code shown as text versus executable code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#small-tables-and-figures">Small tables and figures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterbook-features-and-notebook-portability">JupyterBook features and notebook portability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-and-final-checks">Practice and final checks</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-syntax">Basic Syntax</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-headings">Section Headings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-best-practices">Heading Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraph-and-line-break-best-practices">Paragraph and Line Break Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#font-typesetting">Font Typesetting</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#font-typesetting-best-practices">Font Typesetting Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blockquotes">Blockquotes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockquotes-best-practices">Blockquotes Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-best-practices">Lists Best Practices</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">Links</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-environment-with-latex">Math Environment with LaTeX</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
@@ -770,7 +896,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

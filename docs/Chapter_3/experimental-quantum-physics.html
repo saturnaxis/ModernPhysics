@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3. Experimental Quantum Physics &#8212; PHYS2700 Modern Physics</title>
+    <title>3. Experimental Quantum Physics &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_3/experimental-quantum-physics';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Structure of the Atom" href="../Chapter_4/structure-of-the-atom.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -543,8 +553,8 @@ allowfullscreen></iframe>
 <p>Hertz performed a similar experiment, but observed an effect on the cathode rays due to the deflecting voltage.  In Hertz’s experiment, the poorer vacuum allowed the cathode rays to interact with and ionize residual gas.  Thomson found the same result at first, but improved the vacuum to obtain his final result.</p>
 </div>
 <p>Thomson’s method of measuring the ratio of the electron’s charge to mass <span class="math notranslate nohighlight">\(e/m\)</span> is now a stand technique.  With the magnetic field turned off, the electron entering the region between the plates is accelerated upward by the electric field as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1dc06820-c0e4-41ad-8a4b-3afe59c2d0a4">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-1dc06820-c0e4-41ad-8a4b-3afe59c2d0a4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c43af68d-ac44-466c-a829-326ead6f8a54">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-c43af68d-ac44-466c-a829-326ead6f8a54" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_y = ma_y = qE,
 \end{align}\]</div>
 <p>where the ratio of the electron charge <span class="math notranslate nohighlight">\(q\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span> are determined by measuring the acceleration <span class="math notranslate nohighlight">\(a_y\)</span>.  The time <span class="math notranslate nohighlight">\(t\)</span> for the electron to traverse the deflecting plates of length <span class="math notranslate nohighlight">\(\ell\)</span> is <span class="math notranslate nohighlight">\(t \approx \ell/v_o\)</span>.  The exit angle <span class="math notranslate nohighlight">\(\theta\)</span> of the electron is then given by</p>
@@ -559,8 +569,8 @@ send electrons through a region containing a magnetic field (<span class="math n
 </figcaption>
 </figure>
 <p>The ratio <span class="math notranslate nohighlight">\(q/m\)</span> can be determined if the initial velocity <span class="math notranslate nohighlight">\(v_o\)</span> is known.  The initial velocity can be determined by turning on the magnetic field and adjusting the strength of <span class="math notranslate nohighlight">\(\vec{B}\)</span> until no deflection occurs.  The condition for zero deflection is the case of equilibrium or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3ca8ebb1-c4b6-49d3-8548-d7998f774720">
-<span class="eqno">(3.3)<a class="headerlink" href="#equation-3ca8ebb1-c4b6-49d3-8548-d7998f774720" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8c7081ec-4cb5-4936-9450-eb4797401ebe">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-8c7081ec-4cb5-4936-9450-eb4797401ebe" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F} = q\vec{E} + q\vec{v} \times \vec{B} = 0,
 \end{align}\]</div>
 <p>and</p>
@@ -570,8 +580,8 @@ send electrons through a region containing a magnetic field (<span class="math n
 <div class="math notranslate nohighlight" id="equation-electron-vel">
 <span class="eqno">(3.4)<a class="headerlink" href="#equation-electron-vel" title="Link to this equation">#</a></span>\[v_x = v_o = E/B.\]</div>
 <p>We can extract the ratio <span class="math notranslate nohighlight">\(q/m\)</span> through substitution by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c7768fb3-74dc-49cb-8789-eed21174fd5d">
-<span class="eqno">(3.5)<a class="headerlink" href="#equation-c7768fb3-74dc-49cb-8789-eed21174fd5d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3ad27f9c-a90b-4c19-96be-d72eb294f6e6">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-3ad27f9c-a90b-4c19-96be-d72eb294f6e6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{q}{m} = \frac{v_o^2 \tan \theta}{E\ell} = \frac{E\tan \theta}{B^2 \ell}.
 \end{align}\]</div>
 <div class="exercise orange admonition" id="Chapter_3/experimental-quantum-physics-exercise-0">
@@ -590,7 +600,7 @@ send electrons through a region containing a magnetic field (<span class="math n
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">E_mag</span> <span class="o">=</span> <span class="mf">1.2e4</span> <span class="c1">#Electric field strength in V/m</span>
 <span class="n">B_mag</span> <span class="o">=</span> <span class="mf">8.8e-4</span> <span class="c1">#Magnetic field strength in T</span>
@@ -631,16 +641,16 @@ The charge to mass ratio is 1.8e+11 C/kg.
 <span class="eqno">(3.6)<a class="headerlink" href="#equation-air-friction" title="Link to this equation">#</a></span>\[\vec{F}_j = -b\vec{v}.\]</div>
 <p>This drag force always opposes the velocity, hence the negative sign.  The constant <span class="math notranslate nohighlight">\(b\)</span> is determined via <a class="reference external" href="https://en.wikipedia.org/wiki/Stokes%27_law">Stokes’ law</a> and is proportional to the oil drop’s radius.  Millikan showed that Stokes’ law was incorrect for small-diameter spheres due to the atomic nature of the medium, where an appropriate correction was required.  For a first-order calculation, we neglect the buoyancy of the air that produces an upward force on the drop.</p>
 <p>To suspend the oil drop at rest between the plates, the electric and gravitational forces must be balanced.  This makes the frictional force equal to zero because the oil drop’s velocity is zero.  The force balance is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8b35db65-713e-407e-8bbb-6026ffb10628">
-<span class="eqno">(3.7)<a class="headerlink" href="#equation-8b35db65-713e-407e-8bbb-6026ffb10628" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-974e925d-ef4e-4e25-9a8a-6fb06c2abd8c">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-974e925d-ef4e-4e25-9a8a-6fb06c2abd8c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{F}_E = q\vec{E}=-m\vec{g}, \quad (\text{when } v=0).
 \end{align}\]</div>
 <p>The magnitude of the electric field is <span class="math notranslate nohighlight">\(E=V/d\)</span>, which depends on the voltage <span class="math notranslate nohighlight">\(V\)</span> across large, flat plates separated by a small distance <span class="math notranslate nohighlight">\(d\)</span>.  The magnitude of the electron charge is determined as</p>
 <div class="math notranslate nohighlight" id="equation-electron-q">
 <span class="eqno">(3.8)<a class="headerlink" href="#equation-electron-q" title="Link to this equation">#</a></span>\[q = \frac{mgd}{V}.\]</div>
 <p>To calculate <span class="math notranslate nohighlight">\(q\)</span>, we need to know the mass <span class="math notranslate nohighlight">\(m\)</span> of the oil drops.  Millikan found he could determine <span class="math notranslate nohighlight">\(m\)</span> by measuring the terminal velocity of the oil drop while the electric field was off.  From Stoke’s law (or Eqn. <a class="reference internal" href="#equation-air-friction">(3.6)</a>), the radius of the oil drop is related to the terminal velocity.  Using the radius <span class="math notranslate nohighlight">\(r\)</span> and the density <span class="math notranslate nohighlight">\(\rho\)</span> of the oil, the mass of the oil can be determined by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-13640f69-c230-49cb-ab2d-63de4f305dae">
-<span class="eqno">(3.9)<a class="headerlink" href="#equation-13640f69-c230-49cb-ab2d-63de4f305dae" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-04b2a9a6-09ce-4a41-a5d3-f1fa0f53c463">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-04b2a9a6-09ce-4a41-a5d3-f1fa0f53c463" title="Permalink to this equation">#</a></span>\[\begin{align}
 m = \frac{4}{3}\pi r^3 \rho.
 \end{align}\]</div>
 <p>The oil drop can be moved up and down in the apparatus at will by adjusting the voltage magnitude and polarity.  millikan reported that he was able to observe an oil drop for up to six hours, where the drop changed its charge several times.  Millikan made 1000s of measurements using different oils and showed that there is a basic quantized electron charge.  Millikan’s value was very close to the modern value <span class="math notranslate nohighlight">\(e=1.602 \times 10^{-19}\ {\rm C}\)</span>.</p>
@@ -773,8 +783,8 @@ m = \frac{4}{3}\pi r^3 \rho.
 </div>
 </details><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
 <span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="mi">218</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">26</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">50</span><span class="o">/</span><span class="mf">256.</span><span class="p">)</span>
@@ -795,20 +805,20 @@ m = \frac{4}{3}\pi r^3 \rho.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/15a5bd6d609fab32a99ad31a6cd251d578dc716de875397ad685b4fdd8535ca7.png" src="../_images/15a5bd6d609fab32a99ad31a6cd251d578dc716de875397ad685b4fdd8535ca7.png" />
+<img alt="../_images/68958a952ce984d9fb75a2667d4f87842288fbb34d9c1cdd69c1730b1adf3767.png" src="../_images/68958a952ce984d9fb75a2667d4f87842288fbb34d9c1cdd69c1730b1adf3767.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">curve_fit</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">curve_fit</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">e</span>
 
 <span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
 <span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="mi">218</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">26</span><span class="o">/</span><span class="mf">256.</span><span class="p">,</span> <span class="mi">50</span><span class="o">/</span><span class="mf">256.</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">model</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">q0</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">model</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">q0</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">q0</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/saturnaxis/ModernPhysics/main/Chapter_3/oil_drop.csv&quot;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -840,7 +850,7 @@ m = \frac{4}{3}\pi r^3 \rho.
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The error is 10.7 percent.
 </pre></div>
 </div>
-<img alt="../_images/04be456e196b6285e9aff75a2adba4af1cd5c63372723fe54c52dc373fcb7a25.png" src="../_images/04be456e196b6285e9aff75a2adba4af1cd5c63372723fe54c52dc373fcb7a25.png" />
+<img alt="../_images/037000e063bfb9586668b124329bb0b2074121c3fbcdbff275252daef26b0eda.png" src="../_images/037000e063bfb9586668b124329bb0b2074121c3fbcdbff275252daef26b0eda.png" />
 </div>
 </div>
 </section>
@@ -884,8 +894,8 @@ m = \frac{4}{3}\pi r^3 \rho.
 <p>Wavelengths were formerly listed in units of angstroms (Å) which are named after <a class="reference external" href="https://en.wikipedia.org/wiki/Anders_Jonas_%C3%85ngstr%C3%B6m">Anders Ångstrom</a>.  Ångstrom was one of the first people to observe and measure the wavelengths of the four visible lines of hydrogen.  <span class="math notranslate nohighlight">\(1\ {\rm \unicode{x212B}} = 0.1\ {\rm nm} = 10^{-10}\ {\rm m}\)</span>.</p>
 </div>
 <p>Equation <a class="reference internal" href="#equation-balmer-series">(3.11)</a> can be rewritten as its reciprocal into the following form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e8e110de-9cbf-458e-b023-7c57462b24f0">
-<span class="eqno">(3.12)<a class="headerlink" href="#equation-e8e110de-9cbf-458e-b023-7c57462b24f0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-477c24fe-5125-499b-b517-b63af88131e3">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-477c24fe-5125-499b-b517-b63af88131e3" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{1}{\lambda} = \frac{1}{365.56\ {\rm nm}}\left(\frac{k^2 -4}{k^2}\right) = \frac{4}{365.56\ {\rm nm}}\left( \frac{1}{2^2}-\frac{1}{k^2}\right) = R_{\rm H} \left( \frac{1}{2^2}-\frac{1}{k^2}\right),
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(R_{\rm H}\)</span> represents the <em>Rydberg constant</em> (for hydrogen) and <span class="math notranslate nohighlight">\(k\)</span> is an integer.  The ratio (<span class="math notranslate nohighlight">\(4/364.56\ {\rm nm}\)</span>) is <span class="math notranslate nohighlight">\(1.0972 \times 10^7\ {\rm m^{-1}}\)</span>, where the more accurate value is <span class="math notranslate nohighlight">\(1.096776 \times 10^7\ {\rm m^{-1}}\)</span>.  <a class="reference external" href="https://en.wikipedia.org/wiki/Johannes_Rydberg">Johannes Rydberg</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Walther_Ritz">Walther Ritz</a> determined a more general empirical equation for calculating the wavelengths known as the <strong>Rydberg equation</strong>, given by</p>
@@ -968,9 +978,9 @@ k=\infty:&amp; \quad \lambda = 91.174\left(\frac{1}{3^2} - \frac{1}{\infty}\righ
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">Rydberg_wavelength</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Rydberg_wavelength</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
     <span class="c1">#Calculates the wavelength using the Rydberg equation</span>
     <span class="c1"># n = integer; denotes type of series</span>
     <span class="c1"># k = integer; denotes the kth line of a series</span>
@@ -1073,13 +1083,13 @@ Paschen: (3,infty) --&gt; 820.59 nm.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">Wien</span><span class="p">,</span> <span class="n">zero_Celsius</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">Wien</span><span class="p">,</span> <span class="n">zero_Celsius</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">T_wall</span> <span class="o">=</span> <span class="mi">1600</span> <span class="c1">#temperature of the furnace wall in ^oC</span>
 <span class="n">T_K</span> <span class="o">=</span> <span class="n">T_wall</span> <span class="o">+</span> <span class="n">zero_Celsius</span> <span class="c1"># convert temperature into K</span>
 
-<span class="k">def</span> <span class="nf">lambda_max</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">lambda_max</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
     <span class="c1">#find the peak wavelength of a material given a temperature</span>
     <span class="k">return</span> <span class="n">Wien</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="mf">1e-9</span> <span class="c1">#returns the peak wavelength (in nm)</span>
 
@@ -1121,19 +1131,19 @@ P_{\rm Sun} &amp;= (4\pi r_{Sun}^2)R(T) \\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">Wien</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">astronomical_unit</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">Wien</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">astronomical_unit</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">T_surf</span><span class="p">(</span><span class="n">l_max</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">T_surf</span><span class="p">(</span><span class="n">l_max</span><span class="p">):</span>
     <span class="c1">#determine the surface temperature given the peak wavelength l_max (in nm)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">Wien</span><span class="o">*</span><span class="mf">1e9</span><span class="p">)</span><span class="o">/</span><span class="n">l_max</span> <span class="c1">#return the surface temperature in K</span>
-<span class="k">def</span> <span class="nf">Stef_Boltz</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Stef_Boltz</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
     <span class="c1">#calculate the total power (in W/m^2) for a given temperature T</span>
     <span class="k">return</span> <span class="n">sigma</span><span class="o">*</span><span class="n">T</span><span class="o">**</span><span class="mi">4</span>
-<span class="k">def</span> <span class="nf">surf_area</span><span class="p">(</span><span class="n">R</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">surf_area</span><span class="p">(</span><span class="n">R</span><span class="p">):</span>
     <span class="c1">#calculate the surface area of a sphere of radius R (in m)</span>
     <span class="k">return</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span>
-<span class="k">def</span> <span class="nf">flux</span><span class="p">(</span><span class="n">Rad</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">d</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">flux</span><span class="p">(</span><span class="n">Rad</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">d</span><span class="p">):</span>
     <span class="c1">#calculate the flux received at a distance d</span>
     <span class="c1">#Rad = total power per unit area (in W/m^2)</span>
     <span class="c1">#R = radius of the Sun (in m)</span>
@@ -1228,19 +1238,19 @@ The total power received by the Earth per unit area is 1380 W/m^2.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">bisect</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">Wien</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">bisect</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">Wien</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">x_trans</span><span class="p">(</span><span class="n">lam</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">x_trans</span><span class="p">(</span><span class="n">lam</span><span class="p">):</span>
     <span class="c1">#get x transformation given a value for lambda (wavelength in nm)</span>
     <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="p">((</span><span class="n">lam</span><span class="o">*</span><span class="mf">1e-9</span><span class="p">)</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">Wien_constant</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Wien_constant</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c1">#calculate the constant for Wien&#39;s law</span>
     <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">lam</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">lam</span><span class="p">):</span>
     <span class="c1">#evaluate the transcendental equation </span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x_trans</span><span class="p">(</span><span class="n">lam</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span>
@@ -1261,7 +1271,7 @@ The total power received by the Earth per unit area is 1380 W/m^2.
 
 The constant for Wien&#39;s displacement law is 2.898e-03 m K.
 
-The error for Wien&#39;s displacement law constant is 6.39e-09 percent.
+The error for Wien&#39;s displacement law constant is 2.69e-13 percent.
 </pre></div>
 </div>
 </div>
@@ -1413,7 +1423,7 @@ d &amp;= \left(\frac{1\ {\rm atom}}{2.54 \times 10^{28}\ \frac{\rm atoms}{\rm m^
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">eV</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">N_A</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">eV</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">N_A</span>
 
 <span class="n">I_src</span> <span class="o">=</span> <span class="mf">1e-8</span> <span class="c1">#Instensity of light in W/m^2</span>
 <span class="n">phi_Na</span> <span class="o">=</span> <span class="mf">2.36</span><span class="o">*</span><span class="n">eV</span> <span class="c1">#work function for Na (in J)</span>
@@ -1469,18 +1479,18 @@ The time required to eject a 1 eV photoelectron from Na is 14.7 years.
 <div class="math notranslate nohighlight" id="equation-light-speed">
 <span class="eqno">(3.19)<a class="headerlink" href="#equation-light-speed" title="Link to this equation">#</a></span>\[\lambda f = c.\]</div>
 <p>Einstein proposed that light should behave with its well-known wave-like aspect and <em>light should also be considered to have a particle-like aspect</em>.  The quantum of light delivers it entire energy <span class="math notranslate nohighlight">\(hf\)</span> to a single electron in the material.  To leave the material, the struck electron must give up an amount of energy <span class="math notranslate nohighlight">\(\phi\)</span> to overcome its binding in the material.  The electron may lose some additional energy by electron interactions on its way to the surface.  Whatever remaining energy will appear as the electron’s kinetic energy as it leaves the emitter.  The conservation of energy requires that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-54608360-9159-44d3-8ed5-4e4646434e8d">
-<span class="eqno">(3.20)<a class="headerlink" href="#equation-54608360-9159-44d3-8ed5-4e4646434e8d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-87e6d060-f0c0-4e8d-8f0d-3971693ba43f">
+<span class="eqno">(3.20)<a class="headerlink" href="#equation-87e6d060-f0c0-4e8d-8f0d-3971693ba43f" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf = \phi + \text{K.E. (electron)}.
 \end{align}\]</div>
 <p>We are safe in using the nonrelativistic form of the electron’s kinetic energy <span class="math notranslate nohighlight">\((\frac{1}{2}mv^2)\)</span> because the energies involved are on the order of <span class="math notranslate nohighlight">\({\rm eV}\)</span>.  The electron’s energy will degrade as it passes through the emitter material. Experimentally, we detect the maximum value of the kinetic energy as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8b57c764-0ff4-45e0-9eb8-7c251ac461e5">
-<span class="eqno">(3.21)<a class="headerlink" href="#equation-8b57c764-0ff4-45e0-9eb8-7c251ac461e5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f26b75f1-f618-499d-8940-5f89149a9695">
+<span class="eqno">(3.21)<a class="headerlink" href="#equation-f26b75f1-f618-499d-8940-5f89149a9695" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf = \phi + \frac{1}{2}mv^2_{\rm max}.
 \end{align}\]</div>
 <p>The retarding potentials are opposing potentials needed to stop (i.e., work against) the most energetic electrons, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b9543eb5-c57d-47f2-8694-05d332ea976f">
-<span class="eqno">(3.22)<a class="headerlink" href="#equation-b9543eb5-c57d-47f2-8694-05d332ea976f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd614b5b-ecfc-420c-ad29-67af820b7406">
+<span class="eqno">(3.22)<a class="headerlink" href="#equation-cd614b5b-ecfc-420c-ad29-67af820b7406" title="Permalink to this equation">#</a></span>\[\begin{align}
 W = eV_o = \frac{1}{2}mv^2_{\rm max}.
 \end{align}\]</div>
 </section>
@@ -1498,9 +1508,9 @@ W = eV_o = \frac{1}{2}mv^2_{\rm max}.
 <p>The data available in 1905 were not sufficiently accurate enough to prove (or disprove) Einstein’s theory, where Planck and others viewed the theory with skepticism.  in 1916, Millikan confirmed Einstein’s prediction even though he set out to disprove it at the beginning of his investigation.  Millikan found the value of <span class="math notranslate nohighlight">\(h\)</span> from the slope of a line for measurements of the kinetic energy and the photon frequency (see data in <a class="reference external" href="http://hermes.ffn.ub.es/luisnavarro/nuevo_maletin/Millikan_1916_2.pdf">Table III</a>).  Millikan’s result is in good agreement with the modern value of <span class="math notranslate nohighlight">\(h\)</span> (see python code below).  Due to the success of these explanations and predictions, Einstein received the Nobel Prize in 1922.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">h</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">e</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">h</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="c1">#Values from Millikan (1916) Table III using deflections ~2-3 mm (assuming that +3.928 --&gt; 0.928 as typo)</span>
 <span class="n">Na_lam</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4339</span><span class="p">,</span><span class="mi">4047</span><span class="p">,</span><span class="mi">3650</span><span class="p">,</span><span class="mi">3126</span><span class="p">,</span><span class="mi">2535</span><span class="p">])</span><span class="o">*</span><span class="mf">1e-10</span> <span class="c1">#wavelengths in Angstroms converted to m</span>
@@ -1535,7 +1545,7 @@ W = eV_o = \frac{1}{2}mv^2_{\rm max}.
 The error in Millikan&#39;s result is 0.4 percent.
 </pre></div>
 </div>
-<img alt="../_images/787e59ebf74337bc8fb03eb1de212cf0528b5ef7f9b6b254eb044a2c50bdfeec.png" src="../_images/787e59ebf74337bc8fb03eb1de212cf0528b5ef7f9b6b254eb044a2c50bdfeec.png" />
+<img alt="../_images/abc7af166e269804ac9f534a7e8bf5143a6e304b5465777b7e6ee2857ce91650.png" src="../_images/abc7af166e269804ac9f534a7e8bf5143a6e304b5465777b7e6ee2857ce91650.png" />
 </div>
 </div>
 <p>The quantization of the electromagnetic radiation field tells us that electromagnetic radiation consists of <em>photons</em>, which are particle-like and each consists of energy</p>
@@ -1565,7 +1575,7 @@ V_o &amp;= 0.17\ {\rm V}.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span>
 
 <span class="n">phi_Li</span> <span class="o">=</span> <span class="mf">2.93</span> <span class="c1">#work function for lithium in eV</span>
 <span class="n">E_400</span> <span class="o">=</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="mf">400e-9</span> <span class="c1">#energy of a 400 nm photon in J</span>
@@ -1612,7 +1622,7 @@ hf &amp;= \phi + \frac{1}{2}mv_{max}^2, \\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span> <span class="n">eV</span><span class="p">,</span> <span class="n">c</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">h</span><span class="p">,</span> <span class="n">eV</span><span class="p">,</span> <span class="n">c</span>
 
 <span class="n">phi_Li</span> <span class="o">=</span> <span class="mf">2.93</span> <span class="c1">#work function for lithium (in eV)</span>
 <span class="n">KE_e</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1">#kinetic energy of the electron (in eV)</span>
@@ -1656,8 +1666,8 @@ The wavelength of the photon is 2.09e-07 m or 209 nm.
 </figcaption>
 </figure>
 <p>The final energy of the electron is determined from the conservation of energy:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b93f3c3c-c946-40ea-90c6-4b7ce899aec6">
-<span class="eqno">(3.26)<a class="headerlink" href="#equation-b93f3c3c-c946-40ea-90c6-4b7ce899aec6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1a1b2f05-ac6f-4a7e-9df1-3a3ca044086b">
+<span class="eqno">(3.26)<a class="headerlink" href="#equation-1a1b2f05-ac6f-4a7e-9df1-3a3ca044086b" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_f = E_i - hf.
 \end{align}\]</div>
 <p>The nucleus absorbs very little energy because linear momentum must be conserved.  One or more photons may be created in this way as electrons pass through matter.</p>
@@ -1702,7 +1712,7 @@ E_f = E_i - hf.
 </figure>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">e</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">e</span>
 
 <span class="n">V_o</span> <span class="o">=</span> <span class="mf">3.5e4</span> <span class="c1">#acceleration voltage</span>
 <span class="n">lam_min</span> <span class="o">=</span> <span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">e</span><span class="o">*</span><span class="n">V_o</span><span class="p">)</span>
@@ -1774,21 +1784,21 @@ E_f = E_i - hf.
 <div class="math notranslate nohighlight">
 \[ E_e^2 = (m_ec^2)^2 + p_e^2c^2. \]</div>
 <p>The conservation laws for energy and momentum are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0877a760-80e3-4289-8c31-9b23171dc1ec">
-<span class="eqno">(3.28)<a class="headerlink" href="#equation-0877a760-80e3-4289-8c31-9b23171dc1ec" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7fec485d-d172-4b8f-85fc-4281957ddca8">
+<span class="eqno">(3.28)<a class="headerlink" href="#equation-7fec485d-d172-4b8f-85fc-4281957ddca8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Energy:} &amp; \quad &amp; hf + m_ec^2 = hf^\prime + E_e, \\
 p_x: &amp; \quad &amp;  \frac{h}{\lambda} = \frac{h}{\lambda^\prime}\cos \theta + p_e \cos \phi, \\
 p_y: &amp; \quad &amp;  0 = \frac{h}{\lambda^\prime}\sin \theta - p_e\sin \phi.
 \end{align}\]</div>
 <p>The recoil angle <span class="math notranslate nohighlight">\(\phi\)</span> can be eliminated by finding the momentum squared of each component,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ca1cccec-8ce7-4828-a6d9-0f12a3ba69d4">
-<span class="eqno">(3.29)<a class="headerlink" href="#equation-ca1cccec-8ce7-4828-a6d9-0f12a3ba69d4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-caefeda9-0a54-46f7-87da-b3917eee26ef">
+<span class="eqno">(3.29)<a class="headerlink" href="#equation-caefeda9-0a54-46f7-87da-b3917eee26ef" title="Permalink to this equation">#</a></span>\[\begin{align}
 p_x^2: &amp; \quad &amp; \left(\frac{h}{\lambda}\right)^2 +\left(\frac{h}{\lambda^\prime}\right)^2\cos^2 \theta - 2\left(\frac{h}{\lambda}\right) \left(\frac{h}{\lambda^\prime}\right)\cos \theta = p_e^2 \cos^2 \phi , \\
 p_y^2: &amp; \quad &amp; \left(\frac{h}{\lambda^\prime}\right)^2\sin^2 \theta = p_e^2 \sin^2 \phi,
 \end{align}\]</div>
 <p>and adding them together (i.e., <span class="math notranslate nohighlight">\(\cos^2 \phi + \sin^2 \phi = 1\)</span>) to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0c180dd3-0505-44a3-bfaf-6c7ad741c408">
-<span class="eqno">(3.30)<a class="headerlink" href="#equation-0c180dd3-0505-44a3-bfaf-6c7ad741c408" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8005184c-1d61-43ad-8f5e-81b01c8d2d80">
+<span class="eqno">(3.30)<a class="headerlink" href="#equation-8005184c-1d61-43ad-8f5e-81b01c8d2d80" title="Permalink to this equation">#</a></span>\[\begin{align}
 p_e^2 = \left(\frac{h}{\lambda}\right)^2 + \left(\frac{h}{\lambda^\prime} \right)^2 - 2\left(\frac{h}{\lambda}\right) \left(\frac{h}{\lambda^\prime}\right)\cos \theta.
 \end{align}\]</div>
 <p>Now, we can substitute values into the conservation energy equation (using <span class="math notranslate nohighlight">\(\lambda = c/f\)</span>) to get,</p>
@@ -1863,10 +1873,10 @@ E_x &amp;= E_x^\prime + \text{K.E. (electron)}, \\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">m_e</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">eV</span><span class="p">,</span><span class="n">m_e</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">phot_E</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">phot_E</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
     <span class="c1">#calculate the energy of a photon </span>
     <span class="c1">#l = lambda; wavelength in m</span>
     <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">/</span><span class="n">l</span>
@@ -1946,13 +1956,13 @@ hf = \sqrt{p_{-}^2c^2 + m_e^2c^2} + \sqrt{p_{+}^2c^2 + m_e^2c^2}.
 </section>
 </div>
 <p><strong>Consider the conversion of a photon into an electron and a positron that takes place inside an atom where the electric field of the nucleus is large.</strong>  The nucleus recoils and takes away a negligible amount of energy, but a considerable amount of momentum.  The conservation of energy becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-69eb8933-6453-4756-94ee-d8f71369978e">
-<span class="eqno">(3.36)<a class="headerlink" href="#equation-69eb8933-6453-4756-94ee-d8f71369978e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9f9fe393-56d5-48ce-8d0b-8f6afafb006a">
+<span class="eqno">(3.36)<a class="headerlink" href="#equation-9f9fe393-56d5-48ce-8d0b-8f6afafb006a" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf = E_{-} + E_{+} + \text{K.E. (nucleus)}.
 \end{align}\]</div>
 <p>The photon energy must be equal to <span class="math notranslate nohighlight">\(2m_ec^2\)</span> in order to create the masses of the electron and positron, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-35373f05-c6c1-40e1-b443-752c295dc568">
-<span class="eqno">(3.37)<a class="headerlink" href="#equation-35373f05-c6c1-40e1-b443-752c295dc568" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-240733d3-f155-4394-a422-25571273f38e">
+<span class="eqno">(3.37)<a class="headerlink" href="#equation-240733d3-f155-4394-a422-25571273f38e" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf &gt; 2 m_ec^2 = 1.022\ {\rm MeV}. \qquad \text{(for pair production)}
 \end{align}\]</div>
 <p>The probability of pair production increases dramatically with higher: photon energy and atomic number <span class="math notranslate nohighlight">\(Z\)</span> fo the atom’s nucleus (due to the correspondingly higher electric field).</p>
@@ -1961,8 +1971,8 @@ hf &gt; 2 m_ec^2 = 1.022\ {\rm MeV}. \qquad \text{(for pair production)}
 <div class="math notranslate nohighlight">
 \[ e^+ + e^- \rightarrow \gamma + \gamma. \]</div>
 <p><strong>Consider a positronium “atom” at rest in free space.</strong> It must emit at least two photons to conserve energy and momentum.  If the positronium annihilation takes place near a nucleus, it is possible that only one photon will be created because the missing momentum can be supplied by the nucleus recoil.  The conservation laws for the above process will be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ae087f71-d649-4c16-abd0-4520cf203dcb">
-<span class="eqno">(3.38)<a class="headerlink" href="#equation-ae087f71-d649-4c16-abd0-4520cf203dcb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-07f0f752-cc6a-464d-9c11-fff7f21e320c">
+<span class="eqno">(3.38)<a class="headerlink" href="#equation-07f0f752-cc6a-464d-9c11-fff7f21e320c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Energy: } &amp; \quad &amp; 2m_e c^2 = hf_1 + hf_2, \\
 \text{Momentum: } &amp; \quad &amp; 0 = \frac{hf_1}{c} - \frac{hf_2}{c}.
 \end{align}\]</div>
@@ -2149,7 +2159,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

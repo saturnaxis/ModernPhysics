@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PHYS2700: Modern Physics &#8212; PHYS2700 Modern Physics</title>
+    <title>PHYS 321: Modern Physics &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'home';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="_static/init-plyr.js?v=bf401924"></script>
+    <script src="_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Who are these notes for?" href="Preamble/who-for.html" />
@@ -172,8 +182,8 @@
       
     
     
-    <img src="_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -194,7 +204,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    PHYS2700: Modern Physics
+                    PHYS 321: Modern Physics
                 </a>
             </li>
         </ul>
@@ -203,7 +213,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Preamble/who-for.html">Who are these notes for?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Preamble/Python-basics.html">Introduction to Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Preamble/Markdown-basics.html">Introduction to Markdown</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="Preamble/HW_template.html">Homework Assignments</a></li>
 
 </ul>
@@ -399,7 +408,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -410,11 +421,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>PHYS2700: Modern Physics</h1>
+    <h1>PHYS 321: Modern Physics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-will-learn">What you will learn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-work-through-the-course">How to work through the course</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-your-python-and-markdown-skills">Developing your Python and Markdown skills</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-getting-started">Background and getting started</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-and-ongoing-development">Sources and ongoing development</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -424,12 +447,74 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="phys2700-modern-physics">
-<h1>PHYS2700: Modern Physics<a class="headerlink" href="#phys2700-modern-physics" title="Link to this heading">#</a></h1>
-<p>Lecture notes for PHYS2700 Modern Physics at <a class="reference external" href="https://www.valdosta.edu/phy/">Valdosta State University</a>.  This course is designed using material from <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/preface">OpenStax: University Physics Vol 3</a> and <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">Modern Physics for Scientists and Engineers</a> by Thornton &amp; Rex (2012), where it will include summaries of the course material and code implementation/exercises.  The course is divided into three sections (Introduction; Quantum Mechanics; and Applications of Modern Physics) that will cover 4 chapters for each section from the textbook.</p>
-<p>This work is licensed under a
-<a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<p><a class="reference external" href="http://creativecommons.org/licenses/by/4.0/"><img alt="CC BY 4.0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="phys-321-modern-physics">
+<h1>PHYS 321: Modern Physics<a class="headerlink" href="#phys-321-modern-physics" title="Link to this heading">#</a></h1>
+<p>Welcome to <strong>Modern Physics</strong> at <a class="reference external" href="https://www.etamu.edu/">East Texas A&amp;M University</a>. These online course notes, developed by Billy Quarles, bring together physical ideas, worked examples, visualizations, and Python exercises to help you understand how relativity and quantum mechanics changed our description of nature.</p>
+<p>PHYS 321 is a bridge from introductory physics to more advanced study. We will examine where classical models succeed, why new models became necessary, and how experimental evidence helps us decide which description to use. Along the way, you will strengthen three connected skills: solving physics problems, explaining your reasoning, and using computation to investigate physical behavior.</p>
+<section id="what-you-will-learn">
+<h2>What you will learn<a class="headerlink" href="#what-you-will-learn" title="Link to this heading">#</a></h2>
+<p>The course develops the foundations of special relativity and quantum mechanics and explores their applications to matter and technology. By working through the material, you will practice how to:</p>
+<ul class="simple">
+<li><p>Connect experimental observations to the assumptions and predictions of a physical model.</p></li>
+<li><p>Identify when classical, relativistic, or quantum descriptions are appropriate.</p></li>
+<li><p>Develop symbolic solutions and interpret numerical results with appropriate units and precision.</p></li>
+<li><p>Use Python to check calculations, make plots, and explore how a system responds to changing parameters.</p></li>
+<li><p>Communicate a solution through clear prose, equations, figures, and readable code.</p></li>
+</ul>
+<p>The notes are organized into three parts:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Part</p></th>
+<th class="head"><p>Main topics</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Introduction</p></td>
+<td><p>The origins of modern physics, special relativity, early quantum experiments, and atomic structure</p></td>
+</tr>
+<tr class="row-odd"><td><p>Quantum Mechanics</p></td>
+<td><p>Wave functions, quantum models, the hydrogen atom, atomic physics, and statistical physics</p></td>
+</tr>
+<tr class="row-even"><td><p>Applications of Modern Physics</p></td>
+<td><p>Molecules and lasers, semiconductors, nuclei, and elementary particles</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The course schedule identifies the assigned sections and the time devoted to each topic.</p>
+</section>
+<section id="how-to-work-through-the-course">
+<h2>How to work through the course<a class="headerlink" href="#how-to-work-through-the-course" title="Link to this heading">#</a></h2>
+<p>Before class, read the assigned material, examine the figures, and identify a question or a step you cannot yet explain. Try the relevant example before reading its complete solution. During class, contribute to discussions and collaborative problem solving by explaining the reasoning behind your approach. After class, complete the assigned problems and revisit any ideas that remain unclear.</p>
+<p>A complete solution should make your reasoning visible. Use the following structure to organize substantial worked problems:</p>
+<ol class="arabic simple">
+<li><p><strong>The Problem:</strong> Identify the information given and what you need to determine.</p></li>
+<li><p><strong>The Model:</strong> Explain the physical principles and assumptions in words before introducing equations.</p></li>
+<li><p><strong>The Math:</strong> Develop the solution symbolically, connecting the steps with complete sentences. Substitute numerical values near the end, carrying units through the calculation.</p></li>
+<li><p><strong>The Conclusion:</strong> State the answer and explain whether its size, sign, units, and limiting behavior make physical sense.</p></li>
+<li><p><strong>The Verification:</strong> When appropriate or assigned, use a short Python calculation or plot to check the result or explore the model further.</p></li>
+</ol>
+<p>The amount of detail should fit the problem. A conceptual question may need only a well-supported paragraph; a calculation or computational investigation needs enough explanation for another student to follow and check your work. Use the syllabus and individual assignment instructions for deadlines, submission requirements, and grading policies.</p>
+</section>
+<section id="developing-your-python-and-markdown-skills">
+<h2>Developing your Python and Markdown skills<a class="headerlink" href="#developing-your-python-and-markdown-skills" title="Link to this heading">#</a></h2>
+<p>You will develop your programming skills alongside the physics. The <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/Python-basics.html">Introduction to Python</a> and <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/Markdown-basics.html">Introduction to Markdown</a> remain practical references throughout the course. Begin with the tools needed for the current assignment and return to the guides as your work becomes more demanding.</p>
+<p>Jupyter notebooks combine the different parts of a scientific explanation in one document. Use <strong>Markdown</strong> for your reasoning and organization, <strong>LaTeX</strong> for mathematical notation, and <strong>Python</strong> for calculations and visualizations. Notebook chapters can be opened in Google Colab using the launch menu marked by a rocket icon, where available; save your own copy before editing.</p>
+<p>Start by running an example and explaining what each part does. Then change a parameter, predict the outcome, and compare your prediction with the result. With practice, you should be able to adapt examples and write short calculations of your own. For instance, you might compare classical and relativistic predictions or investigate how a quantum probability distribution changes with the state.</p>
+<p>For computational work, define variables clearly, comment on their physical meaning and units, and label plot axes. Run the notebook from the beginning before submitting it so that the results can be reproduced. Explain what the output tells you about the physics and check it against an analytical result, an estimate, or a known limiting case whenever possible.</p>
+</section>
+<section id="background-and-getting-started">
+<h2>Background and getting started<a class="headerlink" href="#background-and-getting-started" title="Link to this heading">#</a></h2>
+<p>This course draws on introductory mechanics, electricity and magnetism, waves, and calculus. Be prepared to use algebra, derivatives, and integrals and to revisit earlier ideas as they appear in new settings. Prior programming experience is helpful, but you can build the required skills through regular practice with the examples and exercises.</p>
+<p>Begin with <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/who-for.html">Who are these notes for?</a>, then review the Python and Markdown introductions. Open a notebook, run a code cell, and edit a text cell containing an equation. These small steps establish the workflow you will use throughout the course.</p>
+</section>
+<section id="sources-and-ongoing-development">
+<h2>Sources and ongoing development<a class="headerlink" href="#sources-and-ongoing-development" title="Link to this heading">#</a></h2>
+<p>These notes draw on <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/preface">OpenStax: University Physics, Volume 3</a> and <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">Modern Physics for Scientists and Engineers</a> by Thornton and Rex (2012), together with additional sources credited where used.</p>
+<p>The book will continue to evolve as explanations, examples, and computational activities are refined. If you find an error or an unclear step, include the chapter, section, and relevant calculation when reporting it. The source files are available in the <a class="reference external" href="https://github.com/saturnaxis/ModernPhysics">ModernPhysics GitHub repository</a>.</p>
+<p>Original material by Billy Quarles is licensed under a <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. Third-party material retains its own license and attribution requirements; consult the credit accompanying each item before reusing it.</p>
+<p><a class="reference external" href="https://creativecommons.org/licenses/by/4.0/"><img alt="CC BY 4.0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -486,6 +571,25 @@ document.write(`
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-will-learn">What you will learn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-work-through-the-course">How to work through the course</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-your-python-and-markdown-skills">Developing your Python and Markdown skills</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-getting-started">Background and getting started</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-and-ongoing-development">Sources and ongoing development</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -505,7 +609,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

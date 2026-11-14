@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>10. Semiconductors &#8212; PHYS2700 Modern Physics</title>
+    <title>10. Semiconductors &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_10/semiconductors';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="11. Nuclear Physics" href="../Chapter_11/nuclear-physics.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -551,13 +561,13 @@ document.write(`
 <p>An effectinve way to understand the energy gap in semiconductors is to model the interaction betwen the electrons and the lattice of atoms.  This interaction is more important in semiconductors because much higher resistivity implies tighter binding and/or more interaction.  <a class="reference external" href="https://en.wikipedia.org/wiki/Ralph_Kronig">Ralph de Laer Kronig</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/William_Penney,_Baron_Penney">William Penney</a> developed a useful 1-D model of the electron lattice interaction in 1931.</p>
 <p>They assumed that an electron experiences a potential like a square-wave, or in infinite 1-D array of finite potential wells.  Each potential well represents an atom in the lattice, so the size of the wells must roughly correspond to the lattice spacing.</p>
 <p>The Kronig-Penney method for finding the allowed energy levels follows the method of barrier tunneling (see barriers and tunneling in <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#barriers-and-tunneling">Chapter 6</a>).  The electrons are not free.  We assume that the total energy <span class="math notranslate nohighlight">\(E\)</span> of an electron is less than the height <span class="math notranslate nohighlight">\(V_o\)</span> of each barrier/well in the Kronig-Penney potential.  The electron is essentially free in the gap <span class="math notranslate nohighlight">\(0&lt;x &lt;a\)</span>, where it has a wave function of the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-057dd115-acd8-4238-b9af-276db56f6539">
-<span class="eqno">(10.1)<a class="headerlink" href="#equation-057dd115-acd8-4238-b9af-276db56f6539" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-da8c424f-ab27-4279-af8e-ecdd3a729aad">
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-da8c424f-ab27-4279-af8e-ecdd3a729aad" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi = Ae^{ikx} + Be^{-ikx},
 \end{align}\]</div>
 <p>where the wave number <span class="math notranslate nohighlight">\(k\)</span> is given by the usual relation <span class="math notranslate nohighlight">\(k^2 = 2mE/\hbar^2\)</span>.  In the barrier region <span class="math notranslate nohighlight">\(a&lt;x&lt;a+b\)</span>, the electron can tunnel through.  This means that the wave function loses its sinusoidal character and becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9271d737-bd56-4392-b69b-0f1f09459c0f">
-<span class="eqno">(10.2)<a class="headerlink" href="#equation-9271d737-bd56-4392-b69b-0f1f09459c0f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-da881163-1946-4b9c-b72c-3287c907395d">
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-da881163-1946-4b9c-b72c-3287c907395d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi = Ce^{\kappa x} + De^{-\kappa x},
 \end{align}\]</div>
 <p>with <span class="math notranslate nohighlight">\(\kappa^2 = 2 m\left(V_o - E\right)/\hbar^2\)</span>.</p>
@@ -569,8 +579,8 @@ document.write(`
 <p>The gaps occur regularly at <span class="math notranslate nohighlight">\(ka = n\pi\)</span>, for integer values of <span class="math notranslate nohighlight">\(n\)</span>.  With <span class="math notranslate nohighlight">\(k = n\pi/a = 2\pi/\lambda\)</span>, we see that <span class="math notranslate nohighlight">\(\lambda = 2a/n\)</span>.  Twice the lattice spacing <span class="math notranslate nohighlight">\((2a)\)</span> correponds to an integer multiple of the free-particle wavelength <span class="math notranslate nohighlight">\((n\lambda)\)</span>, and a free particle with this wavelength would be reflected by the lattice.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
 
 <span class="n">ka_L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mf">0.01</span><span class="p">)</span> <span class="c1"># k = np.arange(...)/a</span>
 <span class="c1">#kappa^2 ba/2 = 3\pi/2 --&gt; kappa^2 ba/(2*np.arange(..))</span>
@@ -598,7 +608,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/386c8114ab70c6b48632b43a455c9de167ebcb087ecbe321aa49872e80e54e9e.png" src="../_images/386c8114ab70c6b48632b43a455c9de167ebcb087ecbe321aa49872e80e54e9e.png" />
+<img alt="../_images/2b5e03d1618431bec973627da9227447e884e39ad82fb35320afa2b08f3315d1.png" src="../_images/2b5e03d1618431bec973627da9227447e884e39ad82fb35320afa2b08f3315d1.png" />
 </div>
 </div>
 <p>There are some differences between our simplified Kronig-Penney model and the single potential well from <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#barriers-and-tunneling">Chapter 6</a>).</p>
@@ -635,8 +645,8 @@ document.write(`
 <li><p>One may expect the resistance of a semiconductor to decrease exponentially with increasing temperature.  This is approximately true, but the function <span class="math notranslate nohighlight">\(F_{\rm FD}\)</span> is not a simple exponential and the bad gap varies with temperature.</p></li>
 </ol>
 <p>A useful empirical expression developed by <a class="reference external" href="https://pubs.aip.org/aip/rsi/article-abstract/23/5/213/298007/The-Low-Temperature-Characteristics-of-Carbon">Clement &amp; Quinnell (1952)</a> for the temperature variation of standard carbon resistors is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d49fbf65-889a-41ba-bb47-6e3a85062159">
-<span class="eqno">(10.4)<a class="headerlink" href="#equation-d49fbf65-889a-41ba-bb47-6e3a85062159" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-97fff03c-3c40-407e-94ef-94eb37fd079f">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-97fff03c-3c40-407e-94ef-94eb37fd079f" title="Permalink to this equation">#</a></span>\[\begin{align}
 \log{R} + \frac{K}{\log{R}} = A + \frac{B}{T},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(K\)</span> are constants.  When the above equation is plotted against <span class="math notranslate nohighlight">\(1/T\)</span>, straight lines are seen up to <span class="math notranslate nohighlight">\(1/T \sim 0.6\)</span>, which allows us to conclude that the Clement-Quinnell equation is accurate down to <span class="math notranslate nohighlight">\(T \approx 1/0.6\ {\rm K} = 1.7\ {\rm K}\)</span>.</p>
@@ -648,8 +658,8 @@ document.write(`
 <p><strong>Find the relative number of electrons with energies <span class="math notranslate nohighlight">\(0.10\)</span>, <span class="math notranslate nohighlight">\(1.0\)</span>, and <span class="math notranslate nohighlight">\(10\ {\rm eV}\)</span> above the valence band at room temperature <span class="math notranslate nohighlight">\((293\ {\rm K})\)</span>.</strong></p>
 <p>Since we have only energies and temperatures, it makes sense to use the Fermi-Dirac distribution for this comparison.  Also, we will use an alternative form of Boltzmann’s constant <span class="math notranslate nohighlight">\(k = 8.617 \times 10^{-5}\ {\rm eV/K}\)</span> to make the calculation a little easier.</p>
 <p>In the Fermi-Dirac distribution <span class="math notranslate nohighlight">\(E_{\rm F}\)</span> is the Fermi energy, but <span class="math notranslate nohighlight">\(E-E_{\rm F}\)</span> represents the energy <em>above</em> the valence band.  To simplify the expression, we first calculate <span class="math notranslate nohighlight">\(kT = (8.617 \times 10^{-5}\ {\rm eV/K})(293\ {\rm K}) = 0.02525\ {\rm eV}\)</span>. Therefore, we can proceed with a simple substitution to get:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9c26459e-61aa-41ba-830b-8dc8f3cbda4d">
-<span class="eqno">(10.5)<a class="headerlink" href="#equation-9c26459e-61aa-41ba-830b-8dc8f3cbda4d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-99dfe339-ca64-42de-92c2-64ea4225e414">
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-99dfe339-ca64-42de-92c2-64ea4225e414" title="Permalink to this equation">#</a></span>\[\begin{align}
 F_{\rm FD}(0.10\ {\rm eV}) &amp;= \frac{1}{e^{(0.1\ {\rm eV})/(0.02525\ {\rm eV})}+1} = 0.0187, \\
 F_{\rm FG}(1.0\ {\rm eV}) &amp;= \frac{1}{e^{(1\ {\rm eV})/(0.02525\ {\rm eV})}+1} = 6.30 \times 10^{-18}, \\
 F_{\rm FG}(10\ {\rm eV}) &amp;= \frac{1}{e^{(10\ {\rm eV})/(0.02525\ {\rm eV})}+1} = 9.86 \times 10^{-173}.
@@ -659,10 +669,10 @@ F_{\rm FG}(10\ {\rm eV}) &amp;= \frac{1}{e^{(10\ {\rm eV})/(0.02525\ {\rm eV})}+
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">physical_constants</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">physical_constants</span> 
 
-<span class="k">def</span> <span class="nf">Fermi_Dirac</span><span class="p">(</span><span class="n">deltaE</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Fermi_Dirac</span><span class="p">(</span><span class="n">deltaE</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">):</span>
     <span class="c1">#calculate the relative number of electrons above the valence band</span>
     <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">deltaE</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 
@@ -711,8 +721,8 @@ The relative number of electrons at room temperature for delta E = 10.0 is 9.861
 <p>When there is a temperature gradient in a thermoelectric material, an electric field appears which we call the <a class="reference external" href="https://en.wikipedia.org/wiki/Thermoelectric_effect"><strong>thermoelectric effect</strong></a>.  It’s easier to understand why this happens in a pure metal, where we can assume a gas of free electrons.</p>
 <p>As in an ideal gas, the density of free electrons is greater at the colder end of the wire, and the electrical potential is higher at the warmer end (and lower at the colder end).  Since the conducting properties are temperature dependent, it is reasonable that semiconductors should exhibit a thermoelectric effect (even though the free-electron modle is not valid for semiconductors).</p>
 <p>In 1-D the induced electric field <span class="math notranslate nohighlight">\(E\)</span> in a semiconductor is propotional to the temperature gradient, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe4f3dd3-0d1b-4317-8012-3c1264ccbe82">
-<span class="eqno">(10.6)<a class="headerlink" href="#equation-fe4f3dd3-0d1b-4317-8012-3c1264ccbe82" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-74bb5dc7-e1ee-4f38-8e9c-bb4ae4603363">
+<span class="eqno">(10.6)<a class="headerlink" href="#equation-74bb5dc7-e1ee-4f38-8e9c-bb4ae4603363" title="Permalink to this equation">#</a></span>\[\begin{align}
 E = Q \frac{dT}{dx},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(Q\)</span> is the <strong>thermoelectric power</strong>.  The direction of the induced field depends on whether the seminconductor is <span class="math notranslate nohighlight">\(p\)</span>- or <span class="math notranslate nohighlight">\(n\)</span>-type.  As a result, the thermoelectric effect can be used to determine the extent to which <span class="math notranslate nohighlight">\(n\)</span>- or <span class="math notranslate nohighlight">\(p\)</span>-type carriers dominate in a complex system.</p>
@@ -748,17 +758,17 @@ E = Q \frac{dT}{dx},
 <p>Using the tools of statistical physics, we can model the <span class="math notranslate nohighlight">\(I-V\)</span> characteristics of the <span class="math notranslate nohighlight">\(pn\)</span>-junction diode and obtaion a quantitative justification of the empirical curve.  Starting with the <em>no bias</em> case, where there is still a potential difference <span class="math notranslate nohighlight">\(V_o\)</span> present between the two sides and a corresponding current <span class="math notranslate nohighlight">\(I_o\)</span> due to the presence of holes on one side and electrons on the other.</p>
 <p>Let <span class="math notranslate nohighlight">\(N\)</span> be the number of electrons present in the conduction band on the <span class="math notranslate nohighlight">\(n\)</span> side.  At room temperature, Maxwell-Boltzmann statistics are sufficient to describe the electron behavior.  In the no-bias case, the number of electron able to move from the <span class="math notranslate nohighlight">\(n\)</span> to the <span class="math notranslate nohighlight">\(p\)</span> side is proportional to <span class="math notranslate nohighlight">\(Ne^{-e(V_o-V)/(kT)} = Ne^{-eV_o/(kT)}e^{eV/(kT)}\)</span>.</p>
 <p>The electron current under forward bias must be <span class="math notranslate nohighlight">\(I = I_oe^{eV/(kT)}\)</span> because there is still an additional current <span class="math notranslate nohighlight">\(-I_o\)</span> in the forward bias due to the motion of holes.  The total current in forward bias is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9e1e8772-21f5-4737-a346-7e00503565e3">
-<span class="eqno">(10.7)<a class="headerlink" href="#equation-9e1e8772-21f5-4737-a346-7e00503565e3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a97c8fe8-ef1e-4e7b-9924-f41220e86eb1">
+<span class="eqno">(10.7)<a class="headerlink" href="#equation-a97c8fe8-ef1e-4e7b-9924-f41220e86eb1" title="Permalink to this equation">#</a></span>\[\begin{align}
 I = I_o \left(e^{eV/(kT)} - 1\right),
 \end{align}\]</div>
 <p>which is a good approximation of the <span class="math notranslate nohighlight">\(I-V\)</span> empirical curve (see python code below).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">physical_constants</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">e</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">physical_constants</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">e</span>
 
-<span class="k">def</span> <span class="nf">bias_current</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bias_current</span><span class="p">(</span><span class="n">V</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">):</span>
     <span class="c1">#return the normalized forward bias current</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">e</span><span class="o">*</span><span class="n">V</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span>
 
@@ -790,15 +800,15 @@ I = I_o \left(e^{eV/(kT)} - 1\right),
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e07505ee9fd10eac4a91cf52e8a1669aa841938cc54e447f23167f45fcdd190b.png" src="../_images/e07505ee9fd10eac4a91cf52e8a1669aa841938cc54e447f23167f45fcdd190b.png" />
+<img alt="../_images/ec35efa40ef40554100c8b21d25c4384108278d2976e43467e74f4556e2ddfde.png" src="../_images/ec35efa40ef40554100c8b21d25c4384108278d2976e43467e74f4556e2ddfde.png" />
 </div>
 </div>
 </section>
 <section id="rectifiers">
 <h3><span class="section-number">10.3.2. </span>Rectifiers<a class="headerlink" href="#rectifiers" title="Link to this heading">#</a></h3>
 <p>The diode is an important tool in many kinds of electrical circuits.  Consider the <a class="reference external" href="https://en.wikipedia.org/wiki/Diode_bridge"><strong>bridge rectifier</strong></a>, which is set up so that it allows current to flow in only one direction through the resistor <span class="math notranslate nohighlight">\(R\)</span> when an AC (alternating current) supply is placed across the bridge.  The current through the resistor is then a <em>rectified</em> sine wave of the form:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3cf20ef2-c9f9-4333-a645-471f77997269">
-<span class="eqno">(10.8)<a class="headerlink" href="#equation-3cf20ef2-c9f9-4333-a645-471f77997269" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-42140e3f-7c87-4bfd-b566-737533444ed5">
+<span class="eqno">(10.8)<a class="headerlink" href="#equation-42140e3f-7c87-4bfd-b566-737533444ed5" title="Permalink to this equation">#</a></span>\[\begin{align}
 I = I_{\rm max}\left|\sin{(\omega t)}\right|.
 \end{align}\]</div>
 <p>This is the first step in changing AC to DC (direct current).  The design of a power supply can be completed by adding capacitors and resistors in appropriate proportions.  The rectificier is important because many of our devices need DC, where we receive AC from our wall sockets.  Another common application is in car alternators, where they are used to charge the car’s battery.</p>
@@ -867,25 +877,25 @@ I = I_{\rm max}\left|\sin{(\omega t)}\right|.
 <p>In the above circuit description, the transistor is used as a voltage amplifier.  If the input signal is moved to a position between the base and ground, then it can be a current amplifier instead.  A <span class="math notranslate nohighlight">\(pnp\)</span>-junction transistor is made using <span class="math notranslate nohighlight">\(npn\)</span>-junction model, but with hole conduction taking the place of electron conduction.</p>
 <p>Consider a circuit with fixed voltages <span class="math notranslate nohighlight">\(V_{bb}\)</span> and <span class="math notranslate nohighlight">\(V_{cc}\)</span>.  The resistances <span class="math notranslate nohighlight">\(R_c\)</span> and <span class="math notranslate nohighlight">\(R_e\)</span> may (in part) be separate from the transistor, buth they must include the intrinsic base-collector and base-emittor resistances, respectively.  Assume that there is a current gain <span class="math notranslate nohighlight">\(\beta\)</span> so that <span class="math notranslate nohighlight">\(I_c = \beta I_b\)</span> so that we amplify a signal <span class="math notranslate nohighlight">\(V_s\)</span>.</p>
 <p>To calculate the voltage gain, we first apply Kirchhoff’s loop rule to the obtain:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e32496b4-6793-4d35-a685-5d76fa830322">
-<span class="eqno">(10.9)<a class="headerlink" href="#equation-e32496b4-6793-4d35-a685-5d76fa830322" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-64a2e80f-ccbf-40fa-b97e-41ae9206b3f4">
+<span class="eqno">(10.9)<a class="headerlink" href="#equation-64a2e80f-ccbf-40fa-b97e-41ae9206b3f4" title="Permalink to this equation">#</a></span>\[\begin{align}
 I_b &amp;= \frac{V_s + V_{bb}}{R_b + (1+\beta)R_e}, \\
 I_c &amp;= \beta I_b.
 \end{align}\]</div>
 <p>The output voltage on the load resistor is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-045da6b1-f6ba-41e1-83e1-5d0d10fc4b73">
-<span class="eqno">(10.10)<a class="headerlink" href="#equation-045da6b1-f6ba-41e1-83e1-5d0d10fc4b73" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-50219f0a-76ff-4ade-8185-f23bc41bc40d">
+<span class="eqno">(10.10)<a class="headerlink" href="#equation-50219f0a-76ff-4ade-8185-f23bc41bc40d" title="Permalink to this equation">#</a></span>\[\begin{align}
 V_c &amp;= I_c R_c = \beta I_b R_c.
 \end{align}\]</div>
 <p>We can calculate the voltage gain <span class="math notranslate nohighlight">\(A_v\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e9705b51-69de-4caa-a0b0-53462ab90b35">
-<span class="eqno">(10.11)<a class="headerlink" href="#equation-e9705b51-69de-4caa-a0b0-53462ab90b35" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b397514d-0a2d-4f9d-96cd-1e84dc2c9710">
+<span class="eqno">(10.11)<a class="headerlink" href="#equation-b397514d-0a2d-4f9d-96cd-1e84dc2c9710" title="Permalink to this equation">#</a></span>\[\begin{align}
 A_v &amp;= \frac{V_c}{V_s} = \beta \left(\frac{I_b}{V_s}\right) R_c,\\
 &amp;= \beta \left(\frac{1+V_{bb}/V_s}{R_b + (1+\beta)R_e}\right)R_c.
 \end{align}\]</div>
 <p>Because the voltages <span class="math notranslate nohighlight">\(V_cc\)</span> and <span class="math notranslate nohighlight">\(V_bb\)</span> are present only to establish the proper bias on the transitor, it is possible (in practice) to make <span class="math notranslate nohighlight">\(V_bb \ll V_s\)</span>, so that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a48f8d47-24ec-442b-b096-558182bc234e">
-<span class="eqno">(10.12)<a class="headerlink" href="#equation-a48f8d47-24ec-442b-b096-558182bc234e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-04c4420d-c27b-4876-a632-3fcf01f91baf">
+<span class="eqno">(10.12)<a class="headerlink" href="#equation-04c4420d-c27b-4876-a632-3fcf01f91baf" title="Permalink to this equation">#</a></span>\[\begin{align}
 A_v \approx \beta\frac{R_c}{R_b + (1+\beta)R_e}.
 \end{align}\]</div>
 <p>With the appropriate choice of resistors, one can (in theory) achieve any desired voltage gain.  In real circuits, there are severe limitations based on the characteristics of the particular transistor and power in various parts of the circuit.</p>
@@ -1103,7 +1113,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

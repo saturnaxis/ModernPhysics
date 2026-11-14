@@ -5,12 +5,13 @@
 
 #######################################################################################
 # Book settings
-title                       : PHYS2700 Modern Physics  # The title of the book. Will be placed in the left navbar.
+title                       : PHYS321 Modern Physics  # The title of the book. Will be placed in the left navbar.
 author                      : Billy Quarles  # The author of the book
-copyright                   : "2025"  # Copyright year to be placed in the footer
+copyright                   : "2026"  # Copyright year to be placed in the footer
 logo                        : "bohr_gif.gif"  # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints","*.png"]
+exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints","*.png","README.md","LICENSE.md",scripts,snippets,"**/*-old.ipynb","**/*.wav"]
+
 
 #######################################################################################
 # Execution settings
@@ -72,8 +73,24 @@ html:
   comments:
     hypothesis              : false
     utterances              : false
+    
 sphinx:
-  config:
-    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  local_extensions:
+    responsive_video: "./_ext/"
   extra_extensions:
     - sphinx_exercise
+    - sphinx_inline_tabs
+    - sphinxcontrib.youtube
+    - sphinx_iframes
+    - responsive_video
+  config:
+    language: en
+    html_css_files:
+      - "https://cdn.plyr.io/3.8.4/plyr.css"
+      - "custom.css"
+      - "audio-player.css"
+    html_js_files:
+      - "https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"
+      - "init-plyr.js"
+      - "audio-player.js"
+    myst_words_per_minute: 150

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Slit Wave Simulation & Exporter</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            gap: 30px;
+            max-width: 950px;
+            width: 100%;
+        }
+        @media (max-width: 800px) {
+            .container { flex-direction: column; align-items: center; }
+        }
+        canvas {
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            background-color: #000;
+        }
+        .controls {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        h2 { margin-top: 0; color: #fff; font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .slider-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        label { font-size: 0.9rem; color: #aaa; display: flex; justify-content: space-between; }
+        label span { color: #00bcd4; font-weight: bold; }
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: #333;
+            height: 6px;
+            border-radius: 3px;
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #00bcd4;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
+        .btn-group { display: flex; gap: 10px; margin-top: 15px; }
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-primary { background-color: #00bcd4; color: #121212; }
+        .btn-primary:hover { background-color: #00acc1; }
+        .btn-secondary { background-color: #333; color: #fff; }
+        .btn-secondary:hover { background-color: #444; }
+        .recording { background-color: #f44336 !important; color: white; animation: pulse 1.5s infinite; }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <canvas id="canvas" width="450" height="450"></canvas>
+    
+    <div class="controls">
+        <h2>Double Slit Diffraction</h2>
+        <div class="slider-group">
+    		<label>Color Theme:</label>
+    		<select id="color-theme" style="background:#333; color:#fff; border:1px solid #555; padding:8px; border-radius:6px; outline:none; font-size:0.9rem;">
+        		<option value="jet">Wikipedia Classic (Jet)</option>
+        		<option value="green">Emerald Laser (Green/Black)</option>
+        		<option value="redblue">Phase Map (Red/Blue)</option>
+        		<option value="viridis">Modern Scientific (Viridis)</option>
+    		</select>
+	</div>
+        <div class="slider-group">
+            <label>Wavelength (λ): <span id="val-lambda">1.20</span></label>
+            <input type="range" id="slide-lambda" min="0.5" max="3.0" step="0.05" value="1.20">
+        </div>
+        
+        <div class="slider-group">
+            <label>Slit Separation (d): <span id="val-sep">4.00</span></label>
+            <input type="range" id="slide-sep" min="1.0" max="6.0" step="0.1" value="4.00">
+        </div>
+        
+        <div class="slider-group">
+            <label>Slit Width (w): <span id="val-width">0.40</span></label>
+            <input type="range" id="slide-width" min="0.1" max="1.2" step="0.05" value="0.40">
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-secondary" id="btn-play">Pause</button>
+            <button class="btn-primary" id="btn-record">Record & Export Video</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    // UI Elements
+    const s_lambda = document.getElementById('slide-lambda');
+    const s_sep = document.getElementById('slide-sep');
+    const s_width = document.getElementById('slide-width');
+    const v_lambda = document.getElementById('val-lambda');
+    const v_sep = document.getElementById('val-sep');
+    const v_width = document.getElementById('val-width');
+    const btn_play = document.getElementById('btn-play');
+    const btn_record = document.getElementById('btn-record');
+
+    // Simulation Physics parameters
+    let lambda = parseFloat(s_lambda.value);
+    let d = parseFloat(s_sep.value);
+    let w = parseFloat(s_width.value);
+    
+    let k = (2 * Math.PI) / lambda;
+    const omega = 2 * Math.PI;
+    let t = 0;
+    let isPlaying = true;
+    
+    const numSources = 12; // Huygens sources per slit
+    const width_px = canvas.width;
+    const height_px = canvas.height;
+    const imgData = ctx.createImageData(width_px, height_px);
+    
+    // Bounds mapping
+    const xMin = -3.0, xMax = 12.0;
+    const yMin = -7.5, yMax = 7.5;
+
+const themeSelector = document.getElementById('color-theme');
+let currentTheme = 'jet';
+
+themeSelector.addEventListener('change', (e) => {
+    currentTheme = e.target.value;
+    if (!isPlaying) draw();
+});
+
+function getThemeColor(v, theme) {
+    let x = (v + 1.3) / 2.6; // Normalise input [-1.3, 1.3] to [0, 1]
+    x = Math.max(0, Math.min(1, x));
+
+    if (theme === 'green') {
+        // Emerald Laser: map amplitude directly to bright green
+        const intensity = Math.floor(x * 255);
+        return [0, intensity, Math.floor(intensity * 0.2)];
+    } 
+    
+    else if (theme === 'redblue') {
+        // Diverging Phase: Troughs (-1.3) = Blue, Nodes (0) = Black, Peaks (+1.3) = Red
+        if (x < 0.5) {
+            let t = x * 2; // [0, 1]
+            return [0, 0, Math.floor(t * 255)]; // Black to Blue
+        } else {
+            let t = (x - 0.5) * 2; // [0, 1]
+            return [Math.floor(t * 255), 0, 0]; // Black to Red
+        }
+    } 
+    
+    else if (theme === 'viridis') {
+        // Approximation of the highly popular Viridis colormap
+        const r = Math.floor(Math.max(0, Math.min(255, 255 * (0.267 + 3.0 * Math.pow(x, 3) - 3.4 * Math.pow(x, 4)))));
+        const g = Math.floor(Math.max(0, Math.min(255, 255 * (0.004 + 1.6 * x + 0.5 * Math.pow(x, 2) - 1.2 * Math.pow(x, 5)))));
+        const b = Math.floor(Math.max(0, Math.min(255, 255 * (0.329 + 1.2 * x - 2.8 * Math.pow(x, 2) + 2.4 * Math.pow(x, 3)))));
+        return [r, g, b];
+    } 
+    
+    else {
+        // Wikipedia Classic (Jet Colormap)
+        const r = Math.max(0, Math.min(255, Math.floor(255 * Math.min(4 * x - 1.5, -4 * x + 4.5))));
+        const g = Math.max(0, Math.min(255, Math.floor(255 * Math.min(4 * x - 0.5, -4 * x + 3.5))));
+        const b = Math.max(0, Math.min(255, Math.floor(255 * Math.min(4 * x + 0.5, -4 * x + 2.5))));
+        return [r, g, b];
+    }
+}
+
+    // Render loop
+    function draw() {
+        const data = imgData.data;
+        
+        // Dynamic coordinates for Huygens sources based on sliders
+        const sources = [];
+        const halfSep = d / 2;
+        const halfWidth = w / 2;
+        
+        const slitCenters = [halfSep, -halfSep];
+        for (let s = 0; s < 2; s++) {
+            const center = slitCenters[s];
+            for (let i = 0; i < numSources; i++) {
+                const ys = (numSources > 1) 
+                    ? (center - halfWidth) + (i / (numSources - 1)) * (w)
+                    : center;
+                sources.push(ys);
+            }
+        }
+
+        // Draw pixel data
+        for (let py = 0; py < height_px; py++) {
+            // Map pixel y to physical y coord
+            const y_coord = yMax - (py / (height_px - 1)) * (yMax - yMin);
+            
+            for (let px = 0; px < width_px; px++) {
+                const x_coord = xMin + (px / (width_px - 1)) * (xMax - xMin);
+                let val = 0;
+                
+                if (x_coord < 0) {
+                    // Left side: plane wave traveling right
+                    val = Math.cos(k * x_coord - omega * t);
+                } else {
+                    // Right side: Huygens superposition
+                    let waveSum = 0;
+                    for (let s = 0; s < sources.length; s++) {
+                        const ys = sources[s];
+                        const dist = Math.sqrt(x_coord*x_coord + (y_coord - ys)*(y_coord - ys));
+                        const amp = 1.0 / Math.sqrt(1.0 + 1.2 * dist); // decay
+                        waveSum += amp * Math.cos(k * dist - omega * t);
+                    }
+                    val = waveSum / numSources;
+                }
+                
+                // Color Lookup
+                const rgb = getThemeColor(val, currentTheme);
+                const idx = (py * width_px + px) * 4;
+                data[idx]     = rgb[0]; // R
+                data[idx + 1] = rgb[1]; // G
+                data[idx + 2] = rgb[2]; // B
+                data[idx + 3] = 255;    // A
+            }
+        }
+        
+        ctx.putImageData(imgData, 0, 0);
+        
+        // Draw the Solid Yellow Barrier
+        ctx.lineWidth = 8;
+        ctx.strokeStyle = '#ffff00';
+        ctx.lineCap = 'butt';
+        
+        // Map physical slit positions back to canvas pixels
+        const physToPxY = (yVal) => Math.floor(((yMax - yVal) / (yMax - yMin)) * height_px);
+        const barrierX = Math.floor(((0 - xMin) / (xMax - xMin)) * width_px);
+        
+        const topSlitTop = halfSep + halfWidth;
+        const topSlitBot = halfSep - halfWidth;
+        const botSlitTop = -halfSep + halfWidth;
+        const botSlitBot = -halfSep - halfWidth;
+        
+        // Top solid wall
+        ctx.beginPath();
+        ctx.moveTo(barrierX, physToPxY(yMax));
+        ctx.lineTo(barrierX, physToPxY(topSlitTop));
+        ctx.stroke();
+        
+        // Center solid wall
+        ctx.beginPath();
+        ctx.moveTo(barrierX, physToPxY(topSlitBot));
+        ctx.lineTo(barrierX, physToPxY(botSlitTop));
+        ctx.stroke();
+        
+        // Bottom solid wall
+        ctx.beginPath();
+        ctx.moveTo(barrierX, physToPxY(botSlitBot));
+        ctx.lineTo(barrierX, physToPxY(yMin));
+        ctx.stroke();
+    }
+
+    function animate() {
+        if (isPlaying) {
+            t += 0.04;
+            draw();
+        }
+        requestAnimationFrame(animate);
+    }
+
+    // Input Slider Handlers
+    function updateSliders() {
+        lambda = parseFloat(s_lambda.value);
+        d = parseFloat(s_sep.value);
+        w = parseFloat(s_width.value);
+        k = (2 * Math.PI) / lambda;
+        
+        v_lambda.textContent = lambda.toFixed(2);
+        v_sep.textContent = d.toFixed(2);
+        v_width.textContent = w.toFixed(2);
+        if(!isPlaying) draw();
+    }
+
+    s_lambda.addEventListener('input', updateSliders);
+    s_sep.addEventListener('input', updateSliders);
+    s_width.addEventListener('input', updateSliders);
+
+    btn_play.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        btn_play.textContent = isPlaying ? "Pause" : "Play";
+    });
+
+    // High Quality Exporter (MediaRecorder API)
+    let mediaRecorder;
+    let recordedChunks = [];
+    let isRecording = false;
+
+    btn_record.addEventListener('click', () => {
+        if (!isRecording) {
+            recordedChunks = [];
+            const stream = canvas.captureStream(30); // Capture canvas context at 30 FPS
+            
+            // Try modern container support (WebM is natively supported across all standard browsers)
+            mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp9' });
+            
+            mediaRecorder.ondataavailable = (e) => {
+                if (e.data.size > 0) recordedChunks.push(e.data);
+            };
+            
+            mediaRecorder.onstop = () => {
+                const blob = new Blob(recordedChunks, { type: 'video/webm' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `double_slit_diffraction_w${w.toFixed(1)}_d${d.toFixed(1)}.webm`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                btn_record.textContent = "Record & Export Video";
+                btn_record.classList.remove('recording');
+                isRecording = false;
+            };
+
+            mediaRecorder.start();
+            btn_record.textContent = "Recording... Click to Stop & Download";
+            btn_record.classList.add('recording');
+            isRecording = true;
+        } else {
+            mediaRecorder.stop();
+        }
+    });
+
+    // Start App
+    updateSliders();
+    animate();
+</script>
+</body>
+</html>

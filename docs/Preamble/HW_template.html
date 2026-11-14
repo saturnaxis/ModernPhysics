@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework Assignments &#8212; PHYS2700 Modern Physics</title>
+    <title>Homework Assignments &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Preamble/HW_template';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="1. Birth of Modern Physics" href="../Chapter_1/birth-of-modern-physics.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -193,7 +203,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../home.html">
-                    PHYS2700: Modern Physics
+                    PHYS 321: Modern Physics
                 </a>
             </li>
         </ul>
@@ -202,7 +212,6 @@
 <li class="toctree-l1"><a class="reference internal" href="who-for.html">Who are these notes for?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Python-basics.html">Introduction to Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Markdown-basics.html">Introduction to Markdown</a></li>
-
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework Assignments</a></li>
 
 </ul>
@@ -489,11 +498,17 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework Assignments</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectations">Expectations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-style">Homework Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission-requirements">Submission requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-in-google-colab">Working in Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-work">Group work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-pdf">Preparing the PDF</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-2">Chapter 2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-and-formatting-expectations">Writing and formatting expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotated-example">Annotated example</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#phys-321-chapter-02">PHYS 321 — Chapter 02</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-1">Problem 1</a></li>
 </ul>
 </li>
@@ -511,52 +526,133 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="homework-assignments">
 <h1>Homework Assignments<a class="headerlink" href="#homework-assignments" title="Link to this heading">#</a></h1>
-<section id="expectations">
-<h2>Expectations<a class="headerlink" href="#expectations" title="Link to this heading">#</a></h2>
-<p>All homework assignments will be completed using <a class="reference external" href="https://jupyter.org/">Jupyter</a> notebooks, where you will submit your source file (*.ipynb) and a compiled file (*.pdf).  The filename for each submission will be in the following format “PHYS2700_Chpt#_LastName”, where the “#” character is replaced the appropriate chapter number.  Jupyter notebooks allow you to create code cells in <a class="reference external" href="https://docs.python.org/3/tutorial/">Python</a> and non-code cells in <a class="reference external" href="https://www.markdownguide.org/basic-syntax/">Markdown</a>.  There are short guides in the Preamble that will help you.</p>
-<p>A complete homework problem contains a <em>detailed explanation</em> that describes the process by which you arrived at the solution.  You will not receive full credit for simply reporting the final answer.  To describe the process, you will use the math mode in <span class="math notranslate nohighlight">\(\LaTeX\)</span> to display equations, numbers in scientific notation, and variables.  A guide to the various commands can be found <a class="reference external" href="https://joshua.smcvt.edu/undergradmath/undergradmath.pdf">here</a>.</p>
+<p>The homework develops your ability to construct a scientific argument: identify a physical question, explain an approach, present and interpret the results, and draw a supported conclusion. Write so that another student can follow your reasoning and evaluate your answer. That student may be <strong>future-you</strong>, returning to this work weeks or months later to study for an exam or build on an earlier idea. Explain enough that you can reconstruct your reasoning without relying on memory.</p>
+<section id="submission-requirements">
+<h2>Submission requirements<a class="headerlink" href="#submission-requirements" title="Link to this heading">#</a></h2>
+<p>A complete homework submission consists of <strong>two files</strong>: a Jupyter notebook (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) and a PDF (<code class="docutils literal notranslate"><span class="pre">.pdf</span></code>) of the same completed work. The notebook contains your editable text and executable code; the PDF provides a readable record of your solution, including equations, figures, and relevant code output.</p>
+<p>Use the same basename for both files, following <code class="docutils literal notranslate"><span class="pre">PHYS321_Chpt##_LastName</span></code>, where <code class="docutils literal notranslate"><span class="pre">##</span></code> is the <strong>two-digit chapter number</strong> (<code class="docutils literal notranslate"><span class="pre">01</span></code>, <code class="docutils literal notranslate"><span class="pre">02</span></code>, …, <code class="docutils literal notranslate"><span class="pre">12</span></code>). For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PHYS321_Chpt02_Quarles.ipynb</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PHYS321_Chpt02_Quarles.pdf</span></code></p></li>
+</ul>
+<p>Follow the individual assignment instructions for the assigned problems and deadline.</p>
 </section>
-<section id="homework-style">
-<h2>Homework Style<a class="headerlink" href="#homework-style" title="Link to this heading">#</a></h2>
-<p>The homework assignments should match the following style:</p>
-<ol class="arabic simple">
-<li><p>The homework title is the top level section (#).</p></li>
-<li><p>Each homework problem is the next level section(##)</p></li>
-<li><p>The text following the homework problem is a verbatim copy of the text from the respective problem in <strong>bold</strong>.</p></li>
-<li><p>Your detailed explanation is written in normal text, where in-line math mode (single $) or display math mode (double $) is used appropriately.</p></li>
-<li><p>The final result is displayed in <strong>bold</strong>.</p></li>
-<li><p>Code cells that recreate your solution are encouraged (but not required) and are placed just after your detailed explanation.</p></li>
-</ol>
-<p>The next section provides a template to help you see the described style.</p>
+<section id="working-in-google-colab">
+<h2>Working in Google Colab<a class="headerlink" href="#working-in-google-colab" title="Link to this heading">#</a></h2>
+<p>You are encouraged to use <a class="reference external" href="https://colab.research.google.com/">Google Colab</a> to prepare your homework. Start by saving your own copy of the notebook to Google Drive. Colab periodically saves changes to a Drive-backed notebook, but <strong>use Ctrl+S religiously</strong> (Command+S on a Mac), especially after completing a substantial step and before leaving the page. Check that saving has finished; do not assume that an open notebook or a recent edit has already been saved.</p>
+<section id="group-work">
+<h3>Group work<a class="headerlink" href="#group-work" title="Link to this heading">#</a></h3>
+<p>Do not rely on Google Docs-style simultaneous editing to keep everyone’s changes synchronized in Colab. For group assignments, <strong>designate one person to maintain the master notebook</strong>. Each group member should work in their own copy and send that copy to the person maintaining the master version, clearly identifying the problems or sections they contributed. That person combines the contributions, checks the writing and notation for consistency, and runs the assembled notebook from the beginning. Everyone should review the completed master version before submission.</p>
+</section>
+<section id="preparing-the-pdf">
+<h3>Preparing the PDF<a class="headerlink" href="#preparing-the-pdf" title="Link to this heading">#</a></h3>
+<p>Before printing or exporting to PDF, run any code cells from the beginning and save the completed notebook. <strong>Close all cell editors and leave text cells in their rendered view.</strong> Here, “close” means exit editing mode; do not collapse or hide the solution, code, or output needed to understand your work.</p>
+<p>A common mistake is to print while a Markdown cell is still open for editing, producing two columns with the source on one side and a partial rendered preview on the other. <strong>Do not submit this split editing view.</strong> The PDF should show the formatted explanation and equations.</p>
+<p>Open the saved PDF and check that it matches the notebook: all required text, equations, figures, and relevant code output should be present and readable, with no editing panes, clipped content, or missing sections. Submit both the final <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> and its matching <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="chapter-2">
-<h1>Chapter 2<a class="headerlink" href="#chapter-2" title="Link to this heading">#</a></h1>
+<section id="writing-and-formatting-expectations">
+<h2>Writing and formatting expectations<a class="headerlink" href="#writing-and-formatting-expectations" title="Link to this heading">#</a></h2>
+<p>Organize each solution around a clear line of reasoning. The following pattern is useful, but ordinary homework problems do not require four labeled sections.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Part of the argument</p></th>
+<th class="head"><p>Minimum length</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Introduction</p></td>
+<td><p>At least 2 complete sentences</p></td>
+<td><p>Motivate the analysis: explain the physical issue and why a particular principle, comparison, or calculation is needed to resolve it. Do more than restate the problem.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Method</p></td>
+<td><p>At least 2 complete sentences, with equations or code as needed</p></td>
+<td><p>Explain and justify the approach, define the relevant quantities, and state the assumptions. Describe how the analysis will answer the physical question.</p></td>
+</tr>
+<tr class="row-even"><td><p>Results and Discussion</p></td>
+<td><p>At least 3 complete sentences, with equations, figures, or code as needed</p></td>
+<td><p>Present the important steps and findings, explain their physical meaning, and discuss relevant comparisons or limitations. Connect the results to the question being investigated.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Conclusion</p></td>
+<td><p>At least 2 complete sentences</p></td>
+<td><p>Summarize the process and its main result, then provide a specific reasonableness check. Explain why the result makes physical sense.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These are minimum lengths for the written explanation, not targets to meet with filler. Equations, code, figure labels, and the copied problem statement do not replace explanatory sentences. Use additional sentences whenever needed to make the argument complete. The same expectations apply when the parts are written as connected paragraphs without section headings.</p>
+<p>The Introduction should explain why the proposed analysis is useful. For example, identifying acceleration as the quantity that enters Newton’s second law motivates examining how it transforms between frames. Simply writing “We need to show that Newton’s second law is invariant” does not provide that motivation.</p>
+<p>The Conclusion should briefly connect what you did to what you found and explain a concrete check on the result. Depending on the problem, that check might involve units, scale, sign, a limiting case, or agreement with an independent estimate. Saying only “the answer is reasonable” is insufficient. In a research paper, a conclusion might also discuss future directions or connections to the literature; neither is required for these homework solutions.</p>
+<p>Use connected paragraphs and equations for short analytical problems. Longer investigations may benefit from descriptive headings. Related parts of a problem may share an introduction and method, provided that the answer to each part is easy to identify.</p>
+<p>Use these formatting conventions consistently:</p>
+<ul class="simple">
+<li><p>Give the assignment a top-level heading (<code class="docutils literal notranslate"><span class="pre">#</span></code>) identifying the course and chapter, and each problem a second-level heading (<code class="docutils literal notranslate"><span class="pre">##</span></code>) identifying its number.</p></li>
+<li><p>Place the <strong>problem statement in bold inside a blockquote</strong>. For a multipart problem, preserve its part labels.</p></li>
+<li><p>Explain your reasoning in complete sentences, incorporating equations where they support the argument. Define symbols, justify consequential steps, and develop a symbolic result before substituting numerical values when appropriate.</p></li>
+<li><p>Present numerical answers with units and appropriate precision. Label figure axes and explain what each figure demonstrates.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Work smart, not hard!</strong> Do not spend your time retyping homework questions. On the relevant course chapter page, use the <strong>rocket ship launch menu</strong> to open the notebook in <strong>Google Colab</strong>. Open the text cell containing the question in editing mode, then copy the question <strong>directly from its Markdown source</strong> into a text cell in your homework notebook. This preserves the equation notation and formatting. Copy only the problem statement, retain its part labels, and format it in bold inside a blockquote as shown below. Spend your time on the physics and your explanation!</p>
+</div>
+<p>For example, format the copied problem statement in a Markdown cell as:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">**Show that the form of Newton&#39;s second law is invariant under a Galilean transformation.**</span>
+</pre></div>
+</div>
+<p>Use Python when assigned or when it contributes meaningfully to the analysis. Place code near the explanation it supports, identify its inputs and assumptions, and interpret its output. A numerical result should be checked against an analytical result, a limiting case, an estimate, or another appropriate comparison. An analytical proof does not need an added code cell merely to complete the writing pattern.</p>
+<p>The <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/Python-basics.html">Introduction to Python</a> and <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Preamble/Markdown-basics.html">Introduction to Markdown</a> provide references for calculations, notebook organization, and mathematical notation.</p>
+</section>
+<section id="annotated-example">
+<h2>Annotated example<a class="headerlink" href="#annotated-example" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The colored labels below identify the purpose of each passage. <strong>Do not include these colored labels or other instructional annotations in your homework submissions.</strong> Write your own analysis in ordinary text, retaining the bold blockquoted problem statement. Use section headings only when they help organize a longer solution.</p>
+</div>
+<p>The example is analytical, so it does not require a Python calculation.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="phys-321-chapter-02">
+<h1>PHYS 321 — Chapter 02<a class="headerlink" href="#phys-321-chapter-02" title="Link to this heading">#</a></h1>
 <section id="problem-1">
 <h2>Problem 1<a class="headerlink" href="#problem-1" title="Link to this heading">#</a></h2>
-<p><strong>Show that the form of Newton’s second law is invariant under the Galilean transformation.</strong></p>
-<p>Newton’s second law describes the force <span class="math notranslate nohighlight">\(\vec{F}\)</span> applied on a object with a mass <span class="math notranslate nohighlight">\(m\)</span>.  The force accelerates the object, which means that the velocity <span class="math notranslate nohighlight">\(\vec{v}\)</span> changes with time.  This can be represented mathematically as</p>
+<blockquote>
+<div><p><strong>Show that the form of Newton’s second law is invariant under a Galilean transformation.</strong></p>
+</div></blockquote>
+<p><span style="color: #1756a9;"><strong>Introduction</strong></span></p>
+<p>Observers in different inertial frames can assign different positions and velocities to the same particle, but Newton’s second law relates force to acceleration. We therefore need to examine how acceleration transforms: differentiating the Galilean position transformation will reveal whether a change of frame alters the equation of motion.</p>
+<p><span style="color: #773899;"><strong>Method</strong></span></p>
+<p>Consider an inertial frame <span class="math notranslate nohighlight">\(K\)</span> and a second frame <span class="math notranslate nohighlight">\(K'\)</span> moving with constant velocity <span class="math notranslate nohighlight">\(U\)</span> along their common <span class="math notranslate nohighlight">\(x\)</span>-axis. Their axes remain parallel, and their origins coincide at <span class="math notranslate nohighlight">\(t=0\)</span>. We work in one dimension and use the Galilean transformation</p>
 <div class="math notranslate nohighlight">
-\[ \vec{F} = m\frac{d\vec{v}}{dt} = m\frac{d^2\vec{x}}{dt^2}.  \]</div>
-<p>A Galilean transformation represents a translation between reference frames, and for simplicity, we limit this to one dimension (i.e., <span class="math notranslate nohighlight">\(\vec{x}\rightarrow x\)</span>).  Suppose there are two reference frames: a fixed frame <span class="math notranslate nohighlight">\(K\)</span> and a moving frame <span class="math notranslate nohighlight">\(K^\prime\)</span> that slides along the <span class="math notranslate nohighlight">\(x\)</span>-axis at a <em>constant</em> velocity <span class="math notranslate nohighlight">\(v\)</span>. Then the Galilean transformation between the frames is</p>
+\[
+x' = x - Ut, \qquad t' = t.
+\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(U\)</span> is the relative velocity of the frames, while <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x'\)</span> describe the position of the particle. Within the Newtonian description used here, its mass <span class="math notranslate nohighlight">\(m\)</span> is constant and the force describing the same interaction is unchanged between these frames, so <span class="math notranslate nohighlight">\(F'=F\)</span>. We will transform the acceleration and express the equation of motion in the primed coordinates.</p>
+<p><span style="color: #995000;"><strong>Results and Discussion</strong></span></p>
+<p>Because the two frames use the same time coordinate, differentiating the position transformation gives</p>
 <div class="math notranslate nohighlight">
-\[x^\prime = x - vt, \]</div>
-<p>where the position in the <span class="math notranslate nohighlight">\(K^\prime\)</span> frame is given by <span class="math notranslate nohighlight">\(x^\prime\)</span> after a time <span class="math notranslate nohighlight">\(t\)</span>.  Newton’s second law in the <span class="math notranslate nohighlight">\(K\)</span> frame is</p>
+\[
+\frac{dx'}{dt'} = \frac{dx}{dt} - U.
+\]</div>
+<p>The observers therefore measure different particle velocities. Differentiating again gives</p>
 <div class="math notranslate nohighlight">
-\[ F = m \frac{d^2x}{dt^2}, \]</div>
-<p>and we can find an equivalent expression in the <span class="math notranslate nohighlight">\(K^\prime\)</span> frame through the substitution <span class="math notranslate nohighlight">\(x = x^\prime + vt\)</span> to get</p>
+\[
+\frac{d^2x'}{dt'^2} = \frac{d^2x}{dt^2} - \frac{dU}{dt} = \frac{d^2x}{dt^2},
+\]</div>
+<p>where the last equality follows because <span class="math notranslate nohighlight">\(U\)</span> is constant. Thus, both observers measure the same acceleration, <span class="math notranslate nohighlight">\(a'=a\)</span>.</p>
+<p>Newton’s second law in frame <span class="math notranslate nohighlight">\(K\)</span> is</p>
 <div class="math notranslate nohighlight">
-\[ F^\prime = m \frac{d^2}{dt^2}\left(x^\prime + vt\right). \]</div>
-<p>First, we evaluate the right hand side to get</p>
+\[
+F = m\frac{d^2x}{dt^2}.
+\]</div>
+<p>Substituting the transformed acceleration and using <span class="math notranslate nohighlight">\(F'=F\)</span> gives</p>
 <div class="math notranslate nohighlight">
-\[ \frac{d^2}{dt^2}\left(x^\prime + vt\right) = \frac{d^2x^\prime}{dt^2} + \frac{d^2}{dt^2}\left(vt\right). \]</div>
-<p>Since the <span class="math notranslate nohighlight">\(K^\prime\)</span> frame is moving with a <em>constant</em> velocity, then the second derivative of <span class="math notranslate nohighlight">\(vt\)</span> is equal to zero, or</p>
-<div class="math notranslate nohighlight">
-\[ \frac{d^2}{dt^2}\left(vt\right) = \frac{dv}{dt} = 0, \]</div>
-<p>because the derivative of a constant is zero.  <strong>This leaves our transformed version of Newton’s second law as</strong></p>
-<div class="math notranslate nohighlight">
-\[ F^\prime  = m\frac{d^2x^\prime}{dt^2}, \]</div>
-<p><strong>which is an equivalent form of Newton’s second law in the <span class="math notranslate nohighlight">\(K\)</span> frame.  Therefore, Newton’s second law is invariant under the Galilean transformation <span class="math notranslate nohighlight">\((F=F^\prime)\)</span>.</strong></p>
+\[
+F' = m\frac{d^2x'}{dt'^2}.
+\]</div>
+<p>This equation has the same form as the original equation of motion. The result also gives a useful consistency check: when <span class="math notranslate nohighlight">\(U=0\)</span>, the two coordinate descriptions coincide. If the frame velocity were changing, the acceleration transformation would contain the additional term <span class="math notranslate nohighlight">\(-dU/dt\)</span>, and the primed frame would require an inertial-force term to retain the form of Newton’s second law.</p>
+<p><span style="color: #236b3b;"><strong>Conclusion</strong></span></p>
+<p>Differentiating the Galilean position transformation twice showed that the two inertial frames measure the same particle acceleration. With the same mass and Newtonian force, this gives the same form of Newton’s second law in both frames. This result is reasonable because a constant offset in velocity does not change its rate of change; in the limiting case <span class="math notranslate nohighlight">\(U=0\)</span>, the coordinate descriptions also coincide exactly.</p>
 </section>
 </section>
 
@@ -625,11 +721,17 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework Assignments</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectations">Expectations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-style">Homework Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission-requirements">Submission requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-in-google-colab">Working in Google Colab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-work">Group work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-pdf">Preparing the PDF</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-2">Chapter 2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-and-formatting-expectations">Writing and formatting expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annotated-example">Annotated example</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#phys-321-chapter-02">PHYS 321 — Chapter 02</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-1">Problem 1</a></li>
 </ul>
 </li>
@@ -658,7 +760,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

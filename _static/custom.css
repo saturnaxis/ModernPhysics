@@ -1,15 +1,456 @@
 /* docs/_static/custom.css */
+P {text-align: justify;}
 
+/* -----------------------------
+   ETAMU theme tokens
+   ----------------------------- */
+:root{
+  --etamu-blue:#0033A0;
+  --etamu-gold:#F2A900;
+  --etamu-gold-light: rgba(242,169,0,.15);
+
+  /* Let the browser know we support both */
+  color-scheme: light dark;
+}
+
+/* ETAMU Audio Player Theme */
 :root {
-    --background-color: rgba(218, 26, 50, .1);
-    --border-color: #DA1A32;
+    /* Main Accent: ETAMU Gold */
+    --plyr-color-main: #F2A900;
+
+    /* Player Background: ETAMU Blue */
+    --plyr-audio-controls-background: #0033A0;
+
+    /* Text and Icons: White for high contrast against the blue */
+    --plyr-audio-control-color: #FFFFFF;
 }
 
-div.orange {
-    background-color: var(--background-color);
-    border-color: var(--border-color);
+.pronunciation-widget {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
-div.orange p.admonition-title {
-    background-color: var(--background-color);
+.pronunciation-label {
+    font-weight: 600;
+    margin-right: 0.15rem;
 }
+
+.pronunciation-widget button {
+    padding: 0.25rem 0.65rem;
+    border: 1px solid #777;
+    border-radius: 0.3rem;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.pronunciation-widget button:hover {
+    background: rgba(128, 128, 128, 0.12);
+}
+
+/* -----------------------------
+   etamu-exercise styling
+   ----------------------------- */
+
+/* If sphinx_exercise renders as an admonition with extra classes */
+div.admonition.exercise{
+  background-color: var(--etamu-gold-light);
+  border-left: 5px solid var(--etamu-gold);
+}
+div.admonition.exercise > .admonition-title{
+  background-color: var(--etamu-gold);
+  color:#222;
+  font-weight:600;
+}
+
+/* If sphinx_exercise uses a custom wrapper class */
+div.exercise{
+  background-color: var(--etamu-gold-light);
+  border-left: 5px solid var(--etamu-gold);
+}
+div.exercise > .admonition-title,
+div.exercise > p.admonition-title{
+  background-color: var(--etamu-gold);
+  color:#222;
+  font-weight:600;
+}
+
+/* -----------------------------
+   ETAMU list-table styling
+   ----------------------------- */
+
+.etamu-table {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etamu-table table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etamu-table table th:first-child,
+.etamu-table table td:first-child {
+  text-align: left !important;
+}
+
+.etamu-table table th:nth-child(n+2),
+.etamu-table table td:nth-child(n+2) {
+  text-align: right !important;
+  min-width: 170px;
+}
+
+.etamu-table table th {
+  vertical-align: bottom;
+}
+
+
+/* Default figure layout */
+.bd-content figure {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bd-content figure img {
+  max-height: 60vh;
+  width: auto;
+}
+
+.pronounce {
+  border-bottom: 1px dotted var(--pst-color-link);
+  cursor: help;
+}
+
+.bd-content figure img.custom-wide-figure {
+  width: min(100%, 900px);
+  height: auto;
+  max-height: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bd-content figure img.custom-tall-figure {
+  max-height: 650px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -----------------------------
+   etamu-dropdown styling
+   ----------------------------- */
+
+/* Outer dropdown wrapper */
+details.sd-dropdown.etamu-dropdown {
+  background-color: var(--etamu-gold-light) !important;
+  border-left: 6px solid var(--etamu-gold) !important;
+  border-radius: 10px !important;
+  margin: 1rem 0 !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+/* Header row */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title {
+  background-color: var(--etamu-blue) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  list-style: none !important;
+  border: none !important;
+}
+
+/* Remove default marker */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title::-webkit-details-marker {
+  display: none;
+}
+
+/* Hover */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title:hover {
+  background-color: #002a80 !important;
+}
+
+/* Body */
+details.sd-dropdown.etamu-dropdown > div.sd-summary-content,
+details.sd-dropdown.etamu-dropdown > .sd-card-body,
+details.sd-dropdown.etamu-dropdown > .etamu-dropdown-body {
+  background-color: #ffffff !important;
+  padding: 1rem 1.25rem !important;
+  line-height: 1.6;
+  border-top: 1px solid rgba(0, 51, 160, 0.12) !important;
+}
+
+/* Icon/text inside summary */
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-text,
+details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-state-marker {
+  color: #ffffff !important;
+}
+
+/* Smooth expand animation */
+details.sd-dropdown.etamu-dropdown[open] > div.sd-summary-content,
+details.sd-dropdown.etamu-dropdown[open] > .sd-card-body,
+details.sd-dropdown.etamu-dropdown[open] > .etamu-dropdown-body {
+  animation: etamuDropdownFade 0.2s ease-in-out;
+}
+
+@keyframes etamuDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  details.sd-dropdown.etamu-dropdown {
+    background-color: rgba(242,169,0,0.10) !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title {
+    background-color: #001f66 !important;
+    color: #ffffff !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title:hover {
+    background-color: #002a80 !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > div.sd-summary-content,
+  details.sd-dropdown.etamu-dropdown > .sd-card-body,
+  details.sd-dropdown.etamu-dropdown > .etamu-dropdown-body {
+    background-color: #1e1e1e !important;
+    color: rgba(255,255,255,0.90) !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+  }
+
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-text,
+  details.sd-dropdown.etamu-dropdown > summary.sd-summary-title .sd-summary-state-marker {
+    color: #ffffff !important;
+  }
+}
+/* -----------------------------
+   Blockquotes
+   ----------------------------- */
+blockquote{
+  border-left: 4px solid var(--etamu-blue);
+  padding: 0.75em 1em;
+  margin: 1em 0;
+  color: inherit;
+}
+
+/* -----------------------------
+   Figure captions (robust in mobile + dark mode)
+   ----------------------------- */
+
+/* Baseline: follow theme text when available */
+figure figcaption,
+figure figcaption p{
+  color: var(--pst-color-text-base, inherit);
+  opacity: 1;
+}
+
+/* Explicitly keep Fig. # and caption text visible */
+figure figcaption .caption-number{
+  color: inherit;
+  opacity: 1;
+  font-weight: 700;
+}
+figure figcaption .caption-text{
+  color: inherit;
+  opacity: 1;
+}
+
+/* Headerlink "#" should stay visible but not loud */
+figure figcaption a.headerlink{
+  color: inherit;
+  opacity: 0.7;
+}
+
+/* If the theme sets a data-theme attribute (Sphinx Book / PyData) */
+html[data-theme="light"] figure figcaption,
+html[data-theme="light"] figure figcaption p{
+  color: #222;
+}
+
+html[data-theme="dark"] figure figcaption,
+html[data-theme="dark"] figure figcaption p{
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Ensure captions inside admonitions stay readable */
+.admonition figure figcaption,
+.bd-content figure figcaption{
+  color: var(--pst-color-text-base, inherit);
+  opacity: 1;
+}
+
+/* Fallback for environments without data-theme */
+@media (prefers-color-scheme: dark){
+  figure figcaption,
+  figure figcaption p{
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* -----------------------------
+   Dark-mode compatibility tweaks
+   ----------------------------- */
+@media (prefers-color-scheme: dark){
+  :root{
+    /* darker-tinted gold background so it doesn't glow */
+    --etamu-gold-light: rgba(242,169,0,.18);
+  }
+
+  /* Exercises/admonitions */
+  div.admonition.exercise,
+  div.exercise{
+    background-color: rgba(242,169,0,.10);
+    border-left-color: var(--etamu-gold);
+  }
+
+  /* Title bar */
+  div.admonition.exercise > .admonition-title,
+  div.exercise > .admonition-title,
+  div.exercise > p.admonition-title{
+    background-color: var(--etamu-gold);
+    color: #111;
+  }
+
+  /* Blockquotes: darker surface */
+  blockquote{
+    background-color: rgba(255,255,255,.06);
+    border-left-color: var(--etamu-blue);
+    color: rgba(255,255,255,.88);
+  }
+
+  /* Caption number visibility in dark mode */
+  figure figcaption .caption-number{
+    color: rgba(255,255,255,.90);
+  }
+}
+
+/* -----------------------------
+   Responsive video embed helper
+   ----------------------------- */
+.video-container{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1em auto;
+}
+
+.video-container iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Optional styling for video captions */
+.video-caption{
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 0.5em;
+  opacity: 0.85;
+  color: var(--pst-color-text-base, #666);
+}
+
+/* -----------------------------
+   Responsive YouTube embeds from sphinxcontrib.youtube
+   ----------------------------- */
+
+/* Target YouTube iframes generated by the {youtube} directive */
+.bd-content iframe[src*="youtube.com"],
+.bd-content iframe[src*="youtube-nocookie.com"],
+.bd-content iframe[src*="www.youtube.com"],
+.bd-content iframe[src*="youtu.be"] {
+  width: min(100%, 720px) !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+}
+
+/* Prevent videos from overflowing admonitions on mobile */
+.bd-content .admonition iframe[src*="youtube.com"],
+.bd-content .admonition iframe[src*="youtube-nocookie.com"] {
+  width: 100% !important;
+  max-width: 720px !important;
+}
+
+/* Extra mobile safety */
+@media screen and (max-width: 768px) {
+  .bd-content iframe[src*="youtube.com"],
+  .bd-content iframe[src*="youtube-nocookie.com"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* -----------------------------
+   Checkpoint margin boxes
+   ----------------------------- */
+
+/* Left-align body text, not the title */
+.bd-content div.admonition.checkpoint.margin > p:not(.admonition-title),
+.bd-content aside.margin div.admonition.checkpoint > p:not(.admonition-title),
+.bd-content div.margin div.admonition.checkpoint > p:not(.admonition-title) {
+  text-align: left !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Left-align lists if used inside checkpoint boxes */
+.bd-content div.admonition.checkpoint.margin li,
+.bd-content aside.margin div.admonition.checkpoint li,
+.bd-content div.margin div.admonition.checkpoint li {
+  text-align: left !important;
+}
+
+/* Keep the title layout unchanged */
+.bd-content div.admonition.checkpoint.margin > .admonition-title,
+.bd-content aside.margin div.admonition.checkpoint > .admonition-title,
+.bd-content div.margin div.admonition.checkpoint > .admonition-title {
+  text-align: left;
+}
+
+/* If display math is ever used in a checkpoint */
+.bd-content div.admonition.checkpoint.margin mjx-container[display="true"],
+.bd-content aside.margin div.admonition.checkpoint mjx-container[display="true"],
+.bd-content div.margin div.admonition.checkpoint mjx-container[display="true"] {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+

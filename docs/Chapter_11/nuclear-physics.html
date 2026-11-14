@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>11. Nuclear Physics &#8212; PHYS2700 Modern Physics</title>
+    <title>11. Nuclear Physics &#8212; PHYS321 Modern Physics</title>
   
   
   
@@ -28,15 +28,20 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css?v=20ffa6e1" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../_static/metadata_figure.css?v=2463d4a7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_iframe.css?v=96c28b52" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=79b3b73e" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=ffec1ee8" />
+    <link rel="stylesheet" type="text/css" href="../_static/audio-player.css?v=b56eb1ea" />
     <link rel="stylesheet" type="text/css" href="../_static/mycss.css?v=3589796e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -50,12 +55,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/tabs.js?v=3ee01567"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/h5p-resizer.js?v=a3e8b8ed"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-6WTX4WF23B"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -76,6 +83,9 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter_11/nuclear-physics';</script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="../_static/init-plyr.js?v=bf401924"></script>
+    <script src="../_static/audio-player.js?v=5a953d7a"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="12. Particle Physics" href="../Chapter_12/particle-physics.html" />
@@ -171,8 +181,8 @@
       
     
     
-    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS2700 Modern Physics - Home"/>
-    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS2700 Modern Physics - Home"/>`);</script>
+    <img src="../_static/bohr_gif.gif" class="logo__image only-light" alt="PHYS321 Modern Physics - Home"/>
+    <script>document.write(`<img src="../_static/bohr_gif.gif" class="logo__image only-dark" alt="PHYS321 Modern Physics - Home"/>`);</script>
   
   
 </a></div>
@@ -597,8 +607,8 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span><span class="p">,</span> <span class="n">physical_constants</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">c</span><span class="p">,</span> <span class="n">physical_constants</span>
 
 <span class="n">neutron_mass</span> <span class="o">=</span> <span class="n">physical_constants</span><span class="p">[</span><span class="s1">&#39;neutron mass energy equivalent in MeV&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">hbar</span> <span class="o">=</span> <span class="n">physical_constants</span><span class="p">[</span><span class="s1">&#39;Planck constant in eV/Hz&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
@@ -656,8 +666,8 @@ X &amp;= \text{chemical element symbol}.
 <li><p>The chemical properties of an atom are determined by its electron configuration.  The chemical properties are essentially determined by <span class="math notranslate nohighlight">\(Z\)</span> because a neutral atom will have equal numbers of electrons and protons.</p></li>
 </ul>
 <p>Atomic masses are measured in atomic mass units, which are designated by the symbol <span class="math notranslate nohighlight">\(\rm u\)</span>. Atomic mass units are defined in terms of the mass of the isotope <span class="math notranslate nohighlight">\(\rm ^{12}C\)</span> whose atomic mass is defined to be exactly <span class="math notranslate nohighlight">\(12\ \rm u\)</span>.  The atomic mass unit works out to be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4e589717-b847-44e8-9ebc-dea09fdea0fe">
-<span class="eqno">(11.1)<a class="headerlink" href="#equation-4e589717-b847-44e8-9ebc-dea09fdea0fe" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-01463614-b383-4ca0-a39b-17e487d0191b">
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-01463614-b383-4ca0-a39b-17e487d0191b" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm u} = 1.66054 \times 10^{-27}\ {\rm kg} = 931.49\ {\rm MeV/c^2}.
 \end{align}\]</div>
 <p>Both neutrons and protons are known collectively as <strong>nucleons</strong> and are constructed of other particles called <em>quarks</em>*.  Neutrons are slightly more massive than protons.</p>
@@ -669,23 +679,23 @@ X &amp;= \text{chemical element symbol}.
 <div class="math notranslate nohighlight">
 \[ \text{Nuclear force radius} \approx \text{Mass radius} \approx \text{Charge radius}. \]</div>
 <p>The nuclear radius is approximated by a spherical charge distribution with</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9586bed8-1e0e-4283-bedd-a8be5c4cffef">
-<span class="eqno">(11.2)<a class="headerlink" href="#equation-9586bed8-1e0e-4283-bedd-a8be5c4cffef" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8f45f305-7c9b-46ed-afdd-f9e0790100df">
+<span class="eqno">(11.2)<a class="headerlink" href="#equation-8f45f305-7c9b-46ed-afdd-f9e0790100df" title="Permalink to this equation">#</a></span>\[\begin{align}
 R = r_o A^{1/3},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(r_o \approx 1.2\ {\rm fm}\)</span> and measurements range from <span class="math notranslate nohighlight">\(1-1.5\ {\rm fm}\)</span>; Note <span class="math notranslate nohighlight">\(1\ {\rm fm} = 10^{-15}\ {\rm m}\)</span>.  However, the term <strong>fermi</strong> is also used interchangeably with <strong>femtometer</strong>.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Robert_Hofstadter">Robert Hofstadter</a> and his colleagues (in the 1950s) performed the first precision electron-scattering measurements of the nuclear charge distribution using electron energies from <span class="math notranslate nohighlight">\(100-500\ {\rm MeV}\)</span>.  To probe the shape of most nuclei, we need a particle with a short wavelength.  The de Broglie wavelength of a <span class="math notranslate nohighlight">\(500\)</span>-<span class="math notranslate nohighlight">\(\rm MeV\)</span> electron is <span class="math notranslate nohighlight">\({\sim}2.5\ {\rm fm}\)</span>.  These measurements are approximately described for all the lightest nuclei by the Fermi distribution for the nuclear charge density <span class="math notranslate nohighlight">\(\rho(r)\)</span> with the following form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-523cdcdb-1ca5-4257-ac21-da1580a06043">
-<span class="eqno">(11.3)<a class="headerlink" href="#equation-523cdcdb-1ca5-4257-ac21-da1580a06043" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-df244d92-a477-43cb-b8ba-a0661a0febbb">
+<span class="eqno">(11.3)<a class="headerlink" href="#equation-df244d92-a477-43cb-b8ba-a0661a0febbb" title="Permalink to this equation">#</a></span>\[\begin{align}
 \rho(r) = \frac{\rho_o}{e^{(r-R)/a}_1}.
 \end{align}\]</div>
 <p>The shape of the distribution shown below illustrates the distance <span class="math notranslate nohighlight">\(R\)</span> at which the nuclear density has dropped to <span class="math notranslate nohighlight">\(50\%\)</span> of its central value, and <span class="math notranslate nohighlight">\(t = 4.4a\)</span> is the surface thickness, measureed from <span class="math notranslate nohighlight">\(90\%-10\%\)</span> of the central density.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
 
-<span class="k">def</span> <span class="nf">nuclear_charge_density</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">a</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">nuclear_charge_density</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">a</span><span class="p">):</span>
     <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">((</span><span class="n">r</span><span class="o">-</span><span class="n">R</span><span class="p">)</span><span class="o">/</span><span class="n">a</span><span class="p">))</span>
 
 <span class="n">a_t</span> <span class="o">=</span> <span class="mf">2.5</span><span class="o">/</span><span class="mf">4.4</span>
@@ -732,7 +742,7 @@ R = r_o A^{1/3},
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/dccd2f153814edfcb10e819a6789a4188eddd43155720386c413597fba3387af.png" src="../_images/dccd2f153814edfcb10e819a6789a4188eddd43155720386c413597fba3387af.png" />
+<img alt="../_images/5d63717f69919c0e395580c5ec348179aeee5279f1f3269a7aae9af10fdfb1f1.png" src="../_images/5d63717f69919c0e395580c5ec348179aeee5279f1f3269a7aae9af10fdfb1f1.png" />
 </div>
 </div>
 <div class="exercise orange admonition" id="Chapter_11/nuclear-physics-exercise-1">
@@ -754,8 +764,8 @@ R = r_o A^{1/3},
 <p><strong>Nuclear Density</strong></p>
 </aside>
 <p>If we approximate the nuclear shape as a sphere, we have:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cce84dbe-6022-4327-b8fa-01c1d76d0b98">
-<span class="eqno">(11.4)<a class="headerlink" href="#equation-cce84dbe-6022-4327-b8fa-01c1d76d0b98" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-49cc86d3-2a1e-48a6-82af-04ccfca0c0eb">
+<span class="eqno">(11.4)<a class="headerlink" href="#equation-49cc86d3-2a1e-48a6-82af-04ccfca0c0eb" title="Permalink to this equation">#</a></span>\[\begin{align}
 V &amp;= \frac{4}{3}\pi R^3, \\
 &amp;= \frac{4}{3}\pi r_o^3 A.
 \end{align}\]</div>
@@ -771,8 +781,8 @@ V &amp;= \frac{4}{3}\pi R^3, \\
 </aside>
 <p>The proton’s intrinsic magnetic moment points in the same direction as its intrinsic spin angular momentum because of the positive charge proton.  This is contrasted with the negatively charged electron, where the spin and magnetic moment point in opposite directions.</p>
 <p>Nuclear magnetic moments are measured in units of the nuclear magneton <span class="math notranslate nohighlight">\(\mu_{\rm N}\)</span>, which is analogous to the Bohr magneton for electrons, by the relation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bdfc1ea4-8d82-4887-bb03-62b4bff9d306">
-<span class="eqno">(11.5)<a class="headerlink" href="#equation-bdfc1ea4-8d82-4887-bb03-62b4bff9d306" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fad13e28-f784-4e98-a56c-9456ef8b2eb8">
+<span class="eqno">(11.5)<a class="headerlink" href="#equation-fad13e28-f784-4e98-a56c-9456ef8b2eb8" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mu_{\rm N} = \frac{e\hbar}{2m_p}.
 \end{align}\]</div>
 <div class="admonition note">
@@ -799,18 +809,18 @@ V &amp;= \frac{4}{3}\pi R^3, \\
 <p>The next simplest nucleus (after the proton) is the deuteron <span class="math notranslate nohighlight">\(\rm ^2H\)</span>.  A deuteron consists of one proton and neutron, which allows us our first look at the nuclar force.</p>
 <p>Let us determine how strongly the neutron and proton are bound together in a deuteron.  The deuteron mass is <span class="math notranslate nohighlight">\(2.013553\ {\rm u}\)</span>, and the mass of a deuterium atom (adding the electron) is <span class="math notranslate nohighlight">\(2.014102\ {\rm u}\)</span>.  The difference in masses is just the mass of an electron.  The electron binding energy is so mall that it can be neglected.</p>
 <p>The deuteron nucleus is bound by an energy <span class="math notranslate nohighlight">\(B_d\)</span>, which represents mass-energy.  The mass of a deuteron is then</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ca76e4e5-751e-4d79-97fb-cd6b116f3d26">
-<span class="eqno">(11.6)<a class="headerlink" href="#equation-ca76e4e5-751e-4d79-97fb-cd6b116f3d26" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cb0153da-5d87-4533-bb77-6e53b5485643">
+<span class="eqno">(11.6)<a class="headerlink" href="#equation-cb0153da-5d87-4533-bb77-6e53b5485643" title="Permalink to this equation">#</a></span>\[\begin{align}
 m_d = m_p + m_n - B_d/c^2.
 \end{align}\]</div>
 <p>The deuteron mass is less than the sum of the masses of a neutron and proton by just the nuclear binding energy <span class="math notranslate nohighlight">\(B_d\)</span>.  If we add an electron mass to each side of the equation, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b0d5fbc2-84f0-42c5-85a9-a6087cf23c9f">
-<span class="eqno">(11.7)<a class="headerlink" href="#equation-b0d5fbc2-84f0-42c5-85a9-a6087cf23c9f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-009777f9-1610-4e23-88a9-42315340ccd3">
+<span class="eqno">(11.7)<a class="headerlink" href="#equation-009777f9-1610-4e23-88a9-42315340ccd3" title="Permalink to this equation">#</a></span>\[\begin{align}
 m_d + m_e = m_p + m_n + m_e - B_d/c^2.
 \end{align}\]</div>
 <p>The left hand side <span class="math notranslate nohighlight">\((m_d + m_e)\)</span> is the atomic deuterium mass <span class="math notranslate nohighlight">\(M({\rm ^2H})\)</span> and <span class="math notranslate nohighlight">\(m_p + m_e\)</span> is the atomic hydrogen mass (if we neglect the small amount of binding energy).  Then we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4b000f18-7dc5-4d08-bc7d-8fcd0f4fd6c1">
-<span class="eqno">(11.8)<a class="headerlink" href="#equation-4b000f18-7dc5-4d08-bc7d-8fcd0f4fd6c1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-839fc2a7-8449-4182-a533-222b1636496a">
+<span class="eqno">(11.8)<a class="headerlink" href="#equation-839fc2a7-8449-4182-a533-222b1636496a" title="Permalink to this equation">#</a></span>\[\begin{align}
 M({\rm ^2H}) = m_n + M({\rm ^1H}) - B_d/c^2,
 \end{align}\]</div>
 <p>and we can use <em>atomic masses</em>.</p>
@@ -819,22 +829,22 @@ M({\rm ^2H}) = m_n + M({\rm ^1H}) - B_d/c^2,
 <p>The electron masses cancel in almost all nuclear-mass difference calculations, where we routinely use atomic masses rather than nuclear masses.  Also, we use uppercase <span class="math notranslate nohighlight">\(M\)</span> for atomic masses and lowercase <span class="math notranslate nohighlight">\(m\)</span> for nuclear and particle masses.</p>
 </div>
 <p>The binding energy <span class="math notranslate nohighlight">\(B_d\)</span> of the deuteron is determined using:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ac1db6ca-2fe4-4081-ba67-5a0a12bda5e1">
-<span class="eqno">(11.9)<a class="headerlink" href="#equation-ac1db6ca-2fe4-4081-ba67-5a0a12bda5e1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d4db3eed-f7a7-467b-a94a-082d5fc33cf5">
+<span class="eqno">(11.9)<a class="headerlink" href="#equation-d4db3eed-f7a7-467b-a94a-082d5fc33cf5" title="Permalink to this equation">#</a></span>\[\begin{align}
 m_n &amp;= 1.008665\ {\rm u} \qquad \text{Neutron mass}, \\
 M({\rm ^1H}) &amp;= 1.007825\ {\rm u} \qquad \text{Atomic hydrogen mass}, \\
 M({\rm ^2H}) &amp;= 2.014102\ {\rm u}  \qquad \text{Atomic deuterium mass}, \\
 B_d/c^2 &amp;= m_n + M({\rm ^1H}) + M({\rm ^2H}) = 0.002388\ {\rm u}.
 \end{align}\]</div>
 <p>Using <span class="math notranslate nohighlight">\({\rm u} = 931.5\ {\rm Mev/c^2}\)</span>, we convert the above mass-difference to energy by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-040b92e2-c9f5-4d0a-a1d2-1b62a8166f25">
-<span class="eqno">(11.10)<a class="headerlink" href="#equation-040b92e2-c9f5-4d0a-a1d2-1b62a8166f25" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2fcd2a9b-676a-4477-8adc-8a6c415a2d0f">
+<span class="eqno">(11.10)<a class="headerlink" href="#equation-2fcd2a9b-676a-4477-8adc-8a6c415a2d0f" title="Permalink to this equation">#</a></span>\[\begin{align}
 B_d = 0.002388\ c^2 \cdot \left(\frac{931.5\ {\rm MeV}}{c^2} \right) = 2.224\ {\rm MeV}.
 \end{align}\]</div>
 <p>Neglecting the atomic electron binding energy <span class="math notranslate nohighlight">\((13.6\ {\rm eV})\)</span> was justified, given that the nuclear binding energy is <span class="math notranslate nohighlight">\(2.2\ {\rm MeV}\)</span> (or <span class="math notranslate nohighlight">\({\sim}10^6\)</span> times greater).  Even for heavier nuclei, we normally neglect the electron binding energies.</p>
 <p>The binding energy of any nucleus <span class="math notranslate nohighlight">\(\rm ^A_ZX\)</span> is the energy required to separate the nucleus into free neutron and protons.  It can be determined using the atomic masses by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a9343cdd-13c8-4714-a092-dbf89a1e62c6">
-<span class="eqno">(11.11)<a class="headerlink" href="#equation-a9343cdd-13c8-4714-a092-dbf89a1e62c6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fc891f97-4256-449b-abd8-33a10317d167">
+<span class="eqno">(11.11)<a class="headerlink" href="#equation-fc891f97-4256-449b-abd8-33a10317d167" title="Permalink to this equation">#</a></span>\[\begin{align}
 B({\rm ^A_ZX}) = \left[Nm_n + ZM({\rm ^1H}) - M({\rm ^A_ZX}) \right]c^2.
 \end{align}\]</div>
 <aside class="margin sidebar">
@@ -842,23 +852,23 @@ B({\rm ^A_ZX}) = \left[Nm_n + ZM({\rm ^1H}) - M({\rm ^A_ZX}) \right]c^2.
 <p><strong>Experimental Determination of Nuclear Binding Energies</strong></p>
 </aside>
 <p>We can check our result for the <span class="math notranslate nohighlight">\(2.22-{\rm MeV}\)</span> binding energy of the deuteron by using a nuclear reaction.  We scatter gamma rays (i.e., photons) from deuterium gas and look for the breakup of a deuteron into a neutron and proton:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-81890520-2c64-427a-acfd-3773ca6119d5">
-<span class="eqno">(11.12)<a class="headerlink" href="#equation-81890520-2c64-427a-acfd-3773ca6119d5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f00ab80a-e56a-43ab-90e5-03a1e840a2b7">
+<span class="eqno">(11.12)<a class="headerlink" href="#equation-f00ab80a-e56a-43ab-90e5-03a1e840a2b7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \gamma + d \rightarrow n + p.
 \end{align}\]</div>
 <p>This type of reaction is called <em>photodisintegration</em> or a <em>photonuclear reaction</em>, because a photon causes the target nucleus to change form.  The mass-energy relation is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1c47cd78-2c99-4664-a96e-e05f31273dd8">
-<span class="eqno">(11.13)<a class="headerlink" href="#equation-1c47cd78-2c99-4664-a96e-e05f31273dd8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ff8c4ee0-a825-4ff9-a9d6-63080afff1d5">
+<span class="eqno">(11.13)<a class="headerlink" href="#equation-ff8c4ee0-a825-4ff9-a9d6-63080afff1d5" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf + M({\rm ^2H})c^2 = m_nc^2 + M({\rm ^1H})c^2 + K_n + K_p,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(hf\)</span> is the incident photon energy, <span class="math notranslate nohighlight">\(K_n\)</span> is the neutron kinetic energy, and <span class="math notranslate nohighlight">\(K_p\)</span> is the proton kinetic energy.  If we want to find the minimum energy required for the photodisintegration, we let <span class="math notranslate nohighlight">\(K_n = K_p = 0\)</span>.  We then find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-97e08adc-e594-47c0-83ee-ba61b8be4a6f">
-<span class="eqno">(11.14)<a class="headerlink" href="#equation-97e08adc-e594-47c0-83ee-ba61b8be4a6f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9f741a04-8a47-40e3-a661-8de2d208f72b">
+<span class="eqno">(11.14)<a class="headerlink" href="#equation-9f741a04-8a47-40e3-a661-8de2d208f72b" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf_{\rm min} = m_nc^2 + M({\rm ^1H})c^2 - M({\rm ^2H})c^2 = B_d.
 \end{align}\]</div>
 <p>The above equation is not quite correct, because momentum must also be conserved in the reaction (<span class="math notranslate nohighlight">\(K_n\)</span> and <span class="math notranslate nohighlight">\(K_p\)</span> can’t both be zero).  The precise relation is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe252c5a-9679-4a91-99a2-bf8930b8f60e">
-<span class="eqno">(11.15)<a class="headerlink" href="#equation-fe252c5a-9679-4a91-99a2-bf8930b8f60e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-68e6fd2e-0f8a-44fe-adb6-2a4b0dc8f950">
+<span class="eqno">(11.15)<a class="headerlink" href="#equation-68e6fd2e-0f8a-44fe-adb6-2a4b0dc8f950" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf_{\rm min} = B_d\left[1 + \frac{B_d}{2M({\rm ^2H})c^2 } \right].
 \end{align}\]</div>
 <p>This value of <span class="math notranslate nohighlight">\(hf_{\rm min}\)</span> is almost exactly <span class="math notranslate nohighlight">\(B_d\)</span>, the deuteron binding energy, because the second term is so small.  Experiment shows that a photon energy less than <span class="math notranslate nohighlight">\(2.22\ {\rm MeV}\)</span> cannot dissociate a deuteron.</p>
@@ -873,8 +883,8 @@ hf_{\rm min} = B_d\left[1 + \frac{B_d}{2M({\rm ^2H})c^2 } \right].
 <section id="nuclear-force">
 <h3><span class="section-number">11.4.1. </span>Nuclear Force<a class="headerlink" href="#nuclear-force" title="Link to this heading">#</a></h3>
 <p>The most straightforward technique to measure nuclear forces are based on scattering experiments.  In scattering neutrons from protons, a deuteron is sometimes formed in the nuclear reaction:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f2bf1398-5337-47e1-8e96-0f08cdb084a2">
-<span class="eqno">(11.16)<a class="headerlink" href="#equation-f2bf1398-5337-47e1-8e96-0f08cdb084a2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1fac1748-461a-452c-ac89-2a3e8cad9709">
+<span class="eqno">(11.16)<a class="headerlink" href="#equation-1fac1748-461a-452c-ac89-2a3e8cad9709" title="Permalink to this equation">#</a></span>\[\begin{align}
 n+p \rightarrow d + \gamma.
 \end{align}\]</div>
 <p>The angular distribution of neutrons elastically scattered by protons (e.g., neutron + proton and proton + proton scattering) reveals that the nuclear potential is shaped with a deep well followed second potential.  In the case of proton + proton scattering the second potential is the electrostatic interaction through the Coulomb potential.</p>
@@ -889,8 +899,8 @@ n+p \rightarrow d + \gamma.
 <section id="nuclear-stability">
 <h3><span class="section-number">11.4.2. </span>Nuclear Stability<a class="headerlink" href="#nuclear-stability" title="Link to this heading">#</a></h3>
 <p>If the binding energy of a nuclide <span class="math notranslate nohighlight">\(B\)</span> is positive, then the nuclide is stable against dissociating into free neutrons and protons.  More generally, a nucleus containing <span class="math notranslate nohighlight">\(A\)</span> nucleons is <em>stable</em> if its mass is smaller than that of nay other possible combination of <span class="math notranslate nohighlight">\(A\)</span> nucleons.  The binding energy of a nucleus <span class="math notranslate nohighlight">\(^A_ZX\)</span> against dissociation into any other possible combination of nucleons (e.g., <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span>) is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-69dc2272-8397-4688-9463-7ab02057d907">
-<span class="eqno">(11.17)<a class="headerlink" href="#equation-69dc2272-8397-4688-9463-7ab02057d907" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-833ae23d-28f3-4bf8-89f7-048aba6b64da">
+<span class="eqno">(11.17)<a class="headerlink" href="#equation-833ae23d-28f3-4bf8-89f7-048aba6b64da" title="Permalink to this equation">#</a></span>\[\begin{align}
 B = \left[ M(R) + M(S) - M(^A_ZX)\right]c^2.
 \end{align}\]</div>
 <p>The energy required to remove one proton (or neutron) from a nuclide is called the proton (or neutron) <em>separation energy</em>, where the above equation is useful for finding this energy.  Even if <span class="math notranslate nohighlight">\(B\)</span> is negative, there may be other reasons why the nucleus is stable.</p>
@@ -905,8 +915,8 @@ B = \left[ M(R) + M(S) - M(^A_ZX)\right]c^2.
 <p>It appears that for <span class="math notranslate nohighlight">\(A\leq 40\)</span>, nature prefers the number of protons and neutrons in the nucleus to be about the same, <span class="math notranslate nohighlight">\(Z=N\)</span>.  For <span class="math notranslate nohighlight">\(A &gt; 40\)</span>, there is a preference for <span class="math notranslate nohighlight">\(N&gt;Z\)</span>.</p>
 <p>We can understand this through the strength of the nuclear force that is independent of whether the particles are <span class="math notranslate nohighlight">\(nn\)</span>, <span class="math notranslate nohighlight">\(np\)</span>, or <span class="math notranslate nohighlight">\(pp\)</span>.  Equal numbers of neutrons and protons may give them most attractive internucleon nuclear force, but the Coulomb force must be considered as well.  As the number of protons increases, the Coulomb force between all the protons becomes stronger until eventually affects the binding energy.</p>
 <p>The electrostatic energy required to contain a charge <span class="math notranslate nohighlight">\(Ze\)</span> eveny spread throughout a sphere of radius <span class="math notranslate nohighlight">\(R\)</span> can be calculated by determining the work required to bring the charge inside the sphere from infinity (i.e., potential energy).  This energy is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5c7b33aa-d810-4cad-aab9-a0f2f919417f">
-<span class="eqno">(11.18)<a class="headerlink" href="#equation-5c7b33aa-d810-4cad-aab9-a0f2f919417f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7baf2d94-cf23-49ca-8d8c-9a837f13d217">
+<span class="eqno">(11.18)<a class="headerlink" href="#equation-7baf2d94-cf23-49ca-8d8c-9a837f13d217" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta E_C = \frac{3}{5}\frac{\left(Ze\right)^2}{4\pi \epsilon_o R}.
 \end{align}\]</div>
 <p>For a single proton, the self-energy is</p>
@@ -920,8 +930,8 @@ B = \left[ M(R) + M(S) - M(^A_ZX)\right]c^2.
 <p class="admonition-title"><span class="caption-number">Exercise 11.5 </span></p>
 <section id="exercise-content">
 <p><strong>Show that Eq. <a class="reference internal" href="#equation-nuclear-coulomb-repulsion">(11.19)</a> can be written as</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-7cbdb107-b775-4feb-b435-17f004ea0f54">
-<span class="eqno">(11.20)<a class="headerlink" href="#equation-7cbdb107-b775-4feb-b435-17f004ea0f54" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ed27f2ad-b72a-40a6-943a-bc6a31ba745a">
+<span class="eqno">(11.20)<a class="headerlink" href="#equation-ed27f2ad-b72a-40a6-943a-bc6a31ba745a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta E_C = 0.72\left[ Z(Z-1)\right]A^{-1/3}\ {\rm MeV}
 \end{align}\]</div>
 <p><strong>and use this equation to calculate the total Coulomb energy of <span class="math notranslate nohighlight">\(\rm ^{238}_{\ \ 92}U\)</span>.</strong></p>
@@ -989,8 +999,8 @@ a_{\rm S} &amp;= 23.3\ {\rm MeV} &amp;&amp; \text{Symmetry},
 <li><p>Other modes of decy include emission of <span class="math notranslate nohighlight">\(\alpha\)</span> particles, <span class="math notranslate nohighlight">\(\beta\)</span> particles, protons, neutrons, and fission.</p></li>
 </ul>
 <p>The general form to law of radioactivity is the same for all decays because it is a statistical process.  Given a sample of radioactive material we measure the disintegrations (or decays per unit time), which we define as <strong>activity</strong>.  If we have <span class="math notranslate nohighlight">\(N\)</span> unstable atoms of a material, the activity <span class="math notranslate nohighlight">\(R\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-aa263cff-2c22-4fd0-bf13-c8884fee0d69">
-<span class="eqno">(11.22)<a class="headerlink" href="#equation-aa263cff-2c22-4fd0-bf13-c8884fee0d69" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cbfb9ef1-b5a2-4c1a-aa99-07668c4c54fa">
+<span class="eqno">(11.22)<a class="headerlink" href="#equation-cbfb9ef1-b5a2-4c1a-aa99-07668c4c54fa" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Activity} = -\frac{dN}{dt} = R,
 \end{align}\]</div>
 <p>where we insert the minus sign to make <span class="math notranslate nohighlight">\(R\)</span> positive; <span class="math notranslate nohighlight">\(dN/dt\)</span> is negative because the total number <span class="math notranslate nohighlight">\(N\)</span> decreases with time.  The SI unit of activity is the becquerel <span class="math notranslate nohighlight">\((1\ {\rm Bq} = 1\ {\rm decays/s})\)</span>.  In the past the unit was the curie <span class="math notranslate nohighlight">\((\rm Ci)\)</span> which is <span class="math notranslate nohighlight">\(3.7\times 10^{10}\ {\rm decays/s}\)</span>.</p>
@@ -1003,13 +1013,13 @@ a_{\rm S} &amp;= 23.3\ {\rm MeV} &amp;&amp; \text{Symmetry},
 <p><strong>Decay constant</strong></p>
 </aside>
 <p>The activity of a given sample falls of exponentially with time.  If <span class="math notranslate nohighlight">\(N(t)\)</span> is the number of radioactive nuclei in a sample at time <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> (decay constant) is the probability per unit time that any given nucleus will decay.  Then the activity <span class="math notranslate nohighlight">\(R\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-74052781-740a-4d90-a32e-b65a4a9087eb">
-<span class="eqno">(11.23)<a class="headerlink" href="#equation-74052781-740a-4d90-a32e-b65a4a9087eb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9bf191aa-6eb5-482b-8dc5-a0fd0aeaa1a0">
+<span class="eqno">(11.23)<a class="headerlink" href="#equation-9bf191aa-6eb5-482b-8dc5-a0fd0aeaa1a0" title="Permalink to this equation">#</a></span>\[\begin{align}
 R = \lambda N(t).
 \end{align}\]</div>
 <p>The number <span class="math notranslate nohighlight">\(dN\)</span> of nuclei decaying during the time interval <span class="math notranslate nohighlight">\(dt\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-60cd0c82-9fba-4900-95fc-e67b71fee746">
-<span class="eqno">(11.24)<a class="headerlink" href="#equation-60cd0c82-9fba-4900-95fc-e67b71fee746" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-24affd7d-06b4-429c-a79e-609a20275ab3">
+<span class="eqno">(11.24)<a class="headerlink" href="#equation-24affd7d-06b4-429c-a79e-609a20275ab3" title="Permalink to this equation">#</a></span>\[\begin{align}
 dN(t) &amp;= -R\ dt, \\
 &amp;= -\lambda N(t)\ dt.
 \end{align}\]</div>
@@ -1023,20 +1033,20 @@ N(t) &amp;= e^{-\lambda t + const.}, \\
 &amp;= Ce^{-\lambda t}.
 \end{align*} \]</div>
 <p>If we let <span class="math notranslate nohighlight">\(t=0\)</span>, then <span class="math notranslate nohighlight">\(N(0) = C = N_o\)</span> defines the initial number of radioactive nuclei in the sample.  The equation becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a672eff8-3889-4c83-88d3-2541af7d2549">
-<span class="eqno">(11.25)<a class="headerlink" href="#equation-a672eff8-3889-4c83-88d3-2541af7d2549" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8f886ec8-ad93-4cec-9521-a57fd708beca">
+<span class="eqno">(11.25)<a class="headerlink" href="#equation-8f886ec8-ad93-4cec-9521-a57fd708beca" title="Permalink to this equation">#</a></span>\[\begin{align}
 N(t) = N_o e^{-\lambda t}.
 \end{align}\]</div>
 <p>This is the <strong>radioactive decay law</strong>, and it applies to all decays.  The exponetial decay rate is consistent with experimental observation.  The activity <span class="math notranslate nohighlight">\(R\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c6c2e26e-570c-4c70-97c3-1220ebb3aee4">
-<span class="eqno">(11.26)<a class="headerlink" href="#equation-c6c2e26e-570c-4c70-97c3-1220ebb3aee4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-63fd10f3-a0e5-487d-8cd6-2a08691dbf58">
+<span class="eqno">(11.26)<a class="headerlink" href="#equation-63fd10f3-a0e5-487d-8cd6-2a08691dbf58" title="Permalink to this equation">#</a></span>\[\begin{align}
 R &amp;= \lambda N(t) = \lambda N_oe^{-\lambda t}, \\
 &amp;= R_o e^{-\lambda t},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(R_o\)</span> is the initial activity at <span class="math notranslate nohighlight">\(t=0\)</span>.  The activity of a radioactive sample falls of exponentially.</p>
 <p>It is common to refer to the mean lifetime <span class="math notranslate nohighlight">\(\tau\)</span> (or half-life <span class="math notranslate nohighlight">\(t_{1/2}\)</span>) rather than its decay constant.  The half-life is the time it takes one-half of the radioactive nuclei to decay.  Mathematically, this is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-15e80d70-355b-4d22-aed1-48b784c9cee1">
-<span class="eqno">(11.27)<a class="headerlink" href="#equation-15e80d70-355b-4d22-aed1-48b784c9cee1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8a4ab627-4f09-4a1c-8569-5f9eedd72dc1">
+<span class="eqno">(11.27)<a class="headerlink" href="#equation-8a4ab627-4f09-4a1c-8569-5f9eedd72dc1" title="Permalink to this equation">#</a></span>\[\begin{align}
 N(t_{1/2}) &amp;= \frac{N_o}{2} = N_oe^{-\lambda t_{1/2}}, \\
 N(t_{1/2})/N_o &amp;= \frac{1}{2} = e^{-\lambda t_{1/2}}, \\
 \ln{(1/2)} &amp;= \ln{(e^{-\lambda t_{1/2}})} = -\lambda t_{1/2}.
@@ -1046,8 +1056,8 @@ N(t_{1/2})/N_o &amp;= \frac{1}{2} = e^{-\lambda t_{1/2}}, \\
 <p class="sidebar-title"></p>
 <p><strong>Half-life</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-6494a7a3-a0fa-4ce7-afe4-2d1df39c66c0">
-<span class="eqno">(11.28)<a class="headerlink" href="#equation-6494a7a3-a0fa-4ce7-afe4-2d1df39c66c0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cee0d937-3252-4c86-933f-557466a9614c">
+<span class="eqno">(11.28)<a class="headerlink" href="#equation-cee0d937-3252-4c86-933f-557466a9614c" title="Permalink to this equation">#</a></span>\[\begin{align}
 t_{1/2} &amp;= \frac{-\ln{(1/2)}}{\lambda}, \\
  &amp;= \frac{\ln{2}}{\lambda}\approx \frac{0.693}{\lambda}.
 \end{align}\]</div>
@@ -1056,8 +1066,8 @@ t_{1/2} &amp;= \frac{-\ln{(1/2)}}{\lambda}, \\
 <p class="sidebar-title"></p>
 <p><strong>Mean lifetime</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-92f9ab52-6bb4-4555-9181-564853924d7c">
-<span class="eqno">(11.29)<a class="headerlink" href="#equation-92f9ab52-6bb4-4555-9181-564853924d7c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d95d4e0d-8f84-4761-9661-65aaf9c6ecb1">
+<span class="eqno">(11.29)<a class="headerlink" href="#equation-d95d4e0d-8f84-4761-9661-65aaf9c6ecb1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \tau = \frac{1}{\lambda} = \frac{t_{1/2}}{\ln{2}}.
 \end{align}\]</div>
 <p>The python code below creates a plot showing the fraction of remaining nuclei <span class="math notranslate nohighlight">\(N(t)/N_o\)</span> as a function of the half-life <span class="math notranslate nohighlight">\(t_{1/2}\)</span> for a sample of radioactive nuclides.  The mean lifetime <span class="math notranslate nohighlight">\(\tau\)</span> is indicated as well.</p>
@@ -1067,10 +1077,10 @@ t_{1/2} &amp;= \frac{-\ln{(1/2)}}{\lambda}, \\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>  
 
-<span class="k">def</span> <span class="nf">decay_law</span><span class="p">(</span><span class="n">lam</span><span class="p">,</span><span class="n">t</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">decay_law</span><span class="p">(</span><span class="n">lam</span><span class="p">,</span><span class="n">t</span><span class="p">):</span>
     <span class="c1">#normalized decay law e^(-lam*t)</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">lam</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
 
@@ -1101,7 +1111,7 @@ t_{1/2} &amp;= \frac{-\ln{(1/2)}}{\lambda}, \\
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d2b6e83945ceb881ccfcf8c0ba7da1c602eeb7b0d7c53d1c82b7567cd81da094.png" src="../_images/d2b6e83945ceb881ccfcf8c0ba7da1c602eeb7b0d7c53d1c82b7567cd81da094.png" />
+<img alt="../_images/d0e995ac299359c06a6b518b1df9e5a66cbce49abed6c06a59e8a2205b942d5d.png" src="../_images/d0e995ac299359c06a6b518b1df9e5a66cbce49abed6c06a59e8a2205b942d5d.png" />
 </div>
 </div>
 <p>The three common decay modes of nuclei (<span class="math notranslate nohighlight">\(\alpha,\ \beta,\ \gamma\)</span>) were all observed by the early 20th century.  When a nucleus decays, <em>all the conservation laws</em> must be observed: mass-energy, linear momentum, angular momentum, and electric charge.  We add another conservation law for radioactive decay, called the <strong>conservation of nucleons</strong>.</p>
@@ -1110,8 +1120,8 @@ t_{1/2} &amp;= \frac{-\ln{(1/2)}}{\lambda}, \\
 </div></blockquote>
 <p>Neutrons can be converted into protons (and vice versa), but the total number of nucleons remains constant.  At higher energies, an ample amount of rest energy is available to create nucleons, but other conservation laws still apply.</p>
 <p>Radioactive decay can occur for a nucleus when some other combination of the <span class="math notranslate nohighlight">\(A\)</span> nucleons has a lower mass.  <strong>Consider a parent radioactive nucleus <span class="math notranslate nohighlight">\(^A_ZX\)</span> with a mass <span class="math notranslate nohighlight">\(M(^A_ZX)\)</span>.</strong>  Two or more products can be produced in the decay.  In the case of two products, let the mass of the lighter one by <span class="math notranslate nohighlight">\(M_y\)</span> and the heavier one (called the <em>daughter</em>) be <span class="math notranslate nohighlight">\(M_D\)</span>.  The conservation of energy is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ff9a56c3-2c64-45ca-880d-67760b3387bc">
-<span class="eqno">(11.30)<a class="headerlink" href="#equation-ff9a56c3-2c64-45ca-880d-67760b3387bc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f45e713e-3fd1-4d0f-b3e1-9940761671d6">
+<span class="eqno">(11.30)<a class="headerlink" href="#equation-f45e713e-3fd1-4d0f-b3e1-9940761671d6" title="Permalink to this equation">#</a></span>\[\begin{align}
 M(^A_ZX) &amp;= M_D  + M_y + Q/c^2, \\
 Q &amp;= \left[M(^A_ZX)  - M_D - M_y \right]c^2,
 \end{align}\]</div>
@@ -1123,8 +1133,8 @@ Q &amp;= \left[M(^A_ZX)  - M_D - M_y \right]c^2,
 <section id="alpha-decay">
 <h3><span class="section-number">11.5.1. </span>Alpha Decay<a class="headerlink" href="#alpha-decay" title="Link to this heading">#</a></h3>
 <p>The nucleus <span class="math notranslate nohighlight">\(\rm ^4He\)</span> is particularly stable, with a binding energy of <span class="math notranslate nohighlight">\(28.3\ {\rm MeV}\)</span>.  The combination of two neutrons and tow protons is strong because of the pairing effects.  If the last two protons and neutrons in a nucleus are bound by less than <span class="math notranslate nohighlight">\(28.3\ {\rm MeV}\)</span>, then the emission of an <span class="math notranslate nohighlight">\(\alpha\)</span> particle (<em>alpha decay</em>) is energetically possible.  For alpha decay, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c884d257-0331-4b2e-b1dc-094b0a0e690a">
-<span class="eqno">(11.31)<a class="headerlink" href="#equation-c884d257-0331-4b2e-b1dc-094b0a0e690a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bbe5497c-9625-4fe5-b5b0-e84ae5557b2c">
+<span class="eqno">(11.31)<a class="headerlink" href="#equation-bbe5497c-9625-4fe5-b5b0-e84ae5557b2c" title="Permalink to this equation">#</a></span>\[\begin{align}
 {^A_ZX} &amp;\rightarrow {^{A-4}_{Z-2}D} + \alpha, \\
 Q &amp;= \left[M(^A_ZX)  - M({^{A-4}_{Z-2}D}) - M({\rm ^4He}) \right]c^2.
 \end{align}\]</div>
@@ -1170,13 +1180,13 @@ K_\alpha &amp;= \left(\frac{M_D}{M_D+M_\alpha} \right)Q \approx \left(\frac{A-4}
 <h3><span class="section-number">11.5.2. </span>Beta Decay<a class="headerlink" href="#beta-decay" title="Link to this heading">#</a></h3>
 <p>In alpha decay, the parent nucleus reverts to a daughter nucleus that is down 2 units in neutron number <span class="math notranslate nohighlight">\(N\)</span> and to the left <span class="math notranslate nohighlight">\(2\)</span> units in atomic number <span class="math notranslate nohighlight">\(Z\)</span>.  <span class="math notranslate nohighlight">\(\alpha decay\)</span> leaves the daugter nucleas farther from the line of stability than the parent.</p>
 <p>Unstable nuclei can move closer to the line of stability by undergoing beta <span class="math notranslate nohighlight">\((\beta)\)</span> decay.  The simplest example is the decay of a free neutron</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b37300bf-c295-4984-9567-8f8b9d9ed4ac">
-<span class="eqno">(11.32)<a class="headerlink" href="#equation-b37300bf-c295-4984-9567-8f8b9d9ed4ac" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f80d045a-9b4a-4fe2-b09f-0cc2fe05b136">
+<span class="eqno">(11.32)<a class="headerlink" href="#equation-f80d045a-9b4a-4fe2-b09f-0cc2fe05b136" title="Permalink to this equation">#</a></span>\[\begin{align}
 n \rightarrow p + \beta^-.
 \end{align}\]</div>
 <p>Electrons cannot exist within the nucleus, when <span class="math notranslate nohighlight">\(\beta\)</span> decay occurs the <span class="math notranslate nohighlight">\(\beta^-\)</span> (<em>electron</em>) is created at the time of the decay.  Note that <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> is unstable, where it has an excess of neutrons.  We expect the beta decay of <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> to form <span class="math notranslate nohighlight">\(\rm ^{14}N\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-21d7c5c1-a7dc-46ad-9d59-2170e9daa6e1">
-<span class="eqno">(11.33)<a class="headerlink" href="#equation-21d7c5c1-a7dc-46ad-9d59-2170e9daa6e1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-45241242-56d0-42be-a929-6cadba18cfea">
+<span class="eqno">(11.33)<a class="headerlink" href="#equation-45241242-56d0-42be-a929-6cadba18cfea" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^{14}_6C} \rightarrow {\rm ^{14}_7N} + \beta^-.
 \end{align}\]</div>
 <p>The emitted electron <span class="math notranslate nohighlight">\((\beta^-)\)</span> from the beta decay of <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> produces a continuous energy spectrum up to a maximum energy in contrast to the <span class="math notranslate nohighlight">\(\alpha\)</span> decay process that produces a monoenergetic spectrum.  The measurement of a energy spectrum for beta decay was a problem for many years.</p>
@@ -1190,15 +1200,15 @@ n \rightarrow p + \beta^-.
 <p>The neutrino has mass (although extremely small), where its energy is almost all kinetic.  The photon cannot be the the missing particle because it has spin <span class="math notranslate nohighlight">\(1\)</span>.  Pauli’s suggestion seemed to explain the difficulties, and all circumstantial evidence available at the time supported the neutrino hypothesis.  The detection of the neutrino was elusive until 1956 where <a class="reference external" href="https://en.wikipedia.org/wiki/Clyde_Cowan">Clyde Cowan</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Frederick_Reines">Frederick Reines</a> made the discovery.</p>
 <p>Neutrinos interact weakly with ordinary matter, and they pass right throught the Earth with little chance of being absorbed.  They have no charge and do not interact <em>electromagnetically</em>.  They are not affected by the <em>strong</em> force either.  Beta decay is the product of the <em>weak</em> interaction, where neutrinos are created.</p>
 <p>There are also <em>antineutrinos</em> (denoted by <span class="math notranslate nohighlight">\(\bar{\nu}\)</span>) as well as neutrinos.  The beta decay of a free neutron and of <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> are correctly written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-56f9bff6-0ee8-436e-a07e-087987adcebb">
-<span class="eqno">(11.34)<a class="headerlink" href="#equation-56f9bff6-0ee8-436e-a07e-087987adcebb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fbc6f353-4832-4ee1-b2c6-ce93d68cc98b">
+<span class="eqno">(11.34)<a class="headerlink" href="#equation-fbc6f353-4832-4ee1-b2c6-ce93d68cc98b" title="Permalink to this equation">#</a></span>\[\begin{align}
 n &amp;\rightarrow p + \beta^- + \bar{\nu}, \\
 {\rm ^{14}C} &amp;\rightarrow {\rm ^{14}N} + \beta^- + \bar{\nu},
 \end{align}\]</div>
 <p>where the antineutrino has <span class="math notranslate nohighlight">\(-1/2\)</span> spin.</p>
 <p>The general forms of <span class="math notranslate nohighlight">\(\beta^-\)</span> decay and its disintegration energy are written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dea6327f-6137-4018-b2df-7d8b76d4b945">
-<span class="eqno">(11.35)<a class="headerlink" href="#equation-dea6327f-6137-4018-b2df-7d8b76d4b945" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-10f64615-d8b2-4387-a1a7-ea319f5118e5">
+<span class="eqno">(11.35)<a class="headerlink" href="#equation-10f64615-d8b2-4387-a1a7-ea319f5118e5" title="Permalink to this equation">#</a></span>\[\begin{align}
 {^A_ZX} &amp;\rightarrow {^A_{Z+1}D} + \beta^- + \bar{\nu}, \\
 Q &amp;= \left[ M({^A_ZS}) - M({^A_{Z+1}D})\right]c^2.
 \end{align}\]</div>
@@ -1209,13 +1219,13 @@ Q &amp;= \left[ M({^A_ZS}) - M({^A_{Z+1}D})\right]c^2.
 </aside>
 <p>For unstable nuclides with too many protons (i.e., to the right of the line of stability) another type of beta decay can occur with a positively charged electron (<em>positron</em>).  In beta decay the electron and positron are denoted as <span class="math notranslate nohighlight">\(\beta^-\)</span> and <span class="math notranslate nohighlight">\(\beta^+\)</span>, respectively.</p>
 <p>Current experimental evidence suggests that a free proton does not decay, where the lower limit for the half life is much longer than the age of the universe <span class="math notranslate nohighlight">\(t_{1/2}&gt; 10^{27}\ {\rm yr}\)</span>.  But a proton bound within the nucleus can transumtate if energy is taken from the nucleus and the result is a more <em>stable</em> nucleus.  The isotope <span class="math notranslate nohighlight">\(\rm ^{14}O\)</span> is unstable and decays through <span class="math notranslate nohighlight">\(\beta^+\)</span> decay by:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4c982b2f-4cfb-48cb-afe1-e6b46c34a8ca">
-<span class="eqno">(11.36)<a class="headerlink" href="#equation-4c982b2f-4cfb-48cb-afe1-e6b46c34a8ca" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-092cb545-090c-437b-9f22-a78be8710e42">
+<span class="eqno">(11.36)<a class="headerlink" href="#equation-092cb545-090c-437b-9f22-a78be8710e42" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^{14}O} \rightarrow {\rm ^{14}N} + \beta^+ + \nu.
 \end{align}\]</div>
 <p>The general forms of <span class="math notranslate nohighlight">\(\beta^+\)</span> decay and its disintegration energy are given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-52f2485d-f244-4ffd-8c60-93ff1718d9ca">
-<span class="eqno">(11.37)<a class="headerlink" href="#equation-52f2485d-f244-4ffd-8c60-93ff1718d9ca" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5ced46fd-d331-4825-a73b-3ec8847f8fa3">
+<span class="eqno">(11.37)<a class="headerlink" href="#equation-5ced46fd-d331-4825-a73b-3ec8847f8fa3" title="Permalink to this equation">#</a></span>\[\begin{align}
 {^A_ZX} &amp;\rightarrow {^A_{Z-1}D} + \beta^+ + \nu, \\
 Q &amp;= \left[ M({^A_ZS}) - M({^A_{Z-1}D}) - 2m_e\right]c^2.
 \end{align}\]</div>
@@ -1225,13 +1235,13 @@ Q &amp;= \left[ M({^A_ZS}) - M({^A_{Z-1}D}) - 2m_e\right]c^2.
 <p><strong>Electron Capture</strong></p>
 </aside>
 <p>There is another form of beta decay.  Inner <span class="math notranslate nohighlight">\(K\)</span>- and <span class="math notranslate nohighlight">\(L\)</span>-shell electrons are tightly bound and their (classical) orbits are highly elliptical.  As a result, these electrons spend a reasonable amount of time passing through the nucleus, which increases the possibility of atomic electron capture.  A proton in the nucleus absorbs the electron, which produces a neutron and a neutrino in the process.  The reaction for a proton is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-316b496a-8ba2-445c-8d95-c95a5ed61e13">
-<span class="eqno">(11.38)<a class="headerlink" href="#equation-316b496a-8ba2-445c-8d95-c95a5ed61e13" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c296af71-6a6b-4da2-ba85-3acc219521ca">
+<span class="eqno">(11.38)<a class="headerlink" href="#equation-c296af71-6a6b-4da2-ba85-3acc219521ca" title="Permalink to this equation">#</a></span>\[\begin{align}
 p + e^- \rightarrow n + \nu.
 \end{align}\]</div>
 <p>The general forms of electron capture and its disintegration energy are given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e8da50ba-61c0-42c5-b2b9-2c90a11a785f">
-<span class="eqno">(11.39)<a class="headerlink" href="#equation-e8da50ba-61c0-42c5-b2b9-2c90a11a785f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-29cede11-33c3-474d-ad49-d6dba29de341">
+<span class="eqno">(11.39)<a class="headerlink" href="#equation-29cede11-33c3-474d-ad49-d6dba29de341" title="Permalink to this equation">#</a></span>\[\begin{align}
 {^A_ZX} + e^- &amp;\rightarrow {^A_{Z-1}D} + \nu, \\
 Q &amp;= \left[ M({^A_ZS}) - M({^A_{Z-1}D}) \right]c^2.
 \end{align}\]</div>
@@ -1241,8 +1251,8 @@ Q &amp;= \left[ M({^A_ZS}) - M({^A_{Z-1}D}) \right]c^2.
 <section id="gamma-decay">
 <h3><span class="section-number">11.5.3. </span>Gamma Decay<a class="headerlink" href="#gamma-decay" title="Link to this heading">#</a></h3>
 <p>Uranium-230 can alpha decay to the ground state or any of the low-lying excited states of <span class="math notranslate nohighlight">\(\rm ^{226}Th\)</span>.  If the decay proceeds to an excited energy state of energy <span class="math notranslate nohighlight">\(E_x\)</span> rather than the ground state, then the disintegration energy <span class="math notranslate nohighlight">\(Q\)</span> (from the excited state to the ground state) can be determined.  Let the disintegration energy to the ground state be <span class="math notranslate nohighlight">\(Q_o\)</span>, such that the transition to the excited state <span class="math notranslate nohighlight">\(E_x\)</span> is related to the disintegration energy <span class="math notranslate nohighlight">\(Q\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5fb426bc-f719-4cc9-aedd-c3c7761dc26e">
-<span class="eqno">(11.40)<a class="headerlink" href="#equation-5fb426bc-f719-4cc9-aedd-c3c7761dc26e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5b9198ed-8475-4e2e-bff4-49a71b1bc8cc">
+<span class="eqno">(11.40)<a class="headerlink" href="#equation-5b9198ed-8475-4e2e-bff4-49a71b1bc8cc" title="Permalink to this equation">#</a></span>\[\begin{align}
 Q = Q_o - E_x.
 \end{align}\]</div>
 <p>The distintegration value <span class="math notranslate nohighlight">\(Q\)</span> for the <span class="math notranslate nohighlight">\(\alpha\)</span> decay of <span class="math notranslate nohighlight">\(\rm ^{230}U\)</span> to <span class="math notranslate nohighlight">\(\rm ^{226}Th\)</span> can be determined using the energy of an excited state <span class="math notranslate nohighlight">\(E_x = 0.072\ {\rm MeV}\)</span> and <span class="math notranslate nohighlight">\(Q_o = 5.992\ {\rm MeV}\)</span>.  Therefore the disintegration energy <span class="math notranslate nohighlight">\(Q\)</span> is</p>
@@ -1253,19 +1263,19 @@ Q &amp;= Q_o - E_x, \\
 \end{align*}\]</div>
 <p>A nucleus has excited states, but the exitation energies tend to be much larger (many <span class="math notranslate nohighlight">\(\rm keV\)</span> or even <span class="math notranslate nohighlight">\(\rm MeV\)</span>) due to the stronger nuclear interaction.  One way for the nucleus to get rid of the extra energy is to emit a photon (i.e., <span class="math notranslate nohighlight">\(\gamma\)</span> ray) and undergo a transition to some lower energy state.</p>
 <p>The gamma ray difference of the upper energy state <span class="math notranslate nohighlight">\(E_u\)</span> and the lower one <span class="math notranslate nohighlight">\(E_l\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-992f255d-9a8f-4105-90b1-c30a3a8dea24">
-<span class="eqno">(11.41)<a class="headerlink" href="#equation-992f255d-9a8f-4105-90b1-c30a3a8dea24" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b75bf366-a72d-48d4-904c-4b539e398f7d">
+<span class="eqno">(11.41)<a class="headerlink" href="#equation-b75bf366-a72d-48d4-904c-4b539e398f7d" title="Permalink to this equation">#</a></span>\[\begin{align}
 hf = E_u - E_l.
 \end{align}\]</div>
 <p>To conserve momentum, the nucleus must absorb some of this energy difference.  However, a nuclues at rest is usually a very good approximation.</p>
 <p>The decay of an excited state of <span class="math notranslate nohighlight">\({^A}X^*\)</span> (using <span class="math notranslate nohighlight">\(*\)</span> for the excited state) to the ground state is denoted by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0179e541-7180-4a4d-b521-9c684e1561af">
-<span class="eqno">(11.42)<a class="headerlink" href="#equation-0179e541-7180-4a4d-b521-9c684e1561af" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-880f706d-80de-43f5-8487-73a678deefed">
+<span class="eqno">(11.42)<a class="headerlink" href="#equation-880f706d-80de-43f5-8487-73a678deefed" title="Permalink to this equation">#</a></span>\[\begin{align}
 ^AX^* \rightarrow {^AX}+ \gamma,
 \end{align}\]</div>
 <p>where a transition between two excited states is denoted by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2839b377-bd2f-44ea-9a09-000f63b7552e">
-<span class="eqno">(11.43)<a class="headerlink" href="#equation-2839b377-bd2f-44ea-9a09-000f63b7552e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5d3aa9b2-d3d7-4a1e-b0a2-c02f1c967592">
+<span class="eqno">(11.43)<a class="headerlink" href="#equation-5d3aa9b2-d3d7-4a1e-b0a2-c02f1c967592" title="Permalink to this equation">#</a></span>\[\begin{align}
 ^AX^*(E_u) \rightarrow ^AX^*(E_l) + \gamma.
 \end{align}\]</div>
 <p>The excited energies (or levels) are characteristic of each nuclide.  The gamma rays are normally emitted soon after the nucleus is created in an excited state.</p>
@@ -1372,8 +1382,8 @@ hf = E_u - E_l.
 <p>The sequence of <span class="math notranslate nohighlight">\(\rm ^{232}Th\)</span> is shown in the figure below.  Note that <span class="math notranslate nohighlight">\(\rm ^{212}_{129}Bi\)</span> can decay either <span class="math notranslate nohighlight">\(\alpha\)</span> or <span class="math notranslate nohighlight">\(\beta^-\)</span> decay, which is called <em>branching</em>.  Normally one path of the branch is highly favored, but both paths are shown because it has a <span class="math notranslate nohighlight">\(36\%\)</span> probability of <span class="math notranslate nohighlight">\(\alpha\)</span> decay and a <span class="math notranslate nohighlight">\(64\%\)</span> probability for <span class="math notranslate nohighlight">\(\beta^-\)</span> decay.  The overall effect of the successive decays is to bring the nuclide closer to the line of stability until a stable nuclide is finally reached.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
 
 <span class="n">charge_number</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">90</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">89</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">86</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">83</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">84</span><span class="p">])</span>
 <span class="n">Atomic_number</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">232</span><span class="p">,</span><span class="mi">228</span><span class="p">,</span><span class="mi">228</span><span class="p">,</span><span class="mi">228</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="mi">220</span><span class="p">,</span><span class="mi">216</span><span class="p">,</span><span class="mi">212</span><span class="p">,</span><span class="mi">212</span><span class="p">,</span><span class="mi">208</span><span class="p">,</span><span class="mi">208</span><span class="p">,</span><span class="mi">212</span><span class="p">])</span>
@@ -1415,7 +1425,7 @@ hf = E_u - E_l.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/004af054d28c8edf82d5dc843148f7c6d1f3ec16fc0c92e009ac7240e8a8d4da.png" src="../_images/004af054d28c8edf82d5dc843148f7c6d1f3ec16fc0c92e009ac7240e8a8d4da.png" />
+<img alt="../_images/ef69c9b493e1b1d18c5bdbecd4039a6cfb3c27579cb591e37854265e80f60fde.png" src="../_images/ef69c9b493e1b1d18c5bdbecd4039a6cfb3c27579cb591e37854265e80f60fde.png" />
 </div>
 </div>
 <section id="time-dating-using-lead-isotopes">
@@ -1427,8 +1437,8 @@ hf = E_u - E_l.
 <section id="radioactive-carbon-dating">
 <h3><span class="section-number">11.6.2. </span>Radioactive Carbon Dating<a class="headerlink" href="#radioactive-carbon-dating" title="Link to this heading">#</a></h3>
 <p>Radioactive <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> is produced in out atmosphere by the bombardment of <span class="math notranslate nohighlight">\(\rm ^{14}N\)</span> by neutrons by cosmic rays through</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5b7337b0-cddf-4541-b62b-634be54e0f5f">
-<span class="eqno">(11.44)<a class="headerlink" href="#equation-5b7337b0-cddf-4541-b62b-634be54e0f5f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-512405d6-06ba-4673-b882-088be4897ab3">
+<span class="eqno">(11.44)<a class="headerlink" href="#equation-512405d6-06ba-4673-b882-088be4897ab3" title="Permalink to this equation">#</a></span>\[\begin{align}
 n + {\rm ^{14}N} \rightarrow {\rm ^{14}C} + p.
 \end{align}\]</div>
 <p>A natural equilibrium of <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> to <span class="math notranslate nohighlight">\(\rm ^{12}C\)</span> exists for molecules of <span class="math notranslate nohighlight">\(\rm CO_2\)</span> from the atmosphere, where all living organisms use or breathe that <span class="math notranslate nohighlight">\(\rm CO_2\)</span>.  When living organisms die, their intake of <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> ceases and the ratio <span class="math notranslate nohighlight">\({\rm ^{14}C}/{\rm ^{12}C}\ (=R)\)</span> decreases as <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span> decays.</p>
@@ -1441,19 +1451,19 @@ n + {\rm ^{14}N} \rightarrow {\rm ^{14}C} + p.
 <section id="nuclear-reactions">
 <h2><span class="section-number">11.7. </span>Nuclear Reactions<a class="headerlink" href="#nuclear-reactions" title="Link to this heading">#</a></h2>
 <p>Rutherford used <span class="math notranslate nohighlight">\(7.7\)</span>-<span class="math notranslate nohighlight">\({\rm MeV}\)</span> alpha particles from the decay of <span class="math notranslate nohighlight">\({\rm ^{214}_{\ \ 84}Po}\)</span> to bombard a nitrogen target, where he observed the protons being emitted.  He was not certain of the exact nuclear reaction taking place, but he convinced himself that a nuclear transformation took place.  The reaction was</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a6ec1869-52b3-4bd3-a098-038d9cfb4fa2">
-<span class="eqno">(11.45)<a class="headerlink" href="#equation-a6ec1869-52b3-4bd3-a098-038d9cfb4fa2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-50b2991e-3931-42b1-94fd-820fa6b6e13b">
+<span class="eqno">(11.45)<a class="headerlink" href="#equation-50b2991e-3931-42b1-94fd-820fa6b6e13b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha + {\rm ^{14}_7N} \rightarrow p + {\rm ^{17}_8O }.
 \end{align}\]</div>
 <p>The first nucleus written is the projectile, where the second is the target and is normally at rest.  These two nuclei interact and undergo a transmutation to one or more final particles.  The detected particle is normally listed first after the arrow, and the residual nucleus listed last.</p>
 <p>A short hand way of writing the above reaction is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e58f0825-1265-483c-b3d7-e5c68b0265d4">
-<span class="eqno">(11.46)<a class="headerlink" href="#equation-e58f0825-1265-483c-b3d7-e5c68b0265d4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-18480cbc-9aff-4535-950f-ec98c1a5c28b">
+<span class="eqno">(11.46)<a class="headerlink" href="#equation-18480cbc-9aff-4535-950f-ec98c1a5c28b" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^{14}N(\alpha,p)^{17}O}.
 \end{align}\]</div>
 <p>The gneraly reaction <span class="math notranslate nohighlight">\(x + X \rightarrow y + Y\)</span> is written in shorthand as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-83d32a05-0f2d-4003-8ff2-d50291e67ef9">
-<span class="eqno">(11.47)<a class="headerlink" href="#equation-83d32a05-0f2d-4003-8ff2-d50291e67ef9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e173eb39-9aee-4747-bdff-d5b24c524eb9">
+<span class="eqno">(11.47)<a class="headerlink" href="#equation-e173eb39-9aee-4747-bdff-d5b24c524eb9" title="Permalink to this equation">#</a></span>\[\begin{align}
 X(x,y)Y.
 \end{align}\]</div>
 <p>Isotopes of hydrogen are written using <span class="math notranslate nohighlight">\(p,\ d,\ t\)</span> in place of the more cumbersome <span class="math notranslate nohighlight">\(\rm ^1H\)</span>, <span class="math notranslate nohighlight">\(\rm ^2H\)</span>, and <span class="math notranslate nohighlight">\(\rm ^3H\)</span>.  The stable helium-4 nucleus is denoted by <span class="math notranslate nohighlight">\(\alpha\)</span>.  These shorthand symbols are used when they are the projectile or detected particle.</p>
@@ -1472,8 +1482,8 @@ X(x,y)Y.
 <li><p>The reaction products are in the <em>exit channel</em>.</p></li>
 </ul>
 <p>In <em>elastic scattering</em> the entrance and exit channels are identical and the particles in the exit channels are <em>not</em> in excited states.  In <em>inelastic scattering</em>, the entrance and exit channels are also identical, but one (or more) of the reaction products in the exit channel are left in an excited state.  The products and also not be in an excited state as well.  Examples of this are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f615818f-b012-4f61-b93f-6b4fe086cd8f">
-<span class="eqno">(11.48)<a class="headerlink" href="#equation-f615818f-b012-4f61-b93f-6b4fe086cd8f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b8d854f3-862d-4b9c-bcb9-020790c4a9c6">
+<span class="eqno">(11.48)<a class="headerlink" href="#equation-b8d854f3-862d-4b9c-bcb9-020790c4a9c6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha + {\rm ^{20}Ne} &amp;\rightarrow \begin{cases} \alpha + {\rm ^{20}Ne^*}, \\
 n + p + {\rm ^{22}Na}.
 \end{cases}
@@ -1493,8 +1503,8 @@ N_{\rm M} &amp;= \text{atoms/molecule},\ \text{and} \\
 M_{\rm g} &amp;= \text{gram-molecular weight}.
 \end{align*}\]</div>
 <p>Then the number of target nuclei <span class="math notranslate nohighlight">\(N_s\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4fd2969d-e3c0-4f28-905c-610ec95f61d5">
-<span class="eqno">(11.49)<a class="headerlink" href="#equation-4fd2969d-e3c0-4f28-905c-610ec95f61d5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7e98371f-1200-439b-b302-003a117bd4e5">
+<span class="eqno">(11.49)<a class="headerlink" href="#equation-7e98371f-1200-439b-b302-003a117bd4e5" title="Permalink to this equation">#</a></span>\[\begin{align}
 N_s = ntA = \frac{\rho}{M_{\rm g}}N_{\rm A}N_{\rm M}tA.
 \end{align}\]</div>
 <p>The probability of the particle begin scattered is proportional to the cross section times the total number of target nuclei <span class="math notranslate nohighlight">\(N_s\)</span>.  We compute a normalized product as</p>
@@ -1502,8 +1512,8 @@ N_s = ntA = \frac{\rho}{M_{\rm g}}N_{\rm A}N_{\rm M}tA.
 <p class="sidebar-title"></p>
 <p><strong>Scattering Probability</strong></p>
 </aside>
-<div class="amsmath math notranslate nohighlight" id="equation-0ad9a045-9aae-492c-bae4-e3ad58057d80">
-<span class="eqno">(11.50)<a class="headerlink" href="#equation-0ad9a045-9aae-492c-bae4-e3ad58057d80" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-823d5dd4-9801-40af-a715-422cd9f32bb7">
+<span class="eqno">(11.50)<a class="headerlink" href="#equation-823d5dd4-9801-40af-a715-422cd9f32bb7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Probability of scattering} &amp;= \frac{N_s}{A}\sigma, \\
 &amp;= \frac{ntA}{A}\sigma = nt\sigma.
 \end{align}\]</div>
@@ -1515,8 +1525,8 @@ N_s = ntA = \frac{\rho}{M_{\rm g}}N_{\rm A}N_{\rm M}tA.
 <p>We measure the cross section by counting the number of detected particles as a function of the number of incoming particles.  If the cross sections are measured as a function the <em>scattering angle <span class="math notranslate nohighlight">\(\theta\)</span></em>, then we call them <strong>differential cross sections</strong> <span class="math notranslate nohighlight">\(\sigma(\theta)\)</span>.</p>
 <p>Differential cross sections are determined by the number of particles scattered into a small solid angle <span class="math notranslate nohighlight">\(d\Omega\)</span> (measured in units of steradian <span class="math notranslate nohighlight">\(\rm sr\)</span>) surrounding the scattering angle <span class="math notranslate nohighlight">\(\theta\)</span>.  In spherical coordinates, the solid angle is <span class="math notranslate nohighlight">\(d\Omega = \sin{\theta}\ d\theta d\phi\)</span>.</p>
 <p>The differential cross section can also be written as <span class="math notranslate nohighlight">\(d\sigma/d\Omega\)</span>, which measures the number of particles per differential solid angle.  Integrating the differential cross section over the entire range of scattering angles yields the <strong>total cross section</strong> <span class="math notranslate nohighlight">\(\sigma_T\)</span>,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ceaff89e-40fa-4b4d-bdef-11c716e039df">
-<span class="eqno">(11.51)<a class="headerlink" href="#equation-ceaff89e-40fa-4b4d-bdef-11c716e039df" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c5c3ec17-5ff3-47cc-88a2-f0bd555d6063">
+<span class="eqno">(11.51)<a class="headerlink" href="#equation-c5c3ec17-5ff3-47cc-88a2-f0bd555d6063" title="Permalink to this equation">#</a></span>\[\begin{align}
 \sigma_T = \int \sigma(\theta)\ d\Omega = \int_0^{2\pi} d\phi \int_0^{2\pi}\frac{d\sigma}{d\Omega}\sin{\theta}\ d\theta.
 \end{align}\]</div>
 <p>The cross sections depend on the incident kinetic energy, as well as other properties (e.g., spins).  They are traditionally measured in units of barns (<span class="math notranslate nohighlight">\(\rm b\)</span>) with <span class="math notranslate nohighlight">\(1\ {\rm barn} \equiv 10^{-28}\ {\rm m^{2}} = 100\ {\rm fm^2}\)</span>.</p>
@@ -1527,8 +1537,8 @@ N_s = ntA = \frac{\rho}{M_{\rm g}}N_{\rm A}N_{\rm M}tA.
 <p>For low-energy nuclear reactions, the kinetic energies are typically much lower than the rest energies.  Therefore, we can use the non-relativistic kinematics in most cases.</p>
 <p><strong>Consider the reaction</strong> <span class="math notranslate nohighlight">\(x + X \rightarrow y + Y\)</span>, where the momentum and kinetic energy of the projectile <span class="math notranslate nohighlight">\(x\)</span> are <span class="math notranslate nohighlight">\(\vec{p}_x\)</span> and <span class="math notranslate nohighlight">\(K_x\)</span>, respectively.  The target is assumed to be at rest, so <span class="math notranslate nohighlight">\(\vec{p}_X = K_X = 0\)</span>.</p>
 <p>The conservation of energy for the reaction is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8a482db6-1049-415c-9a58-66640bcc2ee9">
-<span class="eqno">(11.52)<a class="headerlink" href="#equation-8a482db6-1049-415c-9a58-66640bcc2ee9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b7f70de0-ba25-40c5-aa83-f49a42c4db94">
+<span class="eqno">(11.52)<a class="headerlink" href="#equation-b7f70de0-ba25-40c5-aa83-f49a42c4db94" title="Permalink to this equation">#</a></span>\[\begin{align}
 M_xc^2 + K_x + M_Xc^2 = M_yc^2 + K_y + M_Yc^2 + K_Y.
 \end{align}\]</div>
 <p>If we rearrange the above equation to separate the masses and kinetic energies, we find an expression similar to the disintegration energy:</p>
@@ -1548,8 +1558,8 @@ M_xc^2 + K_x + M_Xc^2 = M_yc^2 + K_y + M_Yc^2 + K_Y.
 <p>An endoergic reaction will not occur unless there is enough kinetic energy <span class="math notranslate nohighlight">\(K_x\)</span> to supply the required nuclear rearrangement energy.  The energy must be available in the center-of-mass (<span class="math notranslate nohighlight">\(cm\)</span>) system where <span class="math notranslate nohighlight">\(v_{cm} = 0\)</span>; the total momentum in the <span class="math notranslate nohighlight">\(cm\)</span> is zero.</p>
 <p>The minimum kinetic energy needed to initiate a nuclear reaction is the <strong>threshold energy</strong> <span class="math notranslate nohighlight">\(K_{th}\)</span>, where the particles <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> will be at rest in the <span class="math notranslate nohighlight">\(cm\)</span> system .  Particle <span class="math notranslate nohighlight">\(y\)</span> will be moving in the lab system.</p>
 <p>The speed of the center of mass is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d10671d-9e90-4c55-9d4f-5af75f50e842">
-<span class="eqno">(11.54)<a class="headerlink" href="#equation-4d10671d-9e90-4c55-9d4f-5af75f50e842" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8ca47ebe-6748-4db7-ba88-25e874efd247">
+<span class="eqno">(11.54)<a class="headerlink" href="#equation-8ca47ebe-6748-4db7-ba88-25e874efd247" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_{cm} = \left( \frac{M_x}{M_x+M_X}\right)v_x.
 \end{align}\]</div>
 <p>The speeds of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(X\)</span> in the center-of-mass system (denoted by prime <span class="math notranslate nohighlight">\(^\prime\)</span>) are</p>
@@ -1559,8 +1569,8 @@ v_x^\prime &amp;= v_x -v_{cm},&amp;  \text{(to the right)}\\
 v_X^\prime &amp;= v_{cm}. &amp; \text{(to the left)}
 \end{align*}\]</div>
 <p>At threshold, we must have <span class="math notranslate nohighlight">\(v_y^\prime = v_Y^\prime = 0\)</span> in the center-of-mass system.  The conservation of energy in the center-of-mass system is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a9b42c8-a672-4b1d-a362-939934ae48a9">
-<span class="eqno">(11.55)<a class="headerlink" href="#equation-9a9b42c8-a672-4b1d-a362-939934ae48a9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7c789b56-c818-4219-a359-4c4cf2e958c4">
+<span class="eqno">(11.55)<a class="headerlink" href="#equation-7c789b56-c818-4219-a359-4c4cf2e958c4" title="Permalink to this equation">#</a></span>\[\begin{align}
 M_x\left[c^2 + \frac{1}{2}\left( v_x - v_{cm}\right)^2 \right] + M_X\left(c^2 + \frac{1}{2}v_{cm}^2 \right) &amp;= M_y\left(c^2 + \frac{1}{2}v^{\prime 2}_y \right) + M_Y\left(c^2 + \frac{1}{2}v^{\prime 2}_Y\right).
 \end{align}\]</div>
 <p>Since <span class="math notranslate nohighlight">\(v_y^\prime = v_Y^\prime = 0\)</span> at threshold, we have (using Eq. <a class="reference internal" href="#equation-nuclear-disintegrate">(11.53)</a>)</p>
@@ -1574,8 +1584,8 @@ M_x\left[c^2 + \frac{1}{2}\left( v_x - v_{cm}\right)^2 \right] + M_X\left(c^2 + 
 \frac{1}{2}v_x^2 \left(\frac{M_xM_X}{M_x+M_X}\right) = -Q.
 \end{align*}\]</div>
 <p>Substituting for the threshold energy <span class="math notranslate nohighlight">\(K_{th} = \frac{1}{2}M_xv_x^2\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fb854db5-c75f-4e4a-8a13-544d3df512ad">
-<span class="eqno">(11.56)<a class="headerlink" href="#equation-fb854db5-c75f-4e4a-8a13-544d3df512ad" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bc562034-5f81-44d9-9dd7-b784b7d929b3">
+<span class="eqno">(11.56)<a class="headerlink" href="#equation-bc562034-5f81-44d9-9dd7-b784b7d929b3" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_{th} = -Q \left(\frac{M_x+M_X}{M_x}\right).
 \end{align}\]</div>
 </section>
@@ -1594,13 +1604,13 @@ K_{th} = -Q \left(\frac{M_x+M_X}{M_x}\right).
 <h3><span class="section-number">11.9.1. </span>The Compound Nucleus<a class="headerlink" href="#the-compound-nucleus" title="Link to this heading">#</a></h3>
 <p>Niels Bohr proposed that nuclear reactions take place through formation and decay of a compound nucleus.  This <strong>compound nucleus</strong> is a composite of the projectile and target nuclei, usually in a high state of excitation.</p>
 <p>A compound nucleus <span class="math notranslate nohighlight">\(CN\)</span> is formed by <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(X\)</span> in the entrance channel with an excitation energy</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3610faa5-c3b9-48b8-bb5e-a4c7c98200b4">
-<span class="eqno">(11.57)<a class="headerlink" href="#equation-3610faa5-c3b9-48b8-bb5e-a4c7c98200b4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d3becc6e-b522-49bf-8265-859adf28702b">
+<span class="eqno">(11.57)<a class="headerlink" href="#equation-d3becc6e-b522-49bf-8265-859adf28702b" title="Permalink to this equation">#</a></span>\[\begin{align}
 E(CN^*) = (M_x + M_X - M_CN)c^2.
 \end{align}\]</div>
 <p>In the <span class="math notranslate nohighlight">\({\rm ^{12}C}(\alpha,\ n){\rm ^{15}O}\)</span> reaction, enough energy is available from just the masses to leave <span class="math notranslate nohighlight">\(\rm ^{16}O^*\)</span> in an excited state with <span class="math notranslate nohighlight">\(7.2\ {\rm MeV}\)</span> when an <span class="math notranslate nohighlight">\(\alpha\)</span> particle and carbon-12 join together.  The kinetic energy <em>available</em> in the center-of-mass <span class="math notranslate nohighlight">\(K_{cm}^\prime\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-eefe551d-371c-4951-81e8-32e959486796">
-<span class="eqno">(11.58)<a class="headerlink" href="#equation-eefe551d-371c-4951-81e8-32e959486796" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6e5cda7c-25f5-488e-a8ea-b7aca32a4411">
+<span class="eqno">(11.58)<a class="headerlink" href="#equation-6e5cda7c-25f5-488e-a8ea-b7aca32a4411" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_{cm}^\prime = \frac{M_X}{M_x + M_X}K_{\rm lab},
 \end{align}\]</div>
 <p>which can excite the compound nucleus to even higher excitation energies than that from just the masses.</p>
@@ -1611,8 +1621,8 @@ K_{cm}^\prime = \frac{M_X}{M_x + M_X}K_{\rm lab},
 <p>Nuclear physicists vary the projectile bombarding energy <span class="math notranslate nohighlight">\(K_x\)</span> and measure the cross section <span class="math notranslate nohighlight">\(\sigma_T\)</span> at each energy (generally at fixed angles for the outgoing particles).  This called an <em>excitation function</em>.  Sharp peaks in the excitation function of the reacting particles are called <strong>resonances</strong>, and they represent a quantum state of the compound nucleus being formed (e.g., interaction of <span class="math notranslate nohighlight">\(\alpha + {\rm ^{12}C} \rightarrow n + {\rm ^{16}O^*}\)</span>).</p>
 <p>This explains why <span class="math notranslate nohighlight">\({\rm ^{12}C}(\alpha,\ n){\rm ^{15}O}\)</span> has such a large cross section.  The reaction populated a resonance near <span class="math notranslate nohighlight">\(E({\rm ^{16}O^*}) = 18.2\ {\rm MeV}\)</span>.  The quantum numbers of <span class="math notranslate nohighlight">\({\rm ^{12}C}(\alpha,\ n){\rm ^{15}O}\)</span> exit channel select this energy level in <span class="math notranslate nohighlight">\(\rm ^{16}O^*\)</span> to be populated, where as the quantum numbers for the <span class="math notranslate nohighlight">\({\rm ^{12}C}(\alpha,\ p){\rm ^{15}N}\)</span> exit channel do not.</p>
 <p>The uncertainty principal can be used to relate the energy width of a particular nuclear state <span class="math notranslate nohighlight">\(\Gamma\)</span> to its lifetime <span class="math notranslate nohighlight">\(\tau\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe1bdf20-8a81-4fd5-bf50-15bad26a7a0a">
-<span class="eqno">(11.59)<a class="headerlink" href="#equation-fe1bdf20-8a81-4fd5-bf50-15bad26a7a0a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f91f9201-5224-4f41-b877-8e59e7365118">
+<span class="eqno">(11.59)<a class="headerlink" href="#equation-f91f9201-5224-4f41-b877-8e59e7365118" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Gamma \tau &gt; \frac{\hbar}{2}.
 \end{align}\]</div>
 <p>If the width of a measured nuclear state is <span class="math notranslate nohighlight">\(\Gamma\)</span> (using an excitation function), then the above equation can be used to determine its lifetime.  Ground states for stable nuclei have zero energy width, and hence an infinite lifetime.</p>
@@ -1652,8 +1662,8 @@ K_{cm}^\prime = \frac{M_X}{M_x + M_X}K_{\rm lab},
 <section id="induced-fission">
 <h3><span class="section-number">11.10.1. </span>Induced Fission<a class="headerlink" href="#induced-fission" title="Link to this heading">#</a></h3>
 <p>Fission may also be <em>induced</em> by a nuclear reaction.  A neutron abosrbed by a heavy nucleus forms a highly excited compound nucleus that may quickly fission.  An example of induced fission is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-43613c4d-8222-43d9-a5f9-c2f5f8cbbe92">
-<span class="eqno">(11.60)<a class="headerlink" href="#equation-43613c4d-8222-43d9-a5f9-c2f5f8cbbe92" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e9c3e108-c7ae-465e-83d4-0a656e62d377">
+<span class="eqno">(11.60)<a class="headerlink" href="#equation-e9c3e108-c7ae-465e-83d4-0a656e62d377" title="Permalink to this equation">#</a></span>\[\begin{align}
 n + {\rm ^{235}_{\ \ 92}U} &amp;\rightarrow {\rm ^{236}_{\ \ 92}U^*}, \\
 {\rm ^{236}_{\ \ 92}U^*} &amp;\rightarrow {\rm ^{99}_{\ \ 40}Zr} + {\rm ^{134}_{\ \ 52}Te} + 3n.
 \end{align}\]</div>
@@ -1749,8 +1759,8 @@ n + {\rm ^{235}_{\ \ 92}U} &amp;\rightarrow {\rm ^{236}_{\ \ 92}U^*}, \\
 <p><strong>Breeder Reactors</strong></p>
 </aside>
 <p>A promising choice for an advanced kind of reactor is the <em>breeder reactor</em>, which provides more fissionable fuel than it consumes.  When <span class="math notranslate nohighlight">\(\rm ^{238}U\)</span> undergoes the <span class="math notranslate nohighlight">\((n,\ \gamma)\)</span> reaction, the resulting <span class="math notranslate nohighlight">\(\rm ^{239}U\)</span> beta decays into <span class="math notranslate nohighlight">\(\rm ^{239}Np\)</span> which itself beta decays into <span class="math notranslate nohighlight">\(\rm ^{239}Pu\)</span> via the reaction chain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-30c1cf07-3be0-4575-a7a9-8bfed2817c02">
-<span class="eqno">(11.61)<a class="headerlink" href="#equation-30c1cf07-3be0-4575-a7a9-8bfed2817c02" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a1aaf46b-63ce-43b6-95e2-f22ee54c2f20">
+<span class="eqno">(11.61)<a class="headerlink" href="#equation-a1aaf46b-63ce-43b6-95e2-f22ee54c2f20" title="Permalink to this equation">#</a></span>\[\begin{align}
 n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 {\rm ^{239}_{\ \ 92}U*} &amp;\rightarrow \gamma + {\rm ^{239}_{\ \ 92}U}, \\
 {\rm ^{239}_{\ \ 92}U} &amp;\rightarrow \beta^- + {\rm ^{239}_{\ \ 93}Np} + \bar{\nu}, \\
@@ -1765,8 +1775,8 @@ n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 <p>The only primary souce in widespread use that is <em>not</em> derived from the Sun is nuclear power.  Energy emitted by stars arises from <em>nuclear fusion</em> reations in which light nuclei fuse together.  This process contrasts with nuclear fission, in which large nuclei divide.</p>
 <p>When <span class="math notranslate nohighlight">\(\rm ^{236}U^*\)</span> fissions, it divides into nuclei with a larger binding energy per nucleon, thereby releasing energy.  If two light nuclei fuse together, they alos form a nucleus with a larger binding energy per nucleon and energy is released.</p>
 <p>The most energy is released if two isotopes of hydrogen (deuteron and triton) fuse toghether in the reaction</p>
-<div class="amsmath math notranslate nohighlight" id="equation-745792cf-a57a-4975-a4b7-e06d5b4be5b8">
-<span class="eqno">(11.62)<a class="headerlink" href="#equation-745792cf-a57a-4975-a4b7-e06d5b4be5b8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f7b02372-f2a6-4dff-a1dd-77813753c68d">
+<span class="eqno">(11.62)<a class="headerlink" href="#equation-f7b02372-f2a6-4dff-a1dd-77813753c68d" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^2H} + {\rm ^3H} &amp;\rightarrow n + {\rm ^4He}. \qquad (Q=17.6\ {\rm MeV})
 \end{align}\]</div>
 <p>About <span class="math notranslate nohighlight">\(3.5\ {\rm MeV}\)</span> per nucleon is released because of the stron binding of <span class="math notranslate nohighlight">\(\rm ^4He\)</span>.  Less than <span class="math notranslate nohighlight">\(1\ {\rm MeV}\)</span> per nucleon is released in fission.</p>
@@ -1774,8 +1784,8 @@ n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 <h3><span class="section-number">11.11.1. </span>Formation of Elements<a class="headerlink" href="#formation-of-elements" title="Link to this heading">#</a></h3>
 <p>In the first few minutes of the universe, the light elements of hydrogen and helium were formed.  Millions of years later, the heavier elements were formed in stars through nuclear fusion.  Thre are two main cycles for producing energy in stars.</p>
 <p>The first is the <strong>proton-proton chain</strong>, which converts 4 protons into an <span class="math notranslate nohighlight">\(\alpha\)</span> particle.  As stars form due to gravitational attraction, the heat (average speed of the protons) increases substantially so they can overcome their Coulomb repulsion (with the help of quantum tunneling) and fuse by the following reactions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5dc28ce7-432c-48a2-9633-e243a46acd6d">
-<span class="eqno">(11.63)<a class="headerlink" href="#equation-5dc28ce7-432c-48a2-9633-e243a46acd6d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5ed21821-8cf7-48ad-9dd1-52b4e6a33952">
+<span class="eqno">(11.63)<a class="headerlink" href="#equation-5ed21821-8cf7-48ad-9dd1-52b4e6a33952" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^1H} + {\rm ^1H} &amp;\rightarrow {\rm ^2H} + \beta^+ + \nu. \qquad (Q=0.42\ {\rm MeV})
 \end{align}\]</div>
 <p>This reaction produces a deuteron <span class="math notranslate nohighlight">\((\rm ^2H)\)</span> and is a special kind of weak-interaction beta decay process.  It is extremely slow, because only 1 collision in about <span class="math notranslate nohighlight">\(10^{26}\)</span> produces a reaction.  This is good, otherwise the Sun would explode!</p>
@@ -1783,8 +1793,8 @@ n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 <div class="math notranslate nohighlight" id="equation-pp-chain-i">
 <span class="eqno">(11.64)<a class="headerlink" href="#equation-pp-chain-i" title="Link to this equation">#</a></span>\[{\rm ^2H} + {\rm ^1H} \rightarrow {\rm ^3He} + \gamma. \qquad (Q=5.49\ {\rm MeV})\]</div>
 <p>The <span class="math notranslate nohighlight">\({\rm ^3He}\)</span> can then combine to produce <span class="math notranslate nohighlight">\({\rm ^4He}\)</span> through:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8de270fd-feab-4e84-a032-d13ff5fdb1e0">
-<span class="eqno">(11.65)<a class="headerlink" href="#equation-8de270fd-feab-4e84-a032-d13ff5fdb1e0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-750f6841-a91f-47d4-bff3-ca1131c4bf5f">
+<span class="eqno">(11.65)<a class="headerlink" href="#equation-750f6841-a91f-47d4-bff3-ca1131c4bf5f" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^3He} + {\rm ^3He} &amp;\rightarrow {\rm ^4He} + {\rm ^1H} + {\rm ^1H}. \qquad (Q=12.85\ {\rm MeV}).
 \end{align}\]</div>
 <div class="admonition note">
@@ -1794,8 +1804,8 @@ n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 <p>A total of six <span class="math notranslate nohighlight">\({\rm ^1H}\)</span> are requred to produce <span class="math notranslate nohighlight">\({\rm ^4He}\)</span> and two <span class="math notranslate nohighlight">\({\rm ^1H}\)</span>.  This process consumes four protons. The total <span class="math notranslate nohighlight">\(Q\)</span> for 6 <span class="math notranslate nohighlight">\({\rm ^1H}\)</span> produce <span class="math notranslate nohighlight">\({\rm ^4H}\)</span> is <span class="math notranslate nohighlight">\(24.7\ {\rm MeV}\)</span>, where an additional <span class="math notranslate nohighlight">\(2\ {\rm MeV}\)</span> come from the annihilation of two electron-positiron pairs for a total of <span class="math notranslate nohighlight">\(26.7\ {\rm MeV}\)</span>.</p>
 <p>The proton-proton chain is slow because Eq. <a class="reference internal" href="#equation-pp-chain-i">(11.64)</a> limits the entire process.  As the reaction proceeds, the star’s temperature increases and eventually carbon-12 nuclei are formed through by the <strong>triple-alpha process</strong> (i.e., converting 3 <span class="math notranslate nohighlight">\({\rm ^4He}\)</span> into a <span class="math notranslate nohighlight">\({\rm ^{12}C}\)</span>).</p>
 <p>Another cycle can produce the <span class="math notranslate nohighlight">\({\rm ^4He}\)</span>, if enough <strong>carbon</strong> is produced (or already present) near the stellar core.  The series of reactions responsible are called the <strong>CNO cycle</strong>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-73346105-d6f2-4f63-9acf-eee042d9d2aa">
-<span class="eqno">(11.66)<a class="headerlink" href="#equation-73346105-d6f2-4f63-9acf-eee042d9d2aa" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4289b204-2ae0-4ec2-9ef5-e8e110d6b60d">
+<span class="eqno">(11.66)<a class="headerlink" href="#equation-4289b204-2ae0-4ec2-9ef5-e8e110d6b60d" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^1H} + {\rm ^{12}C} &amp;\rightarrow {\rm ^{13}N} + \gamma, \\
 {\rm ^{13}N} &amp;\rightarrow {\rm ^{13}C} + \beta^+ + \nu, \qquad (t_{1/2} = 9.96\ {\rm min}) \\
 {\rm ^1H} + {\rm ^{13}C} &amp;\rightarrow {\rm ^{14}N} + \gamma, \\
@@ -1814,8 +1824,8 @@ n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 <section id="nuclear-fusion-on-earth">
 <h3><span class="section-number">11.11.2. </span>Nuclear Fusion on Earth<a class="headerlink" href="#nuclear-fusion-on-earth" title="Link to this heading">#</a></h3>
 <p>Some scientists beleive that controlled nuclear fusion is ultimatlely our best source of terrestrial energy.  Among the several possible fusion reactions, three of the simplest involve the three isotopes of hydrogen:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-14f74a9a-d62e-439d-9dc1-7e477a28415e">
-<span class="eqno">(11.67)<a class="headerlink" href="#equation-14f74a9a-d62e-439d-9dc1-7e477a28415e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-796222ea-82b8-4fb1-a0db-6f664359f501">
+<span class="eqno">(11.67)<a class="headerlink" href="#equation-796222ea-82b8-4fb1-a0db-6f664359f501" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^2H} + {\rm ^2H} &amp;\rightarrow n + {\rm ^3He}, \qquad (Q=3.3\ {\rm MeV}) \\
 {\rm ^2H} + {\rm ^2H} &amp;\rightarrow p + {\rm ^3He}, \qquad (Q=4.0\ {\rm MeV}) \\
 {\rm ^2H} + {\rm ^3H} &amp;\rightarrow n + {\rm ^4He}. \qquad (Q=17.6\ {\rm MeV})
@@ -1828,13 +1838,13 @@ n + {\rm ^{238}_{\ \ 92}U} &amp;\rightarrow {\rm ^{239}_{\ \ 92}U*}, \\
 <li><p>The ions must be held together in close proximity at high temperature long enough to avoid plasma cooling, where a suitable time is <span class="math notranslate nohighlight">\(1-2\ {\rm s}\)</span>.</p></li>
 </ol>
 <p>The suitable values given above assume magnitic confinement.  The product of the plasma density <span class="math notranslate nohighlight">\(n\)</span> and the containment time <span class="math notranslate nohighlight">\(\tau\)</span> must have a minimum value at a sufficiently hgih temperature to initiate fusion and produce as much energy as it consumes.  The minimum value is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9174c259-ec8d-485f-a4a6-51436a9dd999">
-<span class="eqno">(11.68)<a class="headerlink" href="#equation-9174c259-ec8d-485f-a4a6-51436a9dd999" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c2fdc5c4-f062-4ce2-907b-cc3ecdb5b3e1">
+<span class="eqno">(11.68)<a class="headerlink" href="#equation-c2fdc5c4-f062-4ce2-907b-cc3ecdb5b3e1" title="Permalink to this equation">#</a></span>\[\begin{align}
 n\tau \geq 3 \times 10^{20}\ {\rm s/m^3}.
 \end{align}\]</div>
 <p>The above relation is calle dthe <a class="reference external" href="https://en.wikipedia.org/wiki/Lawson_criterion">Lawson criterion</a>.  A triple product of <span class="math notranslate nohighlight">\(n\tau T\)</span> called the <em>fusion product</em> is also sometimes use:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c115cd4f-c541-4d7e-ad4e-7efdbe148b5a">
-<span class="eqno">(11.69)<a class="headerlink" href="#equation-c115cd4f-c541-4d7e-ad4e-7efdbe148b5a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f8837c21-ef3c-4960-9a15-abba3959fc97">
+<span class="eqno">(11.69)<a class="headerlink" href="#equation-f8837c21-ef3c-4960-9a15-abba3959fc97" title="Permalink to this equation">#</a></span>\[\begin{align}
 n\tau T \geq 5\times 10^{21}\ {\rm s\cdot keV/m^3}.
 \end{align}\]</div>
 <p>The factor <span class="math notranslate nohighlight">\(Q\)</span> is used to represent the ratio fo the power produced in the fusion reation to the power required to produce the fusion (heat).  <strong>This <span class="math notranslate nohighlight">\(Q\)</span> factor is not to be confused with the <span class="math notranslate nohighlight">\(Q\)</span> value for the release of binding energy.</strong></p>
@@ -1843,8 +1853,8 @@ n\tau T \geq 5\times 10^{21}\ {\rm s\cdot keV/m^3}.
 <section id="controlled-thermonuclear-reactions">
 <h3><span class="section-number">11.11.3. </span>Controlled Thermonuclear Reactions<a class="headerlink" href="#controlled-thermonuclear-reactions" title="Link to this heading">#</a></h3>
 <p>A controlled thermonuclear reaction of nuclear fusion in the laboratory is one of the primary goals of science and engineering.  Scientists do not expect to reach this goal for several more decades.  The first fusion reaction will likely be the <span class="math notranslate nohighlight">\(D + T\)</span> reaction.  The tritium will be derived from two possible reactions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b3025905-b24e-49cc-a1db-be6a98ad3c8b">
-<span class="eqno">(11.70)<a class="headerlink" href="#equation-b3025905-b24e-49cc-a1db-be6a98ad3c8b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-08620493-0367-485c-80b2-a1740c6c9f20">
+<span class="eqno">(11.70)<a class="headerlink" href="#equation-08620493-0367-485c-80b2-a1740c6c9f20" title="Permalink to this equation">#</a></span>\[\begin{align}
 n + {\rm ^6Li} &amp;\rightarrow {\rm ^3H} + {\rm ^4He}, \\
 n + {\rm ^7Li} &amp;\rightarrow {\rm ^3H} + {\rm ^4He} + n. 
 \end{align}\]</div>
@@ -1905,19 +1915,19 @@ n + {\rm ^7Li} &amp;\rightarrow {\rm ^3H} + {\rm ^4He} + n.
 <p>Radioisotopes are useful in medical research, diagnostics, and treatment.  Some <span class="math notranslate nohighlight">\(\beta^-\)</span> emitters (<span class="math notranslate nohighlight">\(\rm ^3H\)</span>, <span class="math notranslate nohighlight">\(\rm ^{14}C\)</span>, and <span class="math notranslate nohighlight">\(\rm ^{32}P\)</span>) are widely used in medical research.  The most widely used is <span class="math notranslate nohighlight">\(\rm ^{99m}Tc\)</span>, where it is used in about <span class="math notranslate nohighlight">\(80\%\)</span> of all nuclear medicine procedures.</p>
 <p>Technetium-99m has a half-life of <span class="math notranslate nohighlight">\(6\ \rm h\)</span>, where it produces a <span class="math notranslate nohighlight">\(140\)</span>-<span class="math notranslate nohighlight">\(\rm keV\)</span> gamma ray when it decays to the ground state of <span class="math notranslate nohighlight">\(\rm ^{99}Tc\)</span>.  A patient is given an intravenous injection of <span class="math notranslate nohighlight">\(\rm ^{99m}Tc\)</span>, where it can be trapped in certain areas of the body.  A few minutes after the injection, the patient is scanned for gamma rays to pinpoint the <span class="math notranslate nohighlight">\(\rm ^{99m}Tc\)</span> activity.</p>
 <p>The nuclide <span class="math notranslate nohighlight">\(\rm ^{99}Mo\)</span> is produces as a fission product or as a <em>by-product material</em> in a nuclear reator.  It is mostly produced by neturon bombardment of highly enriched uranium-235, which subsequently fissions.  The <span class="math notranslate nohighlight">\(\rm ^{99}Mo\)</span> beta decays to form the useful <span class="math notranslate nohighlight">\(\rm ^{99m}Tc\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-293630b5-15e8-49f2-ad23-6b1bf95e70c8">
-<span class="eqno">(11.71)<a class="headerlink" href="#equation-293630b5-15e8-49f2-ad23-6b1bf95e70c8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0fb3317c-1ce2-4fe4-9b8b-d48810727252">
+<span class="eqno">(11.71)<a class="headerlink" href="#equation-0fb3317c-1ce2-4fe4-9b8b-d48810727252" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^{99}Mo} &amp;\rightarrow \beta^- + {\rm ^{99m}_{\ \ 43}Tc}, \qquad (t_{1/2} = 66\ {\rm h}) \\
 {\rm ^{99m}_{\ \ 43}Tc} &amp;\rightarrow \gamma + {\rm ^{99}{\ \ 43}Tc}. \qquad (t_{1/2} = 6\ {\rm h},\ E_\gamma = 140\ {\rm keV})
 \end{align}\]</div>
 <p>The radionuclide <span class="math notranslate nohighlight">\(\rm ^{123}I\ (t_{1/2}= 13\ {\rm h})\)</span> is useful for a thyroid function test, where it is produced by an accelerator in a reaction such as,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4403172d-52e2-40f6-8c67-43e6e0cd4e94">
-<span class="eqno">(11.72)<a class="headerlink" href="#equation-4403172d-52e2-40f6-8c67-43e6e0cd4e94" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-55d0bdcb-0b6e-4557-bc10-0fcb57df3cde">
+<span class="eqno">(11.72)<a class="headerlink" href="#equation-55d0bdcb-0b6e-4557-bc10-0fcb57df3cde" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha + {\rm ^{121}_{\ \ 51}Sb} \rightarrow 2n + {\rm ^{123}_{\ \ 53}I}.
 \end{align}\]</div>
 <p>The iodine-123 decays via electron capture to excited states of <span class="math notranslate nohighlight">\(\rm ^{123}_{\ \ 52}Te\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a4d140f9-d2b9-4a0a-9c08-00d241a4ce57">
-<span class="eqno">(11.73)<a class="headerlink" href="#equation-a4d140f9-d2b9-4a0a-9c08-00d241a4ce57" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-12fb5ce8-ebaf-4fbb-9464-8d9e32b8adfc">
+<span class="eqno">(11.73)<a class="headerlink" href="#equation-12fb5ce8-ebaf-4fbb-9464-8d9e32b8adfc" title="Permalink to this equation">#</a></span>\[\begin{align}
 {\rm ^{123}_{\ \ 53}I} + e^- &amp;\rightarrow {\rm ^{123}_{\ \ 52}Te^*}, \\
 {\rm ^{123}_{\ \ 52}Te^*} &amp;\rightarrow \gamma + {\rm ^{123}_{\ \ 52}Te}.
 \end{align}\]</div>
@@ -1951,8 +1961,8 @@ n + {\rm ^7Li} &amp;\rightarrow {\rm ^3H} + {\rm ^4He} + n.
 </ul>
 <p>Fast-nueutron irradiation of bulk computer memory components can decrease the soft-error rate by a factor of <span class="math notranslate nohighlight">\(10\)</span>.  The neutrons reduce the intrinsic resisitivity in the silicon substrate so that the extraneous ionization caused later is much less likely to reset a bit.</p>
 <p>Phosphorous-doped silicon can be produced with fast-neutron irradiation.  Natural silicon consists of <span class="math notranslate nohighlight">\(3.1\%\)</span> of <span class="math notranslate nohighlight">\(\rm ^{30}Si\)</span>, which undergoes the reaction</p>
-<div class="amsmath math notranslate nohighlight" id="equation-27ad3f3c-b272-449a-b50b-3b068e813e0f">
-<span class="eqno">(11.74)<a class="headerlink" href="#equation-27ad3f3c-b272-449a-b50b-3b068e813e0f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a67a01b2-9722-4387-b4f1-48183995b99f">
+<span class="eqno">(11.74)<a class="headerlink" href="#equation-a67a01b2-9722-4387-b4f1-48183995b99f" title="Permalink to this equation">#</a></span>\[\begin{align}
 n + {\rm ^{30}_{14}Si} &amp;\rightarrow {\rm ^{31}_{14}Si}, \\
 {\rm ^{31}_{14}Si} &amp;\rightarrow \beta^- + {\rm ^{31}_{15}P}. \qquad (t_{1/2} = 2.62\ {\rm h})
 \end{align}\]</div>
@@ -2121,7 +2131,7 @@ By Billy Quarles
 
   <p class="copyright">
     
-      © Copyright 2025.
+      © Copyright 2026.
       <br/>
     
   </p>

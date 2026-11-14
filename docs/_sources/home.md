@@ -28,15 +28,26 @@ The course schedule identifies the assigned sections and the time devoted to eac
 
 Before class, read the assigned material, examine the figures, and identify a question or a step you cannot yet explain. Try the relevant example before reading its complete solution. During class, contribute to discussions and collaborative problem solving by explaining the reasoning behind your approach. After class, complete the assigned problems and revisit any ideas that remain unclear.
 
-A complete solution should make your reasoning visible. Use the following structure to organize substantial worked problems:
+## Homework expectations
 
-1. **The Problem:** Identify the information given and what you need to determine.
-2. **The Model:** Explain the physical principles and assumptions in words before introducing equations.
-3. **The Math:** Develop the solution symbolically, connecting the steps with complete sentences. Substitute numerical values near the end, carrying units through the calculation.
-4. **The Conclusion:** State the answer and explain whether its size, sign, units, and limiting behavior make physical sense.
-5. **The Verification:** When appropriate or assigned, use a short Python calculation or plot to check the result or explore the model further.
+Write each solution as a concise scientific argument that another student—including **future-you**—can follow and check. For analytical and computational problems, use the following pattern to develop your reasoning:
 
-The amount of detail should fit the problem. A conceptual question may need only a well-supported paragraph; a calculation or computational investigation needs enough explanation for another student to follow and check your work. Use the syllabus and individual assignment instructions for deadlines, submission requirements, and grading policies.
+| Part of the argument | Minimum length | Purpose |
+| --- | --- | --- |
+| **Introduction** | 2 complete sentences | Motivate the approach needed to solve the problem and identify the relevant physical ideas. Do more than restate the question. |
+| **Method** | 2 complete sentences | Explain the approach, define quantities, and state assumptions. Introduce the necessary equations and describe any computational procedure. |
+| **Results and Discussion** | 3 complete sentences | Develop the solution, present the results, and interpret their physical meaning. Connect consequential mathematical steps with explanations, working symbolically before substituting numerical values where appropriate. |
+| **Conclusion** | 2 complete sentences | Summarize the process and main finding, and provide a specific reasonableness check using units, scale, sign, limiting behavior, or a known result. |
+
+These are minimums for meaningful explanation, not targets to reach with filler. Equations and code do not count as complete sentences. The pattern should guide your writing; four labeled sections are not required for every problem. Use headings when they help organize a longer investigation. Related parts of a problem may share an introduction and method if every part is clearly addressed. Real papers may also discuss future directions or connections to the literature, but those are not required here.
+
+**For short-answer questions, write one coherent paragraph of approximately five complete sentences per problem.** Address every part of the question using specific physical ideas and examples. The four-part pattern and its sentence minimums do not apply to these paragraph responses.
+
+Include each **problem statement in bold within a blockquote**. Use Python when assigned or when it contributes meaningfully to the analysis, and place code, figures, and checks beside the explanation they support. Report numerical answers with units and justified significant figures; the digits Python prints do not determine the precision of your answer.
+
+A complete submission consists of **two files**, a Jupyter notebook and its matching PDF, with a two-digit chapter number: `PHYS321_Chpt01_LastName.ipynb` and `PHYS321_Chpt01_LastName.pdf`. Before exporting, exit cell editing mode so all text and equations are rendered, then inspect the PDF for clipped content or unwanted source/preview columns.
+
+Consult the [homework template](https://saturnaxis.github.io/ModernPhysics/Preamble/HW_template.html) for a worked example and guidance on saving, group work, and preparing your submission. Omit the example's colored instructional labels from your own solutions. Use the syllabus and individual assignment instructions for deadlines and grading policies.
 
 ## Developing your Python and Markdown skills
 

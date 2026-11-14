@@ -20,7 +20,7 @@ The course schedule determines the assigned sections and pacing.
 
 ## Using the material
 
-The [course home page](https://saturnaxis.github.io/ModernPhysics/home.html) explains learning goals, the suggested study routine, and expectations for written and computational work. Substantial solutions are organized around **The Problem, The Model, The Math, The Conclusion**, and, when appropriate or assigned, **The Verification**.
+The [course home page](https://saturnaxis.github.io/ModernPhysics/home.html) explains learning goals, study habits, and homework expectations. Analytical and computational solutions follow the reasoning of scientific writing: **Introduction, Method, Results and Discussion, and Conclusion**, with explicit headings used when helpful. Short-answer questions require one coherent paragraph of approximately five complete sentences. See the [homework template](https://saturnaxis.github.io/ModernPhysics/Preamble/HW_template.html) for examples, sentence minimums, formatting, and submission requirements.
 
 The preamble provides references that students can revisit as their skills develop:
 

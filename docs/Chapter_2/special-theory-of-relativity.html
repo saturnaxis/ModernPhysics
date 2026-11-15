@@ -547,11 +547,22 @@ document.write(`
 <p>Albert Einstein presented his special theory of relativity in 1905, which tells us how we should measure the relative motion of bodies at high speed.  Most objects are moving fast enough and thus, the <strong>Newtonian principle of relativity</strong> (or <em>Galilean invariance</em>) is an acceptable approximation.  Newton’s laws of motion must be measured <em>relative</em> to some reference frame, where an <strong>inertial frame</strong> is present if Newton’s laws are valid in that frame.</p>
 <p>A body moves in a straight line with constant velocity if it is not subject to a net external force (i.e., Newton’s first law), where the coordinate system attached to that body defines an inertial frame.  A reference frame moving at a uniform velocity relative to the first system also obeys Newton’s laws.  Newton showed that it was not possible to determine absolute motion in space by any experiment, where he used relative motion.</p>
 <p><strong>Consider two inertial reference frames that are moving relative to each other along their <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x^\prime\)</span> axes with a uniform velocity <span class="math notranslate nohighlight">\(v\)</span>, as shown in Figure  <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>.</strong></p>
-<figure class="align-default" id="reference-frame-fig">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/6/64/Frames_of_reference_in_relative_motion.svg"><img alt="reference frame" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Frames_of_reference_in_relative_motion.svg" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">The standard configuration of two frames of reference, the primed system in motion relative to the unprimed system only along the <span class="math notranslate nohighlight">\(x\)</span>-axis and with speed <span class="math notranslate nohighlight">\(v\)</span>. Image Credit: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Frames_of_reference_in_relative_motion.svg">Wikipedia</a>; Krea.</span><a class="headerlink" href="#reference-frame-fig" title="Link to this image">#</a></p>
+<figure class="align-center" id="reference-frame-fig">
+<div class="output text_html">
+<video
+    src="../_static/videos/ReferenceFrames.mp4"
+    poster="../_static/images/ReferenceFrames_final.png"
+    controls
+    loop
+    playsinline
+    preload="metadata"
+    width="100%"
+    style="max-width: 900px; display: block; margin: auto;"
+    aria-label="Animation of the primed reference frame moving right at constant velocity relative to the unprimed frame. A point P remains stationary in the unprimed frame. Distance arrows show that x equals vt plus x prime, illustrating the Galilean coordinate transformation.">
+    Your browser does not support the HTML5 video element.
+</video>
+</div><figcaption>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text"><strong>Galilean transformation between moving reference frames.</strong> The frame <span class="math notranslate nohighlight">\(K'\)</span> moves at constant velocity <span class="math notranslate nohighlight">\(v\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>-axis of frame <span class="math notranslate nohighlight">\(K\)</span>. The point <span class="math notranslate nohighlight">\(P\)</span> remains fixed in <span class="math notranslate nohighlight">\(K\)</span>, while its coordinate <span class="math notranslate nohighlight">\(x'\)</span> decreases as the origin <span class="math notranslate nohighlight">\(O'\)</span> moves to the right. After time <span class="math notranslate nohighlight">\(t\)</span>, the origins are separated by <span class="math notranslate nohighlight">\(vt\)</span>, so <span class="math notranslate nohighlight">\(x=vt+x'\)</span> and therefore <span class="math notranslate nohighlight">\(x'=x-vt\)</span>. The transverse coordinates and time remain unchanged: <span class="math notranslate nohighlight">\(y'=y\)</span>, <span class="math notranslate nohighlight">\(z'=z\)</span>, and <span class="math notranslate nohighlight">\(t'=t\)</span>.  Animation created with <a class="reference external" href="https://www.manim.community/">Manim Community</a>.</span><a class="headerlink" href="#reference-frame-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The motion of the primed coordinates can be written in terms of the unprimed coordinates as</p>
@@ -564,36 +575,39 @@ z^\prime &amp;= z. \end{split}\]</div>
 <h2><span class="section-number">2.1. </span>Need for Ether<a class="headerlink" href="#need-for-ether" title="Link to this heading">#</a></h2>
 <p>Thomas Young performed his famous experiments on the interference of light in 1802.  <a class="reference external" href="https://www.britannica.com/biography/Augustin-Jean-Fresnel">Augustin Fresnel</a> showed a detailed understanding of interference, diffraction, and polarization a decade later.  These discoveries showed that light could behave like a wave and how waves interact with each other.  But, classical physicists “knew” that all waves needed a medium to travel, where they proposed the <em>luminiferous aether</em> (i.e., ether) as that medium.  The ether had to have a low density that planets could pass through it with no apparent changes in their orbits.  Its elasticity must be strong enough to support incredibly high wave speeds too.</p>
 <p>Maxwell showed that the speed of light in different media depends only on the electric and magnetic properties of matter.  In vacuum, the speed of light depends on the permeability <span class="math notranslate nohighlight">\(\mu_o\)</span> and permittivity <span class="math notranslate nohighlight">\(\epsilon_o\)</span> of free space.  The properties of the ether must be consistent with electromagnetic theory, which required only a sensitive enough experiment.  There was a <em>general consensus</em> for the concept of ether by 1880.  Maxwell’s equation were elegant enough to make testable predictions, including matters concerning the ether.</p>
+<figure class="align-default" id="ether-motivation-fig">
+<img alt="Three-panel illustration showing water and sound waves traveling through material media, the wave behavior of light demonstrated by interference, and the historical hypothesis of a luminiferous ether filling space." src="../_images/Ether_Motivation.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text"><strong>Historical motivation for the luminiferous ether.</strong> Because familiar waves required a material medium, nineteenth-century physicists proposed that light propagated through an invisible medium filling space.</span><a class="headerlink" href="#ether-motivation-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p><strong>Suppose we flash a light in a moving system <span class="math notranslate nohighlight">\(K^\prime\)</span> and an observer in system <span class="math notranslate nohighlight">\(K^\prime\)</span> measures the speed of light as <span class="math notranslate nohighlight">\(c\)</span></strong>.  We can find the speed measured in system <span class="math notranslate nohighlight">\(K\)</span> through the addition of velocities, <span class="math notranslate nohighlight">\(c \pm v\)</span>, where <span class="math notranslate nohighlight">\(v\)</span> is the relative speed of the two systems.  Maxwell’s equations don’t differentiate between the two systems, and it was unclear which frame should be taken as the reference.  In the late 19th century, physicists proposed that the preferred inertial reference frame was the one with the ether and the speed of light in that frame was <span class="math notranslate nohighlight">\(c\)</span>.  No experiment at the time was able to discern the effect due to the relative speed <span class="math notranslate nohighlight">\(v\)</span> (i.e., <span class="math notranslate nohighlight">\(c\pm v \approx c\)</span>).</p>
 </section>
 <section id="michelson-morley-experiment">
 <h2><span class="section-number">2.2. </span>Michelson-Morley Experiment<a class="headerlink" href="#michelson-morley-experiment" title="Link to this heading">#</a></h2>
 <section id="michelson-s-interferometer">
 <h3><span class="section-number">2.2.1. </span>Michelson’s Interferometer<a class="headerlink" href="#michelson-s-interferometer" title="Link to this heading">#</a></h3>
-<p>The Earth orbits the Sun at <span class="math notranslate nohighlight">\(\sim 30\ {\rm km/s}\)</span> (or <span class="math notranslate nohighlight">\(\sim 10^{-4}c\)</span>), so an obvious experiment is to try to find the effects of the Earth’s motion through the ether.  Albert Michelson built an extremely precise device called an <em>interferometer</em>, which measures the phase difference between two light waves.  Michelson used his <a class="reference external" href="https://en.wikipedia.org/wiki/Michelson_interferometer">interferometer</a> to detect the difference in the speed of light passing through the ether in different directions. Figure <a class="reference internal" href="#interferometer-fig"><span class="std std-numref">2.2</span></a> shows the basic setup for the Michelson interferometer.</p>
-<figure class="align-default" id="interferometer-fig">
-<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/b3f8bf8d0a6f21076baaa28ff720a36774658498"><img alt="interferometer" src="https://openstax.org/apps/archive/20220325.143432/resources/b3f8bf8d0a6f21076baaa28ff720a36774658498" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">(a) The Michelson interferometer. The extended light source is a ground-glass plate that diffuses the light from a laser. (b) A planar view of the interferometer. Image Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/3-5-the-michelson-interferometer">OpenStax University Physics: Vol 3</a>.</span><a class="headerlink" href="#interferometer-fig" title="Link to this image">#</a></p>
+<p>The Earth orbits the Sun at <span class="math notranslate nohighlight">\(\sim 30\ {\rm km/s}\)</span> (or <span class="math notranslate nohighlight">\(\sim 10^{-4}c\)</span>), so an obvious experiment is to try to find the effects of the Earth’s motion through the ether.  Albert Michelson built an extremely precise device called an <em>interferometer</em>, which measures the phase difference between two light waves.  Michelson used his <a class="reference external" href="https://en.wikipedia.org/wiki/Michelson_interferometer">interferometer</a> to detect the difference in the speed of light passing through the ether in different directions. Figure <a class="reference internal" href="#interferometer-fig"><span class="std std-numref">2.3</span></a> shows the basic setup for the Michelson interferometer.</p>
+<figure class="align-center" id="interferometer-fig">
+<div class="output text_html">
+<video
+    src="../_static/videos/MichelsonOverlay.mp4"
+    poster="../_static/images/MichelsonOverlay_final.png"
+    controls
+    loop
+    playsinline
+    preload="metadata"
+    width="100%"
+    style="max-width: 1200px; display: block; margin: auto;"
+    aria-label="Two views of a Michelson interferometer. Light passes through a source diffuser to a beam splitter, travels to two perpendicular mirrors, returns to the splitter, and recombines toward a screen. Teal and red distinguish the two optical paths, not wavelengths. A closing idealized screen view shows circular bright and dark fringes shifting through one cycle as mirror M1 moves by half a wavelength.">
+    Your browser does not support the HTML5 video element.
+</video>
+</div><figcaption>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text"><strong>Michelson interferometer.</strong> (a) Apparatus and (b) plan view. The beam splitter <span class="math notranslate nohighlight">\(M\)</span> directs light toward mirrors <span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span>; the returning beams recombine toward the screen. <span class="math notranslate nohighlight">\(S\)</span> is the source diffuser, and <span class="math notranslate nohighlight">\(C\)</span> compensates for the unequal glass thickness traversed by the two paths. Colors distinguish paths, not wavelengths; output rays are separated slightly for visibility. Realistic illustration and animation based on <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/3-5-the-michelson-interferometer">OpenStax University Physics, Volume 3, Figure 3.16</a>.  Animation created with <a class="reference external" href="https://www.manim.community/">Manim Community</a>.</span><a class="headerlink" href="#interferometer-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Initially, it is assumed that one of the interferometer arms (<span class="math notranslate nohighlight">\(d_1\)</span> or <span class="math notranslate nohighlight">\(d_2\)</span>) is parallel to Earth’s motion through the ether.  Light leaves the source and passes through the glass plate <span class="math notranslate nohighlight">\(M\)</span>.  Part of the light will eventually go to the mirror <span class="math notranslate nohighlight">\(M_1\)</span> and part of the light will travel to <span class="math notranslate nohighlight">\(M_2\)</span>. The back of <span class="math notranslate nohighlight">\(M\)</span> is partially silvered and part of the light is reflected.  The light is reflected at the mirrors (<span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span>) and comes back to the partially silvered mirror <span class="math notranslate nohighlight">\(M\)</span>, where part of the light from each path passes on to observer/detector. The compensator is added at <span class="math notranslate nohighlight">\(C\)</span> to make sure both light paths pass through equal thicknesses of glass.  Figure <a class="reference internal" href="#interferometer-anim-fig"><span class="std std-numref">2.3</span></a> shows the paths the light can take.</p>
-<figure class="align-default" id="interferometer-anim-fig">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/b/bd/Michelson%C5%AFv_interferometr.gif"><img alt="interferometer-path" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Michelson%C5%AFv_interferometr.gif" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">The Michelson interferometer animated path. Image Credit: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Michelson%C5%AFv_interferometr.gif">Wikipedia</a>.</span><a class="headerlink" href="#interferometer-anim-fig" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Using sodium as a bright light source (<em>don’t use a laser if you’re the observer</em>) interference fringes can be found.  The fringe pattern should shift if the apparatus is rotated through <span class="math notranslate nohighlight">\(90^\circ\)</span>, such that the path <span class="math notranslate nohighlight">\(d_1\)</span> becomes parallel to Earth’s motion and the path <span class="math notranslate nohighlight">\(d_2\)</span> is perpendicular.  The observed interference pattern consists of light and dark bands that correspond to constructive and destructive interference (Figure <a class="reference internal" href="#fringes-fig"><span class="std std-numref">2.4</span></a>).</p>
-<figure class="align-default" id="fringes-fig">
-<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/cbf0b91f98821d54c258f1bffb6480e334819cc1"><img alt="interferometer" src="https://openstax.org/apps/archive/20220325.143432/resources/cbf0b91f98821d54c258f1bffb6480e334819cc1" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Fringes produces with a Michelson interferometer. Image Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/3-5-the-michelson-interferometer">OpenStax University Physics: Vol 3</a>.</span><a class="headerlink" href="#fringes-fig" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Initially, it is assumed that one of the interferometer arms (<span class="math notranslate nohighlight">\(d_1\)</span> or <span class="math notranslate nohighlight">\(d_2\)</span>) is parallel to Earth’s motion through the ether.  Light leaves the source and passes through the glass plate <span class="math notranslate nohighlight">\(M\)</span>.  Part of the light will eventually go to the mirror <span class="math notranslate nohighlight">\(M_1\)</span> and part of the light will travel to <span class="math notranslate nohighlight">\(M_2\)</span>. The back of <span class="math notranslate nohighlight">\(M\)</span> is partially silvered and part of the light is reflected.  The light is reflected at the mirrors (<span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span>) and comes back to the partially silvered mirror <span class="math notranslate nohighlight">\(M\)</span>, where part of the light from each path passes on to observer/detector. The compensator is added at <span class="math notranslate nohighlight">\(C\)</span> to make sure both light paths pass through equal thicknesses of glass.  Figure <a class="reference internal" href="#interferometer-fig"><span class="std std-numref">2.3</span></a> shows the paths the light can take.</p>
+<p>Using sodium as a bright light source (<em>don’t use a laser if you’re the observer</em>) interference fringes can be found.  The fringe pattern should shift if the apparatus is rotated through <span class="math notranslate nohighlight">\(90^\circ\)</span>, such that the path <span class="math notranslate nohighlight">\(d_1\)</span> becomes parallel to Earth’s motion and the path <span class="math notranslate nohighlight">\(d_2\)</span> is perpendicular.  The observed interference pattern consists of light and dark bands that correspond to constructive and destructive interference (Figure <a class="reference internal" href="#interferometer-fig"><span class="std std-numref">2.3</span></a>).</p>
 <p>For constructive interference, the difference between the two path lengths is given by an integer <span class="math notranslate nohighlight">\(n\)</span> number of wavelengths <span class="math notranslate nohighlight">\(\lambda\)</span>, <span class="math notranslate nohighlight">\(2(d_1-d_2) = n\lambda\)</span>.  The expected shift in the interference pattern can be calculated by the time difference between the two paths.  When light travels to the right along path <span class="math notranslate nohighlight">\(d_2\)</span>, the velocity of light according to the Galilean transformation is <span class="math notranslate nohighlight">\(c+v\)</span> because the ether carries the light along with it.  On the return journey, the velocity is <span class="math notranslate nohighlight">\(c-v\)</span> because the light is now traveling <em>against</em> the path of the ether.  The total time for the round trip is</p>
 <div class="math notranslate nohighlight">
 \[ t_2 = \frac{d_2}{c+v} + \frac{d_2}{c-v} = \frac{2cd_2}{c^2 - v^2} = \frac{2d_2}{c}\left(\frac{1}{1-v^2/c^2} \right). \]</div>
@@ -604,8 +618,8 @@ z^\prime &amp;= z. \end{split}\]</div>
 <div class="math notranslate nohighlight" id="equation-time-diff-1">
 <span class="eqno">(2.2)<a class="headerlink" href="#equation-time-diff-1" title="Link to this equation">#</a></span>\[\Delta t = t_1 - t_2 = \frac{2}{c}\left(\frac{d_2}{\sqrt{1-v^2/c^2}} - \frac{d_1}{1-v^2/c^2}  \right).\]</div>
 <p>If we rotate the apparatus by <span class="math notranslate nohighlight">\(90^\circ\)</span> so that the ether passes along <span class="math notranslate nohighlight">\(d_1\)</span>.  The time difference <span class="math notranslate nohighlight">\(\Delta t^\prime\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b02e875-49f4-4c0a-856e-ab6b3787afe6">
-<span class="eqno">(2.3)<a class="headerlink" href="#equation-0b02e875-49f4-4c0a-856e-ab6b3787afe6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a604d3fd-4f96-421f-88b0-8cfb9b3ff3b1">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-a604d3fd-4f96-421f-88b0-8cfb9b3ff3b1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta t^\prime  = \frac{2}{c}\left(\frac{d_2}{1-v^2/c^2} - \frac{d_1}{\sqrt{1-v^2/c^2}}  \right).
 \end{align}\]</div>
 <p>Michelson looked for a shift in the interference pattern and found the time difference as</p>
@@ -635,17 +649,78 @@ z^\prime &amp;= z. \end{split}\]</div>
 <p>We can now modify our previous definition of inertial frames of reference to be those frames of reference in which <em>all the laws of physics</em> are valid.</p>
 </div>
 <p>To make things clearer, Einstein used <a class="reference external" href="https://en.wikipedia.org/wiki/Einstein%27s_thought_experiments">thought experiments</a> to work out how relativity would work in real life.  Recall the problem at the end of <a class="reference external" href="https://saturnaxis.github.io/ModernAstro/Chapter_2/special-theory-of-relativity.html#need-for-ether">Sect. 2.1</a>, we had assumed that events occurring in system <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> could be easily synchronized so that <span class="math notranslate nohighlight">\(t = t^\prime\)</span>.  Einstein realized that each system must have its own observers with their own clocks and metersticks.</p>
-<p><strong>Consider two observers measuring the time interval between two flashes of light from flash lamps that are a distance apart</strong> (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>).</p>
-<figure class="align-default" id="simultaneity-fig">
-<a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/7c2fdb6db443e45f189370005ba99a9dac24fa4c"><img alt="simultaneity" src="https://openstax.org/apps/archive/20220325.143432/resources/7c2fdb6db443e45f189370005ba99a9dac24fa4c" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">(a) Two pulses of light are emitted simultaneously relative to observer B. (c) The pulses reach observer B’s position simultaneously. (b) Because of A’s motion, she sees the pulse from the right first and concludes the bulbs did not flash simultaneously. Both conclusions are correct. Image Credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/5-2-relativity-of-simultaneity">OpenStax University Physics: Vol 3</a>.</span><a class="headerlink" href="#simultaneity-fig" title="Link to this image">#</a></p>
+<p><strong>Consider two observers measuring the time interval between two flashes of light from flash lamps that are a distance apart</strong> (Figs. <a class="reference internal" href="#fig-simultaneity-emission"><span class="std std-numref">2.4</span></a>-<a class="reference internal" href="#fig-simultaneity-train"><span class="std std-numref">2.6</span></a>).</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+(a) Light Emission</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="fig-simultaneity-emission" style="width: 100%">
+<div class="output text_html">
+<video
+    src="../_static/videos/A_LightEmission.mp4"
+    poster="../_static/images/Simultaneity_a_poster.png"
+    controls
+    loop
+    playsinline
+    preload="metadata"
+    width="100%"
+    style="max-width: 900px; display: block; margin: auto;"
+    aria-label="Animation of two light flashes emitted simultaneously from opposite ends of a moving train in the ground reference frame. Orange and cyan wavefronts expand outward at the speed of light.">
+    Your browser does not support the HTML5 video element.
+</video>
+</div><figcaption>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text"><strong>Simultaneous emission.</strong> Two flashes of light are emitted simultaneously from opposite ends of a moving train, as measured in the ground reference frame. Animation created using <a class="reference external" href="https://www.manim.community/">Manim</a>.</span><a class="headerlink" href="#fig-simultaneity-emission" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>An observer A is seated midway on a rail car with two flash lamps at opposite sides equidistant from her. A pulse of light is emitted from each flash lamp and moves toward observer A, (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>a). The rail car is moving rapidly to the right. An observer B standing on the platform is facing the rail car as it passes and observes both flashes of light reach him simultaneously, (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>c). He measures the distances from where he saw the pulses originate, finds them equal, and concludes that the pulses were emitted simultaneously.</p>
-<p>Because of Observer A’s motion, the pulse from the right of the railcar reaches her before the pulse from the left (Fig. <a class="reference internal" href="#simultaneity-fig"><span class="std std-numref">2.5</span></a>b). She also measures the distances from within her frame of reference, finds them equal, and concludes that the pulses were not emitted simultaneously.  We conclude that</p>
-<blockquote class="epigraph">
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+(b) Ground Reference Frame</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="fig-simultaneity-ground" style="width: 100%">
+<div class="output text_html">
+<video
+    src="../_static/videos/B_GroundFrame.mp4"
+    poster="../_static/images/Simultaneity_b_poster.png"
+    controls
+    loop
+    playsinline
+    preload="metadata"
+    width="100%"
+    style="max-width: 900px; display: block; margin: auto;"
+    aria-label="Animation showing a train moving right relative to the ground. Light flashes emitted simultaneously from opposite ends reach stationary observer B at the same time, while moving observer A receives the front flash before the rear flash.">
+    Your browser does not support the HTML5 video element.
+</video>
+</div><figcaption>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text"><strong>Ground reference frame.</strong> Stationary observer B receives both flashes simultaneously, while moving observer A receives the front flash first. Animation created using <a class="reference external" href="https://www.manim.community/">Manim</a>.</span><a class="headerlink" href="#fig-simultaneity-ground" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+(c) Train Reference Frame</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="fig-simultaneity-train" style="width: 100%">
+<div class="output text_html">
+<video
+    src="../_static/videos/C_TrainFrame.mp4"
+    poster="../_static/images/Simultaneity_c_poster.png"
+    controls
+    loop
+    playsinline
+    preload="metadata"
+    width="100%"
+    style="max-width: 900px; display: block; margin: auto;"
+    aria-label="Animation showing light propagation in the train reference frame. Observer A is stationary, the ground moves left, and the front flash occurs before the rear flash. Both light pulses propagate at the same speed, demonstrating that the emission events are not simultaneous in the train frame.">
+    Your browser does not support the HTML5 video element.
+</video>
+</div><figcaption>
+<p><span class="caption-number">Fig. 2.6 </span><span class="caption-text"><strong>Train reference frame.</strong> The front flash occurs before the rear flash, demonstrating that events simultaneous in the ground frame are not simultaneous in the train frame. Animation created using <a class="reference external" href="https://www.manim.community/">Manim</a>.</span><a class="headerlink" href="#fig-simultaneity-train" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<p>An observer A is seated midway on a rail car with two flash lamps at opposite sides equidistant from her. A pulse of light is emitted from each flash lamp and moves toward observer A, (Fig. <a class="reference internal" href="#fig-simultaneity-emission"><span class="std std-numref">2.4</span></a>). The rail car is moving rapidly to the right. An observer B standing on the platform is facing the rail car as it passes and observes both flashes of light reach him simultaneously, (Fig. <a class="reference internal" href="#fig-simultaneity-train"><span class="std std-numref">2.6</span></a>). He measures the distances from where he saw the pulses originate, finds them equal, and concludes that the pulses were emitted simultaneously.</p>
+<p>Because of Observer A’s motion, the pulse from the right of the railcar reaches her before the pulse from the left (Fig. <a class="reference internal" href="#fig-simultaneity-ground"><span class="std std-numref">2.5</span></a>). She also measures the distances from within her frame of reference, finds them equal, and concludes that the pulses were not emitted simultaneously.  We conclude that</p>
+<blockquote>
 <div><p>Two events that are simultaneous in one reference frame are not necessarily simultaneous in another reference frame moving with respect to the first frame.</p>
 </div></blockquote>
 <p>Time comparison can be accomplished by sending light signals from one observer to another, but the information travels with a finite speed (i.e., the speed of light).  It is best if each system has its own observer with synchronized clocks.  We can determine the time of an event occurring far away from us by having a colleague at the event, with a clock fixed at rest, measure the time of a particular event, and send us the results.</p>
@@ -656,8 +731,8 @@ y^\prime &amp;= y \\
 z^\prime &amp;= z \\
 t^\prime &amp;= \frac{t-\left(vx/c^2 \right)}{\sqrt{1-v^2/c^2}}\end{split}\]</div>
 <p>We commonly use the following substitutions,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c2e63e0a-aca3-4bce-8829-082813a1a4d0">
-<span class="eqno">(2.6)<a class="headerlink" href="#equation-c2e63e0a-aca3-4bce-8829-082813a1a4d0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8e01002e-dc44-42c9-a2fd-ed7326c1f069">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-8e01002e-dc44-42c9-a2fd-ed7326c1f069" title="Permalink to this equation">#</a></span>\[\begin{align}
 \beta &amp;= \frac{v}{c} \\
 &amp; \text{and} \\
 \gamma &amp;= \frac{1}{\sqrt{1-v^2/c^2}},
@@ -668,8 +743,8 @@ t^\prime &amp;= \frac{t-\left(vx/c^2 \right)}{\sqrt{1-v^2/c^2}}\end{split}\]</di
 <h2><span class="section-number">2.4. </span>Lorentz Transformations<a class="headerlink" href="#lorentz-transformations" title="Link to this heading">#</a></h2>
 <p>Ultimately, we want to know which transformation is necessary so that all inertial frames of reference are valid for the laws of physics (i.e., both Newton’s mechanics and Maxwell’s equations).</p>
 <p><strong>Consider two inertial reference frames (<span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span>) that are moving relative to each other along their <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x^\prime\)</span> axes with a uniform velocity <span class="math notranslate nohighlight">\(v\)</span>, as shown in Figure  <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>.</strong>  A flash lamp goes off at <span class="math notranslate nohighlight">\(t=t^\prime=0\)</span>, where  the speed of light will be <span class="math notranslate nohighlight">\(c\)</span> in both systems according to postulate 2.  The wavefronts observed in both systems must be spherical and described by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fd400cd8-6594-427e-a89c-d0a73b054700">
-<span class="eqno">(2.7)<a class="headerlink" href="#equation-fd400cd8-6594-427e-a89c-d0a73b054700" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d5e49f1f-73e6-4a62-95d8-33d694206ce9">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-d5e49f1f-73e6-4a62-95d8-33d694206ce9" title="Permalink to this equation">#</a></span>\[\begin{align}
 x^2 + y^2 + z^2 &amp;= c^2 t^2, \\
 x^{\prime 2} + y^{\prime 2} + z^{\prime 2} &amp;= c^2 t^{\prime 2}.
 \end{align}\]</div>
@@ -685,57 +760,90 @@ x = \gamma^\prime\left(x^\prime + vt^\prime \right).\]</div>
 ct = \gamma\left(ct^\prime + vt^\prime \right).\]</div>
 <p>From these equations, we want to determine <span class="math notranslate nohighlight">\(\gamma\)</span> and solve for <span class="math notranslate nohighlight">\(t^\prime\)</span> in terms of un-primed coordinates.</p>
 <p>To solve for <span class="math notranslate nohighlight">\(\gamma\)</span>, we transform the above equations into</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a27a4bd8-9359-4d8f-8e4c-7bb845ea2a29">
-<span class="eqno">(2.10)<a class="headerlink" href="#equation-a27a4bd8-9359-4d8f-8e4c-7bb845ea2a29" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6c0aab06-45a8-49fe-89a7-93818fd4ff19">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-6c0aab06-45a8-49fe-89a7-93818fd4ff19" title="Permalink to this equation">#</a></span>\[\begin{align}
 t^\prime &amp;= \gamma t\left(1-\frac{v}{c}\right), \\
 t &amp;= \gamma t^\prime \left(1+\frac{v}{c}\right),
 \end{align}\]</div>
 <p>and through direct substitution, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d6cd7adf-7e9d-439e-9a10-8464c68bcb93">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-d6cd7adf-7e9d-439e-9a10-8464c68bcb93" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fb8a459f-0625-400e-86cd-3b453950b95a">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-fb8a459f-0625-400e-86cd-3b453950b95a" title="Permalink to this equation">#</a></span>\[\begin{align}
 t^\prime &amp;= \gamma t^\prime \left(1-\frac{v}{c}\right) \left(1+\frac{v}{c}\right).
 \end{align}\]</div>
 <p>Eliminating <span class="math notranslate nohighlight">\(t^\prime\)</span> and solving for <span class="math notranslate nohighlight">\(\gamma\)</span> produces</p>
 <div class="math notranslate nohighlight" id="equation-gamma-lorentz">
 <span class="eqno">(2.12)<a class="headerlink" href="#equation-gamma-lorentz" title="Link to this equation">#</a></span>\[\gamma = \frac{1}{\sqrt{1-v^2/c^2}}.\]</div>
 <p>Now we can solve for <span class="math notranslate nohighlight">\(t^\prime\)</span> in un-primed coordinates directly by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c54239ac-ba65-42a1-81bb-904ec960b0b8">
-<span class="eqno">(2.13)<a class="headerlink" href="#equation-c54239ac-ba65-42a1-81bb-904ec960b0b8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ccb77f57-4936-4003-91f7-b0a38bcc7a4f">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-ccb77f57-4936-4003-91f7-b0a38bcc7a4f" title="Permalink to this equation">#</a></span>\[\begin{align}
 t^\prime = \frac{t\left(1-v/c\right)}{\sqrt{1-v^2/c^2}},
 \end{align}\]</div>
 <p>and using the substitution <span class="math notranslate nohighlight">\(t = x/c\)</span> in the <span class="math notranslate nohighlight">\(vt/c\)</span> term to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ab4165c8-f9fa-47d7-a6ed-3eacdaecca7f">
-<span class="eqno">(2.14)<a class="headerlink" href="#equation-ab4165c8-f9fa-47d7-a6ed-3eacdaecca7f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5f67ca57-cf31-49e7-821c-eeccee9db200">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-5f67ca57-cf31-49e7-821c-eeccee9db200" title="Permalink to this equation">#</a></span>\[\begin{align}
 t^\prime = \frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
 \end{align}\]</div>
 <p>Now we have a the complete Lorentz transformations or Eqn. <a class="reference internal" href="#equation-lorentz-trans">(2.5)</a>.  The inverse transformation equation are obtained by replacing <span class="math notranslate nohighlight">\(v\)</span> by <span class="math notranslate nohighlight">\(-v\)</span> and by exchanging the primed and unprimed quantities (i.e., <span class="math notranslate nohighlight">\(x\rightarrow x^\prime\)</span>).</p>
-<p>Notice that the Lorentz transformation is approximately the Galilean transformation for <span class="math notranslate nohighlight">\(v\ll c\)</span> and become significantly more different as <span class="math notranslate nohighlight">\(v / c \rightarrow 1\)</span>.  The python code below produces a figure that illustrates how the relativistic factor <span class="math notranslate nohighlight">\(\gamma\)</span> changes with <span class="math notranslate nohighlight">\(v / c\)</span>.</p>
-<div class="cell docutils container">
+<p>Notice that the Lorentz transformation is approximately the Galilean transformation for <span class="math notranslate nohighlight">\(v\ll c\)</span> and become significantly more different as <span class="math notranslate nohighlight">\(v / c \rightarrow 1\)</span>.  Figure <a class="reference internal" href="#fig-lorentz-factor"><span class="std std-numref">Fig. 2.7</span></a> illustrates how the relativistic factor <span class="math notranslate nohighlight">\(\gamma\)</span> changes with <span class="math notranslate nohighlight">\(v/c\)</span>. Expand the dropdown below to view the Python code used to generate the figure.</p>
+<figure class="align-default" id="fig-lorentz-factor" style="width: 80%">
+<img alt="../_images/24018dbbbe697756fd9af7b63659fdf529ad0b10078059952b6671f997957ff9.png" src="../_images/24018dbbbe697756fd9af7b63659fdf529ad0b10078059952b6671f997957ff9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text"><strong>Lorentz factor as a function of relative speed.</strong> The Lorentz factor <span class="math notranslate nohighlight">\(\gamma\)</span> remains close to unity at low speeds but increases rapidly as <span class="math notranslate nohighlight">\(v\)</span> approaches the speed of light, <span class="math notranslate nohighlight">\(c\)</span>. The inset highlights the small deviations from unity at low speeds (<span class="math notranslate nohighlight">\(v/c \leq 0.3\)</span>).</span><a class="headerlink" href="#fig-lorentz-factor" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.axes_grid1.inset_locator</span><span class="w"> </span><span class="kn">import</span> <span class="n">inset_axes</span><span class="p">,</span> <span class="n">mark_inset</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">myst_nb</span><span class="w"> </span><span class="kn">import</span> <span class="n">glue</span>
 
-<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.001</span><span class="p">)</span>
-<span class="n">gamma</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">beta</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">beta</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
 
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span><span class="n">gamma</span><span class="p">,</span><span class="s1">&#39;-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$v/c$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Relativistic factor $\gamma$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="c1"># Main plot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$v/c$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Relativistic factor $\gamma$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">);</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Lorentz factor $\gamma$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+
+<span class="c1"># Inset plot</span>
+<span class="n">axins</span> <span class="o">=</span> <span class="n">inset_axes</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;38%&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;55%&quot;</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper center&quot;</span><span class="p">,</span> <span class="n">borderpad</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+<span class="n">axins</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axins</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="c1"># Zoom region</span>
+<span class="n">axins</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axins</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.05</span><span class="p">)</span>
+
+<span class="n">axins</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
+<span class="n">axins</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="mf">1.00</span><span class="p">,</span> <span class="mf">1.02</span><span class="p">,</span> <span class="mf">1.04</span><span class="p">])</span>
+<span class="n">axins</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;lorentz-factor-figure&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1">#plt.close(fig)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/16fca727d00e84bd1d78a82dbda1056566490cfb25781cdaad069b9cb1308f55.png" src="../_images/16fca727d00e84bd1d78a82dbda1056566490cfb25781cdaad069b9cb1308f55.png" />
+<img alt="../_images/24018dbbbe697756fd9af7b63659fdf529ad0b10078059952b6671f997957ff9.png" src="../_images/24018dbbbe697756fd9af7b63659fdf529ad0b10078059952b6671f997957ff9.png" />
 </div>
+</details>
 </div>
 <p>The implications of the Lorentz transformation are that</p>
 <ul class="simple">
@@ -755,7 +863,7 @@ t^\prime = \frac{t-vx/c^2}{\sqrt{1-v^2/c^2}}.
 <div class="math notranslate nohighlight" id="equation-time-dilation">
 <span class="eqno">(2.15)<a class="headerlink" href="#equation-time-dilation" title="Link to this equation">#</a></span>\[T^\prime = \frac{T_o}{\sqrt{1-v^2/c^2}} = \gamma T_o,\]</div>
 <p>which means that the observer in the moving frame measures a <em>longer</em> duration for the lamp than the observer in the fixed frame.  This effect is known as <strong>time dilation</strong> and is a direct result of Einstein’s two postulates.  The time dilation result is often interpreted by saying that <em>moving clocks run slow</em> by the factor <span class="math notranslate nohighlight">\(\gamma^{-1}\)</span>.</p>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-0">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-0">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.1 </span></p>
 <section id="exercise-content">
@@ -806,7 +914,13 @@ The required speed is 1.41e+08 m/s or 0.469 c.
 <div class="math notranslate nohighlight" id="equation-length-contract">
 <span class="eqno">(2.16)<a class="headerlink" href="#equation-length-contract" title="Link to this equation">#</a></span>\[L = \frac{L_o}{\gamma} = L_o \sqrt{1-v^2/c^2}.\]</div>
 <p>For <span class="math notranslate nohighlight">\(v \ll c\)</span>, <span class="math notranslate nohighlight">\(L~L_o\)</span> and the above expression reduces to the result from Newtonian relativity.  At high speed <span class="math notranslate nohighlight">\(v\lesssim c\)</span> and <span class="math notranslate nohighlight">\(L&lt;L_o\)</span>, and the meterstick appears to shrink for the observer in the <span class="math notranslate nohighlight">\(K\)</span> frame.  This effect is known as <strong>length</strong> or <strong>space contraction</strong>.  It is also sometimes called the <em>Lorentz-FitzGerald contraction</em> because it was suggested prior to special relativity as a means to solve the electrodynamics problem.  Similar to time dilation, we can find the inverse transformation by switching the primed and unprimed quantities and change <span class="math notranslate nohighlight">\(v\)</span> to <span class="math notranslate nohighlight">\(-v\)</span>.  Observers in both systems will say that the other moving stick is <em>shorter</em>.</p>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-1">
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.youtube.com/&#64;minutephysics"><strong>minutephysics</strong></a></p>
+<div class="video_wrapper align-center" style="text-align: center">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/-NN_m2yKAAk" style="border: 0; height: 435px; width: 720px">
+</iframe></div><p>As you watch, focus on how measurements of distance and elapsed time depend on the observer’s reference frame. Pay particular attention to why measuring the length of a moving object requires determining the positions of both ends simultaneously in the observer’s frame.</p>
+</div>
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.2 </span></p>
 <section id="exercise-content">
@@ -864,7 +978,7 @@ dt &amp;= \gamma \left[dt^\prime+\left(v/c^2 \right)dx^\prime\right]\end{split}\
 u_y &amp;= \frac{u_y^\prime}{\gamma\left[1+\left(v/c^2\right)u_x^\prime\right]}\\
 u_z &amp;= \frac{u_z^\prime}{\gamma\left[1+\left(v/c^2\right)u_x^\prime\right]}\\\end{split}\]</div>
 <p>Equations <a class="reference internal" href="#equation-lorentz-vel">(2.18)</a> are known as the <strong>Lorentz velocity transformations</strong>.  Notice that although the relative motion of the systems <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> are along the <span class="math notranslate nohighlight">\(x\)</span> direction that the velocities in the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions are affected as well.  The inverse transformations for <span class="math notranslate nohighlight">\(u_x^\prime\)</span>, <span class="math notranslate nohighlight">\(u_y^\prime\)</span>, and <span class="math notranslate nohighlight">\(u_z^\prime\)</span> can be determined by switching the primed and unprimed variables and changing <span class="math notranslate nohighlight">\(v\)</span> to <span class="math notranslate nohighlight">\(-v\)</span>.</p>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-2">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-2">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.3 </span></p>
 <section id="exercise-content">
@@ -991,7 +1105,7 @@ The number of muons expected to be counted at sea level is 539.
 </table>
 </div>
 <p>A negative time indicates that the time on the moving clock is <em>less</em> than the reference clock.  The moving clocks lost time (i.e., ran slower) during the eastward trip, but gained time (i.e., ran faster) during the westward trip.  The special theory of relativity is verified with the experimental uncertainties.</p>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-3">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-3">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.4 </span></p>
 <section id="exercise-content">
@@ -1083,28 +1197,28 @@ The time lost over the 7 day mission was 2.0e-04 s.
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/c/c2/Minkowski_diagram_-_photon.svg"><img alt="spacetime" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Minkowski_diagram_-_photon.svg" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.6 </span><span class="caption-text">The world line (yellow path) of a photon, which is at location x = 0 at time ct = 0. Image credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Spacetime_diagram">wikipedia</a></span><a class="headerlink" href="#spacetime-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.8 </span><span class="caption-text">The world line (yellow path) of a photon, which is at location x = 0 at time ct = 0. Image credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Spacetime_diagram">wikipedia</a></span><a class="headerlink" href="#spacetime-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Hermann_Minkowski">Hermann Minkowski</a> first used spacetime diagrams in 1908 and are often called <strong>Minkowski diagrams</strong>.  An event specifies 3 spatial coordiantes (<span class="math notranslate nohighlight">\(x,\ y,\ \&amp;\ z\)</span>) at a point in time <span class="math notranslate nohighlight">\(t\)</span>.  this is the origin of the term <em>fourth dimension</em> for time.  In our spacetime, we eliminate two spatial dimensions to define two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> as (<span class="math notranslate nohighlight">\(x_A,\ ct_A\)</span>) and (<span class="math notranslate nohighlight">\(x_B,\ ct_B\)</span>), respectively.  The line connecting events A and B is called a <strong>worldline</strong>.  A  light signal launched from the origin (<span class="math notranslate nohighlight">\(0,\ 0\)</span>) follows a straight line that at <span class="math notranslate nohighlight">\(45^\circ\)</span> as shown in Figure <a class="reference internal" href="#spacetime-fig"><span class="std std-numref">2.6</span></a>.  An object moving with a velocity less than <span class="math notranslate nohighlight">\(c\)</span> would simply have a different slope (<span class="math notranslate nohighlight">\(c/v\)</span>).</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Hermann_Minkowski">Hermann Minkowski</a> first used spacetime diagrams in 1908 and are often called <strong>Minkowski diagrams</strong>.  An event specifies 3 spatial coordiantes (<span class="math notranslate nohighlight">\(x,\ y,\ \&amp;\ z\)</span>) at a point in time <span class="math notranslate nohighlight">\(t\)</span>.  this is the origin of the term <em>fourth dimension</em> for time.  In our spacetime, we eliminate two spatial dimensions to define two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> as (<span class="math notranslate nohighlight">\(x_A,\ ct_A\)</span>) and (<span class="math notranslate nohighlight">\(x_B,\ ct_B\)</span>), respectively.  The line connecting events A and B is called a <strong>worldline</strong>.  A  light signal launched from the origin (<span class="math notranslate nohighlight">\(0,\ 0\)</span>) follows a straight line that at <span class="math notranslate nohighlight">\(45^\circ\)</span> as shown in Figure <a class="reference internal" href="#spacetime-fig"><span class="std std-numref">2.8</span></a>.  An object moving with a velocity less than <span class="math notranslate nohighlight">\(c\)</span> would simply have a different slope (<span class="math notranslate nohighlight">\(c/v\)</span>).</p>
 <p>The spacetime diagram relates position and simultaneity of events.  <strong>Suppose two photons are released from the origin, one in the positive <span class="math notranslate nohighlight">\(x\)</span> direction and the other in the negative <span class="math notranslate nohighlight">\(x\)</span> direction.</strong>  Both photons are moving forward in time (i.e., the future), therefore the <span class="math notranslate nohighlight">\(ct\)</span> coordinate will be positive.  How do we know that two events occur simultaneously  Simultaneous events will share the same vertical coordinate <span class="math notranslate nohighlight">\(ct\)</span>, or a horizontal line connects the two worldlines.  If one event occurs in a moving reference frame, then the two events cannot be simultaneous due to the Lorentz transformation.  Since the <span class="math notranslate nohighlight">\(x\)</span> coordinate of each event are different, then the <span class="math notranslate nohighlight">\(ct\)</span> of the respective events are not equal either.  Note that a negative <span class="math notranslate nohighlight">\(ct\)</span> coordinate denotes an event that occurs in the past.</p>
-<p>If we add another spatial coordinate <span class="math notranslate nohighlight">\(y\)</span> to our spacetime coordinates, we will have a cone, which is known as a <strong>light cone</strong>.  All causal events related to the present <span class="math notranslate nohighlight">\((x=0,\ ct = 0\)</span>) must be within the light cone.  Figure <a class="reference internal" href="#lightcone-fig"><span class="std std-numref">2.7</span></a> shows a light cone with events A, B, and C.  Event B lies within the light cone of the present (A) and is causally linked, where event C is outside of the light cone and cannot possibly affect event B.</p>
+<p>If we add another spatial coordinate <span class="math notranslate nohighlight">\(y\)</span> to our spacetime coordinates, we will have a cone, which is known as a <strong>light cone</strong>.  All causal events related to the present <span class="math notranslate nohighlight">\((x=0,\ ct = 0\)</span>) must be within the light cone.  Figure <a class="reference internal" href="#lightcone-fig"><span class="std std-numref">2.9</span></a> shows a light cone with events A, B, and C.  Event B lies within the light cone of the present (A) and is causally linked, where event C is outside of the light cone and cannot possibly affect event B.</p>
 <figure class="align-default" id="lightcone-fig">
 <a class="reference internal image-reference" href="https://openstax.org/apps/archive/20220325.143432/resources/cbd9b38e7c9b172a5118c7899933962ee1c4e03e"><img alt="lightcone" src="https://openstax.org/apps/archive/20220325.143432/resources/cbd9b38e7c9b172a5118c7899933962ee1c4e03e" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text">The light cone consists of all the world lines followed by light from the event A at the vertex of the cone. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/5-5-the-lorentz-transformation">OpenStax: University Physics Vol. 3</a></span><a class="headerlink" href="#lightcone-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.9 </span><span class="caption-text">The light cone consists of all the world lines followed by light from the event A at the vertex of the cone. Image credit: <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/5-5-the-lorentz-transformation">OpenStax: University Physics Vol. 3</a></span><a class="headerlink" href="#lightcone-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Invariant</strong> quantities have the same value in all inertial frames, where they serve a special role in physics because their values do not change from one system to another (e.g., the speed of light is invariant).  In Euclidean geometry, we define the distance <span class="math notranslate nohighlight">\(d\)</span> through <span class="math notranslate nohighlight">\(d^2 = x^2 + y^2 + z^2\)</span> and can obtain the same result for <span class="math notranslate nohighlight">\(d^2\)</span> in any inertial frame of reference.  In spacetime, we can define a distance using a similar form for two systems <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9fddf20d-3ecb-40fe-99d9-0d378a2e7bcb">
-<span class="eqno">(2.19)<a class="headerlink" href="#equation-9fddf20d-3ecb-40fe-99d9-0d378a2e7bcb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-84639de1-9343-47b2-b550-c2a922eaa2a4">
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-84639de1-9343-47b2-b550-c2a922eaa2a4" title="Permalink to this equation">#</a></span>\[\begin{align}
 s^2 &amp;= x^2 -(ct)^2, \\
 s^{\prime 2} &amp;= x^{\prime 2} -(ct^\prime)^2.
 \end{align}\]</div>
 <p>If we use the Lorentz transformation for <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>, we find that <span class="math notranslate nohighlight">\(s^2 = s^{\prime 2}\)</span>, which makes <strong><span class="math notranslate nohighlight">\(\mathbf{s^2}\)</span> an invariant quantity</strong>.  This relationship can be extended to include the two other spatial coordinates, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>, so that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e9bd9bbd-e64c-4f81-94b2-c1ba8e587728">
-<span class="eqno">(2.20)<a class="headerlink" href="#equation-e9bd9bbd-e64c-4f81-94b2-c1ba8e587728" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fa4edb46-f819-4629-bc96-9df52ae606e2">
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-fa4edb46-f819-4629-bc96-9df52ae606e2" title="Permalink to this equation">#</a></span>\[\begin{align}
 s^2 &amp;= x^2 + y^2 + z^2 -(ct)^2.
 \end{align}\]</div>
 <p>For simplicity, the distance <span class="math notranslate nohighlight">\(\Delta s^2\)</span> between two events can be represented by only a single spatial coordinate <span class="math notranslate nohighlight">\(x\)</span> as</p>
@@ -1118,8 +1232,8 @@ s^2 &amp;= x^2 + y^2 + z^2 -(ct)^2.
 </ol>
 <p>A 3-vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> can be defined using Cartesian coordinates <span class="math notranslate nohighlight">\(x,\ y,\ z\)</span> in Euclidean space.  There are two geometries in Newtonian spacetime, where one is the 3D Euclidean geometry (<span class="math notranslate nohighlight">\(d\ell^2 = dx^2 + dy^2 + dz^2\)</span>) and the other is a 1D time interval <span class="math notranslate nohighlight">\(dt\)</span>.  Minkowski noticed that both space and time will not independently suffice under a Lorentz transformation, and only a <em>union of both</em> will be useful.</p>
 <p>A 4-vector has four components <span class="math notranslate nohighlight">\(x,\ y,\ z,\ ict\)</span> and the equivalent of Eqn. <a class="reference internal" href="#equation-spacetime-interval">(2.21)</a> becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d4d04ca3-37f4-4ddd-a05f-48edcbac8a2b">
-<span class="eqno">(2.22)<a class="headerlink" href="#equation-d4d04ca3-37f4-4ddd-a05f-48edcbac8a2b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6c2bbd8a-ee76-44b6-ab3c-9df57bd6717a">
+<span class="eqno">(2.22)<a class="headerlink" href="#equation-6c2bbd8a-ee76-44b6-ab3c-9df57bd6717a" title="Permalink to this equation">#</a></span>\[\begin{align}
 ds^2 = dx^2 + dy^2 + dz^2 -c^2dt^2.
 \end{align}\]</div>
 <p>The spacetime distance <span class="math notranslate nohighlight">\(ds^2\)</span> can be positive, negative, or zero.  It is also now invariant under the Lorentz transformation.</p>
@@ -1138,24 +1252,24 @@ ds^2 = dx^2 + dy^2 + dz^2 -c^2dt^2.
 <div class="math notranslate nohighlight" id="equation-doppler-freq-1">
 <span class="eqno">(2.23)<a class="headerlink" href="#equation-doppler-freq-1" title="Link to this equation">#</a></span>\[f = \frac{cn}{cT-vT}.\]</div>
 <p>In the source’s rest frame, <span class="math notranslate nohighlight">\(n\)</span> waves of frequency <span class="math notranslate nohighlight">\(f_o\)</span> are emitted during the proper time <span class="math notranslate nohighlight">\(T_o^\prime\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-be5c4a26-0de1-4e9d-b432-335fc9ccce36">
-<span class="eqno">(2.24)<a class="headerlink" href="#equation-be5c4a26-0de1-4e9d-b432-335fc9ccce36" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-54903eed-70a5-47b2-96ea-f9ad422888fa">
+<span class="eqno">(2.24)<a class="headerlink" href="#equation-54903eed-70a5-47b2-96ea-f9ad422888fa" title="Permalink to this equation">#</a></span>\[\begin{align}
 n = f_o T_o^\prime.
 \end{align}\]</div>
 <p>The proper time interval <span class="math notranslate nohighlight">\(T_o^\prime\)</span> measured on the clock at rest in the moving system is related to the time interval <span class="math notranslate nohighlight">\(T\)</span> measured on a clock fixed by the receiver in system <span class="math notranslate nohighlight">\(K\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-619c919e-87e7-48c0-8d14-750e85c57f94">
-<span class="eqno">(2.25)<a class="headerlink" href="#equation-619c919e-87e7-48c0-8d14-750e85c57f94" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8a04105b-b426-424d-b684-63a0090c7614">
+<span class="eqno">(2.25)<a class="headerlink" href="#equation-8a04105b-b426-424d-b684-63a0090c7614" title="Permalink to this equation">#</a></span>\[\begin{align}
 T_o^\prime = \frac{T}{\gamma}.
 \end{align}\]</div>
 <p>The clock moving with the source measures the proper time because it is present with both the beginning and end of the wave.</p>
 <p>To calculate the doppler frequency relativistically, we use the number of waves <span class="math notranslate nohighlight">\(n\)</span> relative to the time interval <span class="math notranslate nohighlight">\(T\)</span> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2597cb6c-e454-4040-9024-e11917628e4e">
-<span class="eqno">(2.26)<a class="headerlink" href="#equation-2597cb6c-e454-4040-9024-e11917628e4e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2a37d951-86d0-45fb-9df9-2204167832a8">
+<span class="eqno">(2.26)<a class="headerlink" href="#equation-2a37d951-86d0-45fb-9df9-2204167832a8" title="Permalink to this equation">#</a></span>\[\begin{align}
 n = \frac{f_o T}{\gamma},
 \end{align}\]</div>
 <p>and substitute into Eqn. <a class="reference internal" href="#equation-doppler-freq-1">(2.23)</a> to determine the frequency as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7fdc75ae-148c-41f2-8a90-8b92f1cc9dd1">
-<span class="eqno">(2.27)<a class="headerlink" href="#equation-7fdc75ae-148c-41f2-8a90-8b92f1cc9dd1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a6dc8fc5-1bbb-4a44-9c30-0c1075ac319c">
+<span class="eqno">(2.27)<a class="headerlink" href="#equation-a6dc8fc5-1bbb-4a44-9c30-0c1075ac319c" title="Permalink to this equation">#</a></span>\[\begin{align}
 f = \frac{f_o cT/\gamma}{cT-vT} = \frac{1}{1-v/c}\frac{f_o}{\gamma} = \frac{\sqrt{1-v^2/c^2}}{1-v/c}f_o.
 \end{align}\]</div>
 <p>If we use <span class="math notranslate nohighlight">\(\beta = v/c\)</span>, then we can write more compactly the doppler frequency as</p>
@@ -1163,8 +1277,8 @@ f = \frac{f_o cT/\gamma}{cT-vT} = \frac{1}{1-v/c}\frac{f_o}{\gamma} = \frac{\sqr
 <span class="eqno">(2.28)<a class="headerlink" href="#equation-doppler-freq-2" title="Link to this equation">#</a></span>\[f = \frac{\sqrt{1+\beta}}{\sqrt{1-\beta}}f_o.\]</div>
 <p>Equation <a class="reference internal" href="#equation-doppler-freq-2">(2.28)</a> is also valid when the source is fixed and the receiver approaches it with a velocity <span class="math notranslate nohighlight">\(v\)</span>.</p>
 <p>When the source and receiver are both receding from each other with a velocity <span class="math notranslate nohighlight">\(v\)</span>, the distance between the beginning and end of the wave train becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-13939567-b025-43c0-ab24-0eedb8f44853">
-<span class="eqno">(2.29)<a class="headerlink" href="#equation-13939567-b025-43c0-ab24-0eedb8f44853" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-25fc0806-59c3-41c1-ac5c-9fe34bede6f6">
+<span class="eqno">(2.29)<a class="headerlink" href="#equation-25fc0806-59c3-41c1-ac5c-9fe34bede6f6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Length of wave train} = cT + vT.
 \end{align}\]</div>
 <p>The change in sign propagates through the entire derivation wth the final result as</p>
@@ -1175,8 +1289,8 @@ f = \frac{f_o cT/\gamma}{cT-vT} = \frac{1}{1-v/c}\frac{f_o}{\gamma} = \frac{\sqr
 <span class="eqno">(2.31)<a class="headerlink" href="#equation-doppler-freq" title="Link to this equation">#</a></span>\[f = \frac{\sqrt{1+\beta}}{\sqrt{1-\beta}}f_o.\]</div>
 <p>Elements absorb and emit characteristic frequencies of light due to the existence of particular atomic energy levels.  Scientists have observe these characteristic frequencies in starlight and observed shifts in the frequencies.  One reason for the shifts is the doppler effect, and the shifts are used to determine the speed of the emitting object with respect to us.  Objects moving away from us shift the light to shorter frequencies (i.e., longer wavelengths) and are called <strong>redshifts</strong>.  The measurement of redshifts for distant galaxies led to a linear relationship, where the farther away the galaxy; the higher the redshift.  An implication of this discovery is that the universe is expanding, which was first suggested by <a class="reference external" href="https://en.wikipedia.org/wiki/Harlow_Shapley">Harlow Shapely</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Edwin_Hubble">Edwin Hubble</a>.</p>
 <p>The Doppler effect measures the radial motion (toward or away), which is maximized if the source and receiver are <em>directly</em> approaching or receding.  It is also possible for the source and receiver to be moving at an angle with respect to one another.  The angles <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\theta^\prime\)</span> are the angles that the light signal makes with the <span class="math notranslate nohighlight">\(x\)</span> axes in the <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(K^\prime\)</span> systems.  They are related mathematically by,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d0fe3ae7-9670-4156-8303-d64403aeb331">
-<span class="eqno">(2.32)<a class="headerlink" href="#equation-d0fe3ae7-9670-4156-8303-d64403aeb331" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b1ae689d-c5c0-4262-b5f9-f8c91024e53e">
+<span class="eqno">(2.32)<a class="headerlink" href="#equation-b1ae689d-c5c0-4262-b5f9-f8c91024e53e" title="Permalink to this equation">#</a></span>\[\begin{align}
 f \cos \theta &amp;= f_o \gamma (\cos \theta^\prime + \beta) = \frac{f_o(\cos \theta^\prime + \beta)}{\sqrt{1-\beta^2}}, \\
 f \sin \theta &amp;= f_o \sin \theta^\prime.
 \end{align}\]</div>
@@ -1184,7 +1298,7 @@ f \sin \theta &amp;= f_o \sin \theta^\prime.
 <div class="math notranslate nohighlight" id="equation-gen-doppler-freq">
 <span class="eqno">(2.33)<a class="headerlink" href="#equation-gen-doppler-freq" title="Link to this equation">#</a></span>\[f = \gamma f_o (1 + \beta \cos \theta^\prime)\]</div>
 <p>Note that Eqn. <a class="reference internal" href="#equation-gen-doppler-freq">(2.33)</a> reduced to Eqn. <a class="reference internal" href="#equation-doppler-freq">(2.31)</a> when <span class="math notranslate nohighlight">\(\theta^\prime = 0^\circ\ \text{or}\ 180^\circ\)</span>.  when <span class="math notranslate nohighlight">\(\theta = 90^\circ\)</span>, the emission is purely transverse to the direction of motion and we have the <em>transverse Doppler effect</em>, which only occurs in relativity (i.e., it does not occur classically).</p>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-4">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-4">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.5 </span></p>
 <section id="exercise-content">
@@ -1204,38 +1318,38 @@ f \sin \theta &amp;= f_o \sin \theta^\prime.
 <p>Newton’s second law (<span class="math notranslate nohighlight">\(\vec{F} = d\vec{p}/dt\)</span>) keeps its same form under a Galilean transformation, where it might be different under a Lorentz transformation.  From Newton’s second law, an acceleration of a particle already moving at very high speeds could lead to a speed <span class="math notranslate nohighlight">\(v&gt;c\)</span>.  That would be in conflict with the Lorentz transformation, and a modification may be necessary at high speed.</p>
 <p><strong>Consider a collision that has no external forces, where a ball of mass <span class="math notranslate nohighlight">\(m\)</span> is held at rest in the fixed frame <span class="math notranslate nohighlight">\(K\)</span> and a similar ball in a moving frame  <span class="math notranslate nohighlight">\(K^\prime\)</span> is moving in the <span class="math notranslate nohighlight">\(x\)</span> direction with a velocity <span class="math notranslate nohighlight">\(v\)</span> with respect to the fixed frame.</strong>  The ball in the fixed frame is launched along its positive <span class="math notranslate nohighlight">\(y\)</span> axis, while the ball in the moving frame is launched with the same speed along its negative <span class="math notranslate nohighlight">\(y\)</span> axis.  The two balls collide in a perfectly elastic collision and return to their starting position along their respective <span class="math notranslate nohighlight">\(y\)</span> axis.</p>
 <p>According to an observer in the <span class="math notranslate nohighlight">\(K\)</span> frame, the initial velocity of the ball has components</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f36ffda3-47b7-45c4-b548-0c53fcc2e22b">
-<span class="eqno">(2.34)<a class="headerlink" href="#equation-f36ffda3-47b7-45c4-b548-0c53fcc2e22b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d1ae9586-9353-435e-914b-ac20b7b45ee4">
+<span class="eqno">(2.34)<a class="headerlink" href="#equation-d1ae9586-9353-435e-914b-ac20b7b45ee4" title="Permalink to this equation">#</a></span>\[\begin{align}
 u_x &amp;= 0, \\
 u_y &amp;= u_o,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(u_o\)</span> is the launch speed.  Using the definition of momentum (<span class="math notranslate nohighlight">\(\vec{p}=m\vec{v}\)</span>), the momentum of the ball is entirely in the <span class="math notranslate nohighlight">\(y\)</span> direction, or <span class="math notranslate nohighlight">\(p_y = mu_o\)</span>.  Because the collision is perfectly elastic, the ball returns with a speed <span class="math notranslate nohighlight">\(u_o\)</span> along the <span class="math notranslate nohighlight">\(-y\)</span> axis, where the change in momentum in system <span class="math notranslate nohighlight">\(K\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0609ca71-4f79-4ec8-8946-9702d4308c3c">
-<span class="eqno">(2.35)<a class="headerlink" href="#equation-0609ca71-4f79-4ec8-8946-9702d4308c3c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a013ca90-2751-411a-b484-2831455005e6">
+<span class="eqno">(2.35)<a class="headerlink" href="#equation-a013ca90-2751-411a-b484-2831455005e6" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta p^{\text{FF}} = \text{After }p - \text{Before }p = -mu_o - (+mu_o) = -2mu_o,
 \end{align}\]</div>
 <p>where the superscript <span class="math notranslate nohighlight">\(\text{FF}\)</span> refers to a measurement of the fixed frame relative to the fixed observer.  To confirm the conservation of linear momentum, we need to determine the change in momentum of the ball in the moving frame <span class="math notranslate nohighlight">\(K^\prime\)</span> from the perspective of an observer in the fixed frame <span class="math notranslate nohighlight">\(K\)</span>.</p>
 <p>In the moving frame, the initial velocity of the ball has components: <span class="math notranslate nohighlight">\(u_x^\prime = 0\)</span> and <span class="math notranslate nohighlight">\(u_y^\prime = -u_o\)</span> because the ball is launched along its <span class="math notranslate nohighlight">\(-y^\prime\)</span> axis.  To determine the velocity of the ball as measured by an observer in the <span class="math notranslate nohighlight">\(K\)</span> frame, we need to use Eqn. <a class="reference internal" href="#equation-lorentz-vel">(2.18)</a>.  If we insert the appropriate values for the speeds, we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-79cb8f99-7f67-40a9-9ac8-ea1c1faa1bed">
-<span class="eqno">(2.36)<a class="headerlink" href="#equation-79cb8f99-7f67-40a9-9ac8-ea1c1faa1bed" title="Permalink to this equation">#</a></span>\[\begin{gather}
+<div class="amsmath math notranslate nohighlight" id="equation-69eb4921-4c90-4597-abe3-676b84146a3a">
+<span class="eqno">(2.36)<a class="headerlink" href="#equation-69eb4921-4c90-4597-abe3-676b84146a3a" title="Permalink to this equation">#</a></span>\[\begin{gather}
 u_x &amp;=&amp; \frac{0 + v}{1 + (v/c^2)(0)} &amp;=&amp; v, \\
 u_y &amp;=&amp; \frac{-u_o}{\gamma (1+(v/c^2)(0))} &amp;=&amp; -u_o \sqrt{1-v^2/c^2}.
 \end{gather}\]</div>
 <p>Before the collision, the momentum of the ball in the moving frame <span class="math notranslate nohighlight">\(K^\prime\)</span> as measured by an observer in the <span class="math notranslate nohighlight">\(K\)</span> frame is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c31e2822-2e7a-4888-bc2d-e0e9fdbe7491">
-<span class="eqno">(2.37)<a class="headerlink" href="#equation-c31e2822-2e7a-4888-bc2d-e0e9fdbe7491" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0387512e-f3e6-4eaa-a1e8-bc81aaeaeb39">
+<span class="eqno">(2.37)<a class="headerlink" href="#equation-0387512e-f3e6-4eaa-a1e8-bc81aaeaeb39" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Before } &amp; p_x = mv, \\
 \text{Before } &amp; p_y = -mu_o \sqrt{1-v^2/c^2}.
 \end{align}\]</div>
 <p>For a perfectly elastic collision, the momentum after the collision is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-70e62f8e-9a7b-48f6-b69e-8c95d124c786">
-<span class="eqno">(2.38)<a class="headerlink" href="#equation-70e62f8e-9a7b-48f6-b69e-8c95d124c786" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c47b36ae-31ad-42db-bed7-a5caca0ac129">
+<span class="eqno">(2.38)<a class="headerlink" href="#equation-c47b36ae-31ad-42db-bed7-a5caca0ac129" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{After } &amp; p_x = mv, \\
 \text{After } &amp; p_y = +mu_o \sqrt{1-v^2/c^2}.
 \end{align}\]</div>
 <p>Then, the change in momentum of the ball in the moving frame <span class="math notranslate nohighlight">\(K^\prime\)</span> according to the fixed frame <span class="math notranslate nohighlight">\(K\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-74bc4d48-cc43-4495-af5c-891dde2b8717">
-<span class="eqno">(2.39)<a class="headerlink" href="#equation-74bc4d48-cc43-4495-af5c-891dde2b8717" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-dd0e2442-8815-4c18-b584-5eaaf798caa7">
+<span class="eqno">(2.39)<a class="headerlink" href="#equation-dd0e2442-8815-4c18-b584-5eaaf798caa7" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \Delta p^{\text{MF}} = \Delta p_y = \text{After }p_y - \text{Before }p_y = 2mu_o \sqrt{1-v^2/c^2},
 \end{align}\]</div>
 <p>where the superscript <span class="math notranslate nohighlight">\(\text{MF}\)</span> refers to a measurement of the moving frame relative to the fixed observer.  The conservation of linear momentum requires the total change in the momentum of the collision <span class="math notranslate nohighlight">\(\Delta p^{\text{FF}} + \Delta p^{\text{MF}} = 0\)</span>.  Clearly, <span class="math notranslate nohighlight">\(2mu_o \neq 2mu_o/\gamma\)</span>.  There is not a problem with the <span class="math notranslate nohighlight">\(x\)</span> direction, but there is a problem with the <span class="math notranslate nohighlight">\(y\)</span> direction (i.e., the direction which the ball is launched in each system).</p>
@@ -1252,8 +1366,8 @@ u_y &amp;=&amp; \frac{-u_o}{\gamma (1+(v/c^2)(0))} &amp;=&amp; -u_o \sqrt{1-v^2/
 <p>Notice that the <em>form</em> of <span class="math notranslate nohighlight">\(\Gamma(u)\)</span> in Eqn. <a class="reference internal" href="#equation-trial-p-rel">(2.40)</a> is the same as the <span class="math notranslate nohighlight">\(\gamma\)</span> in the Lorentz transformation.  However this <span class="math notranslate nohighlight">\(\Gamma(u)\)</span> is different because it contains the <em>speed of the particle <span class="math notranslate nohighlight">\(u\)</span></em>, whereas the Lorentz transformation contains the relative speed <span class="math notranslate nohighlight">\(v\)</span> <em>between two inertial reference frames</em>.   Among physicists it is common to replace <span class="math notranslate nohighlight">\(\Gamma(u)\)</span> with <span class="math notranslate nohighlight">\(\gamma\)</span>, but we must remember the distinction.</p>
 </div>
 <p>A plausible determination for the correct form of the momentum requires the proper time <span class="math notranslate nohighlight">\(\tau\)</span>, where the momentum becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f8500267-e168-4397-ada5-a35e177fcd85">
-<span class="eqno">(2.41)<a class="headerlink" href="#equation-f8500267-e168-4397-ada5-a35e177fcd85" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6a5977f0-df94-4f25-8172-4d919a7b474d">
+<span class="eqno">(2.41)<a class="headerlink" href="#equation-6a5977f0-df94-4f25-8172-4d919a7b474d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \vec{p} = m\frac{d\vec{r}}{d\tau} = m\frac{d\vec{r}}{dt}\frac{dt}{d\tau}.
 \end{align}\]</div>
 <p>The classical velocity is <span class="math notranslate nohighlight">\(\vec{u} = d\vec{r}/dt\)</span>, where <span class="math notranslate nohighlight">\(\vec{r}\)</span> is the position vector.  All observers do not agree to the value of <span class="math notranslate nohighlight">\(\vec{u}\)</span>, but they do agree to the value of <span class="math notranslate nohighlight">\(d\vec{r}/d\tau\)</span>, where <span class="math notranslate nohighlight">\(d\tau\)</span> is the proper time measured in the moving system <span class="math notranslate nohighlight">\(K^\prime\)</span>.  From Eqn. <a class="reference internal" href="#equation-time-dilation">(2.15)</a>, the value of <span class="math notranslate nohighlight">\(dt/d\tau = \gamma\)</span>, where the speed <span class="math notranslate nohighlight">\(u\)</span> is used.</p>
@@ -1298,13 +1412,13 @@ u_y &amp;=&amp; \frac{-u_o}{\gamma (1+(v/c^2)(0))} &amp;=&amp; -u_o \sqrt{1-v^2/
 <div class="math notranslate nohighlight" id="equation-force-rel">
 <span class="eqno">(2.43)<a class="headerlink" href="#equation-force-rel" title="Link to this equation">#</a></span>\[\vec{F} = \frac{d\vec{p}}{dt} = \frac{d}{dt}\left(\gamma m\vec{u} \right) = \frac{d}{dt}\left(\frac{m\vec{u}}{\sqrt{1-u^2/c^2}}\right).\]</div>
 <p>Kinetic energy can be expressed as the work done on a particle by a net force.  The work <span class="math notranslate nohighlight">\(W_{12}\)</span> done by a force <span class="math notranslate nohighlight">\(\vec{F}\)</span> to move a particle from position 1 to position 2 along a path <span class="math notranslate nohighlight">\(\vec{s}\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-37ec85f8-62bc-401f-ae88-16789b0d2f4b">
-<span class="eqno">(2.44)<a class="headerlink" href="#equation-37ec85f8-62bc-401f-ae88-16789b0d2f4b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-75a9cf2e-b364-411b-a1b4-2c8ab1034e0f">
+<span class="eqno">(2.44)<a class="headerlink" href="#equation-75a9cf2e-b364-411b-a1b4-2c8ab1034e0f" title="Permalink to this equation">#</a></span>\[\begin{align}
 W_{12} = \int_1^2 \vec{F}\cdot d\vec{s} = K_2 - K_1,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(K_1\)</span> is defined as the kinetic energy of the particle at position 1.  For simplicity, let the particle start from rest under the influence of the force <span class="math notranslate nohighlight">\(\vec{F}\)</span>.  The work <span class="math notranslate nohighlight">\(W\)</span> and kinetic energy <span class="math notranslate nohighlight">\(K\)</span> are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6a68fc98-dd18-4b5a-820c-6bc9dd6e1cb2">
-<span class="eqno">(2.45)<a class="headerlink" href="#equation-6a68fc98-dd18-4b5a-820c-6bc9dd6e1cb2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-decaba7c-4210-4c2f-b33b-73ea564d44b2">
+<span class="eqno">(2.45)<a class="headerlink" href="#equation-decaba7c-4210-4c2f-b33b-73ea564d44b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 W = K = \int \frac{d}{dt}\left(\gamma m\vec{u} \right) \cdot \vec{u}\ dt,
 \end{align}\]</div>
 <p>where the integral is performed over the differential path <span class="math notranslate nohighlight">\(d\vec{s} = \vec{u}\ dt\)</span>.  The mass is invariant, but the relativistic factor <span class="math notranslate nohighlight">\(\gamma\)</span> depends on <span class="math notranslate nohighlight">\(u\)</span> and must remain in the integral.  The kinetic energy becomes</p>
@@ -1322,8 +1436,8 @@ K &amp;= mc^2 \left(1-\left( \frac{u}{c} \right)^2 \right)^{-1/2} - mc^2, \\
   &amp;= mc^2 \left(1+ \frac{1}{2} \left(\frac{u}{c} \right)^2 + \cdots \right) - mc^2,
 \end{align*} \]</div>
 <p>where the higher power terms (<span class="math notranslate nohighlight">\((u/c)^4\)</span> and greater) are neglected because <span class="math notranslate nohighlight">\(u\ll c\)</span>.  The relativistic kinetic energy at low speeds is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2ab4f520-6b6e-42da-8977-475c0cbdd189">
-<span class="eqno">(2.47)<a class="headerlink" href="#equation-2ab4f520-6b6e-42da-8977-475c0cbdd189" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-91c06380-a05d-4d6d-a9da-583cef349f97">
+<span class="eqno">(2.47)<a class="headerlink" href="#equation-91c06380-a05d-4d6d-a9da-583cef349f97" title="Permalink to this equation">#</a></span>\[\begin{align}
 K = mc^2 + \frac{1}{2}mu^2 - mc^2 = \frac{1}{2}mu^2,
 \end{align}\]</div>
 <p>which is the expected classical result.  The relativistic and classical kinetic energies diverge considerably for <span class="math notranslate nohighlight">\(u/c &gt; 0.6\)</span>.</p>
@@ -1361,7 +1475,7 @@ K = mc^2 + \frac{1}{2}mu^2 - mc^2 = \frac{1}{2}mu^2,
 <p class="admonition-title">Tip</p>
 <p>Be sure to use <span class="math notranslate nohighlight">\(K = mc^2(\gamma-1)\)</span> for the <em>relativistic kinetic energy</em>.  A common mistake students make is to use either <span class="math notranslate nohighlight">\(\frac{1}{2}mu^2\)</span> or <span class="math notranslate nohighlight">\(\frac{1}{2}\gamma mu^2\)</span>, which are both incorrect.</p>
 </div>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-5">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-5">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.6 </span></p>
 <section id="exercise-content">
@@ -1420,13 +1534,13 @@ The error of the nonrelativistic speed is 3.6 percent.
 <section id="total-energy-and-rest-energy">
 <h3><span class="section-number">2.12.1. </span>Total Energy and Rest Energy<a class="headerlink" href="#total-energy-and-rest-energy" title="Link to this heading">#</a></h3>
 <p>The relativistic kinetic energy can be rewritten as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d9291b57-f039-44d4-8979-01c4dc51adc7">
-<span class="eqno">(2.49)<a class="headerlink" href="#equation-d9291b57-f039-44d4-8979-01c4dc51adc7" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-956e88c2-11ba-4a0e-b20f-1bce8cca0a2d">
+<span class="eqno">(2.49)<a class="headerlink" href="#equation-956e88c2-11ba-4a0e-b20f-1bce8cca0a2d" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \gamma mc^2 = \frac{mc^2}{\sqrt{1-u^2/c^2}} = K + mc^2.
 \end{align}\]</div>
 <p>The <strong>rest energy</strong> <span class="math notranslate nohighlight">\(E_o\)</span> is the term mc^2, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d3662f76-1ec9-4ea4-a22b-c7817cf73762">
-<span class="eqno">(2.50)<a class="headerlink" href="#equation-d3662f76-1ec9-4ea4-a22b-c7817cf73762" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e63737d4-353f-4275-8649-9e77fba2d985">
+<span class="eqno">(2.50)<a class="headerlink" href="#equation-e63737d4-353f-4275-8649-9e77fba2d985" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_o = mc^2.
 \end{align}\]</div>
 <p>The sum of the kinetic energy and rest energy is interpreted as the <strong>total energy</strong> <span class="math notranslate nohighlight">\(E\)</span> of the particle, which is</p>
@@ -1446,27 +1560,27 @@ E_o = mc^2.
 <a class="reference internal image-reference" href="../_images/wood_spring.png"><img alt="woodblock" src="../_images/wood_spring.png" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.8 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">Thornton &amp; Rex (2012)</a>.</span><a class="headerlink" href="#woodblock-fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.10 </span><span class="caption-text">Image Credit: <a class="reference external" href="https://www.google.com/books/edition/Modern_Physics_for_Scientists_and_Engine/pWAKAAAAQBAJ?hl=en">Thornton &amp; Rex (2012)</a>.</span><a class="headerlink" href="#woodblock-fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Let’s examine the conservation of mass-energy.  The energy before the collision is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d3efb883-990f-4b7a-a3ff-0ba40aba26c9">
-<span class="eqno">(2.52)<a class="headerlink" href="#equation-d3efb883-990f-4b7a-a3ff-0ba40aba26c9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-862c6e26-9c17-4042-8bfd-402feb6bc5b3">
+<span class="eqno">(2.52)<a class="headerlink" href="#equation-862c6e26-9c17-4042-8bfd-402feb6bc5b3" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_{\rm before} = \text{(rest mass-energy)} + \text{kinetic energy} = 2mc^2 + 2K,
 \end{align}\]</div>
 <p>and the energy after the collision is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1cee47e0-73b4-4bbb-93b7-43cc1a765772">
-<span class="eqno">(2.53)<a class="headerlink" href="#equation-1cee47e0-73b4-4bbb-93b7-43cc1a765772" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-83752bb5-8650-4561-ab6a-ba4bdb73d4b3">
+<span class="eqno">(2.53)<a class="headerlink" href="#equation-83752bb5-8650-4561-ab6a-ba4bdb73d4b3" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_{\rm after} = \text{(rest mass-energy)} = Mc^2,
 \end{align}\]</div>
 <p>where the (rest) mass of the system is <span class="math notranslate nohighlight">\(M\)</span>.  Through energy conservation, <span class="math notranslate nohighlight">\(2(mc^2+K) = Mc^2\)</span>, and the new mass <span class="math notranslate nohighlight">\(M\)</span> is greater than the individual masses <span class="math notranslate nohighlight">\(2m\)</span>.  The kinetic energy went into compressing the spring, so the spring has increased potential energy.  Kinetic energy has been converted into mass.  The difference in mass <span class="math notranslate nohighlight">\(\Delta M\)</span> is determined by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7777b57d-11c7-43cf-987a-30413accb2d9">
-<span class="eqno">(2.54)<a class="headerlink" href="#equation-7777b57d-11c7-43cf-987a-30413accb2d9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a20060d2-e1d5-4b26-9c2f-50ba62376719">
+<span class="eqno">(2.54)<a class="headerlink" href="#equation-a20060d2-e1d5-4b26-9c2f-50ba62376719" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta M = M - 2m = \frac{2K}{c^2},
 \end{align}\]</div>
 <p>and linear momentum is conserved in this head-on collision.  The fractional mass <span class="math notranslate nohighlight">\((f_r = \Delta M/2m)\)</span> is quite small, which is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ab3ddac1-2197-4b44-b2c3-d4567b59d5a5">
-<span class="eqno">(2.55)<a class="headerlink" href="#equation-ab3ddac1-2197-4b44-b2c3-d4567b59d5a5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-16d84d62-053a-4cae-9607-fa5da793d5e0">
+<span class="eqno">(2.55)<a class="headerlink" href="#equation-16d84d62-053a-4cae-9607-fa5da793d5e0" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_r = \frac{M-2m}{2m} = \frac{K}{mc^2}.
 \end{align}\]</div>
 <p>For typical masses and kinetic energies of wood blocks, this fraction increase in mass is too small to measure.  For example, if mass of a wood block <span class="math notranslate nohighlight">\(m = 0.1\ {\rm kg}\)</span> and the speed of the wood block <span class="math notranslate nohighlight">\(v = 10\ {\rm m/s}\)</span>, then the fractional increase in mass is</p>
@@ -1522,8 +1636,8 @@ The fractional mass increase (using relativistic KE) is 6.7e-16.
 <section id="massless-particles">
 <h3><span class="section-number">2.12.4. </span>Massless Particles<a class="headerlink" href="#massless-particles" title="Link to this heading">#</a></h3>
 <p>Equation <a class="reference internal" href="#equation-momentum-energy">(2.56)</a> is valid for the total energy of massless (zero mass) particles.  For example, the total energy of a photon is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-00389bdb-b46f-475d-8e2c-8718cad1784e">
-<span class="eqno">(2.57)<a class="headerlink" href="#equation-00389bdb-b46f-475d-8e2c-8718cad1784e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-05b6e6b8-264c-47a1-82f9-cd2be723475f">
+<span class="eqno">(2.57)<a class="headerlink" href="#equation-05b6e6b8-264c-47a1-82f9-cd2be723475f" title="Permalink to this equation">#</a></span>\[\begin{align}
 E = pc. \quad \text{(Photon)}
 \end{align}\]</div>
 <p>The energy is completely due to its motion (or momentum), where it has no rest energy.  Through the relativistic equations, we can show that the speed of a photon must be the speed of light <span class="math notranslate nohighlight">\(c\)</span>.  Using the relativistic equations for total energy and kinetic energy</p>
@@ -1533,8 +1647,8 @@ E = pc. \quad \text{(Photon)}
 <div class="math notranslate nohighlight">
 \[ \gamma mc^2 = \gamma muc, \]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1432b181-5aa8-4ea2-bd9b-93de9ea3a612">
-<span class="eqno">(2.58)<a class="headerlink" href="#equation-1432b181-5aa8-4ea2-bd9b-93de9ea3a612" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8a8e561c-df30-4c05-9ac1-cc8174322bd3">
+<span class="eqno">(2.58)<a class="headerlink" href="#equation-8a8e561c-df30-4c05-9ac1-cc8174322bd3" title="Permalink to this equation">#</a></span>\[\begin{align}
  u = c. \quad \text{(Massless particle)}
 \end{align}\]</div>
 </section>
@@ -1545,8 +1659,8 @@ E = pc. \quad \text{(Photon)}
 <div class="math notranslate nohighlight">
 \[ W = (1\ e)(1\ {\rm V}) = 1\ {\rm eV}. \]</div>
 <p>The <strong>electron volt</strong> (eV) is a unit of energy and it is related to the SI unit joule through the charge of an electron, so that</p>
-<div class="amsmath math notranslate nohighlight" id="equation-936e7bf5-42e1-456d-9094-b92800d9fb1b">
-<span class="eqno">(2.59)<a class="headerlink" href="#equation-936e7bf5-42e1-456d-9094-b92800d9fb1b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0d4bf3bc-e3ec-4158-aea3-8ffe52b6174a">
+<span class="eqno">(2.59)<a class="headerlink" href="#equation-0d4bf3bc-e3ec-4158-aea3-8ffe52b6174a" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm eV} = 1.602 \times 10^{-19}\ {\rm J}.
 \end{align}\]</div>
 <p>The eV is more often used in modern physics than the SI unit J.  The ev can also carry the SI prefixes where applicable (e.g., <span class="math notranslate nohighlight">\(10^6\ {\rm eV} = 1\ {\rm MeV}\)</span>; mega-electron-volt).  Since work is related to kinetic energy, we speak of a particle in terms of its kinetic energy, where a <span class="math notranslate nohighlight">\(6\ {\rm GeV}\)</span> proton would have <span class="math notranslate nohighlight">\(7\ {\rm GeV}\)</span> of total energy (i.e., kinetic + rest energy).</p>
@@ -1568,15 +1682,15 @@ E_o(\text{proton}) &amp;= (1.67 \times 10^{-27}\ {\rm kg})(3\times 10^8\ {\rm m/
 <p>Notice the difference in font from <span class="math notranslate nohighlight">\(u\)</span> (velocity) and <span class="math notranslate nohighlight">\({\rm u}\)</span> (amu).</p>
 </div>
 <p>The conversion between kg and amu are determined by comparing the mass of one <span class="math notranslate nohighlight">\(^{12}{\rm C}\)</span> atom:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5036a559-c399-4ded-a2cb-6c06d6063cc3">
-<span class="eqno">(2.60)<a class="headerlink" href="#equation-5036a559-c399-4ded-a2cb-6c06d6063cc3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-06502315-6c0c-4f38-9dd7-bc5dfab9b24d">
+<span class="eqno">(2.60)<a class="headerlink" href="#equation-06502315-6c0c-4f38-9dd7-bc5dfab9b24d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \text{Mass}(^{12}{\rm C}\text{ atom}) &amp;= \frac{\text{molar mass of carbon-12}}{\text{Avogadro's number}}, \\
  &amp;= \frac{12\ {\rm g/mol}}{6.02\times 10^{23}\ {\rm atoms/mol}} = 1.99 \times 10^{-23}\ {\rm g/atom}, \\
 \text{Mass}(^{12}{\rm C}\text{ atom}) &amp;= 1.99 \times 10^{-26}\ {\rm kg} = 12\ {\rm u/atom}.
 \end{align}\]</div>
 <p>Therefore, the conversions are (up to 6 significant figures):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f26faad4-1d8e-4166-9061-cd97bdb3160c">
-<span class="eqno">(2.61)<a class="headerlink" href="#equation-f26faad4-1d8e-4166-9061-cd97bdb3160c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dc8c1365-196b-47fb-a825-3ed5129e50c4">
+<span class="eqno">(2.61)<a class="headerlink" href="#equation-dc8c1365-196b-47fb-a825-3ed5129e50c4" title="Permalink to this equation">#</a></span>\[\begin{align}
 1\ {\rm u} &amp;= 1.66054 \times 10^{-27}\ {\rm kg}\\
 1\ {\rm u} &amp;= 931.494\ {\rm MeV/c^2}.
 \end{align}\]</div>
@@ -1585,7 +1699,7 @@ E_o(\text{proton}) &amp;= (1.67 \times 10^{-27}\ {\rm kg})(3\times 10^8\ {\rm m/
 <p class="admonition-title">Tip</p>
 <p>When performing calculations in python (or another computer language), modules are available with the values of fundamental constants (e.g., amu) and the best available precision.  See the <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/constants.html">scipy.constants</a> module.</p>
 </div>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-6">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-6">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.7 </span></p>
 <section id="exercise-content">
@@ -1611,8 +1725,8 @@ E &amp;= \gamma E_o \\
 \[ \beta = \sqrt{\frac{\gamma^2-1}{\gamma^2}} = \sqrt{\frac{2.13}{3.13}} = 0.948. \]</div>
 <p>The speed of a 2 GeV  proton is <span class="math notranslate nohighlight">\(0.95c\)</span> or <span class="math notranslate nohighlight">\(2.8 \times 10^8\ {\rm m/s}\)</span>.</p>
 <p><strong>(b)</strong>  When the two protons collide head-on, the protons could behave similarly to the wood blocks, but the time for the two protons to interact is very short <span class="math notranslate nohighlight">\((&lt;10^{-29}\ {s})\)</span>.  If the tow protons did <em>momentarily</em> stop at rest, then the two proton system would have its mass increased to <span class="math notranslate nohighlight">\(4\ {\rm GeV/c^2}\)</span>.  This would be highly excited system, where several outcomes are possible.  The two protons could remain or disappear, where new particles are created to conserved mass-energy, angular momentum, and charge.  Two of the possibilities are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-06d96be3-1e31-4cc0-8b52-a52ccc91bc4c">
-<span class="eqno">(2.62)<a class="headerlink" href="#equation-06d96be3-1e31-4cc0-8b52-a52ccc91bc4c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b1a0b72a-05e8-49b3-b544-465d1c6e5a56">
+<span class="eqno">(2.62)<a class="headerlink" href="#equation-b1a0b72a-05e8-49b3-b544-465d1c6e5a56" title="Permalink to this equation">#</a></span>\[\begin{align}
 p + p &amp;\rightarrow p + p + p + \overline{p}, \\
 p + p &amp;\rightarrow \pi^+ + d,
 \end{align}\]</div>
@@ -1657,16 +1771,16 @@ The speed of a 2 GeV proton is 0.948c or 2.84e+08 m/s.
 <li><p>a deuteron is a proton and neutron bound together by the nuclear force.</p></li>
 </ul>
 <p>The potential energy associated with the force keeping the system together is called the <strong>binding energy</strong> <span class="math notranslate nohighlight">\(E_B\)</span>.  The binding energy is the <em>work</em> required to pull the particles out of the bound system into separate, free particles at rest.  The conservation of energy is written as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f46a257e-c24a-49aa-88cb-c6d2648db406">
-<span class="eqno">(2.63)<a class="headerlink" href="#equation-f46a257e-c24a-49aa-88cb-c6d2648db406" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-65e5248d-4d39-4eb6-bb7f-da2a59d47bda">
+<span class="eqno">(2.63)<a class="headerlink" href="#equation-65e5248d-4d39-4eb6-bb7f-da2a59d47bda" title="Permalink to this equation">#</a></span>\[\begin{align} 
 {\rm M_{bound}}c^2 + E_B = \sum_i m_i c^2,
 \end{align}\]</div>
 <p>which depends on the mass of the bound system <span class="math notranslate nohighlight">\({\rm M_{bound}}\)</span> and the masses of the free particles <span class="math notranslate nohighlight">\(m_i\)</span>.  The binding energy is the <em>difference between the rest energy of the individual particles and the rest energy of the combined, bound system</em>, or</p>
 <div class="math notranslate nohighlight" id="equation-binding-energy">
 <span class="eqno">(2.64)<a class="headerlink" href="#equation-binding-energy" title="Link to this equation">#</a></span>\[E_B = \sum_i m_i c^2 - {\rm M_{bound}}c^2.\]</div>
 <p>For the simple case of two final particles with a particle 1 mass <span class="math notranslate nohighlight">\(m_1\)</span>, particle 2 mass <span class="math notranslate nohighlight">\(m_e\)</span>, and the bound mass <span class="math notranslate nohighlight">\({\rm M_{bound}}\)</span>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b19c33e0-d68a-4727-8b32-ea849915e441">
-<span class="eqno">(2.65)<a class="headerlink" href="#equation-b19c33e0-d68a-4727-8b32-ea849915e441" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-26b521e1-4444-4f77-ae54-4ba6e58381c2">
+<span class="eqno">(2.65)<a class="headerlink" href="#equation-26b521e1-4444-4f77-ae54-4ba6e58381c2" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_B = (m_1 + m_2 - {\rm M_{bound}})c^2 = \Delta Mc^2.
 \end{align}\]</div>
 <p>To bind a proton and a neutron together into a deuteron, part of the rest energy of the individual particles is lost and makes up the binding energy of the system.  The rest energy of the combined system must be the reduced by this amount.  The rest energies of the particles are:</p>
@@ -1679,7 +1793,7 @@ E_B = (m_1 + m_2 - {\rm M_{bound}})c^2 = \Delta Mc^2.
 <p>The binding energy <span class="math notranslate nohighlight">\(E_B\)</span> is determined to be</p>
 <div class="math notranslate nohighlight">
 \[ E_B \text{(deuteron)} = \left(938.27 \frac{{\rm MeV}}{c^2} + 939.57 \frac{{\rm MeV}}{c^2} - 1875.61 \frac{{\rm MeV}}{c^2} \right)c^2 = 2.23\ {\rm MeV}.\]</div>
-<div class="exercise orange admonition" id="Chapter_2/special-theory-of-relativity-exercise-7">
+<div class="exercise etamu-exercise admonition" id="Chapter_2/special-theory-of-relativity-exercise-7">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.8 </span></p>
 <section id="exercise-content">

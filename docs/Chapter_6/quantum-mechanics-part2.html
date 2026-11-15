@@ -647,8 +647,8 @@ i\hbar \left(-\omega A\cos(kx-\omega t) \right) &amp;= -\frac{\hbar^2}{2m} \left
 <div class="math notranslate nohighlight">
 \[ P(x)\ dx = |\Psi(x,t)|^2\ dx = \Psi^*(x,t)\Psi(x,t)\ dx, \]</div>
 <p>where the complex conjugate operator <span class="math notranslate nohighlight">\(^*\)</span> negates the complex parts of a function (i.e., <span class="math notranslate nohighlight">\(i\rightarrow -i\)</span>) and leaves the real parts unchanged.  The probability of a particle existing between two points (<span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>) is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-896c2f8e-7e77-4370-b471-f05e98c5d809">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-896c2f8e-7e77-4370-b471-f05e98c5d809" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8786f2fb-42d3-4d57-af85-40dc882c539f">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-8786f2fb-42d3-4d57-af85-40dc882c539f" title="Permalink to this equation">#</a></span>\[\begin{align}
 P = \int_{x_1}^{x_2} \Psi^*\Psi dx.
 \end{align}\]</div>
 <p>If the wave function represents the probability of a particle existing somewhere, then the sum of all probability intervals must equal unity, or</p>
@@ -773,8 +773,8 @@ P_b &amp;= \frac{1}{\alpha} \int_0^\alpha e^{-\frac{2x}{\alpha}} dx, \\
 <div class="math notranslate nohighlight">
 \[ i\hbar \psi(x)\frac{\partial f(t)}{\partial t} = -\frac{\hbar^2 f(t)}{2m}\frac{\partial^2 \psi(x)}{\partial x^2} + V(x)\psi(x)f(t). \]</div>
 <p>Dividing by <span class="math notranslate nohighlight">\(\psi(x) f(t)\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b0e11bf7-5a90-46ec-9e55-e4d1b3e1a8a3">
-<span class="eqno">(6.5)<a class="headerlink" href="#equation-b0e11bf7-5a90-46ec-9e55-e4d1b3e1a8a3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f934869d-0f24-43ca-a9af-2c27f08c5a78">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-f934869d-0f24-43ca-a9af-2c27f08c5a78" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{i\hbar}{f(t)} \frac{d f(t)}{dt} = -\frac{\hbar^2}{2m}\frac{d^2 \psi(x)}{d x^2} + V(x). 
 \end{align}\]</div>
 <p>Notice that the left-hand side depends only on time, while the right-hand side depends only on spatial coordinates.  This allows us to change the partial derivatives to ordinary derivatives because each side depends only on one variable.  Each side must be equal to a constant because one variable may change independently of the other.  Let’s call this constant <span class="math notranslate nohighlight">\(B\)</span> and set it equal to the left-hand side to get</p>
@@ -790,8 +790,8 @@ i\hbar \int \frac{df}{f} &amp;= \int B\ dt.
 <div class="math notranslate nohighlight">
 \[ \ln f = \frac{Bt}{i\hbar}, \]</div>
 <p>and we determine <span class="math notranslate nohighlight">\(f\)</span> to be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4cd505e8-08b0-4eb3-92d1-288ece14c047">
-<span class="eqno">(6.6)<a class="headerlink" href="#equation-4cd505e8-08b0-4eb3-92d1-288ece14c047" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-fd89bfea-c380-4be6-9e72-31c08aebb1ec">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-fd89bfea-c380-4be6-9e72-31c08aebb1ec" title="Permalink to this equation">#</a></span>\[\begin{align} 
 f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 \end{align}\]</div>
 <p>If we let <span class="math notranslate nohighlight">\(B = \hbar \omega = E\)</span>, then <span class="math notranslate nohighlight">\(f(t) = e^{-i\omega t} = e^{-\frac{iEt}{\hbar}}\)</span>.  We can now write the <strong>time-independent Schödinger equation</strong> as</p>
@@ -802,8 +802,8 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <span class="eqno">(6.8)<a class="headerlink" href="#equation-ti-wave-function" title="Link to this equation">#</a></span>\[\Psi(x,t) = \psi(x)e^{-i\omega t}.\]</div>
 <p>Many important results can be obtained when only the spatial part of the wave function <span class="math notranslate nohighlight">\(\psi(x)\)</span> is needed.</p>
 <p>The probability density used the complex conjugate operator, which now becomes useful.  Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4fd0c2f5-efab-427f-8d36-bfccf9a2613a">
-<span class="eqno">(6.9)<a class="headerlink" href="#equation-4fd0c2f5-efab-427f-8d36-bfccf9a2613a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-66b6d8ca-6ddd-4191-aa2e-61869dbabf6b">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-66b6d8ca-6ddd-4191-aa2e-61869dbabf6b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Psi^*\Psi &amp;= \psi^2(x)\left(e^{i\omega t}e^{-i\omega t}\right), \\
 &amp;= \psi^2(x),
 \end{align}\]</div>
@@ -844,23 +844,23 @@ f(t) = e^{\frac{Bt}{i\hbar}} = e^{-\frac{iBt}{\hbar}}.
 <div class="math notranslate nohighlight">
 \[ \bar{x} = \frac{N_1 x_1 + N_2 x_2 + \cdots}{N_1 + N_2 + \cdots} = \frac{\sum_i N_i x_i}{\sum_i N_i}, \]</div>
 <p>from a series of discrete measurements.  For continuous variables, we use the probability <span class="math notranslate nohighlight">\(P(x,t)\)</span> of observing the particle at a particular <span class="math notranslate nohighlight">\(x\)</span>.  Then the average value of <span class="math notranslate nohighlight">\(x\)</span> is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bc7880e0-1a7e-4898-9148-725ce71938d2">
-<span class="eqno">(6.10)<a class="headerlink" href="#equation-bc7880e0-1a7e-4898-9148-725ce71938d2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7fe313dd-cddc-4b79-9da4-1e5e92c688a9">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-7fe313dd-cddc-4b79-9da4-1e5e92c688a9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \bar{x} = \frac{\int_{-\infty}^\infty xP(x) dx}{\int_{-\infty}^\infty P(x) dx}.
 \end{align}\]</div>
 <p>In quantum mechanics, we use the probability distribution (i.e., <span class="math notranslate nohighlight">\(P(x)dx = \Psi^*(x,t)\Psi(x,t) dx\)</span>) to determine the average or expectation value.  The expectation value <span class="math notranslate nohighlight">\(\langle x \rangle\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2176ff15-867f-4e92-ac10-a044b507d59c">
-<span class="eqno">(6.11)<a class="headerlink" href="#equation-2176ff15-867f-4e92-ac10-a044b507d59c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e41b2617-cadf-4a7d-a31e-0411c64c18c3">
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-e41b2617-cadf-4a7d-a31e-0411c64c18c3" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle x \rangle = \frac{\int_{-\infty}^\infty x\Psi^*(x,t)\Psi(x,t) dx}{\int_{-\infty}^\infty \Psi^*(x,t)\Psi(x,t) dx}.
 \end{align}\]</div>
 <p>The denominator is the normalization equation.  If the wave function is normalized, then the denominator is equal to unity.  For a <em>normalized</em> wave function <span class="math notranslate nohighlight">\(\Psi\)</span>, the expectation value is then given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b78a5b38-3a33-4282-b984-add459aeb741">
-<span class="eqno">(6.12)<a class="headerlink" href="#equation-b78a5b38-3a33-4282-b984-add459aeb741" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f4e73bde-1974-4652-b7a9-aeb28ab9fc08">
+<span class="eqno">(6.12)<a class="headerlink" href="#equation-f4e73bde-1974-4652-b7a9-aeb28ab9fc08" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle x \rangle = \int_{-\infty}^\infty x\Psi^*(x,t)\Psi(x,t) dx.
 \end{align}\]</div>
 <p>The same general procedure is applicable to determining the expectation value of any function <span class="math notranslate nohighlight">\(g(x)\)</span> for a normalized wave function <span class="math notranslate nohighlight">\(\Psi(x,t)\)</span> by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe7af2df-6ebe-49ce-80da-6e68efa26dd2">
-<span class="eqno">(6.13)<a class="headerlink" href="#equation-fe7af2df-6ebe-49ce-80da-6e68efa26dd2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-eb484c8a-acb6-4f27-8dbb-96095d3446da">
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-eb484c8a-acb6-4f27-8dbb-96095d3446da" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle g(x) \rangle = \int_{-\infty}^\infty \Psi^*(x,t)g(x)\Psi(x,t) dx.
 \end{align}\]</div>
 <p>Any knowledge we might have of the simultaneous value of the position <span class="math notranslate nohighlight">\(x\)</span> and the momentum <span class="math notranslate nohighlight">\(p\)</span> must be consistent with the uncertainty principle.  To find the expectation value of <span class="math notranslate nohighlight">\(p\)</span>, we need to represent <span class="math notranslate nohighlight">\(p\)</span> in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>.  <strong>Consider the wave function of the free particle, <span class="math notranslate nohighlight">\(\Psi(x,t) = e^{i(kx-\omega t)}\)</span>.</strong>  The spatial derivative is</p>
@@ -880,19 +880,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>An <strong>operator</strong> is a mathematical operation that transforms one function into another.  <em>Coffee is the operator that transforms ideas into knowledge!</em>  An operator, denoted by <span class="math notranslate nohighlight">\(\hat{Q}\)</span>, transforms the function <span class="math notranslate nohighlight">\(f(x)\)</span> by <span class="math notranslate nohighlight">\(\hat{Q}f(x) = g(x)\)</span>.  The <em>momentum operator</em> <span class="math notranslate nohighlight">\(\hat{p}\)</span> is then represented by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dca86b85-f6af-4218-829a-a5f58e1dce97">
-<span class="eqno">(6.14)<a class="headerlink" href="#equation-dca86b85-f6af-4218-829a-a5f58e1dce97" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-507bebec-62bc-4473-8b4d-82f1b4db92b2">
+<span class="eqno">(6.14)<a class="headerlink" href="#equation-507bebec-62bc-4473-8b4d-82f1b4db92b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \hat{p} = -i\hbar \frac{\partial}{\partial x},
 \end{align}\]</div>
 <p>where the <span class="math notranslate nohighlight">\(\hat{\ }\)</span> symbol (i.e., “hat”) sign over the letter indicates that it is an operator.</p>
 <p>The momentum operator is not unique, where each of the physical observables has an associated operator that used to find the observable’s expectation value.  To compute the expectation value of some physical observable <span class="math notranslate nohighlight">\(Q\)</span>, the operator <span class="math notranslate nohighlight">\(\hat{Q}\)</span> must <em>operate</em> on <span class="math notranslate nohighlight">\(\Psi\)</span> before calculating the probability to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ee7ccb85-78f9-4cbb-a78a-fad76efee0b0">
-<span class="eqno">(6.15)<a class="headerlink" href="#equation-ee7ccb85-78f9-4cbb-a78a-fad76efee0b0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-25a8fed7-4c39-4852-b09d-af3482c4f0b1">
+<span class="eqno">(6.15)<a class="headerlink" href="#equation-25a8fed7-4c39-4852-b09d-af3482c4f0b1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle Q \rangle = \int_{-\infty}^\infty \Psi^*(x,t)\hat{Q}\Psi(x,t) dx.
 \end{align}\]</div>
 <p>The expectation value of the momentum <span class="math notranslate nohighlight">\(p\)</span> becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-41f06233-491c-4c0d-8bff-21246edc08ec">
-<span class="eqno">(6.16)<a class="headerlink" href="#equation-41f06233-491c-4c0d-8bff-21246edc08ec" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-65d9d5e3-0671-4fe7-af2d-87af5958e677">
+<span class="eqno">(6.16)<a class="headerlink" href="#equation-65d9d5e3-0671-4fe7-af2d-87af5958e677" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle p \rangle &amp;= \int_{-\infty}^\infty \Psi^*(x,t)\hat{p}\Psi(x,t) dx, \\
 &amp;=-i\hbar \int_{-\infty}^\infty \Psi^*(x,t)\frac{\partial \Psi(x,t)}{\partial x} dx.
 \end{align}\]</div>
@@ -905,8 +905,8 @@ allowfullscreen></iframe>
 <span class="eqno">(6.17)<a class="headerlink" href="#equation-energy-operator" title="Link to this equation">#</a></span>\[\begin{split}E\left[\Psi(x,t)\right] &amp;= i\hbar \frac{\partial \Psi}{\partial t}, \\
 \hat{E}\Psi(x,t) &amp;= i\hbar \frac{\partial }{\partial t}\Psi(x,t).\end{split}\]</div>
 <p>The energy operator <span class="math notranslate nohighlight">\(\hat{E}\)</span> is used to find the expectation value <span class="math notranslate nohighlight">\(\langle E \rangle\)</span> of the energy by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-353612f7-e17c-4264-b249-28f30eb29acf">
-<span class="eqno">(6.18)<a class="headerlink" href="#equation-353612f7-e17c-4264-b249-28f30eb29acf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b9c356c6-bad6-4daf-9b2a-77e8d307b641">
+<span class="eqno">(6.18)<a class="headerlink" href="#equation-b9c356c6-bad6-4daf-9b2a-77e8d307b641" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle E \rangle &amp;= \int_{-\infty}^\infty \Psi^*(x,t)\hat{E}\Psi(x,t) dx, \\
 &amp;=i\hbar \int_{-\infty}^\infty \Psi^*(x,t)\frac{\partial \Psi(x,t)}{\partial t} dx.
 \end{align}\]</div>
@@ -946,8 +946,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>The potential that gives rise to an <em>infinite square well</em> with a width <span class="math notranslate nohighlight">\(L\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-45f4c022-10d7-4346-8833-cc0b8655dcad">
-<span class="eqno">(6.19)<a class="headerlink" href="#equation-45f4c022-10d7-4346-8833-cc0b8655dcad" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-118ce1cb-45d3-4841-8411-36b48cdae62f">
+<span class="eqno">(6.19)<a class="headerlink" href="#equation-118ce1cb-45d3-4841-8411-36b48cdae62f" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = \begin{cases} \infty &amp;\qquad x\leq 0, x\geq L \\ 0 &amp;\qquad 0&lt;x&lt;L. \end{cases}
 \end{align}\]</div>
 <p>The particle is constrained to move only between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>, where the particle experiences no forces.  The infinite square-well potential can approximate many physical situations, such as the energy levels of simple atomic and nuclear systems.</p>
@@ -960,24 +960,24 @@ V(x) = \begin{cases} \infty &amp;\qquad x\leq 0, x\geq L \\ 0 &amp;\qquad 0&lt;x
 <div class="math notranslate nohighlight">
 \[ \frac{d^2 \psi}{dx^2} = -\frac{2mE}{\hbar^2}\psi = -k^2 \psi, \]</div>
 <p>where the wave number <span class="math notranslate nohighlight">\(k = \sqrt{2mE/\hbar^2}\)</span>.  A suitable solution to this equation is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6d0879dc-d850-463d-b827-3d11fe2c89ec">
-<span class="eqno">(6.20)<a class="headerlink" href="#equation-6d0879dc-d850-463d-b827-3d11fe2c89ec" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c70707b1-9f41-497d-8e1d-18ce81c9bd71">
+<span class="eqno">(6.20)<a class="headerlink" href="#equation-c70707b1-9f41-497d-8e1d-18ce81c9bd71" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x) = A\sin kx + B \cos kx, 
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants used to normalize the wave function.  The wave function must be continuous at the boundaries, which means that <span class="math notranslate nohighlight">\(\psi(0)=\psi(L) = 0\)</span>.  Let’s apply these boundary conditions as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-45a1876c-6819-4610-aab7-5afeabd1b54b">
-<span class="eqno">(6.21)<a class="headerlink" href="#equation-45a1876c-6819-4610-aab7-5afeabd1b54b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-96018af4-e828-422a-af33-a0b694fce1d1">
+<span class="eqno">(6.21)<a class="headerlink" href="#equation-96018af4-e828-422a-af33-a0b694fce1d1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(0) &amp;= A \sin (0) + B \cos(0) = B, \\
 \psi(L) &amp;= A \sin (kL) + B \cos(kL).
 \end{align}\]</div>
 <p>For <span class="math notranslate nohighlight">\(\psi(0) = 0\)</span>, this implies that <span class="math notranslate nohighlight">\(B=0\)</span>.  To apply <span class="math notranslate nohighlight">\(\psi(L) = 0\)</span>, then <span class="math notranslate nohighlight">\(A\sin(kL) = 0\)</span> and <span class="math notranslate nohighlight">\(A=0\)</span> is a trivial solution.  We must have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe09a436-51b7-4b8b-ae03-feac2fb427a0">
-<span class="eqno">(6.22)<a class="headerlink" href="#equation-fe09a436-51b7-4b8b-ae03-feac2fb427a0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4b7ab67e-c7c9-428d-8870-bcde962efbea">
+<span class="eqno">(6.22)<a class="headerlink" href="#equation-4b7ab67e-c7c9-428d-8870-bcde962efbea" title="Permalink to this equation">#</a></span>\[\begin{align}
 kL = n\pi
 \end{align}\]</div>
 <p>for <span class="math notranslate nohighlight">\(\sin(kL) = 0\)</span> and <span class="math notranslate nohighlight">\(n\)</span> is a positive integer.  The wave function is now</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e91b25c9-bf91-4e7d-a789-3083e9979baf">
-<span class="eqno">(6.23)<a class="headerlink" href="#equation-e91b25c9-bf91-4e7d-a789-3083e9979baf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d68a22be-b51a-4a9d-a990-dce12c67d689">
+<span class="eqno">(6.23)<a class="headerlink" href="#equation-d68a22be-b51a-4a9d-a990-dce12c67d689" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_n(x) = A \sin \left(\frac{n\pi}{L} x \right) \quad (n=1,\ 2,\ 3,\ \ldots).
 \end{align}\]</div>
 <p>The property that <span class="math notranslate nohighlight">\(d\psi /dx\)</span> must also be continuous so that we can normalize the wave function.  The normalization condition is</p>
@@ -1086,10 +1086,10 @@ kL = n\pi
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for x is L/2
-The expectation value for x**2 is -L**2/(8*pi**2) + L**2/3 = [1/3 - 1/(8*pi**2)]*L**2 = 0.32 L**2
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for p is 0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expectation value for x**2 is -L**2/(8*pi**2) + L**2/3 = [1/3 - 1/(8*pi**2)]*L**2 = 0.32 L**2
+The expectation value for p is 0
 The expectation value for p**2 is 4*pi**2*hbar**2/L**2
 </pre></div>
 </div>
@@ -1099,8 +1099,8 @@ The expectation value for p**2 is 4*pi**2*hbar**2/L**2
 <section id="finite-square-well-potential">
 <h2><span class="section-number">6.4. </span>Finite Square-Well Potential<a class="headerlink" href="#finite-square-well-potential" title="Link to this heading">#</a></h2>
 <p>An infinite potential well is not very realistic.  The <em>finite-well</em> potential is more realistic and similar to the infinite one.  <strong>Consider a potential that is zero between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>, but equal to a constant <span class="math notranslate nohighlight">\(V_o\)</span> everywhere else.</strong>  This is written mathematically as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5731c5f8-751d-4f7b-b7db-8e986ae0db08">
-<span class="eqno">(6.26)<a class="headerlink" href="#equation-5731c5f8-751d-4f7b-b7db-8e986ae0db08" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1d694ee4-5d92-40f9-9e48-e020994a585a">
+<span class="eqno">(6.26)<a class="headerlink" href="#equation-1d694ee4-5d92-40f9-9e48-e020994a585a" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = 
 \begin{cases}
     V_o \quad &amp; x\leq -L,  \quad &amp;\text{region I} \\
@@ -1109,8 +1109,8 @@ V(x) =
 \end{cases}
 \end{align}\]</div>
 <p>First, let’s examine a particle of energy <span class="math notranslate nohighlight">\(E &lt; V_o\)</span> that is classically bound inside the well.  Using Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a>, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c3f1b66f-77da-4452-b78d-cb0a9e2d1b38">
-<span class="eqno">(6.27)<a class="headerlink" href="#equation-c3f1b66f-77da-4452-b78d-cb0a9e2d1b38" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0f98ab6d-949f-498d-ae55-8957c32454b2">
+<span class="eqno">(6.27)<a class="headerlink" href="#equation-0f98ab6d-949f-498d-ae55-8957c32454b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2m} \frac{d^2\psi}{dx^2} = \left[E-V_o \right]\psi. \quad \text{regions I, III}
 \end{align}\]</div>
 <p>Let <span class="math notranslate nohighlight">\(\alpha^2 = 2m(V_o-E)/\hbar^2\)</span> (a positive constant), and we find</p>
@@ -1123,8 +1123,8 @@ V(x) =
 <div class="math notranslate nohighlight">
 \[ \lim_{x\rightarrow -\infty} \psi = Ae^{-\infty} + Be^{\infty}, \]</div>
 <p>which requires that <span class="math notranslate nohighlight">\(B = 0\)</span>.  Similarly, we can use a limit to find that <span class="math notranslate nohighlight">\(A=0\)</span> for <span class="math notranslate nohighlight">\(x\geq L\)</span>.  This allows us to define the wave functions in each region as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2ecdf671-9c2b-4938-b22b-9b918cb4bd30">
-<span class="eqno">(6.28)<a class="headerlink" href="#equation-2ecdf671-9c2b-4938-b22b-9b918cb4bd30" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6a7aa2ca-1b24-4ee4-a3ea-b4654ff05d36">
+<span class="eqno">(6.28)<a class="headerlink" href="#equation-6a7aa2ca-1b24-4ee4-a3ea-b4654ff05d36" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_I(x) &amp;= Ae^{\alpha x}, \quad \text{region I},\  x\leq -l \\
 \psi_{III}(x) &amp;= Be^{-\alpha x}. \quad \text{region III},\  x\geq L
 \end{align}\]</div>
@@ -1132,21 +1132,21 @@ V(x) =
 <div class="math notranslate nohighlight">
 \[ \frac{d^2\psi}{dx^2} = -k^2\psi, \]</div>
 <p>where <span class="math notranslate nohighlight">\(k=\sqrt{(2mE)/\hbar^2}\)</span>.  This differential equation has a solution, which is a combination of sinusoidal functions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-617527c7-3fc8-4198-83b7-d08572010432">
-<span class="eqno">(6.29)<a class="headerlink" href="#equation-617527c7-3fc8-4198-83b7-d08572010432" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7f487df4-d59c-4628-be12-f9f7ff07b2e7">
+<span class="eqno">(6.29)<a class="headerlink" href="#equation-7f487df4-d59c-4628-be12-f9f7ff07b2e7" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_{II}(x) = C\cos(kx) + D\sin(kx). \quad \text{region II},\ -L&lt;x&lt;L
 \end{align}\]</div>
 <p>To determine a valid wave function, it must be continuous at the boundary (e.g., <span class="math notranslate nohighlight">\((\psi_I = \psi_{II})\)</span> and <span class="math notranslate nohighlight">\((d\psi_I/dx = d\psi_{II}/dx)\)</span> at <span class="math notranslate nohighlight">\(x=-L\)</span>).  By choosing symmetric boundaries and noting that the potential is an even function (i.e., <span class="math notranslate nohighlight">\(V_ox^0\)</span>), we can simplify <span class="math notranslate nohighlight">\(\psi_{II}\)</span> to include only the even portion (i.e., <span class="math notranslate nohighlight">\(D=0\)</span>).  As a result, we find the following conditions</p>
-<div class="amsmath math notranslate nohighlight" id="equation-06128390-b391-4753-8994-d2df821792c7">
-<span class="eqno">(6.30)<a class="headerlink" href="#equation-06128390-b391-4753-8994-d2df821792c7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f0165e87-2e00-421d-8087-87ad3613527a">
+<span class="eqno">(6.30)<a class="headerlink" href="#equation-f0165e87-2e00-421d-8087-87ad3613527a" title="Permalink to this equation">#</a></span>\[\begin{align}
 C\cos(kL)  &amp;= A e^{-\alpha L}, \\
 kC\sin(kL)  &amp;= -\alpha A e^{-\alpha L}, \\
 C\cos(kL) &amp;= Be^{-\alpha L}, \\
 -kC\sin(kL) &amp;= -\alpha B e^{-\alpha L}.
 \end{align}\]</div>
 <p>We immediately find that <span class="math notranslate nohighlight">\(B=A\)</span>, and we can divide the last two equations to eliminate <span class="math notranslate nohighlight">\(C\)</span> to get,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4c858381-bb47-433d-97dc-548b2115e185">
-<span class="eqno">(6.31)<a class="headerlink" href="#equation-4c858381-bb47-433d-97dc-548b2115e185" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ef4483b7-1881-4c98-93aa-1cc1921ae422">
+<span class="eqno">(6.31)<a class="headerlink" href="#equation-ef4483b7-1881-4c98-93aa-1cc1921ae422" title="Permalink to this equation">#</a></span>\[\begin{align}
 k\tan(kL) = \alpha.
 \end{align}\]</div>
 <p>Recall that <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> are both functions of energy <span class="math notranslate nohighlight">\(E\)</span>.  To solve for <span class="math notranslate nohighlight">\(E\)</span>, we perform a variable transformation <span class="math notranslate nohighlight">\(z \equiv kL\)</span> and <span class="math notranslate nohighlight">\(z_o \equiv \frac{L}{\hbar}\sqrt{2mV_o}\)</span>.  Using the definitions of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span>, we find that</p>
@@ -1334,8 +1334,8 @@ allowfullscreen></iframe>
 </figure>
 <p>The application of the boundary conditions leads to quantized energy values <span class="math notranslate nohighlight">\(E_n\)</span> and associated wave functions <span class="math notranslate nohighlight">\(\psi_n\)</span>.  Remarkably, the particle has a finite probability of being outside the square well (see Fig. <a class="reference internal" href="#finite-square-well-waves"><span class="std std-numref">6.3</span></a>).  Notice that the wave functions joint smoothly at the edges of the well and approach zero exponentially outside the well.</p>
 <p>The particle existing outside the well is prohibited classically, but occurs in quantum mechanics.  Because of the exponential decrease of the the wave functions (<span class="math notranslate nohighlight">\(\psi_I\)</span> and <span class="math notranslate nohighlight">\(\psi_{III}\)</span>), the probability of the particle penetrating a distance greater than <span class="math notranslate nohighlight">\(\delta x \approx 1/\alpha\)</span> decreases quickly, where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-74f3f0c0-15b9-4ae8-9f41-574ff9c49398">
-<span class="eqno">(6.33)<a class="headerlink" href="#equation-74f3f0c0-15b9-4ae8-9f41-574ff9c49398" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c4335362-106f-431a-b494-ffc65364d78e">
+<span class="eqno">(6.33)<a class="headerlink" href="#equation-c4335362-106f-431a-b494-ffc65364d78e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \delta x \approx \frac{1}{\alpha} = \frac{\hbar}{\sqrt{2m(V_o-E)}}
 \end{align}\]</div>
 <p>is called the <em>penetration depth</em>.  The fraction of particles that successfully tunnel through the outer walls of the potential well is exceedingly small, but the results have important applications.</p>
@@ -1343,8 +1343,8 @@ allowfullscreen></iframe>
 <section id="three-dimensional-infinite-potential-well">
 <span id="three-dimensional-well"></span><h2><span class="section-number">6.5. </span>Three-Dimensional Infinite-Potential Well<a class="headerlink" href="#three-dimensional-infinite-potential-well" title="Link to this heading">#</a></h2>
 <p>Like the one-dimensional infinite-potential well, the three-dimensional potential well is expected to have time-independent solutions that can be determined from the time-independent Schrödinger equation.  The wave function must depend on all three spatial coordinates, <span class="math notranslate nohighlight">\(\psi =\psi(x,y,z)\)</span>.  Beginning with the conservation of energy, we multiply by the wave function to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-730c34e3-2ed0-4548-94aa-f8c16efa06e8">
-<span class="eqno">(6.34)<a class="headerlink" href="#equation-730c34e3-2ed0-4548-94aa-f8c16efa06e8" title="Permalink to this equation">#</a></span>\[\begin{align} 
+<div class="amsmath math notranslate nohighlight" id="equation-d90052b9-65c0-4c3e-a2d8-2bbf71e54228">
+<span class="eqno">(6.34)<a class="headerlink" href="#equation-d90052b9-65c0-4c3e-a2d8-2bbf71e54228" title="Permalink to this equation">#</a></span>\[\begin{align} 
 \frac{p^2}{2m}\psi + V\psi = E\psi.
 \end{align}\]</div>
 <p>Then, we use the momentum operator for each dimension because <span class="math notranslate nohighlight">\(\hat{p}^2 = \hat{p}_x^2 + \hat{p}_y^2 + \hat{p}_z^2\)</span>.  Individually we have</p>
@@ -1358,13 +1358,13 @@ allowfullscreen></iframe>
 <div class="math notranslate nohighlight" id="equation-3d-tise">
 <span class="eqno">(6.35)<a class="headerlink" href="#equation-3d-tise" title="Link to this equation">#</a></span>\[-\frac{\hbar^2}{2m}\left(\frac{\partial^2 \psi}{\partial x^2} + \frac{\partial^2 \psi}{\partial y^2}+ \frac{\partial^2 \psi}{\partial z^2} \right) + V\psi = E\psi,\]</div>
 <p>which defines the time-independent Schrödinger equation in three dimensions.  The expression in parentheses is the Laplacian operator, which is usually written using the shorthand notation as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8da5bcea-2971-418b-9e65-f177f62fed38">
-<span class="eqno">(6.36)<a class="headerlink" href="#equation-8da5bcea-2971-418b-9e65-f177f62fed38" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-95aee0ff-8bae-455f-9a80-5ee5f10c2daf">
+<span class="eqno">(6.36)<a class="headerlink" href="#equation-95aee0ff-8bae-455f-9a80-5ee5f10c2daf" title="Permalink to this equation">#</a></span>\[\begin{align}
 \nabla^2 = \frac{\partial^2 }{\partial x^2} + \frac{\partial^2 }{\partial y^2} + \frac{\partial^2 }{\partial z^2},
 \end{align}\]</div>
 <p>and we can write Eqn. <a class="reference internal" href="#equation-3d-tise">(6.35)</a> as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a3951f6b-480d-4087-bd01-b3a9b87992f5">
-<span class="eqno">(6.37)<a class="headerlink" href="#equation-a3951f6b-480d-4087-bd01-b3a9b87992f5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2be6c8af-73cc-40c5-be7d-096b4677692e">
+<span class="eqno">(6.37)<a class="headerlink" href="#equation-2be6c8af-73cc-40c5-be7d-096b4677692e" title="Permalink to this equation">#</a></span>\[\begin{align}
 -\frac{\hbar^2}{2m}\nabla^2 \psi + v\psi = E\psi.
 \end{align}\]</div>
 <div class="exercise orange admonition" id="PIC-exercise">
@@ -1373,14 +1373,14 @@ allowfullscreen></iframe>
 <section id="exercise-content">
 <p><strong>Consider a free particle inside a box with lengths <span class="math notranslate nohighlight">\(L_1\)</span>, <span class="math notranslate nohighlight">\(L_2\)</span>, and <span class="math notranslate nohighlight">\(L_3\)</span> along the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> axes, respectively.  The particle is constrained to be inside the box.  (a) Find the wave functions and energies.  (b) Find the ground-state wave function for a cube.  (c) Find the energies of the ground and first excited state for a cube of sides <span class="math notranslate nohighlight">\(L\)</span>.</strong></p>
 <p><strong>(a)</strong>  Similar to the one-dimensional infinite square well, it is reasonable to try a sinusoidal wave function for each of the dimensions.  As a result, we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d42f955b-29c3-44a2-87bd-881b57354f08">
-<span class="eqno">(6.38)<a class="headerlink" href="#equation-d42f955b-29c3-44a2-87bd-881b57354f08" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4de60612-ebb6-45fb-9010-9bcf22690fac">
+<span class="eqno">(6.38)<a class="headerlink" href="#equation-4de60612-ebb6-45fb-9010-9bcf22690fac" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin(k_1x)\sin(k_2y)\sin(k_3z),
 \end{align}\]</div>
 <p>which has a normalization constant <span class="math notranslate nohighlight">\(A\)</span> and the quantities <span class="math notranslate nohighlight">\(k_i\)</span> (<span class="math notranslate nohighlight">\(k_1\)</span>, <span class="math notranslate nohighlight">\(k_2\)</span>, and <span class="math notranslate nohighlight">\(k_3\)</span>) are determined by applying the appropriate boundary conditions.</p>
 <p>The condition that <span class="math notranslate nohighlight">\(\psi = 0\)</span> at <span class="math notranslate nohighlight">\(x=L_1\)</span> requires that <span class="math notranslate nohighlight">\(k_1L_1 = n_1\pi\)</span>.  Generalizing this constraint and solving for <span class="math notranslate nohighlight">\(k_i\)</span>, we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-71bb30ec-d07e-4f60-a573-4a7d8e6ddfbf">
-<span class="eqno">(6.39)<a class="headerlink" href="#equation-71bb30ec-d07e-4f60-a573-4a7d8e6ddfbf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f328d596-ca3c-4078-9787-e47a97770ef1">
+<span class="eqno">(6.39)<a class="headerlink" href="#equation-f328d596-ca3c-4078-9787-e47a97770ef1" title="Permalink to this equation">#</a></span>\[\begin{align}
 k_1 = \frac{n_1\pi}{L_1}, \quad k_2 = \frac{n_2\pi}{L_2}, \quad k_3 = \frac{n_3\pi}{L_3},
 \end{align}\]</div>
 <p>using the integers <span class="math notranslate nohighlight">\(n_1\)</span>, <span class="math notranslate nohighlight">\(n_2\)</span>, and <span class="math notranslate nohighlight">\(n_3\)</span> for quantum numbers in each of the dimensions.</p>
@@ -1396,23 +1396,23 @@ k_1 = \frac{n_1\pi}{L_1}, \quad k_2 = \frac{n_2\pi}{L_2}, \quad k_3 = \frac{n_3\
 <div class="math notranslate nohighlight">
 \[ \frac{\hbar^2}{2m}\left(k_1^2 + k_2^2 + k_3^2\right)\psi = E\psi. \]</div>
 <p>The <span class="math notranslate nohighlight">\(k_i\)</span> represent a wave number for each dimension, where we can generalize the energies of the one-dimensional case to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-66e91c15-c196-4706-b510-bb06f40426d2">
-<span class="eqno">(6.40)<a class="headerlink" href="#equation-66e91c15-c196-4706-b510-bb06f40426d2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3c1cc850-a7da-4c7b-aba6-d01cb07fc94c">
+<span class="eqno">(6.40)<a class="headerlink" href="#equation-3c1cc850-a7da-4c7b-aba6-d01cb07fc94c" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \frac{\pi^2\hbar^2}{2m}\left(\frac{n_1^2}{L_1^2} + \frac{n_2^2}{L_2^2} + \frac{n_3^2}{L_3^2} \right),
 \end{align}\]</div>
 <p>where the allowed energies depend on the three quantum numbers.  The wave function can also be written in terms of the quantum numbers as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-defeec71-e719-4a2a-a1a4-1c6ce74da805">
-<span class="eqno">(6.41)<a class="headerlink" href="#equation-defeec71-e719-4a2a-a1a4-1c6ce74da805" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a3ff2e19-5f16-43d5-8afd-b8184ad446de">
+<span class="eqno">(6.41)<a class="headerlink" href="#equation-a3ff2e19-5f16-43d5-8afd-b8184ad446de" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin\left(\frac{n_1\pi x}{L_1}\right) \sin\left(\frac{n_2\pi y}{L_2}\right) \sin\left(\frac{n_3\pi z}{L_3}\right)
 \end{align}\]</div>
 <p><strong>(b)</strong> For a cube <span class="math notranslate nohighlight">\(L_1 = L_2 = L_3 = L\)</span> and the ground state is given by <span class="math notranslate nohighlight">\(n_1 = n_2 = n_3 = 1\)</span>.  The ground-state wave function is simply</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6a580b53-a441-4c32-aa83-ba49e89f5d48">
-<span class="eqno">(6.42)<a class="headerlink" href="#equation-6a580b53-a441-4c32-aa83-ba49e89f5d48" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f233ecdf-9372-4c1f-bfbb-da28d9b21186">
+<span class="eqno">(6.42)<a class="headerlink" href="#equation-f233ecdf-9372-4c1f-bfbb-da28d9b21186" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi(x,y,z) = A\sin\left(\frac{\pi x}{L}\right) \sin\left(\frac{\pi y}{L}\right) \sin\left(\frac{\pi z}{L}\right).
 \end{align}\]</div>
 <p><strong>(c)</strong>  For a cube the energies are given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-66cfa284-6315-4ce7-9c2c-49198313626d">
-<span class="eqno">(6.43)<a class="headerlink" href="#equation-66cfa284-6315-4ce7-9c2c-49198313626d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-47e9ebbf-3511-4c28-b4f5-10b40f856ad1">
+<span class="eqno">(6.43)<a class="headerlink" href="#equation-47e9ebbf-3511-4c28-b4f5-10b40f856ad1" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \frac{\pi^2\hbar^2}{2mL^2}\left(n_1^2 + n_2^2 + n_3^2\right),
 \end{align}\]</div>
 <p>and the ground state energy is <span class="math notranslate nohighlight">\(E_{111} = \frac{3\pi^2\hbar^2}{2mL^2}\)</span>.</p>
@@ -1436,8 +1436,8 @@ F &amp;= -\kappa(x-x_o), \\
 V &amp;= \kappa (x-x_o)^2.
 \end{align*}\]</div>
 <p>The application of the restoring force introduces <em>simple harmonic motion</em> (SHM).  Diatomic molecules or a system of atoms in a solid lattice can be approximated by SHM in a general way.  Within a lattice, the force on the atoms depends on the distance <span class="math notranslate nohighlight">\(x\)</span> from some equilibrium position and the potential <span class="math notranslate nohighlight">\(V(x)\)</span> can be represented by a Taylor series as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e3ab1c14-a489-4cc4-aa83-b6bf059c5b9e">
-<span class="eqno">(6.44)<a class="headerlink" href="#equation-e3ab1c14-a489-4cc4-aa83-b6bf059c5b9e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7e7b5851-5c42-40e9-83b3-25dc4a3b5313">
+<span class="eqno">(6.44)<a class="headerlink" href="#equation-7e7b5851-5c42-40e9-83b3-25dc4a3b5313" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = V_o + V_1(x-x_o) + \frac{V_2}{2}\left(x-x_o\right)^2 + \cdots,
 \end{align}\]</div>
 <p>where each term of the series has a constant <span class="math notranslate nohighlight">\(V_i\)</span>.  For <span class="math notranslate nohighlight">\(x-x_o \approx 0\)</span> (i.e., a small perturbation), the higher terms are negligible.  The minimum of the potential occurs at the equilibrium position, which means that <span class="math notranslate nohighlight">\(dV/dx = 0\)</span> and the lowest surviving term of the potential is</p>
@@ -1451,19 +1451,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>To study the quantum description of SHM, we insert a potential <span class="math notranslate nohighlight">\(V = kx^2/2\)</span> into Eqn. <a class="reference internal" href="#equation-ti-schrodinger">(6.7)</a> to get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d18c01ae-bff6-4dad-8969-54554b7b06a2">
-<span class="eqno">(6.45)<a class="headerlink" href="#equation-d18c01ae-bff6-4dad-8969-54554b7b06a2" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-289d7879-f3e1-4559-a5a7-5db05e0d41d9">
+<span class="eqno">(6.45)<a class="headerlink" href="#equation-289d7879-f3e1-4559-a5a7-5db05e0d41d9" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2 \psi}{dx^2} = -\frac{2m}{\hbar^2}\left(E - \frac{1}{2}\kappa x^2 \right)\psi = \left(\frac{m\kappa}{\hbar^2}x^2 - \frac{2mE}{\hbar^2}\right) \psi.
 \end{align}\]</div>
 <p>Through a pair of variable transformations,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dc1b1487-17ca-49ce-a5fe-305241886645">
-<span class="eqno">(6.46)<a class="headerlink" href="#equation-dc1b1487-17ca-49ce-a5fe-305241886645" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1a9ef609-68c5-4183-a861-c8b3e8c6e93d">
+<span class="eqno">(6.46)<a class="headerlink" href="#equation-1a9ef609-68c5-4183-a861-c8b3e8c6e93d" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha^2 &amp;= \frac{m\kappa}{\hbar^2}, \\
 \beta = \frac{2mE}{\hbar^2},
 \end{align}\]</div>
 <p>we get</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7a164340-7b7d-43a6-8e3d-b5bb4163693d">
-<span class="eqno">(6.47)<a class="headerlink" href="#equation-7a164340-7b7d-43a6-8e3d-b5bb4163693d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3cda9268-1bed-4296-ac4c-c02ee32fe84b">
+<span class="eqno">(6.47)<a class="headerlink" href="#equation-3cda9268-1bed-4296-ac4c-c02ee32fe84b" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2 \psi}{dx^2} = (\alpha^2 x^2 - \beta)\psi.
 \end{align}\]</div>
 <p>The particle is confined to the potential well, and thus, has zero probability of being at <span class="math notranslate nohighlight">\(x= \pm \infty\)</span>, which means</p>
@@ -1690,8 +1690,8 @@ E = \kappa (\Delta x)^2 &amp;= \frac{(\Delta p)^2}{2m}, \\
 </details>
 </div>
 <p>In contrast to the particle-in-a-box, the oscillatory behavior is due to the polynomial, which dominates at small <span class="math notranslate nohighlight">\(x\)</span>, and the damping occurs due to the Gaussian function, which dominates at large <span class="math notranslate nohighlight">\(x\)</span>.  Then energy levels are given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db2546eb-d08b-4238-bca1-bfbaa7566dc3">
-<span class="eqno">(6.49)<a class="headerlink" href="#equation-db2546eb-d08b-4238-bca1-bfbaa7566dc3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e57665ae-aaac-4185-9eef-28f756314ea4">
+<span class="eqno">(6.49)<a class="headerlink" href="#equation-e57665ae-aaac-4185-9eef-28f756314ea4" title="Permalink to this equation">#</a></span>\[\begin{align}
 E_n = \left(n+\frac{1}{2}\right)\hbar \omega = \left(n+\frac{1}{2}\right)\hbar \sqrt{\frac{\kappa}{m}}.
 \end{align}\]</div>
 <figure class="align-default" id="sho-energy" style="width: 600px">
@@ -1829,8 +1829,8 @@ A &amp;= \left(\frac{\alpha}{\pi} \right)^{1/4}.
 <section id="barriers-and-tunneling">
 <h2><span class="section-number">6.7. </span>Barriers and Tunneling<a class="headerlink" href="#barriers-and-tunneling" title="Link to this heading">#</a></h2>
 <p>For the finite square-well potential (see Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#finite-square-well-potential">6.3</a>), there was a finite probability for the wave function to enter the walls of the potential, but it must decay quickly.  A <em>potential barrier</em> describes a similar situation with the boundaries inverted.  The potential is instead</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a374fd08-fde4-431e-937b-acd026dc168a">
-<span class="eqno">(6.50)<a class="headerlink" href="#equation-a374fd08-fde4-431e-937b-acd026dc168a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-22102104-8aaf-4bf9-ba0c-da489bffe675">
+<span class="eqno">(6.50)<a class="headerlink" href="#equation-22102104-8aaf-4bf9-ba0c-da489bffe675" title="Permalink to this equation">#</a></span>\[\begin{align}
 V(x) = 
 \begin{cases}
     0 \quad &amp; x\leq -L,  \quad &amp;\text{region I} \\
@@ -1857,23 +1857,23 @@ v &amp;= \sqrt{\frac{2}{m}(E-V_o)}.
 \end{align*}\]</div>
 <p>The particle velocity must decrease for a positive <span class="math notranslate nohighlight">\(V_o\)</span> and increase for a negative <span class="math notranslate nohighlight">\(V_o\)</span>.  A classical analogy is where a ball is through horizontally over a mountain, where it experiences a pull due to gravity (ignoring air resistance).  The pull increases when the ball is directly over the mountain because there is slightly increased mass and this extra force reduces the ball’s speed.  Conversely, a ball traveling over a valley experiences slightly less gravity.  This is not noticeable for most objects, but NASA’s <a class="reference external" href="https://www.nasa.gov/audience/foreducators/k-4/features/F_Measuring_Gravity_With_Grace.html">GRACE</a> has measured the perturbations of Earth’s gravity field using two satellites.</p>
 <p>According to quantum mechanics, the particle will behave differently because of its wavelike character, where the will be differences in the wave number <span class="math notranslate nohighlight">\(k\)</span> in the three regions.  The wave numbers are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cd466134-9e84-46e5-aad2-790f098e3505">
-<span class="eqno">(6.51)<a class="headerlink" href="#equation-cd466134-9e84-46e5-aad2-790f098e3505" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-423a472b-303c-40ff-9287-e638178a519f">
+<span class="eqno">(6.51)<a class="headerlink" href="#equation-423a472b-303c-40ff-9287-e638178a519f" title="Permalink to this equation">#</a></span>\[\begin{align}
 k_I &amp;= k_{III} = \frac{\sqrt{2mE}}{\hbar}, \quad &amp;\text{where }V = 0 \\
 k_{II} &amp;= \frac{\sqrt{2m(E-V_o)}}{\hbar}. \quad &amp;\text{where }V = V_o
 \end{align}\]</div>
 <p>Another analogy comes from optics, where light bends (i.e., changes speed) after it penetrates another medium.  Actually, some of the light is <em>reflected</em> and the rest is <em>transmitted</em> into the medium.  The wave function will exhibit a similar behavior, where there will be an (1) incident wave, (2) reflected wave, and (3) a transmitted wave.</p>
 <p>Classical mechanics allows <em>no</em> reflection if <span class="math notranslate nohighlight">\(E&gt;V_o\)</span> and <em>total</em> reflection for <span class="math notranslate nohighlight">\(E&lt;V_o\)</span>.  In contrast, quantum mechanics predicts some <em>reflection</em> for <span class="math notranslate nohighlight">\(E\gg V_o\)</span> and some <em>transmission</em> for <span class="math notranslate nohighlight">\(E\ll V_o\)</span>.</p>
 <p>The time-independent Schrödinger equation for the three regions are as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dd3c5c0c-dc63-4a38-a1ec-5f5fe23bbe10">
-<span class="eqno">(6.52)<a class="headerlink" href="#equation-dd3c5c0c-dc63-4a38-a1ec-5f5fe23bbe10" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-da30f8d4-50fa-4c97-a0e7-95f6c537954a">
+<span class="eqno">(6.52)<a class="headerlink" href="#equation-da30f8d4-50fa-4c97-a0e7-95f6c537954a" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{d^2\psi_I}{dx^2} + \frac{2m}{\hbar^2}E\psi_I &amp;= 0, \quad &amp; \text{Region I } \\
 \frac{d^2\psi_{II}}{dx^2} + \frac{2m}{\hbar^2}(E-V_o)\psi_{II} &amp;= 0, \quad &amp; \text{Region II } \\
 \frac{d^2\psi_{III}}{dx^2} + \frac{2m}{\hbar^2}E\psi_{III} &amp;= 0. \quad &amp; \text{Region III }
 \end{align}\]</div>
 <p>The corresponding wave functions for these equations are:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a94eaf53-92d2-4118-b05c-258237958fe1">
-<span class="eqno">(6.53)<a class="headerlink" href="#equation-a94eaf53-92d2-4118-b05c-258237958fe1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c06b0a0e-6ffe-42d6-9e8b-003380d65047">
+<span class="eqno">(6.53)<a class="headerlink" href="#equation-c06b0a0e-6ffe-42d6-9e8b-003380d65047" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_I &amp;= Ae^{ik_Ix} + Be^{-ik_Ix}, \quad &amp; \text{Region I } \\
 \psi_{II} &amp;= Ce^{ik_{II}x} + De^{-ik_{II}x}, \quad &amp; \text{Region II } \\
 \psi_{III} &amp;= Fe^{ik_Ix} + Ge^{-ik_Ix}. \quad &amp; \text{Region III }
@@ -1891,15 +1891,15 @@ k_IAe^{-ik_IL} - k_IBe^{ik_IL} &amp;= k_{II}Ce^{-ik_{II}L} -k_{II}De^{ik_{II}L},
 Ce^{ik_{II}L} + De^{-k_{II}L} &amp;= Fe^{ik_IL}, \\
 k_{II}Ce^{ik_{II}L} - k_{II}De^{-ik_{II}L} &amp;= k_IFe^{ik_IL}.\end{split}\]</div>
 <p>The probability of particles being reflected <span class="math notranslate nohighlight">\(R\)</span> or transmitted <span class="math notranslate nohighlight">\(T\)</span> is determined by the ratio of the appropriate <span class="math notranslate nohighlight">\(\psi^*\psi\)</span>, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a11fe531-eeb0-488b-aeba-f3df64328c8b">
-<span class="eqno">(6.55)<a class="headerlink" href="#equation-a11fe531-eeb0-488b-aeba-f3df64328c8b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e6580fab-b75b-4ec6-9ff2-68b05fd14c54">
+<span class="eqno">(6.55)<a class="headerlink" href="#equation-e6580fab-b75b-4ec6-9ff2-68b05fd14c54" title="Permalink to this equation">#</a></span>\[\begin{align}
 R &amp;= \frac{|\psi_I(\text{reflected})|^2}{|\psi_I(\text{incident})|^2} = \frac{B^*B}{A^*A}, \\[5pt]
 T &amp;= \frac{|\psi_{III}(\text{transmitted})|^2}{|\psi_1(\text{incident})|^2} = \frac{F^*F}{A^*A}.
 \end{align}\]</div>
 <p>Because the particles must be either reflected or transmitted, we must have <span class="math notranslate nohighlight">\(R+T = 1\)</span> (i.e., the total probability must equal unity).</p>
 <p>The values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(T\)</span> are found by solving for <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(D\)</span> in terms of <span class="math notranslate nohighlight">\(F\)</span>.  Then those results are substituted to find <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> in terms of <span class="math notranslate nohighlight">\(F\)</span>.  This a long process of <a class="reference external" href="http://www.trentu.ca/academic/physics/jbeda/PHYS202H/PHYS202H-2004-Fall/HW-11-202H-solutions.pdf">tedious algebra</a>, where the transmission probability is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec9af7aa-4c4e-4aa3-b659-6caacaf74e06">
-<span class="eqno">(6.56)<a class="headerlink" href="#equation-ec9af7aa-4c4e-4aa3-b659-6caacaf74e06" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2c2c27f5-8e8f-4053-854f-ef02adb4db5a">
+<span class="eqno">(6.56)<a class="headerlink" href="#equation-2c2c27f5-8e8f-4053-854f-ef02adb4db5a" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 \end{align}\]</div>
 <p>Notice when <span class="math notranslate nohighlight">\(k_{II}L = n\pi\)</span>, then the second term goes to zero, resulting in a transmission probability equal to 1.  Also, it is possible for particles to be reflected at both <span class="math notranslate nohighlight">\(x=-L\)</span> and <span class="math notranslate nohighlight">\(x=L\)</span>.  Their path difference back toward the <span class="math notranslate nohighlight">\(-x\)</span> direction is <span class="math notranslate nohighlight">\(2L\)</span>.  For an integral number of wavelengths inside the potential barrier, the incident and reflected wave functions are precisely out of phase and cancel completely.</p>
@@ -2036,24 +2036,24 @@ T = \left[ 1 + \frac{V_o^2\sin^2(k_{II}L)}{4E(E-V_o)}\right]^{-1}.
 </figcaption>
 </figure>
 <p>There are only a few changes to the equations already presented in Sect. <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_6/quantum-mechanics-part2.html#potential-barrier-with-e-v-o">6.7.1</a>.  In region II, the wave function becomes</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5272d255-f4b5-42b6-a1b8-f93f2ccc3a0b">
-<span class="eqno">(6.57)<a class="headerlink" href="#equation-5272d255-f4b5-42b6-a1b8-f93f2ccc3a0b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fb6081c5-e20d-41df-b748-07178cde7d4e">
+<span class="eqno">(6.57)<a class="headerlink" href="#equation-fb6081c5-e20d-41df-b748-07178cde7d4e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \psi_{II}(x) = Ce^{\kappa x} + De^{-\kappa x},\quad \text{where } \kappa = \sqrt{\frac{2m(V_o-E)}{\hbar^2}}.
 \end{align}\]</div>
 <p>The parameter <span class="math notranslate nohighlight">\(\kappa\)</span> is a positive, real number because <span class="math notranslate nohighlight">\(V_o &gt; E\)</span>.  The application of boundary conditions and a lot of tedious algebra relate the coefficients of the wave functions.</p>
 <p>The equations for the reflection and transmission probabilities are unchanged, but the results will be modified by replacing <span class="math notranslate nohighlight">\(ik_{II}\rightarrow \kappa\)</span>.  <strong>Tunneling</strong> is the effect where the particle penetrates the barrier and emerges on the other side.  The transmission probability is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6ae3b660-6e9a-4fe2-a135-6d372eecdd9f">
-<span class="eqno">(6.58)<a class="headerlink" href="#equation-6ae3b660-6e9a-4fe2-a135-6d372eecdd9f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-04fdd0c1-67de-4b3e-899d-249286d3198f">
+<span class="eqno">(6.58)<a class="headerlink" href="#equation-04fdd0c1-67de-4b3e-899d-249286d3198f" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \left[ 1 + \frac{V_o^2 \sinh^2(kL)}{4E(V_o-E)}\right]^{-1}.
 \end{align}\]</div>
 <p>The only difference from the previous transmission coefficient is the replacement of sine with hyperbolic sine (<span class="math notranslate nohighlight">\(\sinh\)</span>).  When <span class="math notranslate nohighlight">\(kL \gg 1\)</span> the transmission probability reduces to</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d2f4bbb-937d-416d-90c9-a2fa8ea3ea73">
-<span class="eqno">(6.59)<a class="headerlink" href="#equation-7d2f4bbb-937d-416d-90c9-a2fa8ea3ea73" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-85e9d852-d736-4e97-aa0c-a20f7eec5a05">
+<span class="eqno">(6.59)<a class="headerlink" href="#equation-85e9d852-d736-4e97-aa0c-a20f7eec5a05" title="Permalink to this equation">#</a></span>\[\begin{align}
 T = \frac{16E}{V_o}\left(1 -\frac{E}{V_o}\right)e^{-2\kappa L}.
 \end{align}\]</div>
 <p>Tunneling can be understood using the uncertainty principle, where inside the barrier the wave function <span class="math notranslate nohighlight">\(\psi_{II}\)</span> is dominated by the <span class="math notranslate nohighlight">\(e^{-\kappa x}\)</span> term, and the probability density <span class="math notranslate nohighlight">\(|\psi_{II}|^2 \approx e^{-2\kappa x}\)</span>.  Over a small interval <span class="math notranslate nohighlight">\(\Delta x = 1/\kappa\)</span>, the probability density of observing the particle has decreased substantially (<span class="math notranslate nohighlight">\(e^{-2} \approx 0.14\)</span>).  The uncertainty in the momentum is <span class="math notranslate nohighlight">\(\Delta p \geq \hbar/\Delta x = \hbar \kappa\)</span>.  The minimum kinetic energy must be</p>
-<div class="amsmath math notranslate nohighlight" id="equation-67d0e527-5a90-4215-9541-dac31c25e2c1">
-<span class="eqno">(6.60)<a class="headerlink" href="#equation-67d0e527-5a90-4215-9541-dac31c25e2c1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f024abad-8e29-48d0-aa33-e5587ac228d1">
+<span class="eqno">(6.60)<a class="headerlink" href="#equation-f024abad-8e29-48d0-aa33-e5587ac228d1" title="Permalink to this equation">#</a></span>\[\begin{align}
 K_{\rm min} = \frac{(\Delta p)^2}{2m} = \frac{\pi^2 \kappa^2}{2m} = V_o - E.
 \end{align}\]</div>
 <p>The violation allowed by the uncertainty principle is exactly equal to the <em>negative</em> kinetic energy required.  The particle is allowed by quantum mechanics and the uncertainty principle to penetrate into a classically forbidden region.</p>

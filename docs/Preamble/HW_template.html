@@ -623,24 +623,24 @@ document.write(`
 <p><span style="color: #1756a9;"><strong>Introduction</strong></span></p>
 <p>Observers in different inertial frames can assign different positions and velocities to the same particle, but Newton’s second law relates force to acceleration. We therefore need to examine how acceleration transforms: differentiating the Galilean position transformation will reveal whether a change of frame alters the equation of motion.</p>
 <p><span style="color: #773899;"><strong>Method</strong></span></p>
-<p>Consider an inertial frame <span class="math notranslate nohighlight">\(K\)</span> and a second frame <span class="math notranslate nohighlight">\(K'\)</span> moving with constant velocity <span class="math notranslate nohighlight">\(U\)</span> along their common <span class="math notranslate nohighlight">\(x\)</span>-axis. Their axes remain parallel, and their origins coincide at <span class="math notranslate nohighlight">\(t=0\)</span>. We work in one dimension and use the Galilean transformation</p>
+<p>Consider an inertial frame <span class="math notranslate nohighlight">\(K\)</span> and a second frame <span class="math notranslate nohighlight">\(K'\)</span> moving with constant velocity <span class="math notranslate nohighlight">\(u\)</span> along their common <span class="math notranslate nohighlight">\(x\)</span>-axis. Their axes remain parallel, and their origins coincide at <span class="math notranslate nohighlight">\(t=0\)</span>. We work in one dimension and use the Galilean transformation</p>
 <div class="math notranslate nohighlight">
 \[
-x' = x - Ut, \qquad t' = t.
+x' = x - ut, \qquad t' = t.
 \]</div>
-<p>Here, <span class="math notranslate nohighlight">\(U\)</span> is the relative velocity of the frames, while <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x'\)</span> describe the position of the particle. Within the Newtonian description used here, its mass <span class="math notranslate nohighlight">\(m\)</span> is constant and the force describing the same interaction is unchanged between these frames, so <span class="math notranslate nohighlight">\(F'=F\)</span>. We will transform the acceleration and express the equation of motion in the primed coordinates.</p>
+<p>Here, <span class="math notranslate nohighlight">\(u\)</span> is the relative velocity of the frames, while <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(x'\)</span> describe the position of the particle. Within the Newtonian description used here, its mass <span class="math notranslate nohighlight">\(m\)</span> is constant and the force describing the same interaction is unchanged between these frames, so <span class="math notranslate nohighlight">\(F'=F\)</span>. We will transform the acceleration and express the equation of motion in the primed coordinates.</p>
 <p><span style="color: #995000;"><strong>Results and Discussion</strong></span></p>
 <p>Because the two frames use the same time coordinate, differentiating the position transformation gives</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{dx'}{dt'} = \frac{dx}{dt} - U.
+\frac{dx'}{dt'} = \frac{dx}{dt} - u.
 \]</div>
 <p>The observers therefore measure different particle velocities. Differentiating again gives</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{d^2x'}{dt'^2} = \frac{d^2x}{dt^2} - \frac{dU}{dt} = \frac{d^2x}{dt^2},
+\frac{d^2x'}{dt'^2} = \frac{d^2x}{dt^2} - \frac{du}{dt} = \frac{d^2x}{dt^2},
 \]</div>
-<p>where the last equality follows because <span class="math notranslate nohighlight">\(U\)</span> is constant. Thus, both observers measure the same acceleration, <span class="math notranslate nohighlight">\(a'=a\)</span>.</p>
+<p>where the last equality follows because <span class="math notranslate nohighlight">\(u\)</span> is constant. Thus, both observers measure the same acceleration, <span class="math notranslate nohighlight">\(a'=a\)</span>.</p>
 <p>Newton’s second law in frame <span class="math notranslate nohighlight">\(K\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[
@@ -651,7 +651,7 @@ F = m\frac{d^2x}{dt^2}.
 \[
 F' = m\frac{d^2x'}{dt'^2}.
 \]</div>
-<p>This equation has the same form as the original equation of motion. The result also gives a useful consistency check: when <span class="math notranslate nohighlight">\(U=0\)</span>, the two coordinate descriptions coincide. If the frame velocity were changing, the acceleration transformation would contain the additional term <span class="math notranslate nohighlight">\(-dU/dt\)</span>, and the primed frame would require an inertial-force term to retain the form of Newton’s second law.</p>
+<p>This equation has the same form as the original equation of motion. The result also gives a useful consistency check: when <span class="math notranslate nohighlight">\(u=0\)</span>, the two coordinate descriptions coincide. If the frame velocity were changing, the acceleration transformation would contain the additional term <span class="math notranslate nohighlight">\(-dU/dt\)</span>, and the primed frame would require an inertial-force term to retain the form of Newton’s second law.</p>
 <p><span style="color: #236b3b;"><strong>Conclusion</strong></span></p>
 <p>Differentiating the Galilean position transformation twice showed that the two inertial frames measure the same particle acceleration. With the same mass and Newtonian force, this gives the same form of Newton’s second law in both frames. This result is reasonable because a constant offset in velocity does not change its rate of change; in the limiting case <span class="math notranslate nohighlight">\(U=0\)</span>, the coordinate descriptions also coincide exactly.</p>
 </section>
